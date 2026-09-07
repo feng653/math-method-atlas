@@ -2,23 +2,27 @@
   "id": "pr-estimate-unbiased",
   "libraryId": "math-one",
   "chapterId": "pr-estimation",
-  "title": "期望检验无偏与均方误差",
-  "summary": "用估计量的期望和方差衡量偏差与精度。",
+  "title": "点估计、无偏性与均方误差",
+  "summary": "把估计规则与代入后的估计值分开，再用重复抽样期望衡量偏差。",
   "conditions": [
-    "相关期望和方差存在"
+    "点估计用一个统计量T(X₁,…,Xₙ)估计目标参数θ；T的表达式不含任何未知参数。",
+    "评估无偏性要求期望存在；使用MSE的方差分解时要求相关二阶矩有限。"
   ],
   "steps": [
+    "观测前的T是估计量（随机变量）；代入样本值所得t=T(x₁,…,xₙ)是估计值（数）。同一规则会随不同样本产生不同估计值。",
+    "无偏性要求参数空间内每个θ都满足Eθ(T)=θ；这是抽样分布上的性质，不是要求当前估计值等于未知真值。",
     "计算 Eθ(T) 与目标参数之差",
     "差为 0 则无偏",
     "比较 MSE=方差+偏差平方"
   ],
-  "formula": "\\operatorname{MSE}(T)=\\operatorname{Var}(T)+(ET-\\theta)^2",
+  "formula": "\\hat\\theta=T(X_1,\\ldots,X_n),\\quad\\hat\\theta_{\\rm obs}=T(x_1,\\ldots,x_n),\\quad\\operatorname{MSE}_\\theta(T)=\\operatorname{Var}_\\theta(T)+(E_\\theta T-\\theta)^2",
   "pitfalls": [
-    "无偏不意味着在所有估计量中均方误差最小"
+    "无偏不意味着在所有估计量中均方误差最小",
+    "不能用一次样本估计值与真值的差来证明或否定无偏性。"
   ],
   "example": {
-    "prompt": "自编例题：独立同分布样本量 n≥2、总体方差 σ² 有限，比较分母 n 与 n−1 的样本离差平方和估计。",
-    "solution": "E[Σ(Xi−X̄)²]=(n−1)σ²，因此除以 n−1 无偏；除以 n 的期望为 (n−1)σ²/n。"
+    "prompt": "自编例题：独立同分布样本n=3，总体均值μ、有限方差σ²，用T=X̄估计μ；观测1,2,3。区分估计量与估计值并求偏差、MSE。",
+    "solution": "估计量T=(X₁+X₂+X₃)/3，估计值t=2。ET=μ，故偏差0；独立性给Var(T)=σ²/3，MSE也是σ²/3。t=2不意味着μ必为2。"
   },
   "relatedIds": [
     "pr-estimate-consistency",

@@ -42,7 +42,8 @@ export default function App() {
     <AtlasGraph key={library.id} library={library} methods={methods} selected={selected} chapter={chapter}
       onSelect={select} onChapter={(id) => { setChapter(id); setSelected(''); }} />
     <header className="floating-header">
-      <a className="brand" href="#" onClick={(event) => { event.preventDefault(); setChapter(''); setSelected(''); }}>
+      <a className="brand" href="#" onClick={(event) => { event.preventDefault(); setChapter(''); setSelected('');
+        setPanel('none'); setQuery(''); setRouteNotice(''); }}>
         <span className="brand-mark">方</span><span>方寸<small>METHOD ATLAS</small></span></a>
       <div className="library-select"><select aria-label="选择方法体系" value={library.id}
         onChange={(event) => { setLibraryId(event.target.value); setSelected(''); setChapter(''); setQuery(''); setPanel('none'); setRouteNotice(''); }}>

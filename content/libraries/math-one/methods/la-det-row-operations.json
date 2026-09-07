@@ -2,24 +2,27 @@
   "id": "la-det-row-operations",
   "libraryId": "math-one",
   "chapterId": "la-determinants",
-  "title": "初等变换化三角",
-  "summary": "追踪换行与倍乘因子，将行列式化为三角形。",
+  "title": "行列式概念与初等变换计算",
+  "summary": "把方阵对应的标量按交替多线性规律计算，再用消元降低计算量。",
   "conditions": [
-    "仅方阵有行列式",
-    "将一行的倍数加到另一行不改变行列式"
+    "A为n阶实方阵，n≥1；行列式是由元素构成的一个数，不是矩阵。"
   ],
   "steps": [
+    "行列式的排列定义在每行每列各取一个元素相乘，按排列奇偶加减；二阶为ad−bc，三角阵为对角积。",
+    "逐行（或逐列）具有线性性且交换两行反号，故两行相同或成比例时行列式为0；det(I)=1，det(Aᵀ)=det(A)。",
+    "整体数乘A会同时缩放n行，det(cA)=cⁿdet(A)；不要把逐行线性误解成det(A+B)=det(A)+det(B)。",
     "用倍加消去下三角元素",
     "记录换行次数和倍乘系数",
     "取对角线乘积并还原因子"
   ],
-  "formula": "\\det U=\\prod_{i=1}^n u_{ii}",
+  "formula": "\\det A=\\sum_{\\pi\\in S_n}\\operatorname{sgn}(\\pi)\\prod_{i=1}^na_{i,\\pi(i)},\\qquad\\det U=\\prod_{i=1}^nu_{ii}",
   "pitfalls": [
-    "整行乘 k 会使行列式乘 k；换行使符号改变"
+    "整行乘 k 会使行列式乘 k；换行使符号改变",
+    "非方阵不定义这里的行列式；行列式为0不等于矩阵是零矩阵。"
   ],
   "example": {
-    "prompt": "自编例题：求 [[1,2],[3,5]] 的行列式。",
-    "solution": "第二行减第一行的 3 倍得 [[1,2],[0,−1]]，行列式为 −1。"
+    "prompt": "自编例题：A=[[1,2],[3,5]]，求det(A)、det(2A)、det(Aᵀ)，并以A与I说明行列式不对矩阵加法线性。",
+    "solution": "消元第二行减第一行3倍得对角1、−1，det(A)=−1；det(2A)=4×(−1)=−4；转置不变为−1。det(A+I)=det([[2,2],[3,6]])=6，而det(A)+det(I)=0。"
   },
   "relatedIds": [
     "la-det-block",

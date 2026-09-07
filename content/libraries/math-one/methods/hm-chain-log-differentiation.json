@@ -2,27 +2,35 @@
   "id": "hm-chain-log-differentiation",
   "libraryId": "math-one",
   "chapterId": "derivatives",
-  "title": "复合函数与对数求导",
-  "summary": "按层次使用链式法则处理幂指函数。",
+  "title": "基本导数、四则与复合对数求导",
+  "summary": "先查基本导数表，按四则与链式组合；变量幂再用对数求导。",
   "conditions": [
-    "各层可导；实对数求导要求函数相应部分为正。"
+    "在求导点各因子可导；商要求分母不为零，复合函数各层在对应点可导。",
+    "一般实幂 x^α 统一在 x>0 使用；整数或其他可扩展指数可在各自合法可导点使用。aˣ、logₐx 要求 a>0、a≠1。",
+    "ln x 与 logₐx 要求 x>0；arcsin/arccos 求导要求 |x|<1；tan、cot 避开分母零点。arccot 采用值域 (0,π) 的连续递减主支。"
   ],
   "steps": [
-    "识别外层与内层。",
-    "乘积多因子或变量幂先取对数。",
-    "对两边求导，最后乘回原函数。"
+    "先确定合法可导域，基本表：常数导数 0；(x^α)′=αx^(α−1)；(eˣ)′=eˣ；(aˣ)′=aˣln a；(ln x)′=1/x；(logₐx)′=1/(x ln a)。",
+    "三角表：(sin x)′=cos x，(cos x)′=−sin x，(tan x)′=1/cos²x，(cot x)′=−1/sin²x。反三角表：(arcsin x)′=1/√(1−x²)，(arccos x)′=−1/√(1−x²)，(arctan x)′=1/(1+x²)，(arccot x)′=−1/(1+x²)。",
+    "线性规则中的系数 a、b 是常数，按项求导；乘积为 u′v+uv′，商为 (u′v−uv′)/v²，复合函数乘内层导数。",
+    "多因子可直接反复用乘积法则，零因子也适用；若采用 ln|y| 求导，则须在所有相关因子非零的局部区间。变量幂 u^v 的实对数方法要求 u>0。",
+    "求一阶微分与换变量时的形式不变性转见相关 hm-inverse-derivative；本卡只给基本求导表和组合规则。"
   ],
-  "formula": "(u^v)'=u^v\\left(v'\\ln u+v\\frac{u'}u\\right),\\quad u>0",
+  "formula": "(au+bv)'=au'+bv',\\quad(uv)'=u'v+uv',\\quad\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2};\\quad(f\\circ g)'=f'(g)g';\\quad(u^v)'=u^v\\left(v'\\ln u+v\\frac{u'}u\\right)\\ (u>0)",
   "pitfalls": [
-    "变量幂不能同时套常指数幂法则；对数求导注意定义域。"
+    "商的分子顺序不能颠倒，分母是平方；链式不能漏内层导数。",
+    "乘积含零因子时用直接四则，不能无条件取对数；变量幂不可同时套常指数法则。",
+    "反正弦与反余弦端点处导数公式不可使用；负号及反余切主值须核对。"
   ],
   "example": {
-    "prompt": "自编例题：求x>0时y=x^x的导数。",
-    "solution": "ln y=x ln x，得y'/y=ln x+1，所以y'=x^x(ln x+1)。"
+    "prompt": "自编：求 H(x)=x²sin x/(1+x)、K(x)=arcsin(2x) 及 x>0 时 xˣ 的导数。",
+    "solution": "x≠−1 时 H′=[(2xsin x+x²cos x)(1+x)−x²sin x]/(1+x)²；在 x=0 直接公式给 H′=0，无需取对数。|x|<1/2 时 K′=2/√(1−4x²)，链式因子 2 不能漏。ln(xˣ)=x ln x，故 (xˣ)′=xˣ(ln x+1)。"
   },
   "relatedIds": [
     "hm-parametric-derivative",
-    "hm-implicit-derivative"
+    "hm-implicit-derivative",
+    "hm-inverse-derivative",
+    "hm-function-properties"
   ],
   "topicIds": [
     "derivatives-chain-log-differentiation"
