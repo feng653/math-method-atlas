@@ -13,4 +13,4 @@
 
 最近验证见VERIFICATION.md；精确动态进度运行 `pnpm content:report`，避免手写数量过期。
 
-线上：https://feng653.github.io/math-method-atlas/ 。目标仍活动，不能把全部索引建立等同完整题库/全纲核验。逐项剩余要求见COMPLETION_AUDIT.md。
+线上：https://feng653.github.io/math-method-atlas/ 。当前等待外部资料，完整目标未完成：需2026数学一大纲正文及2026Q22可靠完整题设。独立复审未发现其他可直接实施的必要缺口；不能把全部索引建立等同完整题库/全纲核验。恢复步骤见COMPLETION_AUDIT.md末节。
