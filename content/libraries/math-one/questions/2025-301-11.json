@@ -12,7 +12,9 @@
     {
       "methodId": "hm-equivalent-infinitesimal",
       "verification": "verified",
-      "note": "原题第8页第11题：幂先写为指数。 独立复核：将幂指项转成指数，检查指数趋零后作等价替换，不在相减前分别替换。"
+      "note": "原题第8页第11题：幂先写为指数。 独立复核：将幂指项转成指数，检查指数趋零后作等价替换，不在相减前分别替换。",
+      "role": "primary",
+      "roleNote": "指数等价替换直接求幂指极限。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 8 题。独立同分布伯努利和标准化，用中心极限定理近似给定阈值的概率。",
       "verification": "verified",
-      "methodId": "pr-limit-clt"
+      "methodId": "pr-limit-clt",
+      "role": "primary",
+      "roleNote": "伯努利和标准化直接给所求概率近似。"
     }
   ]
 }

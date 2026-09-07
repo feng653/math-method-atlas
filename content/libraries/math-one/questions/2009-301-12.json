@@ -11,7 +11,9 @@
     {
       "methodId": "hm-triple-integral",
       "verification": "verified",
-      "note": "独立方法关联复核：单位球上的连续被积函数可球坐标积分，或以坐标置换对称合并三个二次项。"
+      "note": "独立方法关联复核：单位球上的连续被积函数可球坐标积分，或以坐标置换对称合并三个二次项。",
+      "role": "primary",
+      "roleNote": "球坐标或球域对称直接完成所求体积分。"
     }
   ]
 }

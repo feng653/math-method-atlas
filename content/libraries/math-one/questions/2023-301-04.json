@@ -12,7 +12,9 @@
     {
       "methodId": "hm-series-comparison",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：先构造正项差级数；用绝对值三角不等式比较，不能直接对有符号原通项套比较法。"
+      "note": "主agent独立重读题面复核：先构造正项差级数；用绝对值三角不等式比较，不能直接对有符号原通项套比较法。",
+      "role": "primary",
+      "roleNote": "比较不等式直接证明绝对收敛。"
     }
   ]
 }

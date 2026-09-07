@@ -11,12 +11,16 @@
     {
       "methodId": "hm-power-radius",
       "verification": "verified",
-      "note": "独立方法关联复核：以x²为变量判半径并分别检查x=±1，和函数由反正切级数乘x得到。"
+      "note": "独立方法关联复核：以x²为变量判半径并分别检查x=±1，和函数由反正切级数乘x得到。",
+      "role": "primary",
+      "roleNote": "直接确定收敛半径并逐端点检查收敛域。"
     },
     {
       "methodId": "hm-power-sum",
       "verification": "verified",
-      "note": "独立方法关联复核：以x²为变量判半径并分别检查x=±1，和函数由反正切级数乘x得到。"
+      "note": "独立方法关联复核：以x²为变量判半径并分别检查x=±1，和函数由反正切级数乘x得到。",
+      "role": "primary",
+      "roleNote": "由反正切级数变换直接求和函数。"
     }
   ]
 }

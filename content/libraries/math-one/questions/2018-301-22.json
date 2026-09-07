@@ -12,12 +12,16 @@
     {
       "methodId": "pr-event-total",
       "verification": "verified",
-      "note": "独立复核：来源第 22 题。按符号变量条件化求离散混合分布，并以 E(XZ)−EX·EZ 求协方差；不适用连续雅可比。"
+      "note": "独立复核：来源第 22 题。按符号变量条件化求离散混合分布，并以 E(XZ)−EX·EZ 求协方差；不适用连续雅可比。",
+      "role": "primary",
+      "roleNote": "分层混合直接求变量乘积的分布子问。"
     },
     {
       "methodId": "pr-moment-covariance",
       "verification": "verified",
-      "note": "独立复核：来源第 22 题。按符号变量条件化求离散混合分布，并以 E(XZ)−EX·EZ 求协方差；不适用连续雅可比。"
+      "note": "独立复核：来源第 22 题。按符号变量条件化求离散混合分布，并以 E(XZ)−EX·EZ 求协方差；不适用连续雅可比。",
+      "role": "primary",
+      "roleNote": "直接计算另一子问所求协方差。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

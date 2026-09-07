@@ -12,12 +12,16 @@
     {
       "methodId": "hm-path-independence",
       "verification": "verified",
-      "note": "独立二次核对来源 第 9 页图 第 17 题：微分形式是 df，曲线积分化端点差；所得单变量函数求导判最小值。"
+      "note": "独立二次核对来源 第 9 页图 第 17 题：微分形式是 df，曲线积分化端点差；所得单变量函数求导判最小值。",
+      "role": "primary",
+      "roleNote": "端点差直接求第一项任务 I(t)。"
     },
     {
       "methodId": "hm-monotonic-extrema",
       "verification": "verified",
-      "note": "独立二次核对来源 第 9 页图 第 17 题：微分形式是 df，曲线积分化端点差；所得单变量函数求导判最小值。"
+      "note": "独立二次核对来源 第 9 页图 第 17 题：微分形式是 df，曲线积分化端点差；所得单变量函数求导判最小值。",
+      "role": "primary",
+      "roleNote": "对已求 I(t) 判导数符号，直接求其最小值。"
     }
   ]
 }

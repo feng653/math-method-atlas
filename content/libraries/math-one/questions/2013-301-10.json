@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 10 题。任意两特解之差为齐次解，两条不同指数线性无关，另取一特解相加。",
-      "methodId": "hm-linear-ode-structure"
+      "methodId": "hm-linear-ode-structure",
+      "role": "primary",
+      "roleNote": "特解作差产生基本解组，再加特解直接构成通解。"
     }
   ]
 }

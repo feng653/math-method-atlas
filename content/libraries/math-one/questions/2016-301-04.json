@@ -12,12 +12,16 @@
     {
       "methodId": "hm-derivative-definition",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 4 题：右侧阶梯函数差商被 1 与 (n+1)/n 夹住，左差商也是 1。"
+      "note": "独立二次核对来源 第 2 页图 第 4 题：右侧阶梯函数差商被 1 与 (n+1)/n 夹住，左差商也是 1。",
+      "role": "primary",
+      "roleNote": "左右差商给零点导数，直接完成可导判断。"
     },
     {
       "methodId": "hm-squeeze",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 4 题：右侧阶梯函数差商被 1 与 (n+1)/n 夹住，左差商也是 1。"
+      "note": "独立二次核对来源 第 2 页图 第 4 题：右侧阶梯函数差商被 1 与 (n+1)/n 夹住，左差商也是 1。",
+      "role": "supporting",
+      "roleNote": "夹住右差商以证明其极限，是定义判别中的引理。"
     }
   ]
 }

@@ -3,6 +3,7 @@ import { ArrowUpRight, X } from 'lucide-react';
 import type { Paper, Question, Method, Library } from '../domain/schema';
 import { getArchiveStats } from '../domain/archive-statistics';
 import { ArchiveCoverage } from './ArchiveCoverage';
+import { methodRoleLabel } from '../domain/method-roles';
 
 type Props = { papers: Paper[]; questions: Question[]; methods: Method[]; chapters: Library['chapters']; onClose: () => void;
   examScope?: Library['examScope'];
@@ -52,8 +53,12 @@ export function PaperLibrary({ papers, questions, methods, chapters, examScope, 
             {question.sourceNote && <p className="source-note">{question.sourceNote}</p>}
             <div className="related-methods">{question.methodLinks.map((link) => <button key={link.methodId}
               onClick={() => onSelect(link.methodId)}>{methods.find((m) => m.id === link.methodId)?.title}
+              <small className="method-role">{methodRoleLabel(link.role)}</small>
               {link.verification === 'pending' ? ' · 待核' : ''}</button>)}</div>
-            <details><summary>关联依据</summary>{question.methodLinks.map((link) => <p key={link.methodId}>{link.note}</p>)}</details>
+            <details><summary>关联依据</summary>{question.methodLinks.map((link) => <div key={link.methodId}>
+              <p><strong>{methods.find((method) => method.id === link.methodId)?.title} · {methodRoleLabel(link.role)}</strong></p>
+              {link.roleNote && <p>{link.roleNote}</p>}<p>{link.note}</p>
+            </div>)}</details>
           </article>)}</section>;
       })}
       {papers.length > 0 && <p className="fine-print">原题在来源站点查看，本库保存原创方法分析与索引。</p>}

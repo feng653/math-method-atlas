@@ -11,7 +11,9 @@
     {
       "methodId": "la-vector-dependence",
       "verification": "verified",
-      "note": "独立方法关联复核：前两列独立，令第三列为其线性组合，由各坐标一致性确定参数并保证维数2。"
+      "note": "独立方法关联复核：前两列独立，令第三列为其线性组合，由各坐标一致性确定参数并保证维数2。",
+      "role": "primary",
+      "roleNote": "使第三列落在前两列张成空间，直接确定降秩参数。"
     }
   ]
 }

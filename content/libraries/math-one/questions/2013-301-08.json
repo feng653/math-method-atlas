@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 8 题。t变量平方服从对应F分布；正阈值两侧尾部因对称相等。",
-      "methodId": "pr-sample-t-f"
+      "methodId": "pr-sample-t-f",
+      "role": "primary",
+      "roleNote": "用t平方的F分布及对称性，直接换算所求概率关系。"
     }
   ]
 }

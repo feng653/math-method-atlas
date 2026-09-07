@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 20 题。正交变换保持实对称矩阵特征值，由迹和行列式求参数，再匹配单位特征向量构造变换。",
       "verification": "verified",
-      "methodId": "la-quadratic-orthogonal"
+      "methodId": "la-quadratic-orthogonal",
+      "role": "primary",
+      "roleNote": "谱不变量与单位特征基直接求参数及正交变换。"
     }
   ]
 }

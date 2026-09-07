@@ -12,12 +12,16 @@
     {
       "methodId": "la-quadratic-orthogonal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 6 题：对称矩阵特征值 5、−1、−1，正交化识别二次曲面类型。"
+      "note": "独立二次核对来源 第 3 页图 第 6 题：对称矩阵特征值 5、−1、−1，正交化识别二次曲面类型。",
+      "role": "supporting",
+      "roleNote": "先把交叉二次型化为标准形式。"
     },
     {
       "methodId": "hm-quadric-surfaces",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 6 题：对称矩阵特征值 5、−1、−1，正交化识别二次曲面类型。"
+      "note": "独立二次核对来源 第 3 页图 第 6 题：对称矩阵特征值 5、−1、−1，正交化识别二次曲面类型。",
+      "role": "primary",
+      "roleNote": "根据标准式直接识别题问曲面。"
     }
   ]
 }

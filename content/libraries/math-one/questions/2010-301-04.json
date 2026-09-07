@@ -11,12 +11,16 @@
     {
       "methodId": "hm-riemann-sum",
       "verification": "verified",
-      "note": "独立方法关联复核：双重和可分离成两个一维Riemann和的乘积，也等价于单位正方形累次积分，避免把一维卡生搬到一般二维。"
+      "note": "独立方法关联复核：双重和可分离成两个一维Riemann和的乘积，也等价于单位正方形累次积分，避免把一维卡生搬到一般二维。",
+      "role": "primary",
+      "roleNote": "把双重求和拆为一维Riemann和，直接确定极限。"
     },
     {
       "methodId": "hm-double-cartesian",
       "verification": "verified",
-      "note": "独立方法关联复核：双重和可分离成两个一维Riemann和的乘积，也等价于单位正方形累次积分，避免把一维卡生搬到一般二维。"
+      "note": "独立方法关联复核：双重和可分离成两个一维Riemann和的乘积，也等价于单位正方形累次积分，避免把一维卡生搬到一般二维。",
+      "role": "supporting",
+      "roleNote": "累次积分计算Riemann和转化后的数值。"
     }
   ]
 }

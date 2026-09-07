@@ -11,7 +11,9 @@
     {
       "methodId": "hm-integral-inequality",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：先在相同区间比较被积函数，分母保持正号，再用定积分保序。"
+      "note": "主agent独立重读题面复核：先在相同区间比较被积函数，分母保持正号，再用定积分保序。",
+      "role": "primary",
+      "roleNote": "积分保序直接比较大小。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"

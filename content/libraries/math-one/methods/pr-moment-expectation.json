@@ -2,24 +2,27 @@
   "id": "pr-moment-expectation",
   "libraryId": "math-one",
   "chapterId": "pr-moments",
-  "title": "直接求随机变量函数期望",
-  "summary": "不先求函数分布，直接对原分布求和或积分。",
+  "title": "期望线性与随机变量函数期望",
+  "summary": "先利用已知矩和期望线性，再按原分布求和或积分，无需先求函数分布。",
   "conditions": [
-    "g 为可测实值函数；求有限期望时要求 E|g(X)|<∞，不能将正负部分都发散的积分作相消。"
+    "g 为可测实值函数；求有限期望时要求 E|g(X)|<∞，不能将正负部分都发散的积分作相消。",
+    "有限个随机变量Xj满足E|Xj|<∞时，任意常系数线性组合的期望可逐项计算，不要求独立。"
   ],
   "steps": [
+    "已有相应矩时，先展开多项式并按线性逐项取期望；若只知边缘均值，不能据此把乘积期望拆为均值乘积。",
     "明确 g 与原变量支持集",
     "计算 g 乘原概率或密度",
     "检查收敛",
     "k阶原点矩为E(X^k)，k阶中心矩为E[(X−EX)^k]，通常以相应绝对矩有限保证存在；二阶中心矩就是方差。"
   ],
-  "formula": "E[g(X)]=\\sum_k g(x_k)p_k\\quad\\text{(离散)};\\qquad E[g(X)]=\\int g(x)f_X(x)\\,dx\\quad\\text{(有密度)}",
+  "formula": "E[g(X)]=\\sum_k g(x_k)p_k\\quad\\text{(离散)};\\qquad E[g(X)]=\\int g(x)f_X(x)\\,dx\\quad\\text{(有密度)};\\quad E\\left(\\sum_{j=1}^m a_jX_j+b\\right)=\\sum_{j=1}^m a_jEX_j+b",
   "pitfalls": [
-    "E[g(X)] 一般不等于 g(E[X])"
+    "E[g(X)] 一般不等于 g(E[X])",
+    "期望线性不要求独立；E(XY)=EX·EY则需要额外条件，不能由线性推出。"
   ],
   "example": {
-    "prompt": "自编例题：X 在 (0,1) 均匀，求二阶原点矩与二阶中心矩。",
-    "solution": "EX=1/2，二阶原点矩∫₀¹x²dx=1/3；二阶中心矩=1/3−(1/2)²=1/12。不能把这两个二阶矩混称方差。"
+    "prompt": "自编例题：X 在 (0,1) 均匀，求二阶原点矩与二阶中心矩。 再令Y=X，求E(3X−2Y+5)并比较E(XY)与EX·EY。",
+    "solution": "EX=1/2，二阶原点矩∫₀¹x²dx=1/3；二阶中心矩=1/3−(1/2)²=1/12。不能把这两个二阶矩混称方差。 Y=X虽完全相关，线性仍给3/2−1+5=11/2；E(XY)=EX²=1/3，而EX·EY=1/4，不相等。"
   },
   "relatedIds": [
     "pr-moment-total-expectation",

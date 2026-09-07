@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 12 题。先在有限区间分部积分，边界项在无穷远消失，余下有理函数积分收敛。",
-      "methodId": "hm-integration-by-parts"
+      "methodId": "hm-integration-by-parts",
+      "role": "primary",
+      "roleNote": "有限区间分部后取无穷极限，直接算反常积分。"
     }
   ]
 }

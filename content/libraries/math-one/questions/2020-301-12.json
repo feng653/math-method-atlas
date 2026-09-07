@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 12 题。对含参变上限积分应用乘积和链式法则，再代入指定点；不能仅求上限导数。",
       "verification": "verified",
-      "methodId": "hm-multivariable-chain"
+      "methodId": "hm-multivariable-chain",
+      "role": "primary",
+      "roleNote": "乘积和链式连续求导直接给混合偏导值。"
     }
   ]
 }

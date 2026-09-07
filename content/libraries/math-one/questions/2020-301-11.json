@@ -10,9 +10,18 @@
   },
   "methodLinks": [
     {
+      "methodId": "hm-improper-integral",
+      "verification": "verified",
+      "note": "独立渲染核对来源PDF第2页第11题：f″+af′+f=0，a>0，f(0)=m、f′(0)=n。特征根实部均负（重根时多项式乘衰减指数），故f、f′趋0。由原式可取f的原函数−f′−af，先在[0,R]积分得n+am−f′(R)−af(R)，再令R趋∞得am+n；截断极限存在，不能直接把无穷端当普通端点代入。",
+      "role": "primary",
+      "roleNote": "使用由方程得到的原函数，在有限区间计算后取极限，直接求反常积分值am+n。"
+    },
+    {
       "note": "独立复核：来源第 11 题。正阻尼使特征根实部为负，解和导数趋零；积分微分方程得到反常积分。",
       "verification": "verified",
-      "methodId": "hm-ode-characteristic"
+      "methodId": "hm-ode-characteristic",
+      "role": "supporting",
+      "roleNote": "在现有路线中只证明解及导数衰减，积分值还需对方程积分。"
     }
   ]
 }

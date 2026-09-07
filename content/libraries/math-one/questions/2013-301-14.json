@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 14 题。条件概率按指数尾概率作比，平移部分相消。",
-      "methodId": "pr-dist-exponential"
+      "methodId": "pr-dist-exponential",
+      "role": "primary",
+      "roleNote": "指数尾概率之比直接求条件等待概率。"
     }
   ]
 }

@@ -4,6 +4,7 @@ const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const text = z.string().trim().min(1);
 const httpsUrl = z.url().refine((value) => value.startsWith('https://'), 'Source must use HTTPS');
 const status = z.enum(['draft', 'reviewed']);
+export const methodRoleSchema = z.enum(['primary', 'supporting', 'unclassified']);
 const source = z.object({ url: httpsUrl, page: z.number().int().positive().optional() }).strict();
 const ids = z.array(id).refine((values) => new Set(values).size === values.length, 'Duplicate reference');
 const formula = z.string().max(8000).refine(
@@ -47,8 +48,10 @@ export const questionSchema = z.object({
   sourceNote: text.optional(),
   methodLinks: z.array(z.object({
     methodId: id, verification: z.enum(['pending', 'verified']), note: z.string(),
+    role: methodRoleSchema.optional(), roleNote: text.optional(),
   }).strict().refine((link) => link.verification !== 'verified' || link.note.trim().length > 0,
-    'Verified method link needs evidence note')),
+    'Verified method link needs evidence note').refine((link) => !link.role || link.role === 'unclassified' || !!link.roleNote,
+    'Classified method role needs roleNote')),
 }).strict();
 
 export const atlasSchema = z.object({

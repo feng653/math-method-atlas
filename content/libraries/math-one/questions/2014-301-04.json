@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 4 题。把积分看作两个系数的二次函数，偏导给正规方程，海森正定保证全局最小。",
-      "methodId": "hm-hessian-extrema"
+      "methodId": "hm-hessian-extrema",
+      "role": "primary",
+      "roleNote": "正规方程和正定Hessian直接确定平方误差最小系数。"
     }
   ]
 }

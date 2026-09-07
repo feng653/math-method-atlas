@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 18 题。向下法向与开圆锥直接参数化；未知函数只有连续性，不能用需偏导的散度定理，代入通量后该项抵消。",
       "verification": "verified",
-      "methodId": "hm-surface-integrals"
+      "methodId": "hm-surface-integrals",
+      "role": "primary",
+      "roleNote": "连续场在指定向下曲面上直接积分，完成通量求值。"
     }
   ]
 }

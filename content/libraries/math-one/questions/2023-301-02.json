@@ -12,7 +12,9 @@
     {
       "methodId": "hm-ode-characteristic",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：常系数根的实部控制两端增长，重根还会引入多项式因子。"
+      "note": "主agent独立重读题面复核：常系数根的实部控制两端增长，重根还会引入多项式因子。",
+      "role": "primary",
+      "roleNote": "特征根增长性直接判有界解。"
     }
   ]
 }

@@ -11,7 +11,9 @@
     {
       "methodId": "pr-estimate-unbiased",
       "verification": "verified",
-      "note": "独立方法关联复核：二项样本均值期望为np，样本方差期望为np(1-p)，线性匹配目标的无偏性。"
+      "note": "独立方法关联复核：二项样本均值期望为np，样本方差期望为np(1-p)，线性匹配目标的无偏性。",
+      "role": "primary",
+      "roleNote": "匹配样本均值和方差的期望，直接确定无偏组合。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "methodId": "la-quadratic-orthogonal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 21 题：实对称矩阵先由秩条件定参数，再用正交特征基化二次型。"
+      "note": "独立二次核对来源 第 4 页图 第 21 题：实对称矩阵先由秩条件定参数，再用正交特征基化二次型。",
+      "role": "primary",
+      "roleNote": "标准形与正交特征基直接确定参数和变换矩阵。"
     }
   ]
 }

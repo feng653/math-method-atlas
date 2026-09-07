@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 20 题，第 10 页。已读三行四列矩阵；求核后矩阵右逆逐列是特解加同一核向量。",
-      "methodId": "la-system-general"
+      "methodId": "la-system-general",
+      "role": "primary",
+      "roleNote": "逐列写右逆方程的特解加核，直接求所有右逆。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

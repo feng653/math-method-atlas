@@ -11,7 +11,9 @@
     {
       "methodId": "hm-line-first-kind",
       "verification": "verified",
-      "note": "独立方法关联复核：曲线为光滑抛物线段，参数 x 给 ds=√(1+4x²)dx，满足第一类线积分条件。"
+      "note": "独立方法关联复核：曲线为光滑抛物线段，参数 x 给 ds=√(1+4x²)dx，满足第一类线积分条件。",
+      "role": "primary",
+      "roleNote": "将弧长微元参数化，直接计算第一类曲线积分。"
     }
   ]
 }

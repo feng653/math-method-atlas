@@ -11,12 +11,16 @@
     {
       "methodId": "pr-event-conditional",
       "verification": "verified",
-      "note": "独立方法关联复核：抽样有放回，给定无白球后仍可在红黑条件空间计算；联合计数可枚举两次取球。"
+      "note": "独立方法关联复核：抽样有放回，给定无白球后仍可在红黑条件空间计算；联合计数可枚举两次取球。",
+      "role": "primary",
+      "roleNote": "在无白球条件空间内直接计算第Ⅰ问条件概率。"
     },
     {
       "methodId": "pr-event-counting",
       "verification": "verified",
-      "note": "独立方法关联复核：抽样有放回，给定无白球后仍可在红黑条件空间计算；联合计数可枚举两次取球。"
+      "note": "独立方法关联复核：抽样有放回，给定无白球后仍可在红黑条件空间计算；联合计数可枚举两次取球。",
+      "role": "primary",
+      "roleNote": "枚举两次取球类别，直接生成第Ⅱ问联合分布各格概率。"
     }
   ]
 }

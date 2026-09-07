@@ -12,7 +12,9 @@
     {
       "methodId": "pr-dist-density",
       "note": "独立复核：来源第 7 题。密度关于给定中心对称，中心区间外的两侧尾概率相同。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "由密度对称性直接判断尾事件概率关系。"
     }
   ]
 }

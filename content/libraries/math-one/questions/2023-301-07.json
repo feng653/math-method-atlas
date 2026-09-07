@@ -12,7 +12,9 @@
     {
       "methodId": "la-vector-representation",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：令两组线性组合相等，求系数齐次系统，得到两张成空间的交。"
+      "note": "主agent独立重读题面复核：令两组线性组合相等，求系数齐次系统，得到两张成空间的交。",
+      "role": "primary",
+      "roleNote": "联立表示直接求共同张成部分。"
     }
   ]
 }

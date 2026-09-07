@@ -12,7 +12,9 @@
     {
       "methodId": "hm-path-independence",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 11 题：圆盘单连通且分母不为零，检验交叉偏导相等确定参数。"
+      "note": "独立二次核对来源 第 3 页图 第 11 题：圆盘单连通且分母不为零，检验交叉偏导相等确定参数。",
+      "role": "primary",
+      "roleNote": "检验交叉偏导直接确定路径无关参数。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 21 题。非特征向量及其像构成基，递推给该基下矩阵；两相异特征值再构造相似对角化。",
       "verification": "verified",
-      "methodId": "la-eigen-similarity"
+      "methodId": "la-eigen-similarity",
+      "role": "primary",
+      "roleNote": "在所构造基中表达矩阵，再直接得到所需相似关系。"
     }
   ]
 }

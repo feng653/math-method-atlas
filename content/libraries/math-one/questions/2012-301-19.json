@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 19 题。补纵轴线段封闭路径，在含内部的光滑多项式场上应用格林公式并扣补段。",
-      "methodId": "hm-green"
+      "methodId": "hm-green",
+      "role": "primary",
+      "roleNote": "补线闭合后应用格林并扣补段，直接计算开路径积分。"
     }
   ]
 }

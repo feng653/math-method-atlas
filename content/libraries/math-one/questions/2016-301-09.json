@@ -12,12 +12,16 @@
     {
       "methodId": "hm-lhopital",
       "verification": "verified",
-      "note": "独立二次核对来源 第 5 页图 第 9 题：变上限积分求导后用等价量比较分子分母，极限为 1/2。"
+      "note": "独立二次核对来源 第 5 页图 第 9 题：变上限积分求导后用等价量比较分子分母，极限为 1/2。",
+      "role": "primary",
+      "roleNote": "将零比零商求导，直接建立求极限路线。"
     },
     {
       "methodId": "hm-equivalent-infinitesimal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 5 页图 第 9 题：变上限积分求导后用等价量比较分子分母，极限为 1/2。"
+      "note": "独立二次核对来源 第 5 页图 第 9 题：变上限积分求导后用等价量比较分子分母，极限为 1/2。",
+      "role": "supporting",
+      "roleNote": "简化导数比的局部量，辅助洛必达后的求值。"
     }
   ]
 }

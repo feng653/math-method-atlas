@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 13 题。成对加减行列可拆分四阶行列式，行列变换需同步跟踪行列式因子。",
       "verification": "verified",
-      "methodId": "la-det-row-operations"
+      "methodId": "la-det-row-operations",
+      "role": "primary",
+      "roleNote": "跟踪行列式因子的行列变换直接算行列式。"
     }
   ]
 }

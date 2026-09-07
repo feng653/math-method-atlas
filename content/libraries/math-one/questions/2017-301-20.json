@@ -12,12 +12,16 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 20 题：互异特征值给特征基，利用给定列条件确定矩阵作用并解相容线性系统。"
+      "note": "独立二次核对来源 第 4 页图 第 20 题：互异特征值给特征基，利用给定列条件确定矩阵作用并解相容线性系统。",
+      "role": "primary",
+      "roleNote": "用互异特征值提供独立特征基，完成第一问秩下界证明。"
     },
     {
       "methodId": "la-system-general",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 20 题：互异特征值给特征基，利用给定列条件确定矩阵作用并解相容线性系统。"
+      "note": "独立二次核对来源 第 4 页图 第 20 题：互异特征值给特征基，利用给定列条件确定矩阵作用并解相容线性系统。",
+      "role": "primary",
+      "roleNote": "直接求第二问方程组全部解。"
     }
   ]
 }

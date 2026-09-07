@@ -12,7 +12,9 @@
     {
       "methodId": "hm-power-sum",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 12 题：对几何级数逐项求导并匹配系数，保持收敛区间。"
+      "note": "独立二次核对来源 第 3 页图 第 12 题：对几何级数逐项求导并匹配系数，保持收敛区间。",
+      "role": "primary",
+      "roleNote": "逐项求导直接求目标幂级数和。"
     }
   ]
 }

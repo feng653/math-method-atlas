@@ -11,12 +11,16 @@
     {
       "methodId": "hm-double-cartesian",
       "verification": "verified",
-      "note": "独立方法关联复核：矩形域上连续混合偏导可累次积分，两次分部，边界给定恒等式及其导数使边界项消失。"
+      "note": "独立方法关联复核：矩形域上连续混合偏导可累次积分，两次分部，边界给定恒等式及其导数使边界项消失。",
+      "role": "supporting",
+      "roleNote": "把矩形二重积分累次化，为分部积分准备一维积分。"
     },
     {
       "methodId": "hm-integration-by-parts",
       "verification": "verified",
-      "note": "独立方法关联复核：矩形域上连续混合偏导可累次积分，两次分部，边界给定恒等式及其导数使边界项消失。"
+      "note": "独立方法关联复核：矩形域上连续混合偏导可累次积分，两次分部，边界给定恒等式及其导数使边界项消失。",
+      "role": "primary",
+      "roleNote": "两次分部配合零边界直接还原所求积分与已知a的关系。"
     }
   ]
 }

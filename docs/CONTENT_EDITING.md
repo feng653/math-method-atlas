@@ -35,3 +35,5 @@ LaTeX 反斜杠在 JSON 中写成 `\\`，只在 formula 中写公式，不放 HT
 历史课纲编号编辑：content/requirements/*-items.json 只记录同源audit内的真实编号、起始页、原创短标签和候选入口。保留historical-only状态；新增目标版本需独立来源及审计，不能直接改成reviewed。运行content:check检查跨文档编号完整性。
 
 可选examScope：体系清单可声明单个考试代码的年度目标{exam,startYear,endYear}，每年一卷。它决定目标完整索引分母，和当前已收录卷数分开；未声明时不显示目标分母。变更范围需依据产品目标，不可为消除缺卷缩小范围。
+
+主辅角色与核验是两条独立轴：methodLinks.role可为primary（直接解决至少一个明确求值/证明/判断任务，可多个主入口）、supporting（中间变换/引理/计算工具）、unclassified（证据不足或尚未分类）。分类须填写简短原创roleNote；不能根据数组位置或标签数量猜角色。角色不能提升verification，待核主方法仍不计频次；已核验的主、辅方法均参与当前证据频次。旧条目省略角色按待分类展示。原note继续保留数学核验依据。

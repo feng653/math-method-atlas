@@ -11,7 +11,9 @@
     {
       "methodId": "hm-concavity-asymptote",
       "verification": "verified",
-      "note": "独立方法关联复核：多项式在候选零点可微，局部二阶导的首非零项可判断左右凹凸符号变化。"
+      "note": "独立方法关联复核：多项式在候选零点可微，局部二阶导的首非零项可判断左右凹凸符号变化。",
+      "role": "primary",
+      "roleNote": "检查候选点两侧二阶导符号变化，直接判断拐点。"
     }
   ]
 }

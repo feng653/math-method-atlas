@@ -11,7 +11,9 @@
     {
       "methodId": "hm-power-indeterminate",
       "verification": "verified",
-      "note": "独立方法关联复核：底数趋1，取对数后保留分子分母的一阶倒数差，指数乘积有有限极限。"
+      "note": "独立方法关联复核：底数趋1，取对数后保留分子分母的一阶倒数差，指数乘积有有限极限。",
+      "role": "primary",
+      "roleNote": "取对数控制指数与底数偏差，直接求幂指极限。"
     }
   ]
 }

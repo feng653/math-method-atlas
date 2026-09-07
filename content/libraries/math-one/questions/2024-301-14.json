@@ -12,7 +12,9 @@
     {
       "methodId": "hm-ode-separable",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 14 题：令 u=x+y 将微分方程变成可分离形式，并用初值确定积分常数。"
+      "note": "独立二次核对来源 第 3 页图 第 14 题：令 u=x+y 将微分方程变成可分离形式，并用初值确定积分常数。",
+      "role": "primary",
+      "roleNote": "代换后分离变量直接求初值解。"
     }
   ]
 }

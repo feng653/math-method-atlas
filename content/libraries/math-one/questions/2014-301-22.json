@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 22 题。按离散条件变量分情况混合两个均匀分布，分布函数须分支拼接。",
-      "methodId": "pr-event-total"
+      "methodId": "pr-event-total",
+      "role": "primary",
+      "roleNote": "按离散条件变量混合概率，直接求分段分布函数。"
     }
   ]
 }

@@ -11,7 +11,9 @@
     {
       "methodId": "hm-series-comparison",
       "verification": "verified",
-      "note": "独立方法关联复核：a_n 趋零而有界，|b_n|可和则也最终小于1，故 a_n²b_n² 被常数倍 |b_n| 支配，可用正项比较。"
+      "note": "独立方法关联复核：a_n 趋零而有界，|b_n|可和则也最终小于1，故 a_n²b_n² 被常数倍 |b_n| 支配，可用正项比较。",
+      "role": "primary",
+      "roleNote": "将平方乘积级数支配于可和正项，直接判定正确敛散命题。"
     }
   ]
 }

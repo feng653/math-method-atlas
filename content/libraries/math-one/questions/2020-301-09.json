@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 9 题。分母分别展开到二阶，一阶极点相消后保留常数项。",
       "verification": "verified",
-      "methodId": "hm-taylor-limit"
+      "methodId": "hm-taylor-limit",
+      "role": "primary",
+      "roleNote": "二阶展开消去一阶极点，直接得到商差极限。"
     }
   ]
 }

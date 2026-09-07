@@ -12,7 +12,9 @@
     {
       "methodId": "hm-equivalent-infinitesimal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 9 题：ln cos x 与 −x²/2 等价，极限为 −1/2。"
+      "note": "独立二次核对来源 第 2 页图 第 9 题：ln cos x 与 −x²/2 等价，极限为 −1/2。",
+      "role": "primary",
+      "roleNote": "等价替换直接给出所问商极限。"
     }
   ]
 }

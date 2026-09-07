@@ -11,12 +11,16 @@
     {
       "methodId": "pr-joint-marginal",
       "verification": "verified",
-      "note": "独立方法关联复核：指数可配方为−(y−x)²−x²；积分归一化求A与X边缘，再取密度比求条件密度。"
+      "note": "独立方法关联复核：指数可配方为−(y−x)²−x²；积分归一化求A与X边缘，再取密度比求条件密度。",
+      "role": "primary",
+      "roleNote": "积分归一并消去另一变量，直接求常数和边缘密度。"
     },
     {
       "methodId": "pr-joint-conditional",
       "verification": "verified",
-      "note": "独立方法关联复核：指数可配方为−(y−x)²−x²；积分归一化求A与X边缘，再取密度比求条件密度。"
+      "note": "独立方法关联复核：指数可配方为−(y−x)²−x²；积分归一化求A与X边缘，再取密度比求条件密度。",
+      "role": "primary",
+      "roleNote": "取联合与边缘密度之比，直接求条件密度。"
     }
   ]
 }

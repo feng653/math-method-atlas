@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 2 题。仅有极限零不能代替零点取值；可导蕴含连续，再由差商与根号量比较。",
       "verification": "verified",
-      "methodId": "hm-derivative-definition"
+      "methodId": "hm-derivative-definition",
+      "role": "primary",
+      "roleNote": "真实点值的差商直接判断可导与极限命题。"
     }
   ]
 }

@@ -11,7 +11,9 @@
     {
       "methodId": "hm-taylor-limit",
       "verification": "verified",
-      "note": "独立方法关联复核：展开 x−sin(ax) 后一次项须消失，再把三次首项与对数乘积比较，泰勒方法适用。"
+      "note": "独立方法关联复核：展开 x−sin(ax) 后一次项须消失，再把三次首项与对数乘积比较，泰勒方法适用。",
+      "role": "primary",
+      "roleNote": "消去低阶项并匹配首项系数，直接确定所求参数。"
     }
   ]
 }

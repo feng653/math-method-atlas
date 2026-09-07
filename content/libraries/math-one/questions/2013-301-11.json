@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 11 题。先求参数导数比，再对参数求导并除横坐标导数；指定点分母非零。",
-      "methodId": "hm-parametric-derivative"
+      "methodId": "hm-parametric-derivative",
+      "role": "primary",
+      "roleNote": "两次参数求导比直接算指定点二阶导。"
     }
   ]
 }

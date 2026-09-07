@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 15 题。解驻点方程后以 Hessian 行列式和首主元判定，不能把所有驻点当极值。",
       "verification": "verified",
-      "methodId": "hm-hessian-extrema"
+      "methodId": "hm-hessian-extrema",
+      "role": "primary",
+      "roleNote": "驻点与二阶判别直接确定各极值。"
     }
   ]
 }

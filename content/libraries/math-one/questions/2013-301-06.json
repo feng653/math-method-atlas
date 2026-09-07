@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 6 题。实对称矩阵可正交对角化；匹配目标谱的二阶不变量后参数平方项必须消失。",
-      "methodId": "la-eigen-symmetric"
+      "methodId": "la-eigen-symmetric",
+      "role": "primary",
+      "roleNote": "实对称谱及不变量匹配直接筛相似条件参数。"
     }
   ]
 }

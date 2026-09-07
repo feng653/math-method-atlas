@@ -12,7 +12,9 @@
     {
       "methodId": "hm-concavity-asymptote",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 1 题：二阶导数图的符号改变才产生拐点；接触零轴而不变号不计。"
+      "note": "独立二次核对来源 第 1 页图 第 1 题：二阶导数图的符号改变才产生拐点；接触零轴而不变号不计。",
+      "role": "primary",
+      "roleNote": "由二阶导变号直接判定拐点个数。"
     }
   ]
 }

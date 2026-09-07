@@ -12,12 +12,16 @@
     {
       "methodId": "pr-dist-normal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 8 题：独立正态线性组合仍正态，方差按系数平方相加。"
+      "note": "独立二次核对来源 第 2 页图 第 8 题：独立正态线性组合仍正态，方差按系数平方相加。",
+      "role": "primary",
+      "roleNote": "标准化正态概率等式直接确定阈值。"
     },
     {
       "methodId": "pr-moment-variance",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 8 题：独立正态线性组合仍正态，方差按系数平方相加。"
+      "note": "独立二次核对来源 第 2 页图 第 8 题：独立正态线性组合仍正态，方差按系数平方相加。",
+      "role": "supporting",
+      "roleNote": "先给两个线性组合的方差。"
     }
   ]
 }

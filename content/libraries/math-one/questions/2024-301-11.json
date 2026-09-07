@@ -12,12 +12,16 @@
     {
       "methodId": "hm-power-indeterminate",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 11 题：先对变幂取对数，再按所需三阶展开，最后用 exp u−1 与 u 等价。"
+      "note": "独立二次核对来源 第 3 页图 第 11 题：先对变幂取对数，再按所需三阶展开，最后用 exp u−1 与 u 等价。",
+      "role": "supporting",
+      "roleNote": "取对数是转成可展开表达式的中间变换。"
     },
     {
       "methodId": "hm-taylor-limit",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 11 题：先对变幂取对数，再按所需三阶展开，最后用 exp u−1 与 u 等价。"
+      "note": "独立二次核对来源 第 3 页图 第 11 题：先对变幂取对数，再按所需三阶展开，最后用 exp u−1 与 u 等价。",
+      "role": "primary",
+      "roleNote": "保留三阶主项直接解极限参数。"
     }
   ]
 }

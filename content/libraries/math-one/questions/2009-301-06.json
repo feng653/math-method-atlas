@@ -11,12 +11,16 @@
     {
       "methodId": "la-matrix-adjugate",
       "verification": "verified",
-      "note": "独立方法关联复核：交换两个二列块把反对角块矩阵化为块对角，交换符号为正，再求逆并用 adj(M)=det(M)M⁻¹。"
+      "note": "独立方法关联复核：交换两个二列块把反对角块矩阵化为块对角，交换符号为正，再求逆并用 adj(M)=det(M)M⁻¹。",
+      "role": "primary",
+      "roleNote": "由行列式与逆矩阵组合直接求目标伴随矩阵。"
     },
     {
       "methodId": "la-det-block",
       "verification": "verified",
-      "note": "独立方法关联复核：交换两个二列块把反对角块矩阵化为块对角，交换符号为正，再求逆并用 adj(M)=det(M)M⁻¹。"
+      "note": "独立方法关联复核：交换两个二列块把反对角块矩阵化为块对角，交换符号为正，再求逆并用 adj(M)=det(M)M⁻¹。",
+      "role": "supporting",
+      "roleNote": "分块行列式提供伴随公式所需的行列式因子。"
     }
   ]
 }

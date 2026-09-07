@@ -10,9 +10,18 @@
   },
   "methodLinks": [
     {
+      "methodId": "hm-ode-euler",
+      "verification": "verified",
+      "note": "独立渲染重看来源PDF第11页第18题：比值u=x/y>0，偏导组合为u²f″+uf′=1，附加条件给f(1)=1、f′(1)=2。取t=ln u、F(t)=f(e^t)，欧拉换元化为F″=1，F(0)=1、F′(0)=2，得f(u)=1+2ln u+(ln u)²/2；代回u²f″+uf′=1及初值均成立。正半轴满足不跨零条件。",
+      "role": "primary",
+      "roleNote": "对链式化出的欧拉初值方程作对数换元并积分，直接得到目标函数表达式。"
+    },
+    {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "原题第11页第18题：按比值变量求偏导。 独立复核：对比值中间变量应用多元链式法则，将偏微分关系化为一元常微分关系。"
+      "note": "原题第11页第18题：按比值变量求偏导。 独立复核：对比值中间变量应用多元链式法则，将偏微分关系化为一元常微分关系。",
+      "role": "supporting",
+      "roleNote": "链式偏导把条件化为常微分方程；求f还需解方程及初值。"
     }
   ]
 }

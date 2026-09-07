@@ -11,7 +11,9 @@
     {
       "methodId": "la-vector-coordinate",
       "verification": "verified",
-      "note": "独立方法关联复核：新基的每个向量在已缩放旧基下逐列解坐标，过渡矩阵方向与卡片 BC=D 一致。"
+      "note": "独立方法关联复核：新基的每个向量在已缩放旧基下逐列解坐标，过渡矩阵方向与卡片 BC=D 一致。",
+      "role": "primary",
+      "roleNote": "逐列求新基在旧基下的坐标，直接得到过渡矩阵。"
     }
   ]
 }

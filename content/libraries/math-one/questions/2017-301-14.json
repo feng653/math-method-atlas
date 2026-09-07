@@ -12,12 +12,16 @@
     {
       "methodId": "pr-moment-expectation",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 14 题：正态混合分布的期望按权重线性组合，均值为 2。"
+      "note": "独立二次核对来源 第 3 页图 第 14 题：正态混合分布的期望按权重线性组合，均值为 2。",
+      "role": "primary",
+      "roleNote": "按混合权重直接求期望。"
     },
     {
       "methodId": "pr-dist-normal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 14 题：正态混合分布的期望按权重线性组合，均值为 2。"
+      "note": "独立二次核对来源 第 3 页图 第 14 题：正态混合分布的期望按权重线性组合，均值为 2。",
+      "role": "supporting",
+      "roleNote": "识别两个混合分量的均值，供期望加权。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 8 题。独立正态的差仍正态，均值抵消而方差相加，标准化后判断参数依赖。",
       "methodId": "pr-dist-normal",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "差变量的正态分布直接判断概率依赖哪些参数。"
     }
   ],
   "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"

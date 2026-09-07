@@ -11,7 +11,9 @@
     {
       "methodId": "la-quadratic-orthogonal",
       "verification": "verified",
-      "note": "独立方法关联复核：二次曲面实对称系数矩阵的谱由正交标准形给出，可用特征多项式匹配参数。"
+      "note": "独立方法关联复核：二次曲面实对称系数矩阵的谱由正交标准形给出，可用特征多项式匹配参数。",
+      "role": "primary",
+      "roleNote": "由正交标准形谱匹配原矩阵，直接确定曲面参数。"
     }
   ]
 }

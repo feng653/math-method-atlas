@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 12 题。空间圆按方位角参数化，平面约束确定第三坐标，方向与逆时针一致。",
-      "methodId": "hm-line-second-kind"
+      "methodId": "hm-line-second-kind",
+      "role": "primary",
+      "roleNote": "按定向空间圆参数化，直接计算线积分。"
     }
   ]
 }

@@ -11,7 +11,9 @@
     {
       "methodId": "pr-dist-cdf",
       "verification": "verified",
-      "note": "独立方法关联复核：所求点质量是CDF在该点的跳跃，使用函数值与左极限之差。"
+      "note": "独立方法关联复核：所求点质量是CDF在该点的跳跃，使用函数值与左极限之差。",
+      "role": "primary",
+      "roleNote": "函数值减左极限直接给所求点质量。"
     }
   ]
 }

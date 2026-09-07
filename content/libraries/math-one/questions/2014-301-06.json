@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 6 题。原组独立保证变换后两列独立；第三向量为零提供逆命题反例。",
-      "methodId": "la-vector-dependence"
+      "methodId": "la-vector-dependence",
+      "role": "primary",
+      "roleNote": "考察变换后的独立列与零向量反例，直接判断无关命题。"
     }
   ]
 }

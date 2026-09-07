@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 21 题，第 4 页。已看矩阵页图；实矩阵与其格拉姆矩阵同秩，求参数后对称正交对角化。",
-      "methodId": "la-quadratic-orthogonal"
+      "methodId": "la-quadratic-orthogonal",
+      "role": "primary",
+      "roleNote": "参数确定后的实对称矩阵正交对角化，直接给二次型标准形。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

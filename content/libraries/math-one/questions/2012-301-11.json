@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 11 题。逐变量偏导组成梯度，在给定非零分母点代入。",
-      "methodId": "hm-direction-gradient"
+      "methodId": "hm-direction-gradient",
+      "role": "primary",
+      "roleNote": "逐偏导并代给定点，直接得到梯度向量。"
     }
   ]
 }

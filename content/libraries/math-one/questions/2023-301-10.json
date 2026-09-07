@@ -12,7 +12,9 @@
     {
       "methodId": "pr-estimate-unbiased",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：先确定正态样本差的分布，再求绝对值期望以匹配无偏系数。"
+      "note": "主agent独立重读题面复核：先确定正态样本差的分布，再求绝对值期望以匹配无偏系数。",
+      "role": "primary",
+      "roleNote": "匹配期望直接确定无偏系数。"
     }
   ]
 }

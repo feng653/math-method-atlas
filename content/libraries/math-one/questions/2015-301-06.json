@@ -12,7 +12,9 @@
     {
       "methodId": "la-quadratic-orthogonal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 6 题：更换正交特征向量列次序会对应重排对角项，变号不改变特征值。"
+      "note": "独立二次核对来源 第 2 页图 第 6 题：更换正交特征向量列次序会对应重排对角项，变号不改变特征值。",
+      "role": "primary",
+      "roleNote": "按正交基换序直接确定新二次型系数。"
     }
   ]
 }

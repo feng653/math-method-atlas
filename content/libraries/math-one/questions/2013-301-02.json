@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 2 题。定义函数梯度在指定点非零，用梯度为法向量写切平面。",
-      "methodId": "hm-tangent-plane"
+      "methodId": "hm-tangent-plane",
+      "role": "primary",
+      "roleNote": "非零梯度给法向量，直接写目标切平面。"
     }
   ]
 }

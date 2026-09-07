@@ -10,14 +10,25 @@
   },
   "methodLinks": [
     {
+      "methodId": "pr-moment-expectation",
+      "verification": "verified",
+      "note": "独立重看新东方第2图第8题，并二审已补强的期望线性卡：不相关给E(XY)=EX·EY=2，DX=3与EX=2给E(X²)=7。先代数展开X(X+Y−2)，逐项取期望得到7+2−4=5。使用有限矩的线性不要求独立，乘积拆分仅由题设不相关条件保证。",
+      "role": "primary",
+      "roleNote": "把目标多项式展开并线性组合已知矩，直接求最终期望5。"
+    },
+    {
       "methodId": "pr-moment-covariance",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 8 题：题面仅不相关；由协方差为零算混合矩，E(X²)=Var(X)+E(X)²，无需独立。"
+      "note": "独立二次核对来源 第 2 页图 第 8 题：题面仅不相关；由协方差为零算混合矩，E(X²)=Var(X)+E(X)²，无需独立。",
+      "role": "supporting",
+      "roleNote": "不相关条件用于求中间混合矩 EXY，尚须组合目标期望。"
     },
     {
       "methodId": "pr-moment-variance",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 8 题：题面仅不相关；由协方差为零算混合矩，E(X²)=Var(X)+E(X)²，无需独立。"
+      "note": "独立二次核对来源 第 2 页图 第 8 题：题面仅不相关；由协方差为零算混合矩，E(X²)=Var(X)+E(X)²，无需独立。",
+      "role": "supporting",
+      "roleNote": "由方差还原 EX²，是目标组合期望的一项中间量。"
     }
   ]
 }

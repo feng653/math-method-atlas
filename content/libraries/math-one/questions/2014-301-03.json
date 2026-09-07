@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 3 题。投影域由半圆和直线组成，分区换次序；极坐标还须保留径向雅可比。",
-      "methodId": "hm-double-cartesian"
+      "methodId": "hm-double-cartesian",
+      "role": "primary",
+      "roleNote": "重新分区描述积分域，直接判断换序表达式。"
     }
   ]
 }

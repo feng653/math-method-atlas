@@ -12,7 +12,9 @@
     {
       "methodId": "pr-sample-t-f",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：样本方差各除对应总体方差，利用独立卡方比并保留自由度n−1、m−1。"
+      "note": "主agent独立重读题面复核：样本方差各除对应总体方差，利用独立卡方比并保留自由度n−1、m−1。",
+      "role": "primary",
+      "roleNote": "独立卡方比直接识别所求分布。"
     }
   ]
 }

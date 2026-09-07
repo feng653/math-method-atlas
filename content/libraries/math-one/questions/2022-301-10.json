@@ -9,9 +9,18 @@
   },
   "methodLinks": [
     {
+      "methodId": "pr-moment-correlation",
+      "verification": "verified",
+      "note": "独立重读现源第10题：X为标准正态，Y在X=x条件下均值x、方差1。塔式给EY=0、EY²=E(1+X²)=2、EXY=E[X·E(Y|X)]=1；故DX=1、DY=2且均严格正，Cov(X,Y)=1，标准化得相关系数1/√2。没有把X与Y当独立。",
+      "role": "primary",
+      "roleNote": "在条件矩已求出后标准化协方差，直接给所问相关系数1/√2。"
+    },
+    {
       "methodId": "pr-moment-total-expectation",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：通过条件均值和条件二阶矩计算所需混合矩，再标准化协方差。"
+      "note": "主agent独立重读题面复核：通过条件均值和条件二阶矩计算所需混合矩，再标准化协方差。",
+      "role": "supporting",
+      "roleNote": "条件期望用于求混合矩；题目最终相关系数还需标准化协方差。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"

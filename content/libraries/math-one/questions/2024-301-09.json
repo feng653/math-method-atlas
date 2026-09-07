@@ -12,12 +12,16 @@
     {
       "methodId": "pr-moment-total-expectation",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 9 题：先算 E(Y|X) 再积分得均值与 E(XY)，由此计算协方差。"
+      "note": "独立二次核对来源 第 3 页图 第 9 题：先算 E(Y|X) 再积分得均值与 E(XY)，由此计算协方差。",
+      "role": "supporting",
+      "roleNote": "由条件分布先求边缘矩与混合矩。"
     },
     {
       "methodId": "pr-moment-covariance",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 9 题：先算 E(Y|X) 再积分得均值与 E(XY)，由此计算协方差。"
+      "note": "独立二次核对来源 第 3 页图 第 9 题：先算 E(Y|X) 再积分得均值与 E(XY)，由此计算协方差。",
+      "role": "primary",
+      "roleNote": "直接计算目标协方差。"
     }
   ]
 }

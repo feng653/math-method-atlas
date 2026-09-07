@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 17 题。系数比控制收敛域，域内逐项求导把递推转成和函数的一阶方程。",
       "verification": "verified",
-      "methodId": "hm-power-sum"
+      "methodId": "hm-power-sum",
+      "role": "primary",
+      "roleNote": "由递推转和函数方程，直接构成求和函数的路线。"
     }
   ]
 }

@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 18 题。参数切向量给切线截距距离约束，从正导数选分支，再以参数面积积分。",
-      "methodId": "hm-ode-modeling"
+      "methodId": "hm-ode-modeling",
+      "role": "primary",
+      "roleNote": "把切线距离约束转为变化率方程，直接求函数表达式小问。"
     }
   ]
 }

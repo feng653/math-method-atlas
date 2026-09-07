@@ -11,7 +11,9 @@
     {
       "methodId": "la-matrix-product",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：利用题设可逆矩阵整理乘法，严格保持左右顺序，不能约掉非相邻因子。"
+      "note": "主agent独立重读题面复核：利用题设可逆矩阵整理乘法，严格保持左右顺序，不能约掉非相邻因子。",
+      "role": "primary",
+      "roleNote": "保序矩阵整理直接解矩阵关系。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"

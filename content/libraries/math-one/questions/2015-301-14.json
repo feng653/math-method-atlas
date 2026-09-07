@@ -12,12 +12,16 @@
     {
       "methodId": "pr-joint-independence",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 14 题：联合正态且零相关给独立；中心化后两个半轴事件相乘。"
+      "note": "独立二次核对来源 第 2 页图 第 14 题：联合正态且零相关给独立；中心化后两个半轴事件相乘。",
+      "role": "supporting",
+      "roleNote": "把联合正态零相关转换为独立，准备拆分事件概率。"
     },
     {
       "methodId": "pr-dist-normal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 14 题：联合正态且零相关给独立；中心化后两个半轴事件相乘。"
+      "note": "独立二次核对来源 第 2 页图 第 14 题：联合正态且零相关给独立；中心化后两个半轴事件相乘。",
+      "role": "primary",
+      "roleNote": "中心化与正态对称性直接计算所问象限概率。"
     }
   ]
 }

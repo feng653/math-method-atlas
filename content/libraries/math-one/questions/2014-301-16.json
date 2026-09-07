@@ -11,7 +11,16 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 16 题。隐式偏导分母为正定二次式且原曲线不经过原点，可合法求导并分类驻点。",
-      "methodId": "hm-implicit-derivative"
+      "methodId": "hm-implicit-derivative",
+      "role": "supporting",
+      "roleNote": "隐式求导提供驻点及二阶信息，极值结论还需符号或二阶判别。"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "由唯一驻点前后导数变号直接判断极值类型与极值。",
+      "note": "独立重读第16题：原曲线上 y<0，隐式偏导分母 D=(x+y)²+2y²>0。导数为 −y(y+2x)/D，驻点只有 (1,−2)。设 h=y+2x，则驻点 h′=2，故 h 从负变正，导数同样从负变正；唯一极小值 −2，无其他驻点或不可导点，不存在极大值。"
     }
   ]
 }

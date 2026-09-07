@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 5 题。交换行列整理成两个二阶块，追踪交换奇偶后行列式为块行列式乘积。",
-      "methodId": "la-det-block"
+      "methodId": "la-det-block",
+      "role": "primary",
+      "roleNote": "按交换符号化为块三角乘积，直接计算目标行列式。"
     }
   ]
 }

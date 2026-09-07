@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 15 题，第 7 页。已读PDF确认上下限及分母；先确认无穷型，再用变上限求导和指数二阶展开。",
-      "methodId": "hm-lhopital"
+      "methodId": "hm-lhopital",
+      "role": "primary",
+      "roleNote": "确认无穷型并求导化简，直接计算积分商极限。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 9 题，第 2 页。页图确认指数括号范围；零点隐变量为一，所给数列是该点的导数差商。",
-      "methodId": "hm-derivative-definition"
+      "methodId": "hm-derivative-definition",
+      "role": "primary",
+      "roleNote": "将给定数列差商识别为隐函数在指定点导数，直接求极限。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

@@ -11,7 +11,9 @@
     {
       "methodId": "hm-ode-undetermined",
       "verification": "verified",
-      "note": "独立方法关联复核：右端指数与特征根重合一次，应给待定多项式乘x，符合共振修正。"
+      "note": "独立方法关联复核：右端指数与特征根重合一次，应给待定多项式乘x，符合共振修正。",
+      "role": "primary",
+      "roleNote": "按共振重数修正特解形式，直接解非齐次方程。"
     }
   ]
 }

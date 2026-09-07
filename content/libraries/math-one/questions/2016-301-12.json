@@ -12,7 +12,9 @@
     {
       "methodId": "hm-taylor-expansion",
       "verification": "verified",
-      "note": "独立二次核对来源 第 6 页图 第 12 题：分别展开 arctan x 与有理函数至三阶，由三阶导值确定系数。"
+      "note": "独立二次核对来源 第 6 页图 第 12 题：分别展开 arctan x 与有理函数至三阶，由三阶导值确定系数。",
+      "role": "primary",
+      "roleNote": "读取三阶系数直接解出高阶导条件下的参数。"
     }
   ]
 }

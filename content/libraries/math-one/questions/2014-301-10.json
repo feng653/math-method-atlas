@@ -11,7 +11,16 @@
     {
       "methodId": "hm-newton-leibniz",
       "verification": "verified",
-      "note": "独立复核：来源第 10 题。原定义域卡不处理奇性周期；改用积分恢复函数，以奇性确定常数后周期归约。"
+      "note": "独立复核：来源第 10 题。原定义域卡不处理奇性周期；改用积分恢复函数，以奇性确定常数后周期归约。",
+      "role": "supporting",
+      "roleNote": "积分恢复局部函数，所问远端取值还依赖奇性及周期归约。"
+    },
+    {
+      "methodId": "hm-function-properties",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "用奇性确定零点值，再周期归约直接求指定远端函数值。",
+      "note": "独立重读第10题：奇性给 f(0)=0，局部积分得 f(1)=−1；周期4使 f(7)=f(−1)，再由奇性得 f(7)=1。定义域在归约及反射点均合法；不将局部二次表达式直接延伸到全实轴。"
     }
   ]
 }

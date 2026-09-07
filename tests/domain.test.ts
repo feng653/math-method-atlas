@@ -57,6 +57,15 @@ describe('content integrity', () => {
     data.questions[0].methodLinks[0] = { methodId: 'equivalent', verification: 'pending', note: '' };
     expect(validateAtlas(data)).toEqual([]);
   });
+  it('requires evidence for role classification and keeps role separate from verification', () => {
+    const data = fixture();
+    const link = data.questions[0].methodLinks[0];
+    link.role = 'primary';
+    expect(validateAtlas(data).join(' ')).toContain('roleNote');
+    link.roleNote = '直接求出所问极限';
+    link.verification = 'pending';
+    expect(validateAtlas(data)).toEqual([]);
+  });
 
   it('rejects duplicate links to avoid inflated counts', () => {
     const data = fixture();

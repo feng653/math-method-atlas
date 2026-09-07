@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 16 题。原点为场的奇点，直接沿圆周参数化积分，不能在含原点圆盘上直接套 Green。",
       "verification": "verified",
-      "methodId": "hm-line-second-kind"
+      "methodId": "hm-line-second-kind",
+      "role": "primary",
+      "roleNote": "沿闭曲线直接参数积分，完成含内部奇点的积分求值。"
     }
   ]
 }

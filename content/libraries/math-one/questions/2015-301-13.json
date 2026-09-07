@@ -12,7 +12,9 @@
     {
       "methodId": "la-det-expansion",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 13 题：按稀疏列展开并保留余子式符号，得到带状行列式递推。"
+      "note": "独立二次核对来源 第 2 页图 第 13 题：按稀疏列展开并保留余子式符号，得到带状行列式递推。",
+      "role": "primary",
+      "roleNote": "稀疏展开递推直接求行列式。"
     }
   ]
 }

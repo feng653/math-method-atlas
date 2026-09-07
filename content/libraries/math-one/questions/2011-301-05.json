@@ -12,7 +12,9 @@
     {
       "methodId": "la-matrix-elementary",
       "verification": "verified",
-      "note": "独立视觉核对合订PDF第33页：先第二列加第一列，再交换第二、三行，与P2一致；由P2 A P1=I反解，修复旧HTML行号错误。"
+      "note": "独立视觉核对合订PDF第33页：先第二列加第一列，再交换第二、三行，与P2一致；由P2 A P1=I反解，修复旧HTML行号错误。",
+      "role": "primary",
+      "roleNote": "将指定行列操作写为左右初等矩阵，直接反解A。"
     }
   ],
   "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"

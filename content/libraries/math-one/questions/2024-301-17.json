@@ -12,7 +12,9 @@
     {
       "methodId": "hm-double-cartesian",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 17 题：按 x 固定切片拆圆外区域，上下限来自单位圆与外边界。"
+      "note": "独立二次核对来源 第 4 页图 第 17 题：按 x 固定切片拆圆外区域，上下限来自单位圆与外边界。",
+      "role": "primary",
+      "roleNote": "累次积分直接计算题给二重积分。"
     }
   ]
 }

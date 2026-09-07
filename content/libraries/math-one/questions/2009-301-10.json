@@ -11,12 +11,16 @@
     {
       "methodId": "hm-ode-characteristic",
       "verification": "verified",
-      "note": "独立方法关联复核：齐次解的指数和一次因子确定重根1，非齐次多项式右端可作待定系数，再代初值。"
+      "note": "独立方法关联复核：齐次解的指数和一次因子确定重根1，非齐次多项式右端可作待定系数，再代初值。",
+      "role": "supporting",
+      "roleNote": "从已给齐次解识别重根及方程系数，供非齐次初值求解。"
     },
     {
       "methodId": "hm-ode-undetermined",
       "verification": "verified",
-      "note": "独立方法关联复核：齐次解的指数和一次因子确定重根1，非齐次多项式右端可作待定系数，再代初值。"
+      "note": "独立方法关联复核：齐次解的指数和一次因子确定重根1，非齐次多项式右端可作待定系数，再代初值。",
+      "role": "primary",
+      "roleNote": "构造多项式特解并代初值，直接求目标非齐次解。"
     }
   ]
 }

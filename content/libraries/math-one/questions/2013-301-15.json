@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 15 题。变限积分作为分部因子，其导数恢复被积函数；零端需检验边界项极限。",
-      "methodId": "hm-integration-by-parts"
+      "methodId": "hm-integration-by-parts",
+      "role": "primary",
+      "roleNote": "以变限积分为分部因子并核边界，直接求嵌套积分。"
     }
   ]
 }

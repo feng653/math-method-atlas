@@ -11,7 +11,9 @@
     {
       "methodId": "hm-ratio-root-test",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：对阶乘通项取相邻比，先确定临界参数，再单独处理边界。"
+      "note": "主agent独立重读题面复核：对阶乘通项取相邻比，先确定临界参数，再单独处理边界。",
+      "role": "primary",
+      "roleNote": "比值及临界点检验直接判级数参数。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"

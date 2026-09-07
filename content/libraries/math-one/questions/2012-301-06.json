@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 6 题。同一重特征子空间内换基不改变对应特征值；变换仍可逆。",
-      "methodId": "la-eigen-diagonalization"
+      "methodId": "la-eigen-diagonalization",
+      "role": "primary",
+      "roleNote": "在重特征子空间内换基，直接判断保持对角形式的变换。"
     }
   ]
 }

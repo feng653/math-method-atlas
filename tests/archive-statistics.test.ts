@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { getArchiveStats, getPaperStats } from '../src/domain/archive-statistics';
+import { getMethodStats } from '../src/domain/statistics';
 import { examScopeSchema, type Paper, type Question } from '../src/domain/schema';
 
 const scope = { exam: '301', startYear: 2020, endYear: 2022 };
@@ -45,5 +46,14 @@ describe('archive coverage', () => {
       startYear: undefined, endYear: undefined, target: { expectedPapers: 3, completePapers: 0 } });
     expect(getArchiveStats([], []).target).toBeUndefined();
     expect(examScopeSchema.safeParse({ ...scope, startYear: 2024 }).success).toBe(false);
+  });
+  it('counts verified supporting methods but excludes pending primary methods', () => {
+    const pending = question(2020, 1, false);
+    pending.methodLinks[0].role = 'primary';
+    const verified = question(2020, 2);
+    verified.methodLinks[0].role = 'supporting';
+    expect(getMethodStats('method', [pending, verified]).questionCount).toBe(1);
+    expect(getPaperStats(paper(2020), [pending, verified])).toMatchObject({ questionsWithVerifiedLinks: 1,
+      roleCounts: { primary: 1, supporting: 1, unclassified: 0 } });
   });
 });

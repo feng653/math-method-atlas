@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 23 题。独立正态差的方差相加；已知零均值的似然给平方和估计，再直接取期望。",
-      "methodId": "pr-estimate-mle"
+      "methodId": "pr-estimate-mle",
+      "role": "primary",
+      "roleNote": "零均值正态差样本的似然极值，直接求尺度估计量。"
     }
   ]
 }

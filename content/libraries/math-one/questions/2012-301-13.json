@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 13 题。单位向量方向映到零，其正交补保持不变，所以像空间二维。",
-      "methodId": "la-matrix-rank"
+      "methodId": "la-matrix-rank",
+      "role": "primary",
+      "roleNote": "分析零方向和保留子空间，直接求像空间维数。"
     }
   ]
 }

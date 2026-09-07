@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 3 题。切向量与法向量垂直，合并全微分近似后用向量正交关系求比例极限。",
       "verification": "verified",
-      "methodId": "hm-partial-total-differential"
+      "methodId": "hm-partial-total-differential",
+      "role": "primary",
+      "roleNote": "用线性增量结合正交条件直接求比例极限。"
     }
   ]
 }

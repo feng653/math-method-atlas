@@ -12,7 +12,9 @@
     {
       "methodId": "hm-power-indeterminate",
       "note": "独立复核：来源第 9 题。第二来源保留 sin(kx) 中的参数；底数在零点附近为正，取对数后用一阶等价。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "取对数并求指数极限，直接确定所问参数。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

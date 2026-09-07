@@ -11,7 +11,9 @@
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "独立方法关联复核：先对y再对x求混合偏导，只需内函数g一阶导；可导极值点g′(1)=0消去项。"
+      "note": "独立方法关联复核：先对y再对x求混合偏导，只需内函数g一阶导；可导极值点g′(1)=0消去项。",
+      "role": "primary",
+      "roleNote": "复合混合偏导加极值点一阶导为零，直接化简所求关系。"
     }
   ]
 }

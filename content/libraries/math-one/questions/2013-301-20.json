@@ -11,7 +11,23 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 20 题。将未知矩阵分量展开，交换子等式成为线性方程组，并用迹零筛参数。",
-      "methodId": "la-matrix-product"
+      "methodId": "la-matrix-product",
+      "role": "supporting",
+      "roleNote": "按分量展开交换子，把问题转为线性方程组；参数相容与通解仍需消元。"
+    },
+    {
+      "methodId": "la-system-parameter",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "交换子分量系统的相容条件直接确定所问 a、b。",
+      "note": "独立重读第20题并核新东方第4图矩阵行列。设 C 的两行为 (p,q)、(r,s)，分量式给 ar−q=0、q+a(s−p)=1、p−r−s=1、q−ar=b。第一与第四式给 b=0，再消元给 −a=1，故仅 a=−1、b=0 相容；未约去可能为零的参数。"
+    },
+    {
+      "methodId": "la-system-general",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "相容后用特解加齐次解直接给出全部矩阵 C。",
+      "note": "独立消元核算：在 a=−1、b=0 时，所有 C 的两行为 (s+r+1,−r)、(r,s)，r、s任意。它等于特解 [[1,0],[0,0]] 加 r[[1,−1],[1,0]] 加 sI；两个齐次方向独立，代回交换子恒等于题给 B。"
     }
   ]
 }

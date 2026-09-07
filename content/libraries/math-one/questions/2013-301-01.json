@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 1 题。反正切三阶展开抵消一次项，首项为三阶且正系数。",
-      "methodId": "hm-taylor-limit"
+      "methodId": "hm-taylor-limit",
+      "role": "primary",
+      "roleNote": "展开并找抵消后的最低非零项，直接确定无穷小阶。"
     }
   ]
 }

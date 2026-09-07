@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 20 题，第 4 页。循环参数矩阵行列式筛奇异实参数；增广消元检验一致性并找自由变量。",
-      "methodId": "la-system-parameter"
+      "methodId": "la-system-parameter",
+      "role": "primary",
+      "roleNote": "按奇异参数分支检验相容性并求自由变量，直接分类方程组解。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

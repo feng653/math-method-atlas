@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 3 题。以距离平方为阶的有界比值给出小于距离的一阶余项；方向路径用于反证其他选项。",
-      "methodId": "hm-multivariable-limit"
+      "methodId": "hm-multivariable-limit",
+      "role": "primary",
+      "roleNote": "统一距离估计及反例路径直接判断给定连续性命题。"
     }
   ]
 }

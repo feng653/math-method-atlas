@@ -12,7 +12,9 @@
     {
       "methodId": "hm-improper-integral",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 1 题：分别在零点与无穷远作幂函数比较，两端可积条件都要满足。"
+      "note": "独立二次核对来源 第 1 页图 第 1 题：分别在零点与无穷远作幂函数比较，两端可积条件都要满足。",
+      "role": "primary",
+      "roleNote": "两端比较直接给反常积分收敛的参数条件。"
     }
   ]
 }

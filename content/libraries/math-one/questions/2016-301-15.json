@@ -12,7 +12,9 @@
     {
       "methodId": "hm-double-polar",
       "verification": "verified",
-      "note": "独立二次核对来源 第 7 页图 第 15 题：题面已给极坐标区域，代入 x=r cosθ 并计面积因子 r。"
+      "note": "独立二次核对来源 第 7 页图 第 15 题：题面已给极坐标区域，代入 x=r cosθ 并计面积因子 r。",
+      "role": "primary",
+      "roleNote": "题给极域内直接计算二重积分。"
     }
   ]
 }

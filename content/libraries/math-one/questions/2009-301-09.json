@@ -12,7 +12,9 @@
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "独立查看高校托管文登PDF第9页实际题面，明确给出二阶连续偏导。对z=f(x,xy)先取zx=f1+yf2，再对y求导得xf12+f2+xyf22；内层光滑且外层C²，链式关联适用。"
+      "note": "独立查看高校托管文登PDF第9页实际题面，明确给出二阶连续偏导。对z=f(x,xy)先取zx=f1+yf2，再对y求导得xf12+f2+xyf22；内层光滑且外层C²，链式关联适用。",
+      "role": "primary",
+      "roleNote": "两次复合求导直接给所求混合偏导。"
     }
   ],
   "sourceNote": "2026-09-08独立渲染核对PDF第9页，题面明确二阶连续偏导，解决旧社区转录遗漏。来源为浙江科技大学高校域名托管的文登试题分析，不冒称考试主管部门官方发布。"

@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 22 题，第 4 页。已看联合表并区分行X列Y；协方差双线性展开后按表求矩。",
-      "methodId": "pr-moment-covariance"
+      "methodId": "pr-moment-covariance",
+      "role": "primary",
+      "roleNote": "按联合表算矩并双线性展开，直接算目标协方差。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

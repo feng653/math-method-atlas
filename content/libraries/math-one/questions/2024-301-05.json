@@ -12,7 +12,9 @@
     {
       "methodId": "la-system-consistency",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 5 题：图中三平面共线，系数秩与增广秩均为 2，系统相容且有自由元。"
+      "note": "独立二次核对来源 第 2 页图 第 5 题：图中三平面共线，系数秩与增广秩均为 2，系统相容且有自由元。",
+      "role": "primary",
+      "roleNote": "系统秩直接判断三平面公共解。"
     }
   ]
 }

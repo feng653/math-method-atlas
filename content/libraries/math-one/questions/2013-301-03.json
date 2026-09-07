@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 3 题。正弦级数对应长度一的奇延拓，先按周期归约再按奇性确定符号。",
-      "methodId": "hm-fourier-half-range"
+      "methodId": "hm-fourier-half-range",
+      "role": "primary",
+      "roleNote": "奇延拓和周期归约直接确定正弦级数在指定点的值。"
     }
   ]
 }

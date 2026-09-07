@@ -12,12 +12,16 @@
     {
       "methodId": "hm-direction-gradient",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 17 题：单位方向最大方向导数等于梯度模，椭圆约束下对梯度模平方用乘子法。"
+      "note": "独立二次核对来源 第 3 页图 第 17 题：单位方向最大方向导数等于梯度模，椭圆约束下对梯度模平方用乘子法。",
+      "role": "supporting",
+      "roleNote": "把方向最大值转成梯度模，供约束优化使用。"
     },
     {
       "methodId": "hm-lagrange-multipliers",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 17 题：单位方向最大方向导数等于梯度模，椭圆约束下对梯度模平方用乘子法。"
+      "note": "独立二次核对来源 第 3 页图 第 17 题：单位方向最大方向导数等于梯度模，椭圆约束下对梯度模平方用乘子法。",
+      "role": "primary",
+      "roleNote": "在椭圆上优化梯度模平方，直接求最终最大值。"
     }
   ]
 }

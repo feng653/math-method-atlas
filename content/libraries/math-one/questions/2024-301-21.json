@@ -12,12 +12,16 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "独立二次核对来源 第 5 页图 第 21 题：把递推列向量写为矩阵幂，在特征基中计算并用矩阵乘法还原。"
+      "note": "独立二次核对来源 第 5 页图 第 21 题：把递推列向量写为矩阵幂，在特征基中计算并用矩阵乘法还原。",
+      "role": "primary",
+      "roleNote": "直接求题目要求的矩阵幂。"
     },
     {
       "methodId": "la-matrix-product",
       "verification": "verified",
-      "note": "独立二次核对来源 第 5 页图 第 21 题：把递推列向量写为矩阵幂，在特征基中计算并用矩阵乘法还原。"
+      "note": "独立二次核对来源 第 5 页图 第 21 题：把递推列向量写为矩阵幂，在特征基中计算并用矩阵乘法还原。",
+      "role": "primary",
+      "roleNote": "写递推矩阵并乘初始向量直接恢复所求数列。"
     }
   ]
 }

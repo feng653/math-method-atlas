@@ -12,7 +12,9 @@
     {
       "methodId": "la-matrix-rank",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 13 题：可逆基矩阵右乘不改变矩阵秩。"
+      "note": "独立二次核对来源 第 3 页图 第 13 题：可逆基矩阵右乘不改变矩阵秩。",
+      "role": "primary",
+      "roleNote": "可逆乘积不变秩直接给所问秩。"
     }
   ]
 }

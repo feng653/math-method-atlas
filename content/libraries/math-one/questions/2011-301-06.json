@@ -11,12 +11,16 @@
     {
       "methodId": "la-matrix-adjugate",
       "verification": "verified",
-      "note": "独立方法关联复核：给定核维数1推出rank(A)=3，adj(A)秩1，且其核包含A的像；挑选3个独立列作基础解系。"
+      "note": "独立方法关联复核：给定核维数1推出rank(A)=3，adj(A)秩1，且其核包含A的像；挑选3个独立列作基础解系。",
+      "role": "supporting",
+      "roleNote": "伴随秩及A的像包含于其核，为基础解系提供候选向量。"
     },
     {
       "methodId": "la-system-homogeneous",
       "verification": "verified",
-      "note": "独立方法关联复核：给定核维数1推出rank(A)=3，adj(A)秩1，且其核包含A的像；挑选3个独立列作基础解系。"
+      "note": "独立方法关联复核：给定核维数1推出rank(A)=3，adj(A)秩1，且其核包含A的像；挑选3个独立列作基础解系。",
+      "role": "primary",
+      "roleNote": "按核维数选取独立列，直接判定伴随方程的基础解系。"
     }
   ]
 }

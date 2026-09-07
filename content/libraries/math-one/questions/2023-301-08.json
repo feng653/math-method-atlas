@@ -12,7 +12,9 @@
     {
       "methodId": "pr-moment-expectation",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：按离散分布求绝对偏差，先按绝对值符号改变处分开求和。"
+      "note": "主agent独立重读题面复核：按离散分布求绝对偏差，先按绝对值符号改变处分开求和。",
+      "role": "primary",
+      "roleNote": "按离散概率求和直接求绝对偏差。"
     }
   ]
 }

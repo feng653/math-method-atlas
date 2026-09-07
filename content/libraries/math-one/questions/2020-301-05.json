@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 5 题。初等列变换写成右乘可逆矩阵，利用其逆矩阵判断等式方向。",
       "verification": "verified",
-      "methodId": "la-matrix-elementary"
+      "methodId": "la-matrix-elementary",
+      "role": "primary",
+      "roleNote": "列变换的右乘关系直接判选项等式方向。"
     }
   ]
 }

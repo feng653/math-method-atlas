@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 22 题。分段映射产生两个原子及连续区间；用原像事件求分布，不能只用连续换元密度。",
-      "methodId": "pr-dist-transform"
+      "methodId": "pr-dist-transform",
+      "role": "primary",
+      "roleNote": "逐分支求原像概率并保留原子，直接确定变换分布。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "methodId": "hm-fourier-half-range",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：余弦展开对应偶延拓；利用端点或半周期求和隔离偶数项。"
+      "note": "主agent独立重读题面复核：余弦展开对应偶延拓；利用端点或半周期求和隔离偶数项。",
+      "role": "primary",
+      "roleNote": "余弦展开及系数组合直接给目标和。"
     }
   ]
 }

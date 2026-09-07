@@ -28,7 +28,7 @@ ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。
 | Method | id、libraryId、chapterId、title、summary、conditions:string[]、steps:string[]、formula:string、pitfalls:string[]、example:{prompt,solution}、relatedIds:string[]、topicIds:string[]、status:draft/reviewed |
 | Paper | id、libraryId、year、exam、title、source:{url,page?}、status:indexed/partial/complete；目录存在不代表题目已完整收录 |
 | Question | id、libraryId、paperId、number:string、summary、source:{url,page?}、methodLinks |
-| MethodLink | methodId、verification:pending/verified、note:string；verified 必须有可追溯来源及非空核验说明 |
+| MethodLink | methodId、verification:pending/verified、note:string；verified 必须有可追溯来源及非空核验说明；role/roleNote独立记录主辅作用，省略按未分类 |
 
 具体类型从 `src/domain/schema.ts` 的 Zod schema 推导，禁止前端另建相似结构。课纲覆盖按独立 syllabusTopics 的 ID 计算；来源核验状态与方法审校状态分别展示。频次逐 methodLink 核验，不把整题的有来源误认为所有方法关联正确。历史真题原文只有来源/许可足以支持公开转载时才入库；否则保存来源入口和原创摘要。自编例题明确标注，不能计入考试次数。
 

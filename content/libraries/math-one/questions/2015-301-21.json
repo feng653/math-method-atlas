@@ -12,12 +12,16 @@
     {
       "methodId": "la-eigen-similarity",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 21 题：由相似不变量求参数，再对角化求满足相似关系的变换矩阵。"
+      "note": "独立二次核对来源 第 4 页图 第 21 题：由相似不变量求参数，再对角化求满足相似关系的变换矩阵。",
+      "role": "primary",
+      "roleNote": "第一问利用相似不变量直接确定参数。"
     },
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 21 题：由相似不变量求参数，再对角化求满足相似关系的变换矩阵。"
+      "note": "独立二次核对来源 第 4 页图 第 21 题：由相似不变量求参数，再对角化求满足相似关系的变换矩阵。",
+      "role": "primary",
+      "roleNote": "第二问直接构造使矩阵对角化的可逆变换。"
     }
   ]
 }

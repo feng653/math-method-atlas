@@ -12,12 +12,16 @@
     {
       "methodId": "hm-riemann-sum",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 16 题：把和式整理为网格宽 1/n 的黎曼和，再对对数积分分部积分。"
+      "note": "独立二次核对来源 第 3 页图 第 16 题：把和式整理为网格宽 1/n 的黎曼和，再对对数积分分部积分。",
+      "role": "primary",
+      "roleNote": "把求和极限转换为可求值积分，直接构成极限路线。"
     },
     {
       "methodId": "hm-integration-by-parts",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 16 题：把和式整理为网格宽 1/n 的黎曼和，再对对数积分分部积分。"
+      "note": "独立二次核对来源 第 3 页图 第 16 题：把和式整理为网格宽 1/n 的黎曼和，再对对数积分分部积分。",
+      "role": "supporting",
+      "roleNote": "计算转换后积分的内部计算步骤。"
     }
   ]
 }

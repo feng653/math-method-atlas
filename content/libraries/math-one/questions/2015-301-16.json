@@ -12,12 +12,16 @@
     {
       "methodId": "hm-ode-modeling",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 16 题：切线截距三角形面积转为 y'=y²/8，再用初值分离变量。"
+      "note": "独立二次核对来源 第 3 页图 第 16 题：切线截距三角形面积转为 y'=y²/8，再用初值分离变量。",
+      "role": "supporting",
+      "roleNote": "把切线面积条件转成微分方程，是求函数前的建模步骤。"
     },
     {
       "methodId": "hm-ode-separable",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 16 题：切线截距三角形面积转为 y'=y²/8，再用初值分离变量。"
+      "note": "独立二次核对来源 第 3 页图 第 16 题：切线截距三角形面积转为 y'=y²/8，再用初值分离变量。",
+      "role": "primary",
+      "roleNote": "解所得初值方程直接恢复所求函数。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 21 题，第 4 页。第二来源已确认首平方项系数二，按外积写矩阵；原源遗漏该系数，已换链接。",
-      "methodId": "la-quadratic-matrix"
+      "methodId": "la-quadratic-matrix",
+      "role": "primary",
+      "roleNote": "按平方线性式的外积直接证明第Ⅰ问矩阵表示。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。原HTML首项系数遗漏，页图中系数与子问一致。"

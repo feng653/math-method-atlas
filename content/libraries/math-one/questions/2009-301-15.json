@@ -11,7 +11,9 @@
     {
       "methodId": "hm-hessian-extrema",
       "verification": "verified",
-      "note": "独立方法关联复核：y>0 是定义域；求驻点并计算二阶型，驻点处严格正定，Hessian判据适用。"
+      "note": "独立方法关联复核：y>0 是定义域；求驻点并计算二阶型，驻点处严格正定，Hessian判据适用。",
+      "role": "primary",
+      "roleNote": "求驻点并用二阶型分类，直接完成二元极值任务。"
     }
   ]
 }

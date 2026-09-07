@@ -12,7 +12,9 @@
     {
       "methodId": "hm-triple-integral",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 12 题：单纯形上一次函数的三重积分，可逐层积分或作轴向尺度替换。"
+      "note": "独立二次核对来源 第 2 页图 第 12 题：单纯形上一次函数的三重积分，可逐层积分或作轴向尺度替换。",
+      "role": "primary",
+      "roleNote": "按单纯形分层直接计算所问体积分。"
     }
   ]
 }

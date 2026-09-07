@@ -12,7 +12,9 @@
     {
       "methodId": "hm-direction-gradient",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 3 题：方向向量先单位化，再与题给点梯度作内积。"
+      "note": "独立二次核对来源 第 1 页图 第 3 题：方向向量先单位化，再与题给点梯度作内积。",
+      "role": "primary",
+      "roleNote": "单位方向点积直接计算方向导数。"
     }
   ]
 }

@@ -11,12 +11,16 @@
     {
       "methodId": "pr-bivariate-normal",
       "verification": "verified",
-      "note": "独立方法关联复核：联合二维正态ρ=0推出独立，再以EY²=σ²+μ²计算混合矩，不能将一般零相关当独立。"
+      "note": "独立方法关联复核：联合二维正态ρ=0推出独立，再以EY²=σ²+μ²计算混合矩，不能将一般零相关当独立。",
+      "role": "primary",
+      "roleNote": "联合正态零相关转为独立并分解混合矩，构成直接求值路线。"
     },
     {
       "methodId": "pr-moment-variance",
       "verification": "verified",
-      "note": "独立方法关联复核：联合二维正态ρ=0推出独立，再以EY²=σ²+μ²计算混合矩，不能将一般零相关当独立。"
+      "note": "独立方法关联复核：联合二维正态ρ=0推出独立，再以EY²=σ²+μ²计算混合矩，不能将一般零相关当独立。",
+      "role": "supporting",
+      "roleNote": "由均值方差还原二阶矩，提供混合矩乘积中的一个因子。"
     }
   ]
 }

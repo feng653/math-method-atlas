@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 14 题。对称性使两个均值为零，协方差归结为 X sinX 的期望积分。",
       "verification": "verified",
-      "methodId": "pr-moment-covariance"
+      "methodId": "pr-moment-covariance",
+      "role": "primary",
+      "roleNote": "按协方差定义与对称性直接求所问值。"
     }
   ]
 }

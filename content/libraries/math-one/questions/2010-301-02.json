@@ -11,7 +11,9 @@
     {
       "methodId": "hm-multivariable-implicit",
       "verification": "verified",
-      "note": "独立方法关联复核：比值坐标对x,y求导，非零F第二偏导给局部隐函数条件，加权求和消去第一偏导。"
+      "note": "独立方法关联复核：比值坐标对x,y求导，非零F第二偏导给局部隐函数条件，加权求和消去第一偏导。",
+      "role": "primary",
+      "roleNote": "对比值型隐式关系求偏导并加权消项，直接判断目标关系。"
     }
   ]
 }

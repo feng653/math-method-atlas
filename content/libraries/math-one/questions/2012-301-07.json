@@ -11,7 +11,16 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 7 题。独立联合密度在一个变量小于另一个变量的半平面积分，可逐层使用指数尾概率。",
-      "methodId": "pr-joint-independence"
+      "methodId": "pr-joint-independence",
+      "role": "supporting",
+      "roleNote": "独立性将联合密度化为乘积；最终比较概率还需在半平面积分。"
+    },
+    {
+      "methodId": "pr-moment-total-expectation",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "对比较事件的指标取条件期望再平均，直接得到所求概率。",
+      "note": "独立重读原题第7题：令 I=1{X<Y}，其绝对期望有限。由独立性 E(I|X=x)=exp(−4x)，故 P(X<Y)=E(I)=∫₀∞exp(−4x)exp(−x)dx=1/5。条件期望卡的可积条件由 0≤I≤1 保证；未使用转载解析漏掉速率因子的联合密度。"
     }
   ]
 }

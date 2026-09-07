@@ -12,7 +12,9 @@
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 12 题：连续两次链式求导，内层一阶导在给定点为零会消去二阶偏导项。"
+      "note": "独立二次核对来源 第 3 页图 第 12 题：连续两次链式求导，内层一阶导在给定点为零会消去二阶偏导项。",
+      "role": "primary",
+      "roleNote": "二次链式求导直接得到目标导数。"
     }
   ]
 }

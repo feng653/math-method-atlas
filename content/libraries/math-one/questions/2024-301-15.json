@@ -12,7 +12,9 @@
     {
       "methodId": "la-quadratic-completion",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 15 题：平方配方法或正定半正定条件控制参数，边界也要纳入。"
+      "note": "独立二次核对来源 第 4 页图 第 15 题：平方配方法或正定半正定条件控制参数，边界也要纳入。",
+      "role": "primary",
+      "roleNote": "配方直接给不等式参数范围。"
     }
   ]
 }

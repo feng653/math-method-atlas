@@ -11,12 +11,16 @@
     {
       "methodId": "pr-dist-classic",
       "verification": "verified",
-      "note": "独立方法关联复核：概率归一化识别参数1的泊松分布，E(X²)=Var(X)+(EX)²。"
+      "note": "独立方法关联复核：概率归一化识别参数1的泊松分布，E(X²)=Var(X)+(EX)²。",
+      "role": "supporting",
+      "roleNote": "识别参数1的泊松模型，提供已知均值和方差。"
     },
     {
       "methodId": "pr-moment-variance",
       "verification": "verified",
-      "note": "独立方法关联复核：概率归一化识别参数1的泊松分布，E(X²)=Var(X)+(EX)²。"
+      "note": "独立方法关联复核：概率归一化识别参数1的泊松分布，E(X²)=Var(X)+(EX)²。",
+      "role": "primary",
+      "roleNote": "由方差加均值平方直接还原目标二阶矩。"
     }
   ]
 }

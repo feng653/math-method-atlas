@@ -12,17 +12,23 @@
     {
       "methodId": "hm-tangent-plane",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。"
+      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。",
+      "role": "primary",
+      "roleNote": "第一问明确要求切平面方程。"
     },
     {
       "methodId": "hm-hessian-extrema",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。"
+      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。",
+      "role": "supporting",
+      "roleNote": "为第二问闭域最值提供内部驻点判别。"
     },
     {
       "methodId": "hm-monotonic-extrema",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。"
+      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。",
+      "role": "supporting",
+      "roleNote": "为第二问提供边界一元最值，尚需与内部候选比较。"
     }
   ]
 }

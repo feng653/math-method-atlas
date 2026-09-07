@@ -12,7 +12,9 @@
     {
       "methodId": "hm-derivative-definition",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 4 题：导数存在必须使用真实点值作差商，仅有函数极限不能替代题给点值。"
+      "note": "独立二次核对来源 第 1 页图 第 4 题：导数存在必须使用真实点值作差商，仅有函数极限不能替代题给点值。",
+      "role": "primary",
+      "roleNote": "真实点值差商直接判导数命题。"
     }
   ]
 }

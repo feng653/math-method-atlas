@@ -12,12 +12,16 @@
     {
       "methodId": "la-matrix-power",
       "verification": "verified",
-      "note": "独立二次核对来源 第 13 页图 第 21 题：三个互异特征值可对角化计算 A⁹⁹；由 B²=BA 归纳 B¹⁰⁰=BA⁹⁹，按列乘法解释。"
+      "note": "独立二次核对来源 第 13 页图 第 21 题：三个互异特征值可对角化计算 A⁹⁹；由 B²=BA 归纳 B¹⁰⁰=BA⁹⁹，按列乘法解释。",
+      "role": "primary",
+      "roleNote": "直接计算第一问 A 的高次幂。"
     },
     {
       "methodId": "la-matrix-product",
       "verification": "verified",
-      "note": "独立二次核对来源 第 13 页图 第 21 题：三个互异特征值可对角化计算 A⁹⁹；由 B²=BA 归纳 B¹⁰⁰=BA⁹⁹，按列乘法解释。"
+      "note": "独立二次核对来源 第 13 页图 第 21 题：三个互异特征值可对角化计算 A⁹⁹；由 B²=BA 归纳 B¹⁰⁰=BA⁹⁹，按列乘法解释。",
+      "role": "primary",
+      "roleNote": "第二问将 B 的高次幂按列乘法展开为所问列向量组合。"
     }
   ]
 }

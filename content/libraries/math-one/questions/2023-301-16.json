@@ -12,7 +12,9 @@
     {
       "methodId": "pr-event-independence",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：对两离散变量共同可能值分别计算联合概率，独立性允许概率相乘。"
+      "note": "主agent独立重读题面复核：对两离散变量共同可能值分别计算联合概率，独立性允许概率相乘。",
+      "role": "primary",
+      "roleNote": "同值事件独立连乘求和直接得概率。"
     }
   ]
 }

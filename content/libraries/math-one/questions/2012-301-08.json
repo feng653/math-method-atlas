@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 8 题。两段长度之和固定，中心化后一段是另一段的负数且方差非零。",
-      "methodId": "pr-moment-correlation"
+      "methodId": "pr-moment-correlation",
+      "role": "primary",
+      "roleNote": "由固定和及非零方差直接判定完全负相关。"
     }
   ]
 }

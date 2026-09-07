@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 11 题，第 5 页。令纵横坐标比为新变量化可分离方程；PDF与HTML初值指数不同，已标版本差异。",
-      "methodId": "hm-ode-homogeneous"
+      "methodId": "hm-ode-homogeneous",
+      "role": "primary",
+      "roleNote": "用纵横比代换并代所采来源初值，直接求齐次方程解。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。HTML初值与PDF初值指数不同；方法适用性一致，数值答案须按当前来源。"

@@ -12,12 +12,16 @@
     {
       "methodId": "hm-implicit-derivative",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 17 题：隐函数关于 y 的偏导恒正，求导得到驻点，再判导数符号分类。"
+      "note": "独立二次核对来源 第 3 页图 第 17 题：隐函数关于 y 的偏导恒正，求导得到驻点，再判导数符号分类。",
+      "role": "supporting",
+      "roleNote": "先求隐函数导数供驻点和符号分析。"
     },
     {
       "methodId": "hm-monotonic-extrema",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 17 题：隐函数关于 y 的偏导恒正，求导得到驻点，再判导数符号分类。"
+      "note": "独立二次核对来源 第 3 页图 第 17 题：隐函数关于 y 的偏导恒正，求导得到驻点，再判导数符号分类。",
+      "role": "primary",
+      "roleNote": "导数判号直接求所问极值。"
     }
   ]
 }

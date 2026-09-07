@@ -12,7 +12,9 @@
     {
       "methodId": "hm-derivative-definition",
       "note": "独立复核：来源第 1 题。分别取左右差商；含根号的余弦项展开后出现绝对值的一阶尖点。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "左右差商直接判断各函数在指定点是否可导。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

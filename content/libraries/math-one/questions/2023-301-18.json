@@ -12,7 +12,9 @@
     {
       "methodId": "hm-hessian-extrema",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：先求所有驻点；二阶判别退化的点按函数符号路径检查，不直接下极值结论。"
+      "note": "主agent独立重读题面复核：先求所有驻点；二阶判别退化的点按函数符号路径检查，不直接下极值结论。",
+      "role": "primary",
+      "roleNote": "驻点及二阶判别直接求二元极值。"
     }
   ]
 }

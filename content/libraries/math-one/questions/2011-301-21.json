@@ -12,7 +12,9 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "独立视觉核对合订PDF第36页：题面明确实对称矩阵，补足旧HTML遗漏；两个非零特征方向和其正交补构成对角化基，秩2给第三特征值0。"
+      "note": "独立视觉核对合订PDF第36页：题面明确实对称矩阵，补足旧HTML遗漏；两个非零特征方向和其正交补构成对角化基，秩2给第三特征值0。",
+      "role": "primary",
+      "roleNote": "由已知特征方向与正交补组成基，直接还原矩阵。"
     }
   ],
   "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"

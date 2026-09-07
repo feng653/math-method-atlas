@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 18 题。补上顶圆盘，原上侧对封闭体为内向，散度定理必须取负号且补面通量为零。",
-      "methodId": "hm-gauss"
+      "methodId": "hm-gauss",
+      "role": "primary",
+      "roleNote": "补顶面并处理内向符号，直接求原曲面通量。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "methodId": "hm-ode-characteristic",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 10 题：二阶常系数方程的共轭复根给指数乘正余弦。"
+      "note": "独立二次核对来源 第 3 页图 第 10 题：二阶常系数方程的共轭复根给指数乘正余弦。",
+      "role": "primary",
+      "roleNote": "共轭根构造直接给微分方程通解。"
     }
   ]
 }

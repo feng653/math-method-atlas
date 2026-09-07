@@ -12,12 +12,16 @@
     {
       "methodId": "pr-joint-convolution",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 10 题：先将差改为 X+(−Y) 作独立连续卷积，再对差取绝对值合并两侧；支撑决定指数分段。"
+      "note": "独立二次核对来源 第 3 页图 第 10 题：先将差改为 X+(−Y) 作独立连续卷积，再对差取绝对值合并两侧；支撑决定指数分段。",
+      "role": "primary",
+      "roleNote": "差的卷积并合并两侧直接判同分布。"
     },
     {
       "methodId": "pr-dist-exponential",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 10 题：先将差改为 X+(−Y) 作独立连续卷积，再对差取绝对值合并两侧；支撑决定指数分段。"
+      "note": "独立二次核对来源 第 3 页图 第 10 题：先将差改为 X+(−Y) 作独立连续卷积，再对差取绝对值合并两侧；支撑决定指数分段。",
+      "role": "supporting",
+      "roleNote": "提供原密度和所得分布的参数识别。"
     }
   ]
 }

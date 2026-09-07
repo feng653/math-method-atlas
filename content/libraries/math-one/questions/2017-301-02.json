@@ -12,7 +12,9 @@
     {
       "methodId": "hm-monotonic-extrema",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 2 题：对 f² 求导得 2ff'>0，从而比较端点平方大小。"
+      "note": "独立二次核对来源 第 1 页图 第 2 题：对 f² 求导得 2ff'>0，从而比较端点平方大小。",
+      "role": "primary",
+      "roleNote": "平方函数导数符号直接给题问大小关系。"
     }
   ]
 }

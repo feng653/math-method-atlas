@@ -11,12 +11,16 @@
     {
       "methodId": "pr-joint-independence",
       "verification": "verified",
-      "note": "独立方法关联复核：max(X,Y)min(X,Y)=XY恒成立，独立与期望存在保证乘积期望分解，不要求U,V独立。"
+      "note": "独立方法关联复核：max(X,Y)min(X,Y)=XY恒成立，独立与期望存在保证乘积期望分解，不要求U,V独立。",
+      "role": "supporting",
+      "roleNote": "原变量独立允许乘积期望分解，不能转嫁为极值变量独立。"
     },
     {
       "methodId": "pr-moment-expectation",
       "verification": "verified",
-      "note": "独立方法关联复核：max(X,Y)min(X,Y)=XY恒成立，独立与期望存在保证乘积期望分解，不要求U,V独立。"
+      "note": "独立方法关联复核：max(X,Y)min(X,Y)=XY恒成立，独立与期望存在保证乘积期望分解，不要求U,V独立。",
+      "role": "primary",
+      "roleNote": "max与min乘积化为XY后直接计算目标期望。"
     }
   ]
 }

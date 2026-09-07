@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 10 题。先求 dy/dx，再对参数求导并除以 dx/dt，检查指定参数处分母非零。",
       "verification": "verified",
-      "methodId": "hm-parametric-derivative"
+      "methodId": "hm-parametric-derivative",
+      "role": "primary",
+      "roleNote": "两次参数求导直接求指定点的二阶导数。"
     }
   ]
 }

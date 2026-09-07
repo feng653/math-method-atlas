@@ -11,7 +11,9 @@
     {
       "methodId": "hm-stokes",
       "verification": "verified",
-      "note": "独立方法关联复核：交线在平面内围成椭圆跨面，向上法向与从+z看逆时针一致，场为多项式可用Stokes。"
+      "note": "独立方法关联复核：交线在平面内围成椭圆跨面，向上法向与从+z看逆时针一致，场为多项式可用Stokes。",
+      "role": "primary",
+      "roleNote": "在椭圆跨面上用旋度积分直接求有向闭线积分。"
     }
   ]
 }

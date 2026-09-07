@@ -12,7 +12,9 @@
     {
       "methodId": "hm-definite-symmetry",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 10 题：对称区间上分离奇函数零积分和绝对值偶函数积分。"
+      "note": "独立二次核对来源 第 2 页图 第 10 题：对称区间上分离奇函数零积分和绝对值偶函数积分。",
+      "role": "primary",
+      "roleNote": "对称性分解直接完成定积分求值。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 19 题，第 9 页。由余弦单调先夹住两数列，再用余弦差及正弦界把目标商支配于可和数列。",
-      "methodId": "hm-series-comparison"
+      "methodId": "hm-series-comparison",
+      "role": "primary",
+      "roleNote": "目标商支配于可和数列，直接证明级数收敛。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

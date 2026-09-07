@@ -12,12 +12,16 @@
     {
       "methodId": "hm-ode-characteristic",
       "verification": "verified",
-      "note": "独立二次核对来源 第 8 页图 第 16 题：特征根 −1±√(1−k) 都负，指数解在正半轴可积，再结合初值求积分。"
+      "note": "独立二次核对来源 第 8 页图 第 16 题：特征根 −1±√(1−k) 都负，指数解在正半轴可积，再结合初值求积分。",
+      "role": "supporting",
+      "roleNote": "求指数解及衰减性，准备反常积分证明与求值。"
     },
     {
       "methodId": "hm-improper-integral",
       "verification": "verified",
-      "note": "独立二次核对来源 第 8 页图 第 16 题：特征根 −1±√(1−k) 都负，指数解在正半轴可积，再结合初值求积分。"
+      "note": "独立二次核对来源 第 8 页图 第 16 题：特征根 −1±√(1−k) 都负，指数解在正半轴可积，再结合初值求积分。",
+      "role": "primary",
+      "roleNote": "直接完成收敛证明及给定初值下积分求值两问。"
     }
   ]
 }

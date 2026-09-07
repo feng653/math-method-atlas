@@ -12,12 +12,16 @@
     {
       "methodId": "pr-dist-classic",
       "verification": "verified",
-      "note": "原题第7页第9题：识别两种计数模型。 独立复核：先识别独立伯努利和的二项模型，再按题设要求作泊松近似；两步骤不可混同。"
+      "note": "原题第7页第9题：识别两种计数模型。 独立复核：先识别独立伯努利和的二项模型，再按题设要求作泊松近似；两步骤不可混同。",
+      "role": "supporting",
+      "roleNote": "先识别伯努利和的精确二项模型。"
     },
     {
       "methodId": "pr-poisson-approximation",
       "verification": "verified",
-      "note": "独立复核：题面明确要求二项概率的泊松近似，参数取试验次数乘成功率。"
+      "note": "独立复核：题面明确要求二项概率的泊松近似，参数取试验次数乘成功率。",
+      "role": "primary",
+      "roleNote": "题目明确要求泊松近似值。"
     }
   ]
 }

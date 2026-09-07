@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 16 题。递推系数保证幂级数整收敛，逐项二阶求导恢复常系数方程及初值。",
-      "methodId": "hm-power-sum"
+      "methodId": "hm-power-sum",
+      "role": "primary",
+      "roleNote": "逐项二阶求导与递推系数直接证明第Ⅰ问和函数微分方程。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 23 题。由分布函数求生存概率及条件生存概率，再对尺度写似然求驻点并检查最大值。",
       "verification": "verified",
-      "methodId": "pr-estimate-mle"
+      "methodId": "pr-estimate-mle",
+      "role": "primary",
+      "roleNote": "直接完成寿命尺度参数的最大似然估计子问。"
     }
   ]
 }

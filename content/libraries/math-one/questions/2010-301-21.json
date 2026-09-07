@@ -11,12 +11,16 @@
     {
       "methodId": "la-quadratic-orthogonal",
       "verification": "verified",
-      "note": "独立方法关联复核：正交标准形给谱1,1,0，已知零特征单位方向u可写A=I−uuᵀ；A+I可直接检查顺序主子式为正。"
+      "note": "独立方法关联复核：正交标准形给谱1,1,0，已知零特征单位方向u可写A=I−uuᵀ；A+I可直接检查顺序主子式为正。",
+      "role": "primary",
+      "roleNote": "从正交标准形及零特征方向直接还原原矩阵。"
     },
     {
       "methodId": "la-quadratic-positive",
       "verification": "verified",
-      "note": "独立方法关联复核：正交标准形给谱1,1,0，已知零特征单位方向u可写A=I−uuᵀ；A+I可直接检查顺序主子式为正。"
+      "note": "独立方法关联复核：正交标准形给谱1,1,0，已知零特征单位方向u可写A=I−uuᵀ；A+I可直接检查顺序主子式为正。",
+      "role": "primary",
+      "roleNote": "检验A+I的正定性，直接完成正定证明小问。"
     }
   ]
 }

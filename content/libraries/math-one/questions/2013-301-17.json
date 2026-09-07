@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 17 题。偏导共同为零给候选驻点，海森行列式区分鞍点与极小点。",
-      "methodId": "hm-hessian-extrema"
+      "methodId": "hm-hessian-extrema",
+      "role": "primary",
+      "roleNote": "驻点和Hessian分类直接求极值。"
     }
   ]
 }

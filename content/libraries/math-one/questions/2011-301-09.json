@@ -11,12 +11,16 @@
     {
       "methodId": "hm-arc-work-integral",
       "verification": "verified",
-      "note": "独立方法关联复核：变上限积分导数为tan x，弧长元是√(1+tan²x)dx；明确不采用镜像PDF误写成(tan x)²的解析。"
+      "note": "独立方法关联复核：变上限积分导数为tan x，弧长元是√(1+tan²x)dx；明确不采用镜像PDF误写成(tan x)²的解析。",
+      "role": "primary",
+      "roleNote": "把曲线导数代入弧长元，直接算弧长。"
     },
     {
       "methodId": "hm-newton-leibniz",
       "verification": "verified",
-      "note": "独立方法关联复核：变上限积分导数为tan x，弧长元是√(1+tan²x)dx；明确不采用镜像PDF误写成(tan x)²的解析。"
+      "note": "独立方法关联复核：变上限积分导数为tan x，弧长元是√(1+tan²x)dx；明确不采用镜像PDF误写成(tan x)²的解析。",
+      "role": "supporting",
+      "roleNote": "恢复变上限积分的导数，为弧长元提供斜率。"
     }
   ]
 }

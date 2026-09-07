@@ -11,7 +11,9 @@
     {
       "methodId": "la-eigen-characteristic",
       "verification": "verified",
-      "note": "独立方法关联复核：外积矩阵作用于 β 得2β，且非零内积保证秩1，直接验证非零特征值符合特征定义。"
+      "note": "独立方法关联复核：外积矩阵作用于 β 得2β，且非零内积保证秩1，直接验证非零特征值符合特征定义。",
+      "role": "primary",
+      "roleNote": "用矩阵作用定义及秩一性质直接确定非零特征值。"
     }
   ]
 }

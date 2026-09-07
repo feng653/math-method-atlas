@@ -11,7 +11,16 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 17 题。两次链式求导中一阶项抵消，剩余二阶项给常系数非齐次方程。",
-      "methodId": "hm-multivariable-chain"
+      "methodId": "hm-multivariable-chain",
+      "role": "supporting",
+      "roleNote": "两次链式把偏导等式化为ODE；求f表达式还需解非齐次初值方程。"
+    },
+    {
+      "methodId": "hm-ode-undetermined",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "解链式所得常系数非齐次初值方程，直接给所求函数表达式。",
+      "note": "独立重读第17题并重算两二阶偏导：相加为 e^(2x) f″(u)，故 f″−4f=u。常系数与多项式右端满足待定系数条件；取特解 −u/4，齐次根 ±2。初值给 f(u)=(e^(2u)−e^(−2u))/16−u/4，代回方程及两个零初值均成立。"
     }
   ]
 }

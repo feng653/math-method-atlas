@@ -11,12 +11,16 @@
     {
       "methodId": "hm-newton-leibniz",
       "verification": "verified",
-      "note": "独立方法关联复核：先拆积分为x²乘变上限项减另一个变上限项，再求导；边界项相消后判断符号。"
+      "note": "独立方法关联复核：先拆积分为x²乘变上限项减另一个变上限项，再求导；边界项相消后判断符号。",
+      "role": "supporting",
+      "roleNote": "拆分含参变限积分并求导，为极值符号判断准备导数。"
     },
     {
       "methodId": "hm-monotonic-extrema",
       "verification": "verified",
-      "note": "独立方法关联复核：先拆积分为x²乘变上限项减另一个变上限项，再求导；边界项相消后判断符号。"
+      "note": "独立方法关联复核：先拆积分为x²乘变上限项减另一个变上限项，再求导；边界项相消后判断符号。",
+      "role": "primary",
+      "roleNote": "按导数符号与参数分类直接完成极值任务。"
     }
   ]
 }

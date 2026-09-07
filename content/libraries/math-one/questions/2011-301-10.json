@@ -11,7 +11,9 @@
     {
       "methodId": "hm-ode-linear-first",
       "verification": "verified",
-      "note": "独立方法关联复核：乘eˣ后左侧为乘积导数，积分cos x并用零初值确定常数。"
+      "note": "独立方法关联复核：乘eˣ后左侧为乘积导数，积分cos x并用零初值确定常数。",
+      "role": "primary",
+      "roleNote": "积分因子把左侧合为乘积导数，直接解初值方程。"
     }
   ]
 }

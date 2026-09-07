@@ -12,12 +12,16 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 6 题：区分重特征值的特征子空间维数；可对角化者才与对应对角矩阵相似。"
+      "note": "独立二次核对来源 第 2 页图 第 6 题：区分重特征值的特征子空间维数；可对角化者才与对应对角矩阵相似。",
+      "role": "primary",
+      "roleNote": "特征子空间维数直接决定能否相似到所给对角形。"
     },
     {
       "methodId": "la-eigen-similarity",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 6 题：区分重特征值的特征子空间维数；可对角化者才与对应对角矩阵相似。"
+      "note": "独立二次核对来源 第 2 页图 第 6 题：区分重特征值的特征子空间维数；可对角化者才与对应对角矩阵相似。",
+      "role": "primary",
+      "roleNote": "比较相似不变量与可构造的相似关系，直接完成选项判断。"
     }
   ]
 }

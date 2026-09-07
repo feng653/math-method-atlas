@@ -3,6 +3,7 @@ import type { Library, Method, Paper, Question } from '../domain/schema';
 import { getMethodStats } from '../domain/statistics';
 import { getArchiveStats } from '../domain/archive-statistics';
 import { ArchiveCoverage } from './ArchiveCoverage';
+import { methodRoleLabel } from '../domain/method-roles';
 import { Formula } from './Formula';
 
 type Props = { method: Method; methods: Method[]; questions: Question[]; papers: Paper[];
@@ -37,7 +38,8 @@ export function MethodDetail({ method, methods, questions, papers, examScope, on
       {stats.questions.map((question) => <a className="evidence-link" key={question.id}
         href={`${question.source.url}${question.source.page ? `#page=${question.source.page}` : ''}`} target="_blank" rel="noreferrer">
         <span>{papers.find((paper) => paper.id === question.paperId)?.year} 年 · 第 {question.number} 题
-          <small>{question.summary}</small></span><ArrowUpRight size={16} /></a>)}
+          <small>{question.summary} · {methodRoleLabel(question.methodLinks.find((link) => link.methodId === method.id)?.role)}</small>
+        </span><ArrowUpRight size={16} /></a>)}
     </div>
   </aside>;
 }

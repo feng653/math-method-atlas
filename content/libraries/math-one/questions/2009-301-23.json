@@ -11,12 +11,16 @@
     {
       "methodId": "pr-estimate-moments",
       "verification": "verified",
-      "note": "独立方法关联复核：显示密度为λ²x exp(-λx)，积分矩与对数似然均可直接求，支持域不依赖λ。"
+      "note": "独立方法关联复核：显示密度为λ²x exp(-λx)，积分矩与对数似然均可直接求，支持域不依赖λ。",
+      "role": "primary",
+      "roleNote": "按总体矩匹配样本矩，直接求矩估计量。"
     },
     {
       "methodId": "pr-estimate-mle",
       "verification": "verified",
-      "note": "独立方法关联复核：显示密度为λ²x exp(-λx)，积分矩与对数似然均可直接求，支持域不依赖λ。"
+      "note": "独立方法关联复核：显示密度为λ²x exp(-λx)，积分矩与对数似然均可直接求，支持域不依赖λ。",
+      "role": "primary",
+      "roleNote": "对参数似然极值化，直接求最大似然估计量。"
     }
   ]
 }

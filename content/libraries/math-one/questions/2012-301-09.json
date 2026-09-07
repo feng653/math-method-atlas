@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 9 题。齐次特征根产生两种指数，再用第二恒等式筛系数。",
-      "methodId": "hm-ode-characteristic"
+      "methodId": "hm-ode-characteristic",
+      "role": "primary",
+      "roleNote": "先解齐次方程再用第二恒等式筛系数，直接确定函数。"
     }
   ]
 }

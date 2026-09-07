@@ -12,7 +12,9 @@
     {
       "methodId": "hm-line-first-kind",
       "note": "独立复核：来源第 12 题。交线为大圆，用正交参数化代入 xy 与弧长元；结果不会因 xy 换号就自动为零。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "沿空间大圆参数化弧长，直接求标量线积分。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

@@ -12,12 +12,16 @@
     {
       "methodId": "la-system-parameter",
       "verification": "verified",
-      "note": "独立二次核对来源 第 11 页图 第 20 题：逐参数行消元，分别比较秩并把相容矩阵方程写成特解加齐次解。"
+      "note": "独立二次核对来源 第 11 页图 第 20 题：逐参数行消元，分别比较秩并把相容矩阵方程写成特解加齐次解。",
+      "role": "primary",
+      "roleNote": "直接完成有无解与解数的参数分类。"
     },
     {
       "methodId": "la-system-general",
       "verification": "verified",
-      "note": "独立二次核对来源 第 11 页图 第 20 题：逐参数行消元，分别比较秩并把相容矩阵方程写成特解加齐次解。"
+      "note": "独立二次核对来源 第 11 页图 第 20 题：逐参数行消元，分别比较秩并把相容矩阵方程写成特解加齐次解。",
+      "role": "primary",
+      "roleNote": "直接给相容情形矩阵方程的全部解。"
     }
   ]
 }

@@ -11,12 +11,16 @@
     {
       "methodId": "hm-integral-inequality",
       "verification": "verified",
-      "note": "独立方法关联复核：0<ln(1+t)<t给正积分上界，tⁿ|ln t|积分可算且趋零，适用积分比较与夹逼。"
+      "note": "独立方法关联复核：0<ln(1+t)<t给正积分上界，tⁿ|ln t|积分可算且趋零，适用积分比较与夹逼。",
+      "role": "supporting",
+      "roleNote": "构造趋零的可算积分上界，作为数列夹逼的界。"
     },
     {
       "methodId": "hm-squeeze",
       "verification": "verified",
-      "note": "独立方法关联复核：0<ln(1+t)<t给正积分上界，tⁿ|ln t|积分可算且趋零，适用积分比较与夹逼。"
+      "note": "独立方法关联复核：0<ln(1+t)<t给正积分上界，tⁿ|ln t|积分可算且趋零，适用积分比较与夹逼。",
+      "role": "primary",
+      "roleNote": "由正下界与趋零上界直接推出所求极限。"
     }
   ]
 }

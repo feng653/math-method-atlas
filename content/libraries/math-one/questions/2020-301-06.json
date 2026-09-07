@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 6 题。两直线交点的参数方程相等，整理成偏移向量属于两方向向量张成空间。",
       "verification": "verified",
-      "methodId": "la-vector-representation"
+      "methodId": "la-vector-representation",
+      "role": "primary",
+      "roleNote": "交点参数等式直接转为所问线性表示关系。"
     }
   ]
 }

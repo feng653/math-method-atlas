@@ -12,12 +12,16 @@
     {
       "methodId": "pr-moment-correlation",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 8 题：两个独立试验的互斥类别计数，用交叉矩算协方差再标准化为相关系数。"
+      "note": "独立二次核对来源 第 4 页图 第 8 题：两个独立试验的互斥类别计数，用交叉矩算协方差再标准化为相关系数。",
+      "role": "primary",
+      "roleNote": "将已得矩标准化，直接计算所问相关系数。"
     },
     {
       "methodId": "pr-moment-covariance",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 8 题：两个独立试验的互斥类别计数，用交叉矩算协方差再标准化为相关系数。"
+      "note": "独立二次核对来源 第 4 页图 第 8 题：两个独立试验的互斥类别计数，用交叉矩算协方差再标准化为相关系数。",
+      "role": "supporting",
+      "roleNote": "计算相关系数分子的协方差。"
     }
   ]
 }

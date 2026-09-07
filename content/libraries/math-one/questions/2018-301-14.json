@@ -12,7 +12,9 @@
     {
       "methodId": "pr-event-conditional",
       "note": "独立复核：来源第 14 题。第二来源给出 B、C 互斥；展开条件概率分母，并用两组独立性消去交事件。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "展开条件事件与分母，直接计算所问条件概率。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

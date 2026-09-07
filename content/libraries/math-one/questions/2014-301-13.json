@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 13 题。逐项配方后剩余平方系数控制负惯性指数，零系数边界要包括。",
-      "methodId": "la-quadratic-completion"
+      "methodId": "la-quadratic-completion",
+      "role": "primary",
+      "roleNote": "配方后读取负平方系数及零边界，直接确定负惯性指数。"
     }
   ]
 }

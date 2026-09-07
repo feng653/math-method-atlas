@@ -11,7 +11,9 @@
     {
       "methodId": "la-rank-inequalities",
       "verification": "verified",
-      "note": "独立方法关联复核：AB=I_m 给乘积秩m，结合A行数与B列数的上界推出两者秩m，适用秩不等式。"
+      "note": "独立方法关联复核：AB=I_m 给乘积秩m，结合A行数与B列数的上界推出两者秩m，适用秩不等式。",
+      "role": "primary",
+      "roleNote": "乘积秩与行列数上下界夹定两矩阵的秩。"
     }
   ]
 }

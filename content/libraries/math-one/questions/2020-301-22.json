@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 22 题。按选择变量用全概率拆成共同变量与独立变量两个分支；联合分布含奇异部分，不能假设有二维密度。",
       "verification": "verified",
-      "methodId": "pr-event-total"
+      "methodId": "pr-event-total",
+      "role": "primary",
+      "roleNote": "按选择变量拆分混合分布，直接求分布任务。"
     }
   ]
 }

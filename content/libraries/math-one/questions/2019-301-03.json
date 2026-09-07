@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 3 题。有界单调保证数列有极限，平方差级数的部分和首尾抵消。",
       "methodId": "hm-series-basic",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "部分和首尾抵消直接判断级数收敛。"
     }
   ],
   "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"

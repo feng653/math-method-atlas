@@ -11,7 +11,9 @@
     {
       "methodId": "hm-integral-inequality",
       "verification": "verified",
-      "note": "独立方法关联复核：在(0,π/4)逐点比较sin、cos、cot的对数；端点对数反常积分可积，积分保序。"
+      "note": "独立方法关联复核：在(0,π/4)逐点比较sin、cos、cot的对数；端点对数反常积分可积，积分保序。",
+      "role": "primary",
+      "roleNote": "比较区间内对数函数的大小，直接推出积分排序。"
     }
   ]
 }

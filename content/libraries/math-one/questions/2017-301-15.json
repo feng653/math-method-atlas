@@ -12,7 +12,9 @@
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 15 题：二元复合函数连续二次求导，保留二阶链式中的混合偏导与内层二阶项。"
+      "note": "独立二次核对来源 第 3 页图 第 15 题：二元复合函数连续二次求导，保留二阶链式中的混合偏导与内层二阶项。",
+      "role": "primary",
+      "roleNote": "连续两次链式直接计算题问二阶导数。"
     }
   ]
 }

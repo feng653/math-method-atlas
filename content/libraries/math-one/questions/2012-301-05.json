@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 5 题。第三、四向量前两坐标互反，和只沿末坐标方向，相关组合存在。",
-      "methodId": "la-vector-dependence"
+      "methodId": "la-vector-dependence",
+      "role": "primary",
+      "roleNote": "构造坐标相消的线性组合，直接判断向量相关。"
     }
   ]
 }

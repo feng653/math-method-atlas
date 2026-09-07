@@ -12,7 +12,9 @@
     {
       "methodId": "hm-surface-integrals",
       "note": "独立复核：来源第 17 题。按 x 为 y、z 的函数投影，选择前侧法向后代入通量；无需把开曲面当闭曲面。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "指定前侧法向投影直接求开曲面通量。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

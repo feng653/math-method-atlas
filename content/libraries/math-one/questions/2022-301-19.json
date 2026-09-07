@@ -11,7 +11,9 @@
     {
       "methodId": "hm-stokes",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：边界方向与曲面方向按右手规则配对，旋度的通量取代边界环流。"
+      "note": "主agent独立重读题面复核：边界方向与曲面方向按右手规则配对，旋度的通量取代边界环流。",
+      "role": "primary",
+      "roleNote": "斯托克斯转换是环流的直接路线。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"

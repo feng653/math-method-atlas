@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 1 题。按直线渐近线定义检查函数减斜率乘自变量的极限，不把有界振荡当收敛。",
-      "methodId": "hm-concavity-asymptote"
+      "methodId": "hm-concavity-asymptote",
+      "role": "primary",
+      "roleNote": "按减去候选直线后的极限直接判断渐近线。"
     }
   ]
 }

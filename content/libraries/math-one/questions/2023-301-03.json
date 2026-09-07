@@ -12,12 +12,16 @@
     {
       "methodId": "hm-parametric-derivative",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：仅在参数非零的两侧使用参数求导，零点另依导数定义拼接。"
+      "note": "主agent独立重读题面复核：仅在参数非零的两侧使用参数求导，零点另依导数定义拼接。",
+      "role": "supporting",
+      "roleNote": "给非零参数两侧斜率，不能代替零点判别。"
     },
     {
       "methodId": "hm-derivative-definition",
       "verification": "verified",
-      "note": "零点的参数表示含绝对值，须用左右导数定义，不能直接代入参数求导公式。"
+      "note": "零点的参数表示含绝对值，须用左右导数定义，不能直接代入参数求导公式。",
+      "role": "primary",
+      "roleNote": "零点左右差商直接完成可导性判断。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 1 题。先比较各被积函数近零幂阶，再连同变上限的阶一起积分，不能只比较被积函数。",
       "verification": "verified",
-      "methodId": "hm-infinitesimal-order"
+      "methodId": "hm-infinitesimal-order",
+      "role": "primary",
+      "roleNote": "计入变限幂次后直接比较各表达式无穷小阶。"
     }
   ]
 }

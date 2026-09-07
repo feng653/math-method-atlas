@@ -12,12 +12,16 @@
     {
       "methodId": "la-vector-coordinate",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 20 题：把新基写成旧基下的列矩阵，等坐标条件给齐次系统并先检查基可逆。"
+      "note": "独立二次核对来源 第 3 页图 第 20 题：把新基写成旧基下的列矩阵，等坐标条件给齐次系统并先检查基可逆。",
+      "role": "supporting",
+      "roleNote": "把相同坐标条件转为线性系统，供参数与向量求解。"
     },
     {
       "methodId": "la-system-homogeneous",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 20 题：把新基写成旧基下的列矩阵，等坐标条件给齐次系统并先检查基可逆。"
+      "note": "独立二次核对来源 第 3 页图 第 20 题：把新基写成旧基下的列矩阵，等坐标条件给齐次系统并先检查基可逆。",
+      "role": "primary",
+      "roleNote": "由非零解条件及零空间直接求第二问参数和全部向量。"
     }
   ]
 }

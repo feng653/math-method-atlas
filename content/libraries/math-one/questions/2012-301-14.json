@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 14 题，第 2 页。已读页图确认条件事件为C的补；不相容使AB包含于该补事件。",
-      "methodId": "pr-event-conditional"
+      "methodId": "pr-event-conditional",
+      "role": "primary",
+      "roleNote": "利用条件事件为C补及不相容关系，直接计算条件概率。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

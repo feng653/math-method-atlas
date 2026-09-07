@@ -11,12 +11,16 @@
     {
       "methodId": "la-quadratic-matrix",
       "verification": "verified",
-      "note": "独立方法关联复核：读取独立公式块写实对称矩阵；特征值随参数平移，再以两个正方向和一零方向筛选。"
+      "note": "独立方法关联复核：读取独立公式块写实对称矩阵；特征值随参数平移，再以两个正方向和一零方向筛选。",
+      "role": "supporting",
+      "roleNote": "把二次型写成对称矩阵，为求谱和筛参数提供对象。"
     },
     {
       "methodId": "la-eigen-characteristic",
       "verification": "verified",
-      "note": "独立方法关联复核：读取独立公式块写实对称矩阵；特征值随参数平移，再以两个正方向和一零方向筛选。"
+      "note": "独立方法关联复核：读取独立公式块写实对称矩阵；特征值随参数平移，再以两个正方向和一零方向筛选。",
+      "role": "primary",
+      "roleNote": "直接求第Ⅰ问全部特征值，并为第Ⅱ问规范形筛参数供谱。"
     }
   ]
 }

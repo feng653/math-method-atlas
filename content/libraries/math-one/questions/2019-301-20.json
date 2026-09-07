@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 20 题。坐标等式转为基向量线性组合，解参数后由旧基坐标组成过渡矩阵。",
       "methodId": "la-vector-coordinate",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "坐标等式和过渡矩阵直接完成换基求解。"
     }
   ],
   "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"

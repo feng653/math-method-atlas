@@ -10,9 +10,18 @@
   },
   "methodLinks": [
     {
+      "methodId": "hm-integral-inequality",
+      "verification": "verified",
+      "note": "独立重看新东方第1图第4题：对称消奇项后M=π；cos x在区间内部正，故K=π+∫√cos x dx>π。由e^x≥1+x且仅x=0取等，得(1+x)e^(−x)≤1并在其余点严格小于1，因此N<π，直接确定K>M>N。三被积函数在闭区间连续，严格积分比较合法。",
+      "role": "primary",
+      "roleNote": "对称化后以常数π为共同界，严格积分比较直接确定三个积分的完整排序。"
+    },
+    {
       "methodId": "hm-definite-symmetry",
       "note": "独立复核：来源第 4 题。对称区间消去奇函数项，再用非负项和指数函数比较剩余积分。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "supporting",
+      "roleNote": "先消去奇函数积分，最终排序还依赖剩余项的大小估计。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

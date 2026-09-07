@@ -11,12 +11,16 @@
     {
       "methodId": "hm-power-indeterminate",
       "verification": "verified",
-      "note": "独立方法关联复核：已读取单独公式块：底数ln(1+x)/x趋1，指数1/(eˣ−1)；对数的一阶项配合泰勒得到有限极限。"
+      "note": "独立方法关联复核：已读取单独公式块：底数ln(1+x)/x趋1，指数1/(eˣ−1)；对数的一阶项配合泰勒得到有限极限。",
+      "role": "primary",
+      "roleNote": "对幂指表达式取对数后还原指数，直接得到原极限。"
     },
     {
       "methodId": "hm-taylor-limit",
       "verification": "verified",
-      "note": "独立方法关联复核：已读取单独公式块：底数ln(1+x)/x趋1，指数1/(eˣ−1)；对数的一阶项配合泰勒得到有限极限。"
+      "note": "独立方法关联复核：已读取单独公式块：底数ln(1+x)/x趋1，指数1/(eˣ−1)；对数的一阶项配合泰勒得到有限极限。",
+      "role": "supporting",
+      "roleNote": "展开对数与指数差，计算取对数后需要的一阶极限。"
     }
   ]
 }

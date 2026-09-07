@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 21 题。两矩阵均秩一且同一非零特征值，零特征空间维数足够，故同一对角形式。",
-      "methodId": "la-eigen-similarity"
+      "methodId": "la-eigen-similarity",
+      "role": "primary",
+      "roleNote": "证明两矩阵均相似于同一对角形，直接完成相似判断。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "note": "独立复核：来源第 4 题。收敛半径内全级数绝对收敛，故偶项子级数若发散则点必在边界或外部。",
       "verification": "verified",
-      "methodId": "hm-power-radius"
+      "methodId": "hm-power-radius",
+      "role": "primary",
+      "roleNote": "内部绝对收敛性质直接判断子级数与半径关系。"
     }
   ]
 }

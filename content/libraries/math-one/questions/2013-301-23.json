@@ -12,7 +12,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 23 题，第 4 页。页图确认倒数型指数密度；正参数似然含对数项及样本倒数和，极值在内部。",
-      "methodId": "pr-estimate-mle"
+      "methodId": "pr-estimate-mle",
+      "role": "primary",
+      "roleNote": "参数对数似然内部极值直接求估计量。"
     }
   ],
   "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"

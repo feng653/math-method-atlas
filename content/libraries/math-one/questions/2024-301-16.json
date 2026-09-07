@@ -12,12 +12,16 @@
     {
       "methodId": "pr-event-conditional",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 16 题：独立伯努利概率先求三次全成功，再除以至少一次成功的概率。"
+      "note": "独立二次核对来源 第 4 页图 第 16 题：独立伯努利概率先求三次全成功，再除以至少一次成功的概率。",
+      "role": "primary",
+      "roleNote": "条件概率等式直接解成功率。"
     },
     {
       "methodId": "pr-event-independence",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 16 题：独立伯努利概率先求三次全成功，再除以至少一次成功的概率。"
+      "note": "独立二次核对来源 第 4 页图 第 16 题：独立伯努利概率先求三次全成功，再除以至少一次成功的概率。",
+      "role": "supporting",
+      "roleNote": "先计算全成功及至少一次成功概率。"
     }
   ]
 }

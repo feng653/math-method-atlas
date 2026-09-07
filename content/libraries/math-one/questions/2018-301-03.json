@@ -12,7 +12,9 @@
     {
       "methodId": "hm-power-sum",
       "note": "独立复核：来源第 3 题。将分子拆成阶乘可约的两项，分别识别正弦和余弦级数。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "识别并组合正余弦展开，直接求目标级数和。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

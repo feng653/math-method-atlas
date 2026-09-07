@@ -12,12 +12,16 @@
     {
       "methodId": "hm-fourier-half-range",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 13 题：半区间余弦系数积分求出后，利用小角正弦等价量处理奇指标极限。"
+      "note": "独立二次核对来源 第 3 页图 第 13 题：半区间余弦系数积分求出后，利用小角正弦等价量处理奇指标极限。",
+      "role": "supporting",
+      "roleNote": "先求目标极限中使用的奇指标系数。"
     },
     {
       "methodId": "hm-equivalent-infinitesimal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 13 题：半区间余弦系数积分求出后，利用小角正弦等价量处理奇指标极限。"
+      "note": "独立二次核对来源 第 3 页图 第 13 题：半区间余弦系数积分求出后，利用小角正弦等价量处理奇指标极限。",
+      "role": "primary",
+      "roleNote": "系数趋零后用正弦等价直接计算目标极限。"
     }
   ]
 }

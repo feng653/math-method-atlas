@@ -12,7 +12,9 @@
     {
       "methodId": "pr-estimate-mle",
       "note": "独立复核：来源第 23 题。对尺度参数写对数似然；估计量为样本绝对值均值，绝对值服从指数分布可求矩。",
-      "verification": "verified"
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "最大化尺度似然直接给题问估计量。"
     }
   ],
   "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"

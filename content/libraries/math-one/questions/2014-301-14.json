@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 14 题。在给定支撑积分二阶矩，再由样本平方和期望匹配目标参数。",
-      "methodId": "pr-estimate-unbiased"
+      "methodId": "pr-estimate-unbiased",
+      "role": "primary",
+      "roleNote": "把样本平方和期望匹配目标，直接求无偏系数。"
     }
   ]
 }

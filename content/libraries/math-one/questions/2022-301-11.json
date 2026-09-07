@@ -11,7 +11,9 @@
     {
       "methodId": "hm-direction-gradient",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：可微函数的单位方向最大导数为梯度模，先在指定点求梯度。"
+      "note": "主agent独立重读题面复核：可微函数的单位方向最大导数为梯度模，先在指定点求梯度。",
+      "role": "primary",
+      "roleNote": "梯度模直接求最大方向导数。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"

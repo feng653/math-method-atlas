@@ -12,12 +12,16 @@
     {
       "methodId": "hm-line-second-kind",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 19 题：上半球和斜平面的交线只能取指定半弧，参数化后代入有向第二类线积分。"
+      "note": "独立二次核对来源 第 3 页图 第 19 题：上半球和斜平面的交线只能取指定半弧，参数化后代入有向第二类线积分。",
+      "role": "primary",
+      "roleNote": "按指定半弧参数直接计算有向线积分。"
     },
     {
       "methodId": "hm-space-intersections",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 19 题：上半球和斜平面的交线只能取指定半弧，参数化后代入有向第二类线积分。"
+      "note": "独立二次核对来源 第 3 页图 第 19 题：上半球和斜平面的交线只能取指定半弧，参数化后代入有向第二类线积分。",
+      "role": "supporting",
+      "roleNote": "确定合法半弧和参数范围，辅助积分路线。"
     }
   ]
 }

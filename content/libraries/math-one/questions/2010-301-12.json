@@ -11,12 +11,16 @@
     {
       "methodId": "hm-integral-mass-centroid",
       "verification": "verified",
-      "note": "独立方法关联复核：均匀抛物体的截面积为πz，体积与z一阶矩积分之比给质心坐标。"
+      "note": "独立方法关联复核：均匀抛物体的截面积为πz，体积与z一阶矩积分之比给质心坐标。",
+      "role": "primary",
+      "roleNote": "体积和一阶矩之比直接确定抛物体质心。"
     },
     {
       "methodId": "hm-triple-integral",
       "verification": "verified",
-      "note": "独立方法关联复核：均匀抛物体的截面积为πz，体积与z一阶矩积分之比给质心坐标。"
+      "note": "独立方法关联复核：均匀抛物体的截面积为πz，体积与z一阶矩积分之比给质心坐标。",
+      "role": "supporting",
+      "roleNote": "按截面积计算体积和矩，服务于质心比值。"
     }
   ]
 }

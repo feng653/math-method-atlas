@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 10 题。根式配成圆弧形式后作平移正弦换元，连同端点变换。",
-      "methodId": "hm-trig-substitution"
+      "methodId": "hm-trig-substitution",
+      "role": "primary",
+      "roleNote": "平移正弦代换处理圆型根式，直接计算积分。"
     }
   ]
 }

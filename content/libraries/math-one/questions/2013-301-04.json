@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 4 题。格林公式得到二次多项式面积积分，比较各椭圆包含的正负区域。",
-      "methodId": "hm-green"
+      "methodId": "hm-green",
+      "role": "primary",
+      "roleNote": "化为带符号面积积分后比较椭圆域，直接判断闭线积分大小。"
     }
   ]
 }

@@ -12,7 +12,9 @@
     {
       "methodId": "hm-concavity-asymptote",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：渐近线需分别求斜率和截距极限，定义域的有限断点也应检查。"
+      "note": "主agent独立重读题面复核：渐近线需分别求斜率和截距极限，定义域的有限断点也应检查。",
+      "role": "primary",
+      "roleNote": "斜率截距极限直接确定渐近线。"
     }
   ]
 }

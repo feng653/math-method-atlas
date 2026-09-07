@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 7 题。标准化三个区间；零中心正态质量随尺度增大减少，偏移区间进一步比较密度。",
-      "methodId": "pr-dist-normal"
+      "methodId": "pr-dist-normal",
+      "role": "primary",
+      "roleNote": "标准化区间并比较正态密度，直接判断概率大小。"
     }
   ]
 }

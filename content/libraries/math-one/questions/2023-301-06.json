@@ -12,7 +12,9 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：重根处核维数必须达到代数重数，不能只看三角矩阵的对角元。"
+      "note": "主agent独立重读题面复核：重根处核维数必须达到代数重数，不能只看三角矩阵的对角元。",
+      "role": "primary",
+      "roleNote": "特征空间维数直接判可对角化。"
     }
   ]
 }

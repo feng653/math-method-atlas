@@ -12,12 +12,16 @@
     {
       "methodId": "hm-continuity-piecewise",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 2 题：先分段积分且对数部分分部积分，再令原函数在拼接点连续。"
+      "note": "独立二次核对来源 第 1 页图 第 2 题：先分段积分且对数部分分部积分，再令原函数在拼接点连续。",
+      "role": "primary",
+      "roleNote": "原函数在拼接点连续直接确定所问拼接常数。"
     },
     {
       "methodId": "hm-integration-by-parts",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 2 题：先分段积分且对数部分分部积分，再令原函数在拼接点连续。"
+      "note": "独立二次核对来源 第 1 页图 第 2 题：先分段积分且对数部分分部积分，再令原函数在拼接点连续。",
+      "role": "supporting",
+      "roleNote": "求对数分支原函数，辅助后续拼接。"
     }
   ]
 }

@@ -12,12 +12,16 @@
     {
       "methodId": "hm-newton-leibniz",
       "verification": "verified",
-      "note": "独立方法关联复核：视觉核对KMF镜像PDF第4页，积分上限是xy而非社区漏字后的y；两次链式求导后在指定点代入。"
+      "note": "独立方法关联复核：视觉核对KMF镜像PDF第4页，积分上限是xy而非社区漏字后的y；两次链式求导后在指定点代入。",
+      "role": "supporting",
+      "roleNote": "把积分函数的一阶导数转成上限值，供混合偏导链式计算。"
     },
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "独立方法关联复核：视觉核对KMF镜像PDF第4页，积分上限是xy而非社区漏字后的y；两次链式求导后在指定点代入。"
+      "note": "独立方法关联复核：视觉核对KMF镜像PDF第4页，积分上限是xy而非社区漏字后的y；两次链式求导后在指定点代入。",
+      "role": "primary",
+      "roleNote": "对xy上限连续链式求导并代点，直接求目标偏导。"
     }
   ],
   "sourceNote": "独立视觉核对镜像PDF第4页，积分上限为xy，修复原社区来源漏x；来源仍为第三方，后附解析不作为证据。"

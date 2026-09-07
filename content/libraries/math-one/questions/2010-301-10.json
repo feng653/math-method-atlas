@@ -11,7 +11,9 @@
     {
       "methodId": "hm-substitution-integral",
       "verification": "verified",
-      "note": "独立方法关联复核：根式结构以 x=t² 代换，分母与微分因子约消，并同步更换有限积分上下限。"
+      "note": "独立方法关联复核：根式结构以 x=t² 代换，分母与微分因子约消，并同步更换有限积分上下限。",
+      "role": "primary",
+      "roleNote": "平方代换约去根式因子并换端点，直接完成定积分。"
     }
   ]
 }

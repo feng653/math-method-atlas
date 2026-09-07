@@ -11,7 +11,9 @@
     {
       "methodId": "hm-parametric-derivative",
       "verification": "verified",
-      "note": "独立方法关联复核：x=e⁻ᵗ 的参数导数非零，连续用 (1/x′)d/dt 算二阶导，满足参数求导条件。"
+      "note": "独立方法关联复核：x=e⁻ᵗ 的参数导数非零，连续用 (1/x′)d/dt 算二阶导，满足参数求导条件。",
+      "role": "primary",
+      "roleNote": "连续使用参数导数比直接算指定点二阶导数。"
     }
   ]
 }

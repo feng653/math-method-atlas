@@ -12,7 +12,9 @@
     {
       "methodId": "hm-taylor-expansion",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 9 题：由幂级数的三阶系数读取导数，不能把系数直接当导数。"
+      "note": "独立二次核对来源 第 2 页图 第 9 题：由幂级数的三阶系数读取导数，不能把系数直接当导数。",
+      "role": "primary",
+      "roleNote": "由展开系数直接读取所问奇阶导数。"
     }
   ]
 }

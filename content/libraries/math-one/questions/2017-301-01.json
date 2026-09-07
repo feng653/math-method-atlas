@@ -12,12 +12,16 @@
     {
       "methodId": "hm-continuity-piecewise",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 1 题：右支以 1−cos√x 等价于 x/2 求极限，和拼接值比较；损坏的第二支范围不作为新增假设。"
+      "note": "独立二次核对来源 第 1 页图 第 1 题：右支以 1−cos√x 等价于 x/2 求极限，和拼接值比较；损坏的第二支范围不作为新增假设。",
+      "role": "primary",
+      "roleNote": "以左右极限和点值匹配直接求连续参数。"
     },
     {
       "methodId": "hm-equivalent-infinitesimal",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 1 题：右支以 1−cos√x 等价于 x/2 求极限，和拼接值比较；损坏的第二支范围不作为新增假设。"
+      "note": "独立二次核对来源 第 1 页图 第 1 题：右支以 1−cos√x 等价于 x/2 求极限，和拼接值比较；损坏的第二支范围不作为新增假设。",
+      "role": "supporting",
+      "roleNote": "计算可见右支极限，作为连续匹配的中间量。"
     }
   ],
   "sourceNote": "页图第二分支范围排印损坏；只确认可见右支的极限和与拼接值比较的方法，不认证损坏字形。"

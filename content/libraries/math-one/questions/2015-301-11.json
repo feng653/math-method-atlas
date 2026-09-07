@@ -12,7 +12,9 @@
     {
       "methodId": "hm-multivariable-implicit",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 11 题：隐式方程在题给点对 z 的偏导非零，可按隐函数偏导公式求值。"
+      "note": "独立二次核对来源 第 2 页图 第 11 题：隐式方程在题给点对 z 的偏导非零，可按隐函数偏导公式求值。",
+      "role": "primary",
+      "roleNote": "隐式求偏导后直接给所求全微分。"
     }
   ]
 }

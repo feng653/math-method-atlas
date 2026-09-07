@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 12 题。三角形平面写为图形曲面，面积元为常倍投影面积。",
-      "methodId": "hm-surface-integrals"
+      "methodId": "hm-surface-integrals",
+      "role": "primary",
+      "roleNote": "图形曲面面积元投影，直接完成第一类面积分。"
     }
   ]
 }

@@ -6,18 +6,26 @@ export function getPaperStats(paper: Paper, questions: Question[]) {
   const keys = new Set(entries.map(questionKey));
   const verifiedKeys = new Set(entries.filter((question) => question.methodLinks.some((link) =>
     link.verification === 'verified')).map(questionKey));
+  const primaryKeys = new Set(entries.filter((question) => question.methodLinks.some((link) =>
+    link.verification === 'verified' && link.role === 'primary')).map(questionKey));
   const verifiedLinks = new Set(entries.flatMap((question) => question.methodLinks.filter((link) =>
     link.verification === 'verified').map((link) => `${questionKey(question)}/${link.methodId}`)));
   const pendingLinks = new Set(entries.flatMap((question) => question.methodLinks.filter((link) =>
     link.verification === 'pending').map((link) => `${questionKey(question)}/${link.methodId}`)));
   for (const link of verifiedLinks) pendingLinks.delete(link);
+  const allLinks = [...new Map(entries.flatMap((question) => question.methodLinks.map((link) =>
+    [`${questionKey(question)}/${link.methodId}`, link] as const))).values()];
+  const roleCounts = { primary: 0, supporting: 0, unclassified: 0 };
+  for (const link of allLinks) roleCounts[link.role ?? 'unclassified']++;
   const numbers = new Set(entries.map((question) => Number(question.number)));
   const expected = paper.expectedQuestionCount;
   const complete = paper.status === 'complete' && expected !== undefined && numbers.size === expected
     && Array.from({ length: expected }, (_, index) => index + 1).every((number) => numbers.has(number));
   return { paperId: paper.id, year: paper.year, expected, indexed: keys.size,
     questionsWithVerifiedLinks: verifiedKeys.size, verifiedLinks: verifiedLinks.size,
-    pendingLinks: pendingLinks.size, complete,
+    pendingLinks: pendingLinks.size, roleCounts, complete,
+    questionsWithoutVerifiedPrimary: [...new Map(entries.filter((question) => !primaryKeys.has(questionKey(question)))
+      .map((question) => [questionKey(question), question.id])).values()],
     unmappedQuestions: [...new Map(entries.filter((question) => !question.methodLinks.length)
       .map((question) => [questionKey(question), question.id])).values()],
   };

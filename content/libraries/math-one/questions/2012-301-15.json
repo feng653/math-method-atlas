@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 15 题。差函数为偶函数，可在正半区通过导数正性证非负。",
-      "methodId": "hm-monotonic-extrema"
+      "methodId": "hm-monotonic-extrema",
+      "role": "primary",
+      "roleNote": "构造偶差函数并证明正半轴导数非负，直接证明不等式。"
     }
   ]
 }

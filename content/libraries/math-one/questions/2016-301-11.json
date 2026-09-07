@@ -12,7 +12,9 @@
     {
       "methodId": "hm-multivariable-implicit",
       "verification": "verified",
-      "note": "独立二次核对来源 第 5 页图 第 11 题：题给点隐式方程关于 z 的偏导不为零，链式求导后解出 z 的偏导。"
+      "note": "独立二次核对来源 第 5 页图 第 11 题：题给点隐式方程关于 z 的偏导不为零，链式求导后解出 z 的偏导。",
+      "role": "primary",
+      "roleNote": "隐式链式求导直接给全微分。"
     }
   ]
 }

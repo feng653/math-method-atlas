@@ -12,7 +12,9 @@
     {
       "methodId": "hm-power-sum",
       "verification": "verified",
-      "note": "独立二次核对来源 第 1 页图 第 3 题：对 ln(2+x) 的偶部逐项求导，组合得到 n a₂ₙ 的和。"
+      "note": "独立二次核对来源 第 1 页图 第 3 题：对 ln(2+x) 的偶部逐项求导，组合得到 n a₂ₙ 的和。",
+      "role": "primary",
+      "roleNote": "和函数逐项运算直接求偶系数和。"
     }
   ]
 }

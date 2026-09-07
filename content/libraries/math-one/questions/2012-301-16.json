@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 16 题。驻点在横坐标正负单位值且纵坐标零，二阶判据分别给极大和极小。",
-      "methodId": "hm-hessian-extrema"
+      "methodId": "hm-hessian-extrema",
+      "role": "primary",
+      "roleNote": "解驻点方程并作二阶判别，直接求全部极值。"
     }
   ]
 }

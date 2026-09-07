@@ -15,6 +15,7 @@
 .status-tag { display: inline-block; padding: 4px 8px; font-size: 10px; color: #66816d; background: #edf3e9; border-radius: 4px; }
 .formula { overflow-x: auto; margin: 22px 0; background: #f7f9f3; border-radius: 10px; padding: 14px 8px; font-size: 13px; }
 .formula .katex-display { margin: 0.4em 0; width: max-content; min-width: 100%; }
+.method-role { font-size: 10px; opacity: 0.72; margin-left: 6px; }
 .example { background: #f5f7f1; border-left: 2px solid #a9bb99; padding: 18px; margin-top: 25px; border-radius: 0 9px 9px 0; }
 .example p { margin: 12px 0; }
 summary { cursor: pointer; min-height: 38px; font-size: 12px; line-height: 1.6; padding: 9px 0; color: #56755f; }

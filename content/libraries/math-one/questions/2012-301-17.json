@@ -11,7 +11,9 @@
     {
       "verification": "verified",
       "note": "独立复核：来源第 17 题。系数拆成线性序号项与奇数倒数项，几何级数求导/积分；端点项不趋零。",
-      "methodId": "hm-power-sum"
+      "methodId": "hm-power-sum",
+      "role": "primary",
+      "roleNote": "几何级数求导积分及系数拆分，直接给所求和函数。"
     }
   ]
 }

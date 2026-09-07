@@ -12,7 +12,9 @@
     {
       "methodId": "la-eigen-characteristic",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 5 题：单位向量张成的方向被 I−ααᵀ 消去，可直接判零特征值。"
+      "note": "独立二次核对来源 第 2 页图 第 5 题：单位向量张成的方向被 I−ααᵀ 消去，可直接判零特征值。",
+      "role": "primary",
+      "roleNote": "找被消去的非零向量，直接判零特征值与奇异性。"
     }
   ]
 }

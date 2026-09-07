@@ -12,7 +12,9 @@
     {
       "methodId": "hm-ode-linear-first",
       "verification": "verified",
-      "note": "主agent独立重读题面复核：切线截距关系转为一阶线性方程，再用初值确定常数。"
+      "note": "主agent独立重读题面复核：切线截距关系转为一阶线性方程，再用初值确定常数。",
+      "role": "primary",
+      "roleNote": "切线关系所得一阶方程直接求曲线。"
     }
   ]
 }

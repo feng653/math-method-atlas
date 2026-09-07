@@ -12,7 +12,9 @@
     {
       "methodId": "hm-derivative-definition",
       "verification": "verified",
-      "note": "独立二次核对来源 第 3 页图 第 18 题：以差商加减同一项证明两因子乘积法则，再归纳至多因子；不要求高阶可导。"
+      "note": "独立二次核对来源 第 3 页图 第 18 题：以差商加减同一项证明两因子乘积法则，再归纳至多因子；不要求高阶可导。",
+      "role": "primary",
+      "roleNote": "差商证明直接完成乘积求导公式证明。"
     }
   ]
 }

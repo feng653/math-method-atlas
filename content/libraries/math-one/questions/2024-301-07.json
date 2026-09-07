@@ -12,12 +12,16 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 7 题：矩阵在 α 的方向为零、在正交补为恒等，构造完整特征基后判相似和对角化。"
+      "note": "独立二次核对来源 第 2 页图 第 7 题：矩阵在 α 的方向为零、在正交补为恒等，构造完整特征基后判相似和对角化。",
+      "role": "primary",
+      "roleNote": "特征基中求幂直接确定题目所求迹。"
     },
     {
       "methodId": "la-eigen-similarity",
       "verification": "verified",
-      "note": "独立二次核对来源 第 2 页图 第 7 题：矩阵在 α 的方向为零、在正交补为恒等，构造完整特征基后判相似和对角化。"
+      "note": "独立二次核对来源 第 2 页图 第 7 题：矩阵在 α 的方向为零、在正交补为恒等，构造完整特征基后判相似和对角化。",
+      "role": "supporting",
+      "roleNote": "相似不变性将对角形的迹传回原矩阵。"
     }
   ]
 }

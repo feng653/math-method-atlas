@@ -12,7 +12,9 @@
     {
       "methodId": "la-rank-inequalities",
       "verification": "verified",
-      "note": "原题第6页第7题：串联秩下界。 独立复核：对两次矩阵乘积各用秩下界，总等式迫使两次下界同时取等。"
+      "note": "原题第6页第7题：串联秩下界。 独立复核：对两次矩阵乘积各用秩下界，总等式迫使两次下界同时取等。",
+      "role": "primary",
+      "roleNote": "秩下界连用直接判等式条件。"
     }
   ]
 }

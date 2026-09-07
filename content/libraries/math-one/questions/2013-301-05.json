@@ -11,7 +11,9 @@
     {
       "methodId": "la-vector-representation",
       "verification": "verified",
-      "note": "独立复核：来源第 5 题。可逆右乘使两组列相互线性表示；单有同秩不足以证明等价，已替换为向量表示。"
+      "note": "独立复核：来源第 5 题。可逆右乘使两组列相互线性表示；单有同秩不足以证明等价，已替换为向量表示。",
+      "role": "primary",
+      "roleNote": "可逆右乘给双向线性表示，直接判定向量组等价关系。"
     }
   ]
 }
