@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import type { AtlasData } from '../src/domain/schema';
 import { validateAtlas } from '../src/domain/validate';
+import { getMethodStats } from '../src/domain/statistics';
+import { getPaperStats } from '../src/domain/archive-statistics';
 
 function fixture(): AtlasData {
   return {
@@ -71,6 +73,30 @@ describe('content integrity', () => {
     const data = fixture();
     data.questions[0].methodLinks.push({ ...data.questions[0].methodLinks[0] });
     expect(validateAtlas(data).join(' ')).toContain('method link: duplicate');
+  });
+
+  it('counts multiple subquestions once and retains the parent verification gate', () => {
+    const data = fixture();
+    const question = data.questions[0];
+    question.subquestions = ['1', '2'].map((number) => ({
+      id: `part-${number}`, label: `(${number})`, summary: '求极限',
+      methodIds: ['equivalent'], evidenceNote: '题面明确编号',
+    }));
+    expect(validateAtlas(data)).toEqual([]);
+    expect(getMethodStats('equivalent', data.questions)).toMatchObject({ questionCount: 1, paperCount: 1 });
+    expect(getPaperStats(data.papers[0], data.questions).indexed).toBe(1);
+    question.methodLinks[0].verification = 'pending';
+    expect(getMethodStats('equivalent', data.questions).questionCount).toBe(0);
+  });
+
+  it('rejects duplicated subquestion identifiers and references absent from the parent', () => {
+    const data = fixture();
+    const part = { id: 'part-1', label: '(I)', summary: '求极限', methodIds: ['missing'], evidenceNote: '题面编号' };
+    data.questions[0].subquestions = [part, { ...part }];
+    const errors = validateAtlas(data).join(' ');
+    expect(errors).toContain('subquestion id: duplicate');
+    expect(errors).toContain('subquestion label: duplicate');
+    expect(errors).toContain('subquestion method missing from parent');
   });
 
   it('rejects repeated question numbers even with different ids', () => {

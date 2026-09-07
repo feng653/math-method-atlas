@@ -6,7 +6,8 @@
   "summary": "求和极限",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540317.html",
-    "page": 3
+    "page": 3,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {

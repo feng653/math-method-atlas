@@ -23,5 +23,26 @@
       "role": "primary",
       "roleNote": "由期望缩放直接确定第二问无偏系数。"
     }
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "最大值密度",
+      "methodIds": [
+        "pr-joint-max-min"
+      ],
+      "evidenceNote": "已目视来源PDF第16页：第23题在解析前的(I)列最大值密度任务。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "无偏倍数",
+      "methodIds": [
+        "pr-estimate-unbiased",
+        "pr-joint-max-min"
+      ],
+      "evidenceNote": "已目视来源PDF第16页：第23题(II)另列无偏系数任务；最大值密度在此仅供期望计算，第17页解析不新增子问。"
+    }
   ]
 }

@@ -6,7 +6,16 @@
   "summary": "闭曲面通量",
   "source": {
     "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/24/20230524103552318.pdf",
-    "page": 3
+    "page": 3,
+    "metadata": {
+      "publisher": "郑州工商学院（托管；原编辑者未核实）",
+      "level": "university-hosted",
+      "checkedOn": "2026-09-08",
+      "availability": "unverified",
+      "evidence": "2026-09-08已有实际阅读记录。第3页经网页阅读工具实际可读，补全另一高校PDF裁切的第14题图像；同日直接下载返回403，访问渠道结果不一致，当前可用性保留待核。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "methodLinks": [
     {

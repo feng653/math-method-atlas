@@ -6,7 +6,16 @@
   "summary": "初等矩阵还原",
   "source": {
     "url": "https://wuli.wiki/files/fc96a92b2b2c6495.pdf",
-    "page": 33
+    "page": 33,
+    "metadata": {
+      "publisher": "wuli.wiki社区（托管；原编者未核实）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已有实际阅读记录。实际查看PDF第33页对应题面，核对公式及条件；来源为第三方托管，不认证转载解答。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "methodLinks": [
     {

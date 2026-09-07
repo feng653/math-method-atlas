@@ -5,7 +5,16 @@
   "number": "19",
   "summary": "插值积分误差",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2024/"
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2024/",
+    "metadata": {
+      "publisher": "CS Graduates社区网站（整理者未核实）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已有实际阅读记录。实际阅读第19题，导数条件及区间清楚，替换高校PDF中的重复条件。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "methodLinks": [
     {

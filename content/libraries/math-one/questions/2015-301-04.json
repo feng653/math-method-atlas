@@ -6,7 +6,8 @@
   "summary": "极坐标换元",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
-    "page": 1
+    "page": 1,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {

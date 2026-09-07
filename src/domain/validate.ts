@@ -64,6 +64,15 @@ export function validateAtlas(input: unknown): string[] {
     if (!libraries.has(question.libraryId)) errors.push(`${label}: unknown library`);
     if (!papers.has(key(question.libraryId, question.paperId))) errors.push(`${label}: unknown paper`);
     unique(question.methodLinks.map((link) => link.methodId), `${label} method link`);
+    unique((question.subquestions ?? []).map((part) => part.id), `${label} subquestion id`);
+    unique((question.subquestions ?? []).map((part) => part.label), `${label} subquestion label`);
+    for (const part of question.subquestions ?? []) {
+      for (const methodId of part.methodIds) {
+        if (!question.methodLinks.some((link) => link.methodId === methodId)) {
+          errors.push(`${label}/${part.id}: subquestion method missing from parent ${methodId}`);
+        }
+      }
+    }
     for (const link of question.methodLinks) {
       if (!methods.has(key(question.libraryId, link.methodId))) errors.push(`${label}: unknown method ${link.methodId}`);
     }

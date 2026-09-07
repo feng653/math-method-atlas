@@ -6,7 +6,8 @@
   "summary": "相似矩阵反参",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
-    "page": 4
+    "page": 4,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {
@@ -22,6 +23,26 @@
       "note": "独立二次核对来源 第 4 页图 第 21 题：由相似不变量求参数，再对角化求满足相似关系的变换矩阵。",
       "role": "primary",
       "roleNote": "第二问直接构造使矩阵对角化的可逆变换。"
+    }
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "相似条件定参",
+      "methodIds": [
+        "la-eigen-similarity"
+      ],
+      "evidenceNote": "已目视新东方第4张试卷图：第21题主体下的(I)是独立参数设问，位置在(II)之前。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "构造对角变换",
+      "methodIds": [
+        "la-eigen-diagonalization"
+      ],
+      "evidenceNote": "已目视新东方第4张试卷图：第21题的(II)另列对角化变换任务，不是前问解答步骤。"
     }
   ]
 }

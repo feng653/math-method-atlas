@@ -5,9 +5,18 @@
   "exam": "301",
   "title": "2016年考研数学一",
   "source": {
-    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf"
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "metadata": {
+      "publisher": "新东方考研（第三方转载）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。新东方17页PDF实际核对；第19题转载解答的中值点极限推理有误，关联采用独立推导。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 23,
-  "sourceNote": "非官方发布；题号索引齐全，方法关联待独立复核，转载许可未知。"
+  "sourceNote": "非官方发布；题号索引齐全，每个主编号已具有独立核验的方法入口，索引齐全不代表转载题面无误，转载许可未知。"
 }

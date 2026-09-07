@@ -28,6 +28,12 @@ LaTeX 反斜杠在 JSON 中写成 `\\`，只在 formula 中写公式，不放 HT
 
 题号只用主问题编号字符串（例如"1"，不写"01"或"1a"），子问归于主问题，防止重复统计。complete 卷还检查1到expectedQuestionCount连续。`sourceNote`可添加到卷或题，显示转载排印问题或来源限制。
 
+子问写入父题可选 `subquestions` 数组，每项为 `{id,label,summary,methodIds,evidenceNote,source?}`。id和原标号label在本题内唯一；methodIds仅引用父题已有方法关联，可为空，不重复保存verification或主辅角色。必须根据题面显式编号划分，不能把解析步骤编成子问；未写数组表示尚未结构化，已录数不代表全部子问齐全。参考2015-301-21、2016-301-23、2017-301-23。
+
+来源可增加 `source.metadata`：publisher、level（official/university-hosted/third-party/unknown）、checkedOn（实际检查日）、availability（available/unavailable/unverified）、evidence、bodyMode（external-link）、rightsNote。访问成功不等于官方发布，未知转载许可继续只存外链与原创摘要。题目与试卷是同一资源时继承元数据（忽略hash、保留query）；换来源必须单独取证，不复制整卷身份。缺失元数据显示待登记。
+
+source.page默认PDF物理页；文章图片序号须同时写 `locatorKind: "image-index"`，前端显示“文章第N张试卷图”并打开文章，不伪造#page跳转。子问同源可省略source，跨页/异来源时明确覆盖并核对定位。
+
 运行 `pnpm content:report` 查看实际待审关联、未映射题、方法审校与topic缺口。`content/requirements/`的历史要求/真题缺口另受既有校验器检查；历史要求通过校验不会自动成为目标年份的官方课纲。
 
 新增体系不需要改前端：loader 自动读取匹配目录。独立体系 `proof-toolkit` 的计数、方法引用与数学一完全隔离；它是自定义工具集，不是中国考试课纲。

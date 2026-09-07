@@ -5,7 +5,16 @@
   "exam": "301",
   "title": "2018 数学一（转载 PDF 逐题索引）",
   "source": {
-    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf"
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "metadata": {
+      "publisher": "考研帮（第三方整理）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。考研帮6页PDF有重复选项、参数及三角形类型遗漏等缺陷；除第7题外，题目均已另选清晰来源。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 23

@@ -6,7 +6,16 @@
   "summary": "齐次方程",
   "source": {
     "url": "https://doc.kmf.com/ky_material/77/a2/77a25f193cfa52d46d8c504e15e96620.pdf",
-    "page": 5
+    "page": 5,
+    "metadata": {
+      "publisher": "考满分KMF（第三方托管；原编者未核实）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已有实际阅读记录。实际查看PDF第5页对应题面。第11题初值指数与社区版本存在分歧，保留所采用PDF版本，尚无官方裁定。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "methodLinks": [
     {

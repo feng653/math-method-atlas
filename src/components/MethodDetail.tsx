@@ -5,6 +5,8 @@ import { getArchiveStats } from '../domain/archive-statistics';
 import { ArchiveCoverage } from './ArchiveCoverage';
 import { methodRoleLabel } from '../domain/method-roles';
 import { Formula } from './Formula';
+import { resolveSource, sourceHref } from '../domain/source';
+import { SourceDetails } from './SourceDetails';
 
 type Props = { method: Method; methods: Method[]; questions: Question[]; papers: Paper[];
   examScope?: Library['examScope'];
@@ -35,11 +37,13 @@ export function MethodDetail({ method, methods, questions, papers, examScope, on
       <p className="muted">{stats.questionCount ? `已核验 ${stats.questionCount} 题 · 出现于 ${stats.paperCount} 张试卷`
         : '尚无已核验关联，不代表从未考查。'}</p>
       <ArchiveCoverage stats={getArchiveStats(papers, questions, examScope)} />
-      {stats.questions.map((question) => <a className="evidence-link" key={question.id}
-        href={`${question.source.url}${question.source.page ? `#page=${question.source.page}` : ''}`} target="_blank" rel="noreferrer">
+      {stats.questions.map((question) => <div key={question.id}><a className="evidence-link"
+        href={sourceHref(question.source)} target="_blank" rel="noreferrer">
         <span>{papers.find((paper) => paper.id === question.paperId)?.year} 年 · 第 {question.number} 题
           <small>{question.summary} · {methodRoleLabel(question.methodLinks.find((link) => link.methodId === method.id)?.role)}</small>
-        </span><ArrowUpRight size={16} /></a>)}
+        </span><ArrowUpRight size={16} /></a>
+        <SourceDetails source={resolveSource(question.source, papers.find((paper) => paper.id === question.paperId)?.source)} />
+      </div>)}
     </div>
   </aside>;
 }

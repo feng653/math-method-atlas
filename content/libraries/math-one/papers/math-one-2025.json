@@ -6,7 +6,16 @@
   "title": "2025 数学一（高校转载逐题索引）",
   "source": {
     "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
-    "page": 1
+    "page": 1,
+    "metadata": {
+      "publisher": "郑州工商学院（托管；原编辑者未核实）",
+      "level": "university-hosted",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。郑州工商学院托管17页PDF，全文与HTML交叉核对；页脚页数及分值标记有误，采用物理页定位。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 22

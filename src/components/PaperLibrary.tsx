@@ -4,6 +4,9 @@ import type { Paper, Question, Method, Library } from '../domain/schema';
 import { getArchiveStats } from '../domain/archive-statistics';
 import { ArchiveCoverage } from './ArchiveCoverage';
 import { methodRoleLabel } from '../domain/method-roles';
+import { resolveSource, sameSourceResource, sourceHref, sourceLocationLabel } from '../domain/source';
+import { SourceDetails } from './SourceDetails';
+import { Subquestions } from './Subquestions';
 
 type Props = { papers: Paper[]; questions: Question[]; methods: Method[]; chapters: Library['chapters']; onClose: () => void;
   examScope?: Library['examScope'];
@@ -43,18 +46,23 @@ export function PaperLibrary({ papers, questions, methods, chapters, examScope, 
         const stats = archive.perPaper.find((item) => item.paperId === paper.id)!;
         return <section className="paper" key={paper.id}><h2>{paper.title}</h2>
           <a href={paper.source.url} target="_blank" rel="noreferrer">查看来源原卷 <ArrowUpRight size={14} /></a>
+          <SourceDetails source={paper.source} />
           <p className="fine-print">{paper.sourceNote ?? '公开转载来源，尚未完成官方原卷逐字核对。'}</p>
           <p className="fine-print">已索引 {stats.indexed}/{stats.expected ?? '待核'} 题 ·
             {stats.complete ? '逐题索引齐全' : '收录进行中'}</p>
           {!entries.length && <p className="muted">{methodId || subject ? '此筛选下暂无关联记录。' : '逐题内容待录入。'}</p>}
           {entries.map((question) => <article className="question-card" key={question.id}>
-            <a href={`${question.source.url}${question.source.page ? `#page=${question.source.page}` : ''}`} target="_blank" rel="noreferrer">
+            <a href={sourceHref(question.source)} target="_blank" rel="noreferrer">
               第 {question.number} 题 <ArrowUpRight size={14} /></a><p>{question.summary}</p>
+            {question.source.locatorKind === 'image-index' && <p className="fine-print">{sourceLocationLabel(question.source)}</p>}
             {question.sourceNote && <p className="source-note">{question.sourceNote}</p>}
+            {(question.source.metadata || !sameSourceResource(question.source.url, paper.source.url))
+              && <SourceDetails source={resolveSource(question.source, paper.source)} />}
             <div className="related-methods">{question.methodLinks.map((link) => <button key={link.methodId}
               onClick={() => onSelect(link.methodId)}>{methods.find((m) => m.id === link.methodId)?.title}
               <small className="method-role">{methodRoleLabel(link.role)}</small>
               {link.verification === 'pending' ? ' · 待核' : ''}</button>)}</div>
+            <Subquestions question={question} methods={methods} onSelect={onSelect} />
             <details><summary>关联依据</summary>{question.methodLinks.map((link) => <div key={link.methodId}>
               <p><strong>{methods.find((method) => method.id === link.methodId)?.title} · {methodRoleLabel(link.role)}</strong></p>
               {link.roleNote && <p>{link.roleNote}</p>}<p>{link.note}</p>

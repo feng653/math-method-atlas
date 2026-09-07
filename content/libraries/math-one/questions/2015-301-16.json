@@ -6,7 +6,8 @@
   "summary": "切线面积建模",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
-    "page": 3
+    "page": 3,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {

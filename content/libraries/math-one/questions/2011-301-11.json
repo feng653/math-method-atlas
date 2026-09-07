@@ -6,7 +6,16 @@
   "summary": "积分函数偏导",
   "source": {
     "url": "https://doc.kmf.com/ky_material/9d/6b/9d6bef7c75bbc53cd3467885eacaa600.pdf",
-    "page": 4
+    "page": 4,
+    "metadata": {
+      "publisher": "考满分KMF（第三方托管；原编者未核实）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已有实际阅读记录。实际查看PDF第4页对应题面。确认二重积分内层上限为xy；该资料其他题解析有错误，未作为标准答案。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "methodLinks": [
     {

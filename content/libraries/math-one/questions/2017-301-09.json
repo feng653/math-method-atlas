@@ -6,7 +6,8 @@
   "summary": "奇阶导数",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540317.html",
-    "page": 2
+    "page": 2,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {

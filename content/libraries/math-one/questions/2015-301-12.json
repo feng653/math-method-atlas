@@ -6,7 +6,8 @@
   "summary": "单纯形体积分",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
-    "page": 2
+    "page": 2,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {

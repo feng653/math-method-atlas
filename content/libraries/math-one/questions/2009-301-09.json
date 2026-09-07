@@ -6,7 +6,16 @@
   "summary": "复合混合偏导",
   "source": {
     "url": "https://lxy.zust.edu.cn/__local/5/D0/ED/BE001CD3E468023340D11150942_B9D1F5E3_9C49E.pdf?e=.pdf",
-    "page": 9
+    "page": 9,
+    "metadata": {
+      "publisher": "浙江科技大学（托管）；文登学校（第三方编写）",
+      "level": "university-hosted",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已有实际阅读记录。实际查看第9页，题面明确具有二阶连续偏导数，解决原社区版本光滑性条件遗漏；高校托管不等于官方发布。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "methodLinks": [
     {

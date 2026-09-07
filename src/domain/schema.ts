@@ -1,11 +1,11 @@
 import { z } from 'zod';
+import { sourceSchema as source } from './source';
 
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const text = z.string().trim().min(1);
 const httpsUrl = z.url().refine((value) => value.startsWith('https://'), 'Source must use HTTPS');
 const status = z.enum(['draft', 'reviewed']);
 export const methodRoleSchema = z.enum(['primary', 'supporting', 'unclassified']);
-const source = z.object({ url: httpsUrl, page: z.number().int().positive().optional() }).strict();
 const ids = z.array(id).refine((values) => new Set(values).size === values.length, 'Duplicate reference');
 const formula = z.string().max(8000).refine(
   (value) => !/\\(?:html\w*|href|url|includegraphics|class|style|def|gdef|edef|xdef|let|futurelet|newcommand|renewcommand)\b/i.test(value),
@@ -46,6 +46,10 @@ export const paperSchema = z.object({
 export const questionSchema = z.object({
   id, libraryId: id, paperId: id, number: z.string().regex(/^[1-9]\d?$/, 'Use the main question number without leading zeros'), summary: text, source,
   sourceNote: text.optional(),
+  subquestions: z.array(z.object({
+    id, label: text, summary: text, methodIds: ids, evidenceNote: text,
+    source: source.optional(),
+  }).strict()).min(1).optional(),
   methodLinks: z.array(z.object({
     methodId: id, verification: z.enum(['pending', 'verified']), note: z.string(),
     role: methodRoleSchema.optional(), roleNote: text.optional(),

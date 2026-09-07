@@ -6,7 +6,16 @@
   "title": "2023 数学一（高校转载逐题索引）",
   "source": {
     "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
-    "page": 1
+    "page": 1,
+    "metadata": {
+      "publisher": "郑州工商学院（托管；原编辑者未核实）",
+      "level": "university-hosted",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。郑州工商学院托管4页PDF，并与社区HTML交叉核对22题；OCR存在重复符号，原编辑者未核实。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 22

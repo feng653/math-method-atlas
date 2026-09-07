@@ -5,7 +5,16 @@
   "exam": "301",
   "title": "2020 数学一（转载 PDF 逐题索引）",
   "source": {
-    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf"
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "metadata": {
+      "publisher": "学晋网 eduego（第三方转载）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。学晋网来源4页扫描PDF经逐题放大核对；扫描分辨率有限，未核实原始编者或官方发布链。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 23

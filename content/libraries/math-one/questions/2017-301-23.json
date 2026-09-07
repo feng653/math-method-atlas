@@ -6,7 +6,8 @@
   "summary": "绝对误差估计",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540317.html",
-    "page": 5
+    "page": 5,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {
@@ -29,6 +30,35 @@
       "note": "独立二次核对来源 第 5 页图 第 23 题：绝对偏差是半正态，正负原像概率合并给密度；再算一阶矩和样本似然估计尺度。",
       "role": "primary",
       "roleNote": "第三问直接最大化样本似然。"
+    }
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "绝对误差密度",
+      "methodIds": [
+        "pr-dist-transform"
+      ],
+      "evidenceNote": "已目视新东方第5张试卷图：第23题完整条件后(I)单列误差密度任务；标题在第4图末。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "一阶矩估计",
+      "methodIds": [
+        "pr-estimate-moments"
+      ],
+      "evidenceNote": "已目视新东方第5张试卷图：第23题(II)明确限定一阶矩估计，不从计算过程拆问。"
+    },
+    {
+      "id": "part-3",
+      "label": "(III)",
+      "summary": "似然估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "已目视新东方第5张试卷图：第23题(III)独立列似然估计任务，与前两问共享题干条件。"
     }
   ]
 }

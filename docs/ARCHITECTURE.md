@@ -36,6 +36,10 @@ ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。
 
 ## 模块与 API 边界
 
+来源契约由 `domain/source.ts` 唯一定义，schema.ts引用。source.metadata记录发布者/级别、检查日期/可用性、真实性证据和外链许可边界；题目可继承同一文档的整卷元数据（忽略fragment，保留query差异）。缺元数据保持未知，不能由HTTP成功推官方身份。
+
+Question.subquestions为主问题内可选子条目：id、原标号label、原创summary、methodIds、evidenceNote、可选source。方法引用必须属于父题methodLinks，不复制核验和主辅状态；子问只展示关联方法。频次与试卷完整性保持主问题级计数，未登记子问不能解释为原题没有子问。
+
 | 建议位置 | 唯一职责 / 接口 |
 | --- | --- |
 | `src/domain/schema*.ts` | 实体类型与运行时结构检查，类型通过 z.infer 推导；schema 超长时按实体拆 |

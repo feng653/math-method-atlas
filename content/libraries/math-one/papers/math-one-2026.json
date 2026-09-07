@@ -5,7 +5,16 @@
   "exam": "301",
   "title": "2026 年考研数学一",
   "source": {
-    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf"
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "metadata": {
+      "publisher": "Liii STEM（第三方整理）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。Liii STEM第三方12页整理PDF；第3、4题局部题面符号及多题解答存在问题，第22题独立性未明仍保留待核关联。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 22

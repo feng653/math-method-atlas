@@ -5,7 +5,16 @@
   "exam": "301",
   "title": "2012 数学一（转载网页逐题索引）",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/"
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/",
+    "metadata": {
+      "publisher": "CS Graduates 社区网站（整理者未核实）",
+      "level": "third-party",
+      "checkedOn": "2026-09-08",
+      "availability": "available",
+      "evidence": "2026-09-08已核对资料并确认该链接可访问。社区HTML可读；第14、20、21、22题因补集、矩阵或联合分布排版改用其他来源。",
+      "bodyMode": "external-link",
+      "rightsNote": "未核实题面及第三方解析的转载许可；仓库仅提供外部链接、原创短摘要和独立方法关联说明，不收录整套题面或转载解析。"
+    }
   },
   "status": "complete",
   "expectedQuestionCount": 23

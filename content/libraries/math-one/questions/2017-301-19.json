@@ -6,7 +6,8 @@
   "summary": "锥面薄片质量",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540317.html",
-    "page": 4
+    "page": 4,
+    "locatorKind": "image-index"
   },
   "methodLinks": [
     {
