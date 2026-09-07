@@ -30,20 +30,35 @@ export function AtlasGraph({ library, methods, selected, chapter, onSelect, onCh
     setNodes((current) => current.map((node) => ({ ...node, selected: node.id === selected })));
   }, [selected, graph, setNodes]);
   const selectedMethod = methods.find((method) => method.id === selected);
+  const motionAllowed = duration() > 0;
   const edges = graph.edges.map((edge) => ({ ...edge,
-    animated: edge.target === selected,
+    animated: motionAllowed && edge.target === selected,
     style: { ...edge.style, opacity: selected && edge.target !== selected ? 0.13 : edge.style?.opacity },
   }));
   if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
     if (nodes.some((node) => node.id === relatedId)) edges.push({ id: `relation-${relatedId}`,
-      source: selected, target: relatedId, animated: true, type: 'default',
+      source: selected, target: relatedId, animated: motionAllowed, type: 'default',
       style: { stroke: '#b48c53', strokeDasharray: '5 6', strokeWidth: 1.3, opacity: 0.65 } });
   }
-  return <section className="graph-stage" aria-label="可拖拽缩放的方法思维导图">
+  function activateNode(id: string) {
+    const node = nodes.find((item) => item.id === id);
+    if (node?.data.kind === 'method') onSelect(node.id);
+    else if (node?.data.kind === 'chapter') onChapter(node.data.chapterId ?? '');
+    else if (node) onChapter('');
+  }
+  function restoreLayout() {
+    setNodes(graph.nodes.map((node) => ({ ...node, selected: node.id === selected })));
+    requestAnimationFrame(() => { void flow?.fitView({ duration: duration() }); });
+  }
+  return <section className="graph-stage" aria-label="可拖拽缩放的方法思维导图" onKeyDownCapture={(event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const wrapper = (event.target as HTMLElement).closest<HTMLElement>('.react-flow__node');
+    if (!wrapper?.dataset.id) return;
+    event.preventDefault(); event.stopPropagation(); activateNode(wrapper.dataset.id);
+  }}>
     <ReactFlow<NodeType> nodes={nodes} edges={edges} nodeTypes={nodeTypes} onNodesChange={onNodesChange}
       onInit={setFlow} onMoveEnd={(_, viewport) => setZoom(viewport.zoom)}
-      onNodeClick={(_, node) => node.data.kind === 'method' ? onSelect(node.id)
-        : node.data.kind === 'chapter' ? onChapter(node.data.chapterId ?? '') : onChapter('')}
+      onNodeClick={(_, node) => activateNode(node.id)}
       fitView minZoom={0.09} maxZoom={2.2} nodesConnectable={false} edgesReconnectable={false}
       deleteKeyCode={null} selectionOnDrag={false} zoomOnDoubleClick={false}
       ariaLabelConfig={{ 'node.a11yDescription.default': '按 Enter 选择方法，方向键移动节点。',
@@ -58,7 +73,7 @@ export function AtlasGraph({ library, methods, selected, chapter, onSelect, onCh
       <button aria-label="适配当前图" title="适配当前图" onClick={() => void flow?.fitView({ duration: duration(), padding: 0.18 })}><Focus size={17} /></button>
       <button aria-label={allMethods ? '收起方法节点' : '展开所有方法'} title={allMethods ? '收起方法节点' : '展开所有方法'}
         onClick={() => { setAllMethods(!allMethods); onChapter(''); }}><Expand size={17} /></button>
-      <button aria-label="恢复节点布局" title="恢复节点布局" onClick={() => { setNodes(graph.nodes); void flow?.fitView({ duration: duration() }); }}><RotateCcw size={16} /></button>
+      <button aria-label="恢复节点布局" title="恢复节点布局" onClick={restoreLayout}><RotateCcw size={16} /></button>
     </div>
     <div className="canvas-hint">拖动画布 · 滚轮缩放 · 点击章节深入</div>
   </section>;

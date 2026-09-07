@@ -5,17 +5,18 @@
 | 能力 | 唯一入口 | 状态 / 验证 |
 | --- | --- | --- |
 | 产品边界 | `docs/MVP.md` | 已写；前端只读、多体系、证据频次 |
-| 架构边界 | `docs/ARCHITECTURE.md` | 已设计；尚未代码验证 |
-| 协作规则 | `AGENTS.md` | 已写；250 行门禁待实现 |
+| 架构边界 | `docs/ARCHITECTURE.md` | 已实现边界；参见VERIFICATION.md |
+| 协作规则 | `AGENTS.md` | 250 行门禁已接入check与CI |
 | 内容类型与校验 | `src/domain/schema.ts`、`validate.ts` | 唯一契约，结构和跨文件引用 |
 | 内容读取 | `src/data/load.ts` | Vite glob构建时读取多体系JSON |
-| 搜索/覆盖/频次 | `src/domain/search.ts`、`coverage.ts`、`statistics.ts` | 纯函数，15项测试通过 |
+| 搜索/覆盖/频次 | `src/domain/search.ts`、`coverage.ts`、`statistics.ts` | 纯函数；去重/搜索/覆盖负例已测 |
 | 外部要求审计 | `src/domain/requirements.ts`、`content/requirements/` | 既有CLI校验历史要求引用；不冒充2026版核验 |
 | 进度报告 | `scripts/report.ts` | pnpm content:report输出实际数量/待审关联/缺口 |
 | 布局与画布 | `src/domain/graph.ts`、`src/components/AtlasGraph.tsx` | 总览/完整图/章节；拖动仅会话 |
-| 选择与页面 | `src/App.tsx` | hash保持体系/方法；全屏图谱+按需浮层 |
+| 选择与页面 | `src/App.tsx` | 全屏图谱；详情/真题React.lazy按需加载，体系切换重置画布 |
+| hash路由 | `src/domain/route.ts` | resolveAtlasRoute/atlasRouteHash；体系/方法/章节深链，非法ID提示；5项边界测试 |
 | 阅读与检索 | `src/components/MethodDetail.tsx`、`LibraryNavigation.tsx`、`PaperLibrary.tsx` | 目录与真题检索；KaTeX由Formula渲染 |
-| 内容 | `content/libraries/math-one/` | 151方法，审校记录在docs/reviews；课纲仍草案 |
+| 内容 | `content/libraries/math-one/` | 数量由content:report计算；审校记录在docs/reviews；课纲仍草案 |
 | CLI门禁 | `scripts/validate.ts`、`check-files.ts` | pnpm check；公式解析+250行硬限制 |
 | 发布 | `.github/workflows/pages.yml` | 校验/构建/Pages；首次远端检查部署成功 |
 

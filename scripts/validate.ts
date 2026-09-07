@@ -9,20 +9,27 @@ import { validateRequirements } from '../src/domain/requirements';
 const root = fileURLToPath(new URL('../content/libraries/', import.meta.url));
 const records: Record<string, unknown[]> = { libraries: [], methods: [], papers: [], questions: [] };
 const errors: string[] = [];
-async function readJson(path: string, target: string) {
-  try { records[target].push(JSON.parse(await readFile(path, 'utf8'))); }
+async function readJson(path: string, target: string, expectedId: string, expectedLibrary?: string) {
+  try {
+    const record = JSON.parse(await readFile(path, 'utf8'));
+    records[target].push(record);
+    if (record.id !== expectedId) errors.push(`${path}: filename/directory must match id ${expectedId}`);
+    if (expectedLibrary && record.libraryId !== expectedLibrary) errors.push(`${path}: wrong library directory`);
+  }
   catch (error) { errors.push(`${path}: ${String(error)}`); }
 }
 
 for (const directory of await readdir(root, { withFileTypes: true })) {
   if (!directory.isDirectory()) continue;
   const base = join(root, directory.name);
-  await readJson(join(base, 'library.json'), 'libraries');
+  await readJson(join(base, 'library.json'), 'libraries', directory.name);
   for (const kind of ['methods', 'papers', 'questions']) {
     let files: string[] = [];
     try { files = await readdir(join(base, kind)); }
     catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }
-    for (const file of files.filter((name) => name.endsWith('.json'))) await readJson(join(base, kind, file), kind);
+    for (const file of files.filter((name) => name.endsWith('.json'))) {
+      await readJson(join(base, kind, file), kind, file.slice(0, -5), directory.name);
+    }
   }
 }
 errors.push(...validateAtlas(records));
