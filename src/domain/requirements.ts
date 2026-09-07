@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import type { AtlasData } from './schema';
+import { validateRequirementItems } from './requirement-items';
 
 const text = z.string().min(1);
 export const requirementAuditSchema = z.object({
@@ -43,7 +44,14 @@ function validateQuestionGaps(input: unknown, data: AtlasData): string[] {
   return errors;
 }
 
-export function validateRequirements(input: unknown, data: AtlasData): string[] {
+export function validateRequirements(input: unknown, data: AtlasData, documents: unknown[] = []): string[] {
+  if (typeof input === 'object' && input !== null && 'type' in input && input.type === 'syllabus-items') {
+    const audits = documents.map((document) => requirementAuditSchema.safeParse(document));
+    const match = audits.find((result) => result.success && 'libraryId' in input && result.data.libraryId === input.libraryId
+      && 'evidenceVersion' in input && result.data.evidenceVersion === input.evidenceVersion
+      && 'targetVersion' in input && result.data.targetVersion === input.targetVersion);
+    return validateRequirementItems(input, data, match?.success ? match.data : undefined);
+  }
   if (typeof input === 'object' && input !== null && 'evidence' in input) return validateQuestionGaps(input, data);
   const parsed = requirementAuditSchema.safeParse(input);
   if (!parsed.success) return parsed.error.issues.map((issue) => `requirements ${issue.path.join('.')}: ${issue.message}`);

@@ -36,10 +36,12 @@ errors.push(...validateAtlas(records));
 const parsed = atlasSchema.safeParse(records);
 if (parsed.success) {
   const requirementRoot = fileURLToPath(new URL('../content/requirements/', import.meta.url));
+  const documents: unknown[] = [];
   for (const file of (await readdir(requirementRoot)).filter((name) => name.endsWith('.json'))) {
-    try { errors.push(...validateRequirements(JSON.parse(await readFile(join(requirementRoot, file), 'utf8')), parsed.data)); }
+    try { documents.push(JSON.parse(await readFile(join(requirementRoot, file), 'utf8'))); }
     catch (error) { errors.push(`${file}: ${String(error)}`); }
   }
+  for (const document of documents) errors.push(...validateRequirements(document, parsed.data, documents));
   for (const method of parsed.data.methods) {
     try {
       katex.renderToString(method.formula, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 });

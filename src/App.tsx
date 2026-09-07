@@ -70,7 +70,8 @@ export default function App() {
     {chapter && <button className="back-overview" onClick={() => { setChapter(''); setSelected(''); }}>← 全部章节</button>}
     <Suspense fallback={<aside className="detail-panel glass-panel" role="status">正在加载内容…</aside>}>
       {method && <MethodDetail method={method} methods={methods} questions={questions} papers={papers} onSelect={select} onClose={() => setSelected('')} />}
-      {panel === 'papers' && <PaperLibrary key={library.id} papers={papers} questions={questions} methods={methods} onClose={() => setPanel('none')} onSelect={select} />}
+      {panel === 'papers' && <PaperLibrary key={library.id} papers={papers} questions={questions} methods={methods}
+        chapters={library.chapters} onClose={() => setPanel('none')} onSelect={select} />}
     </Suspense>
     {panel === 'directory' && <LibraryNavigation library={library} libraries={data.libraries}
       onLibrary={(id) => { setLibraryId(id); setSelected(''); setChapter(''); setQuery(''); setRouteNotice(''); }} methods={methods} onClose={() => setPanel('none')}
