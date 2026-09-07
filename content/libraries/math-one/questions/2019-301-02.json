@@ -25,6 +25,13 @@
       "verification": "verified",
       "role": "primary",
       "roleNote": "左右差商直接回答题目中的可导性判断。"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "分段单调性及拼接连续性直接完成未编号的极值属性判断；原求导定义关联只回答可导性。",
+      "note": "未编号目标补审：重新目视新东方第1图第2题，并读取 https://www.csgraduates.com/study_methods/math/math1/2019/ 第2题确认左支含0。左邻域f=−x²，f′=−2x>0；右邻域0<x<e^(−1)时f′=ln x+1<0。两侧函数均趋f(0)=0，连续且先增后减，故0是严格极大值点。零点不可导不阻止分段极值判别；无需修改原差商关联。"
     }
   ],
   "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。",

@@ -15,6 +15,13 @@
       "note": "原题第1页第1题：变限求导后查变号。 独立复核：变限积分求导后在零点两侧判断导数符号；此关联用于极值子任务。",
       "role": "primary",
       "roleNote": "导数变号直接判断极值子任务。"
+    },
+    {
+      "methodId": "hm-concavity-asymptote",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "直接完成题目选项中的拐点判断，与已有极值方法分别处理不同性质。",
+      "note": "无编号目标独立复核：当前PDF物理第1页第1题：f′(x)=exp(x²)sin x在0左右由负转正且f″(0)=1；g(x)=(∫₀ˣexp(t²)dt)sin²x是光滑函数，展开后g″(x)=6x+O(x³)，因此g″在0两侧变号，(0,0)为g图像拐点。只查f的极值不足以判全题选项。"
     }
   ],
   "subquestionAudit": {

@@ -14,6 +14,13 @@
       "note": "主agent独立重读题面复核：两个独立样本的尺度参数不同，似然分开后相乘，再对共同参数求极值。",
       "role": "primary",
       "roleNote": "似然最大化直接求估计量。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "独立线性组合方差直接完成题面并列的估计量方差目标。",
+      "note": "无编号目标独立复核：当前来源第22题明确还要求估计量方差。似然估计为θ̂=(ΣXi+ΣYj/2)/(n+m)；两样本及样本内部独立，Var(Xi)=θ²、Var(Yj)=4θ²，故Var(θ̂)=[nθ²+m·4θ²/4]/(n+m)²=θ²/(n+m)。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。",

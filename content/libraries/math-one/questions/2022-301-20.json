@@ -14,6 +14,13 @@
       "note": "主agent独立重读题面复核：必要方向在中心作二阶展开并令区间缩小；余项条件由二阶连续保证。",
       "role": "primary",
       "roleNote": "二阶展开直接证明必要方向。"
+    },
+    {
+      "methodId": "hm-integral-inequality",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "积分保序直接完成充分必要证明中由二阶导非负推出平均积分界的方向。",
+      "note": "无编号目标独立复核：当前来源第20题：对f″≥0推出积分不等式的方向，令m=(a+b)/2、h=|b−a|/2。f′单调不减使H(t)=f(m+t)+f(m−t)−2f(m)满足H(0)=0、H′(t)≥0。积分0至h得到平均积分≥f(m)，交换a,b时平均积分不变。逆方向仍由原泰勒关联处理。"
     }
   ],
   "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。",

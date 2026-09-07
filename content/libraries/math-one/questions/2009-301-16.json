@@ -21,6 +21,13 @@
       "note": "独立方法关联复核：先对相邻幂函数之差积分得面积，再对得到的有理项消项，奇数子项可由对数幂级数求和。",
       "role": "primary",
       "roleNote": "用对数级数直接求所问奇数子项和。"
+    },
+    {
+      "methodId": "hm-series-basic",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "直接通过裂项部分和极限求题目要求的全项面积和S₁。",
+      "note": "未编号任务独立核验：原题无编号并列求S₁与奇数子项和S₂。相邻幂曲线面积aₙ=∫₀¹(xⁿ−xⁿ⁺¹)dx=1/(n+1)−1/(n+2)。S₁的N项部分和为1/2−1/(N+2)，极限1/2；直接用裂项和有限部分和极限，未交换无限求和与积分。原hm-power-sum承担S₂，新增入口补S₁。"
     }
   ],
   "subquestionAudit": {

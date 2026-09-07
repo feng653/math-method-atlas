@@ -15,6 +15,13 @@
       "methodId": "hm-power-sum",
       "role": "primary",
       "roleNote": "由递推转和函数方程，直接构成求和函数的路线。"
+    },
+    {
+      "methodId": "hm-power-radius",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "系数比值确定半径，直接完成未编号的收敛证明目标；原求和卡负责后续和函数。",
+      "note": "未编号目标补审：重新读取来源PDF物理第3页第17题，题面同时要求证明|x|<1时收敛并求和。a1=1且a(n+1)/an=(n+1/2)/(n+1)>0，系数比趋1，半径R=1；对0<|x|<1，绝对项比趋|x|<1，因此绝对收敛，x=0时逐项为0也收敛。此后才允许原hm-power-sum关联在区间内部逐项求导；不把半径判定偷换成已知收敛。"
     }
   ],
   "subquestionAudit": {

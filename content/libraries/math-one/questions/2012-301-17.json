@@ -14,6 +14,13 @@
       "methodId": "hm-power-sum",
       "role": "primary",
       "roleNote": "几何级数求导积分及系数拆分，直接给所求和函数。"
+    },
+    {
+      "methodId": "hm-power-radius",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "直接确定题目要求的幂级数收敛域并检查两个端点。",
+      "note": "未编号任务独立核验：原题同时要求收敛域与和函数，系数cₙ=(4n²+4n+3)/(2n+1)>0。令u=x²，cₙ/cₙ₊₁趋1，u幂级数半径1，实x内部为|x|<1；x=±1时通项cₙ不趋0，均发散；|x|>1也不趋0，故收敛域为(−1,1)。原hm-power-sum保留负责和函数，此入口独立补收敛域任务。"
     }
   ],
   "subquestionAudit": {
