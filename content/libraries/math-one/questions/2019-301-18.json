@@ -14,7 +14,39 @@
       "verification": "verified",
       "role": "primary",
       "roleNote": "直接证明第一问的积分递推式，并供后续比值极限使用。"
+    },
+    {
+      "methodId": "hm-squeeze",
+      "verification": "verified",
+      "note": "重读父级HTML第18题(II)，并对照新东方第3图编号；采用HTML正确递推分母n+2。an>0且递减，(n−1)/(n+2)=an/a(n−2)≤an/a(n−1)≤1，两端趋1，夹逼得相邻比值极限1。",
+      "role": "primary",
+      "roleNote": "夹逼直接完成(II)相邻积分比值极限。"
     }
   ],
-  "sourceNote": "保留全文HTML来源；新东方第3图递推分母误排为 n−2，积分分部独立核算应为 n+2。"
+  "sourceNote": "保留全文HTML来源；新东方第3图递推分母误排为 n−2，积分分部独立核算应为 n+2。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "单调及递推式",
+      "methodIds": [
+        "hm-integration-by-parts"
+      ],
+      "evidenceNote": "父级HTML来源第18题（并对照新东方第3张图）第18题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "相邻积分比值",
+      "methodIds": [
+        "hm-squeeze"
+      ],
+      "evidenceNote": "父级HTML来源第18题（并对照新东方第3张图）第18题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。父级分部积分仅提供递推中间式；已另核算并补夹逼直接入口。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "父级HTML来源第18题（并对照新东方第3张图）第18题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

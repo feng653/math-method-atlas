@@ -16,5 +16,30 @@
       "role": "primary",
       "roleNote": "双侧泰勒余项直接构造证明所需点。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（Ⅰ）",
+      "summary": "二阶导中值",
+      "methodIds": [
+        "hm-taylor-remainder"
+      ],
+      "evidenceNote": "当前来源第20题，PDF物理第4页明确列出（Ⅰ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（Ⅱ）",
+      "summary": "二阶导下界",
+      "methodIds": [
+        "hm-taylor-remainder"
+      ],
+      "evidenceNote": "当前来源第20题，PDF物理第4页明确列出（Ⅱ）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第20题，PDF物理第4页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

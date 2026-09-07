@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "同右端特解的差直接构造通解并判断给定表达式。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第2页第3题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

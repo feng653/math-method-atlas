@@ -16,5 +16,10 @@
       "roleNote": "斯托克斯转换是环流的直接路线。"
     }
   ],
-  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"
+  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。",
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第19题，网页按题号定位；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

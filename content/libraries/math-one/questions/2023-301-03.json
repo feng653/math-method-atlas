@@ -23,5 +23,10 @@
       "role": "primary",
       "roleNote": "零点左右差商直接完成可导性判断。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第3题，PDF物理第2页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

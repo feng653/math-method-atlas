@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "列变换的右乘关系直接判选项等式方向。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第2页第5题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

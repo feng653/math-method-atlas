@@ -23,5 +23,31 @@
       "role": "primary",
       "roleNote": "第二问用共同特征基构造正定平方根。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "正交对角化",
+      "methodIds": [
+        "la-eigen-symmetric"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第4页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "正定平方根",
+      "methodIds": [
+        "la-eigen-diagonalization",
+        "la-eigen-symmetric"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第4页明确列出（2）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第21题，PDF物理第4页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

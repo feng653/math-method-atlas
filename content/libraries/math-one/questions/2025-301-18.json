@@ -23,5 +23,10 @@
       "role": "supporting",
       "roleNote": "链式偏导把条件化为常微分方程；求f还需解方程及初值。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第18题，PDF物理第11页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

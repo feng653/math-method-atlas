@@ -15,6 +15,46 @@
       "methodId": "pr-estimate-mle",
       "role": "primary",
       "roleNote": "直接完成寿命尺度参数的最大似然估计子问。"
+    },
+    {
+      "methodId": "pr-dist-cdf",
+      "verification": "verified",
+      "note": "重读PDF第4页第23题(I)：t>0时直接取CDF补事件，P(T>t)=1−F(t)=exp[−(t/θ)^m]，θ,m>0保证取值合法；不把求尾概率拆成独立子问。",
+      "role": "primary",
+      "roleNote": "CDF补事件直接计算(I)的寿命尾概率。"
+    },
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "verified",
+      "note": "重读PDF第4页第23题(I)：s,t>0，{T>s+t}包含于{T>s}且P(T>s)=exp[−(s/θ)^m]>0。条件概率为尾概率比值exp[−((s+t)^m−s^m)/θ^m]；一般不是exp[−(t/θ)^m]。",
+      "role": "primary",
+      "roleNote": "条件概率比值直接计算(I)的第二个并列概率。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "寿命尾概率",
+      "methodIds": [
+        "pr-dist-cdf",
+        "pr-event-conditional"
+      ],
+      "evidenceNote": "来源PDF物理第4页第23题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "寿命参数估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "来源PDF物理第4页第23题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第4页第23题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

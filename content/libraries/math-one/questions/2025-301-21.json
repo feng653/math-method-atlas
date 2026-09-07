@@ -15,6 +15,38 @@
       "note": "原题第15页第21题：重根约束特征多项式。 独立复核：特征多项式在指定根处同时为零且导数为零以确定参数；向量条件另转为齐次系统。",
       "role": "primary",
       "roleNote": "重根特征多项式直接求第一问参数。"
+    },
+    {
+      "methodId": "la-system-homogeneous",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "第二问将向量关系化为齐次系统后筛选非零解。",
+      "note": "子问边界复核：当前来源第21题。第二问代入第一问参数3，令N=A−I，其三行均为(−1,−1,2)，N²=0。条件化为β=Nα、N²α=0。故α=(s,t,u)ᵀ，β=(2u−s−t)(1,1,1)ᵀ，并须2u−s−t≠0以保证两向量非零；得到全部解。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "重根参数",
+      "methodIds": [
+        "la-eigen-characteristic"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第15页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "全部向量对",
+      "methodIds": [
+        "la-system-homogeneous"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第15页明确列出（2）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第21题，PDF物理第15页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

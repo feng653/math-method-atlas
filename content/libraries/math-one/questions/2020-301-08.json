@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "伯努利和标准化直接给所求概率近似。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第2页第8题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

@@ -23,5 +23,10 @@
       "role": "supporting",
       "roleNote": "配方反正切用于计算截断积分的原函数。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第11题，PDF物理第3页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

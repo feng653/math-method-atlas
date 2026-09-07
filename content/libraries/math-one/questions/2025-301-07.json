@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "秩下界连用直接判等式条件。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第7题，PDF物理第6页；完整核对题干，未见显式作答子问编号；选项不计。①—④为候选结论标识，不是独立作答子问。"
+  }
 }

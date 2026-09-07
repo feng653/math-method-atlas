@@ -22,6 +22,47 @@
       "note": "独立二次核对来源 第 14 页图 第 22 题：指标变量 U 分割上下区域；用事件联合概率反例否定独立，按 U=0、1 的完备事件组求 Z 的分布；映射不满足二维可逆雅可比条件。",
       "role": "primary",
       "roleNote": "用联合概率反例直接回答第二问是否独立。"
+    },
+    {
+      "methodId": "pr-joint-marginal",
+      "verification": "verified",
+      "note": "重读PDF第14页第22题(I)：区域0<x<1、x²<y<√x，面积∫₀¹(√x−x²)dx=1/3，有限正面积满足区域均匀卡条件；域内联合密度为3，域外0。",
+      "role": "primary",
+      "roleNote": "区域均匀密度归一化直接完成(I)。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "区域均匀密度",
+      "methodIds": [
+        "pr-joint-marginal"
+      ],
+      "evidenceNote": "来源PDF物理第14页第22题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "判断独立性",
+      "methodIds": [
+        "pr-joint-independence"
+      ],
+      "evidenceNote": "来源PDF物理第14页第22题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-3",
+      "label": "(III)",
+      "summary": "混合量分布",
+      "methodIds": [
+        "pr-event-total"
+      ],
+      "evidenceNote": "来源PDF物理第14页第22题明确列出第3个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第14页第22题已核对完整题面；共3个独立编号子问，已逐项记录。"
+  }
 }

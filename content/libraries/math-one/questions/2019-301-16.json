@@ -25,7 +25,39 @@
       "verification": "verified",
       "role": "primary",
       "roleNote": "第一问由最大方向及梯度模直接解曲面参数。"
+    },
+    {
+      "methodId": "hm-surface-integrals",
+      "verification": "verified",
+      "note": "重读新东方第3图第16题(II)：最大方向导数条件给梯度(−6,−8)，故a=b=−1。非负高度截面z=2−x²−y²投影r≤√2；面积元√(1+4r²)r dr dφ，积分2π∫₀^√2 r√(1+4r²)dr=13π/3；曲面正则且投影单值。",
+      "role": "primary",
+      "roleNote": "第一类曲面积分直接求(II)截曲面面积。"
     }
   ],
-  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "梯度条件定参",
+      "methodIds": [
+        "hm-direction-gradient"
+      ],
+      "evidenceNote": "新东方文章第3张题面图第16题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "截曲面面积",
+      "methodIds": [
+        "hm-surface-integrals"
+      ],
+      "evidenceNote": "新东方文章第3张题面图第16题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第3张题面图第16题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

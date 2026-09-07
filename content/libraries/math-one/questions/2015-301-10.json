@@ -17,5 +17,10 @@
       "role": "primary",
       "roleNote": "对称性分解直接完成定积分求值。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第2张题面图第10题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

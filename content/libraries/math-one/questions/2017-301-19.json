@@ -24,5 +24,30 @@
       "role": "primary",
       "roleNote": "第二问直接积分面密度求质量。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "交线投影",
+      "methodIds": [
+        "hm-space-intersections"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第19题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "锥面薄片质量",
+      "methodIds": [
+        "hm-surface-integrals"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第19题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第4张题面图第19题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

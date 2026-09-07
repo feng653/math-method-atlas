@@ -23,5 +23,10 @@
       "role": "primary",
       "roleNote": "对已求 I(t) 判导数符号，直接求其最小值。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第9页第17题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

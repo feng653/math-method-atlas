@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "交错与绝对收敛分类直接判敛散。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第2题，PDF物理第2页；完整核对题干，未见显式作答子问编号；选项不计。①②是已知级数标识，A—D是选项，不是作答子问。"
+  }
 }

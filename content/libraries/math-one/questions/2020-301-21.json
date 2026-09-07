@@ -15,6 +15,38 @@
       "methodId": "la-eigen-similarity",
       "role": "primary",
       "roleNote": "在所构造基中表达矩阵，再直接得到所需相似关系。"
+    },
+    {
+      "methodId": "la-matrix-inverse",
+      "verification": "verified",
+      "note": "重读PDF第4页第21题(I)：若P=(α,Aα)列相关，由α≠0可得Aα=cα；这与α不是A特征向量矛盾。因此两列无关、rank(P)=2，方阵满秩等价可逆。",
+      "role": "primary",
+      "roleNote": "满秩可逆判据直接完成(I)，无需预设P逆存在。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "证明列阵可逆",
+      "methodIds": [
+        "la-matrix-inverse"
+      ],
+      "evidenceNote": "来源PDF物理第4页第21题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "相似形及对角化",
+      "methodIds": [
+        "la-eigen-similarity"
+      ],
+      "evidenceNote": "来源PDF物理第4页第21题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第4页第21题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

@@ -24,5 +24,31 @@
       "role": "primary",
       "roleNote": "由非零解条件及零空间直接求第二问参数和全部向量。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "证明构成基",
+      "methodIds": [
+        "la-vector-coordinate"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第20题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "等坐标向量",
+      "methodIds": [
+        "la-vector-coordinate",
+        "la-system-homogeneous"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第20题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第4张题面图第20题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

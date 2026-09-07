@@ -32,7 +32,48 @@
       "note": "独立复核：来源第 22 题。按离散符号分情况求密度，再算协方差；绝对值的确定性关系说明不独立，不能套二维密度雅可比。",
       "role": "primary",
       "roleNote": "直接算相关性判断所需的协方差子任务。"
+    },
+    {
+      "methodId": "pr-joint-independence",
+      "verification": "verified",
+      "note": "重读新东方第4图第22题(III)：X为参数1指数量，Z=XY且P(Y=1)=1−p，0<p<1。事件X≤1与Z>1不可能同时发生，交概率0；边缘概率乘积为(1−e^(−1))(1−p)e^(−1)>0，故不独立，包括(II)不相关时。",
+      "role": "primary",
+      "roleNote": "用明确事件反例直接判断(III)独立性。"
     }
   ],
-  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "符号混合密度",
+      "methodIds": [
+        "pr-event-total"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第22题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "不相关定参",
+      "methodIds": [
+        "pr-moment-covariance"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第22题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-3",
+      "label": "(III)",
+      "summary": "判断独立性",
+      "methodIds": [
+        "pr-joint-independence"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第22题明确列出第3个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第4张题面图第22题已核对完整题面；共3个独立编号子问，已逐项记录。"
+  }
 }

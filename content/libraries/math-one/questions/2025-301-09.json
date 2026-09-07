@@ -23,5 +23,10 @@
       "role": "primary",
       "roleNote": "题目明确要求泊松近似值。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第9题，PDF物理第7页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

@@ -22,6 +22,47 @@
       "note": "对半径平方变量先求分布函数，将事件化为同心圆盘再积分，避免退化二维雅可比。",
       "role": "primary",
       "roleNote": "另一个求分布子问由径向事件原像直接完成。"
+    },
+    {
+      "methodId": "pr-joint-independence",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "第二问直接用联合事件概率反例判不独立。",
+      "note": "子问边界复核：当前来源第22题。第二问联合支持域为单位圆盘。事件X>3/4与Y>3/4分别有正概率，但它们同时发生落在圆盘外，联合概率为0，因此不独立；不把协方差0当成独立判据。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（Ⅰ）",
+      "summary": "求协方差",
+      "methodIds": [
+        "pr-moment-covariance"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第4页明确列出（Ⅰ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（Ⅱ）",
+      "summary": "判独立性",
+      "methodIds": [
+        "pr-joint-independence"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第4页明确列出（Ⅱ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-3",
+      "label": "（Ⅲ）",
+      "summary": "径向量密度",
+      "methodIds": [
+        "pr-dist-transform"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第4页明确列出（Ⅲ）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第22题，PDF物理第4页；完整读到题干结束，共3个最末级显式子问。"
+  }
 }

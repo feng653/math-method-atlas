@@ -25,7 +25,39 @@
       "verification": "verified",
       "role": "primary",
       "roleNote": "对未知方差最大化似然，直接求估计量子问。"
+    },
+    {
+      "methodId": "pr-dist-density",
+      "verification": "verified",
+      "note": "重读新东方第5图第23题(I)：半正态平移密度在x≥μ为(A/σ)e^(−(x−μ)²/(2σ²))。令u=(x−μ)/σ，归一化积分A∫₀∞e^(−u²/2)du=A√(π/2)=1，故A=√(2/π)，得到非负合法密度。",
+      "role": "primary",
+      "roleNote": "支持区间归一化直接确定(I)常数。"
     }
   ],
-  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "密度归一常数",
+      "methodIds": [
+        "pr-dist-density"
+      ],
+      "evidenceNote": "新东方文章第5张题面图第23题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "方差似然估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "新东方文章第5张题面图第23题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第5张题面图第23题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

@@ -15,6 +15,38 @@
       "note": "主agent独立重读题面复核：切线截距关系转为一阶线性方程，再用初值确定常数。",
       "role": "primary",
       "roleNote": "切线关系所得一阶方程直接求曲线。"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "第二问导数变号直接求积分函数全局最值。",
+      "note": "子问边界复核：当前来源第17题。第二问由第一问y=x(2−ln x)，积分函数导数就是y，在e²前正后负，故唯一全局最大点e²；积分取值为(e⁴−5)/4。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（Ⅰ）",
+      "summary": "求曲线函数",
+      "methodIds": [
+        "hm-ode-linear-first"
+      ],
+      "evidenceNote": "当前来源第17题，PDF物理第3页明确列出（Ⅰ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（Ⅱ）",
+      "summary": "积分函数最值",
+      "methodIds": [
+        "hm-monotonic-extrema"
+      ],
+      "evidenceNote": "当前来源第17题，PDF物理第3页明确列出（Ⅱ）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第17题，PDF物理第3页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

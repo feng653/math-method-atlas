@@ -23,5 +23,32 @@
       "role": "primary",
       "roleNote": "两问直接确定无偏系数与MSE最优系数。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "无偏倍数",
+      "methodIds": [
+        "pr-joint-max-min",
+        "pr-estimate-unbiased"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第5页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "最小均方误差",
+      "methodIds": [
+        "pr-joint-max-min",
+        "pr-estimate-unbiased"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第5页明确列出（2）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第22题，PDF物理第5页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

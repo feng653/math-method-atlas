@@ -13,7 +13,21 @@
       "note": "独立复核：来源第 18 题。参数切向量给切线截距距离约束，从正导数选分支，再以参数面积积分。",
       "methodId": "hm-ode-modeling",
       "role": "primary",
-      "roleNote": "把切线距离约束转为变化率方程，直接求函数表达式小问。"
+      "roleNote": "把切线距离约束转为变化率方程，直接求原题所要求的函数表达式。"
+    },
+    {
+      "methodId": "hm-integral-area-volume",
+      "verification": "verified",
+      "role": "primary",
+      "note": "独立完成度复审：参数曲线x=f(t)、y=cos t，0≤t<π/2。由切线横截距差及距离1、f′>0得到f′=sin²t/cos t；对每个T<π/2，曲线下截断面积为∫₀ᵀcos t·f′(t)dt=∫₀ᵀsin²t dt。令T↑π/2，面积为π/4；积分是非负上减下薄片，参数方向由f′>0保证。",
+      "roleNote": "直接完成原题另要求的面积，没有人为给该并列任务添加子问编号。"
+    },
+    {
+      "methodId": "hm-improper-integral",
+      "verification": "verified",
+      "role": "supporting",
+      "note": "独立完成度复审：f(t)=ln(sec t+tan t)−sin t在t↑π/2时趋∞，所求区域无界。先在x=f(T)处截断，再由面积∫₀ᵀsin²t dt的极限π/4定义收敛反常面积；不能把无穷横坐标当作有限闭曲线交点。",
+      "roleNote": "为面积计算处理无穷横坐标端点的截断极限。"
     }
   ],
   "subquestionAudit": {

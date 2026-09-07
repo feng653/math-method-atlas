@@ -37,5 +37,32 @@
       "role": "primary",
       "roleNote": "第二问直接构造GH并按降维公式求十次幂。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "极大无关组",
+      "methodIds": [
+        "la-vector-basis"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第10页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "分解与十次幂",
+      "methodIds": [
+        "la-rank-factor-power",
+        "la-matrix-product",
+        "la-matrix-power"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第10页明确列出（2）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第21题，PDF物理第10页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

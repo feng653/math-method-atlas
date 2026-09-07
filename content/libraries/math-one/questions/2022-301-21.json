@@ -14,7 +14,55 @@
       "note": "主agent独立重读题面复核：系数矩阵对称，用规范正交特征向量变换；解零水平集时保留零向量。",
       "role": "primary",
       "roleNote": "正交变换直接完成二次型化简。"
+    },
+    {
+      "methodId": "la-quadratic-matrix",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "第一问直接写出二次型矩阵。",
+      "note": "子问边界复核：当前来源第21题。第一问按交叉项折半写矩阵，得到向量v=(1,2,3)的外积vvᵀ；对角元素为1、4、9，与原双重求和吻合。"
+    },
+    {
+      "methodId": "la-system-homogeneous",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "第三问直接求零水平集全部解。",
+      "note": "子问边界复核：当前来源第21题。第三问二次型等于(x₁+2x₂+3x₃)²，零水平集等价于该线性式为零；基础解可取(−2,1,0)、(−3,0,1)，包括零解。"
     }
   ],
-  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"
+  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（Ⅰ）",
+      "summary": "写系数矩阵",
+      "methodIds": [
+        "la-quadratic-matrix"
+      ],
+      "evidenceNote": "当前来源第21题，网页按题号定位明确列出（Ⅰ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（Ⅱ）",
+      "summary": "正交标准形",
+      "methodIds": [
+        "la-quadratic-orthogonal"
+      ],
+      "evidenceNote": "当前来源第21题，网页按题号定位明确列出（Ⅱ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-3",
+      "label": "（Ⅲ）",
+      "summary": "零水平解",
+      "methodIds": [
+        "la-system-homogeneous"
+      ],
+      "evidenceNote": "当前来源第21题，网页按题号定位明确列出（Ⅲ）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第21题，网页按题号定位；完整读到题干结束，共3个最末级显式子问。"
+  }
 }

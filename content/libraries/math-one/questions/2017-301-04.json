@@ -17,5 +17,10 @@
       "role": "primary",
       "roleNote": "积分速度差得到位置差，直接判断追及关系。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第1张题面图第4题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

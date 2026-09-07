@@ -16,5 +16,30 @@
       "role": "primary",
       "roleNote": "按选择变量拆分混合分布，直接求分布任务。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "联合分布函数",
+      "methodIds": [
+        "pr-event-total"
+      ],
+      "evidenceNote": "来源PDF物理第4页第22题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "混合边缘分布",
+      "methodIds": [
+        "pr-event-total"
+      ],
+      "evidenceNote": "来源PDF物理第4页第22题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第4页第22题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

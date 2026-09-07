@@ -31,5 +31,39 @@
       "roleNote": "第二问明确给出的似然最大化直接求估计值。"
     }
   ],
-  "sourceNote": "题面未明确独立寿命假设；最小值分布与无偏缩放两关联仍pending，不能仅凭转载解析补假设。给定截尾似然的最大化操作已独立核对。"
+  "sourceNote": "题面未明确独立寿命假设；最小值分布与无偏缩放两关联仍pending，不能仅凭转载解析补假设。给定截尾似然的最大化操作已独立核对。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）（i）",
+      "summary": "首次失效密度",
+      "methodIds": [
+        "pr-joint-max-min"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第11页明确列出（1）（i）作答任务；不是解析中的步骤编号。(1)(i)、(1)(ii)继承k=1条件；独立性疑点不因子问登记而消失，原pending保持。"
+    },
+    {
+      "id": "part-2",
+      "label": "（1）（ii）",
+      "summary": "无偏缩放与方差",
+      "methodIds": [
+        "pr-estimate-unbiased"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第11页明确列出（1）（ii）作答任务；不是解析中的步骤编号。(1)(i)、(1)(ii)继承k=1条件；独立性疑点不因子问登记而消失，原pending保持。"
+    },
+    {
+      "id": "part-3",
+      "label": "（2）",
+      "summary": "截尾似然估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "当前来源第22题，PDF物理第11页明确列出（2）作答任务；不是解析中的步骤编号。(1)(i)、(1)(ii)继承k=1条件；独立性疑点不因子问登记而消失，原pending保持。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第22题，PDF物理第11页；完整读到题干结束，共3个最末级显式子问。末级编号为(1)(i)、(1)(ii)、(2)；前两项继承(1)的k=1共同条件，不重复登记(1)容器。寿命独立性仍未核实。"
+  }
 }

@@ -23,5 +23,30 @@
       "role": "primary",
       "roleNote": "第二问两次罗尔直接证明二阶导零点存在。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "积分严格正性",
+      "methodIds": [
+        "hm-integral-inequality"
+      ],
+      "evidenceNote": "当前来源第20题，PDF物理第9页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "二阶导零点",
+      "methodIds": [
+        "hm-mean-value-proof"
+      ],
+      "evidenceNote": "当前来源第20题，PDF物理第9页明确列出（2）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第20题，PDF物理第9页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

@@ -15,6 +15,38 @@
       "note": "主agent独立重读题面复核：配方和可逆缩放处理合同，正交变换还须比较谱，二者不可混同。",
       "role": "primary",
       "roleNote": "配方直接解决可逆合同化简部分。"
+    },
+    {
+      "methodId": "la-eigen-similarity",
+      "verification": "verified",
+      "role": "primary",
+      "roleNote": "第二问以迹不变量直接否定正交变换存在。",
+      "note": "子问边界复核：当前来源第21题。第二问若有正交Q使两二次型相互变换，则系数矩阵满足B=QᵀAQ=Q⁻¹AQ，必须同迹。但两矩阵迹分别5和3，矛盾；仅用相似必要条件否定，不据同谱声称已构造正交变换。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（Ⅰ）",
+      "summary": "可逆合同变换",
+      "methodIds": [
+        "la-quadratic-completion"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第4页明确列出（Ⅰ）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（Ⅱ）",
+      "summary": "正交存在判别",
+      "methodIds": [
+        "la-eigen-similarity"
+      ],
+      "evidenceNote": "当前来源第21题，PDF物理第4页明确列出（Ⅱ）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第21题，PDF物理第4页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

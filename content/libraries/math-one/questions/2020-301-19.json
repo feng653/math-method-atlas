@@ -16,5 +16,30 @@
       "role": "primary",
       "roleNote": "分段中值与等号分析直接完成两个证明任务。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "导数幅值下界",
+      "methodIds": [
+        "hm-mean-value-proof"
+      ],
+      "evidenceNote": "来源PDF物理第3页第19题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "证明函数为零",
+      "methodIds": [
+        "hm-mean-value-proof"
+      ],
+      "evidenceNote": "来源PDF物理第3页第19题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第3页第19题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

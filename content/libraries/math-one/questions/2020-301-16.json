@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "沿闭曲线直接参数积分，完成含内部奇点的积分求值。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第3页第16题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

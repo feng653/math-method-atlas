@@ -25,7 +25,47 @@
       "verification": "verified",
       "role": "primary",
       "roleNote": "最大化尺度似然直接给题问估计量。"
+    },
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "verified",
+      "note": "重读新东方第4图第23题(II)：由(I)的估计σ̂=(1/n)Σ|Xi|，按原双指数密度积分得E|X|=σ、E|X|²=2σ²，绝对矩有限；线性得Eσ̂=σ。",
+      "role": "primary",
+      "roleNote": "直接求(II)的估计量期望。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "verified",
+      "note": "重读新东方第4图第23题(II)：|Xi|独立且前两矩为σ、2σ²，故Var|Xi|=σ²，Var[(Σ|Xi|)/n]=σ²/n；独立性消去全部交叉协方差。",
+      "role": "primary",
+      "roleNote": "直接求(II)的估计量方差。"
     }
   ],
-  "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"
+  "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "尺度似然估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第23题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "估计量期望方差",
+      "methodIds": [
+        "pr-moment-expectation",
+        "pr-moment-variance"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第23题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第4张题面图第23题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

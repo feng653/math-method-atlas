@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "累次积分直接计算题给二重积分。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第17题，PDF物理第4页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

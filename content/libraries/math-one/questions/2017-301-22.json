@@ -23,7 +23,52 @@
       "note": "独立二次核对来源 第 4 页图 第 22 题：X 为两点离散量，Y 有连续密度；对 X 分层得移位分布混合，不能套两连续密度卷积；E(Y)=2/3。",
       "role": "primary",
       "roleNote": "按离散 X 分层直接求第二问和变量密度。"
+    },
+    {
+      "methodId": "pr-dist-density",
+      "verification": "verified",
+      "note": "重读补充来源 https://www.csgraduates.com/study_methods/math/math1/2017/ 第22题(I)，明确为P{Y≤EY}；原新东方第4图只比较符号损坏，保留父来源。由EY=∫₀¹2y²dy=2/3，按密度积分P(Y≤2/3)=∫₀^(2/3)2y dy=4/9；本关联依照补充转载的≤版本，不认证官方原卷。",
+      "role": "primary",
+      "roleNote": "按密度积分直接求(I)概率；原期望卡只提供阈值。"
     }
   ],
-  "sourceNote": "原页图第 I 问概率比较符号损坏；期望计算与第 II 问离散连续混合分布足以确认现有关联，不认证第 I 问损坏的比较方向。"
+  "sourceNote": "原页图第I问概率比较符号损坏；第一子问补充社区转载的≤版本及其密度积分路线，原图比较方向仍无官方裁定。第II问分层混合路线已核验。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "均值阈值概率",
+      "methodIds": [
+        "pr-moment-expectation",
+        "pr-dist-density"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第22题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。比较符号损坏但(I)边界清楚，摘要不推测方向；期望卡仅支持阈值计算。 后续重读CS Graduates第22题(I)明确≤，原比较方向未认证；该补充源用于新密度关联，原期望关联不变。",
+      "source": {
+        "url": "https://www.csgraduates.com/study_methods/math/math1/2017/",
+        "metadata": {
+          "publisher": "CS Graduates计算机考研杂货铺（社区转载）",
+          "level": "third-party",
+          "checkedOn": "2026-09-08",
+          "availability": "available",
+          "evidence": "本次已实际阅读第22题的第一问，比较方向为≤；用于补充新东方页图的损坏符号，尚无官方原卷裁定。",
+          "bodyMode": "external-link",
+          "rightsNote": "未确认全文转载许可，仅保留外部链接、原创短摘要与方法分析。"
+        }
+      }
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "混合和密度",
+      "methodIds": [
+        "pr-event-total"
+      ],
+      "evidenceNote": "新东方文章第4张题面图第22题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第4张题面图第22题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

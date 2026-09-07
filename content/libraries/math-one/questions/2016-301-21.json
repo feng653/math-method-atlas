@@ -23,5 +23,31 @@
       "role": "primary",
       "roleNote": "第二问将 B 的高次幂按列乘法展开为所问列向量组合。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "矩阵高次幂",
+      "methodIds": [
+        "la-matrix-power"
+      ],
+      "evidenceNote": "来源PDF物理第13页第21题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "幂矩阵列表示",
+      "methodIds": [
+        "la-matrix-power",
+        "la-matrix-product"
+      ],
+      "evidenceNote": "来源PDF物理第13页第21题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第13页第21题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

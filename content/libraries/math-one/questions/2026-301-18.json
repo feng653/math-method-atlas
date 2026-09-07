@@ -23,5 +23,30 @@
       "role": "primary",
       "roleNote": "第二问解非齐次方程并用初值确定函数。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "证明常量关系",
+      "methodIds": [
+        "hm-path-independence"
+      ],
+      "evidenceNote": "当前来源第18题，PDF物理第7页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "初值求函数",
+      "methodIds": [
+        "hm-ode-undetermined"
+      ],
+      "evidenceNote": "当前来源第18题，PDF物理第7页明确列出（2）作答任务；不是解析中的步骤编号。本小问接续于PDF物理第8页。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第18题，PDF物理第7页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

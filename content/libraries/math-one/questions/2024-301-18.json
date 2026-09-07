@@ -26,9 +26,35 @@
     {
       "methodId": "hm-monotonic-extrema",
       "verification": "verified",
-      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。",
-      "role": "supporting",
-      "roleNote": "为第二问提供边界一元最值，尚需与内部候选比较。"
+      "note": "独立二次核对来源 第 4 页图 第 18 题：曲面偏导给切平面，再对截距构成的目标函数求驻点并检查边界及无界端。 子问直接路线复核：当前PDF第4页第18题(2)，切平面给D={x≥0,y≥0,x+y≤3}。令s=x+y，0≤xy≤s²/4，则f=s³−3sxy−s²+3介于L(s)=s³/4−s²+3和U(s)=s³−s²+3。L′=s(3s/4−2)，在[0,3]的最小值为L(8/3)=17/27；U′=s(3s−2)，比较0、2/3、3得最大值U(3)=21。下界在x=y=4/3取得，上界在(3,0)及(0,3)取得，故一元最值路线直接完成全局两端值。",
+      "role": "primary",
+      "roleNote": "第二问先以和变量构造可取等上下包络，再分别用一元最值直接求闭域全局最大最小值。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "（1）",
+      "summary": "切平面方程",
+      "methodIds": [
+        "hm-tangent-plane"
+      ],
+      "evidenceNote": "当前来源第18题，PDF物理第4页明确列出（1）作答任务；不是解析中的步骤编号。"
+    },
+    {
+      "id": "part-2",
+      "label": "（2）",
+      "summary": "闭域最值",
+      "methodIds": [
+        "hm-hessian-extrema",
+        "hm-monotonic-extrema"
+      ],
+      "evidenceNote": "当前来源第18题，PDF物理第4页明确列出（2）作答任务；不是解析中的步骤编号。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第18题，PDF物理第4页；完整读到题干结束，共2个最末级显式子问。"
+  }
 }

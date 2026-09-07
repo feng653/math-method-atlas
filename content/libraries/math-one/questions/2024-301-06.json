@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "相关判别直接区分整体与成对无关。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第6题，PDF物理第2页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

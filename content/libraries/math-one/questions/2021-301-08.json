@@ -23,5 +23,10 @@
       "role": "supporting",
       "roleNote": "将交集与条件概率互换，为加权比较提供表达式。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第8题，PDF物理第2页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

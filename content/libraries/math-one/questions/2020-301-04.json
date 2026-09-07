@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "内部绝对收敛性质直接判断子级数与半径关系。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "来源PDF物理第2页第4题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

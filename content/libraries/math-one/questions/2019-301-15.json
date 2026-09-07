@@ -25,7 +25,39 @@
       "verification": "verified",
       "role": "primary",
       "roleNote": "直接完成第一问所求微分方程特解。"
+    },
+    {
+      "methodId": "hm-concavity-asymptote",
+      "verification": "verified",
+      "note": "重读新东方第3图第15题(II)：(I)得y=xe^(−x²/2)，二阶导y″=x(x²−3)e^(−x²/2)。符号在−√3、0、√3逐次改变：依次为负、正、负、正，三处均连续，是全部拐点；对应纵坐标为−√3e^(−3/2)、0、√3e^(−3/2)。",
+      "role": "primary",
+      "roleNote": "二阶导变号直接确定(II)全部凹凸区间和拐点。"
     }
   ],
-  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "求初值特解",
+      "methodIds": [
+        "hm-ode-linear-first"
+      ],
+      "evidenceNote": "新东方文章第3张题面图第15题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "凹凸及拐点",
+      "methodIds": [
+        "hm-concavity-asymptote"
+      ],
+      "evidenceNote": "新东方文章第3张题面图第15题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第3张题面图第15题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }

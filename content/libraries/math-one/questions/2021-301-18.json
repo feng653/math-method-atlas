@@ -23,5 +23,10 @@
       "role": "primary",
       "roleNote": "直接完成题目要求的和函数。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第18题，PDF物理第3页；完整核对题干，未见显式作答子问编号；选项不计。收敛域及和函数在同一句要求中，无编号子问。"
+  }
 }

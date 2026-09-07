@@ -16,5 +16,10 @@
       "role": "primary",
       "roleNote": "平方期望分解直接求平移极小值。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "当前来源第8题，PDF物理第3页；完整核对题干，未见显式作答子问编号；选项不计。"
+  }
 }

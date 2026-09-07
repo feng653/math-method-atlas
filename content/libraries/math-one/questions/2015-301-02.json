@@ -17,5 +17,10 @@
       "role": "primary",
       "roleNote": "按已给特解匹配系数，直接解出所问参数。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "新东方文章第1张题面图第2题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  }
 }

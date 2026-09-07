@@ -32,5 +32,30 @@
       "roleNote": "在端点受限似然上取最大，直接求第二问估计量。"
     }
   ],
-  "sourceNote": "原图密度支撑端点字形损坏；第二来源明确写θ≤x≤1。本题关联按该闭端点转载版本核验，尚未认证官方原卷。"
+  "sourceNote": "原图密度支撑端点字形损坏；第二来源明确写θ≤x≤1。本题关联按该闭端点转载版本核验，尚未认证官方原卷。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(1)",
+      "summary": "端点矩估计",
+      "methodIds": [
+        "pr-estimate-moments"
+      ],
+      "evidenceNote": "父级HTML来源第23题（并对照新东方第4张图）第23题明确列出第1个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    },
+    {
+      "id": "part-2",
+      "label": "(2)",
+      "summary": "端点似然估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "父级HTML来源第23题（并对照新东方第4张图）第23题明确列出第2个独立编号任务；按题面边界录入，不把解答步骤再拆分。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "父级HTML来源第23题（并对照新东方第4张图）第23题已核对完整题面；共2个独立编号子问，已逐项记录。"
+  }
 }
