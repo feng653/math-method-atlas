@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "13",
+  "summary": "行列式",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "note": "原题第3页第13题：利用对称结构进行行列消元；待独立复核。",
+      "verification": "pending",
+      "methodId": "la-det-row-operations"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2016-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "13",
+  "summary": "稀疏行列式",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 6
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-det-expansion",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 6 页第 13 题。沿末行展开，利用其余子式的三角结构。"
+    }
+  ]
+}

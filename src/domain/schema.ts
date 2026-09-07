@@ -32,12 +32,14 @@ export const methodSchema = z.object({
 export const paperSchema = z.object({
   id, libraryId: id, year: z.number().int().min(1987).max(2100), exam: text, title: text, source,
   status: z.enum(['indexed', 'partial', 'complete']),
+  sourceNote: text.optional(),
   expectedQuestionCount: z.number().int().positive().optional(),
 }).strict().refine((paper) => paper.status !== 'complete' || paper.expectedQuestionCount !== undefined,
   'Complete paper needs expectedQuestionCount');
 
 export const questionSchema = z.object({
-  id, libraryId: id, paperId: id, number: text, summary: text, source,
+  id, libraryId: id, paperId: id, number: z.string().regex(/^[1-9]\d?$/, 'Use the main question number without leading zeros'), summary: text, source,
+  sourceNote: text.optional(),
   methodLinks: z.array(z.object({
     methodId: id, verification: z.enum(['pending', 'verified']), note: z.string(),
   }).strict().refine((link) => link.verification !== 'verified' || link.note.trim().length > 0,

@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "1",
+  "summary": "导数图判拐点",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-concavity-asymptote",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 1 页第 1 题。根据二阶导数左右符号是否改变判断，包括二阶导数不存在处。"
+    }
+  ]
+}

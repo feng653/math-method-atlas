@@ -1,0 +1,18 @@
+{
+  "id": "2017-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "21",
+  "summary": "正交标准形反参",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 21 题。标准形缺一平方项意味着零特征值，先解参数再单位正交化特征向量。"
+    }
+  ]
+}

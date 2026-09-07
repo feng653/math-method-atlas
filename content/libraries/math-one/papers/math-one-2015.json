@@ -1,0 +1,13 @@
+{
+  "id": "math-one-2015",
+  "libraryId": "math-one",
+  "year": 2015,
+  "exam": "301",
+  "title": "2015年考研数学一",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html"
+  },
+  "status": "complete",
+  "expectedQuestionCount": 23,
+  "sourceNote": "非官方发布；题号索引齐全，方法关联待独立复核，转载许可未知。"
+}

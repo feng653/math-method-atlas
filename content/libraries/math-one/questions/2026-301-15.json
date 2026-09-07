@@ -1,0 +1,18 @@
+{
+  "id": "2026-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "15",
+  "summary": "最大特征值比较",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 6
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-characteristic",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 6 页第 15 题。分别求特征根，再按参数分段确定最大根。 独立复核（2026-09-08，重读题面）：分别求两矩阵特征根，再按参数比较最大实根。"
+    }
+  ]
+}

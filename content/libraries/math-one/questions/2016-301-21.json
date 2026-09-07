@@ -1,0 +1,23 @@
+{
+  "id": "2016-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "21",
+  "summary": "矩阵高次幂",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 13
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-power",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 13 页第 21 题。先对角化求幂，由乘法结合律递推另一矩阵的高次幂及列表示。"
+    },
+    {
+      "methodId": "la-matrix-product",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 13 页第 21 题。先对角化求幂，由乘法结合律递推另一矩阵的高次幂及列表示。"
+    }
+  ]
+}

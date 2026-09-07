@@ -1,0 +1,18 @@
+{
+  "id": "2026-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "7",
+  "summary": "二次型圆柱面",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 7 题。正交对角化后，以一个零系数和另两个同号系数识别圆柱。 独立复核（2026-09-08，重读题面）：实对称二次型的零特征值与负特征空间给圆柱面。"
+    }
+  ]
+}

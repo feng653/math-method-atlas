@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "8",
+  "summary": "检验水平",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-test-normal-mean",
+      "note": "原题第2页第8题：比较显著性水平对应拒绝域；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

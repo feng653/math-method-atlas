@@ -1,0 +1,18 @@
+{
+  "id": "2017-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "15",
+  "summary": "复合函数二阶导",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-chain",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 15 题。对两条内函数连续使用链式法则并代入指定点。"
+    }
+  ]
+}

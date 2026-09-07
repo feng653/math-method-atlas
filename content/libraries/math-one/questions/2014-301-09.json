@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "9",
+  "summary": "切平面",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#9"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第9题：在指定点计算偏导数；待独立复核。",
+      "methodId": "hm-tangent-plane"
+    }
+  ]
+}

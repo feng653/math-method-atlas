@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "4",
+  "summary": "积分比较",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#4"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第4题：按周期移位比较正负积分段；待独立复核。",
+      "methodId": "hm-integral-inequality"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "15",
+  "summary": "无穷小反参",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-taylor-limit",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 15 题。展开到三阶，令低阶项抵消后识别非零首项。"
+    }
+  ]
+}

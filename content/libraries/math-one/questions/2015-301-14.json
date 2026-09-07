@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "14",
+  "summary": "二维正态象限",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-independence",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 14 题。二维正态的零相关给独立性，平移后将乘积负事件拆成异号象限。"
+    },
+    {
+      "methodId": "pr-dist-normal",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 14 题。二维正态的零相关给独立性，平移后将乘积负事件拆成异号象限。"
+    }
+  ]
+}

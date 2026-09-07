@@ -1,0 +1,33 @@
+{
+  "id": "hm-pressure-gravity",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "静水压力与引力积分建模",
+  "summary": "按深度压力或距离平方反比写微元，再保留作用方向。",
+  "conditions": [
+    "静水模型取恒定密度 ρ、重力加速度 g，深度从自由液面向下计。",
+    "万有引力点质量模型要求源点与受力点不重合；积分引力需取方向分量。"
+  ],
+  "steps": [
+    "压力问题写条带面积 dA=w(h)dh，压力微元 dF=ρgh dA。",
+    "引力问题用 dm=λ(s)ds，微元大小 Gm dm/r²，投影到所需方向。",
+    "检查距离、深度的范围和单位后积分。"
+  ],
+  "formula": "F_{\\rm water}=\\rho g\\int h\\,dA,\\qquad d\\mathbf F=\\frac{Gm\\,dm}{r^2}\\mathbf e",
+  "pitfalls": [
+    "压力为随深度变化的强度，不能把最大压强乘全板面积。",
+    "不同方向的引力不能直接把大小相加。"
+  ],
+  "example": {
+    "prompt": "自编例题：宽 1、深 2 的竖直矩形闸板顶边在水面，求一侧静水压力；质量 m 位于 x=0，均匀细杆在 [1,2]、线密度 λ，求杆对它的引力。",
+    "solution": "闸板 F=ρg∫₀²h·1 dh=2ρg。细杆的引力均沿 +x，F=Gmλ∫₁²x⁻²dx=Gmλ/2，方向 +x。"
+  },
+  "relatedIds": [
+    "hm-arc-work-integral",
+    "hm-integral-mass-centroid"
+  ],
+  "topicIds": [
+    "audit-pressure-gravity"
+  ],
+  "status": "reviewed"
+}

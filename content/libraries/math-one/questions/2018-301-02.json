@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "2",
+  "summary": "曲面切平面",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-tangent-plane",
+      "note": "原题第1页第2题：切平面条件与过点条件联立；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

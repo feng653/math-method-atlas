@@ -49,6 +49,12 @@ export function validateAtlas(input: unknown): string[] {
     if (paper.status === 'complete' && questions.length !== paper.expectedQuestionCount) {
       errors.push(`${label}: complete paper question count mismatch`);
     }
+    if (paper.status === 'complete' && paper.expectedQuestionCount !== undefined) {
+      const numbers = new Set(questions.map((question) => Number(question.number)));
+      if (Array.from({ length: paper.expectedQuestionCount }, (_, i) => i + 1).some((n) => !numbers.has(n))) {
+        errors.push(`${label}: complete paper question sequence has gaps`);
+      }
+    }
     if (paper.expectedQuestionCount !== undefined && questions.length > paper.expectedQuestionCount) {
       errors.push(`${label}: question count exceeds expectedQuestionCount`);
     }

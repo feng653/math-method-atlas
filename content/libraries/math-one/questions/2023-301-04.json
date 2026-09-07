@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "4",
+  "summary": "绝对收敛",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-series-comparison",
+      "verification": "pending",
+      "note": "原题第2页第4题：对差项使用非负性；待独立复核。"
+    }
+  ]
+}

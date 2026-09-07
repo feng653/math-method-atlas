@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "4",
+  "summary": "平方误差",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#4"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第4题：对两个待定系数求驻点并判极小；待独立复核。",
+      "methodId": "hm-hessian-extrema"
+    }
+  ]
+}

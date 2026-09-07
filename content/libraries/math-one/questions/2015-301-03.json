@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "3",
+  "summary": "条件收敛半径",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-radius",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 1 页第 3 题。条件收敛锁定原幂级数半径，乘以序号不改变根上极限，再比较两点距离。"
+    }
+  ]
+}

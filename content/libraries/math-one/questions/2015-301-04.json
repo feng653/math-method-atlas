@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "4",
+  "summary": "极坐标换元",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-double-polar",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 1 页第 4 题。双曲线给径向上下界，两条射线给角度范围，并保留雅可比。"
+    }
+  ]
+}

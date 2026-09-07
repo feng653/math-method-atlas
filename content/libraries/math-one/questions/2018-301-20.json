@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "20",
+  "summary": "平方和二次型",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-completion",
+      "note": "原题第4页第20题：把平方项的秩与规范形联系；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

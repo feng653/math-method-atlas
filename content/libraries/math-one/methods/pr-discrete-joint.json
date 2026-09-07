@@ -1,0 +1,32 @@
+{
+  "id": "pr-discrete-joint",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "二维离散联合表与条件分布",
+  "summary": "对联合概率表沿行列求和，再在条件所在行列归一化。",
+  "conditions": [
+    "所有表格概率非负且总和为 1；条件事件概率必须大于零。"
+  ],
+  "steps": [
+    "明确每行的 X 值、每列的 Y 值。",
+    "求行和得到 X 边缘，列和得到 Y 边缘。",
+    "条件概率用单元格概率除以对应边缘概率；函数分布把具有相同函数值的格子合并。"
+  ],
+  "formula": "P(X=x_i\\mid Y=y_j)=\\frac{p_{ij}}{\\sum_k p_{kj}}",
+  "pitfalls": [
+    "连续条件密度公式与离散求和不能混用。",
+    "只有所有格子都满足边缘乘积，才能判独立。"
+  ],
+  "example": {
+    "prompt": "自编例题：X、Y 取 0、1，联合表两行为 [0.1,0.2]、[0.3,0.4]，求 P(X=1|Y=1) 与 X+Y 分布。",
+    "solution": "Y=1 的列和为 0.6，所以条件概率 0.4/0.6=2/3。X+Y=0、1、2 的概率分别是 0.1、0.2+0.3=0.5、0.4。"
+  },
+  "relatedIds": [
+    "pr-joint-conditional",
+    "pr-joint-independence"
+  ],
+  "topicIds": [
+    "audit-discrete-joint"
+  ],
+  "status": "reviewed"
+}

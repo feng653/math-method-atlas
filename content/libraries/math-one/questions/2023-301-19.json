@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "19",
+  "summary": "闭面通量",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-gauss",
+      "verification": "pending",
+      "note": "原题第4页第19题：对散度在封闭体内积分；待独立复核。"
+    }
+  ]
+}

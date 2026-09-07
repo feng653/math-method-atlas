@@ -1,0 +1,32 @@
+{
+  "id": "pr-poisson-approximation",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "泊松定理近似二项概率",
+  "summary": "在大量独立小概率试验中用 λ=np 的泊松模型近似成功次数。",
+  "conditions": [
+    "二项模型要求 n 次独立、同成功率 p 的试验。",
+    "泊松极限定理假设 n→∞、p_n→0 且 np_n→λ>0；有限 n 的使用是近似。"
+  ],
+  "steps": [
+    "确认二项试验机制和小 p、大 n 的情形。",
+    "置 λ=np，将目标区间的二项概率改为泊松概率求和。",
+    "使用补事件简化尾概率，并明确标注近似号。"
+  ],
+  "formula": "P(X=k)\\approx e^{-np}\\frac{(np)^k}{k!}",
+  "pitfalls": [
+    "n 大而 p 不小不保证泊松近似好；不要把近似值写成精确值。"
+  ],
+  "example": {
+    "prompt": "自编例题：1000 次独立试验，每次成功率 0.002，近似求至少一次成功的概率。",
+    "solution": "λ=2，泊松近似为 1-e⁻²≈0.864665。精确概率是 1-0.998¹⁰⁰⁰≈0.864935，二者不同但接近。"
+  },
+  "relatedIds": [
+    "pr-dist-classic",
+    "pr-limit-binomial"
+  ],
+  "topicIds": [
+    "audit-poisson-approximation"
+  ],
+  "status": "reviewed"
+}

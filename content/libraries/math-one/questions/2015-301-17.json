@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "17",
+  "summary": "约束最大梯度",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-direction-gradient",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 17 题。最大方向导数等于梯度模，再在椭圆约束下最大化其平方。"
+    },
+    {
+      "methodId": "hm-lagrange-multipliers",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 17 题。最大方向导数等于梯度模，再在椭圆约束下最大化其平方。"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "15",
+  "summary": "积分极限",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#15"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第15题：求导消去变上限积分并展开指数；待独立复核。",
+      "methodId": "hm-lhopital"
+    }
+  ]
+}

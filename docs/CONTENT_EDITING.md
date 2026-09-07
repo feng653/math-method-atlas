@@ -26,4 +26,8 @@ LaTeX 反斜杠在 JSON 中写成 `\\`，只在 formula 中写公式，不放 HT
 
 真题来源必须为 HTTPS。只创建试卷目录用 indexed；部分逐题用 partial；complete 必须填 expectedQuestionCount 且实际题数吻合。每道题的方法关联分别维护 pending/verified，verified 必须写核验说明。来源链接存在不证明方法关联正确；自编例题不能入真题统计。转载依据不足时只写来源入口与原创摘要，不搬运解析。
 
+题号只用主问题编号字符串（例如"1"，不写"01"或"1a"），子问归于主问题，防止重复统计。complete 卷还检查1到expectedQuestionCount连续。`sourceNote`可添加到卷或题，显示转载排印问题或来源限制。
+
+运行 `pnpm content:report` 查看实际待审关联、未映射题、方法审校与topic缺口。`content/requirements/`的历史要求/真题缺口另受既有校验器检查；历史要求通过校验不会自动成为目标年份的官方课纲。
+
 新增体系不需要改前端：loader 自动读取匹配目录。独立体系 `proof-toolkit` 的计数、方法引用与数学一完全隔离；它是自定义工具集，不是中国考试课纲。

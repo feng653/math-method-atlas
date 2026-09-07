@@ -1,0 +1,12 @@
+{
+  "id": "math-one-2026",
+  "libraryId": "math-one",
+  "year": 2026,
+  "exam": "301",
+  "title": "2026 年考研数学一",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf"
+  },
+  "status": "complete",
+  "expectedQuestionCount": 22
+}

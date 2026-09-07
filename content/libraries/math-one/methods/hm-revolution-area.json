@@ -1,0 +1,32 @@
+{
+  "id": "hm-revolution-area",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "旋转体侧面积",
+  "summary": "把每段曲线旋转得到的薄圆台面积累加。",
+  "conditions": [
+    "生成曲线分段光滑，旋转后不重复覆盖同一曲面区域。",
+    "旋转半径是到轴的非负距离，端盖面积另算。"
+  ],
+  "steps": [
+    "按旋转轴写距离 r 与弧长元 ds。",
+    "绕 x 轴时取 r=|y|，代入 S=∫2πr ds。",
+    "参数形式使用 ds=√(x′²+y′²)dt，并检查重描。"
+  ],
+  "formula": "S=2\\pi\\int_a^b |f(x)|\\sqrt{1+f\\prime(x)^2}\\,dx",
+  "pitfalls": [
+    "旋转侧面积不是圆盘截面积积分；不要漏掉弧长因子。"
+  ],
+  "example": {
+    "prompt": "自编例题：线段 y=x，0≤x≤1 绕 x 轴旋转的侧面积。",
+    "solution": "半径 r=x，ds=√2 dx。S=2π√2∫₀¹x dx=π√2，与底半径 1、母线长 √2 的圆锥侧面积相符。"
+  },
+  "relatedIds": [
+    "hm-arc-work-integral",
+    "hm-integral-area-volume"
+  ],
+  "topicIds": [
+    "audit-revolution-area"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "9",
+  "summary": "对数三角极限",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-equivalent-infinitesimal",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 9 题。依次比较对数增量和余弦增量的二阶主项。"
+    }
+  ]
+}

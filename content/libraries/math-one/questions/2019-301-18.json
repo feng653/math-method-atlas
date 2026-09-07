@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "18",
+  "summary": "积分递推",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第18题：分部积分连接不同指标；待独立复核。",
+      "methodId": "hm-integration-by-parts",
+      "verification": "pending"
+    }
+  ]
+}

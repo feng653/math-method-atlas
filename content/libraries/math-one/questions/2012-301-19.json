@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "19",
+  "summary": "开线积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#19"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第19题：补线围成区域并扣除补线贡献；待独立复核。",
+      "methodId": "hm-green"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "5",
+  "summary": "可逆右乘",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#5"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第5题：利用可逆右乘保持秩与列空间；待独立复核。",
+      "methodId": "la-matrix-rank"
+    }
+  ]
+}

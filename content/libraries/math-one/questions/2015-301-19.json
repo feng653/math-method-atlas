@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "19",
+  "summary": "空间弧积分",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-line-second-kind",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 19 题。由球面与平面交线取正确半弧参数，按起终点确定方向。"
+    },
+    {
+      "methodId": "hm-space-intersections",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 19 题。由球面与平面交线取正确半弧参数，按起终点确定方向。"
+    }
+  ]
+}

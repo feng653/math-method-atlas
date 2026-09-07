@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "13",
+  "summary": "投影矩阵秩",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#13"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第13题：分别考察给定向量及其正交补；待独立复核。",
+      "methodId": "la-matrix-rank"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2026-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "20",
+  "summary": "积分与二阶零点",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 9
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integral-inequality",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 9 页第 20 题。利用严格单调性比较左右区间积分。 独立复核（2026-09-08，重读题面）：单调性控制两半积分；三个函数零点支持两次罗尔定理。"
+    },
+    {
+      "methodId": "hm-mean-value-proof",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 9 页第 20 题。构造函数在三个点等值后连续两次用罗尔定理。 独立复核（2026-09-08，重读题面）：单调性控制两半积分；三个函数零点支持两次罗尔定理。"
+    }
+  ]
+}

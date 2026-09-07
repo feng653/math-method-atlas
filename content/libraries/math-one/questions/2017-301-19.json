@@ -1,0 +1,23 @@
+{
+  "id": "2017-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "19",
+  "summary": "锥面薄片质量",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-space-intersections",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 19 题。消元求投影边界，密度乘曲面面积元后在投影区域积分。"
+    },
+    {
+      "methodId": "hm-surface-integrals",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 19 题。消元求投影边界，密度乘曲面面积元后在投影区域积分。"
+    }
+  ]
+}

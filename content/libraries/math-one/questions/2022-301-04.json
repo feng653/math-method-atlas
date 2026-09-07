@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "4",
+  "summary": "积分大小",
+  "source": {
+    "page": 2,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integral-inequality",
+      "verification": "pending",
+      "note": "原题第2页第4题：先逐点比较被积函数；待独立复核。"
+    }
+  ]
+}

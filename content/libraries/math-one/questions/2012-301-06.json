@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "6",
+  "summary": "特征基变换",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#6"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第6题：检查新基向量所属特征空间；待独立复核。",
+      "methodId": "la-eigen-diagonalization"
+    }
+  ]
+}

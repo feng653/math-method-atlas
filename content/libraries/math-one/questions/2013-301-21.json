@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "21",
+  "summary": "二次型矩阵",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#21"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第21题：将线性式平方表示为外积；待独立复核。",
+      "methodId": "la-quadratic-matrix"
+    }
+  ]
+}

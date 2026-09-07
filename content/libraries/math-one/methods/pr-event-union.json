@@ -1,0 +1,31 @@
+{
+  "id": "pr-event-union",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "事件加减法与容斥",
+  "summary": "用集合分解与容斥消除重复计算，不要求事件独立。",
+  "conditions": [
+    "事件属于同一概率空间，已知交集概率或能另行计算。"
+  ],
+  "steps": [
+    "将“至少一个”写成并，将“恰好一个”写成不相交差集。",
+    "两事件相加后减交集；三事件继续加回三重交集。",
+    "检查结果在 [0,1]，必要时用补事件简化。"
+  ],
+  "formula": "P(A\\cup B)=P(A)+P(B)-P(A\\cap B)",
+  "pitfalls": [
+    "互斥才可直接加；独立才可将交集概率写成乘积，二者不能混淆。"
+  ],
+  "example": {
+    "prompt": "自编例题：P(A)=0.6，P(B)=0.5，P(A∩B)=0.2，求至少一个及恰好一个发生的概率。",
+    "solution": "至少一个的概率为 0.6+0.5-0.2=0.9。恰好一个需减去两次交集，为 0.6+0.5-2·0.2=0.7。"
+  },
+  "relatedIds": [
+    "pr-event-counting",
+    "pr-event-independence"
+  ],
+  "topicIds": [
+    "audit-event-union"
+  ],
+  "status": "reviewed"
+}

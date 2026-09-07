@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "1",
+  "summary": "可导判断",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-derivative-definition",
+      "note": "原题第1页第1题：比较左右差商极限；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

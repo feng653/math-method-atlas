@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "12",
+  "summary": "反常积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#12"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第12题：分部积分后检查无穷远边界；待独立复核。",
+      "methodId": "hm-integration-by-parts"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "16",
+  "summary": "切线面积建模",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-modeling",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。由切线截距写三角形面积，得到可分离方程后使用初值。"
+    },
+    {
+      "methodId": "hm-ode-separable",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。由切线截距写三角形面积，得到可分离方程后使用初值。"
+    }
+  ]
+}

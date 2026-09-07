@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "10",
+  "summary": "分部积分",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integration-by-parts",
+      "note": "原题第3页第10题：从相切条件读取端点导数；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

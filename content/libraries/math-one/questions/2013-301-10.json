@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "10",
+  "summary": "方程解结构",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#10"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第10题：已知解作差提取齐次通解；待独立复核。",
+      "methodId": "hm-linear-ode-structure"
+    }
+  ]
+}

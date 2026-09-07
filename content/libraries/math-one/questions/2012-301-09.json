@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "9",
+  "summary": "方程联立",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#9"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第9题：先求齐次通解再代入另一个条件；待独立复核。",
+      "methodId": "hm-ode-characteristic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "16",
+  "summary": "梯度条件",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第16题：最大方向导数确定梯度大小与方向；待独立复核。",
+      "methodId": "hm-direction-gradient",
+      "verification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2021-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "17",
+  "summary": "变限积分极限",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-taylor-limit",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 17 题。将分式通分后按抵消程度保留主部，积分项可逐阶积分展开。 独立复核（2026-09-08，重读题面）：分母各为一阶小量，展开积分与指数后消去主项。"
+    }
+  ]
+}

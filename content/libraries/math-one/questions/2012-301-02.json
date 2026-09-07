@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "2",
+  "summary": "乘积导数",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#2"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第2题：用乘积法则保留非零贡献项；待独立复核。",
+      "methodId": "hm-chain-log-differentiation"
+    }
+  ]
+}

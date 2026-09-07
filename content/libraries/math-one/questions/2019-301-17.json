@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "17",
+  "summary": "无界面积",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第17题：按符号分区积分再累加；待独立复核。",
+      "methodId": "hm-integral-area-volume",
+      "verification": "pending"
+    }
+  ]
+}

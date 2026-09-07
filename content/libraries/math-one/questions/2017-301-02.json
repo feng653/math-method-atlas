@@ -1,0 +1,18 @@
+{
+  "id": "2017-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "2",
+  "summary": "平方函数单调",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 1 页第 2 题。对函数平方求导，将乘积符号转成平方的单调性。"
+    }
+  ]
+}

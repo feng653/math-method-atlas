@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "7",
+  "summary": "向量组等价",
+  "source": {
+    "page": 3,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-vector-representation",
+      "verification": "pending",
+      "note": "原题第3页第7题：检查两组向量能否互相表示；待独立复核。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "17",
+  "summary": "递推幂级数",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "note": "原题第3页第17题：将系数递推转成和函数方程；待独立复核。",
+      "verification": "pending",
+      "methodId": "hm-power-sum"
+    }
+  ]
+}

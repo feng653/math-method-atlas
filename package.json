@@ -10,6 +10,7 @@
     "preview": "vite preview --host 127.0.0.1",
     "check": "tsx scripts/check-files.ts && tsx scripts/validate.ts && tsc --noEmit && vitest run",
     "content:check": "tsx scripts/validate.ts",
+    "content:report": "tsx scripts/report.ts",
     "test": "vitest run"
   },
   "dependencies": {

@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "14",
+  "summary": "条件概率",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "note": "原题第3页第14题：拆分交并事件计算条件概率；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

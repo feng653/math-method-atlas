@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "18",
+  "summary": "二元极值",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-hessian-extrema",
+      "verification": "pending",
+      "note": "原题第4页第18题：驻点之外检查退化点符号；待独立复核。"
+    }
+  ]
+}

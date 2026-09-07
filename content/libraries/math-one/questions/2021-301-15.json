@@ -1,0 +1,18 @@
+{
+  "id": "2021-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "15",
+  "summary": "伴随矩阵行和",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-adjugate",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 15 题。行和条件写成矩阵作用于全一向量，再用伴随恒等式求对应分量。 独立复核（2026-09-08，重读题面）：每行和条件给全一向量特征关系，再用伴随等式。"
+    }
+  ]
+}

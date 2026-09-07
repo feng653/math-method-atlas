@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "8",
+  "summary": "抽样分布",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#8"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第8题：利用t变量平方的F分布关系；待独立复核。",
+      "methodId": "pr-sample-t-f"
+    }
+  ]
+}

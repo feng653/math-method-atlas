@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "20",
+  "summary": "矩阵右逆",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#20"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第20题：将矩阵方程逐列转成非齐次系统；待独立复核。",
+      "methodId": "la-system-general"
+    }
+  ]
+}

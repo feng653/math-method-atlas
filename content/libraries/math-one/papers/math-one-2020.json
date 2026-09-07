@@ -1,0 +1,12 @@
+{
+  "id": "math-one-2020",
+  "libraryId": "math-one",
+  "year": 2020,
+  "exam": "301",
+  "title": "2020 数学一（转载 PDF 逐题索引）",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf"
+  },
+  "status": "complete",
+  "expectedQuestionCount": 23
+}

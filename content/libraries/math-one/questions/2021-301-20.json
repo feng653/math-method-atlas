@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "20",
+  "summary": "积分域与环流",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-double-polar",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 20 题。先识别被积函数正值圆域，再用极坐标计算。 独立复核（2026-09-08，重读题面）：正被积函数区域为圆盘，可极坐标积分；边界线积分须避开原点奇性。"
+    },
+    {
+      "methodId": "hm-line-second-kind",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 20 题。边界参数化可处理原点奇点，不能直接在含奇点整域套格林公式。 独立复核（2026-09-08，重读题面）：正被积函数区域为圆盘，可极坐标积分；边界线积分须避开原点奇性。"
+    }
+  ]
+}

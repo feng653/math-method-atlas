@@ -1,0 +1,33 @@
+{
+  "id": "hm-curl",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "向量场旋度的坐标计算",
+  "summary": "按右手坐标系的交叉偏导顺序计算旋度向量。",
+  "conditions": [
+    "向量场 F=(P,Q,R) 在所求点附近具有连续一阶偏导，使用右手直角坐标系。"
+  ],
+  "steps": [
+    "依次算 R_y-Q_z、P_z-R_x、Q_x-P_y。",
+    "按 x、y、z 次序排列为向量，再代入指定点。",
+    "若写行列式记忆式，注意中间项展开带负号。"
+  ],
+  "formula": "\\operatorname{curl}\\mathbf F=\\nabla\\times\\mathbf F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+  "pitfalls": [
+    "旋度是向量；不能与散度相混。",
+    "旋度处处为零不自动保证非单连通区域上的全局路径无关。"
+  ],
+  "example": {
+    "prompt": "自编例题：F=(-y/2,x/2,z²)，求旋度。",
+    "solution": "前两分量分别为 0-0=0、0-0=0；第三分量 Q_x-P_y=1/2-(-1/2)=1，所以旋度为 (0,0,1)。"
+  },
+  "relatedIds": [
+    "hm-stokes",
+    "hm-divergence",
+    "hm-path-independence"
+  ],
+  "topicIds": [
+    "topic-hm-curl"
+  ],
+  "status": "draft"
+}

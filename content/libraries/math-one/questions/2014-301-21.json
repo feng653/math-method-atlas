@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "21",
+  "summary": "矩阵相似",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#21"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第21题：构造对应特征空间的基；待独立复核。",
+      "methodId": "la-eigen-similarity"
+    }
+  ]
+}

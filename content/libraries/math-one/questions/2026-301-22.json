@@ -1,0 +1,29 @@
+{
+  "id": "2026-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "22",
+  "summary": "截尾寿命估计",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 11
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-max-min",
+      "verification": "pending",
+      "note": "待独立复核：来源 PDF 第 11 页第 22 题。独立寿命的首次失效是样本最小值，尾概率可连乘。"
+    },
+    {
+      "methodId": "pr-estimate-unbiased",
+      "verification": "pending",
+      "note": "待独立复核：来源 PDF 第 11 页第 22 题。以最小值一二阶矩确定无偏缩放及方差。"
+    },
+    {
+      "methodId": "pr-estimate-mle",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 11 页第 22 题。使用题目给定的截尾似然取对数最大化，不能当作完整独立样本似然。 独立复核（2026-09-08，重读题面）：只验证题面明确给出的截尾似然最大化；不使用独立完整样本乘积公式。"
+    }
+  ],
+  "sourceNote": "题面未明确独立寿命假设；最小值分布与无偏缩放两关联仍pending，不能仅凭转载解析补假设。给定截尾似然的最大化操作已独立核对。"
+}

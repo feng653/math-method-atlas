@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "1",
+  "summary": "渐近线",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#1"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第1题：约分后分别查有限点与无穷远；待独立复核。",
+      "methodId": "hm-concavity-asymptote"
+    }
+  ]
+}

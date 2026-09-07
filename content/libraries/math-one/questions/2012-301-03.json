@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "3",
+  "summary": "二元连续",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#3"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第3题：区分联合极限与单路径极限；待独立复核。",
+      "methodId": "hm-multivariable-limit"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "15",
+  "summary": "二元极值",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "note": "原题第3页第15题：解驻点并检查二阶判别式；待独立复核。",
+      "verification": "pending",
+      "methodId": "hm-hessian-extrema"
+    }
+  ]
+}

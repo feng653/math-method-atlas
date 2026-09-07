@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "11",
+  "summary": "幂级数和",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第11题：把自变量平方根代入余弦展开；待独立复核。",
+      "methodId": "hm-power-sum",
+      "verification": "pending"
+    }
+  ]
+}

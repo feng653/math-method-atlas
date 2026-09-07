@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "16",
+  "summary": "递推级数",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#16"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第16题：逐项求导将递推转成微分方程；待独立复核。",
+      "methodId": "hm-power-sum"
+    }
+  ]
+}

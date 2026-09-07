@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "14",
+  "summary": "指数条件",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#14"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第14题：用生存概率比值消去已等待时间；待独立复核。",
+      "methodId": "pr-dist-exponential"
+    }
+  ]
+}

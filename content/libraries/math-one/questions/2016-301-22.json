@@ -1,0 +1,23 @@
+{
+  "id": "2016-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "22",
+  "summary": "区域变量变换",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 14
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-transform",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 14 页第 22 题。面积归一化联合密度，按指示变量取值划区计算分布并检验独立。"
+    },
+    {
+      "methodId": "pr-joint-independence",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 14 页第 22 题。面积归一化联合密度，按指示变量取值划区计算分布并检验独立。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2026-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "19",
+  "summary": "椭圆弧积分",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 9
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-green",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 9 页第 19 题。补直径线段闭合路径，格林公式求闭路积分后扣除补线。 独立复核（2026-09-08，重读题面）：补直径形成闭合域且场光滑，补线中的奇函数积分可消去。"
+    },
+    {
+      "methodId": "hm-definite-symmetry",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 9 页第 19 题。补线参数积分利用奇偶性减少计算，同时保留方向。 独立复核（2026-09-08，重读题面）：补直径形成闭合域且场光滑，补线中的奇函数积分可消去。"
+    }
+  ]
+}

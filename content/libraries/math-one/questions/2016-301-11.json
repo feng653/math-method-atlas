@@ -1,0 +1,18 @@
+{
+  "id": "2016-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "11",
+  "summary": "隐式全微分",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-implicit",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 5 页第 11 题。先由点坐标求隐变量值，对恒等式微分解出全微分。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2021-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "14",
+  "summary": "闭曲面通量",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/24/20230524103552318.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-gauss",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 14 题。封闭柱体取外法向，用散度转体积分；奇函数部分由区域对称性抵消。 独立复核（2026-09-08，重读题面）：替代来源第3页给完整闭柱面与多项式场，可用散度积分。"
+    }
+  ]
+}

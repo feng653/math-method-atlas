@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "10",
+  "summary": "对称区间积分",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-definite-symmetry",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 10 题。拆出奇函数项和绝对值偶函数项。"
+    }
+  ]
+}

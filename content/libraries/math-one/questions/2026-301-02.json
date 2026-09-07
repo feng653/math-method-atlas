@@ -1,0 +1,18 @@
+{
+  "id": "2026-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "2",
+  "summary": "交替系数收敛域",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-radius",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 1 页第 2 题。分开奇偶下标或使用系数根上极限，端点检查通项。 独立复核（2026-09-08，重读题面）：偶数指标子级数限制半径，边界通项不趋零。"
+    }
+  ]
+}

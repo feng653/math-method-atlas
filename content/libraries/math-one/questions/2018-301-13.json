@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "13",
+  "summary": "特征值关系",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-characteristic",
+      "note": "原题第3页第13题：将矩阵关系作用于特征向量；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

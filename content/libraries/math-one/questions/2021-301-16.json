@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "16",
+  "summary": "两阶段抽球相关",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 16 题。按首次取球颜色分层计算联合分布。 独立复核（2026-09-08，重读题面）：抽球联合概率由两阶段条件乘法求得，方差非零可求相关。"
+    },
+    {
+      "methodId": "pr-moment-correlation",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 16 题。由联合表求混合矩、均值及方差，再标准化协方差。 独立复核（2026-09-08，重读题面）：抽球联合概率由两阶段条件乘法求得，方差非零可求相关。"
+    }
+  ]
+}

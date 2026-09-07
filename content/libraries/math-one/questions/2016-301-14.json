@@ -1,0 +1,18 @@
+{
+  "id": "2016-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "14",
+  "summary": "区间端点恢复",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 7
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-normal-mean",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 7 页第 14 题。常用正态均值双侧区间以样本均值为中心，由上端点恢复半宽。"
+    }
+  ]
+}

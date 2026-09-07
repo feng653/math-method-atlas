@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "23",
+  "summary": "参数估计",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#23"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第23题：对密度参数写对数似然并求极值；待独立复核。",
+      "methodId": "pr-estimate-mle"
+    }
+  ]
+}

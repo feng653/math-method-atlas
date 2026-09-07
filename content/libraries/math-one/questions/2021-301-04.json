@@ -1,0 +1,18 @@
+{
+  "id": "2021-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "4",
+  "summary": "积分和式辨析",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-riemann-sum",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 1 页第 4 题。同时核对采样点、分割数与每段宽度。 独立复核（2026-09-08，重读题面）：连续函数可积；中点采样必须与区间宽度匹配。"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "13",
+  "summary": "惯性指数",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#13"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第13题：配方后按剩余平方项的符号分类；待独立复核。",
+      "methodId": "la-quadratic-completion"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "libraryId": "math-one",
+  "status": "draft-not-runtime",
+  "evidence": "docs/sources/2026.md",
+  "note": "依据已有题面审阅记录比对本次 24 个方法；未重新认证原卷或改动真题关联。以下三项均不在本次 24 项的适用范围内。",
+  "gaps": [
+    {
+      "year": 2026,
+      "number": "3",
+      "proposedMethodId": "hm-convex-secant",
+      "chapterId": "derivatives",
+      "title": "凸性定义与割线斜率单调性",
+      "reason": "题设只有函数有定义，不能要求二阶可导；新增函数性质卡也没有定义层面的凸性证明。需专门给出三点割线斜率不等式与等价条件。",
+      "coveredByAudit24": false
+    },
+    {
+      "year": 2026,
+      "number": "11",
+      "proposedMethodId": "hm-divergence",
+      "chapterId": "multiple-integrals",
+      "title": "向量场散度的坐标计算",
+      "reason": "高斯公式额外要求体域及封闭边界；原题需要局部偏导计算。24 项未新增散度坐标定义，不能把积分定理当成独立散度计算方法。",
+      "coveredByAudit24": false
+    },
+    {
+      "year": 2026,
+      "number": "21",
+      "proposedMethodId": "la-rank-factor-power",
+      "chapterId": "la-matrices",
+      "title": "秩分解降维计算矩阵幂",
+      "reason": "新增分块运算卡是尺寸匹配与 Schur 补，不包含 A=BC 后 A^n=B(CB)^(n-1)C 的秩分解方法；需独立构造低秩因子与 n=1 的边界说明。",
+      "coveredByAudit24": false
+    }
+  ]
+}

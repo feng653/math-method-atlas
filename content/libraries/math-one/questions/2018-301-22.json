@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "22",
+  "summary": "乘积随机量",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-transform",
+      "note": "原题第5页第22题：按离散符号分支求概率质量；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

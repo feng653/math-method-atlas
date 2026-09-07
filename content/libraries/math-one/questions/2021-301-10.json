@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "10",
+  "summary": "检验第二类错误",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-test-errors",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 10 题。在指定备择均值下计算不落入拒绝域的概率。 独立复核（2026-09-08，重读题面）：在备择参数下取不拒绝概率，样本均值仍为正态。"
+    },
+    {
+      "methodId": "pr-sample-normal",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 10 题。样本均值的标准差由总体标准差除以样本量平方根得到。 独立复核（2026-09-08，重读题面）：在备择参数下取不拒绝概率，样本均值仍为正态。"
+    }
+  ]
+}

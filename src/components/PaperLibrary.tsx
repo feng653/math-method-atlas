@@ -12,7 +12,7 @@ export function PaperLibrary({ papers, questions, methods, onClose, onSelect }: 
     <header className="panel-header"><span className="eyebrow">ARCHIVE / 真题</span>
       <button aria-label="关闭真题库" onClick={onClose}><X size={19} /></button></header>
     <div className="detail-scroll"><h1>让方法回到题目里。</h1>
-      <p className="muted">目标 2009—2026 年 · 当前 {papers.length} 卷有来源，{questions.length} 题已索引。</p>
+      <p className="muted">当前 {papers.length} 卷有来源，{questions.length} 题已索引；其中 {questions.filter((q) => q.methodLinks.some((l) => l.verification === 'verified')).length} 题有核验关联。</p>
       <label className="field-label">年份<select value={year} onChange={(event) => setYear(event.target.value)}>
         <option value="">全部年份</option>{[...papers].sort((a, b) => b.year - a.year).map((paper) =>
           <option key={paper.id} value={paper.year}>{paper.year}</option>)}</select></label>
@@ -24,12 +24,14 @@ export function PaperLibrary({ papers, questions, methods, onClose, onSelect }: 
           && (!methodId || question.methodLinks.some((link) => link.methodId === methodId)));
         return <section className="paper" key={paper.id}><h2>{paper.year} 年数学一</h2>
           <a href={paper.source.url} target="_blank" rel="noreferrer">查看来源原卷 <ArrowUpRight size={14} /></a>
+          <p className="fine-print">{paper.sourceNote ?? '公开转载来源，尚未完成官方原卷逐字核对。'}</p>
           <p className="fine-print">已索引 {questions.filter((q) => q.paperId === paper.id).length}/{paper.expectedQuestionCount ?? '待核'} 题 ·
             {paper.status === 'complete' ? '逐题索引齐全' : '收录进行中'}</p>
           {!entries.length && <p className="muted">{methodId ? '此筛选下暂无关联记录。' : '逐题内容待录入。'}</p>}
           {entries.map((question) => <article className="question-card" key={question.id}>
             <a href={`${question.source.url}${question.source.page ? `#page=${question.source.page}` : ''}`} target="_blank" rel="noreferrer">
               第 {question.number} 题 <ArrowUpRight size={14} /></a><p>{question.summary}</p>
+            {question.sourceNote && <p className="source-note">{question.sourceNote}</p>}
             <div className="related-methods">{question.methodLinks.map((link) => <button key={link.methodId}
               onClick={() => onSelect(link.methodId)}>{methods.find((m) => m.id === link.methodId)?.title}
               {link.verification === 'pending' ? ' · 待核' : ''}</button>)}</div>

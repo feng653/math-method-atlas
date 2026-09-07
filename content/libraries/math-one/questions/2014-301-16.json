@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "16",
+  "summary": "隐函数极值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#16"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第16题：隐式求导找驻点再判极值；待独立复核。",
+      "methodId": "hm-implicit-derivative"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2021-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "7",
+  "summary": "分块矩阵秩",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-rank",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 7 题。用可逆分块行列变换判秩；不能由两个对角块的秩无条件相加。 独立复核（2026-09-08，重读题面）：对分块矩阵作可逆块消元，并用实矩阵与其Gram矩阵等秩。"
+    }
+  ],
+  "sourceNote": "两转载源对实矩阵/实对称矩阵表述不同。核验仅确认块消元与Gram等秩方法实际适用，不确认答案字母或官方题面。"
+}

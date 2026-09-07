@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "15",
+  "summary": "不等式证明",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#15"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第15题：构造差函数并控制导数符号；待独立复核。",
+      "methodId": "hm-monotonic-extrema"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ export function MethodDetail({ method, methods, questions, papers, onClose, onSe
       <h2>真题足迹</h2>
       <p className="muted">{stats.questionCount ? `已核验 ${stats.questionCount} 题 · 出现于 ${stats.paperCount} 张试卷`
         : '尚无已核验关联，不代表从未考查。'}</p>
-      <p className="fine-print">仅统计当前收录证据。已索引 {papers.length} 卷、{questions.length} 题，完整目标为 2009—2026 年。</p>
+      <p className="fine-print">仅统计当前收录证据：{papers.length} 卷、{questions.length} 题。未收录年份不参与统计。</p>
       {stats.questions.map((question) => <a className="evidence-link" key={question.id}
         href={`${question.source.url}${question.source.page ? `#page=${question.source.page}` : ''}`} target="_blank" rel="noreferrer">
         <span>{papers.find((paper) => paper.id === question.paperId)?.year} 年 · 第 {question.number} 题

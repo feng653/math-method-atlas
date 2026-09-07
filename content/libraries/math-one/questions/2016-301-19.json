@@ -1,0 +1,28 @@
+{
+  "id": "2016-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "19",
+  "summary": "迭代收缩收敛",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 10
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-mean-value-proof",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 10 页第 19 题。中值定理使相邻差按几何级数缩小，望远镜和推出极限，再由连续性解固定点范围。"
+    },
+    {
+      "methodId": "hm-series-comparison",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 10 页第 19 题。中值定理使相邻差按几何级数缩小，望远镜和推出极限，再由连续性解固定点范围。"
+    },
+    {
+      "methodId": "hm-recursive-limit",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 10 页第 19 题。中值定理使相邻差按几何级数缩小，望远镜和推出极限，再由连续性解固定点范围。"
+    }
+  ]
+}

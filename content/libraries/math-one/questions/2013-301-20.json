@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "20",
+  "summary": "矩阵交换",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#20"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第20题：设矩阵元素后联立线性方程；待独立复核。",
+      "methodId": "la-matrix-product"
+    }
+  ]
+}

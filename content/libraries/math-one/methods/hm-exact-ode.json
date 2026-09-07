@@ -1,0 +1,33 @@
+{
+  "id": "hm-exact-ode",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "全微分方程的势函数解法",
+  "summary": "检验微分形式是否为某势函数的全微分，再写等势曲线。",
+  "conditions": [
+    "M、N 在单连通开域具有连续一阶偏导；M_y=N_x 可保证存在势函数。",
+    "若要求局部函数 y(x)，通常还需所选点 N≠0；隐式解可先保留。"
+  ],
+  "steps": [
+    "检验 M_y 与 N_x 是否相等。",
+    "对 M 关于 x 积分得 U=∫M dx+g(y)。",
+    "令 U_y=N 求 g，再写 U=C 并代入初值。"
+  ],
+  "formula": "M\\,dx+N\\,dy=dU=0\\quad\\Rightarrow\\quad U(x,y)=C",
+  "pitfalls": [
+    "非单连通区域上偏导相等不自动推出全局恰当。",
+    "对 x 积分后的常数是 y 的函数，不能直接丢弃。"
+  ],
+  "example": {
+    "prompt": "自编例题：解 (2xy+1)dx+(x²+2y)dy=0，并满足 y(0)=1。",
+    "solution": "M_y=N_x=2x。对 M 积分得 U=x²y+x+g(y)，由 U_y=x²+g′(y)=x²+2y，得 g=y²。初值给 C=1，所以 x²y+x+y²=1；初值点 N=2，存在局部 y(x)。"
+  },
+  "relatedIds": [
+    "hm-path-independence",
+    "hm-ode-separable"
+  ],
+  "topicIds": [
+    "audit-exact-ode"
+  ],
+  "status": "reviewed"
+}

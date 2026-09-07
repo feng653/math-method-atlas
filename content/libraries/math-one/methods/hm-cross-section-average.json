@@ -1,0 +1,33 @@
+{
+  "id": "hm-cross-section-average",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "一般截面体积与函数平均值",
+  "summary": "体积按截面积积分，平均值按区间长度归一化。",
+  "conditions": [
+    "截面积 A(x) 可积，且截面方向与 dx 所在轴垂直。",
+    "函数平均值要求有限非退化区间 a<b；不是端点值的平均。"
+  ],
+  "steps": [
+    "为体积确定每个 x 处的真实截面形状并算 A(x)。",
+    "积分 V=∫A(x)dx；截面不必是圆，也不必由旋转生成。",
+    "函数平均值先积分，再除以 b-a。"
+  ],
+  "formula": "V=\\int_a^b A(x)\\,dx,\\qquad f_{\\rm avg}=\\frac1{b-a}\\int_a^b f(x)\\,dx",
+  "pitfalls": [
+    "底边长度不能直接当成截面积。",
+    "平均值定理中的某点函数值不一定是区间中点值。"
+  ],
+  "example": {
+    "prompt": "自编例题：0≤x≤1 的垂直截面为边长 x 的正方形，求体积；再求 x² 在 [0,2] 上的平均值。",
+    "solution": "A(x)=x²，所以 V=1/3。另一问平均值为 (1/2)∫₀²x²dx=(1/2)·8/3=4/3。"
+  },
+  "relatedIds": [
+    "hm-integral-area-volume",
+    "hm-integral-inequality"
+  ],
+  "topicIds": [
+    "audit-cross-section-average"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "19",
+  "summary": "空间约束最值",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-space-intersections",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 19 题。用平面约束消去一个变量，保留交线的真实可行域。 独立复核（2026-09-08，重读题面）：消去线性约束得闭合椭圆，距离可通过坐标平方作约束极值。"
+    },
+    {
+      "methodId": "hm-lagrange-multipliers",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 19 题。对到坐标面的距离平方作约束优化，并比较全部候选点。 独立复核（2026-09-08，重读题面）：消去线性约束得闭合椭圆，距离可通过坐标平方作约束极值。"
+    }
+  ]
+}

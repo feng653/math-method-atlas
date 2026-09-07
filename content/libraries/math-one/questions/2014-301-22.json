@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "22",
+  "summary": "条件混合",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#22"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第22题：按离散条件分别累计概率；待独立复核。",
+      "methodId": "pr-event-total"
+    }
+  ]
+}

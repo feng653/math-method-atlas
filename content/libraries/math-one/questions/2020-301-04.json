@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "4",
+  "summary": "子级数半径",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "note": "原题第2页第4题：区分原级数与偶数项子级数；待独立复核。",
+      "verification": "pending",
+      "methodId": "hm-power-radius"
+    }
+  ]
+}

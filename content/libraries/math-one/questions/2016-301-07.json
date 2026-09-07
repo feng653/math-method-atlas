@@ -1,0 +1,18 @@
+{
+  "id": "2016-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "7",
+  "summary": "正态概率单调",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-normal",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 3 页第 7 题。标准化阈值后由标准正态分布函数的单调性判断。"
+    }
+  ]
+}

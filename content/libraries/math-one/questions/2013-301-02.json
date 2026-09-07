@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "2",
+  "summary": "曲面切平面",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#2"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第2题：由隐式曲面梯度求法向量；待独立复核。",
+      "methodId": "hm-tangent-plane"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "22",
+  "summary": "二次成功等待",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-geometric",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 22 题。先积分求一次成功概率，再按最后一次成功计数；总等待分解为两次几何等待求均值。"
+    },
+    {
+      "methodId": "pr-event-counting",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 22 题。先积分求一次成功概率，再按最后一次成功计数；总等待分解为两次几何等待求均值。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "21",
+  "summary": "列变换",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-elementary",
+      "note": "原题第5页第21题：追踪列变换得到可逆右乘矩阵；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

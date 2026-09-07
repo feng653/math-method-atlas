@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "7",
+  "summary": "事件等概率",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第7题：将事件拆成公共部分与差集；待独立复核。",
+      "methodId": "pr-event-counting",
+      "verification": "pending"
+    }
+  ]
+}

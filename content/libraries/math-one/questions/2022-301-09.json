@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "9",
+  "summary": "样本矩概率",
+  "source": {
+    "page": 3,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-moment-inequality",
+      "verification": "pending",
+      "note": "原题第3页第9题：对样本二阶矩应用切比雪夫界；待独立复核。"
+    }
+  ]
+}

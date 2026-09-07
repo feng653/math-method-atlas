@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "23",
+  "summary": "尺度估计",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 6
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-mle",
+      "note": "原题第6页第23题：对数似然求导并检查极大性；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

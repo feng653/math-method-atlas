@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "19",
+  "summary": "旋转形心",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#19"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第19题：按高度写圆截面并求一阶矩；待独立复核。",
+      "methodId": "hm-integral-mass-centroid"
+    }
+  ]
+}

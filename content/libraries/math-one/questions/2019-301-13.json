@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "13",
+  "summary": "齐次通解",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第13题：从列关系构造核空间基；待独立复核。",
+      "methodId": "la-system-homogeneous",
+      "verification": "pending"
+    }
+  ]
+}

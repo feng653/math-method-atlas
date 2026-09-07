@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "math-one",
   "title": "考研数学一方法库",
-  "description": "2026课纲映射草案；首批覆盖高等数学8章核心方法，内容待独立复核，不代表全部课纲要求已核验。",
+  "description": "数学一三科方法草案；独立对照历史大纲发现新增待补考点。2026 官方原文尚未逐项核验，已写比例不等于官方课纲覆盖率。",
   "syllabus": {
-    "version": "2026 课纲映射草案",
-    "sourceUrl": "https://jingweimath.com/syllabus.html",
+    "version": "2026 目标版草案（2019 高校存档审计，2025 二手资料对照）",
+    "sourceUrl": "https://jtb.ncbcjxau.edu.cn/uploadfile/3/Attachment/667c3cc0da.pdf",
     "reviewStatus": "draft"
   },
   "chapters": [
@@ -53,6 +53,18 @@
         {
           "id": "limits-infinitesimal-order",
           "title": "无穷小阶与主部比较"
+        },
+        {
+          "id": "audit-function-properties",
+          "title": "函数性质、初等图形与建模"
+        },
+        {
+          "id": "audit-limit-definition",
+          "title": "极限定义、左右极限与基本性质"
+        },
+        {
+          "id": "audit-important-limits",
+          "title": "两个重要极限的直接代换"
         }
       ]
     },
@@ -104,6 +116,22 @@
         {
           "id": "derivatives-differential-approximation",
           "title": "微分近似与误差传播"
+        },
+        {
+          "id": "audit-plane-tangent-normal",
+          "title": "平面曲线切线与法线"
+        },
+        {
+          "id": "audit-inverse-derivative",
+          "title": "反函数求导及一阶微分形式不变性"
+        },
+        {
+          "id": "audit-curvature-circle",
+          "title": "曲率半径与曲率圆"
+        },
+        {
+          "id": "topic-hm-convex-secant",
+          "title": "凸性定义与割线斜率单调性"
         }
       ]
     },
@@ -155,6 +183,18 @@
         {
           "id": "integrals-riemann-sum",
           "title": "积分定义求和式极限"
+        },
+        {
+          "id": "audit-revolution-area",
+          "title": "旋转体侧面积"
+        },
+        {
+          "id": "audit-cross-section-average",
+          "title": "一般截面体积与函数平均值"
+        },
+        {
+          "id": "audit-pressure-gravity",
+          "title": "静水压力与引力积分建模"
         }
       ]
     },
@@ -186,6 +226,14 @@
         {
           "id": "geometry-space-tangent",
           "title": "空间曲线切线与法平面"
+        },
+        {
+          "id": "audit-direction-cosines",
+          "title": "单位向量与方向余弦"
+        },
+        {
+          "id": "audit-revolution-cylinder",
+          "title": "柱面与旋转曲面方程构造"
         }
       ]
     },
@@ -225,6 +273,10 @@
         {
           "id": "multivariable-lagrange-multipliers",
           "title": "拉格朗日乘子与闭域最值"
+        },
+        {
+          "id": "audit-second-taylor",
+          "title": "二元函数二阶泰勒展开"
         }
       ]
     },
@@ -280,6 +332,14 @@
         {
           "id": "multiple-integrals-general-jacobian",
           "title": "二重积分一般变量代换"
+        },
+        {
+          "id": "topic-hm-divergence",
+          "title": "向量场散度的坐标计算"
+        },
+        {
+          "id": "topic-hm-curl",
+          "title": "向量场旋度的坐标计算"
         }
       ]
     },
@@ -370,6 +430,10 @@
         {
           "id": "ode-linear-ode-structure",
           "title": "线性方程解的结构与叠加"
+        },
+        {
+          "id": "audit-exact-ode",
+          "title": "全微分方程的势函数解法"
         }
       ]
     },
@@ -404,6 +468,14 @@
         {
           "id": "la-rank-topic",
           "title": "矩阵秩的计算"
+        },
+        {
+          "id": "audit-block-operations",
+          "title": "分块矩阵乘法与求逆"
+        },
+        {
+          "id": "topic-la-rank-factor-power",
+          "title": "秩分解降维计算矩阵幂"
         }
       ]
     },
@@ -423,6 +495,10 @@
         {
           "id": "la-vector-inner-topic",
           "title": "内积及正交化"
+        },
+        {
+          "id": "audit-subspace-equivalence",
+          "title": "子空间判别与向量组等价"
         }
       ]
     },
@@ -472,6 +548,10 @@
         {
           "id": "la-positive-topic",
           "title": "正定二次型判别"
+        },
+        {
+          "id": "audit-inertia-canonical",
+          "title": "合同、惯性指数与规范形"
         }
       ]
     },
@@ -487,6 +567,18 @@
         {
           "id": "pr-conditional-topic",
           "title": "条件概率与独立性"
+        },
+        {
+          "id": "audit-geometric-probability",
+          "title": "几何概型的区域比例计算"
+        },
+        {
+          "id": "audit-event-union",
+          "title": "事件加减法与容斥"
+        },
+        {
+          "id": "topic-pr-probability-bounds",
+          "title": "事件概率界与可行交集"
         }
       ]
     },
@@ -510,6 +602,10 @@
         {
           "id": "pr-function-topic",
           "title": "一维随机变量函数分布"
+        },
+        {
+          "id": "audit-poisson-approximation",
+          "title": "泊松定理近似二项概率"
         }
       ]
     },
@@ -529,6 +625,14 @@
         {
           "id": "pr-joint-function-topic",
           "title": "多维随机变量函数分布"
+        },
+        {
+          "id": "audit-discrete-joint",
+          "title": "二维离散联合表与条件分布"
+        },
+        {
+          "id": "audit-bivariate-normal",
+          "title": "二维正态参数、条件与线性组合"
         }
       ]
     },
@@ -563,6 +667,10 @@
         {
           "id": "pr-clt-topic",
           "title": "中心极限定理与正态近似"
+        },
+        {
+          "id": "audit-chebyshev-lln",
+          "title": "切比雪夫与伯努利大数定律"
         }
       ]
     },
@@ -597,6 +705,14 @@
         {
           "id": "pr-confidence-topic",
           "title": "正态总体区间估计"
+        },
+        {
+          "id": "audit-two-means-interval",
+          "title": "双正态总体均值差置信区间"
+        },
+        {
+          "id": "audit-two-variances-interval",
+          "title": "双正态总体方差比置信区间"
         }
       ]
     },

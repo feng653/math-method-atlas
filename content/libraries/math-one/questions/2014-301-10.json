@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "10",
+  "summary": "周期取值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#10"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第10题：用周期和奇性把输入移回给定区间；待独立复核。",
+      "methodId": "hm-function-domain"
+    }
+  ]
+}

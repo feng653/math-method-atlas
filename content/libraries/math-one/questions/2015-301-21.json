@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "21",
+  "summary": "相似矩阵反参",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-similarity",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 21 题。用迹和行列式解参数，再取足够独立特征向量组成变换矩阵。"
+    },
+    {
+      "methodId": "la-eigen-diagonalization",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 21 题。用迹和行列式解参数，再取足够独立特征向量组成变换矩阵。"
+    }
+  ]
+}

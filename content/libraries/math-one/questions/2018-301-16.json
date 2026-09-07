@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "16",
+  "summary": "约束最值",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-lagrange-multipliers",
+      "note": "原题第4页第16题：用总长度约束建立面积目标；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "20",
+  "summary": "参数方程组",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#20"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第20题：按行列式和增广矩阵秩分类；待独立复核。",
+      "methodId": "la-system-parameter"
+    }
+  ]
+}

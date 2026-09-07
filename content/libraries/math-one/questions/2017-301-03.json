@@ -1,0 +1,18 @@
+{
+  "id": "2017-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "3",
+  "summary": "定向求导",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-direction-gradient",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 1 页第 3 题。先把给定方向单位化，再与梯度点乘。"
+    }
+  ]
+}

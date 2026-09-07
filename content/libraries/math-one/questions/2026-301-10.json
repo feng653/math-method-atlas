@@ -1,0 +1,23 @@
+{
+  "id": "2026-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "10",
+  "summary": "离散尾条件概率",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 4 页第 10 题。尾事件嵌套，条件概率化为两个尾概率之比。 独立复核（2026-09-08，重读题面）：离散概率质量可累加为尾概率，条件事件为包含关系。"
+    },
+    {
+      "methodId": "pr-dist-discrete",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 4 页第 10 题。逐项求几何尾和，再比较混合分布与单一无记忆分布的差别。 独立复核（2026-09-08，重读题面）：离散概率质量可累加为尾概率，条件事件为包含关系。"
+    }
+  ]
+}

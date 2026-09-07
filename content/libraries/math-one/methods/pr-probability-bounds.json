@@ -1,0 +1,32 @@
+{
+  "id": "pr-probability-bounds",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "事件概率界与可行交集",
+  "summary": "在未给独立性时，用非负性和包含关系确定交并概率的可行区间。",
+  "conditions": [
+    "A、B 是同一概率空间中的事件，仅已知各自概率时不能假定独立或互斥。"
+  ],
+  "steps": [
+    "交集不大于任一边缘概率，给出上界 min(p,q)。",
+    "由并集概率不超过 1，得到交集至少 p+q-1，再与零取最大。",
+    "用并集等式或补事件把其他目标转成交集；必要时构造四个原子概率检查可行性。"
+  ],
+  "formula": "\\max(0,p+q-1)\\le P(A\\cap B)\\le\\min(p,q),\\quad\\max(p,q)\\le P(A\\cup B)\\le\\min(1,p+q)",
+  "pitfalls": [
+    "pq 只是独立时的交集值，不是一般上界或下界。",
+    "涉及三个及以上事件时，成对可行的概率不一定保证全体联合可行。"
+  ],
+  "example": {
+    "prompt": "自编例题：P(A)=0.7、P(B)=0.6，在未知依赖关系时求交集概率范围并验证两端可达。",
+    "solution": "交集范围 [0.3,0.6]。令四个原子 A∩B、A\\B、B\\A、两者都不发生的概率依次为 r、0.7-r、0.6-r、r-0.3；在该区间均非负且和为 1，所以两端都可实现。"
+  },
+  "relatedIds": [
+    "pr-event-union",
+    "pr-event-independence"
+  ],
+  "topicIds": [
+    "topic-pr-probability-bounds"
+  ],
+  "status": "draft"
+}

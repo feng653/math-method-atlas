@@ -1,0 +1,18 @@
+{
+  "id": "2026-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "4",
+  "summary": "球锥区域三重积分",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-triple-integral",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 4 题。由球面及圆锥边界确定球坐标范围，并保留体积雅可比；选项转录有误待交叉核对。 独立复核（2026-09-08，重读题面）：球面与上锥面围成球坐标固定角域，雅可比适用。"
+    }
+  ]
+}

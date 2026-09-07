@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "4",
+  "summary": "积分比较",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-definite-symmetry",
+      "note": "原题第1页第4题：先利用对称区间化简；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

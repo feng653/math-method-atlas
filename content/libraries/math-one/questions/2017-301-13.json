@@ -1,0 +1,18 @@
+{
+  "id": "2017-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "13",
+  "summary": "可逆乘积的秩",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-rank",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 13 题。原向量组组成可逆矩阵，右乘它不改变矩阵秩。"
+    }
+  ]
+}

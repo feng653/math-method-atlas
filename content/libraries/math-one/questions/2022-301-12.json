@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "12",
+  "summary": "对数积分",
+  "source": {
+    "page": 4,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integration-by-parts",
+      "verification": "pending",
+      "note": "原题第4页第12题：选取对数为分部积分中的微分项；待独立复核。"
+    }
+  ]
+}

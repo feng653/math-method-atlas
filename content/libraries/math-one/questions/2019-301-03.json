@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "3",
+  "summary": "级数收敛",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第3题：写出部分和观察相邻项抵消；待独立复核。",
+      "methodId": "hm-series-basic",
+      "verification": "pending"
+    }
+  ]
+}

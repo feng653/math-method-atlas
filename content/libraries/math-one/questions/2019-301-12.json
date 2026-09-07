@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "12",
+  "summary": "曲面投影",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第12题：用曲面方程化简后向平面投影；待独立复核。",
+      "methodId": "hm-surface-integrals",
+      "verification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "17",
+  "summary": "微分方程",
+  "source": {
+    "page": 5,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-linear-first",
+      "verification": "pending",
+      "note": "原题第5页第17题：积分因子求解后再求渐近线；待独立复核。"
+    }
+  ]
+}

@@ -12,6 +12,8 @@
 .node-dot { width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; background: var(--branch-color); opacity: 0.65; }
 .atlas-node.is-selected, .react-flow__node-atlas:hover .atlas-node { border-color: var(--branch-color); box-shadow: 0 6px 22px #37593d13; }
 .atlas-node.is-selected { background: #f0f7ee; }
+.atlas-node { animation: node-arrive 360ms cubic-bezier(0.2, 0.75, 0.25, 1.1) both; }
+@keyframes node-arrive { from { opacity: 0; scale: 0.96; } to { opacity: 1; scale: 1; } }
 .atlas-node .react-flow__handle { opacity: 0; width: 1px; height: 1px; min-width: 1px; min-height: 1px; border: 0; }
 .react-flow__node:focus-visible { outline: 2px solid #0f766e; outline-offset: 4px; }
 .react-flow__attribution { font-size: 8px !important; opacity: 0.6; background: transparent !important; }

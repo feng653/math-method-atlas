@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "19",
+  "summary": "级数比较",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#19"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第19题：从余弦关系建立项的比较界；待独立复核。",
+      "methodId": "hm-series-comparison"
+    }
+  ]
+}

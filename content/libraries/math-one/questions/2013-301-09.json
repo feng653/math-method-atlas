@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "9",
+  "summary": "隐式极限",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#9"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第9题：将缩小自变量的差值写成差商；待独立复核。",
+      "methodId": "hm-derivative-definition"
+    }
+  ]
+}

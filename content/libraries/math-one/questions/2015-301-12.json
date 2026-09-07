@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "12",
+  "summary": "单纯形体积分",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-triple-integral",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 12 题。写四面体的逐层界，可利用三个坐标的对称性。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2016-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "18",
+  "summary": "封闭曲面通量",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 10
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-gauss",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 10 页第 18 题。外侧闭曲面通量化为四面体内散度的三重积分。"
+    }
+  ]
+}

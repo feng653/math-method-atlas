@@ -1,0 +1,33 @@
+{
+  "id": "hm-divergence",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "向量场散度的坐标计算",
+  "summary": "沿每个分量自身坐标求偏导，再相加，结果是标量场。",
+  "conditions": [
+    "向量场 F=(P,Q,R) 在所求点附近有连续一阶偏导。",
+    "局部散度计算不需要指定闭曲面或积分区域。"
+  ],
+  "steps": [
+    "识别 P、Q、R 分别是 x、y、z 方向分量。",
+    "只计算 P_x、Q_y、R_z 后求和，偏导时其他坐标视为常量。",
+    "若要求某点值，完成求导后代入坐标。"
+  ],
+  "formula": "\\operatorname{div}\\mathbf F=\\nabla\\cdot\\mathbf F=\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}",
+  "pitfalls": [
+    "散度不是把三个分量各求梯度相加，也不是向量。",
+    "高斯定理能联系整体通量，但不是求局部散度的前提。"
+  ],
+  "example": {
+    "prompt": "自编例题：F=(x²y,yz,z³)，求 (1,2,1) 处散度。",
+    "solution": "P_x=2xy，Q_y=z，R_z=3z²，散度 2xy+z+3z²，在 (1,2,1) 为 4+1+3=8。"
+  },
+  "relatedIds": [
+    "hm-gauss",
+    "hm-curl"
+  ],
+  "topicIds": [
+    "topic-hm-divergence"
+  ],
+  "status": "draft"
+}

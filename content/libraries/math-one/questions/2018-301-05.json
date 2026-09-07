@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "5",
+  "summary": "矩阵相似",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-similarity",
+      "note": "原题第2页第5题：检查相似不变量并构造变换；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

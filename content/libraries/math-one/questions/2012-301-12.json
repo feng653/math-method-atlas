@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "12",
+  "summary": "曲面积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#12"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第12题：投影到三角形区域并计算面积元；待独立复核。",
+      "methodId": "hm-surface-integrals"
+    }
+  ]
+}

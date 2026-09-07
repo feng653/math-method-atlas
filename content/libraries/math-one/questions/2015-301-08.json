@@ -1,0 +1,23 @@
+{
+  "id": "2015-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "8",
+  "summary": "不相关变量矩",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-moment-covariance",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 8 题。将乘积期望拆开，用不相关消去协方差，并以方差恢复二阶矩。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 8 题。将乘积期望拆开，用不相关消去协方差，并以方差恢复二阶矩。"
+    }
+  ]
+}

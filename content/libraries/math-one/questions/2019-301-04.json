@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "4",
+  "summary": "路径无关",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第4题：检验区域与交叉偏导条件；待独立复核。",
+      "methodId": "hm-path-independence",
+      "verification": "pending"
+    }
+  ]
+}

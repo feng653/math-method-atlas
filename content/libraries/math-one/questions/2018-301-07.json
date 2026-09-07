@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "7",
+  "summary": "密度对称",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-density",
+      "note": "原题第2页第7题：利用对称轴分配两侧概率；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

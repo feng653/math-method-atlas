@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "13",
+  "summary": "递推行列式",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-det-expansion",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 13 题。沿首行展开得到低阶行列式递推，再解递推式。"
+    }
+  ]
+}

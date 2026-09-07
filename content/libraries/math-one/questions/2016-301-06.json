@@ -1,0 +1,23 @@
+{
+  "id": "2016-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "6",
+  "summary": "二次曲面识别",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 3 页第 6 题。对称矩阵正交对角化后按正负平方项识别曲面。"
+    },
+    {
+      "methodId": "hm-quadric-surfaces",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 3 页第 6 题。对称矩阵正交对角化后按正负平方项识别曲面。"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "11",
+  "summary": "齐次方程",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#11"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第11题：以因变量与自变量之比换元；待独立复核。",
+      "methodId": "hm-ode-homogeneous"
+    }
+  ]
+}

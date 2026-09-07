@@ -1,0 +1,13 @@
+{
+  "id": "2026-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "3",
+  "summary": "凹性与单调性",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 1
+  },
+  "methodLinks": [],
+  "sourceNote": "差商选项区间包含分母为零的端点，题面需校正；且只假设有定义，不能套二阶导数凹凸法。仍留空关联等待专门方法与可靠题面。"
+}

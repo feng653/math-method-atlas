@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "21",
+  "summary": "基与相似",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "note": "原题第4页第21题：以给定两向量作基计算表示矩阵；待独立复核。",
+      "verification": "pending",
+      "methodId": "la-eigen-similarity"
+    }
+  ]
+}

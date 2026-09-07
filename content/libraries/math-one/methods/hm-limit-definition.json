@@ -1,0 +1,34 @@
+{
+  "id": "hm-limit-definition",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "极限定义、左右极限与基本性质",
+  "summary": "用 ε-δ 或 ε-N 明确控制误差，并区分左右极限。",
+  "conditions": [
+    "函数在考察点的去心邻域内有定义；极限不要求该点有函数值。",
+    "数列极限的 N 可以依赖 ε，但不能依赖随后选取的 n。"
+  ],
+  "steps": [
+    "写出需要证明的误差不等式 |f(x)-L|<ε。",
+    "估计误差与 |x-a| 的关系，给出只依赖 ε 的正 δ。",
+    "验证所有满足 0<|x-a|<δ 的 x 都满足误差要求。",
+    "分段点分别检查左右；有限双侧极限存在当且仅当两个单侧极限存在且相同。"
+  ],
+  "formula": "\\forall\\varepsilon>0\\ \\exists\\delta>0:\\quad0<|x-a|<\\delta\\Rightarrow|f(x)-L|<\\varepsilon",
+  "pitfalls": [
+    "只沿一条数列趋近得到相同结果不足以证明函数极限。",
+    "四则运算中的分母极限为零时不能直接作商。"
+  ],
+  "example": {
+    "prompt": "自编例题：用定义证明 x→2 时 3x-1→5。",
+    "solution": "给定任意 ε>0，取 δ=ε/3。只要 0<|x-2|<δ，就有 |(3x-1)-5|=3|x-2|<3δ=ε，因此极限为 5。"
+  },
+  "relatedIds": [
+    "hm-squeeze",
+    "hm-continuity-piecewise"
+  ],
+  "topicIds": [
+    "audit-limit-definition"
+  ],
+  "status": "reviewed"
+}

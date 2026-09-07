@@ -1,0 +1,18 @@
+{
+  "id": "2021-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "3",
+  "summary": "泰勒系数",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-taylor-limit",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 1 页第 3 题。将正弦与倒数多项式的展开相乘，保留三次项。 独立复核（2026-09-08，重读题面）：三阶展开含一次项与三次项，展开操作适用。"
+    }
+  ]
+}

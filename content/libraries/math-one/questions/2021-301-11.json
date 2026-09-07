@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "11",
+  "summary": "反常有理积分",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-improper-integral",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 11 题。先截断无穷上限，再取积分极限。 独立复核（2026-09-08，重读题面）：二次分母无实零点，可配方求原函数后取无穷上限。"
+    },
+    {
+      "methodId": "hm-rational-integral",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 11 题。分母配成平方和，使用反正切原函数。 独立复核（2026-09-08，重读题面）：二次分母无实零点，可配方求原函数后取无穷上限。"
+    }
+  ]
+}

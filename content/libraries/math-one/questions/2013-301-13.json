@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "13",
+  "summary": "伴随关系",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#13"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第13题：将余子式关系转成伴随矩阵等式；待独立复核。",
+      "methodId": "la-matrix-adjugate"
+    }
+  ]
+}

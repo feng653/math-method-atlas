@@ -1,0 +1,18 @@
+{
+  "id": "2021-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "13",
+  "summary": "欧拉方程初值",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-euler",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 13 题。在正半轴对数换元为常系数方程，回代后代入两个初值。 独立复核（2026-09-08，重读题面）：正自变量邻域内为欧拉方程，代幂解和初值适用。"
+    }
+  ]
+}

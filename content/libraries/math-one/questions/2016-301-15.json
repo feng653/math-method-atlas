@@ -1,0 +1,18 @@
+{
+  "id": "2016-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "15",
+  "summary": "极坐标积分",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 7
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-double-polar",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 7 页第 15 题。按题给极坐标区域代入横坐标并乘面积雅可比。"
+    }
+  ]
+}

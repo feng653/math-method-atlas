@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "7",
+  "summary": "正态概率",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#7"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第7题：标准化后比较区间概率；待独立复核。",
+      "methodId": "pr-dist-normal"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "7",
+  "summary": "事件计数",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "note": "原题第2页第7题：拆成恰好一件发生的互斥事件；待独立复核。",
+      "verification": "pending",
+      "methodId": "pr-event-counting"
+    }
+  ]
+}

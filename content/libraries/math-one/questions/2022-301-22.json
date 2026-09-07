@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "22",
+  "summary": "联合似然",
+  "source": {
+    "page": 9,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-mle",
+      "verification": "pending",
+      "note": "原题第9页第22题：对两组独立样本的联合似然求极值；待独立复核。"
+    }
+  ]
+}

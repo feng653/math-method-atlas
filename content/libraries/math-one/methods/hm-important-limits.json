@@ -1,0 +1,33 @@
+{
+  "id": "hm-important-limits",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "两个重要极限的直接代换",
+  "summary": "把表达式准确变成 sin u/u 或 (1+u) 的幂的标准极限。",
+  "conditions": [
+    "三角极限的角度用弧度，代换变量 u 趋于零。",
+    "实数幂要求底数正；指数型标准式满足 u→0、u≠0。"
+  ],
+  "steps": [
+    "三角式配齐同一个 u：乘除必要常数后用 sin u/u→1。",
+    "幂式先确认底数 1+u 在邻域为正。",
+    "写成 [(1+u)^(1/u)]^(u v)，检查 uv 的有限极限。"
+  ],
+  "formula": "\\lim_{u\\to0}\\frac{\\sin u}{u}=1,\\qquad\\lim_{u\\to0}(1+u)^{1/u}=e",
+  "pitfalls": [
+    "不能在 sin u/u 中把分母误配成另一变量。",
+    "uv 发散时需另作分析，不能把标准有限指数结论机械套用。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 x→0 时 sin(3x)/(2x) 与 (1+2x)^(3/x) 的极限。",
+    "solution": "第一式=(3/2)·sin(3x)/(3x)，极限 3/2。第二式底数在零点邻域为正，写成 [(1+2x)^(1/(2x))]^6，极限 e⁶。"
+  },
+  "relatedIds": [
+    "hm-equivalent-infinitesimal",
+    "hm-power-indeterminate"
+  ],
+  "topicIds": [
+    "audit-important-limits"
+  ],
+  "status": "reviewed"
+}

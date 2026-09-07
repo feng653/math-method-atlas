@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "14",
+  "summary": "分布函数变换",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第14题：先求分布函数再反解概率事件；待独立复核。",
+      "methodId": "pr-dist-transform",
+      "verification": "pending"
+    }
+  ]
+}

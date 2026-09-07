@@ -1,0 +1,34 @@
+{
+  "id": "hm-function-properties",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "函数性质、初等图形与建模",
+  "summary": "由定义域、对称与单调区间建立函数图形，再把实际约束写进模型。",
+  "conditions": [
+    "奇偶性要求定义域关于原点对称；周期性要求平移后仍在定义域内。",
+    "实际模型须说明变量含义、单位和可行范围。"
+  ],
+  "steps": [
+    "先求定义域与零点，检查端点和不可取点。",
+    "比较 f(-x) 与 ±f(x) 判断奇偶；周期须验证对所有合法 x 的等式。",
+    "结合基本图形或导数判断单调性、有界性，不凭少量取值作结论。",
+    "建模时把目标量写为自变量的函数，并单独给出约束。"
+  ],
+  "formula": "f(-x)=f(x),\\qquad f(x+T)=f(x)\\ (T>0)",
+  "pitfalls": [
+    "函数偶性不意味着单调；周期函数不必有最小正周期。",
+    "代数式相同但定义域不同，可能不是同一函数。"
+  ],
+  "example": {
+    "prompt": "自编例题：研究 f(x)=x²/(1+x²) 的奇偶性、值域和单调区间。",
+    "solution": "定义域为 R，f(-x)=f(x)，是偶函数。f=1-1/(1+x²)，值域 [0,1)。导数 2x/(1+x²)² 在负半轴为负、正半轴为正，所以先减后增，最小值 f(0)=0。"
+  },
+  "relatedIds": [
+    "hm-function-domain",
+    "hm-monotonic-extrema"
+  ],
+  "topicIds": [
+    "audit-function-properties"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "11",
+  "summary": "等价无穷小",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-taylor-limit",
+      "verification": "pending",
+      "note": "原题第3页第11题：展开并比较首个非零项；待独立复核。"
+    }
+  ]
+}

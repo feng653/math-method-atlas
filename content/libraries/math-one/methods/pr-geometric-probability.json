@@ -1,0 +1,32 @@
+{
+  "id": "pr-geometric-probability",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "几何概型的区域比例计算",
+  "summary": "把均匀随机点的事件转成区域长度、面积或体积比例。",
+  "conditions": [
+    "随机点在有限正测度区域均匀分布；事件区域可测。",
+    "只有均匀分布才能直接用测度比。"
+  ],
+  "steps": [
+    "选取坐标并明确样本区域。",
+    "将事件不等式画为子区域，计算其测度。",
+    "用事件区域测度除以总区域测度；连续均匀模型中边界零测度不影响概率。"
+  ],
+  "formula": "P(A)=\\frac{\\operatorname{measure}(A)}{\\operatorname{measure}(\\Omega)}",
+  "pitfalls": [
+    "随机角度均匀不代表对应弦长均匀；先明确随机机制。"
+  ],
+  "example": {
+    "prompt": "自编例题：X、Y 独立且在 [0,1] 均匀，求 |X-Y|≤1/2 的概率。",
+    "solution": "样本区域为面积 1 的单位正方形。补事件由两个直角边长 1/2 的三角形组成，总面积 2·(1/2)·(1/2)²=1/4，所以所求概率 3/4。"
+  },
+  "relatedIds": [
+    "pr-joint-marginal",
+    "pr-event-counting"
+  ],
+  "topicIds": [
+    "audit-geometric-probability"
+  ],
+  "status": "reviewed"
+}

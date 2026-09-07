@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "9",
+  "summary": "估计量均值方差",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-unbiased",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 9 题。分别取样本均值的期望，检查差值是否无偏。 独立复核（2026-09-08，重读题面）：样本均值差期望正确；同对样本的协方差项不能遗漏。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 9 题。同一对样本的协方差不能丢失，不同样本对独立。 独立复核（2026-09-08，重读题面）：样本均值差期望正确；同对样本的协方差项不能遗漏。"
+    }
+  ]
+}

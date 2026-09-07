@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "19",
+  "summary": "递推极限",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-recursive-limit",
+      "note": "原题第4页第19题：先证单调有界再代入递推；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

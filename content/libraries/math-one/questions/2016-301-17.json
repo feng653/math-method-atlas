@@ -1,0 +1,23 @@
+{
+  "id": "2016-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "17",
+  "summary": "势函数最小值",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 9
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-path-independence",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 9 页第 17 题。恢复势函数，用端点差得到单变量函数后求最小值。"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 9 页第 17 题。恢复势函数，用端点差得到单变量函数后求最小值。"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ const method: Method = {
   example: { prompt: '自编例题', solution: '答案' }, relatedIds: [], topicIds: ['limit'], status: 'draft',
 };
 function question(id: string, paperId: string, verification: 'pending' | 'verified'): Question {
-  return { id, paperId, libraryId: 'math', number: id, summary: '摘要', source: { url: 'https://example.org' },
+  return { id, paperId, libraryId: 'math', number: id.replace('q', ''), summary: '摘要', source: { url: 'https://example.org' },
     methodLinks: [{ methodId: 'lhopital', verification, note: '核验说明' }] };
 }
 
@@ -30,6 +30,7 @@ describe('retrieval and evidence', () => {
     const item = question('q1', 'p1', 'verified');
     item.methodLinks.push({ ...item.methodLinks[0] });
     expect(getMethodStats('lhopital', [item, item])).toMatchObject({ questionCount: 1, paperCount: 1 });
+    expect(getMethodStats('lhopital', [item, { ...item, id: 'different-id' }]).questionCount).toBe(1);
   });
   it('reports uncovered topics and separates written from reviewed coverage', () => {
     const library: Library = {

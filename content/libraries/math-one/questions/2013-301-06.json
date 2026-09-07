@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "6",
+  "summary": "参数相似",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#6"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第6题：借实对称矩阵谱判断相似条件；待独立复核。",
+      "methodId": "la-eigen-symmetric"
+    }
+  ]
+}

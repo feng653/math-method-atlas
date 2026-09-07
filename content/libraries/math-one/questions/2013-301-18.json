@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "18",
+  "summary": "中值存在",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#18"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第18题：先用奇性取端点条件再构造辅助函数；待独立复核。",
+      "methodId": "hm-mean-value-proof"
+    }
+  ]
+}

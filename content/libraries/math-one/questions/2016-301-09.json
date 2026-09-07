@@ -1,0 +1,23 @@
+{
+  "id": "2016-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "9",
+  "summary": "变上限积分极限",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-lhopital",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 5 页第 9 题。先对变上限积分求导，再比较三角函数与对数主项。"
+    },
+    {
+      "methodId": "hm-equivalent-infinitesimal",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 5 页第 9 题。先对变上限积分求导，再比较三角函数与对数主项。"
+    }
+  ]
+}

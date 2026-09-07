@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "11",
+  "summary": "隐式全微分",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-implicit",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 11 题。先确定隐变量在指定点的值，再对约束微分。"
+    }
+  ]
+}

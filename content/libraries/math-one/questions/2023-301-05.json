@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "5",
+  "summary": "分块矩阵秩",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-rank",
+      "verification": "pending",
+      "note": "原题第2页第5题：分块消元后比较主元；待独立复核。"
+    }
+  ]
+}

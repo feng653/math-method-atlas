@@ -1,0 +1,18 @@
+{
+  "id": "2020-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2020",
+  "number": "3",
+  "summary": "可微极限",
+  "source": {
+    "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "note": "原题第1页第3题：将可微定义写成线性项加余项；待独立复核。",
+      "verification": "pending",
+      "methodId": "hm-partial-total-differential"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "2",
+  "summary": "弦线比较",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#2"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第2题：用二阶导符号判断曲线与弦线位置；待独立复核。",
+      "methodId": "hm-concavity-asymptote"
+    }
+  ]
+}

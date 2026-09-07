@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "3",
+  "summary": "级数求和",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-sum",
+      "note": "原题第1页第3题：拆分系数后识别标准展开；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

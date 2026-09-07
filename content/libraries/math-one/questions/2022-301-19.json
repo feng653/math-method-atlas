@@ -1,0 +1,18 @@
+{
+  "id": "2022-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2022",
+  "number": "19",
+  "summary": "空间环流",
+  "source": {
+    "page": 6,
+    "url": "https://www.125yan.com/file_download/58s410.html"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-stokes",
+      "verification": "pending",
+      "note": "原题第6页第19题：按给定方向对旋度作曲面积分；待独立复核。"
+    }
+  ]
+}

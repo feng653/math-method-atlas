@@ -1,0 +1,32 @@
+{
+  "id": "hm-curvature-circle",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "曲率半径与曲率圆",
+  "summary": "用非零曲率的倒数求半径，并沿有向主法线定位曲率圆心。",
+  "conditions": [
+    "图形 y=f(x) 在点附近二阶连续可导，所求点 f″≠0。",
+    "若曲率为零，没有有限半径的曲率圆。"
+  ],
+  "steps": [
+    "计算切点的一阶、二阶导数 p、q。",
+    "求半径 R=(1+p²)^(3/2)/|q|。",
+    "由圆心 (x₀-p(1+p²)/q, y₀+(1+p²)/q) 写圆方程。"
+  ],
+  "formula": "R=\\frac{(1+p^2)^{3/2}}{|q|},\\quad C=\\left(x_0-\\frac{p(1+p^2)}q,y_0+\\frac{1+p^2}q\\right)",
+  "pitfalls": [
+    "半径使用绝对值，圆心公式保留 q 的符号，否则圆心可能位于错误一侧。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 y=x² 在原点的曲率圆。",
+    "solution": "原点 p=0、q=2，R=1/2，圆心 C=(0,1/2)。曲率圆为 x²+(y-1/2)²=1/4。"
+  },
+  "relatedIds": [
+    "hm-concavity-asymptote",
+    "hm-plane-tangent-normal"
+  ],
+  "topicIds": [
+    "audit-curvature-circle"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "12",
+  "summary": "曲面切平面",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-tangent-plane",
+      "verification": "pending",
+      "note": "原题第3页第12题：计算两偏导作为系数；待独立复核。"
+    }
+  ]
+}

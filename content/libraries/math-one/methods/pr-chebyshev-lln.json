@@ -1,0 +1,34 @@
+{
+  "id": "pr-chebyshev-lln",
+  "libraryId": "math-one",
+  "chapterId": "pr-limit",
+  "title": "切比雪夫与伯努利大数定律",
+  "summary": "方差控制可处理非同分布平均值，伯努利频率是其常用特例。",
+  "conditions": [
+    "X_i 相互独立且方差存在；若 ΣVar(X_i)/n²→0，则中心化平均依概率趋零。",
+    "方差统一有界是上述条件的充分条件，不要求同分布。"
+  ],
+  "steps": [
+    "对平均值减去平均期望，而不是擅自假设共同均值。",
+    "由独立性求方差为 ΣVar(X_i)/n²。",
+    "用切比雪夫上界证明偏差概率趋零。",
+    "对独立同参数伯努利变量，频率的期望为 p、方差为 p(1-p)/n。"
+  ],
+  "formula": "P\\!\\left(\\left|\\frac1n\\sum_{i=1}^n(X_i-EX_i)\\right|\\ge\\varepsilon\\right)\\le\\frac{\\sum_{i=1}^n\\operatorname{Var}(X_i)}{n^2\\varepsilon^2}",
+  "pitfalls": [
+    "不满足同分布时不能直接把平均期望替换成某一固定 μ。",
+    "依概率趋零不是每条样本路径都逐点满足的断言。"
+  ],
+  "example": {
+    "prompt": "自编例题：独立 X_i 的均值均为 2，且 Var(X_i)≤4，证明平均值依概率趋于 2。",
+    "solution": "对任意 ε>0，平均值偏离 2 至少 ε 的概率不超过 4n/(n²ε²)=4/(nε²)，随 n→∞ 趋零，结论成立，无需同分布。"
+  },
+  "relatedIds": [
+    "pr-moment-inequality",
+    "pr-limit-lln"
+  ],
+  "topicIds": [
+    "audit-chebyshev-lln"
+  ],
+  "status": "reviewed"
+}

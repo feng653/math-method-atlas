@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "15",
+  "summary": "嵌套积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#15"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第15题：对外层积分分部以消去内层积分；待独立复核。",
+      "methodId": "hm-integration-by-parts"
+    }
+  ]
+}

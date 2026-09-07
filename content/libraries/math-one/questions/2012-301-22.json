@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "22",
+  "summary": "离散协方差",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#22"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第22题：从联合表求混合矩和均值；待独立复核。",
+      "methodId": "pr-moment-covariance"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2026-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "1",
+  "summary": "隐函数偏导",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-implicit",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 1 页第 1 题。对隐式方程分别求偏导，核对待解变量的偏导不为零。 独立复核（2026-09-08，重读题面）：隐函数关于因变量的偏导为非零常数乘正量，可用隐式偏导公式。"
+    }
+  ]
+}

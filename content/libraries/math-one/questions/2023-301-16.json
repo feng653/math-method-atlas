@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "16",
+  "summary": "离散同值",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-independence",
+      "verification": "pending",
+      "note": "原题第3页第16题：对共同取值联合概率求和；待独立复核。"
+    }
+  ]
+}

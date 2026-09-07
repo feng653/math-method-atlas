@@ -1,0 +1,34 @@
+{
+  "id": "hm-convex-secant",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "凸性定义与割线斜率单调性",
+  "summary": "在不预设导数存在时，用三点割线不等式判断凸性。",
+  "conditions": [
+    "实函数在一个区间内处处有定义；任取严格有序的三点 x<y<z，差商分母不能为零。",
+    "本卡用“凸函数”指函数图形不高于任意两点连线的约定，即 Jensen 凸不等式方向。"
+  ],
+  "steps": [
+    "由 y=(1-t)x+tz 得 t=(y-x)/(z-x)∈(0,1)。",
+    "将 f(y)≤(1-t)f(x)+tf(z) 移项，得到前段、整段、后段割线斜率依次不减。",
+    "证明条件必须对所有三点成立；若有一组三点违反，可否定凸性。",
+    "二阶导判据只是可导情形的工具，原题未给可导时使用定义。"
+  ],
+  "formula": "\\frac{f(y)-f(x)}{y-x}\\le\\frac{f(z)-f(x)}{z-x}\\le\\frac{f(z)-f(y)}{z-y}\\quad(x<y<z)",
+  "pitfalls": [
+    "“凹/凸”的中文图形称呼在教材间存在约定差异，判题必须对照不等式方向。",
+    "不能把 t 的开区间端点代入含 t 或 1-t 的分母。"
+  ],
+  "example": {
+    "prompt": "自编例题：不使用二阶导证明 f(x)=|x| 满足凸不等式。",
+    "solution": "对任意 x,z 与 0≤t≤1，由三角不等式 |(1-t)x+tz|≤|(1-t)x|+|tz|=(1-t)|x|+t|z|。所以 f 满足凸不等式，尽管它在 0 不可导。"
+  },
+  "relatedIds": [
+    "hm-concavity-asymptote",
+    "hm-derivative-definition"
+  ],
+  "topicIds": [
+    "topic-hm-convex-secant"
+  ],
+  "status": "draft"
+}

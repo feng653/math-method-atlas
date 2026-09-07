@@ -1,0 +1,23 @@
+{
+  "id": "2026-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "18",
+  "summary": "全微分约束方程",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 7
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-path-independence",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 7 页第 18 题。全微分存在使两混合偏导相等，从系数导出单变量关系。 独立复核（2026-09-08，重读题面）：精确微分的混合偏导相等；得到常系数非齐次方程后可用待定系数。"
+    },
+    {
+      "methodId": "hm-ode-undetermined",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 7 页第 18 题。将关系化成常系数非齐次方程，按初值确定常数。 独立复核（2026-09-08，重读题面）：精确微分的混合偏导相等；得到常系数非齐次方程后可用待定系数。"
+    }
+  ]
+}

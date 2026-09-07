@@ -1,0 +1,23 @@
+{
+  "id": "2026-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "9",
+  "summary": "分布函数标准化",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-transform",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 9 题。先用分布函数单调性确认仿射系数方向，再识别变换。 独立复核（2026-09-08，重读题面）：正斜率分布函数变换给线性标准化，方差按尺度平方变化。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 3 页第 9 题。线性变换的均值和方差分别给出平移及尺度约束。 独立复核（2026-09-08，重读题面）：正斜率分布函数变换给线性标准化，方差按尺度平方变化。"
+    }
+  ]
+}

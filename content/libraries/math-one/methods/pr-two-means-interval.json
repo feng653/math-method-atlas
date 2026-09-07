@@ -1,0 +1,35 @@
+{
+  "id": "pr-two-means-interval",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "双正态总体均值差置信区间",
+  "summary": "独立正态样本的均值差按已知方差或未知共同方差选择精确枢轴量。",
+  "conditions": [
+    "两个样本彼此独立，各自来自正态总体。",
+    "方差未知时下述合并 t 区间额外要求两总体方差相等，n,m≥2；不等方差不能套用。"
+  ],
+  "steps": [
+    "方差已知时标准误为 √(σ1²/n+σ2²/m)，使用标准正态分位数。",
+    "未知但相等时用 Sp²=[(n-1)S1²+(m-1)S2²]/(n+m-2)。",
+    "以样本均值差为中心，半宽为 t_(1-α/2,n+m-2)·Sp√(1/n+1/m)。",
+    "所有分位数均使用下尾分布函数定义 P(T≤t_q)=q。"
+  ],
+  "formula": "(\\overline X-\\overline Y)\\ \\pm\\ t_{1-\\alpha/2,n+m-2}S_p\\sqrt{\\frac1n+\\frac1m}",
+  "pitfalls": [
+    "置信水平描述构造区间的长期覆盖率，不是已固定参数的随机概率。",
+    "未知不等方差时 Welch 近似是另一模型，不能冒充此精确区间。"
+  ],
+  "example": {
+    "prompt": "自编例题：独立正态样本 n=m=10，均值 5 与 3，样本方差均为 4，假设共同未知总体方差，求 95% 均值差区间。",
+    "solution": "Sp²=4，自由度 18，标准误 2√0.2≈0.894427。t_(0.975,18)≈2.100922，区间 2±1.8791，约为 (0.1209,3.8791)。"
+  },
+  "relatedIds": [
+    "pr-estimate-normal-mean",
+    "pr-sample-t-f",
+    "pr-test-two-means"
+  ],
+  "topicIds": [
+    "audit-two-means-interval"
+  ],
+  "status": "reviewed"
+}

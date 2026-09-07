@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "17",
+  "summary": "二元极值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#17"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第17题：解驻点方程后作二阶判别；待独立复核。",
+      "methodId": "hm-hessian-extrema"
+    }
+  ]
+}

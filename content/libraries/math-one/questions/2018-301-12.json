@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "12",
+  "summary": "曲线积分",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-line-first-kind",
+      "note": "原题第3页第12题：用空间圆参数化并代入弧长；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

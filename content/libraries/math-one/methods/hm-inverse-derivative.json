@@ -1,0 +1,33 @@
+{
+  "id": "hm-inverse-derivative",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "反函数求导及一阶微分形式不变性",
+  "summary": "用逆函数关系求倒数导数，换变量时保留一阶微分链式形式。",
+  "conditions": [
+    "f 在 x₀ 附近连续可导且 f′(x₀)≠0，则存在局部可导反函数。",
+    "一般逆函数公式须先确定反函数分支及对应点。"
+  ],
+  "steps": [
+    "由 y₀=f(x₀) 找准反函数取导点 y₀。",
+    "对 f(g(y))=y 求导，得 g′(y)=1/f′(g(y))。",
+    "复合变量 u=u(t) 时先写 dy=f′(u)du，再以 du=u′(t)dt 替换。"
+  ],
+  "formula": "(f^{-1})\\prime(y_0)=\\frac1{f\\prime(x_0)},\\qquad dy=f\\prime(u)\\,du",
+  "pitfalls": [
+    "f′(x₀)=0 时此公式不能使用。",
+    "一阶微分形式不变不意味着 d²y=f″(u)(du)² 总成立。"
+  ],
+  "example": {
+    "prompt": "自编例题：f(x)=x³+x 的反函数为 g，求 g′(2)。",
+    "solution": "f′=3x²+1>0，f 从 R 到 R 严格递增，且 f(1)=2。由逆函数公式 g′(2)=1/f′(1)=1/4。"
+  },
+  "relatedIds": [
+    "hm-function-domain",
+    "hm-chain-log-differentiation"
+  ],
+  "topicIds": [
+    "audit-inverse-derivative"
+  ],
+  "status": "reviewed"
+}

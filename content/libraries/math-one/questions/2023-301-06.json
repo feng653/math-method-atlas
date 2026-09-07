@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "6",
+  "summary": "可对角化",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-diagonalization",
+      "verification": "pending",
+      "note": "原题第2页第6题：核对独立特征向量数；待独立复核。"
+    }
+  ]
+}

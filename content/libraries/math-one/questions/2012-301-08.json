@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "8",
+  "summary": "长度相关",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#8"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第8题：利用两段长度的确定线性关系；待独立复核。",
+      "methodId": "pr-moment-correlation"
+    }
+  ]
+}

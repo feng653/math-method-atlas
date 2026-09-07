@@ -1,0 +1,35 @@
+{
+  "id": "la-rank-factor-power",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "秩分解降维计算矩阵幂",
+  "summary": "先将低秩方阵写成 BC，再把幂运算移到较小的 CB 上。",
+  "conditions": [
+    "A 为 n×n 矩阵，已构造 B 为 n×r、C 为 r×n 且 A=BC。",
+    "正整数幂 k≥1；公式不直接涵盖 A⁰。标准秩分解取 r=rank(A)。"
+  ],
+  "steps": [
+    "取 A 的一组极大无关列组成 B，逐列解线性表示得到 C，验证 BC=A。",
+    "计算 r×r 的 T=CB。",
+    "由结合律 A^k=B T^(k-1) C；对 T 用特征分解、幂零展开或其他合法方法。",
+    "k=1 时 T⁰=I_r；A=0 的秩零情形可直接处理。"
+  ],
+  "formula": "A=BC\\quad\\Rightarrow\\quad A^k=B(CB)^{k-1}C\\quad(k\\ge1)",
+  "pitfalls": [
+    "BC 和 CB 尺寸可能不同，不能互换。",
+    "相同非零谱性质不意味着两矩阵相似；应直接用结合律推导。"
+  ],
+  "example": {
+    "prompt": "自编例题：A=[[1,2],[2,4]]，求 A^k（k≥1）。",
+    "solution": "取 B=(1,2)ᵀ、C=(1,2)，BC=A 而 CB=5。因此 A^k=B·5^(k-1)·C=5^(k-1)A。k=1 得 A，k=2 得 5A，可直接乘法核对。"
+  },
+  "relatedIds": [
+    "la-vector-basis",
+    "la-matrix-product",
+    "la-matrix-power"
+  ],
+  "topicIds": [
+    "topic-la-rank-factor-power"
+  ],
+  "status": "draft"
+}

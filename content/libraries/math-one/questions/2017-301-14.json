@@ -1,0 +1,23 @@
+{
+  "id": "2017-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "14",
+  "summary": "混合分布期望",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 14 题。分布函数的加权和对应混合密度，期望按权重线性求和。"
+    },
+    {
+      "methodId": "pr-dist-normal",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 14 题。分布函数的加权和对应混合密度，期望按权重线性求和。"
+    }
+  ]
+}

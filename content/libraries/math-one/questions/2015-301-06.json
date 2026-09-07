@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "6",
+  "summary": "正交基换序",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 6 题。特征向量换序使相应平方项系数换序，向量变号不改变平方项。"
+    }
+  ]
+}

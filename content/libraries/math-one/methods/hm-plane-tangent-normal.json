@@ -1,0 +1,32 @@
+{
+  "id": "hm-plane-tangent-normal",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "平面曲线切线与法线",
+  "summary": "先确定切向量，再用垂直关系写平面法线。",
+  "conditions": [
+    "图形 y=f(x) 在所求点可导；参数曲线要求导向量非零。",
+    "用斜率倒数写法线时必须单独处理零斜率与竖直切线。"
+  ],
+  "steps": [
+    "求切点坐标与切线斜率 k，或求参数切向量。",
+    "以切向量写切线；以垂直向量写法线。",
+    "若 k=0，切线水平而法线为 x=x₀；避免除以零。"
+  ],
+  "formula": "y-y_0=k(x-x_0),\\qquad (x-x_0)+k(y-y_0)=0",
+  "pitfalls": [
+    "法线斜率是 -1/k，不是 1/k；公式第二式在 k=0 时仍有效。"
+  ],
+  "example": {
+    "prompt": "自编例题：求抛物线 y=x² 在 x=1 处的切线和法线。",
+    "solution": "切点 (1,1)，斜率 k=2。切线 y-1=2(x-1)；法线 (x-1)+2(y-1)=0，即 x+2y-3=0。"
+  },
+  "relatedIds": [
+    "hm-derivative-definition",
+    "hm-parametric-derivative"
+  ],
+  "topicIds": [
+    "audit-plane-tangent-normal"
+  ],
+  "status": "reviewed"
+}

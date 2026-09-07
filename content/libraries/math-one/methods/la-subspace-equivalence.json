@@ -1,0 +1,32 @@
+{
+  "id": "la-subspace-equivalence",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "子空间判别与向量组等价",
+  "summary": "用封闭性判断子空间，用互相线性表示判断两组向量是否等价。",
+  "conditions": [
+    "讨论的是同一数域、同一环境向量空间中的集合或向量组。"
+  ],
+  "steps": [
+    "检查集合非空，尤其检查零向量。",
+    "验证任意线性组合仍在集合中；齐次线性约束的解集自然满足。",
+    "两向量组等价要求张成空间相同，可验证每组都能由另一组表示，或检查秩(A)=秩(B)=秩([A B])。"
+  ],
+  "formula": "\\operatorname{span}(A)=\\operatorname{span}(B)\\iff r(A)=r(B)=r([A\\ B])",
+  "pitfalls": [
+    "两组向量秩相同不足以推出等价。",
+    "非齐次线性约束的解集通常是仿射集，不是子空间。"
+  ],
+  "example": {
+    "prompt": "自编例题：判断 W={(x,y,z):x+y+z=0} 是否为子空间，并求基；x+y+z=1 的集合呢？",
+    "solution": "齐次约束对线性组合封闭。取 y=s,z=t，则 (x,y,z)=s(-1,1,0)+t(-1,0,1)，两向量独立，构成 W 的基。等式右侧为 1 的集合不含零向量，所以不是子空间。"
+  },
+  "relatedIds": [
+    "la-vector-basis",
+    "la-vector-representation"
+  ],
+  "topicIds": [
+    "audit-subspace-equivalence"
+  ],
+  "status": "reviewed"
+}

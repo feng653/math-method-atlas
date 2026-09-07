@@ -1,0 +1,31 @@
+{
+  "id": "hm-direction-cosines",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "单位向量与方向余弦",
+  "summary": "把非零向量归一化，其三个分量就是与坐标正轴夹角的余弦。",
+  "conditions": [
+    "向量必须非零；夹角针对带方向的向量和坐标正轴。"
+  ],
+  "steps": [
+    "求模长 √(a²+b²+c²)。",
+    "各坐标除以模长，得到方向余弦。",
+    "需要角度时取 [0,π] 的 arccos，并检查余弦平方和为 1。"
+  ],
+  "formula": "\\mathbf e=\\frac{(a,b,c)}{\\sqrt{a^2+b^2+c^2}},\\quad\\cos^2\\alpha+\\cos^2\\beta+\\cos^2\\gamma=1",
+  "pitfalls": [
+    "零向量没有方向余弦；反向向量的三个余弦同时变号。"
+  ],
+  "example": {
+    "prompt": "自编例题：求向量 (1,2,2) 的单位方向向量及方向余弦。",
+    "solution": "模长为 3，单位向量与方向余弦均为 (1/3,2/3,2/3)。平方和 1/9+4/9+4/9=1。"
+  },
+  "relatedIds": [
+    "hm-vector-products",
+    "hm-space-angle-distance"
+  ],
+  "topicIds": [
+    "audit-direction-cosines"
+  ],
+  "status": "reviewed"
+}

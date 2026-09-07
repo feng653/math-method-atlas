@@ -1,0 +1,32 @@
+{
+  "id": "hm-revolution-cylinder",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "柱面与旋转曲面方程构造",
+  "summary": "保存轴向坐标与到旋转轴的距离，或沿固定方向消去参数。",
+  "conditions": [
+    "绕坐标轴旋转时，母线所在平面及保留的坐标必须明确。",
+    "直接用平方代换可能扩充原母线范围，需保留符号或区间约束。"
+  ],
+  "steps": [
+    "绕 z 轴旋转时令 r=√(x²+y²)，把母线径向坐标用 r 代替。",
+    "检查母线高度范围和径向非负条件。",
+    "柱面沿固定方向由母线平移生成，参数化后消去平移参数。"
+  ],
+  "formula": "(r,0,z)\\ \\longmapsto\\ (r\\cos t,r\\sin t,z)",
+  "pitfalls": [
+    "不是所有缺失变量的方程都表示非退化曲面；要检查实点集合。"
+  ],
+  "example": {
+    "prompt": "自编例题：将 x=z²、y=0 的母线绕 z 轴旋转；将 xy 平面单位圆沿 z 方向平移，分别求方程。",
+    "solution": "第一问径向距离 r=z²，故 x²+y²=z⁴，z 可任意。第二问平移不改变 x、y，得到柱面 x²+y²=1，z 任意。"
+  },
+  "relatedIds": [
+    "hm-quadric-surfaces",
+    "hm-space-intersections"
+  ],
+  "topicIds": [
+    "audit-revolution-cylinder"
+  ],
+  "status": "reviewed"
+}

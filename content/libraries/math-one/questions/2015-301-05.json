@@ -1,0 +1,18 @@
+{
+  "id": "2015-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2015",
+  "number": "5",
+  "summary": "参数无穷多解",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-system-parameter",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 1 页第 5 题。先由行列式零筛参数，再比较增广矩阵秩。"
+    }
+  ]
+}

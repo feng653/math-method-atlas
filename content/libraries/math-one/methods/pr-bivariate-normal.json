@@ -1,0 +1,35 @@
+{
+  "id": "pr-bivariate-normal",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "二维正态参数、条件与线性组合",
+  "summary": "联合正态下用均值、方差、相关系数直接求条件分布和线性组合。",
+  "conditions": [
+    "(X,Y) 联合二维正态，σX、σY>0；给出的非退化条件密度公式要求 |ρ|<1。",
+    "分别正态不保证联合正态，不能仅由边缘分布套用。"
+  ],
+  "steps": [
+    "读取两个均值、方差和相关系数。",
+    "线性组合 aX+bY 为正态，均值线性相加，方差含 2abρσXσY。",
+    "条件 X|Y=y 的均值为 μX+ρσX(y-μY)/σY，方差为 σX²(1-ρ²)。",
+    "联合正态时不相关等价于独立；超出联合正态时只保留独立推出不相关。"
+  ],
+  "formula": "X\\mid Y=y\\sim N\\left(\\mu_X+\\rho\\frac{\\sigma_X}{\\sigma_Y}(y-\\mu_Y),\\sigma_X^2(1-\\rho^2)\\right)",
+  "pitfalls": [
+    "ρ=±1 属退化情形，不能当成普通二维密度。",
+    "线性组合方差不能遗漏协方差项。"
+  ],
+  "example": {
+    "prompt": "自编例题：联合正态的 X、Y 均值均为 0、方差均为 1，ρ=1/2。求 X|Y=2 和 X+Y 的分布。",
+    "solution": "条件均值 (1/2)·2=1，条件方差 1-1/4=3/4，因此 X|Y=2~N(1,3/4)。和的均值 0，方差 1+1+2·(1/2)=3，故 X+Y~N(0,3)。"
+  },
+  "relatedIds": [
+    "pr-joint-independence",
+    "pr-moment-covariance",
+    "pr-dist-normal"
+  ],
+  "topicIds": [
+    "audit-bivariate-normal"
+  ],
+  "status": "reviewed"
+}

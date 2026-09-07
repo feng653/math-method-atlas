@@ -1,0 +1,28 @@
+{
+  "id": "2017-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "23",
+  "summary": "绝对误差估计",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-transform",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 5 页第 23 题。先合并正负两支得到误差密度，再分别使用一阶矩与对数似然估计尺度。"
+    },
+    {
+      "methodId": "pr-estimate-moments",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 5 页第 23 题。先合并正负两支得到误差密度，再分别使用一阶矩与对数似然估计尺度。"
+    },
+    {
+      "methodId": "pr-estimate-mle",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 5 页第 23 题。先合并正负两支得到误差密度，再分别使用一阶矩与对数似然估计尺度。"
+    }
+  ]
+}

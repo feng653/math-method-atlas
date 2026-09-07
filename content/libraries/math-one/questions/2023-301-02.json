@@ -1,0 +1,18 @@
+{
+  "id": "2023-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2023",
+  "number": "2",
+  "summary": "有界微分解",
+  "source": {
+    "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-characteristic",
+      "verification": "pending",
+      "note": "原题第2页第2题：用特征根排除增长项；待独立复核。"
+    }
+  ]
+}

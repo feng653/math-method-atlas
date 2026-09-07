@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "3",
+  "summary": "积分换序",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#3"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第3题：画出积分区域后按另一轴分段；待独立复核。",
+      "methodId": "hm-double-cartesian"
+    }
+  ]
+}

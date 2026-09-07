@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "libraryId": "math-one",
+  "targetVersion": "2026",
+  "evidenceVersion": "2019",
+  "status": "historical-audit",
+  "sourceUrl": "https://jtb.ncbcjxau.edu.cn/uploadfile/3/Attachment/667c3cc0da.pdf",
+  "sourceKind": "university-archive-not-current-official",
+  "warning": "历史来源差距审计，CLI已校验结构与引用；尚未取得2026官方原文，不是目标版完整覆盖证明。",
+  "groups": [
+    {
+      "id": "req-limits",
+      "chapterId": "limits",
+      "sourceSection": "高数一",
+      "sourcePage": 1,
+      "requirementRange": "1-10",
+      "summary": "函数建模与性质；极限定义运算及存在准则；小量比较；连续与闭区间性质",
+      "candidateMethodIds": [
+        "hm-function-domain",
+        "hm-squeeze",
+        "hm-recursive-limit",
+        "hm-intermediate-value"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-function-properties",
+        "audit-limit-definition",
+        "audit-important-limits"
+      ]
+    },
+    {
+      "id": "req-derivatives",
+      "chapterId": "derivatives",
+      "sourceSection": "高数二",
+      "sourcePage": 2,
+      "requirementRange": "1-9",
+      "summary": "导数微分与反函数；高阶导；中值定理；形状最值与曲率",
+      "candidateMethodIds": [
+        "hm-derivative-definition",
+        "hm-mean-value-proof",
+        "hm-concavity-asymptote"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-plane-tangent-normal",
+        "audit-inverse-derivative",
+        "audit-curvature-circle"
+      ]
+    },
+    {
+      "id": "req-integrals",
+      "chapterId": "integrals",
+      "sourceSection": "高数三",
+      "sourcePage": 3,
+      "requirementRange": "1-6",
+      "summary": "原函数及定积分概念；积分方法；变限；反常；几何物理应用",
+      "candidateMethodIds": [
+        "hm-riemann-sum",
+        "hm-substitution-integral",
+        "hm-improper-integral",
+        "hm-arc-work-integral"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-revolution-area",
+        "audit-cross-section-average",
+        "audit-pressure-gravity"
+      ]
+    },
+    {
+      "id": "req-geometry",
+      "chapterId": "geometry",
+      "sourceSection": "高数四",
+      "sourcePage": 3,
+      "requirementRange": "1-9",
+      "summary": "向量运算；方程与距离；曲面构造和投影",
+      "candidateMethodIds": [
+        "hm-vector-products",
+        "hm-line-plane-equations",
+        "hm-space-intersections"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-direction-cosines",
+        "audit-revolution-cylinder"
+      ]
+    },
+    {
+      "id": "req-multivariable",
+      "chapterId": "multivariable",
+      "sourceSection": "高数五",
+      "sourcePage": 4,
+      "requirementRange": "1-9",
+      "summary": "多元概念与微分；方向和隐函数；切平面；二阶展开；极值",
+      "candidateMethodIds": [
+        "hm-multivariable-limit",
+        "hm-multivariable-implicit",
+        "hm-hessian-extrema"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-second-taylor"
+      ]
+    },
+    {
+      "id": "req-multiple-integrals",
+      "chapterId": "multiple-integrals",
+      "sourceSection": "高数六",
+      "sourcePage": 4,
+      "requirementRange": "1-8",
+      "summary": "重积分性质计算；线面积分及关系；场算子与积分应用",
+      "candidateMethodIds": [
+        "hm-double-cartesian",
+        "hm-triple-integral",
+        "hm-green",
+        "hm-gauss",
+        "hm-stokes"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-series",
+      "chapterId": "series",
+      "sourceSection": "高数七",
+      "sourcePage": 5,
+      "requirementRange": "1-11",
+      "summary": "数项判敛；函数项；幂级数半径和函数；泰勒与傅里叶",
+      "candidateMethodIds": [
+        "hm-series-basic",
+        "hm-series-comparison",
+        "hm-power-radius",
+        "hm-taylor-expansion",
+        "hm-fourier"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-ode",
+      "chapterId": "ode",
+      "sourceSection": "高数八",
+      "sourcePage": 5,
+      "requirementRange": "1-9",
+      "summary": "基本概念；一阶及全微分方程；降阶；线性结构；常系数和欧拉；建模",
+      "candidateMethodIds": [
+        "hm-ode-separable",
+        "hm-ode-reduction",
+        "hm-linear-ode-structure",
+        "hm-ode-euler"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-exact-ode"
+      ]
+    },
+    {
+      "id": "req-la-determinants",
+      "chapterId": "la-determinants",
+      "sourceSection": "线代一",
+      "sourcePage": 6,
+      "requirementRange": "1-2",
+      "summary": "行列式概念性质与展开计算",
+      "candidateMethodIds": [
+        "la-det-row-operations",
+        "la-det-expansion"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-la-matrices",
+      "chapterId": "la-matrices",
+      "sourceSection": "线代二",
+      "sourcePage": 6,
+      "requirementRange": "1-5",
+      "summary": "特殊矩阵与运算；逆伴随；初等变换秩等价；分块",
+      "candidateMethodIds": [
+        "la-matrix-product",
+        "la-matrix-inverse",
+        "la-matrix-adjugate",
+        "la-matrix-rank"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-block-operations"
+      ]
+    },
+    {
+      "id": "req-la-vectors",
+      "chapterId": "la-vectors",
+      "sourceSection": "线代三",
+      "sourcePage": 7,
+      "requirementRange": "1-8",
+      "summary": "线性表示相关；秩与等价；子空间基坐标；换基与正交",
+      "candidateMethodIds": [
+        "la-vector-representation",
+        "la-vector-basis",
+        "la-vector-coordinate",
+        "la-vector-orthogonal"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-subspace-equivalence"
+      ]
+    },
+    {
+      "id": "req-la-systems",
+      "chapterId": "la-systems",
+      "sourceSection": "线代四",
+      "sourcePage": 7,
+      "requirementRange": "1-5",
+      "summary": "克拉默；有解判别；基础解系；解结构；消元",
+      "candidateMethodIds": [
+        "la-system-cramer",
+        "la-system-consistency",
+        "la-system-homogeneous",
+        "la-system-general"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-la-eigen",
+      "chapterId": "la-eigen",
+      "sourceSection": "线代五",
+      "sourcePage": 7,
+      "requirementRange": "1-3",
+      "summary": "特征与相似；可对角化；实对称谱性质",
+      "candidateMethodIds": [
+        "la-eigen-characteristic",
+        "la-eigen-diagonalization",
+        "la-eigen-symmetric"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-la-quadratic",
+      "chapterId": "la-quadratic",
+      "sourceSection": "线代六",
+      "sourcePage": 8,
+      "requirementRange": "1-3",
+      "summary": "矩阵表示合同惯性；标准化；正定",
+      "candidateMethodIds": [
+        "la-quadratic-matrix",
+        "la-quadratic-completion",
+        "la-quadratic-positive"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-inertia-canonical"
+      ]
+    },
+    {
+      "id": "req-pr-events",
+      "chapterId": "pr-events",
+      "sourceSection": "概率一",
+      "sourcePage": 8,
+      "requirementRange": "1-3",
+      "summary": "事件关系；概率公式及两类概型；独立重复",
+      "candidateMethodIds": [
+        "pr-event-counting",
+        "pr-event-conditional",
+        "pr-event-total",
+        "pr-event-bayes"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-geometric-probability",
+        "audit-event-union"
+      ]
+    },
+    {
+      "id": "req-pr-distributions",
+      "chapterId": "pr-distributions",
+      "sourceSection": "概率二",
+      "sourcePage": 8,
+      "requirementRange": "1-5",
+      "summary": "分布函数；离散模型；泊松近似；连续模型；变量函数",
+      "candidateMethodIds": [
+        "pr-dist-cdf",
+        "pr-dist-classic",
+        "pr-dist-density",
+        "pr-dist-transform"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-poisson-approximation"
+      ]
+    },
+    {
+      "id": "req-pr-joint",
+      "chapterId": "pr-joint",
+      "sourceSection": "概率三",
+      "sourcePage": 9,
+      "requirementRange": "1-4",
+      "summary": "联合边缘条件；独立与不相关；二维模型；多变量函数",
+      "candidateMethodIds": [
+        "pr-joint-marginal",
+        "pr-joint-conditional",
+        "pr-joint-independence",
+        "pr-joint-transform"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-discrete-joint",
+        "audit-bivariate-normal"
+      ]
+    },
+    {
+      "id": "req-pr-moments",
+      "chapterId": "pr-moments",
+      "sourceSection": "概率四",
+      "sourcePage": 9,
+      "requirementRange": "1-2",
+      "summary": "数字特征性质与函数期望",
+      "candidateMethodIds": [
+        "pr-moment-expectation",
+        "pr-moment-variance",
+        "pr-moment-correlation"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-pr-limit",
+      "chapterId": "pr-limit",
+      "sourceSection": "概率五",
+      "sourcePage": 9,
+      "requirementRange": "1-3",
+      "summary": "概率界；三种大数律；两种中心极限定理",
+      "candidateMethodIds": [
+        "pr-moment-inequality",
+        "pr-limit-lln",
+        "pr-limit-clt",
+        "pr-limit-binomial"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-chebyshev-lln"
+      ]
+    },
+    {
+      "id": "req-pr-sampling",
+      "chapterId": "pr-sampling",
+      "sourceSection": "概率六",
+      "sourcePage": 10,
+      "requirementRange": "1-3",
+      "summary": "样本统计量；卡方 t F 与分位数；正态抽样",
+      "candidateMethodIds": [
+        "pr-sample-empirical",
+        "pr-sample-chi-square",
+        "pr-sample-t-f",
+        "pr-sample-normal"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    },
+    {
+      "id": "req-pr-estimation",
+      "chapterId": "pr-estimation",
+      "sourceSection": "概率七",
+      "sourcePage": 10,
+      "requirementRange": "1-4",
+      "summary": "点估计与方法；评价；单与双总体区间",
+      "candidateMethodIds": [
+        "pr-estimate-moments",
+        "pr-estimate-mle",
+        "pr-estimate-unbiased",
+        "pr-estimate-normal-mean"
+      ],
+      "status": "partial",
+      "gapTopicIds": [
+        "audit-two-means-interval",
+        "audit-two-variances-interval"
+      ]
+    },
+    {
+      "id": "req-pr-testing",
+      "chapterId": "pr-testing",
+      "sourceSection": "概率八",
+      "sourcePage": 10,
+      "requirementRange": "1-2",
+      "summary": "检验步骤与错误；单与双总体检验",
+      "candidateMethodIds": [
+        "pr-test-errors",
+        "pr-test-normal-mean",
+        "pr-test-two-means",
+        "pr-test-two-variances"
+      ],
+      "status": "candidate",
+      "gapTopicIds": []
+    }
+  ],
+  "gaps": [
+    {
+      "topicId": "audit-function-properties",
+      "chapterId": "limits",
+      "title": "函数性质、初等图形与建模",
+      "sourceRequirement": "1.1-4",
+      "proposedMethodId": "hm-function-properties"
+    },
+    {
+      "topicId": "audit-limit-definition",
+      "chapterId": "limits",
+      "title": "极限定义、左右极限与基本性质",
+      "sourceRequirement": "1.5-6",
+      "proposedMethodId": "hm-limit-definition"
+    },
+    {
+      "topicId": "audit-important-limits",
+      "chapterId": "limits",
+      "title": "两个重要极限的直接代换",
+      "sourceRequirement": "1.7",
+      "proposedMethodId": "hm-important-limits"
+    },
+    {
+      "topicId": "audit-plane-tangent-normal",
+      "chapterId": "derivatives",
+      "title": "平面曲线切线与法线",
+      "sourceRequirement": "2.1",
+      "proposedMethodId": "hm-plane-tangent-normal"
+    },
+    {
+      "topicId": "audit-inverse-derivative",
+      "chapterId": "derivatives",
+      "title": "反函数求导及一阶微分形式不变性",
+      "sourceRequirement": "2.2,4",
+      "proposedMethodId": "hm-inverse-derivative"
+    },
+    {
+      "topicId": "audit-curvature-circle",
+      "chapterId": "derivatives",
+      "title": "曲率半径与曲率圆",
+      "sourceRequirement": "2.9",
+      "proposedMethodId": "hm-curvature-circle"
+    },
+    {
+      "topicId": "audit-revolution-area",
+      "chapterId": "integrals",
+      "title": "旋转体侧面积",
+      "sourceRequirement": "3.6",
+      "proposedMethodId": "hm-revolution-area"
+    },
+    {
+      "topicId": "audit-cross-section-average",
+      "chapterId": "integrals",
+      "title": "一般截面体积与函数平均值",
+      "sourceRequirement": "3.6",
+      "proposedMethodId": "hm-cross-section-average"
+    },
+    {
+      "topicId": "audit-pressure-gravity",
+      "chapterId": "integrals",
+      "title": "静水压力与引力积分建模",
+      "sourceRequirement": "3.6",
+      "proposedMethodId": "hm-pressure-gravity"
+    },
+    {
+      "topicId": "audit-direction-cosines",
+      "chapterId": "geometry",
+      "title": "单位向量与方向余弦",
+      "sourceRequirement": "4.3",
+      "proposedMethodId": "hm-direction-cosines"
+    },
+    {
+      "topicId": "audit-revolution-cylinder",
+      "chapterId": "geometry",
+      "title": "柱面与旋转曲面方程构造",
+      "sourceRequirement": "4.8",
+      "proposedMethodId": "hm-revolution-cylinder"
+    },
+    {
+      "topicId": "audit-second-taylor",
+      "chapterId": "multivariable",
+      "title": "二元函数二阶泰勒展开",
+      "sourceRequirement": "5.8",
+      "proposedMethodId": "hm-second-taylor"
+    },
+    {
+      "topicId": "audit-exact-ode",
+      "chapterId": "ode",
+      "title": "全微分方程的势函数解法",
+      "sourceRequirement": "8.3",
+      "proposedMethodId": "hm-exact-ode"
+    },
+    {
+      "topicId": "audit-block-operations",
+      "chapterId": "la-matrices",
+      "title": "分块矩阵乘法与求逆",
+      "sourceRequirement": "2.5",
+      "proposedMethodId": "la-block-operations"
+    },
+    {
+      "topicId": "audit-subspace-equivalence",
+      "chapterId": "la-vectors",
+      "title": "子空间判别与向量组等价",
+      "sourceRequirement": "3.4-5",
+      "proposedMethodId": "la-subspace-equivalence"
+    },
+    {
+      "topicId": "audit-inertia-canonical",
+      "chapterId": "la-quadratic",
+      "title": "合同、惯性指数与规范形",
+      "sourceRequirement": "6.1",
+      "proposedMethodId": "la-inertia-canonical"
+    },
+    {
+      "topicId": "audit-geometric-probability",
+      "chapterId": "pr-events",
+      "title": "几何概型的区域比例计算",
+      "sourceRequirement": "1.2",
+      "proposedMethodId": "pr-geometric-probability"
+    },
+    {
+      "topicId": "audit-event-union",
+      "chapterId": "pr-events",
+      "title": "事件加减法与容斥",
+      "sourceRequirement": "1.1-2",
+      "proposedMethodId": "pr-event-union"
+    },
+    {
+      "topicId": "audit-poisson-approximation",
+      "chapterId": "pr-distributions",
+      "title": "泊松定理近似二项概率",
+      "sourceRequirement": "2.3",
+      "proposedMethodId": "pr-poisson-approximation"
+    },
+    {
+      "topicId": "audit-discrete-joint",
+      "chapterId": "pr-joint",
+      "title": "二维离散联合表与条件分布",
+      "sourceRequirement": "3.1",
+      "proposedMethodId": "pr-discrete-joint"
+    },
+    {
+      "topicId": "audit-bivariate-normal",
+      "chapterId": "pr-joint",
+      "title": "二维正态参数、条件与线性组合",
+      "sourceRequirement": "3.3-4",
+      "proposedMethodId": "pr-bivariate-normal"
+    },
+    {
+      "topicId": "audit-chebyshev-lln",
+      "chapterId": "pr-limit",
+      "title": "切比雪夫与伯努利大数定律",
+      "sourceRequirement": "5.2",
+      "proposedMethodId": "pr-chebyshev-lln"
+    },
+    {
+      "topicId": "audit-two-means-interval",
+      "chapterId": "pr-estimation",
+      "title": "双正态总体均值差置信区间",
+      "sourceRequirement": "7.4",
+      "proposedMethodId": "pr-two-means-interval"
+    },
+    {
+      "topicId": "audit-two-variances-interval",
+      "chapterId": "pr-estimation",
+      "title": "双正态总体方差比置信区间",
+      "sourceRequirement": "7.4",
+      "proposedMethodId": "pr-two-variances-interval"
+    }
+  ]
+}

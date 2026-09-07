@@ -1,0 +1,31 @@
+{
+  "id": "la-inertia-canonical",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "合同、惯性指数与规范形",
+  "summary": "将标准形系数按符号归一化，用正负惯性指数判实对称矩阵合同。",
+  "conditions": [
+    "实二次型对应实对称矩阵，变量替换矩阵必须可逆。"
+  ],
+  "steps": [
+    "先用配方或正交替换得到对角标准形。",
+    "分别统计正系数、负系数和零系数个数。",
+    "对非零项缩放变量，将系数变为 ±1；同阶实对称矩阵正负惯性指数相同当且仅当合同。"
+  ],
+  "formula": "Q=u_1^2+\\cdots+u_p^2-v_1^2-\\cdots-v_q^2,\\qquad r=p+q",
+  "pitfalls": [
+    "规范化缩放一般不是正交变换；合同保持惯性但不保持每个特征值。"
+  ],
+  "example": {
+    "prompt": "自编例题：把 Q=2x²-8y² 化为规范形，并判断它是否与 x²-y² 合同。",
+    "solution": "令 u=√2 x、v=2√2 y，替换可逆，得到 Q=u²-v²。两者正负惯性指数都为 (1,1)，故对应实对称矩阵合同。"
+  },
+  "relatedIds": [
+    "la-quadratic-completion",
+    "la-quadratic-orthogonal"
+  ],
+  "topicIds": [
+    "audit-inertia-canonical"
+  ],
+  "status": "reviewed"
+}

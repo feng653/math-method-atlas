@@ -1,0 +1,18 @@
+{
+  "id": "2017-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "7",
+  "summary": "条件概率比较",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 2 页第 7 题。各条件概率按定义展开，正分母交叉相乘整理成同一不等式。"
+    }
+  ]
+}

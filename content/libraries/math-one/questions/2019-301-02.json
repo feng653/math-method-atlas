@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "2",
+  "summary": "分段极值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第2题：左右差商与邻域函数符号分别检查；待独立复核。",
+      "methodId": "hm-derivative-definition",
+      "verification": "pending"
+    }
+  ]
+}

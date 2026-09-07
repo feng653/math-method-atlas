@@ -1,0 +1,23 @@
+{
+  "id": "2017-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "16",
+  "summary": "求和极限",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-riemann-sum",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。把求和写成等距黎曼和，所得对数定积分用分部积分。"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。把求和写成等距黎曼和，所得对数定积分用分部积分。"
+    }
+  ]
+}

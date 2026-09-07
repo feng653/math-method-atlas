@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "8",
+  "summary": "条件概率辨析",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-total",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 8 题。以事件及其补集分割概率空间，再比较条件概率的加权平均。 独立复核（2026-09-08，重读题面）：条件事件与补事件构成全概率分解，条件概率分母均非零。"
+    },
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 2 页第 8 题。包含关系将交集化简；原文选项括号排印损坏，须复核题面后定案。 独立复核（2026-09-08，重读题面）：条件事件与补事件构成全概率分解，条件概率分母均非零。"
+    }
+  ]
+}

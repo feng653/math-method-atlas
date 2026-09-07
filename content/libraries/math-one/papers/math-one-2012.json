@@ -1,0 +1,12 @@
+{
+  "id": "math-one-2012",
+  "libraryId": "math-one",
+  "year": 2012,
+  "exam": "301",
+  "title": "2012 数学一（转载网页逐题索引）",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/"
+  },
+  "status": "complete",
+  "expectedQuestionCount": 23
+}

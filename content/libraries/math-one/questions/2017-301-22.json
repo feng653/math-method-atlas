@@ -1,0 +1,23 @@
+{
+  "id": "2017-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2017",
+  "number": "22",
+  "summary": "离散连续之和",
+  "source": {
+    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 22 题。先积分求连续变量均值；再按离散变量取值加权平移密度。"
+    },
+    {
+      "methodId": "pr-joint-convolution",
+      "verification": "pending",
+      "note": "待独立复核：来源文章内试卷页图第 4 页第 22 题。先积分求连续变量均值；再按离散变量取值加权平移密度。"
+    }
+  ]
+}

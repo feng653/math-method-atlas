@@ -10,9 +10,9 @@
   },
   "methodLinks": [
     {
-      "methodId": "pr-dist-transform",
+      "methodId": "pr-joint-convolution",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 10 题：按变换的原像区域写分布函数，独立性允许对联合密度积分。"
+      "note": "核对来源 PDF 第 3 页第 10 题：对差值先将第二变量取相反数后作卷积，再把绝对值的正负原像概率相加。"
     },
     {
       "methodId": "pr-dist-exponential",

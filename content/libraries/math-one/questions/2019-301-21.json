@@ -1,0 +1,17 @@
+{
+  "id": "2019-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2019",
+  "number": "21",
+  "summary": "相似矩阵",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+  },
+  "methodLinks": [
+    {
+      "note": "转载网页第21题：对应相同特征值配对基向量；待独立复核。",
+      "methodId": "la-eigen-similarity",
+      "verification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "14",
+  "summary": "无偏系数",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#14"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第14题：计算样本平方和期望后解系数；待独立复核。",
+      "methodId": "pr-estimate-unbiased"
+    }
+  ]
+}

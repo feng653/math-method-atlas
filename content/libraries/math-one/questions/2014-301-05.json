@@ -1,0 +1,17 @@
+{
+  "id": "2014-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2014",
+  "number": "5",
+  "summary": "分块行列式",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#5"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第5题：交换行列后识别分块结构；待独立复核。",
+      "methodId": "la-det-block"
+    }
+  ]
+}

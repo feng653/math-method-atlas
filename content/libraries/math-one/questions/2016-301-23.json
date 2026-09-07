@@ -1,0 +1,23 @@
+{
+  "id": "2016-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2016",
+  "number": "23",
+  "summary": "最大值无偏化",
+  "source": {
+    "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
+    "page": 16
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-max-min",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 16 页第 23 题。独立样本最大值分布为单个分布函数的幂，积分求期望后调整倍数。"
+    },
+    {
+      "methodId": "pr-estimate-unbiased",
+      "verification": "pending",
+      "note": "待独立复核：来源PDF第 16 页第 23 题。独立样本最大值分布为单个分布函数的幂，积分求期望后调整倍数。"
+    }
+  ]
+}

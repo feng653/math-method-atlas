@@ -1,0 +1,17 @@
+{
+  "id": "2013-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2013",
+  "number": "1",
+  "summary": "无穷小阶",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#1"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第1题：展开反正切定位首个非零项；待独立复核。",
+      "methodId": "hm-taylor-limit"
+    }
+  ]
+}

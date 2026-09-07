@@ -1,0 +1,17 @@
+{
+  "id": "2012-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2012",
+  "number": "17",
+  "summary": "幂级数求和",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#17"
+  },
+  "methodLinks": [
+    {
+      "verification": "pending",
+      "note": "转载网页第17题：拆分系数并逐项积分或求导；待独立复核。",
+      "methodId": "hm-power-sum"
+    }
+  ]
+}

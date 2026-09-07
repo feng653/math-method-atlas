@@ -1,0 +1,18 @@
+{
+  "id": "2026-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2026",
+  "number": "17",
+  "summary": "二元函数极值",
+  "source": {
+    "url": "https://cdn.liiistem.cn/library/2026-test-math1.pdf",
+    "page": 7
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-hessian-extrema",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 7 页第 17 题。解梯度零点并按 Hessian 判别，鞍点不列为极值。 独立复核（2026-09-08，重读题面）：驻点Hessian分别不定与负定，二阶判别适用。"
+    }
+  ]
+}

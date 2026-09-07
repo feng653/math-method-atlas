@@ -1,0 +1,34 @@
+{
+  "id": "la-block-operations",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "分块矩阵乘法与求逆",
+  "summary": "按尺寸兼容的块做矩阵乘法，用 Schur 补求逆时保留乘法顺序。",
+  "conditions": [
+    "各分块的行列尺寸必须与乘法匹配。",
+    "给出的逆公式要求 A 与 S=D-CA⁻¹B 都可逆。"
+  ],
+  "steps": [
+    "先标注各块尺寸；分块乘法仍按行乘列求和。",
+    "计算 Schur 补 S，确认可逆后使用分块逆公式。",
+    "通过乘回单位阵验证，尤其检查非交换因子的次序。"
+  ],
+  "formula": "\\begin{pmatrix}A&B\\\\C&D\\end{pmatrix}^{-1}=\\begin{pmatrix}A^{-1}+A^{-1}BS^{-1}CA^{-1}&-A^{-1}BS^{-1}\\\\-S^{-1}CA^{-1}&S^{-1}\\end{pmatrix}",
+  "pitfalls": [
+    "即使整体可逆，A 也可能不可逆，此时此分块公式不适用。",
+    "不能把块当作可交换数，用 AD-BC 公式机械求逆。"
+  ],
+  "example": {
+    "prompt": "自编例题：用上三角分块求矩阵 [[2,3],[0,4]] 的逆。",
+    "solution": "A=2，B=3，C=0，D=S=4。逆为 [[1/2,-3/8],[0,1/4]]；乘回原矩阵，右上角为 2·(-3/8)+3·(1/4)=0，其余为单位阵元素。"
+  },
+  "relatedIds": [
+    "la-matrix-product",
+    "la-matrix-inverse",
+    "la-det-block"
+  ],
+  "topicIds": [
+    "audit-block-operations"
+  ],
+  "status": "reviewed"
+}

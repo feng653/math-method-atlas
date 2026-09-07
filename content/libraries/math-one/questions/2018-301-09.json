@@ -1,0 +1,18 @@
+{
+  "id": "2018-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2018",
+  "number": "9",
+  "summary": "幂指极限",
+  "source": {
+    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-indeterminate",
+      "note": "原题第3页第9题：取对数化为乘积极限；待独立复核。",
+      "verification": "pending"
+    }
+  ]
+}

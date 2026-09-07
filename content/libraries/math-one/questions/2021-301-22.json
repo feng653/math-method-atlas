@@ -1,0 +1,23 @@
+{
+  "id": "2021-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2021",
+  "number": "22",
+  "summary": "随机分段函数分布",
+  "source": {
+    "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-transform",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 4 页第 22 题。以均匀切点为原变量，按较短段及比值的原像区间求分布。 独立复核（2026-09-08，重读题面）：均匀切点经分段映射得到短段，之后按函数分布与期望积分。"
+    },
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "verified",
+      "note": "初录候选：来源 PDF 第 4 页第 22 题。对切点或较短段分布直接积分求函数期望。 独立复核（2026-09-08，重读题面）：均匀切点经分段映射得到短段，之后按函数分布与期望积分。"
+    }
+  ]
+}
