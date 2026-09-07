@@ -1,0 +1,31 @@
+{
+  "id": "pr-moment-variance",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "二阶矩求方差与线性组合",
+  "summary": "先求一二阶矩，含多个变量时保留协方差项。",
+  "conditions": [
+    "所有相关二阶矩有限"
+  ],
+  "steps": [
+    "计算 EX 与 EX²",
+    "用二阶矩减均值平方",
+    "线性组合展开并检查独立或不相关条件"
+  ],
+  "formula": "\\operatorname{Var}(aX+bY)=a^2\\operatorname{Var}X+b^2\\operatorname{Var}Y+2ab\\operatorname{Cov}(X,Y)",
+  "pitfalls": [
+    "方差对缩放是平方倍，常数平移不改变方差"
+  ],
+  "example": {
+    "prompt": "自编例题：X,Y 独立，方差为 2、3，求 Var(2X−Y)。",
+    "solution": "独立使协方差为 0，结果 4×2+3=11。"
+  },
+  "relatedIds": [
+    "pr-moment-correlation",
+    "pr-moment-covariance"
+  ],
+  "topicIds": [
+    "pr-variance-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "la-matrix-product",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "矩阵乘法与转置",
+  "summary": "按行乘列计算乘积并检查尺寸。",
+  "conditions": [
+    "A 为 m×n，B 为 n×p 时 AB 才有定义"
+  ],
+  "steps": [
+    "先核对内维",
+    "逐行逐列做点积",
+    "转置乘积时反转顺序"
+  ],
+  "formula": "(AB)_{ij}=\\sum_k a_{ik}b_{kj},\\quad(AB)^T=B^TA^T",
+  "pitfalls": [
+    "AB 通常不等于 BA"
+  ],
+  "example": {
+    "prompt": "自编例题：A=[[1,2],[0,1]]，B=[[2,0],[3,1]]，求 AB。",
+    "solution": "AB=[[8,2],[3,1]]，而 BA=[[2,4],[3,7]]。"
+  },
+  "relatedIds": [
+    "la-matrix-power",
+    "la-matrix-adjugate"
+  ],
+  "topicIds": [
+    "la-matrix-operations"
+  ],
+  "status": "reviewed"
+}

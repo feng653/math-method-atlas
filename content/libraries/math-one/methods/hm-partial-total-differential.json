@@ -1,0 +1,31 @@
+{
+  "id": "hm-partial-total-differential",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "偏导数与全微分判别",
+  "summary": "区分逐坐标求导和统一线性近似。",
+  "conditions": [
+    "点处偏导存在是可微必要条件；邻域偏导连续是常用充分条件。"
+  ],
+  "steps": [
+    "按固定其他变量计算偏导。",
+    "若偏导连续则判可微并写全微分。",
+    "否则用增量余项除以距离的极限检验。"
+  ],
+  "formula": "\\Delta f=f_x\\Delta x+f_y\\Delta y+o(\\sqrt{\\Delta x^2+\\Delta y^2})",
+  "pitfalls": [
+    "偏导均存在不保证连续或可微。"
+  ],
+  "example": {
+    "prompt": "自编例题：求f(x,y)=x²y在(1,2)的全微分。",
+    "solution": "偏导f_x=2xy、f_y=x²均连续，点处为4、1，所以df=4dx+dy。"
+  },
+  "relatedIds": [
+    "hm-multivariable-limit",
+    "hm-direction-gradient"
+  ],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

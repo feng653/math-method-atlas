@@ -1,0 +1,31 @@
+{
+  "id": "hm-newton-leibniz",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "牛顿莱布尼茨与变限积分",
+  "summary": "用原函数计算定积分，并求变上限积分导数。",
+  "conditions": [
+    "连续被积函数可直接应用；变限函数可导。"
+  ],
+  "steps": [
+    "定积分先找原函数并代上下限。",
+    "变限积分按上下端点分别应用链式法则。",
+    "两端可变时上限贡献减下限贡献。"
+  ],
+  "formula": "\\frac d{dx}\\int_{a(x)}^{b(x)}f(t)dt=f(b)b'-f(a)a'",
+  "pitfalls": [
+    "被积变量t不是外部x；被积函数另含x时不能只求端点项。"
+  ],
+  "example": {
+    "prompt": "自编例题：F(x)=∫ₓ^{x²}e^t dt，求F'。",
+    "solution": "F'=e^{x²}·2x-e^x，故F'=2xe^{x²}-e^x。"
+  },
+  "relatedIds": [
+    "hm-integration-by-parts",
+    "hm-definite-symmetry"
+  ],
+  "topicIds": [
+    "integrals-newton-leibniz"
+  ],
+  "status": "reviewed"
+}

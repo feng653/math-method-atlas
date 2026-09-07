@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "13",
+  "summary": "余弦系数极限",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-fourier-half-range",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 13 题：通过偶延拓计算余弦系数，并取题目指定的奇数下标。"
+    },
+    {
+      "methodId": "hm-equivalent-infinitesimal",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 13 题：系数趋零后，正弦与其自变量等价，转为代数极限。"
+    }
+  ]
+}

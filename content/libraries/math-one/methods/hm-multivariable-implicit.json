@@ -1,0 +1,32 @@
+{
+  "id": "hm-multivariable-implicit",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "多元隐函数与方程组求导",
+  "summary": "将隐式关系微分为线性方程组求未知偏导。",
+  "conditions": [
+    "定义方程在目标点开邻域有连续一阶偏导，目标点满足方程。",
+    "单方程对待解变量有 F_z≠0；方程组对全部待解变量的雅可比行列式非零。"
+  ],
+  "steps": [
+    "确定独立与依赖变量。",
+    "对指定独立变量求偏导。",
+    "解偏导线性方程并检查分母。"
+  ],
+  "formula": "z_x=-F_x/F_z,\\quad z_y=-F_y/F_z",
+  "pitfalls": [
+    "不能把依赖变量当常数；雅可比为0时定理不提供保证。"
+  ],
+  "example": {
+    "prompt": "自编例题：x²+y²+z²=9在(1,2,2)处求z_x、z_y。",
+    "solution": "F_z=4≠0，z_x=-x/z=-1/2，z_y=-y/z=-1。"
+  },
+  "relatedIds": [
+    "hm-multivariable-chain",
+    "hm-tangent-plane"
+  ],
+  "topicIds": [
+    "multivariable-multivariable-implicit"
+  ],
+  "status": "reviewed"
+}

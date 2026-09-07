@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "18",
+  "summary": "复合偏导",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 11
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-chain",
+      "verification": "verified",
+      "note": "原题第11页第18题：按比值变量求偏导。"
+    }
+  ]
+}

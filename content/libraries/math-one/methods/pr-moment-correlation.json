@@ -1,0 +1,31 @@
+{
+  "id": "pr-moment-correlation",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "标准化协方差求相关系数",
+  "summary": "以标准差归一化协方差，并识别完全线性关系。",
+  "conditions": [
+    "两个方差有限且严格为正"
+  ],
+  "steps": [
+    "求协方差与两个方差",
+    "除以标准差乘积",
+    "检查结果位于 [−1,1]"
+  ],
+  "formula": "\\rho_{XY}=\\frac{\\operatorname{Cov}(X,Y)}{\\sqrt{\\operatorname{Var}X\\operatorname{Var}Y}}",
+  "pitfalls": [
+    "常量变量的相关系数没有定义"
+  ],
+  "example": {
+    "prompt": "自编例题：0<Var(X)<∞，Y=3−2X，求相关系数。",
+    "solution": "Cov(X,Y)=−2Var(X)，Var(Y)=4Var(X)，所以 ρ=−1。"
+  },
+  "relatedIds": [
+    "pr-moment-covariance",
+    "pr-moment-variance"
+  ],
+  "topicIds": [
+    "pr-variance-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-chain-log-differentiation",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "复合函数与对数求导",
+  "summary": "按层次使用链式法则处理幂指函数。",
+  "conditions": [
+    "各层可导；实对数求导要求函数相应部分为正。"
+  ],
+  "steps": [
+    "识别外层与内层。",
+    "乘积多因子或变量幂先取对数。",
+    "对两边求导，最后乘回原函数。"
+  ],
+  "formula": "(u^v)'=u^v\\left(v'\\ln u+v\\frac{u'}u\\right),\\quad u>0",
+  "pitfalls": [
+    "变量幂不能同时套常指数幂法则；对数求导注意定义域。"
+  ],
+  "example": {
+    "prompt": "自编例题：求x>0时y=x^x的导数。",
+    "solution": "ln y=x ln x，得y'/y=ln x+1，所以y'=x^x(ln x+1)。"
+  },
+  "relatedIds": [
+    "hm-parametric-derivative",
+    "hm-implicit-derivative"
+  ],
+  "topicIds": [
+    "derivatives-chain-log-differentiation"
+  ],
+  "status": "reviewed"
+}

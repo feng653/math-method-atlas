@@ -1,0 +1,32 @@
+{
+  "id": "la-vector-representation",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "增广方程判断线性表示",
+  "summary": "以目标向量为右端，检查能否由指定向量线性组合。",
+  "conditions": [
+    "所有向量同维",
+    "表示唯一当且仅当列向量无关且方程有解"
+  ],
+  "steps": [
+    "以被用来表示的向量为列形成 A",
+    "将目标 b 置于增广列",
+    "消元判有解并读出系数"
+  ],
+  "formula": "b\\in\\operatorname{span}(\\alpha_1,\\ldots,\\alpha_m)\\iff r(A)=r([A\\mid b])",
+  "pitfalls": [
+    "能表示不等于表示系数唯一"
+  ],
+  "example": {
+    "prompt": "自编例题：将 (3,2) 用 (1,0)、(1,1) 表示。",
+    "solution": "方程 c1+c2=3，c2=2，得 (3,2)=(1,0)+2(1,1)，且系数唯一。"
+  },
+  "relatedIds": [
+    "la-vector-dependence",
+    "la-vector-basis"
+  ],
+  "topicIds": [
+    "la-vector-linear-topic"
+  ],
+  "status": "reviewed"
+}

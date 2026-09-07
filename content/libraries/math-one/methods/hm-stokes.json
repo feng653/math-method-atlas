@@ -1,0 +1,34 @@
+{
+  "id": "hm-stokes",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "斯托克斯公式",
+  "summary": "把空间闭曲线环流化为跨面旋度通量。",
+  "conditions": [
+    "跨面为分片光滑可定向曲面，边界分段光滑且与选定法向满足右手定则。",
+    "向量场在包含跨面的开邻域具有连续一阶偏导。"
+  ],
+  "steps": [
+    "选择计算方便的跨面。",
+    "计算旋度。",
+    "按一致方向做曲面积分。"
+  ],
+  "formula": "\\oint_{\\partial S}F\\cdot dr=\\iint_S(\\nabla\\times F)\\cdot n\\,dS",
+  "pitfalls": [
+    "同一边界可换跨面需保证场在所涉区域合法；方向由右手定则确定。"
+  ],
+  "example": {
+    "prompt": "自编例题：从+z看逆时针单位圆z=0上，F=(-y/2,x/2,0)的环流。",
+    "solution": "取向上单位圆盘，旋度(0,0,1)，通量为圆盘面积π，所以环流π。"
+  },
+  "relatedIds": [
+    "hm-line-second-kind",
+    "hm-path-independence",
+    "hm-surface-integrals",
+    "hm-gauss"
+  ],
+  "topicIds": [
+    "multiple-integrals-stokes"
+  ],
+  "status": "reviewed"
+}

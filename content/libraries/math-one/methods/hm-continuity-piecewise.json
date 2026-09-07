@@ -1,0 +1,31 @@
+{
+  "id": "hm-continuity-piecewise",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "分段函数连续与间断点分类",
+  "summary": "用左右极限和函数值逐项核对连续性。",
+  "conditions": [
+    "分段交界或表达式奇点。"
+  ],
+  "steps": [
+    "分别算左右极限。",
+    "两侧相等时比较函数值并解参数。",
+    "有限异值为跳跃；公共有限极限与函数值不符为可去；无穷或振荡另分类。"
+  ],
+  "formula": "\\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)=f(a)",
+  "pitfalls": [
+    "极限存在不保证定义点连续；单侧端点使用相应单侧连续。"
+  ],
+  "example": {
+    "prompt": "自编例题：f(x)=sin x/x(x≠0)，f(0)=a，何时连续？",
+    "solution": "两侧极限均为1，故a=1时连续；a≠1时0为可去间断点。"
+  },
+  "relatedIds": [
+    "hm-intermediate-value",
+    "hm-derivative-definition"
+  ],
+  "topicIds": [
+    "limits-continuity-piecewise"
+  ],
+  "status": "reviewed"
+}

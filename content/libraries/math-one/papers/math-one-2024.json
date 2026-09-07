@@ -1,0 +1,12 @@
+{
+  "id": "math-one-2024",
+  "libraryId": "math-one",
+  "year": 2024,
+  "exam": "301",
+  "title": "2024 年考研数学一",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf"
+  },
+  "status": "complete",
+  "expectedQuestionCount": 22
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-infinitesimal-order",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "无穷小阶与主部比较",
+  "summary": "通过比值区分高阶、同阶及等价无穷小。",
+  "conditions": [
+    "比较量在去心邻域非零且均趋零。"
+  ],
+  "steps": [
+    "分别求首个非零主部。",
+    "计算比值极限。",
+    "按极限0、有限非零或1准确分类。"
+  ],
+  "formula": "\\alpha=o(\\beta)\\iff\\alpha/\\beta\\to0",
+  "pitfalls": [
+    "同阶不一定等价；比值趋2只能称同阶。"
+  ],
+  "example": {
+    "prompt": "自编例题：比较1-cos x与x²的阶。",
+    "solution": "1-cos x=x²/2+o(x²)，比值趋1/2，因此与x²同阶但不等价，与x²/2等价。"
+  },
+  "relatedIds": [
+    "hm-equivalent-infinitesimal",
+    "hm-taylor-limit"
+  ],
+  "topicIds": [
+    "limits-infinitesimal-order"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "pr-test-normal-mean",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "单正态总体均值 z/t 检验",
+  "summary": "以原假设均值中心化，按备择方向选择拒绝域。",
+  "conditions": [
+    "独立同分布正态样本，总体方差严格为正",
+    "方差未知且 n≥2 用 t；已知用 z",
+    "显著性水平 0<α<1 在观察结果前确定，q_p 表示左侧累计概率 p 的分位数"
+  ],
+  "steps": [
+    "写 H₀:μ=μ₀，以及大于、小于或不等于 μ₀ 的备择",
+    "已知 σ 用 Z，未知用 T，并选对应的标准正态或 t_(n−1) 分位数",
+    "右侧拒绝规则 W>q_(1−α)，左侧 W<q_α，双侧 |W|>q_(1−α/2)，其中 W 为所选统计量"
+  ],
+  "formula": "Z=\\frac{\\bar X-\\mu_0}{\\sigma/\\sqrt n}\\sim N(0,1);\\quad T=\\frac{\\bar X-\\mu_0}{S/\\sqrt n}\\sim t_{n-1}\\quad(H_0)",
+  "pitfalls": [
+    "未拒绝 H0 不等于证明 H0 为真"
+  ],
+  "example": {
+    "prompt": "自编例题：σ=2，n=25，X̄=10.8，双侧检验 μ=10，α=0.05。",
+    "solution": "Z=(10.8−10)/(2/5)=2，超过 1.96，拒绝 H0。"
+  },
+  "relatedIds": [
+    "pr-test-two-means",
+    "pr-test-errors"
+  ],
+  "topicIds": [
+    "pr-mean-testing-topic"
+  ],
+  "status": "reviewed"
+}

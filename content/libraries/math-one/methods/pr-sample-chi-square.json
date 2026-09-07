@@ -1,0 +1,32 @@
+{
+  "id": "pr-sample-chi-square",
+  "libraryId": "math-one",
+  "chapterId": "pr-sampling",
+  "title": "正态样本方差构造卡方量",
+  "summary": "通过样本方差的标准化获得精确卡方分布。",
+  "conditions": [
+    "独立同分布正态样本，n≥2，总体方差 σ²>0",
+    "S² 以样本均值为中心且分母为 n−1"
+  ],
+  "steps": [
+    "确认是否用样本均值估计 μ",
+    "计算 (n−1)S²/σ²",
+    "使用 n−1 自由度"
+  ],
+  "formula": "\\frac{(n-1)S^2}{\\sigma^2}\\sim\\chi^2_{n-1}",
+  "pitfalls": [
+    "若用已知真均值中心化的平方和，自由度为 n"
+  ],
+  "example": {
+    "prompt": "自编例题：正态样本 n=8，σ²=2，写 S² 的卡方枢轴量。",
+    "solution": "7S²/2 服从自由度 7 的卡方分布。"
+  },
+  "relatedIds": [
+    "pr-sample-normal",
+    "pr-sample-t-f"
+  ],
+  "topicIds": [
+    "pr-normal-sampling-topic"
+  ],
+  "status": "reviewed"
+}

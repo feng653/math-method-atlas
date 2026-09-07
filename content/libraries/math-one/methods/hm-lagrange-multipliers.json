@@ -1,0 +1,31 @@
+{
+  "id": "hm-lagrange-multipliers",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "拉格朗日乘子与闭域最值",
+  "summary": "把约束下梯度平行条件转为联立方程。",
+  "conditions": [
+    "目标函数和约束函数在候选点邻域有连续一阶偏导；单个等式约束 g=0 的梯度非零，非正则点另查。",
+    "闭域全局最值的存在性保证需目标连续且可行域非空紧致；非紧可行域必须另查无穷远行为。"
+  ],
+  "steps": [
+    "构造L=f-λg并解梯度和约束。",
+    "加入边界、角点及非正则点。",
+    "比较目标值并说明全局性依据。"
+  ],
+  "formula": "\\nabla f=\\lambda\\nabla g,\\quad g=0",
+  "pitfalls": [
+    "乘子方程只给候选；不能遗漏约束梯度为零的点。"
+  ],
+  "example": {
+    "prompt": "自编例题：在x²+y²=1上求xy最值。",
+    "solution": "y=2λx、x=2λy，解得y=±x，结合圆得xy=±1/2。圆紧且函数连续，最大1/2、最小-1/2。"
+  },
+  "relatedIds": [
+    "hm-hessian-extrema"
+  ],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hm-ratio-root-test",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "比值与根值判别",
+  "summary": "对阶乘、指数和n次幂结构检查衰减速度。",
+  "conditions": [
+    "考察正项级数，或对一般实/复项级数取绝对值；比值判别要求分母项最终非零且所写比值极限存在。",
+    "若比值或根值极限不存在，应改用其他判据，不套该极限版本。"
+  ],
+  "steps": [
+    "有阶乘优先比值，大幂优先根值。",
+    "计算所选绝对比值或根值的极限 L。",
+    "L<1 时绝对收敛；L>1 时原通项不趋于 0，原级数发散；L=1 不能判定。"
+  ],
+  "formula": "L=\\lim|a_{n+1}/a_n|\\quad\\text{或}\\quad L=\\lim\\sqrt[n]{|a_n|}",
+  "pitfalls": [
+    "L=1不能判敛散；绝对值级数发散不能直接判原交错级数。"
+  ],
+  "example": {
+    "prompt": "自编例题：判断Σ(n=1到∞)n/2^n。",
+    "solution": "比值为(n+1)/(2n)→1/2<1，级数收敛。"
+  },
+  "relatedIds": [
+    "hm-series-basic",
+    "hm-series-comparison"
+  ],
+  "topicIds": [
+    "series-ratio-root-test"
+  ],
+  "status": "reviewed"
+}

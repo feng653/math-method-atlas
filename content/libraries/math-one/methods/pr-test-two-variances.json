@@ -1,0 +1,33 @@
+{
+  "id": "pr-test-two-variances",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "双正态总体方差比 F 检验",
+  "summary": "以独立样本方差之比构造 F 统计量。",
+  "conditions": [
+    "两组相互独立的正态样本，各样本量至少 2，方差严格为正",
+    "H0 为两总体方差相等",
+    "F_(m,n;p) 表示左侧累计概率 p 的 F 分位数"
+  ],
+  "steps": [
+    "固定分子分母样本顺序及显著性水平 α",
+    "计算 F=S₁²/S₂²，自由度 m=n₁−1、n=n₂−1",
+    "右侧 F>F_(m,n;1−α)，左侧 F<F_(m,n;α)，双侧用 α/2 和 1−α/2 两个分位数之外作为拒绝域"
+  ],
+  "formula": "F=\\frac{S_1^2}{S_2^2}\\sim F_{n_1-1,n_2-1}\\quad(H_0)",
+  "pitfalls": [
+    "交换分子分母时自由度和临界值也必须交换"
+  ],
+  "example": {
+    "prompt": "自编例题：n1=6,n2=9，S1²=4,S2²=2，检验 σ1²>σ2²，写判断式。",
+    "solution": "F=2；当 2>F5,8;1−α 时拒绝方差相等的原假设。"
+  },
+  "relatedIds": [
+    "pr-test-normal-variance",
+    "pr-test-errors"
+  ],
+  "topicIds": [
+    "pr-variance-testing-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "pr-limit-lln",
+  "libraryId": "math-one",
+  "chapterId": "pr-limit",
+  "title": "独立同分布大数定律",
+  "summary": "将样本均值识别为总体均值的概率近似。",
+  "conditions": [
+    "X₁,X₂,… 独立同分布，且 E|X₁|<∞（辛钦大数定律）"
+  ],
+  "steps": [
+    "验证独立同分布和期望存在",
+    "求共同均值 μ",
+    "推出样本均值依概率收敛到 μ"
+  ],
+  "formula": "\\overline X_n\\xrightarrow{P}\\mu",
+  "pitfalls": [
+    "依概率收敛不表示任一有限样本平均值都等于 μ"
+  ],
+  "example": {
+    "prompt": "自编例题：独立公平骰子点数平均值依概率趋向何值？",
+    "solution": "各点数独立同分布且有界，均值 (1+…+6)/6=3.5，所以平均点数依概率趋于 3.5。"
+  },
+  "relatedIds": [
+    "pr-limit-binomial",
+    "pr-limit-clt"
+  ],
+  "topicIds": [
+    "pr-lln-topic"
+  ],
+  "status": "reviewed"
+}

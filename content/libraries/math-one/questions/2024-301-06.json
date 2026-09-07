@@ -1,0 +1,18 @@
+{
+  "id": "2024-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "6",
+  "summary": "向量参数关系",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-vector-dependence",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 2 页第 6 题：整体相关给出秩不足条件，另排除任意两列成比例的参数。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "16",
+  "summary": "重复试验条件概率",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 16 题：分子取目标与条件事件的交集，分母用至少一次成功的补事件。"
+    },
+    {
+      "methodId": "pr-event-independence",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 16 题：独立重复试验中，全成功和全失败的概率可连乘。"
+    }
+  ]
+}

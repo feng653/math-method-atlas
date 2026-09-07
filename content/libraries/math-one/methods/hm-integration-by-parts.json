@@ -1,0 +1,31 @@
+{
+  "id": "hm-integration-by-parts",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "分部积分",
+  "summary": "将乘积积分转移到更简单的导数上。",
+  "conditions": [
+    "所选u、v可微且相关积分存在。"
+  ],
+  "steps": [
+    "选容易求导的u与容易积分的dv。",
+    "写出uv-∫vdu。",
+    "必要时重复或对原积分建立代数方程。"
+  ],
+  "formula": "\\int u\\,dv=uv-\\int v\\,du",
+  "pitfalls": [
+    "选取后若积分更复杂应换拆法；定积分还要计算边界项。"
+  ],
+  "example": {
+    "prompt": "自编例题：求∫x e^x dx。",
+    "solution": "取u=x、dv=e^x dx，得到xe^x-∫e^x dx=(x-1)e^x+C。"
+  },
+  "relatedIds": [
+    "hm-newton-leibniz",
+    "hm-definite-symmetry"
+  ],
+  "topicIds": [
+    "integrals-integration-by-parts"
+  ],
+  "status": "reviewed"
+}

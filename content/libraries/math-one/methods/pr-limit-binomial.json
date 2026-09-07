@@ -1,0 +1,33 @@
+{
+  "id": "pr-limit-binomial",
+  "libraryId": "math-one",
+  "chapterId": "pr-limit",
+  "title": "二项分布正态近似与连续性修正",
+  "summary": "把整数概率区间扩展半单位再标准化。",
+  "conditions": [
+    "X~Bin(n,p)，0<p<1，np 与 n(1−p) 均足够大",
+    "公式中 a、b 是整数端点，a≤b；非整数界先转为对应整数事件",
+    "有限 n 时为近似，小尾概率需特别注意近似误差"
+  ],
+  "steps": [
+    "求均值 np 与标准差 √np(1−p)",
+    "整数端点作 0.5 修正",
+    "标准化后查 Φ"
+  ],
+  "formula": "P(a\\le X\\le b)\\approx\\Phi\\!\\left(\\frac{b+0.5-np}{\\sqrt{np(1-p)}}\\right)-\\Phi\\!\\left(\\frac{a-0.5-np}{\\sqrt{np(1-p)}}\\right)",
+  "pitfalls": [
+    "连续性修正取决于整数端点是否包含"
+  ],
+  "example": {
+    "prompt": "自编例题：X~Bin(100,0.5)，近似求 P(X≤55)。",
+    "solution": "均值 50，标准差 5，修正到 55.5，近似 Φ(1.1)≈0.8643。"
+  },
+  "relatedIds": [
+    "pr-limit-clt",
+    "pr-limit-lln"
+  ],
+  "topicIds": [
+    "pr-clt-topic"
+  ],
+  "status": "reviewed"
+}

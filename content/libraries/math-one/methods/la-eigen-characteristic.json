@@ -1,0 +1,32 @@
+{
+  "id": "la-eigen-characteristic",
+  "libraryId": "math-one",
+  "chapterId": "la-eigen",
+  "title": "特征多项式与特征子空间",
+  "summary": "先求特征根，再分别解齐次方程。",
+  "conditions": [
+    "A 为方阵",
+    "实矩阵也可能仅在复数域有完整特征值集合"
+  ],
+  "steps": [
+    "求 det(λI−A)",
+    "逐根解 (A−λI)x=0",
+    "写出各特征空间的非零向量"
+  ],
+  "formula": "\\det(\\lambda I-A)=0,\\quad E_\\lambda=\\ker(A-\\lambda I)",
+  "pitfalls": [
+    "零向量不是特征向量"
+  ],
+  "example": {
+    "prompt": "自编例题：A=[[2,1],[0,3]] 的特征值及向量。",
+    "solution": "特征值 2、3；对应向量分别为 (1,0)、(1,1) 的非零倍数。"
+  },
+  "relatedIds": [
+    "la-eigen-diagonalization",
+    "la-eigen-similarity"
+  ],
+  "topicIds": [
+    "la-eigen-compute"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hm-fourier-half-range",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "正弦与余弦半区间展开",
+  "summary": "按奇延拓或偶延拓构造所需傅里叶级数。",
+  "conditions": [
+    "f 在 (0,l) 分段 C¹ 且分段数有限，函数及一阶导数在分段端点有有限单侧极限；其奇、偶周期延拓满足常用充分收敛条件。"
+  ],
+  "steps": [
+    "正弦级数做奇延拓，余弦级数做偶延拓。",
+    "将系数积分缩到[0,l]并乘2/l。",
+    "说明端点是延拓后的平均值。"
+  ],
+  "formula": "b_n=\\frac2l\\int_0^l f(x)\\sin(n\\pi x/l)\\,dx,\\quad a_n=\\frac2l\\int_0^l f(x)\\cos(n\\pi x/l)\\,dx",
+  "pitfalls": [
+    "半区间系数因子是2/l；延拓决定端点行为。"
+  ],
+  "example": {
+    "prompt": "自编例题：将f(x)=1在(0,π)展开为正弦级数。",
+    "solution": "bₙ=(2/π)∫₀^πsin(nx)dx=2(1-(-1)^n)/(nπ)，所以1=(4/π)Σ(k≥0)sin((2k+1)x)/(2k+1)，内部成立，端点级数值0。"
+  },
+  "relatedIds": [
+    "hm-fourier"
+  ],
+  "topicIds": [
+    "series-fourier-half-range"
+  ],
+  "status": "reviewed"
+}

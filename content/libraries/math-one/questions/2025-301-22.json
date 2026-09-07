@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "22",
+  "summary": "赔付模型",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 16
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "verified",
+      "note": "原题第16页第22题：按赔付函数积分。"
+    }
+  ]
+}

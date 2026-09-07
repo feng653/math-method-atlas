@@ -1,0 +1,31 @@
+{
+  "id": "pr-dist-discrete",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "离散分布归一化及求和",
+  "summary": "用概率和为 1 求参数，再按事件集合求和。",
+  "conditions": [
+    "各点概率非负且总和为 1"
+  ],
+  "steps": [
+    "列出所有可能取值",
+    "归一化确定未知常数",
+    "把目标事件所含点概率相加"
+  ],
+  "formula": "\\sum_kp_k=1,\\quad P(X\\in A)=\\sum_{x_k\\in A}p_k",
+  "pitfalls": [
+    "遗漏可能取值会破坏归一化"
+  ],
+  "example": {
+    "prompt": "自编例题：X 取 1、2、3，概率为 c、2c、3c，求 P(X≥2)。",
+    "solution": "6c=1，所以 c=1/6，目标概率为 5c=5/6。"
+  },
+  "relatedIds": [
+    "pr-dist-classic",
+    "pr-dist-geometric"
+  ],
+  "topicIds": [
+    "pr-discrete-topic"
+  ],
+  "status": "reviewed"
+}

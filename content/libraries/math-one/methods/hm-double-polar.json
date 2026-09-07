@@ -1,0 +1,31 @@
+{
+  "id": "hm-double-polar",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "二重积分极坐标变换",
+  "summary": "对圆、扇形和径向函数使用极坐标。",
+  "conditions": [
+    "区域可按角度与半径描述；变换覆盖次数受控。"
+  ],
+  "steps": [
+    "写x=r cosθ、y=r sinθ。",
+    "确定θ与r范围。",
+    "被积函数代换并乘面积因子r。"
+  ],
+  "formula": "dA=r\\,dr\\,d\\theta",
+  "pitfalls": [
+    "漏雅可比r会改变答案；r通常取非负。"
+  ],
+  "example": {
+    "prompt": "自编例题：单位圆盘上计算∬(x²+y²)dA。",
+    "solution": "θ从0到2π、r从0到1，积分∫₀^{2π}∫₀¹r³drdθ=π/2。"
+  },
+  "relatedIds": [
+    "hm-double-cartesian",
+    "hm-triple-integral"
+  ],
+  "topicIds": [
+    "multiple-integrals-double-polar"
+  ],
+  "status": "reviewed"
+}

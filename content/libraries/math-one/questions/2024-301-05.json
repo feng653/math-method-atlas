@@ -1,0 +1,18 @@
+{
+  "id": "2024-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "5",
+  "summary": "平面组与秩",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 2
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-system-consistency",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 2 页第 5 题：图示共交一直线，解集有一个自由参数；比较系数秩和增广秩。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hm-substitution-integral",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "不定积分换元",
+  "summary": "识别复合函数及其微分因子。",
+  "conditions": [
+    "F 是 f 在相关区间的原函数，即 F′=f；复合函数 g 可导且取值落在该区间。",
+    "若采用逆向变量代换，需选择使回代合法的区间和分支。"
+  ],
+  "steps": [
+    "选择u使复杂内层变简单。",
+    "将dx与其余因子全部改写。",
+    "积分后代回并补常数。"
+  ],
+  "formula": "\\int f(g(x))g'(x)\\,dx=F(g(x))+C",
+  "pitfalls": [
+    "不能只替换函数不替换微分；不定积分结果要回代。"
+  ],
+  "example": {
+    "prompt": "自编例题：求∫2x cos(x²) dx。",
+    "solution": "令u=x²，du=2x dx，积分为sin u+C=sin(x²)+C。"
+  },
+  "relatedIds": [
+    "hm-trig-substitution",
+    "hm-rational-integral"
+  ],
+  "topicIds": [
+    "integrals-substitution-integral"
+  ],
+  "status": "reviewed"
+}

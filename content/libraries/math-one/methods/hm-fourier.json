@@ -1,0 +1,32 @@
+{
+  "id": "hm-fourier",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "傅里叶展开与间断点收敛值",
+  "summary": "计算三角系数并用奇偶性简化。",
+  "conditions": [
+    "在一个周期内函数分段连续，且可分成有限个单调区间（或分段 C¹），各分段端点的单侧极限有限；这是常用充分条件。",
+    "在周期接缝用周期延拓的左右极限判收敛值。"
+  ],
+  "steps": [
+    "确定周期2l和延拓。",
+    "计算a₀、aₙ、bₙ并利用奇偶性。",
+    "在间断点取左右极限均值。"
+  ],
+  "formula": "f(x)\\sim\\frac{a_0}{2}+\\sum_{n=1}^{\\infty}\\left(a_n\\cos\\frac{n\\pi x}{l}+b_n\\sin\\frac{n\\pi x}{l}\\right),\\quad a_n=\\frac1l\\int_{-l}^{l}f(x)\\cos\\frac{n\\pi x}{l}\\,dx,\\quad b_n=\\frac1l\\int_{-l}^{l}f(x)\\sin\\frac{n\\pi x}{l}\\,dx",
+  "pitfalls": [
+    "傅里叶级数在跳点不一定收敛到原函数指定值。"
+  ],
+  "example": {
+    "prompt": "自编例题：求f(x)=x在(-π,π)的傅里叶级数。",
+    "solution": "奇函数故aₙ=0；分部积分得bₙ=2(-1)^{n+1}/n，所以x=2Σ(-1)^{n+1}sin(nx)/n，在内部成立；周期接缝收敛到0。"
+  },
+  "relatedIds": [
+    "hm-fourier-half-range",
+    "hm-integration-by-parts"
+  ],
+  "topicIds": [
+    "series-fourier"
+  ],
+  "status": "reviewed"
+}

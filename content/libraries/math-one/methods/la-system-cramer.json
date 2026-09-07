@@ -1,0 +1,31 @@
+{
+  "id": "la-system-cramer",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "克拉默法则",
+  "summary": "对非奇异方阵系统用替换列的行列式比求唯一解。",
+  "conditions": [
+    "方程数等于未知量数，且 det A≠0"
+  ],
+  "steps": [
+    "计算 D=det A",
+    "将第 j 列替换为 b 得 Dj",
+    "逐个求 xj=Dj/D"
+  ],
+  "formula": "x_j=\\frac{\\det A_j(b)}{\\det A}",
+  "pitfalls": [
+    "替换的是列，不是行；D=0 时不能直接用比值"
+  ],
+  "example": {
+    "prompt": "自编例题：解 x+2y=5，3x+4y=11。",
+    "solution": "D=−2，Dx=20−22=−2，Dy=11−15=−4，所以 x=1,y=2。"
+  },
+  "relatedIds": [
+    "la-system-consistency",
+    "la-system-parameter"
+  ],
+  "topicIds": [
+    "la-system-solvability"
+  ],
+  "status": "reviewed"
+}

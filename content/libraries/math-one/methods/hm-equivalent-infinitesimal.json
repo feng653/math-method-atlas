@@ -1,0 +1,31 @@
+{
+  "id": "hm-equivalent-infinitesimal",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "等价无穷小替换",
+  "summary": "将乘除式中的复杂小量替换为首项。",
+  "conditions": [
+    "自变量趋于使两量同时趋零的点；被替换比值趋于1。"
+  ],
+  "steps": [
+    "确定小量及其趋零方向。",
+    "在乘积或商中替换并化简。",
+    "若是差式先检查首项是否抵消，抵消时展开更高阶。"
+  ],
+  "formula": "\\sin x\\sim x,\\quad\\ln(1+x)\\sim x,\\quad e^x-1\\sim x\\quad(x\\to0)",
+  "pitfalls": [
+    "差式两边分别等价替换可能消掉决定极限的高阶项。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 lim(x→0) ln(1+2x)/sin(3x)。",
+    "solution": "ln(1+2x)与2x等价，sin(3x)与3x等价，商的极限为2/3。"
+  },
+  "relatedIds": [
+    "hm-taylor-limit",
+    "hm-lhopital"
+  ],
+  "topicIds": [
+    "limits-equivalent-infinitesimal"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hm-monotonic-extrema",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "单调性、极值与最值",
+  "summary": "通过导数符号变化确定形状和候选最值。",
+  "conditions": [
+    "用导数符号判某区间单调时，函数在该区间连续并在内部可导；有限不可导点应分段分析，跨点合并时检查连续性。",
+    "闭区间最值的存在性保证要求函数在整个闭区间连续。"
+  ],
+  "steps": [
+    "求导数为0及不可导的内部点。",
+    "制作导数符号表判断增减和极值。",
+    "闭区间比较所有候选点与端点函数值。"
+  ],
+  "formula": "f'>0\\Rightarrow f\\text{严格递增}",
+  "pitfalls": [
+    "驻点不一定是极值；闭区间最值不能漏端点。"
+  ],
+  "example": {
+    "prompt": "自编例题：求f(x)=x³-3x在[-2,2]的最大最小值。",
+    "solution": "f'=3(x²-1)，候选x=-2,-1,1,2，函数值依次-2,2,-2,2，最大2、最小-2。"
+  },
+  "relatedIds": [
+    "hm-mean-value-proof",
+    "hm-concavity-asymptote"
+  ],
+  "topicIds": [
+    "derivatives-monotonic-extrema"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "la-vector-basis",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "主元列选极大无关组",
+  "summary": "用行消元定位主元列，再回原矩阵取向量。",
+  "conditions": [
+    "给定有限个同维向量"
+  ],
+  "steps": [
+    "以向量为列做行阶梯化",
+    "标出主元列位置",
+    "取原矩阵对应列为极大无关组"
+  ],
+  "formula": "\\text{极大无关组所含向量数}=r(A)",
+  "pitfalls": [
+    "必须取原矩阵列，行变换会改变具体列向量"
+  ],
+  "example": {
+    "prompt": "自编例题：从 (1,0)、(2,0)、(0,1) 选极大无关组。",
+    "solution": "第 1、3 列为主元列，选择 (1,0)、(0,1)；第二向量为第一向量的 2 倍。"
+  },
+  "relatedIds": [
+    "la-vector-coordinate",
+    "la-vector-dependence"
+  ],
+  "topicIds": [
+    "la-vector-basis-topic"
+  ],
+  "status": "reviewed"
+}

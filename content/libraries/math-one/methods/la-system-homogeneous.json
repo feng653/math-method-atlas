@@ -1,0 +1,32 @@
+{
+  "id": "la-system-homogeneous",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "自由变量构造基础解系",
+  "summary": "对齐次系统逐个令一个自由变量为 1，其余为 0。",
+  "conditions": [
+    "系统为 Ax=0",
+    "先确定主元变量和自由变量"
+  ],
+  "steps": [
+    "求行最简形",
+    "主元变量写成自由变量的函数",
+    "依次赋单位自由变量，得到 n−r 个基础解"
+  ],
+  "formula": "\\dim\\ker A=n-r(A)",
+  "pitfalls": [
+    "基础解必须线性无关；任意非零解集合不一定是基础解系"
+  ],
+  "example": {
+    "prompt": "自编例题：求 x+y+z=0 的基础解系。",
+    "solution": "令 y=s,z=t，x=−s−t，基础解系为 (−1,1,0)、(−1,0,1)。"
+  },
+  "relatedIds": [
+    "la-system-general",
+    "la-system-consistency"
+  ],
+  "topicIds": [
+    "la-system-structure"
+  ],
+  "status": "reviewed"
+}

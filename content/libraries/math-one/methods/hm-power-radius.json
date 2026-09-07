@@ -1,0 +1,31 @@
+{
+  "id": "hm-power-radius",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "幂级数收敛半径与端点",
+  "summary": "先求内部半径，再独立判断边界。",
+  "conditions": [
+    "幂级数中心已识别。"
+  ],
+  "steps": [
+    "对系数作比值或根值求R。",
+    "得到开区间。",
+    "把两个端点分别代回原级数判断。"
+  ],
+  "formula": "R^{-1}=\\limsup_{n\\to\\infty}|a_n|^{1/n}",
+  "pitfalls": [
+    "端点不能由比值极限为1直接决定；变量平移会改变区间中心。"
+  ],
+  "example": {
+    "prompt": "自编例题：求Σ(n≥1)x^n/n的收敛区间。",
+    "solution": "R=1；x=1为调和级数发散，x=-1为交错调和级数收敛，区间[-1,1)。"
+  },
+  "relatedIds": [
+    "hm-alternating-series",
+    "hm-power-sum"
+  ],
+  "topicIds": [
+    "series-power-radius"
+  ],
+  "status": "reviewed"
+}

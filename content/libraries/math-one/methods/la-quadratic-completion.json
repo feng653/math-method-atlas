@@ -1,0 +1,32 @@
+{
+  "id": "la-quadratic-completion",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "配方法化标准形",
+  "summary": "消去交叉项并记录非退化变量替换。",
+  "conditions": [
+    "实二次型",
+    "每一步变量替换须可逆"
+  ],
+  "steps": [
+    "选非零平方项配方",
+    "对余下变量重复",
+    "若只有交叉项先用和差替换产生平方项"
+  ],
+  "formula": "ax^2+2bxy+cy^2=a(x+\\tfrac ba y)^2+(c-\\tfrac{b^2}a)y^2\\quad(a\\ne0)",
+  "pitfalls": [
+    "非正交配方后的系数通常不是原矩阵特征值"
+  ],
+  "example": {
+    "prompt": "自编例题：化简 x²+4xy+5y²。",
+    "solution": "令 u=x+2y,v=y，变换可逆，二次型为 u²+v²，正惯性指数 2。"
+  },
+  "relatedIds": [
+    "la-quadratic-matrix",
+    "la-quadratic-orthogonal"
+  ],
+  "topicIds": [
+    "la-quadratic-reduction"
+  ],
+  "status": "reviewed"
+}

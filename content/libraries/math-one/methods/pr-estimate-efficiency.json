@@ -1,0 +1,32 @@
+{
+  "id": "pr-estimate-efficiency",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "无偏估计量方差比较",
+  "summary": "在估计同一参数的无偏估计量中比较方差。",
+  "conditions": [
+    "候选估计量均对同一目标无偏且方差存在",
+    "一致更有效需对全部参数范围比较"
+  ],
+  "steps": [
+    "分别核对无偏性",
+    "计算两者方差",
+    "比较差值符号并注明适用参数范围"
+  ],
+  "formula": "ET_1=ET_2=\\theta,\\quad\\operatorname{Var}(T_1)\\le\\operatorname{Var}(T_2)",
+  "pitfalls": [
+    "有偏估计不能仅凭方差小就判优，应比较均方误差"
+  ],
+  "example": {
+    "prompt": "自编例题：独立同分布 X1,X2，均值 μ、方差 σ²>0，比较 X1 与 (X1+X2)/2。",
+    "solution": "均无偏；方差分别为 σ² 与 σ²/2，所以均值估计方差更小。"
+  },
+  "relatedIds": [
+    "pr-estimate-consistency",
+    "pr-estimate-unbiased"
+  ],
+  "topicIds": [
+    "pr-estimator-properties-topic"
+  ],
+  "status": "reviewed"
+}

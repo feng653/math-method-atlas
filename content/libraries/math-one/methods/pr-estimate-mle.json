@@ -1,0 +1,33 @@
+{
+  "id": "pr-estimate-mle",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "似然最大化与支持域约束",
+  "summary": "把样本固定，将联合密度或质量函数对参数最大化。",
+  "conditions": [
+    "本卡乘积公式适用于独立同分布样本；非独立样本必须使用真实联合分布",
+    "样本模型和参数空间明确",
+    "参数相关支持集必须写入似然"
+  ],
+  "steps": [
+    "写似然及约束",
+    "内部取对数求驻点",
+    "比较边界与驻点确认最大值"
+  ],
+  "formula": "\\hat\\theta\\in\\arg\\max_{\\theta\\in\\Theta}\\prod_i f_\\theta(x_i)",
+  "pitfalls": [
+    "驻点不自动是最大值；参数相关支持域不能丢掉"
+  ],
+  "example": {
+    "prompt": "自编例题：独立伯努利样本中 n 次有 k 次 1，求 p 的最大似然估计（p∈[0,1]）。",
+    "solution": "似然 p^k(1−p)^(n−k)，内部导数给 p̂=k/n；k=0 或 n 时最大值在边界，也满足此式。"
+  },
+  "relatedIds": [
+    "pr-estimate-moments",
+    "pr-estimate-consistency"
+  ],
+  "topicIds": [
+    "pr-point-estimation-topic"
+  ],
+  "status": "reviewed"
+}

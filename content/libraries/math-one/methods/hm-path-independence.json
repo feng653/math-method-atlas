@@ -1,0 +1,31 @@
+{
+  "id": "hm-path-independence",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "路径无关与势函数",
+  "summary": "用保守场将线积分化为端点势差。",
+  "conditions": [
+    "二维单连通区域内P、Q有连续一阶偏导且P_y=Q_x；或直接找到全域势函数。"
+  ],
+  "steps": [
+    "先检查定义域和偏导相等。",
+    "对P关于x积分，再由Q确定余下函数。",
+    "计算终点势减起点势。"
+  ],
+  "formula": "du=P\\,dx+Q\\,dy\\Rightarrow\\int_{A}^{B}(P\\,dx+Q\\,dy)=u(B)-u(A)",
+  "pitfalls": [
+    "仅偏导相等而区域有洞不能无条件判路径无关。"
+  ],
+  "example": {
+    "prompt": "自编例题：F=(2xy,x²)，求从(0,0)到(1,2)的线积分。",
+    "solution": "势u=x²y，梯度正是F，全平面光滑，积分u(1,2)-u(0,0)=2。"
+  },
+  "relatedIds": [
+    "hm-line-second-kind",
+    "hm-stokes"
+  ],
+  "topicIds": [
+    "multiple-integrals-path-independence"
+  ],
+  "status": "reviewed"
+}

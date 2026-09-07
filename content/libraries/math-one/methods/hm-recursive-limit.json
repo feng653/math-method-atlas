@@ -1,0 +1,30 @@
+{
+  "id": "hm-recursive-limit",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "递推数列的单调有界法",
+  "summary": "先证明收敛，再代入递推式求极限。",
+  "conditions": [
+    "递推函数在可能极限处连续；可找到不变区间和单调性。"
+  ],
+  "steps": [
+    "用归纳法证明有界。",
+    "比较相邻项证明单调。",
+    "由单调有界定理知收敛，再解极限方程并排除不合范围的根。"
+  ],
+  "formula": "x_{n+1}=F(x_n),\\ x_n\\to L\\Rightarrow L=F(L)",
+  "pitfalls": [
+    "直接解不动点方程不能证明数列收敛。"
+  ],
+  "example": {
+    "prompt": "自编例题：x₁=1，xₙ₊₁=√(2+xₙ)，求极限。",
+    "solution": "归纳得1≤xₙ<2；当1≤x<2时2+x>x²，所以递增。有界递增故收敛，L²=2+L且L≥1，得L=2。"
+  },
+  "relatedIds": [
+    "hm-squeeze"
+  ],
+  "topicIds": [
+    "limits-recursive-limit"
+  ],
+  "status": "reviewed"
+}

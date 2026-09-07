@@ -1,0 +1,32 @@
+{
+  "id": "hm-taylor-expansion",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "函数的幂级数展开",
+  "summary": "以标准展开和变量代换生成目标函数展开。",
+  "conditions": [
+    "展开点在解析范围内，或有余项趋零证明。"
+  ],
+  "steps": [
+    "选择标准函数展开。",
+    "代换并整理幂次。",
+    "明确收敛区间和端点。"
+  ],
+  "formula": "e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}",
+  "pitfalls": [
+    "存在所有阶导数不自动等于泰勒级数；需余项趋零。"
+  ],
+  "example": {
+    "prompt": "自编例题：展开1/(1+x²)为x的幂级数。",
+    "solution": "将几何级数变量替为-x²，得Σ(n≥0)(-1)^n x^{2n}，|x|<1；x=±1通项不趋0，发散。"
+  },
+  "relatedIds": [
+    "hm-power-sum",
+    "hm-power-radius",
+    "hm-taylor-remainder"
+  ],
+  "topicIds": [
+    "series-taylor-expansion"
+  ],
+  "status": "reviewed"
+}

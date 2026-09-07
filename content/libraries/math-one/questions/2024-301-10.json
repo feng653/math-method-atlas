@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "10",
+  "summary": "指数差的绝对值",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-transform",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 10 题：按变换的原像区域写分布函数，独立性允许对联合密度积分。"
+    },
+    {
+      "methodId": "pr-dist-exponential",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 10 题：按两种大小顺序计算尾事件，识别所得生存函数。"
+    }
+  ]
+}

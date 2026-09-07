@@ -1,0 +1,31 @@
+{
+  "id": "hm-integral-area-volume",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "面积与旋转体体积",
+  "summary": "把几何量分解为薄片积分。",
+  "conditions": [
+    "边界交点与旋转轴已确定；截面公式适用。"
+  ],
+  "steps": [
+    "求交点并画出积分方向。",
+    "面积用上减下，旋转体用外半径平方减内半径平方。",
+    "分段积分并保留单位。"
+  ],
+  "formula": "V=\\pi\\int_a^b\\left(R^2-r^2\\right)dx",
+  "pitfalls": [
+    "面积不能用带符号差跨越交点；半径是到旋转轴距离。"
+  ],
+  "example": {
+    "prompt": "自编例题：y=x与y=x²围成区域绕x轴旋转的体积。",
+    "solution": "交点0和1，在[0,1]外半径x、内半径x²，V=π∫₀¹(x²-x⁴)dx=2π/15。"
+  },
+  "relatedIds": [
+    "hm-arc-work-integral",
+    "hm-integral-mass-centroid"
+  ],
+  "topicIds": [
+    "integrals-integral-area-volume"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,65 @@
+import { useEffect, useMemo, useState } from 'react';
+import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
+import { Expand, Focus, Minus, Plus, RotateCcw } from 'lucide-react';
+import { buildGraph, type AtlasNode as NodeType } from '../domain/graph';
+import type { Library, Method } from '../domain/schema';
+import { AtlasNode } from './AtlasNode';
+
+const nodeTypes = { atlas: AtlasNode };
+type Props = { library: Library; methods: Method[]; selected: string; chapter: string;
+  onSelect: (id: string) => void; onChapter: (id: string) => void };
+
+export function AtlasGraph({ library, methods, selected, chapter, onSelect, onChapter }: Props) {
+  const [allMethods, setAllMethods] = useState(false);
+  const graph = useMemo(() => buildGraph(library, methods, chapter, allMethods), [library, methods, chapter, allMethods]);
+  const [nodes, setNodes, onNodesChange] = useNodesState<NodeType>(graph.nodes);
+  const [flow, setFlow] = useState<ReactFlowInstance<NodeType> | null>(null);
+  const [zoom, setZoom] = useState(1);
+  const duration = () => matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 650;
+  useEffect(() => { setNodes(graph.nodes); }, [graph, setNodes]);
+  useEffect(() => {
+    if (!flow) return;
+    const timer = setTimeout(() => {
+      const node = selected ? flow.getNode(selected) : undefined;
+      if (node) void flow.setCenter(node.position.x + 105, node.position.y + 25, { zoom: 1.05, duration: duration() });
+      else void flow.fitView({ padding: 0.22, duration: duration() });
+    }, 80);
+    return () => clearTimeout(timer);
+  }, [flow, graph, selected]);
+  useEffect(() => {
+    setNodes((current) => current.map((node) => ({ ...node, selected: node.id === selected })));
+  }, [selected, graph, setNodes]);
+  const selectedMethod = methods.find((method) => method.id === selected);
+  const edges = graph.edges.map((edge) => ({ ...edge,
+    animated: edge.target === selected,
+    style: { ...edge.style, opacity: selected && edge.target !== selected ? 0.13 : edge.style?.opacity },
+  }));
+  if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
+    if (nodes.some((node) => node.id === relatedId)) edges.push({ id: `relation-${relatedId}`,
+      source: selected, target: relatedId, animated: true, type: 'default',
+      style: { stroke: '#b48c53', strokeDasharray: '5 6', strokeWidth: 1.3, opacity: 0.65 } });
+  }
+  return <section className="graph-stage" aria-label="可拖拽缩放的方法思维导图">
+    <ReactFlow<NodeType> nodes={nodes} edges={edges} nodeTypes={nodeTypes} onNodesChange={onNodesChange}
+      onInit={setFlow} onMoveEnd={(_, viewport) => setZoom(viewport.zoom)}
+      onNodeClick={(_, node) => node.data.kind === 'method' ? onSelect(node.id)
+        : node.data.kind === 'chapter' ? onChapter(node.data.chapterId ?? '') : onChapter('')}
+      fitView minZoom={0.09} maxZoom={2.2} nodesConnectable={false} edgesReconnectable={false}
+      deleteKeyCode={null} selectionOnDrag={false} zoomOnDoubleClick={false}
+      ariaLabelConfig={{ 'node.a11yDescription.default': '按 Enter 选择方法，方向键移动节点。',
+        'node.a11yDescription.keyboardDisabled': '选择节点查看内容。' }}>
+      <Background color="#ccd6cf" gap={30} size={0.9} />
+    </ReactFlow>
+    <div className="canvas-controls" aria-label="画布控制">
+      <button aria-label="缩小" title="缩小" onClick={() => void flow?.zoomOut({ duration: duration() })}><Minus size={17} /></button>
+      <span className="zoom-label">{Math.round(zoom * 100)}%</span>
+      <button aria-label="放大" title="放大" onClick={() => void flow?.zoomIn({ duration: duration() })}><Plus size={17} /></button>
+      <i />
+      <button aria-label="适配当前图" title="适配当前图" onClick={() => void flow?.fitView({ duration: duration(), padding: 0.18 })}><Focus size={17} /></button>
+      <button aria-label={allMethods ? '收起方法节点' : '展开所有方法'} title={allMethods ? '收起方法节点' : '展开所有方法'}
+        onClick={() => { setAllMethods(!allMethods); onChapter(''); }}><Expand size={17} /></button>
+      <button aria-label="恢复节点布局" title="恢复节点布局" onClick={() => { setNodes(graph.nodes); void flow?.fitView({ duration: duration() }); }}><RotateCcw size={16} /></button>
+    </div>
+    <div className="canvas-hint">拖动画布 · 滚轮缩放 · 点击章节深入</div>
+  </section>;
+}

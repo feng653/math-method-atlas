@@ -1,0 +1,32 @@
+{
+  "id": "la-quadratic-positive",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "顺序主子式判正定",
+  "summary": "对实对称矩阵检查所有顺序主子式严格为正。",
+  "conditions": [
+    "矩阵必须实对称",
+    "判半正定不能只检查顺序主子式非负"
+  ],
+  "steps": [
+    "从左上角逐阶计算顺序主子式",
+    "全部严格正则正定",
+    "含参数时联立所有严格不等式"
+  ],
+  "formula": "A\\succ0\\iff\\Delta_1>0,\\ldots,\\Delta_n>0",
+  "pitfalls": [
+    "正定要求所有非零向量取正值，不只是对角元素为正"
+  ],
+  "example": {
+    "prompt": "自编例题：[[a,1],[1,2]] 何时正定？",
+    "solution": "需 a>0 且 2a−1>0，合并为 a>1/2。"
+  },
+  "relatedIds": [
+    "la-quadratic-completion",
+    "la-quadratic-matrix"
+  ],
+  "topicIds": [
+    "la-positive-topic"
+  ],
+  "status": "reviewed"
+}

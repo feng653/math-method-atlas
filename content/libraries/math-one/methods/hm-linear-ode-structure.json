@@ -1,0 +1,31 @@
+{
+  "id": "hm-linear-ode-structure",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "线性方程解的结构与叠加",
+  "summary": "将非齐次通解分解为齐次通解和一个特解。",
+  "conditions": [
+    "方程是线性微分方程，系数在区间连续且最高阶系数非零。"
+  ],
+  "steps": [
+    "写出线性算子L。",
+    "找对应齐次解空间和一个非齐次特解。",
+    "利用线性关系组合不同右端的特解。"
+  ],
+  "formula": "L[y]=f,\\ L[y_p]=f\\Rightarrow y=y_h+y_p",
+  "pitfalls": [
+    "两个同右端特解之和通常对应2f；它们的差才是齐次解。"
+  ],
+  "example": {
+    "prompt": "自编例题：y₁、y₂都满足y''+y=1，证明y₁-y₂满足齐次方程。",
+    "solution": "由线性性，(y₁-y₂)''+(y₁-y₂)=(y₁''+y₁)-(y₂''+y₂)=1-1=0。"
+  },
+  "relatedIds": [
+    "hm-ode-characteristic",
+    "hm-ode-undetermined"
+  ],
+  "topicIds": [
+    "ode-linear-ode-structure"
+  ],
+  "status": "reviewed"
+}

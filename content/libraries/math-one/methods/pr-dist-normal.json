@@ -1,0 +1,31 @@
+{
+  "id": "pr-dist-normal",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "正态分布标准化",
+  "summary": "把任意均值方差的正态变量转为标准正态变量。",
+  "conditions": [
+    "X~N(μ,σ²)，σ>0"
+  ],
+  "steps": [
+    "从各端点减 μ",
+    "除以标准差 σ",
+    "用标准正态分布函数求差，必要时用对称性"
+  ],
+  "formula": "P(a<X\\le b)=\\Phi((b-\\mu)/\\sigma)-\\Phi((a-\\mu)/\\sigma)",
+  "pitfalls": [
+    "N(μ,σ²) 的第二参数是方差，不是标准差"
+  ],
+  "example": {
+    "prompt": "自编例题：X~N(2,9)，求 P(X≤5)。",
+    "solution": "标准化端点 (5−2)/3=1，概率 Φ(1)≈0.8413。"
+  },
+  "relatedIds": [
+    "pr-dist-density",
+    "pr-dist-exponential"
+  ],
+  "topicIds": [
+    "pr-continuous-topic"
+  ],
+  "status": "reviewed"
+}

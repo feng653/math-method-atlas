@@ -1,0 +1,31 @@
+{
+  "id": "hm-power-indeterminate",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "幂指不定式取对数",
+  "summary": "把1的无穷次方、0的0次方等转为乘积极限。",
+  "conditions": [
+    "底数在考察邻域为正；取对数后的极限可处理。"
+  ],
+  "steps": [
+    "设目标幂为y并写ln y。",
+    "将指数乘对数转为商式或用等价无穷小。",
+    "求对数极限后利用指数函数连续性。"
+  ],
+  "formula": "u(x)^{v(x)}=\\exp(v(x)\\ln u(x)),\\quad u(x)>0",
+  "pitfalls": [
+    "不能仅因底数趋1就断言幂趋1；负底数实幂不可随意取对数。"
+  ],
+  "example": {
+    "prompt": "自编例题：求lim(x→0)(1+2x)^{1/x}。",
+    "solution": "在0附近底数为正，ln y=ln(1+2x)/x→2，故原极限e²。"
+  },
+  "relatedIds": [
+    "hm-equivalent-infinitesimal",
+    "hm-lhopital"
+  ],
+  "topicIds": [
+    "limits-power-indeterminate"
+  ],
+  "status": "reviewed"
+}

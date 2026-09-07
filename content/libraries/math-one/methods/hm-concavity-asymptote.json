@@ -1,0 +1,32 @@
+{
+  "id": "hm-concavity-asymptote",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "凹凸、拐点、渐近线与曲率",
+  "summary": "联合二阶导数和极限描述曲线几何。",
+  "conditions": [
+    "二阶导在区间存在；拐点需连续且凹凸改变。"
+  ],
+  "steps": [
+    "用二阶导符号划分凹凸；拐点还须曲线连续且两侧凹凸真正改变。",
+    "若 x→a 的至少一个单侧函数极限为正或负无穷，则 x=a 是竖直渐近线。",
+    "在 x→+∞ 或 x→−∞ 的指定方向分别求 k=lim f(x)/x、b=lim(f(x)−kx)；两者有限时直线 y=kx+b 为该方向渐近线，k=0 为水平渐近线。",
+    "对二阶可导图形曲线代入曲率公式；其他参数曲线先确认正则性并用相应公式。"
+  ],
+  "formula": "\\kappa=\\frac{|y''|}{(1+y'^2)^{3/2}}",
+  "pitfalls": [
+    "f''=0仅是拐点候选；竖直渐近线与斜渐近线判据不同。"
+  ],
+  "example": {
+    "prompt": "自编例题：求y=x³的拐点及x=1处曲率。",
+    "solution": "y''=6x在0两侧变号，拐点(0,0)；x=1时y'=3，y''=6，κ=6/(10√10)。"
+  },
+  "relatedIds": [
+    "hm-monotonic-extrema",
+    "hm-parametric-derivative"
+  ],
+  "topicIds": [
+    "derivatives-concavity-asymptote"
+  ],
+  "status": "reviewed"
+}

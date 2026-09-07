@@ -1,0 +1,31 @@
+{
+  "id": "hm-integral-inequality",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分估计与积分中值定理",
+  "summary": "用函数界与权函数建立积分界。",
+  "conditions": [
+    "连续函数和非负可积权函数；权积分非零时可使用加权中值。"
+  ],
+  "steps": [
+    "在积分区间找函数上下界。",
+    "乘非负权函数并积分。",
+    "需要存在点时检查连续性后应用积分中值定理。"
+  ],
+  "formula": "m\\int_a^b g\\le\\int_a^b fg\\le M\\int_a^b g\\quad(g\\ge0)",
+  "pitfalls": [
+    "权函数变号时不能直接套同一估计；端点界未必是最优界。"
+  ],
+  "example": {
+    "prompt": "自编例题：证明1/2<∫₀¹1/(1+x²) dx<1。",
+    "solution": "在(0,1)有1/2<1/(1+x²)<1，积分区间长度为1，连续且严格不等式在内部成立，积分严格位于1/2和1之间。"
+  },
+  "relatedIds": [
+    "hm-mean-value-proof",
+    "hm-newton-leibniz"
+  ],
+  "topicIds": [
+    "integrals-integral-inequality"
+  ],
+  "status": "reviewed"
+}

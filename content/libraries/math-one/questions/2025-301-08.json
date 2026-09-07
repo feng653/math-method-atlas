@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "8",
+  "summary": "方差极值",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 6
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "verified",
+      "note": "原题第6页第8题：展开保留协方差。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "2024-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "18",
+  "summary": "切平面与最值",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-tangent-plane",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 18 题：用曲面梯度写切平面，再由坐标面截距确定投影三角形。"
+    },
+    {
+      "methodId": "hm-hessian-extrema",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 18 题：求内部驻点并检查二阶型；全域最值仍须比较边界。"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 18 题：将每条边界限制为一元函数，逐一比较驻点和端点值。"
+    }
+  ]
+}

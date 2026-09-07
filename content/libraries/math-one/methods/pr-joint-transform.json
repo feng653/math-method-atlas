@@ -1,0 +1,32 @@
+{
+  "id": "pr-joint-transform",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "二维变量变换与雅可比",
+  "summary": "利用可逆变换的逆映射密度和雅可比绝对值。",
+  "conditions": [
+    "变换在所用分支可逆可微，雅可比非零",
+    "多分支时分别求密度再相加"
+  ],
+  "steps": [
+    "求逆变换和新支持域",
+    "计算逆变换雅可比绝对值",
+    "代入原密度并相乘"
+  ],
+  "formula": "f_{U,V}(u,v)=f_{X,Y}(x(u,v),y(u,v))\\left|\\frac{\\partial(x,y)}{\\partial(u,v)}\\right|",
+  "pitfalls": [
+    "使用逆映射雅可比，且不能漏绝对值"
+  ],
+  "example": {
+    "prompt": "自编例题：X,Y 独立在 (0,1) 均匀，U=X+Y,V=Y，求联合密度。",
+    "solution": "逆变换 x=u−v,y=v，雅可比 1。密度为 1，支持域 0<v<1 且 v<u<v+1。"
+  },
+  "relatedIds": [
+    "pr-joint-convolution",
+    "pr-joint-max-min"
+  ],
+  "topicIds": [
+    "pr-joint-function-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-definite-symmetry",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "定积分对称与区间变换",
+  "summary": "利用奇偶性或x→a+b-x减少计算。",
+  "conditions": [
+    "被积函数在区间可积。"
+  ],
+  "steps": [
+    "检查关于0或区间中点的对称。",
+    "做端点互换代换。",
+    "将原式和代换式相加或相减。"
+  ],
+  "formula": "\\int_a^b f(x)dx=\\int_a^b f(a+b-x)dx",
+  "pitfalls": [
+    "奇函数结论要求对称区间；反常奇函数积分还需两侧分别收敛。"
+  ],
+  "example": {
+    "prompt": "自编例题：求∫₀^π x sin x dx。",
+    "solution": "设I为原积分，代换x=π-t得I=∫₀^π(π-t)sin t dt，故2I=π∫₀^πsin t dt=2π，I=π。"
+  },
+  "relatedIds": [
+    "hm-integration-by-parts",
+    "hm-newton-leibniz"
+  ],
+  "topicIds": [
+    "integrals-definite-symmetry"
+  ],
+  "status": "reviewed"
+}

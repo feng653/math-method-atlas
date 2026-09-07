@@ -1,0 +1,31 @@
+{
+  "id": "hm-intermediate-value",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "介值与零点定位",
+  "summary": "用连续性保证解存在，再用单调性证明唯一。",
+  "conditions": [
+    "闭区间连续；端点函数值异号时可保证内点零点。"
+  ],
+  "steps": [
+    "将方程改写为F(x)=0。",
+    "选端点检查异号并应用零点定理。",
+    "若需唯一性，额外证明严格单调。"
+  ],
+  "formula": "F(a)F(b)<0\\Rightarrow\\exists c\\in(a,b):F(c)=0",
+  "pitfalls": [
+    "异号保证存在不保证唯一；定理要求整个闭区间连续。"
+  ],
+  "example": {
+    "prompt": "自编例题：证明x³+x-1=0在(0,1)恰有一根。",
+    "solution": "F连续，F(0)=-1、F(1)=1，故存在根；F'=3x²+1>0，严格递增，根唯一。"
+  },
+  "relatedIds": [
+    "hm-continuity-piecewise",
+    "hm-monotonic-extrema"
+  ],
+  "topicIds": [
+    "limits-intermediate-value"
+  ],
+  "status": "reviewed"
+}

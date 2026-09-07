@@ -1,0 +1,32 @@
+{
+  "id": "la-matrix-power",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "分解与幂零展开求矩阵幂",
+  "summary": "将矩阵写成标量阵加幂零矩阵，利用有限二项式展开。",
+  "conditions": [
+    "A=λI+N，且存在 s 使 N^s=0",
+    "幂指数为非负整数"
+  ],
+  "steps": [
+    "分离标量阵和 N",
+    "验证幂零阶数",
+    "在二项式中保留 k<s 的项"
+  ],
+  "formula": "(\\lambda I+N)^m=\\sum_{k=0}^{\\min(m,s-1)}\\binom{m}{k}\\lambda^{m-k}N^k",
+  "pitfalls": [
+    "一般两个矩阵不交换，不能随意用二项式定理"
+  ],
+  "example": {
+    "prompt": "自编例题：求 [[1,2],[0,1]] 的 m 次幂。",
+    "solution": "N=[[0,2],[0,0]] 满足 N²=0，因此 A^m=I+mN=[[1,2m],[0,1]]。"
+  },
+  "relatedIds": [
+    "la-matrix-product",
+    "la-matrix-adjugate"
+  ],
+  "topicIds": [
+    "la-matrix-operations"
+  ],
+  "status": "reviewed"
+}

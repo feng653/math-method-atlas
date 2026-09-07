@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "20",
+  "summary": "空间环流",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-stokes",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 5 页第 20 题：用交线围成的平面片跨面，将环流改为旋度通量，并按观察方向确定法向。"
+    },
+    {
+      "methodId": "hm-general-jacobian",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 5 页第 20 题：投影域为椭圆，平移缩放为圆域时保留面积雅可比。"
+    }
+  ]
+}

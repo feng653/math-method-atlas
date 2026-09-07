@@ -1,0 +1,31 @@
+{
+  "id": "la-vector-dependence",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "齐次方程判向量相关",
+  "summary": "以给定向量为列构造矩阵，考察零空间。",
+  "conditions": [
+    "所有向量属于同一向量空间"
+  ],
+  "steps": [
+    "列出列矩阵 A",
+    "求 Ax=0",
+    "有非零解则相关，否则无关"
+  ],
+  "formula": "\\alpha_1,\\ldots,\\alpha_m\\text{ 无关}\\iff r(A)=m",
+  "pitfalls": [
+    "向量个数大于所在空间维数时必相关"
+  ],
+  "example": {
+    "prompt": "自编例题：(1,0)、(0,1)、(1,1) 是否相关？",
+    "solution": "第三个向量等于前两个之和，系数 (1,1,−1) 给出非零线性关系，故相关。"
+  },
+  "relatedIds": [
+    "la-vector-representation",
+    "la-vector-basis"
+  ],
+  "topicIds": [
+    "la-vector-linear-topic"
+  ],
+  "status": "reviewed"
+}

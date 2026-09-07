@@ -1,0 +1,31 @@
+{
+  "id": "hm-line-plane-equations",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "直线与平面方程",
+  "summary": "由方向向量或法向量构造空间对象。",
+  "conditions": [
+    "直线需点和非零方向；平面需点和非零法向量。"
+  ],
+  "steps": [
+    "从题目提取点与方向/法向。",
+    "写参数直线或点法式平面。",
+    "代入给定点验证。"
+  ],
+  "formula": "n\\cdot(r-r_0)=0,\\quad r=r_0+tv",
+  "pitfalls": [
+    "方向向量和法向量用途不同；对称式方向分量为0时应单写坐标恒定。"
+  ],
+  "example": {
+    "prompt": "自编例题：过(1,0,2)，法向量(2,-1,3)的平面。",
+    "solution": "点法式2(x-1)-y+3(z-2)=0，即2x-y+3z-8=0。"
+  },
+  "relatedIds": [
+    "hm-vector-products",
+    "hm-space-angle-distance"
+  ],
+  "topicIds": [
+    "geometry-line-plane-equations"
+  ],
+  "status": "reviewed"
+}

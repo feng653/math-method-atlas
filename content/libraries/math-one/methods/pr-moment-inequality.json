@@ -1,0 +1,32 @@
+{
+  "id": "pr-moment-inequality",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "切比雪夫不等式估概率界",
+  "summary": "只知道均值方差时给出偏离均值的上界。",
+  "conditions": [
+    "方差有限",
+    "偏差阈值 ε>0"
+  ],
+  "steps": [
+    "确定均值、方差和阈值",
+    "将事件写为绝对偏差",
+    "代入并将上界截断到 1"
+  ],
+  "formula": "P(|X-EX|\\ge\\varepsilon)\\le\\frac{\\operatorname{Var}X}{\\varepsilon^2}",
+  "pitfalls": [
+    "概率界通常不是精确概率"
+  ],
+  "example": {
+    "prompt": "自编例题：EX=10，Var(X)=4，给出 P(|X−10|<4) 下界。",
+    "solution": "偏差至少 4 的概率不超过 4/16=1/4，因此目标概率至少 3/4。"
+  },
+  "relatedIds": [
+    "pr-moment-correlation",
+    "pr-moment-covariance"
+  ],
+  "topicIds": [
+    "pr-bound-topic"
+  ],
+  "status": "reviewed"
+}

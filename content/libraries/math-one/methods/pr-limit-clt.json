@@ -1,0 +1,32 @@
+{
+  "id": "pr-limit-clt",
+  "libraryId": "math-one",
+  "chapterId": "pr-limit",
+  "title": "独立同分布和的正态近似",
+  "summary": "中心化后除以总标准差，再用标准正态概率。",
+  "conditions": [
+    "独立同分布，有限均值 μ 与有限正方差 σ²",
+    "有限 n 时仅为近似，精度依分布而变"
+  ],
+  "steps": [
+    "求和的均值 nμ 和标准差 σ√n",
+    "标准化目标界",
+    "用 Φ 作区间概率差"
+  ],
+  "formula": "\\frac{\\sum_{i=1}^nX_i-n\\mu}{\\sigma\\sqrt n}\\xrightarrow{d}N(0,1)",
+  "pitfalls": [
+    "和的标准差为 σ√n，不是 nσ"
+  ],
+  "example": {
+    "prompt": "自编例题：100 个独立同分布变量均值 2、方差 9，近似求总和不超过 215 的概率。",
+    "solution": "标准化为 (215−200)/30=0.5，近似为 Φ(0.5)≈0.6915。"
+  },
+  "relatedIds": [
+    "pr-limit-binomial",
+    "pr-limit-lln"
+  ],
+  "topicIds": [
+    "pr-clt-topic"
+  ],
+  "status": "reviewed"
+}

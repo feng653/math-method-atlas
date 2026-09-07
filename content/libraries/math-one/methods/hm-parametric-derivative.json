@@ -1,0 +1,31 @@
+{
+  "id": "hm-parametric-derivative",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "参数方程一阶与二阶导数",
+  "summary": "先按参数求斜率，再除以横坐标参数导数。",
+  "conditions": [
+    "x(t)、y(t)可导且x'(t)≠0；二阶需相应可导。"
+  ],
+  "steps": [
+    "计算x'和y'得到dy/dx。",
+    "将一阶导视为t的函数求导。",
+    "再除以x'(t)得到二阶导。"
+  ],
+  "formula": "\\frac{dy}{dx}=\\frac{y'}{x'},\\quad\\frac{d^2y}{dx^2}=\\frac{(y'/x')'}{x'}",
+  "pitfalls": [
+    "二阶导不是y''/x''；x'=0处需单独分析。"
+  ],
+  "example": {
+    "prompt": "自编例题：x=t²，y=t³，t>0，求二阶导。",
+    "solution": "一阶导为3t/2，再对t求导得3/2，除以2t，二阶导为3/(4t)。"
+  },
+  "relatedIds": [
+    "hm-chain-log-differentiation",
+    "hm-implicit-derivative"
+  ],
+  "topicIds": [
+    "derivatives-parametric-derivative"
+  ],
+  "status": "reviewed"
+}

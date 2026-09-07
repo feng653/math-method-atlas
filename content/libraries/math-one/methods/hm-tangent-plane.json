@@ -1,0 +1,31 @@
+{
+  "id": "hm-tangent-plane",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "曲面切平面与法线",
+  "summary": "用梯度作为水平曲面的法向量。",
+  "conditions": [
+    "F 在目标点邻域具有连续一阶偏导，目标点在 F=0 上且梯度非零。"
+  ],
+  "steps": [
+    "确认点在F=0上。",
+    "计算并代入梯度。",
+    "写点法式切平面与梯度方向法线。"
+  ],
+  "formula": "\\nabla F(P)\\cdot(r-P)=0",
+  "pitfalls": [
+    "梯度为0时公式退化，不能把0=0当切平面。"
+  ],
+  "example": {
+    "prompt": "自编例题：求z=x²+y²在(1,1,2)处切平面。",
+    "solution": "取F=x²+y²-z，梯度(2,2,-1)，切平面2(x-1)+2(y-1)-(z-2)=0，即z=2x+2y-2。"
+  },
+  "relatedIds": [
+    "hm-multivariable-chain",
+    "hm-multivariable-implicit"
+  ],
+  "topicIds": [
+    "multivariable-tangent-plane"
+  ],
+  "status": "reviewed"
+}

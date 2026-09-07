@@ -1,0 +1,31 @@
+{
+  "id": "la-system-general",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "特解加齐次通解",
+  "summary": "将非齐次解集写成一个平移后的零空间。",
+  "conditions": [
+    "Ax=b 必须有解"
+  ],
+  "steps": [
+    "先求一个特解 x0",
+    "求 Ax=0 的基础解系",
+    "将特解与任意齐次解相加"
+  ],
+  "formula": "x=x_0+\\sum_{i=1}^{n-r}c_i\\eta_i",
+  "pitfalls": [
+    "两个非齐次解之和通常不是解，二者之差才是齐次解"
+  ],
+  "example": {
+    "prompt": "自编例题：求 x+y=2 的通解。",
+    "solution": "特解取 (2,0)，齐次基础解取 (−1,1)，通解为 (2−t,t)。"
+  },
+  "relatedIds": [
+    "la-system-homogeneous",
+    "la-system-consistency"
+  ],
+  "topicIds": [
+    "la-system-structure"
+  ],
+  "status": "reviewed"
+}

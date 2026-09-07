@@ -1,0 +1,31 @@
+{
+  "id": "hm-rational-integral",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "有理函数部分分式",
+  "summary": "因式分解后按线性与不可约二次因子拆分。",
+  "conditions": [
+    "有理函数；积分区间避开分母零点。"
+  ],
+  "steps": [
+    "假分式先多项式除法。",
+    "分母实因式分解并设完整部分分式。",
+    "解系数并逐项积分。"
+  ],
+  "formula": "\\frac1{x^2-1}=\\frac12\\left(\\frac1{x-1}-\\frac1{x+1}\\right)",
+  "pitfalls": [
+    "重因子每个幂次都要列；对数积分常需绝对值。"
+  ],
+  "example": {
+    "prompt": "自编例题：求∫1/(x²-1) dx。",
+    "solution": "拆成1/[2(x-1)]-1/[2(x+1)]，得(1/2)ln|(x-1)/(x+1)|+C，区间不能跨±1。"
+  },
+  "relatedIds": [
+    "hm-substitution-integral",
+    "hm-trig-substitution"
+  ],
+  "topicIds": [
+    "integrals-rational-integral"
+  ],
+  "status": "reviewed"
+}

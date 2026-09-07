@@ -1,0 +1,30 @@
+{
+  "id": "hm-riemann-sum",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分定义求和式极限",
+  "summary": "识别等距小区间长度与取样点。",
+  "conditions": [
+    "目标函数在有限区间黎曼可积。"
+  ],
+  "steps": [
+    "将求和写成Σf(x_k)Δx。",
+    "确认取样点与区间端点。",
+    "转为定积分求值。"
+  ],
+  "formula": "\\lim_{n\\to\\infty}\\frac1n\\sum_{k=1}^n f(k/n)=\\int_0^1 f(x)dx",
+  "pitfalls": [
+    "必须把尺度因子分清，不能将Σf(k/n)直接当积分。"
+  ],
+  "example": {
+    "prompt": "自编例题：求lim(n→∞)Σ(k=1到n)n/(n²+k²)。",
+    "solution": "每项为(1/n)/(1+(k/n)²)，转为∫₀¹1/(1+x²)dx=π/4。"
+  },
+  "relatedIds": [
+    "hm-newton-leibniz"
+  ],
+  "topicIds": [
+    "integrals-riemann-sum"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "la-det-parameter",
+  "libraryId": "math-one",
+  "chapterId": "la-determinants",
+  "title": "参数行列式判可逆",
+  "summary": "计算参数化行列式的零点，分离可逆与奇异参数。",
+  "conditions": [
+    "矩阵为方阵",
+    "参数的取值域需预先明确"
+  ],
+  "steps": [
+    "计算并因式分解行列式",
+    "求零点",
+    "非零点处可逆，零点处另行研究秩"
+  ],
+  "formula": "A(t)\\text{ 可逆}\\iff\\det A(t)\\ne0",
+  "pitfalls": [
+    "不可逆并不说明矩阵为零"
+  ],
+  "example": {
+    "prompt": "自编例题：A=[[t,1],[1,t]] 何时可逆？",
+    "solution": "det A=t²−1，因此实数 t≠±1 时可逆。"
+  },
+  "relatedIds": [
+    "la-det-block",
+    "la-det-expansion"
+  ],
+  "topicIds": [
+    "la-det-parameter-topic"
+  ],
+  "status": "reviewed"
+}

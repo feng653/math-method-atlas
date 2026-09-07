@@ -1,0 +1,33 @@
+{
+  "id": "pr-dist-transform",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "分布函数法求变量函数分布",
+  "summary": "从 P(g(X)≤y) 反解原变量区域，适合非单调变换。",
+  "conditions": [
+    "g(X) 定义明确",
+    "必须先确定新变量支持集"
+  ],
+  "steps": [
+    "求 Y 的取值范围",
+    "把 g(X)≤y 化为 X 的区间并集",
+    "积分或累计求 F_Y；只有所得分布绝对连续时，才可由几乎处处导数给出完整密度"
+  ],
+  "formula": "F_Y(y)=P(g(X)\\le y)",
+  "pitfalls": [
+    "非单调函数不能只保留一个反函数分支",
+    "连续分布函数不一定绝对连续；导数也不能表示离散跳点概率"
+  ],
+  "example": {
+    "prompt": "自编例题：X 在 (−1,1) 均匀，Y=X²，求 FY。",
+    "solution": "y<0 时为 0；0≤y≤1 时 P(−√y≤X≤√y)=√y；y>1 时为 1。"
+  },
+  "relatedIds": [
+    "pr-dist-cdf",
+    "pr-dist-classic"
+  ],
+  "topicIds": [
+    "pr-function-topic"
+  ],
+  "status": "reviewed"
+}

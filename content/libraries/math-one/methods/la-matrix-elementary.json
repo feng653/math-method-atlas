@@ -1,0 +1,31 @@
+{
+  "id": "la-matrix-elementary",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "初等矩阵表示变换",
+  "summary": "将对单位阵的一次变换变为矩阵乘法。",
+  "conditions": [
+    "行变换由左乘实现，列变换由右乘实现"
+  ],
+  "steps": [
+    "在单位阵上执行同一次变换得到 E",
+    "按行或列选择乘法方向",
+    "多步变换按实际乘法顺序复合"
+  ],
+  "formula": "A\\xrightarrow{\\text{行变换}}EA",
+  "pitfalls": [
+    "连续左乘时最后执行的变换写在最左端"
+  ],
+  "example": {
+    "prompt": "自编例题：对二阶矩阵将第二行加第一行的 3 倍，写初等矩阵。",
+    "solution": "E=[[1,0],[3,1]]；EA 的第二行正是 A 第二行加其第一行的 3 倍。"
+  },
+  "relatedIds": [
+    "la-matrix-adjugate",
+    "la-matrix-inverse"
+  ],
+  "topicIds": [
+    "la-inverse-topic"
+  ],
+  "status": "reviewed"
+}

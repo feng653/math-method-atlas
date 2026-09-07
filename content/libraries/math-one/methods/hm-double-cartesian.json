@@ -1,0 +1,31 @@
+{
+  "id": "hm-double-cartesian",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "二重积分累次化与换序",
+  "summary": "将平面区域按竖条或横条切分。",
+  "conditions": [
+    "被积函数可积；区域边界可表示为相应变量函数。"
+  ],
+  "steps": [
+    "画区域并找投影区间。",
+    "按内层变量写上下界。",
+    "换序时重新描述区域并必要时分段。"
+  ],
+  "formula": "\\iint_D f\\,dA=\\int_a^b\\int_{g_1(x)}^{g_2(x)}f(x,y)\\,dy\\,dx",
+  "pitfalls": [
+    "换积分次序必须连同限一起换，不可仅交换dx、dy。"
+  ],
+  "example": {
+    "prompt": "自编例题：计算D={0≤x≤1,0≤y≤x}上∬(x+y)dA。",
+    "solution": "先对y积分得x²+x²/2=3x²/2，再从0到1积分得1/2。"
+  },
+  "relatedIds": [
+    "hm-double-polar",
+    "hm-triple-integral"
+  ],
+  "topicIds": [
+    "multiple-integrals-double-cartesian"
+  ],
+  "status": "reviewed"
+}

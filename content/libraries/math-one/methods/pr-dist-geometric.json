@@ -1,0 +1,32 @@
+{
+  "id": "pr-dist-geometric",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "几何分布等待首次成功",
+  "summary": "将首次成功发生在第 k 次分解为 k−1 次失败加一次成功。",
+  "conditions": [
+    "独立伯努利试验，成功率 0<p≤1",
+    "本卡计数包含成功的那一次"
+  ],
+  "steps": [
+    "定义 X 为首次成功的试验编号",
+    "列出连续失败和末次成功事件",
+    "用独立性相乘"
+  ],
+  "formula": "P(X=k)=(1-p)^{k-1}p,\\quad EX=1/p",
+  "pitfalls": [
+    "另一种几何分布定义只计失败次数，支持集会从 0 开始"
+  ],
+  "example": {
+    "prompt": "自编例题：每次独立成功率 1/4，首次成功在第 3 次的概率。",
+    "solution": "前两次失败、第三次成功，概率 (3/4)²×1/4=9/64。"
+  },
+  "relatedIds": [
+    "pr-dist-classic",
+    "pr-dist-discrete"
+  ],
+  "topicIds": [
+    "pr-discrete-topic"
+  ],
+  "status": "reviewed"
+}

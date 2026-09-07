@@ -1,0 +1,31 @@
+{
+  "id": "pr-event-total",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "全概率分解",
+  "summary": "按互斥且穷尽的原因事件分层计算结果概率。",
+  "conditions": [
+    "Bi 两两不交、并为样本空间且 P(Bi)>0"
+  ],
+  "steps": [
+    "选取完备事件组",
+    "计算各层先验和条件概率",
+    "乘积求和"
+  ],
+  "formula": "P(A)=\\sum_iP(B_i)P(A\\mid B_i)",
+  "pitfalls": [
+    "原因事件不互斥时直接求和会重复计数"
+  ],
+  "example": {
+    "prompt": "自编例题：甲机生产 60%，次品率 1%；乙机生产 40%，次品率 3%。求总次品率。",
+    "solution": "0.6×0.01+0.4×0.03=0.018，即 1.8%。"
+  },
+  "relatedIds": [
+    "pr-event-bayes",
+    "pr-event-conditional"
+  ],
+  "topicIds": [
+    "pr-conditional-topic"
+  ],
+  "status": "reviewed"
+}

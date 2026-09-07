@@ -1,0 +1,31 @@
+{
+  "id": "hm-differential-approximation",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "微分近似与误差传播",
+  "summary": "用切线增量近似非线性变化。",
+  "conditions": [
+    "函数在基点可微且增量较小；所需精度需额外余项估计。"
+  ],
+  "steps": [
+    "选择易计算且靠近目标的基点。",
+    "计算函数值与导数。",
+    "用f(a)+f'(a)Δx近似并明确这是近似值。"
+  ],
+  "formula": "f(a+\\Delta x)\\approx f(a)+f'(a)\\Delta x",
+  "pitfalls": [
+    "微分值不是有限增量的精确值；误差要求高时需估计二阶项。"
+  ],
+  "example": {
+    "prompt": "自编例题：用微分近似√4.04。",
+    "solution": "取a=4、Δx=0.04，f(4)=2、f'(4)=1/4，近似值2+0.01=2.01。"
+  },
+  "relatedIds": [
+    "hm-derivative-definition",
+    "hm-taylor-remainder"
+  ],
+  "topicIds": [
+    "derivatives-differential-approximation"
+  ],
+  "status": "reviewed"
+}

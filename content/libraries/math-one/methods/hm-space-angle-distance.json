@@ -1,0 +1,31 @@
+{
+  "id": "hm-space-angle-distance",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "空间夹角、距离与投影",
+  "summary": "转化为方向向量和法向量的关系。",
+  "conditions": [
+    "线面不退化；区分直线夹角、面夹角及线面角。"
+  ],
+  "steps": [
+    "求相应方向或法向量。",
+    "选择点积夹角或投影长度公式。",
+    "角度取题目要求的锐角或有向角。"
+  ],
+  "formula": "d(P,\\Pi)=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}",
+  "pitfalls": [
+    "线面角的正弦对应方向与法向夹角余弦。"
+  ],
+  "example": {
+    "prompt": "自编例题：求点(1,2,3)到平面x+2y+2z-2=0的距离。",
+    "solution": "分子|1+4+6-2|=9，法向量模3，距离3。"
+  },
+  "relatedIds": [
+    "hm-vector-products",
+    "hm-line-plane-equations"
+  ],
+  "topicIds": [
+    "geometry-space-angle-distance"
+  ],
+  "status": "reviewed"
+}

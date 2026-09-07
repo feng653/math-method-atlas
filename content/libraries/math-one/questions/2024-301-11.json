@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-11",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "11",
+  "summary": "幂指极限",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-indeterminate",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 11 题：先用指数与对数复合改写变量幂，保留最低非零主部。"
+    },
+    {
+      "methodId": "hm-taylor-limit",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 11 题：展开到分母对应阶数，比较系数确定参数。"
+    }
+  ]
+}

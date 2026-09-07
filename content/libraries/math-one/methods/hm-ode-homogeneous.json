@@ -1,0 +1,31 @@
+{
+  "id": "hm-ode-homogeneous",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "一阶齐次方程代换",
+  "summary": "对y'=F(y/x)使用y=ux。",
+  "conditions": [
+    "x≠0且方程只通过y/x依赖比值。"
+  ],
+  "steps": [
+    "设u=y/x，写y'=u+xu'。",
+    "代入后分离u与x。",
+    "积分回代并检查被除去的特解。"
+  ],
+  "formula": "x\\frac{du}{dx}=F(u)-u",
+  "pitfalls": [
+    "这里“齐次”与线性齐次不是同一概念；x=0需另看。"
+  ],
+  "example": {
+    "prompt": "自编例题：解y'=1+y/x，x>0。",
+    "solution": "设y=ux，有u+xu'=1+u，因此u'=1/x，u=ln x+C，y=x(ln x+C)。"
+  },
+  "relatedIds": [
+    "hm-ode-separable",
+    "hm-ode-reduction"
+  ],
+  "topicIds": [
+    "ode-ode-homogeneous"
+  ],
+  "status": "reviewed"
+}

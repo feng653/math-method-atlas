@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "21",
+  "summary": "重根向量",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 15
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-characteristic",
+      "verification": "verified",
+      "note": "原题第15页第21题：重根约束特征多项式。"
+    }
+  ]
+}

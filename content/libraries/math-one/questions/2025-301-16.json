@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "16",
+  "summary": "事件条件",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 10
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "verified",
+      "note": "原题第10页第16题：恰一事件除并事件。"
+    }
+  ]
+}

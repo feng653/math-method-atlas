@@ -1,0 +1,31 @@
+{
+  "id": "pr-event-conditional",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "条件概率与乘法公式",
+  "summary": "把已知事件限制为新的概率背景。",
+  "conditions": [
+    "条件事件概率严格大于 0"
+  ],
+  "steps": [
+    "明确条件事件 B",
+    "求交集概率 P(A∩B)",
+    "除以 P(B)，或反向使用乘法公式"
+  ],
+  "formula": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}",
+  "pitfalls": [
+    "P(A|B) 与 P(B|A) 一般不同；两个条件概率各自要求条件事件概率大于零"
+  ],
+  "example": {
+    "prompt": "自编例题：公平骰子已知点数为偶数，点数大于 3 的概率。",
+    "solution": "条件样本为 {2,4,6}，有利结果 {4,6}，概率为 2/3。"
+  },
+  "relatedIds": [
+    "pr-event-bayes",
+    "pr-event-independence"
+  ],
+  "topicIds": [
+    "pr-conditional-topic"
+  ],
+  "status": "reviewed"
+}

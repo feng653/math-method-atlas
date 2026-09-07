@@ -1,0 +1,31 @@
+{
+  "id": "hm-multivariable-limit",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "多元极限与连续性",
+  "summary": "路径比较用于否定极限，统一估计用于证明极限。",
+  "conditions": [
+    "趋近点的函数在去心邻域有定义。"
+  ],
+  "steps": [
+    "先沿坐标轴、直线或曲线路径找冲突。",
+    "若猜测存在，用距离r=√(x²+y²)给统一上界。",
+    "比较极限与点值判定连续。"
+  ],
+  "formula": "|f(x,y)-L|\\le\\phi(\\sqrt{x^2+y^2}),\\ \\phi(r)\\to0",
+  "pitfalls": [
+    "所有直线路径同极限仍不足以证明二元极限存在。"
+  ],
+  "example": {
+    "prompt": "自编例题：证明f(x,y)=x²y/(x²+y²)在原点补0后连续。",
+    "solution": "绝对值≤|y|≤√(x²+y²)，因此趋原点时极限为0，与补值一致，连续。"
+  },
+  "relatedIds": [
+    "hm-partial-total-differential",
+    "hm-direction-gradient"
+  ],
+  "topicIds": [
+    "multivariable-multivariable-limit"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-power-sum",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "幂级数逐项求导积分与求和",
+  "summary": "在收敛区间内部由标准级数变换得到和函数。",
+  "conditions": [
+    "只在收敛半径内部直接使用逐项运算；端点需另证。"
+  ],
+  "steps": [
+    "匹配几何级数等基本展开。",
+    "通过求导、积分、乘幂或换元生成系数。",
+    "积分后用中心值确定常数。"
+  ],
+  "formula": "\\sum_{n=0}^\\infty x^n=\\frac1{1-x},\\quad |x|<1",
+  "pitfalls": [
+    "逐项求导可改变端点收敛性；积分常数不可遗漏。"
+  ],
+  "example": {
+    "prompt": "自编例题：求|x|<1时Σ(n≥1)n x^{n-1}。",
+    "solution": "几何级数在(-1,1)内可逐项求导，和为(1-x)^{-2}。"
+  },
+  "relatedIds": [
+    "hm-power-radius",
+    "hm-taylor-expansion"
+  ],
+  "topicIds": [
+    "series-power-sum"
+  ],
+  "status": "reviewed"
+}

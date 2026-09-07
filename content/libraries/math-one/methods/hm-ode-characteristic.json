@@ -1,0 +1,30 @@
+{
+  "id": "hm-ode-characteristic",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "常系数齐次线性方程",
+  "summary": "按特征根类型构造基本解组。",
+  "conditions": [
+    "常系数线性齐次微分方程。"
+  ],
+  "steps": [
+    "将导数替为r的幂得特征多项式。",
+    "分解求根并计重数。",
+    "实根给指数，复根给指数乘正弦余弦，重根乘x幂。"
+  ],
+  "formula": "r=\\alpha\\pm i\\beta\\Rightarrow e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)",
+  "pitfalls": [
+    "重根必须补乘x的解；二阶方程应有两个独立常数。"
+  ],
+  "example": {
+    "prompt": "自编例题：解y''-2y'+y=0。",
+    "solution": "特征方程(r-1)²=0，为二重根1，通解y=(C₁+C₂x)e^x。"
+  },
+  "relatedIds": [
+    "hm-ode-undetermined"
+  ],
+  "topicIds": [
+    "ode-ode-characteristic"
+  ],
+  "status": "reviewed"
+}

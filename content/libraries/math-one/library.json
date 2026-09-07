@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 1,
+  "id": "math-one",
+  "title": "考研数学一方法库",
+  "description": "2026课纲映射草案；首批覆盖高等数学8章核心方法，内容待独立复核，不代表全部课纲要求已核验。",
+  "syllabus": {
+    "version": "2026 课纲映射草案",
+    "sourceUrl": "https://jingweimath.com/syllabus.html",
+    "reviewStatus": "draft"
+  },
+  "chapters": [
+    {
+      "id": "limits",
+      "title": "函数、极限与连续",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "limits-function-domain",
+          "title": "定义域、复合与反函数"
+        },
+        {
+          "id": "limits-equivalent-infinitesimal",
+          "title": "等价无穷小替换"
+        },
+        {
+          "id": "limits-taylor-limit",
+          "title": "泰勒展开求极限"
+        },
+        {
+          "id": "limits-lhopital",
+          "title": "洛必达法则"
+        },
+        {
+          "id": "limits-squeeze",
+          "title": "夹逼与有界量乘无穷小"
+        },
+        {
+          "id": "limits-recursive-limit",
+          "title": "递推数列的单调有界法"
+        },
+        {
+          "id": "limits-continuity-piecewise",
+          "title": "分段函数连续与间断点分类"
+        },
+        {
+          "id": "limits-intermediate-value",
+          "title": "介值与零点定位"
+        },
+        {
+          "id": "limits-power-indeterminate",
+          "title": "幂指不定式取对数"
+        },
+        {
+          "id": "limits-infinitesimal-order",
+          "title": "无穷小阶与主部比较"
+        }
+      ]
+    },
+    {
+      "id": "derivatives",
+      "title": "一元函数微分学",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "derivatives-derivative-definition",
+          "title": "导数定义与分段点可导性"
+        },
+        {
+          "id": "derivatives-chain-log-differentiation",
+          "title": "复合函数与对数求导"
+        },
+        {
+          "id": "derivatives-parametric-derivative",
+          "title": "参数方程一阶与二阶导数"
+        },
+        {
+          "id": "derivatives-implicit-derivative",
+          "title": "隐函数求导"
+        },
+        {
+          "id": "derivatives-leibniz-high-derivative",
+          "title": "高阶导数与莱布尼茨公式"
+        },
+        {
+          "id": "derivatives-mean-value-proof",
+          "title": "中值定理与辅助函数证明"
+        },
+        {
+          "id": "derivatives-monotonic-extrema",
+          "title": "单调性、极值与最值"
+        },
+        {
+          "id": "derivatives-concavity-asymptote",
+          "title": "凹凸、拐点、渐近线与曲率"
+        },
+        {
+          "id": "derivatives-cauchy-mean-value",
+          "title": "柯西中值定理与导数比"
+        },
+        {
+          "id": "derivatives-taylor-remainder",
+          "title": "泰勒公式与余项估计"
+        },
+        {
+          "id": "derivatives-differential-approximation",
+          "title": "微分近似与误差传播"
+        }
+      ]
+    },
+    {
+      "id": "integrals",
+      "title": "一元函数积分学",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "integrals-substitution-integral",
+          "title": "不定积分换元"
+        },
+        {
+          "id": "integrals-integration-by-parts",
+          "title": "分部积分"
+        },
+        {
+          "id": "integrals-rational-integral",
+          "title": "有理函数部分分式"
+        },
+        {
+          "id": "integrals-trig-substitution",
+          "title": "三角恒等式与根式代换"
+        },
+        {
+          "id": "integrals-newton-leibniz",
+          "title": "牛顿莱布尼茨与变限积分"
+        },
+        {
+          "id": "integrals-definite-symmetry",
+          "title": "定积分对称与区间变换"
+        },
+        {
+          "id": "integrals-improper-integral",
+          "title": "反常积分与比较判别"
+        },
+        {
+          "id": "integrals-integral-inequality",
+          "title": "积分估计与积分中值定理"
+        },
+        {
+          "id": "integrals-integral-area-volume",
+          "title": "面积与旋转体体积"
+        },
+        {
+          "id": "integrals-arc-work-integral",
+          "title": "弧长与物理量微元"
+        },
+        {
+          "id": "integrals-riemann-sum",
+          "title": "积分定义求和式极限"
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "title": "向量代数与空间解析几何",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "geometry-vector-products",
+          "title": "点积、叉积与混合积"
+        },
+        {
+          "id": "geometry-line-plane-equations",
+          "title": "直线与平面方程"
+        },
+        {
+          "id": "geometry-space-angle-distance",
+          "title": "空间夹角、距离与投影"
+        },
+        {
+          "id": "geometry-space-intersections",
+          "title": "空间交线、投影与消元"
+        },
+        {
+          "id": "geometry-quadric-surfaces",
+          "title": "二次曲面与截面识别"
+        },
+        {
+          "id": "geometry-space-tangent",
+          "title": "空间曲线切线与法平面"
+        }
+      ]
+    },
+    {
+      "id": "multivariable",
+      "title": "多元函数微分学",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "multivariable-multivariable-limit",
+          "title": "多元极限与连续性"
+        },
+        {
+          "id": "multivariable-partial-total-differential",
+          "title": "偏导数与全微分判别"
+        },
+        {
+          "id": "multivariable-multivariable-chain",
+          "title": "多元复合函数求导"
+        },
+        {
+          "id": "multivariable-multivariable-implicit",
+          "title": "多元隐函数与方程组求导"
+        },
+        {
+          "id": "multivariable-direction-gradient",
+          "title": "方向导数与梯度"
+        },
+        {
+          "id": "multivariable-tangent-plane",
+          "title": "曲面切平面与法线"
+        },
+        {
+          "id": "multivariable-hessian-extrema",
+          "title": "二元函数无约束极值"
+        },
+        {
+          "id": "multivariable-lagrange-multipliers",
+          "title": "拉格朗日乘子与闭域最值"
+        }
+      ]
+    },
+    {
+      "id": "multiple-integrals",
+      "title": "重积分、曲线积分与曲面积分",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "multiple-integrals-double-cartesian",
+          "title": "二重积分累次化与换序"
+        },
+        {
+          "id": "multiple-integrals-double-polar",
+          "title": "二重积分极坐标变换"
+        },
+        {
+          "id": "multiple-integrals-triple-integral",
+          "title": "三重积分与柱面球面坐标"
+        },
+        {
+          "id": "multiple-integrals-integral-mass-centroid",
+          "title": "重积分的质量、质心与转动惯量"
+        },
+        {
+          "id": "multiple-integrals-line-first-kind",
+          "title": "第一类曲线积分参数化"
+        },
+        {
+          "id": "multiple-integrals-line-second-kind",
+          "title": "第二类曲线积分与功"
+        },
+        {
+          "id": "multiple-integrals-green",
+          "title": "格林公式"
+        },
+        {
+          "id": "multiple-integrals-path-independence",
+          "title": "路径无关与势函数"
+        },
+        {
+          "id": "multiple-integrals-surface-integrals",
+          "title": "第一类曲面积分与有向通量"
+        },
+        {
+          "id": "multiple-integrals-gauss",
+          "title": "高斯散度公式"
+        },
+        {
+          "id": "multiple-integrals-stokes",
+          "title": "斯托克斯公式"
+        },
+        {
+          "id": "multiple-integrals-general-jacobian",
+          "title": "二重积分一般变量代换"
+        }
+      ]
+    },
+    {
+      "id": "series",
+      "title": "无穷级数",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "series-series-basic",
+          "title": "级数必要条件与几何级数"
+        },
+        {
+          "id": "series-series-comparison",
+          "title": "正项级数比较与极限比较"
+        },
+        {
+          "id": "series-ratio-root-test",
+          "title": "比值与根值判别"
+        },
+        {
+          "id": "series-alternating-series",
+          "title": "交错级数与绝对条件收敛"
+        },
+        {
+          "id": "series-power-radius",
+          "title": "幂级数收敛半径与端点"
+        },
+        {
+          "id": "series-power-sum",
+          "title": "幂级数逐项求导积分与求和"
+        },
+        {
+          "id": "series-taylor-expansion",
+          "title": "函数的幂级数展开"
+        },
+        {
+          "id": "series-fourier",
+          "title": "傅里叶展开与间断点收敛值"
+        },
+        {
+          "id": "series-fourier-half-range",
+          "title": "正弦与余弦半区间展开"
+        }
+      ]
+    },
+    {
+      "id": "ode",
+      "title": "常微分方程",
+      "subject": "高等数学",
+      "syllabusTopics": [
+        {
+          "id": "ode-ode-separable",
+          "title": "可分离变量微分方程"
+        },
+        {
+          "id": "ode-ode-homogeneous",
+          "title": "一阶齐次方程代换"
+        },
+        {
+          "id": "ode-ode-linear-first",
+          "title": "一阶线性方程积分因子"
+        },
+        {
+          "id": "ode-ode-bernoulli",
+          "title": "伯努利方程降为线性"
+        },
+        {
+          "id": "ode-ode-reduction",
+          "title": "可降阶高阶方程"
+        },
+        {
+          "id": "ode-ode-characteristic",
+          "title": "常系数齐次线性方程"
+        },
+        {
+          "id": "ode-ode-undetermined",
+          "title": "待定系数与共振修正"
+        },
+        {
+          "id": "ode-ode-modeling",
+          "title": "微分方程建模与初值"
+        },
+        {
+          "id": "ode-ode-euler",
+          "title": "欧拉方程对数换元"
+        },
+        {
+          "id": "ode-linear-ode-structure",
+          "title": "线性方程解的结构与叠加"
+        }
+      ]
+    },
+    {
+      "id": "la-determinants",
+      "title": "行列式",
+      "subject": "线性代数",
+      "syllabusTopics": [
+        {
+          "id": "la-det-compute",
+          "title": "行列式性质与计算"
+        },
+        {
+          "id": "la-det-parameter-topic",
+          "title": "含参数行列式与可逆性"
+        }
+      ]
+    },
+    {
+      "id": "la-matrices",
+      "title": "矩阵",
+      "subject": "线性代数",
+      "syllabusTopics": [
+        {
+          "id": "la-matrix-operations",
+          "title": "矩阵运算及特殊矩阵"
+        },
+        {
+          "id": "la-inverse-topic",
+          "title": "逆矩阵与初等矩阵"
+        },
+        {
+          "id": "la-rank-topic",
+          "title": "矩阵秩的计算"
+        }
+      ]
+    },
+    {
+      "id": "la-vectors",
+      "title": "向量",
+      "subject": "线性代数",
+      "syllabusTopics": [
+        {
+          "id": "la-vector-linear-topic",
+          "title": "线性相关与线性表示"
+        },
+        {
+          "id": "la-vector-basis-topic",
+          "title": "极大无关组与坐标"
+        },
+        {
+          "id": "la-vector-inner-topic",
+          "title": "内积及正交化"
+        }
+      ]
+    },
+    {
+      "id": "la-systems",
+      "title": "线性方程组",
+      "subject": "线性代数",
+      "syllabusTopics": [
+        {
+          "id": "la-system-solvability",
+          "title": "解的存在性"
+        },
+        {
+          "id": "la-system-structure",
+          "title": "基础解系与解的结构"
+        }
+      ]
+    },
+    {
+      "id": "la-eigen",
+      "title": "特征值与相似",
+      "subject": "线性代数",
+      "syllabusTopics": [
+        {
+          "id": "la-eigen-compute",
+          "title": "特征值与特征向量"
+        },
+        {
+          "id": "la-diagonalization-topic",
+          "title": "相似与可对角化"
+        },
+        {
+          "id": "la-symmetric-topic",
+          "title": "实对称矩阵正交对角化"
+        }
+      ]
+    },
+    {
+      "id": "la-quadratic",
+      "title": "二次型",
+      "subject": "线性代数",
+      "syllabusTopics": [
+        {
+          "id": "la-quadratic-reduction",
+          "title": "二次型标准化与惯性"
+        },
+        {
+          "id": "la-positive-topic",
+          "title": "正定二次型判别"
+        }
+      ]
+    },
+    {
+      "id": "pr-events",
+      "title": "随机事件与概率",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-event-probability-topic",
+          "title": "事件运算与概率计算"
+        },
+        {
+          "id": "pr-conditional-topic",
+          "title": "条件概率与独立性"
+        }
+      ]
+    },
+    {
+      "id": "pr-distributions",
+      "title": "随机变量及分布",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-cdf-topic",
+          "title": "分布函数及概率"
+        },
+        {
+          "id": "pr-discrete-topic",
+          "title": "离散分布"
+        },
+        {
+          "id": "pr-continuous-topic",
+          "title": "密度与连续分布"
+        },
+        {
+          "id": "pr-function-topic",
+          "title": "一维随机变量函数分布"
+        }
+      ]
+    },
+    {
+      "id": "pr-joint",
+      "title": "多维随机变量",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-joint-marginal-topic",
+          "title": "联合与边缘分布"
+        },
+        {
+          "id": "pr-joint-conditional-topic",
+          "title": "条件分布与独立性"
+        },
+        {
+          "id": "pr-joint-function-topic",
+          "title": "多维随机变量函数分布"
+        }
+      ]
+    },
+    {
+      "id": "pr-moments",
+      "title": "数字特征",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-expectation-topic",
+          "title": "期望与函数期望"
+        },
+        {
+          "id": "pr-variance-topic",
+          "title": "方差协方差及相关系数"
+        },
+        {
+          "id": "pr-bound-topic",
+          "title": "矩与概率界"
+        }
+      ]
+    },
+    {
+      "id": "pr-limit",
+      "title": "大数定律与中心极限定理",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-lln-topic",
+          "title": "大数定律及概率收敛"
+        },
+        {
+          "id": "pr-clt-topic",
+          "title": "中心极限定理与正态近似"
+        }
+      ]
+    },
+    {
+      "id": "pr-sampling",
+      "title": "数理统计基本概念",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-statistics-topic",
+          "title": "统计量与经验分布"
+        },
+        {
+          "id": "pr-normal-sampling-topic",
+          "title": "正态总体抽样分布"
+        }
+      ]
+    },
+    {
+      "id": "pr-estimation",
+      "title": "参数估计",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-point-estimation-topic",
+          "title": "矩估计与最大似然"
+        },
+        {
+          "id": "pr-estimator-properties-topic",
+          "title": "估计量评价"
+        },
+        {
+          "id": "pr-confidence-topic",
+          "title": "正态总体区间估计"
+        }
+      ]
+    },
+    {
+      "id": "pr-testing",
+      "title": "假设检验",
+      "subject": "概率统计",
+      "syllabusTopics": [
+        {
+          "id": "pr-mean-testing-topic",
+          "title": "正态总体均值检验"
+        },
+        {
+          "id": "pr-variance-testing-topic",
+          "title": "正态总体方差检验"
+        },
+        {
+          "id": "pr-testing-principles-topic",
+          "title": "检验原理与两类错误"
+        }
+      ]
+    }
+  ]
+}

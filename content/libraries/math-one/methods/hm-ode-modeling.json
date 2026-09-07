@@ -1,0 +1,31 @@
+{
+  "id": "hm-ode-modeling",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "微分方程建模与初值",
+  "summary": "从变化率和守恒关系建立方程再解释解。",
+  "conditions": [
+    "题目给出变化率规律、参数意义与初始条件。"
+  ],
+  "steps": [
+    "定义未知函数及单位。",
+    "把净变化率写成输入减输出或给定比例律。",
+    "求解并代初值，检查物理范围和长期行为。"
+  ],
+  "formula": "\\frac{dM}{dt}=\\text{流入速率}-\\text{流出速率}",
+  "pitfalls": [
+    "混合问题浓度分母是随时间变化的体积；不能只套指数模型。"
+  ],
+  "example": {
+    "prompt": "自编例题：某量衰减速率为当前量的2倍，初值3，求t≥0时的量。",
+    "solution": "设M'= -2M、M(0)=3，解为M(t)=3e^{-2t}，始终正且趋0，符合衰减描述。"
+  },
+  "relatedIds": [
+    "hm-ode-linear-first",
+    "hm-ode-bernoulli"
+  ],
+  "topicIds": [
+    "ode-ode-modeling"
+  ],
+  "status": "reviewed"
+}

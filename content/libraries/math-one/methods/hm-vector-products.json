@@ -1,0 +1,31 @@
+{
+  "id": "hm-vector-products",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "点积、叉积与混合积",
+  "summary": "用向量积判定角度、面积、体积和共面。",
+  "conditions": [
+    "坐标在同一正交基下，夹角向量非零。"
+  ],
+  "steps": [
+    "按目标选择点积、叉积或混合积。",
+    "代入坐标运算。",
+    "解释符号、绝对值与退化情况。"
+  ],
+  "formula": "a\\cdot b=|a||b|\\cos\\theta,\\quad V=|a\\cdot(b\\times c)|",
+  "pitfalls": [
+    "三角形面积是叉积模的一半；混合积带方向，体积取绝对值。"
+  ],
+  "example": {
+    "prompt": "自编例题：a=(1,0,0)、b=(1,2,0)，求夹角余弦和张成平行四边形面积。",
+    "solution": "点积1，两模1、√5，夹角余弦1/√5；叉积(0,0,2)，面积2。"
+  },
+  "relatedIds": [
+    "hm-line-plane-equations",
+    "hm-space-angle-distance"
+  ],
+  "topicIds": [
+    "geometry-vector-products"
+  ],
+  "status": "reviewed"
+}

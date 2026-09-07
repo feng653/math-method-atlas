@@ -1,0 +1,18 @@
+{
+  "id": "2024-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "17",
+  "summary": "曲边区域重积分",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-double-cartesian",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 17 题：按水平截面保留给定积分界，先对横坐标积分；无需误换曲边。"
+    }
+  ]
+}

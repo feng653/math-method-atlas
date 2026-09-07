@@ -1,0 +1,31 @@
+{
+  "id": "pr-estimate-moments",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "总体矩匹配样本矩",
+  "summary": "用前若干阶样本原点矩替换总体矩解参数。",
+  "conditions": [
+    "所需总体矩存在且矩方程可识别参数"
+  ],
+  "steps": [
+    "计算参数表示的总体矩",
+    "以样本原点矩替换",
+    "解方程并检查参数范围"
+  ],
+  "formula": "E_\\theta[X^k]=\\frac1n\\sum_iX_i^k",
+  "pitfalls": [
+    "二阶原点矩不是样本方差"
+  ],
+  "example": {
+    "prompt": "自编例题：X 在 (0,θ) 均匀，θ>0，求矩估计。",
+    "solution": "EX=θ/2，以样本均值替换得 θ̂=2X̄。该估计不要求等于最大观测值。"
+  },
+  "relatedIds": [
+    "pr-estimate-mle",
+    "pr-estimate-consistency"
+  ],
+  "topicIds": [
+    "pr-point-estimation-topic"
+  ],
+  "status": "reviewed"
+}

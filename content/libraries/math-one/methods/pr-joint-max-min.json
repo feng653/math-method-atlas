@@ -1,0 +1,31 @@
+{
+  "id": "pr-joint-max-min",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "独立变量最大最小值分布",
+  "summary": "把极值事件变成多个事件的交集。",
+  "conditions": [
+    "X1,…,Xn 相互独立；相同分布不是必要条件"
+  ],
+  "steps": [
+    "最大值不超过 z 表示所有 Xi≤z",
+    "最小值大于 z 表示所有 Xi>z",
+    "用独立性连乘并取补事件"
+  ],
+  "formula": "F_{\\max}(z)=\\prod_iF_i(z),\\quad F_{\\min}(z)=1-\\prod_i(1-F_i(z))",
+  "pitfalls": [
+    "最小值公式使用尾概率乘积后再取补"
+  ],
+  "example": {
+    "prompt": "自编例题：两个独立 (0,1) 均匀变量，最大值的分布函数。",
+    "solution": "z<0 为 0；0≤z≤1 为 z²；z>1 为 1。"
+  },
+  "relatedIds": [
+    "pr-joint-convolution",
+    "pr-joint-transform"
+  ],
+  "topicIds": [
+    "pr-joint-function-topic"
+  ],
+  "status": "reviewed"
+}

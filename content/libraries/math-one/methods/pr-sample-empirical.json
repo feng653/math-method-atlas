@@ -1,0 +1,31 @@
+{
+  "id": "pr-sample-empirical",
+  "libraryId": "math-one",
+  "chapterId": "pr-sampling",
+  "title": "样本均值方差与经验分布",
+  "summary": "由观测值计算不含未知参数的统计量。",
+  "conditions": [
+    "样本量 n≥2 才定义通常的无偏样本方差"
+  ],
+  "steps": [
+    "求样本均值",
+    "以 n−1 为分母求 S²",
+    "经验分布按不超过 x 的样本比例计算"
+  ],
+  "formula": "S^2=\\frac{\\sum_i(X_i-\\bar X)^2}{n-1},\\quad F_n(x)=\\frac1n\\sum_i\\mathbf1_{X_i\\le x}",
+  "pitfalls": [
+    "统计量不能包含未知总体参数"
+  ],
+  "example": {
+    "prompt": "自编例题：样本为 1,2,3，求均值、S² 和 Fn(2)。",
+    "solution": "均值 2，S²=(1+0+1)/2=1，Fn(2)=2/3。"
+  },
+  "relatedIds": [
+    "pr-sample-chi-square",
+    "pr-sample-normal"
+  ],
+  "topicIds": [
+    "pr-statistics-topic"
+  ],
+  "status": "reviewed"
+}

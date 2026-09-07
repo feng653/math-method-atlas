@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "proof-toolkit",
+  "title": "证明方法小库",
+  "description": "独立体系示例：反证、归纳与反例。自编讲解与练习，仅用于展示多体系编辑，不属于数学一课纲覆盖统计；内容待复核。",
+  "syllabus": {
+    "version": "自定义证明工具集 v1（参考 MIT 证明方法课程）",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/",
+    "reviewStatus": "draft"
+  },
+  "chapters": [
+    {
+      "id": "proof-basics",
+      "title": "基本证明工具",
+      "subject": "数学证明",
+      "syllabusTopics": [
+        { "id": "contradiction", "title": "反证法及量词否定" },
+        { "id": "induction", "title": "数学归纳法" },
+        { "id": "counterexample", "title": "用反例否定全称命题" }
+      ]
+    }
+  ]
+}

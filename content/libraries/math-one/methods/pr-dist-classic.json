@@ -1,0 +1,32 @@
+{
+  "id": "pr-dist-classic",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "识别二项与泊松模型",
+  "summary": "由试验机制选择常见离散分布并核验参数。",
+  "conditions": [
+    "二项：固定整数 n≥1 次独立同成功率 p∈[0,1] 试验，k=0,…,n",
+    "泊松：题设给定参数 λ>0 的泊松模型或相应过程假设，k=0,1,…"
+  ],
+  "steps": [
+    "判断是固定试验成功数还是时间空间内事件数",
+    "确定 n,p 或 λ",
+    "代入质量函数计算"
+  ],
+  "formula": "P(B=k)=\\binom nkp^k(1-p)^{n-k},\\quad P(N=k)=e^{-\\lambda}\\lambda^k/k!",
+  "pitfalls": [
+    "均值给定不足以证明泊松分布"
+  ],
+  "example": {
+    "prompt": "自编例题：独立 4 次试验，每次成功率 1/2，恰好 2 次成功的概率。",
+    "solution": "B~Bin(4,1/2)，概率 C(4,2)/16=3/8。"
+  },
+  "relatedIds": [
+    "pr-dist-discrete",
+    "pr-dist-geometric"
+  ],
+  "topicIds": [
+    "pr-discrete-topic"
+  ],
+  "status": "reviewed"
+}

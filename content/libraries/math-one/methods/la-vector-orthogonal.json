@@ -1,0 +1,32 @@
+{
+  "id": "la-vector-orthogonal",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "施密特正交化",
+  "summary": "依次减去在已构造正交方向上的投影。",
+  "conditions": [
+    "输入向量组线性无关",
+    "使用实欧氏内积"
+  ],
+  "steps": [
+    "保留首向量",
+    "每个新向量减去所有已有正交投影",
+    "需要标准正交基时逐个除以范数"
+  ],
+  "formula": "\\beta_k=\\alpha_k-\\sum_{j<k}\\frac{\\langle\\alpha_k,\\beta_j\\rangle}{\\langle\\beta_j,\\beta_j\\rangle}\\beta_j",
+  "pitfalls": [
+    "投影的分母是正交向量范数平方"
+  ],
+  "example": {
+    "prompt": "自编例题：正交化 (1,0)、(1,1)。",
+    "solution": "β1=(1,0)，β2=(1,1)−(1,0)=(0,1)，两者已经单位化。"
+  },
+  "relatedIds": [
+    "la-vector-basis",
+    "la-vector-coordinate"
+  ],
+  "topicIds": [
+    "la-vector-inner-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-line-first-kind",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "第一类曲线积分参数化",
+  "summary": "用弧长微元积分标量。",
+  "conditions": [
+    "曲线分段光滑，参数化正则。"
+  ],
+  "steps": [
+    "选择参数范围并写坐标。",
+    "计算速度模得到ds。",
+    "代入标量函数积分。"
+  ],
+  "formula": "\\int_L f\\,ds=\\int_\\alpha^\\beta f(r(t))|r'(t)|dt",
+  "pitfalls": [
+    "第一类与方向无关，不能把ds写成带符号的dx。"
+  ],
+  "example": {
+    "prompt": "自编例题：单位圆上求∮x² ds。",
+    "solution": "取x=cos t、y=sin t，0≤t≤2π，ds=dt，积分cos²t得π。"
+  },
+  "relatedIds": [
+    "hm-line-second-kind",
+    "hm-green"
+  ],
+  "topicIds": [
+    "multiple-integrals-line-first-kind"
+  ],
+  "status": "reviewed"
+}

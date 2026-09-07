@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "19",
+  "summary": "插值积分误差",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-taylor-remainder",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 19 题：以目标内点展开两端值，按线性插值权重组合后，一阶项抵消，二阶导界控制余项。"
+    },
+    {
+      "methodId": "hm-integral-inequality",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 19 题：对点态误差取绝对值界再积分，得到整体误差界。"
+    }
+  ]
+}

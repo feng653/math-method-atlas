@@ -1,0 +1,32 @@
+{
+  "id": "la-det-expansion",
+  "libraryId": "math-one",
+  "chapterId": "la-determinants",
+  "title": "按行列展开",
+  "summary": "沿零元素最多的行或列作代数余子式展开。",
+  "conditions": [
+    "对象为方阵",
+    "代数余子式包括符号因子 (-1)^(i+j)"
+  ],
+  "steps": [
+    "选零最多的一行或列",
+    "删除对应行列求余子式",
+    "乘符号和原元素后求和"
+  ],
+  "formula": "\\det A=\\sum_{j=1}^n a_{ij}(-1)^{i+j}M_{ij}",
+  "pitfalls": [
+    "余子式与代数余子式不能混用"
+  ],
+  "example": {
+    "prompt": "自编例题：求矩阵 [[1,0,2],[0,3,0],[4,0,5]] 的行列式。",
+    "solution": "按第二行展开：3(5−8)=−9。"
+  },
+  "relatedIds": [
+    "la-det-block",
+    "la-det-row-operations"
+  ],
+  "topicIds": [
+    "la-det-compute"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "hm-line-second-kind",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "第二类曲线积分与功",
+  "summary": "将向量场沿有向路径积分。",
+  "conditions": [
+    "有向分段光滑曲线和连续场。"
+  ],
+  "steps": [
+    "选择符合方向的参数。",
+    "计算dx、dy、dz。",
+    "代入并逐项相加积分。"
+  ],
+  "formula": "\\int_L Pdx+Qdy+Rdz=\\int F(r(t))\\cdot r'(t)dt",
+  "pitfalls": [
+    "反向积分变号；微分不可用速度模替代。"
+  ],
+  "example": {
+    "prompt": "自编例题：沿(0,0)到(1,1)直线计算∫x dy-y dx。",
+    "solution": "取x=t、y=t，t从0到1，dx=dy=dt，被积式t-t=0，结果0。"
+  },
+  "relatedIds": [
+    "hm-line-first-kind",
+    "hm-green",
+    "hm-path-independence",
+    "hm-stokes"
+  ],
+  "topicIds": [
+    "multiple-integrals-line-second-kind"
+  ],
+  "status": "reviewed"
+}

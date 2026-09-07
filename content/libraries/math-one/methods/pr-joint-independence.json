@@ -1,0 +1,31 @@
+{
+  "id": "pr-joint-independence",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "分布分解判随机变量独立",
+  "summary": "检查联合分布是否等于边缘分布乘积。",
+  "conditions": [
+    "密度判据在几乎处处意义下成立；离散表需逐格核验"
+  ],
+  "steps": [
+    "先求边缘分布",
+    "比较联合与乘积",
+    "寻找反例即可否定独立"
+  ],
+  "formula": "X\\perp Y\\iff F_{X,Y}(x,y)=F_X(x)F_Y(y)\\quad\\forall x,y",
+  "pitfalls": [
+    "不相关不等于独立；支持域有耦合约束时尤其谨慎"
+  ],
+  "example": {
+    "prompt": "自编例题：在 0<x<1，0<y<1 上联合密度为 4xy，是否独立？",
+    "solution": "边缘为 2x 和 2y，乘积等于联合密度，域也是乘积域，因此独立。"
+  },
+  "relatedIds": [
+    "pr-joint-conditional",
+    "pr-joint-convolution"
+  ],
+  "topicIds": [
+    "pr-joint-conditional-topic"
+  ],
+  "status": "reviewed"
+}

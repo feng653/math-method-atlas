@@ -1,0 +1,32 @@
+{
+  "id": "pr-event-counting",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "等可能计数与补事件",
+  "summary": "在等可能样本空间计数，复杂并事件优先转为补事件。",
+  "conditions": [
+    "有限样本空间内基本结果等可能",
+    "抽样是否有放回、是否计顺序必须固定"
+  ],
+  "steps": [
+    "定义基本结果",
+    "计算总数和有利结果数",
+    "必要时先算补事件概率再用 1 减去"
+  ],
+  "formula": "P(A)=\\frac{|A|}{|\\Omega|},\\quad P(A^c)=1-P(A)",
+  "pitfalls": [
+    "不能把概率不等的类别当作等可能基本结果"
+  ],
+  "example": {
+    "prompt": "自编例题：从 3 红 2 蓝球中不放回抽 2 个，至少一个红球的概率。",
+    "solution": "补事件为两个均蓝，概率 C(2,2)/C(5,2)=1/10，答案 9/10。"
+  },
+  "relatedIds": [
+    "pr-event-bayes",
+    "pr-event-conditional"
+  ],
+  "topicIds": [
+    "pr-event-probability-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-space-intersections",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "空间交线、投影与消元",
+  "summary": "通过联立方程描述交线或投影区域。",
+  "conditions": [
+    "明确投影方向及需保留的不等式范围。"
+  ],
+  "steps": [
+    "联立曲面方程。",
+    "消去被投影坐标。",
+    "检查是否增加赘点，并恢复范围约束。"
+  ],
+  "formula": "\\text{投影到 }xy\\text{ 平面时消去 }z",
+  "pitfalls": [
+    "消元得到等式后仍需检验可取实数与分支条件。"
+  ],
+  "example": {
+    "prompt": "自编例题：球x²+y²+z²=4与平面z=1交线在xy面的投影。",
+    "solution": "代入z=1得x²+y²=3，投影是半径√3的圆；交线本身为z=1上的该圆。"
+  },
+  "relatedIds": [
+    "hm-quadric-surfaces",
+    "hm-space-tangent"
+  ],
+  "topicIds": [
+    "geometry-space-intersections"
+  ],
+  "status": "reviewed"
+}

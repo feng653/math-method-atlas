@@ -1,0 +1,31 @@
+{
+  "id": "la-quadratic-orthogonal",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "正交替换化二次型标准形",
+  "summary": "利用实对称矩阵谱分解同时保留欧氏长度。",
+  "conditions": [
+    "二次型矩阵取实对称形式"
+  ],
+  "steps": [
+    "正交对角化 A",
+    "令 x=Qy",
+    "得到以特征值为系数的平方和"
+  ],
+  "formula": "x=Qy\\Rightarrow x^TAx=\\sum_i\\lambda_i y_i^2",
+  "pitfalls": [
+    "x=Qy 与 y=Qx 的方向不能混用"
+  ],
+  "example": {
+    "prompt": "自编例题：对 2x²+2xy+2y² 作正交替换。",
+    "solution": "令 x=(u+v)/√2,y=(u−v)/√2，得到 3u²+v²。"
+  },
+  "relatedIds": [
+    "la-quadratic-completion",
+    "la-quadratic-matrix"
+  ],
+  "topicIds": [
+    "la-quadratic-reduction"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "22",
+  "summary": "极值统计量估计",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-max-min",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 5 页第 22 题：独立样本最大值的分布函数是各边缘分布函数乘积。"
+    },
+    {
+      "methodId": "pr-estimate-unbiased",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 5 页第 22 题：用最大值的一阶矩确定无偏系数，二阶矩展开均方误差后对系数最小化。"
+    }
+  ]
+}

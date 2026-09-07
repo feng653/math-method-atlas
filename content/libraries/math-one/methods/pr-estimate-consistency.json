@@ -1,0 +1,32 @@
+{
+  "id": "pr-estimate-consistency",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "均方收敛证明相合",
+  "summary": "以偏差趋零且方差趋零推出依概率收敛。",
+  "conditions": [
+    "估计量二阶矩存在",
+    "此条件是常用充分条件，不是必要条件"
+  ],
+  "steps": [
+    "计算偏差随 n 的极限",
+    "计算方差极限",
+    "用马尔可夫不等式作用于平方误差"
+  ],
+  "formula": "E(T_n-\\theta)^2\\to0\\Rightarrow T_n\\xrightarrow P\\theta",
+  "pitfalls": [
+    "固定样本的无偏性不能单独推出相合性"
+  ],
+  "example": {
+    "prompt": "自编例题：独立同分布样本方差 σ² 有限，说明 X̄ 估计 μ 相合。",
+    "solution": "偏差为 0，方差 σ²/n→0，故均方误差趋 0，样本均值相合。"
+  },
+  "relatedIds": [
+    "pr-estimate-efficiency",
+    "pr-estimate-unbiased"
+  ],
+  "topicIds": [
+    "pr-estimator-properties-topic"
+  ],
+  "status": "reviewed"
+}

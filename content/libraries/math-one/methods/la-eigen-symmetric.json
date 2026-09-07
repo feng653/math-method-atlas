@@ -1,0 +1,31 @@
+{
+  "id": "la-eigen-symmetric",
+  "libraryId": "math-one",
+  "chapterId": "la-eigen",
+  "title": "实对称矩阵正交对角化",
+  "summary": "在每个重特征空间内正交化，再合并单位特征向量。",
+  "conditions": [
+    "A 是实对称矩阵"
+  ],
+  "steps": [
+    "求特征值和特征空间",
+    "重根空间内施密特正交化",
+    "全部单位化为 Q 的列"
+  ],
+  "formula": "Q^TAQ=\\Lambda,\\quad Q^TQ=I",
+  "pitfalls": [
+    "任意可对角化矩阵不一定可正交对角化"
+  ],
+  "example": {
+    "prompt": "自编例题：将 [[2,1],[1,2]] 正交对角化。",
+    "solution": "单位特征向量为 (1,1)/√2、(1,−1)/√2，对应 3、1；按此组成 Q 即可。"
+  },
+  "relatedIds": [
+    "la-eigen-characteristic",
+    "la-eigen-diagonalization"
+  ],
+  "topicIds": [
+    "la-symmetric-topic"
+  ],
+  "status": "reviewed"
+}

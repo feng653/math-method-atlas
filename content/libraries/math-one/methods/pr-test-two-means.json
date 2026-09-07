@@ -1,0 +1,32 @@
+{
+  "id": "pr-test-two-means",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "等方差双正态总体均值差检验",
+  "summary": "合并两个独立样本的方差估计，使用 t 分布。",
+  "conditions": [
+    "两个独立正态样本",
+    "两总体方差相等但未知，n1,n2≥2"
+  ],
+  "steps": [
+    "计算合并方差 Sp²",
+    "构造均值差减原假设差值的 t 统计量",
+    "使用 n1+n2−2 自由度和备择方向"
+  ],
+  "formula": "S_p^2=\\frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2},\\quad T=\\frac{\\bar X-\\bar Y-\\delta_0}{S_p\\sqrt{1/n_1+1/n_2}}",
+  "pitfalls": [
+    "不等方差不能直接使用此合并方差公式的 t 结论"
+  ],
+  "example": {
+    "prompt": "自编例题：n1=n2=5，S1²=S2²=4，两个样本均值差为 2，H0 差值为 0，求 T。",
+    "solution": "Sp²=4，T=2/[2√(2/5)]=√(5/2)≈1.581，自由度 8。"
+  },
+  "relatedIds": [
+    "pr-test-normal-mean",
+    "pr-test-errors"
+  ],
+  "topicIds": [
+    "pr-mean-testing-topic"
+  ],
+  "status": "reviewed"
+}

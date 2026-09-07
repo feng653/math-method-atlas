@@ -1,0 +1,33 @@
+{
+  "id": "pr-test-errors",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "两类错误与检验功效",
+  "summary": "在不同真实参数下计算拒绝域的概率。",
+  "conditions": [
+    "检验拒绝域 R 已确定；所示 α 公式以简单原假设 θ=θ₀ 为准",
+    "复合原假设下，检验水平使用原假设参数集合上拒绝概率的上确界",
+    "第二类错误需指定备择参数值"
+  ],
+  "steps": [
+    "在 H0 下计算拒绝概率得第一类错误",
+    "在指定 H1 参数下计算不拒绝概率得 β",
+    "功效为 1−β"
+  ],
+  "formula": "\\alpha=P_{\\theta_0}(X\\in R),\\quad\\beta(\\theta)=P_\\theta(X\\notin R)",
+  "pitfalls": [
+    "p 值不是原假设为真的概率"
+  ],
+  "example": {
+    "prompt": "自编例题：X~N(μ,1)，检验 μ=0 对 μ>0，以 X>1.645 拒绝，求 μ=2 时功效。",
+    "solution": "α≈0.05；功效 Pμ=2(X>1.645)=1−Φ(−0.355)=Φ(0.355)≈0.639。"
+  },
+  "relatedIds": [
+    "pr-test-normal-mean",
+    "pr-test-normal-variance"
+  ],
+  "topicIds": [
+    "pr-testing-principles-topic"
+  ],
+  "status": "reviewed"
+}

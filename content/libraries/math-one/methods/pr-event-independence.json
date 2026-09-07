@@ -1,0 +1,31 @@
+{
+  "id": "pr-event-independence",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "独立事件判定与连乘",
+  "summary": "核验联合概率是否分解为边缘概率乘积。",
+  "conditions": [
+    "多事件相互独立要求所有至少二元子集均满足乘积关系"
+  ],
+  "steps": [
+    "计算单事件概率",
+    "比较所需各交集概率与乘积",
+    "确认独立后再使用连乘"
+  ],
+  "formula": "P(A\\cap B)=P(A)P(B)",
+  "pitfalls": [
+    "两两独立不推出相互独立；互斥也不同于独立"
+  ],
+  "example": {
+    "prompt": "自编例题：两次独立抛公平硬币，A 为首枚正面，B 为两枚相同，判断独立。",
+    "solution": "P(A)=P(B)=1/2，交集仅 HH，概率 1/4，等于乘积，所以独立。"
+  },
+  "relatedIds": [
+    "pr-event-bayes",
+    "pr-event-conditional"
+  ],
+  "topicIds": [
+    "pr-conditional-topic"
+  ],
+  "status": "reviewed"
+}

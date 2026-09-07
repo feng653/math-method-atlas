@@ -1,0 +1,31 @@
+{
+  "id": "la-system-parameter",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "含参数系统分支消元",
+  "summary": "先分离可能使主元为零的参数，再分别判秩。",
+  "conditions": [
+    "参数可能使消元主元消失"
+  ],
+  "steps": [
+    "找潜在零主元因子",
+    "在非零分支消元",
+    "将特殊参数代回原系统逐一计算"
+  ],
+  "formula": "\\text{分支依据：主元因子}=0\\ \\text{或}\\ne0",
+  "pitfalls": [
+    "约掉参数可能丢失无解或无穷多解分支"
+  ],
+  "example": {
+    "prompt": "自编例题：x+y=1，x+ty=2，讨论参数 t。",
+    "solution": "相减得 (t−1)y=1。t≠1 时 y=1/(t−1)，x=(t−2)/(t−1)；t=1 时无解。"
+  },
+  "relatedIds": [
+    "la-system-consistency",
+    "la-system-cramer"
+  ],
+  "topicIds": [
+    "la-system-solvability"
+  ],
+  "status": "reviewed"
+}

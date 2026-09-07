@@ -1,0 +1,32 @@
+{
+  "id": "la-matrix-inverse",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "增广矩阵求逆",
+  "summary": "对 [A|I] 做行变换得到 [I|A⁻¹]。",
+  "conditions": [
+    "A 是可逆方阵",
+    "仅对整个增广矩阵同步做行变换"
+  ],
+  "steps": [
+    "构造完整增广矩阵 [A|I]",
+    "选主元并同步行消元至左块为 I",
+    "读取右块并与原矩阵相乘验证"
+  ],
+  "formula": "[A\\mid I]\\longrightarrow[I\\mid A^{-1}]",
+  "pitfalls": [
+    "遇到零主元先换行；不能未经判断就除以参数"
+  ],
+  "example": {
+    "prompt": "自编例题：求 [[1,2],[0,1]] 的逆。",
+    "solution": "第一行减第二行的 2 倍，右块得 [[1,−2],[0,1]]；乘原矩阵得到 I。"
+  },
+  "relatedIds": [
+    "la-matrix-adjugate",
+    "la-matrix-elementary"
+  ],
+  "topicIds": [
+    "la-inverse-topic"
+  ],
+  "status": "reviewed"
+}

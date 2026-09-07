@@ -1,0 +1,31 @@
+{
+  "id": "pr-moment-covariance",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "混合矩求协方差",
+  "summary": "计算 E(XY) 与两个均值，判断线性共同变化。",
+  "conditions": [
+    "X,Y 二阶矩有限"
+  ],
+  "steps": [
+    "求 EX、EY",
+    "用联合分布计算 E(XY)",
+    "相减得到协方差"
+  ],
+  "formula": "\\operatorname{Cov}(X,Y)=E(XY)-EX\\,EY",
+  "pitfalls": [
+    "零协方差一般不能推出独立"
+  ],
+  "example": {
+    "prompt": "自编例题：X 在 (−1,1) 均匀，Y=X²，求 Cov(X,Y)。",
+    "solution": "EX=EX³=0，因此协方差为 0，但 Y 完全由 X 决定，并不独立。"
+  },
+  "relatedIds": [
+    "pr-moment-correlation",
+    "pr-moment-variance"
+  ],
+  "topicIds": [
+    "pr-variance-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "pr-moment-total-expectation",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "条件期望的塔式公式",
+  "summary": "先在条件层内求均值，再对条件变量平均。",
+  "conditions": [
+    "E|X|<∞",
+    "条件分布已知或易求"
+  ],
+  "steps": [
+    "计算 m(y)=E(X|Y=y)",
+    "把 m(Y) 视为 Y 的函数",
+    "对 Y 的边缘分布求期望"
+  ],
+  "formula": "EX=E[E(X\\mid Y)]",
+  "pitfalls": [
+    "对条件变量平均时必须使用其边缘分布"
+  ],
+  "example": {
+    "prompt": "自编例题：Y 取 0、1，各概率 1/2；E(X|Y=0)=2，E(X|Y=1)=6，求 EX。",
+    "solution": "EX=2×1/2+6×1/2=4。"
+  },
+  "relatedIds": [
+    "pr-moment-expectation",
+    "pr-moment-correlation"
+  ],
+  "topicIds": [
+    "pr-expectation-topic"
+  ],
+  "status": "reviewed"
+}

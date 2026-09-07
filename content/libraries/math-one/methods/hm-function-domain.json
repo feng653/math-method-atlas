@@ -1,0 +1,31 @@
+{
+  "id": "hm-function-domain",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "定义域、复合与反函数",
+  "summary": "先检查表达式合法性，再处理复合或反解。",
+  "conditions": [
+    "给定实函数表达式；反函数需在指定区间单调。"
+  ],
+  "steps": [
+    "分别列分母、偶次根式、对数限制并求交集。",
+    "复合函数要求内层取值落在外层定义域。",
+    "求反函数时解出自变量并交换符号，注明定义域和值域。"
+  ],
+  "formula": "f^{-1}(f(x))=x",
+  "pitfalls": [
+    "反函数不是倒数；反解前须限定单调区间。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 f(x)=ln(x-1) 的反函数及其定义域。",
+    "solution": "原函数定义域为(1,∞)，值域为R。由y=ln(x-1)得x=1+e^y，故反函数为1+e^x，定义域R。"
+  },
+  "relatedIds": [
+    "hm-chain-log-differentiation",
+    "hm-continuity-piecewise"
+  ],
+  "topicIds": [
+    "limits-function-domain"
+  ],
+  "status": "reviewed"
+}

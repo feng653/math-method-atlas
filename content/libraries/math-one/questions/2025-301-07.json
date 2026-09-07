@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "7",
+  "summary": "乘积秩",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 6
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-rank-inequalities",
+      "verification": "verified",
+      "note": "原题第6页第7题：串联秩下界。"
+    }
+  ]
+}

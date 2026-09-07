@@ -1,0 +1,31 @@
+{
+  "id": "pr-joint-convolution",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "卷积求独立和的密度",
+  "summary": "用支持区间交集确定卷积积分范围。",
+  "conditions": [
+    "X,Y 独立且有密度"
+  ],
+  "steps": [
+    "写出 fX(x)fY(z−x)",
+    "求两密度同时非零的 x 区间",
+    "分 z 的区间积分"
+  ],
+  "formula": "f_{X+Y}(z)=\\int_{-\\infty}^{\\infty}f_X(x)f_Y(z-x)\\,dx",
+  "pitfalls": [
+    "不独立时应使用联合密度积分"
+  ],
+  "example": {
+    "prompt": "自编例题：两个独立 (0,1) 均匀变量之和的密度。",
+    "solution": "积分区间为 max(0,z−1)<x<min(1,z)，故 0<z<1 为 z，1≤z<2 为 2−z，其他为 0。"
+  },
+  "relatedIds": [
+    "pr-joint-max-min",
+    "pr-joint-transform"
+  ],
+  "topicIds": [
+    "pr-joint-function-topic"
+  ],
+  "status": "reviewed"
+}

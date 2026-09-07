@@ -1,0 +1,31 @@
+{
+  "id": "hm-quadric-surfaces",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "二次曲面与截面识别",
+  "summary": "配方化标准式，用截面验证曲面类型。",
+  "conditions": [
+    "实二次曲面；若有交叉项可先正交变换。"
+  ],
+  "steps": [
+    "平移配方并统一常数。",
+    "按平方项符号和缺失变量识别类型。",
+    "用坐标平面截面确认方向与范围。"
+  ],
+  "formula": "\\frac{x^2}{a^2}+\\frac{y^2}{b^2}-\\frac{z^2}{c^2}=1",
+  "pitfalls": [
+    "同为正负混合，常数符号决定单叶/双叶；缺失变量可能是柱面。"
+  ],
+  "example": {
+    "prompt": "自编例题：识别x²+y²-z²=1并求z=0截面。",
+    "solution": "两个正平方一个负平方且右端1，是绕z轴单叶双曲面；z=0截面为单位圆。"
+  },
+  "relatedIds": [
+    "hm-space-intersections",
+    "hm-double-polar"
+  ],
+  "topicIds": [
+    "geometry-quadric-surfaces"
+  ],
+  "status": "reviewed"
+}

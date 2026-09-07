@@ -1,0 +1,31 @@
+{
+  "id": "pr-dist-cdf",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "分布函数取区间概率",
+  "summary": "注意跳点、左极限与区间端点是否包含。",
+  "conditions": [
+    "F(x)=P(X≤x) 右连续"
+  ],
+  "steps": [
+    "把区间写成累计概率之差",
+    "含左端点时使用左极限",
+    "单点概率由跳跃高度求出"
+  ],
+  "formula": "P(a<X\\le b)=F(b)-F(a),\\quad P(X=a)=F(a)-F(a^-)",
+  "pitfalls": [
+    "离散变量的端点概率不能忽略"
+  ],
+  "example": {
+    "prompt": "自编例题：P(X=0)=0.3，P(X=1)=0.7，求 P(0≤X≤1)。",
+    "solution": "F(1)−F(0−)=1−0=1；若误用 F(1)−F(0) 则漏掉 X=0。"
+  },
+  "relatedIds": [
+    "pr-dist-classic",
+    "pr-dist-density"
+  ],
+  "topicIds": [
+    "pr-cdf-topic"
+  ],
+  "status": "reviewed"
+}

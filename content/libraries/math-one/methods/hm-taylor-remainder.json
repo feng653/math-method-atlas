@@ -1,0 +1,31 @@
+{
+  "id": "hm-taylor-remainder",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "泰勒公式与余项估计",
+  "summary": "用有界高阶导数控制近似误差。",
+  "conditions": [
+    "f 在包含展开点 a 和目标点 x 的闭区间具有连续到 n 阶的导数，在开区间具有 n+1 阶导数，并有统一界 |f^(n+1)|≤M。"
+  ],
+  "steps": [
+    "选择展开点与截断阶数。",
+    "求下一阶导数在区间的上界。",
+    "将距离幂代入余项界。"
+  ],
+  "formula": "|R_n(x)|\\le\\frac{M|x-a|^{n+1}}{(n+1)!}",
+  "pitfalls": [
+    "Peano余项适合局部阶数，不直接给固定数值误差上界。"
+  ],
+  "example": {
+    "prompt": "自编例题：用1+x近似e^x，0≤x≤0.1时误差如何界定？",
+    "solution": "当 0<x≤0.1，e^x=1+x+e^ξx²/2，其中 0<ξ<x；误差非负且不超过 e^{0.1}/200。x=0 时误差恰为 0，也满足同一界。"
+  },
+  "relatedIds": [
+    "hm-taylor-limit",
+    "hm-taylor-expansion"
+  ],
+  "topicIds": [
+    "derivatives-taylor-remainder"
+  ],
+  "status": "reviewed"
+}

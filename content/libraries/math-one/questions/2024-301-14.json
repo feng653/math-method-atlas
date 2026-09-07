@@ -1,0 +1,18 @@
+{
+  "id": "2024-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "14",
+  "summary": "方程变量互换",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-separable",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 3 页第 14 题：原导数在初值附近非零，先局部交换因变量与自变量，再把两者之和设为新变量，得到可分离方程。"
+    }
+  ]
+}

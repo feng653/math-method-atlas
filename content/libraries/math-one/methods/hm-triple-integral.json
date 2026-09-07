@@ -1,0 +1,32 @@
+{
+  "id": "hm-triple-integral",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "三重积分与柱面球面坐标",
+  "summary": "按区域对称性选择坐标并分层积分。",
+  "conditions": [
+    "被积函数可积，立体边界已明确；坐标变换在内部适用，坐标退化集合按换元定理处理。",
+    "球坐标约定 x=ρ sinφ cosθ，y=ρ sinφ sinθ，z=ρ cosφ；ρ≥0、0≤φ≤π，θ 为方位角。"
+  ],
+  "steps": [
+    "选直角、柱面或球面坐标。",
+    "从区域求各变量范围。",
+    "乘相应雅可比并逐层积分。"
+  ],
+  "formula": "dV=r\\,dr\\,d\\theta\\,dz=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta",
+  "pitfalls": [
+    "球面极角与方位角定义需一致，不能漏sinφ。"
+  ],
+  "example": {
+    "prompt": "自编例题：求半径a>0的球体积。",
+    "solution": "球坐标ρ∈[0,a]、φ∈[0,π]、θ∈[0,2π]，积为(a³/3)·2·2π=4πa³/3。"
+  },
+  "relatedIds": [
+    "hm-double-cartesian",
+    "hm-double-polar"
+  ],
+  "topicIds": [
+    "multiple-integrals-triple-integral"
+  ],
+  "status": "reviewed"
+}

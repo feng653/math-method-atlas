@@ -1,0 +1,31 @@
+{
+  "id": "hm-ode-separable",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "可分离变量微分方程",
+  "summary": "把变量分到两侧并积分，同时保留常值解。",
+  "conditions": [
+    "方程可写y'=f(x)g(y)。"
+  ],
+  "steps": [
+    "先检查g(y)=0产生的常值解。",
+    "在g(y)≠0区间分离dy/g(y)=f(x)dx。",
+    "积分并用初值确定常数与有效区间。"
+  ],
+  "formula": "\\int\\frac{dy}{g(y)}=\\int f(x)dx+C",
+  "pitfalls": [
+    "直接除g(y)会丢掉平衡解；隐式解须保留定义域。"
+  ],
+  "example": {
+    "prompt": "自编例题：解y'=xy，y(0)=2。",
+    "solution": "分离得ln|y|=x²/2+C，结合初值y=2e^{x²/2}。"
+  },
+  "relatedIds": [
+    "hm-ode-homogeneous",
+    "hm-ode-reduction"
+  ],
+  "topicIds": [
+    "ode-ode-separable"
+  ],
+  "status": "reviewed"
+}

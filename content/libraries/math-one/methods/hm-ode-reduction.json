@@ -1,0 +1,32 @@
+{
+  "id": "hm-ode-reduction",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "可降阶高阶方程",
+  "summary": "根据缺失y或缺失x选择降阶变量。",
+  "conditions": [
+    "方程形如 y″=f(x,y′) 或 y″=f(y,y′)。",
+    "缺 x 时以 y 为自变量的换元在 y′≠0 的局部区间使用；转折点和常值解需另行检验或拼接。"
+  ],
+  "steps": [
+    "缺y设p=y'并对x求导。",
+    "缺x设p=p(y)，用y''=p dp/dy。",
+    "解一阶方程后再积分恢复y。"
+  ],
+  "formula": "y''=p\\frac{dp}{dy}\\quad(p=y',\\text{以}y\\text{为变量})",
+  "pitfalls": [
+    "p=0的常值解可能在除法时丢失。"
+  ],
+  "example": {
+    "prompt": "自编例题：解y''=2x。",
+    "solution": "先积分y'=x²+C₁，再积分y=x³/3+C₁x+C₂。"
+  },
+  "relatedIds": [
+    "hm-ode-separable",
+    "hm-ode-linear-first"
+  ],
+  "topicIds": [
+    "ode-ode-reduction"
+  ],
+  "status": "reviewed"
+}

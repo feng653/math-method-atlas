@@ -1,0 +1,32 @@
+{
+  "id": "pr-joint-marginal",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "联合密度积分求边缘",
+  "summary": "将支持域投影到坐标轴，按截面确定积分界。",
+  "conditions": [
+    "给定合法联合密度",
+    "支持域可能不是矩形"
+  ],
+  "steps": [
+    "画出或写出支持域不等式",
+    "固定目标变量，确定另一变量范围",
+    "积分消去另一变量"
+  ],
+  "formula": "f_X(x)=\\int_{-\\infty}^{\\infty}f_{X,Y}(x,y)\\,dy",
+  "pitfalls": [
+    "积分界随固定变量变化时不能写成常数"
+  ],
+  "example": {
+    "prompt": "自编例题：联合密度在 0<y<x<1 内为 2，求 fX。",
+    "solution": "固定 0<x<1，y 从 0 到 x，fX(x)=2x；其他处为 0。"
+  },
+  "relatedIds": [
+    "pr-joint-conditional",
+    "pr-joint-convolution"
+  ],
+  "topicIds": [
+    "pr-joint-marginal-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "la-rank-inequalities",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "乘积秩不等式与零乘积",
+  "summary": "利用像空间、核空间维数约束矩阵乘积。",
+  "conditions": [
+    "A 为 m×n，B 为 n×p"
+  ],
+  "steps": [
+    "确认相乘的公共内维 n",
+    "用乘积秩上下界",
+    "若 AB=0，则 Im(B) 包含于 ker(A)"
+  ],
+  "formula": "r(A)+r(B)-n\\le r(AB)\\le\\min(r(A),r(B))",
+  "pitfalls": [
+    "AB=0 不推出 A=0 或 B=0"
+  ],
+  "example": {
+    "prompt": "自编例题：A、B 均为三阶矩阵，AB=0 且 r(A)=2，B 的秩最大多少？",
+    "solution": "由 r(A)+r(B)≤3 得 r(B)≤1；A=diag(1,1,0)、B=diag(0,0,1) 达到 1。"
+  },
+  "relatedIds": [
+    "la-matrix-rank",
+    "la-matrix-adjugate"
+  ],
+  "topicIds": [
+    "la-rank-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-derivative-definition",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "导数定义与分段点可导性",
+  "summary": "在拼接点用差商判断导数。",
+  "conditions": [
+    "目标点函数有定义；左右差商均可考察。"
+  ],
+  "steps": [
+    "先核对连续性。",
+    "分别计算左右差商的极限。",
+    "两者有限且相等才可导。"
+  ],
+  "formula": "f'(a)=\\lim_{h\\to0}\\frac{f(a+h)-f(a)}h",
+  "pitfalls": [
+    "分段公式的导数极限与点处差商不可无条件互换。"
+  ],
+  "example": {
+    "prompt": "自编例题：判断f(x)=x²sin(1/x)(x≠0)，f(0)=0在0处可导性。",
+    "solution": "差商为h sin(1/h)，由绝对值≤|h|知趋0，故f'(0)=0。"
+  },
+  "relatedIds": [
+    "hm-continuity-piecewise",
+    "hm-differential-approximation"
+  ],
+  "topicIds": [
+    "derivatives-derivative-definition"
+  ],
+  "status": "reviewed"
+}

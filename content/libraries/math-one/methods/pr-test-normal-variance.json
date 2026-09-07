@@ -1,0 +1,33 @@
+{
+  "id": "pr-test-normal-variance",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "单正态总体方差卡方检验",
+  "summary": "在原假设方差下标准化样本方差。",
+  "conditions": [
+    "独立同分布正态样本，n≥2，假设方差 σ₀²>0",
+    "S² 以样本均值为中心，自由度 n−1",
+    "χ²_(ν,p) 表示左侧累计概率 p 的卡方分位数"
+  ],
+  "steps": [
+    "写 H₀:σ²=σ₀² 及备择，先确定显著性水平 α",
+    "计算 U=(n−1)S²/σ₀²，自由度 ν=n−1",
+    "右侧 U>χ²_(ν,1−α)，左侧 U<χ²_(ν,α)，双侧 U<χ²_(ν,α/2) 或 U>χ²_(ν,1−α/2) 时拒绝"
+  ],
+  "formula": "U=\\frac{(n-1)S^2}{\\sigma_0^2}\\sim\\chi^2_{n-1}\\quad(H_0)",
+  "pitfalls": [
+    "卡方分布不对称，双侧临界值不是正负同一个数"
+  ],
+  "example": {
+    "prompt": "自编例题：n=10，检验 σ²=4 对 σ²>4，观测 S²=8，写判断式。",
+    "solution": "U=9×8/4=18；若 18>χ²9,1−α 则拒绝 H0，否则未拒绝。"
+  },
+  "relatedIds": [
+    "pr-test-two-variances",
+    "pr-test-errors"
+  ],
+  "topicIds": [
+    "pr-variance-testing-topic"
+  ],
+  "status": "reviewed"
+}

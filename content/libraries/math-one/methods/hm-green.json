@@ -1,0 +1,32 @@
+{
+  "id": "hm-green",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "格林公式",
+  "summary": "将平面闭曲线环流转为区域二重积分。",
+  "conditions": [
+    "D 为有界平面区域，边界为有限条分段光滑简单闭曲线；外边界逆时针、孔洞边界顺时针。",
+    "P、Q 在包含区域及边界的开邻域具有连续一阶偏导。"
+  ],
+  "steps": [
+    "检查曲线闭合和方向。",
+    "计算Q_x-P_y。",
+    "对区域积分，非闭合路径可补线并扣除。"
+  ],
+  "formula": "\\oint_{\\partial D}Pdx+Qdy=\\iint_D(Q_x-P_y)dA",
+  "pitfalls": [
+    "场在内部奇点处不光滑时不能直接跨过奇点应用。"
+  ],
+  "example": {
+    "prompt": "自编例题：逆时针单位圆求∮(-y dx+x dy)。",
+    "solution": "Q_x-P_y=1-(-1)=2，单位圆面积π，积分2π。"
+  },
+  "relatedIds": [
+    "hm-line-first-kind",
+    "hm-line-second-kind"
+  ],
+  "topicIds": [
+    "multiple-integrals-green"
+  ],
+  "status": "reviewed"
+}

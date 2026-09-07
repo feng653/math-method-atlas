@@ -1,0 +1,31 @@
+{
+  "id": "hm-surface-integrals",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "第一类曲面积分与有向通量",
+  "summary": "区分面积元与带方向的法向面积元。",
+  "conditions": [
+    "曲面分片光滑，采用正则参数化，积分函数连续；通量需可定向且指定单位法向。"
+  ],
+  "steps": [
+    "参数化曲面或写 z=g(x,y)，确保覆盖次数正确。",
+    "第一类使用参数叉积模；第二类选择符合指定方向的叉积，图形曲面的 (-g_x,-g_y,1) 对应向上法向。",
+    "投影到参数域积分；向下法向取相反向量。"
+  ],
+  "formula": "dS=\\sqrt{1+g_x^2+g_y^2}\\,dxdy,\\quad n\\,dS=(-g_x,-g_y,1)dxdy\\quad\\text{（向上）}",
+  "pitfalls": [
+    "第一类无方向，第二类变法向就变号；投影可能需分片。"
+  ],
+  "example": {
+    "prompt": "自编例题：曲面z=x+y、0≤x,y≤1的面积。",
+    "solution": "g_x=g_y=1，dS=√3 dxdy，参数域面积1，曲面面积√3。"
+  },
+  "relatedIds": [
+    "hm-gauss",
+    "hm-stokes"
+  ],
+  "topicIds": [
+    "multiple-integrals-surface-integrals"
+  ],
+  "status": "reviewed"
+}

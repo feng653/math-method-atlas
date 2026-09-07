@@ -1,0 +1,31 @@
+{
+  "id": "hm-direction-gradient",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "方向导数与梯度",
+  "summary": "把单位方向与梯度作点积。",
+  "conditions": [
+    "函数在目标点可微；方向需归一化。"
+  ],
+  "steps": [
+    "求梯度并代目标点。",
+    "把给定向量除以模。",
+    "点积求方向导数，梯度模给最大值。"
+  ],
+  "formula": "D_e f=\\nabla f\\cdot e,\\quad |e|=1",
+  "pitfalls": [
+    "未归一化会将方向导数乘上向量长度；仅偏导存在不保证点积公式。"
+  ],
+  "example": {
+    "prompt": "自编例题：f=x²+y²在(1,2)沿(3,4)的方向导数。",
+    "solution": "梯度(2,4)，单位方向(3/5,4/5)，点积为22/5。"
+  },
+  "relatedIds": [
+    "hm-partial-total-differential",
+    "hm-tangent-plane"
+  ],
+  "topicIds": [
+    "multivariable-direction-gradient"
+  ],
+  "status": "reviewed"
+}

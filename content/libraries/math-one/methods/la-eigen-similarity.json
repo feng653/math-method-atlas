@@ -1,0 +1,32 @@
+{
+  "id": "la-eigen-similarity",
+  "libraryId": "math-one",
+  "chapterId": "la-eigen",
+  "title": "相似不变量排除与构造",
+  "summary": "用迹、行列式、秩和特征空间维数排除相似，再尝试构造基变换。",
+  "conditions": [
+    "比较同阶方阵",
+    "不变量相同只是必要条件，需进一步证明"
+  ],
+  "steps": [
+    "比较特征多项式等不变量",
+    "不同即可否定",
+    "若均可对角化且同特征根重数，可通过共同对角形构造变换"
+  ],
+  "formula": "B=P^{-1}AP\\Rightarrow\\operatorname{tr}A=\\operatorname{tr}B,\\ \\det A=\\det B",
+  "pitfalls": [
+    "迹和行列式相同远不足以推出相似"
+  ],
+  "example": {
+    "prompt": "自编例题：I2 与 [[1,1],[0,1]] 相似吗？",
+    "solution": "不相似：I2−I=0 的秩是 0，另一矩阵减 I 的秩是 1，而相似保持该秩。"
+  },
+  "relatedIds": [
+    "la-eigen-diagonalization",
+    "la-eigen-characteristic"
+  ],
+  "topicIds": [
+    "la-diagonalization-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "9",
+  "summary": "泊松近似",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 7
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-classic",
+      "verification": "verified",
+      "note": "原题第7页第9题：识别两种计数模型。"
+    }
+  ]
+}

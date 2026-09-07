@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "3",
+  "summary": "平均极限",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 3
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-lhopital",
+      "verification": "verified",
+      "note": "原题第3页第3题：积分平均作商求导。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2024-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "2",
+  "summary": "通量投影",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 1
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-surface-integrals",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 1 页第 2 题：图形曲面的有向面积元投影须使用向上法向。"
+    }
+  ]
+}

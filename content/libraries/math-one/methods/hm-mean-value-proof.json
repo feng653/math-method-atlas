@@ -1,0 +1,31 @@
+{
+  "id": "hm-mean-value-proof",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "中值定理与辅助函数证明",
+  "summary": "通过端点差或构造等值端点得到内点导数关系。",
+  "conditions": [
+    "函数闭区间连续、开区间可导；罗尔还需端点值相等。"
+  ],
+  "steps": [
+    "把目标等式改写成某辅助函数导数为0或割线斜率。",
+    "检查定理条件。",
+    "使用罗尔、拉格朗日或柯西中值定理。"
+  ],
+  "formula": "f(b)-f(a)=f'(\\xi)(b-a)",
+  "pitfalls": [
+    "存在的中值点通常依赖函数与区间，多个式子不能默认同一ξ。"
+  ],
+  "example": {
+    "prompt": "自编例题：证明0<x时ln(1+x)<x。",
+    "solution": "对ln t在[1,1+x]用拉格朗日定理，ln(1+x)=x/ξ，其中1<ξ<1+x，故小于x。"
+  },
+  "relatedIds": [
+    "hm-monotonic-extrema",
+    "hm-concavity-asymptote"
+  ],
+  "topicIds": [
+    "derivatives-mean-value-proof"
+  ],
+  "status": "reviewed"
+}

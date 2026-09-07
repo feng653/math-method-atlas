@@ -1,0 +1,32 @@
+{
+  "id": "la-matrix-rank",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "阶梯形求秩",
+  "summary": "通过行变换统计非零行或主元。",
+  "conditions": [
+    "适用于任意矩形矩阵",
+    "行变换必须可逆"
+  ],
+  "steps": [
+    "化为行阶梯形",
+    "记录非零主元行",
+    "主元数即秩"
+  ],
+  "formula": "r(A)=\\text{主元个数}",
+  "pitfalls": [
+    "原矩阵的非零行数不是一般意义的秩"
+  ],
+  "example": {
+    "prompt": "自编例题：求 [[1,2,3],[2,4,6],[0,1,1]] 的秩。",
+    "solution": "第二行减第一行 2 倍为零；第一、第三行独立，因此秩为 2。"
+  },
+  "relatedIds": [
+    "la-rank-inequalities",
+    "la-matrix-adjugate"
+  ],
+  "topicIds": [
+    "la-rank-topic"
+  ],
+  "status": "reviewed"
+}

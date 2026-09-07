@@ -1,0 +1,32 @@
+{
+  "id": "la-vector-coordinate",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "基矩阵解坐标与过渡",
+  "summary": "把基按列排列，解线性方程获得坐标。",
+  "conditions": [
+    "B、D 的列分别为同一有限维子空间的一组基",
+    "一般子空间的基矩阵可以是长方阵，只有方阵基矩阵才可直接求逆"
+  ],
+  "steps": [
+    "将基按列组成 B，并解 Bc=v 求该基坐标",
+    "若换到另一组基 D，逐列解 BC=D 求可逆换基矩阵 C",
+    "使用 [v]_B=C[v]_D；只有 B 为可逆方阵时可直接写 C=B⁻¹D"
+  ],
+  "formula": "v=B[v]_B,\\quad BC=D\\Rightarrow[v]_B=C[v]_D",
+  "pitfalls": [
+    "换基矩阵的方向取决于坐标等式，不能只背乘法次序"
+  ],
+  "example": {
+    "prompt": "自编例题：在基 (1,1)、(1,−1) 下求 (3,1) 的坐标。",
+    "solution": "c1+c2=3，c1−c2=1，得坐标 (2,1)。"
+  },
+  "relatedIds": [
+    "la-vector-basis",
+    "la-vector-dependence"
+  ],
+  "topicIds": [
+    "la-vector-basis-topic"
+  ],
+  "status": "reviewed"
+}

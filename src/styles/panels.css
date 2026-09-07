@@ -1,0 +1,46 @@
+.glass-panel { background: #fffffff7; border: 1px solid #e0e6dc; border-radius: 18px; box-shadow: 0 12px 50px #2f49300d; }
+.detail-panel, .navigation-panel { position: absolute; top: 91px; bottom: 22px; z-index: 20; display: flex; flex-direction: column; overflow: hidden; animation: panel-enter 230ms ease-out; }
+.detail-panel { right: 22px; width: 405px; }
+.navigation-panel { left: 22px; width: 325px; }
+.panel-header { display: flex; align-items: center; justify-content: space-between; padding: 5px 12px 5px 25px; border-bottom: 1px solid #edf0e9; flex-shrink: 0; }
+.panel-header button { width: 44px; border-radius: 8px; }
+.detail-scroll { overflow-y: auto; overscroll-behavior: contain; padding: 26px; scrollbar-width: thin; scrollbar-color: #d8e1d3 transparent; }
+.detail-scroll h2 { margin-top: 29px; margin-bottom: 13px; }
+.detail-scroll > h2:first-child { margin-top: 0; }
+.detail-scroll p, .detail-scroll li { font-size: 13px; line-height: 1.9; }
+.detail-scroll ul, .detail-scroll ol { padding-left: 21px; margin-top: 0; }
+.detail-scroll li { margin-bottom: 8px; padding-left: 3px; }
+.detail-scroll li::marker { color: #628a72; }
+.method-summary { color: #64786b; }
+.status-tag { display: inline-block; padding: 4px 8px; font-size: 10px; color: #66816d; background: #edf3e9; border-radius: 4px; }
+.formula { overflow-x: auto; margin: 22px 0; background: #f7f9f3; border-radius: 10px; padding: 14px 8px; font-size: 13px; }
+.formula .katex-display { margin: 0.4em 0; }
+.example { background: #f5f7f1; border-left: 2px solid #a9bb99; padding: 18px; margin-top: 25px; border-radius: 0 9px 9px 0; }
+.example p { margin: 12px 0; }
+summary { cursor: pointer; min-height: 38px; font-size: 12px; line-height: 1.6; padding: 9px 0; color: #56755f; }
+.related-methods { display: flex; flex-wrap: wrap; gap: 6px; }
+.related-methods button { min-height: 36px; padding: 6px 10px; border: 1px solid #e3e9df; border-radius: 7px; font-size: 11px; display: flex; align-items: center; gap: 5px; text-align: left; }
+.evidence-link { display: flex; justify-content: space-between; gap: 10px; padding: 14px 0; border-top: 1px solid var(--line); font-size: 12px; }
+.evidence-link small { display: block; margin-top: 7px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.search-results { margin-top: 8px; max-height: 65vh; overflow-y: auto; border-radius: 12px; padding: 8px; }
+.search-results p { font-size: 11px; color: var(--muted); padding: 6px 8px; margin: 0; }
+.search-results button { display: block; width: 100%; text-align: left; border-radius: 7px; padding: 10px; }
+.search-results strong { display: block; font-size: 12px; font-weight: 500; }
+.search-results small { display: block; font-size: 10px; color: #70806f; margin-top: 5px; line-height: 1.6; }
+.chapter-item { border-bottom: 1px solid #e8ede3; padding: 6px 0; }
+.chapter-item summary { font-size: 13px; }
+.chapter-item small { display: block; margin-top: 2px; font-size: 10px; color: #748571; }
+.focus-chapter { display: flex; align-items: center; font-size: 11px; color: #0f766e; width: 100%; padding: 0 8px; gap: 5px; }
+.method-item { display: block; width: 100%; text-align: left; padding: 8px 12px; font-size: 12px; border-radius: 6px; }
+.field-label { display: block; font-size: 11px; margin: 15px 0; color: #657963; }
+.field-label select { display: block; width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #dfe7d8; background: #fafcf7; border-radius: 8px; color: #354e38; font-size: 12px; }
+.paper { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.paper a { font-size: 12px; }
+.question-card { margin: 18px 0; padding: 14px; border: 1px solid #e5eadd; border-radius: 10px; }
+.question-card p { font-size: 12px; margin: 10px 0; }
+@keyframes panel-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 1100px) { .detail-panel { width: 365px; right: 12px; } }
+@media (max-width: 700px) {
+  .detail-panel, .navigation-panel { top: 140px; left: 10px; right: 10px; width: auto; bottom: max(10px, env(safe-area-inset-bottom)); border-radius: 16px; }
+  .detail-scroll { padding: 22px; }
+}

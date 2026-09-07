@@ -1,0 +1,31 @@
+{
+  "id": "hm-cauchy-mean-value",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "柯西中值定理与导数比",
+  "summary": "用两个函数的增量比得到同一中值点的导数比。",
+  "conditions": [
+    "两函数闭区间连续、开区间可导；所用分母导数不为零。"
+  ],
+  "steps": [
+    "将需要比较的两个增量指定为f、g。",
+    "检查g'不为零并应用柯西中值定理。",
+    "对同一ξ处的导数比做估计。"
+  ],
+  "formula": "\\frac{f(b)-f(a)}{g(b)-g(a)}=\\frac{f'(\\xi)}{g'(\\xi)}",
+  "pitfalls": [
+    "分别用两次拉格朗日定理得到的ξ通常不同，不能直接相除。"
+  ],
+  "example": {
+    "prompt": "自编例题：对0<a<b，证明2a/3<(b²-a²)/(b³-a³)·ab<2b/3。",
+    "solution": "取f(t)=t²、g(t)=t³，商为2/(3ξ)，a<ξ<b，乘ab得2a/3<2ab/(3ξ)<2b/3。"
+  },
+  "relatedIds": [
+    "hm-mean-value-proof",
+    "hm-lhopital"
+  ],
+  "topicIds": [
+    "derivatives-cauchy-mean-value"
+  ],
+  "status": "reviewed"
+}

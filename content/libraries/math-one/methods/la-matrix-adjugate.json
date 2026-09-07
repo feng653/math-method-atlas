@@ -1,0 +1,31 @@
+{
+  "id": "la-matrix-adjugate",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "伴随矩阵恒等式",
+  "summary": "使用代数余子式转置得到伴随矩阵，分析可逆性与秩。",
+  "conditions": [
+    "A 为 n 阶方阵，讨论伴随矩阵秩时 n≥2"
+  ],
+  "steps": [
+    "计算代数余子式并转置",
+    "使用 AA*=det(A)I 验证",
+    "n≥2 时，r(A)=n 则 r(A*)=n；r(A)=n−1 则 r(A*)=1；r(A)≤n−2 则 A*=0"
+  ],
+  "formula": "AA^*=A^*A=(\\det A)I,\\quad A^{-1}=A^*/\\det A\\ (\\det A\\ne0)",
+  "pitfalls": [
+    "伴随矩阵是代数余子式矩阵的转置"
+  ],
+  "example": {
+    "prompt": "自编例题：求 [[1,2],[3,4]] 的伴随矩阵。",
+    "solution": "伴随矩阵为 [[4,−2],[−3,1]]；与原矩阵相乘得 −2I。"
+  },
+  "relatedIds": [
+    "la-matrix-elementary",
+    "la-matrix-inverse"
+  ],
+  "topicIds": [
+    "la-inverse-topic"
+  ],
+  "status": "reviewed"
+}

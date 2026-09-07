@@ -1,0 +1,32 @@
+{
+  "id": "pr-dist-exponential",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "指数分布尾概率与无记忆性",
+  "summary": "利用生存函数计算等待时间的条件概率。",
+  "conditions": [
+    "X 服从速率 λ>0 的指数分布",
+    "s,t≥0"
+  ],
+  "steps": [
+    "确认参数为速率而非均值",
+    "尾概率使用 exp(−λt)",
+    "条件等待时间用无记忆性消去已经等待的时间"
+  ],
+  "formula": "P(X>t)=e^{-\\lambda t},\\quad P(X>s+t\\mid X>s)=e^{-\\lambda t}",
+  "pitfalls": [
+    "无记忆性不是所有连续分布都具备"
+  ],
+  "example": {
+    "prompt": "自编例题：等待时间速率为 2，已等 1 个时间单位，再等超过 0.5 的概率。",
+    "solution": "条件概率等于 P(X>0.5)=e⁻¹。"
+  },
+  "relatedIds": [
+    "pr-dist-density",
+    "pr-dist-normal"
+  ],
+  "topicIds": [
+    "pr-continuous-topic"
+  ],
+  "status": "reviewed"
+}

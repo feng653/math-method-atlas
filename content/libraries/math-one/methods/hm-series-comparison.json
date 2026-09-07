@@ -1,0 +1,32 @@
+{
+  "id": "hm-series-comparison",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "正项级数比较与极限比较",
+  "summary": "与p级数或几何级数比较敛散。",
+  "conditions": [
+    "足够大n时各项非负；极限比较基准项为正。"
+  ],
+  "steps": [
+    "选取同阶的熟知级数。",
+    "算比值极限或建立大小关系。",
+    "根据比较方向得出结论。"
+  ],
+  "formula": "a_n/b_n\\to c\\in(0,\\infty)\\Rightarrow\\sum a_n,\\sum b_n\\text{同敛散}",
+  "pitfalls": [
+    "较小级数发散可推出较大者发散，反向不能推。"
+  ],
+  "example": {
+    "prompt": "自编例题：判断Σ1/(n²+n)敛散。",
+    "solution": "与1/n²比值n²/(n²+n)→1，p=2的级数收敛，所以原级数收敛。"
+  },
+  "relatedIds": [
+    "hm-improper-integral",
+    "hm-series-basic",
+    "hm-ratio-root-test"
+  ],
+  "topicIds": [
+    "series-series-comparison"
+  ],
+  "status": "reviewed"
+}

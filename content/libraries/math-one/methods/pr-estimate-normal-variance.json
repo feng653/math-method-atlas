@@ -1,0 +1,32 @@
+{
+  "id": "pr-estimate-normal-variance",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "卡方枢轴反解方差区间",
+  "summary": "反解时卡方分位数的大小顺序与端点倒置。",
+  "conditions": [
+    "独立正态样本，n≥2，均值未知",
+    "χ²ν,p 表示左侧概率 p 的分位数"
+  ],
+  "steps": [
+    "写 (n−1)S²/σ² 的分布",
+    "夹在 α/2 和 1−α/2 分位数间",
+    "取倒数反解 σ²"
+  ],
+  "formula": "\\left[\\frac{(n-1)S^2}{\\chi^2_{n-1,1-\\alpha/2}},\\frac{(n-1)S^2}{\\chi^2_{n-1,\\alpha/2}}\\right]",
+  "pitfalls": [
+    "下端点的分母是较大的分位数"
+  ],
+  "example": {
+    "prompt": "自编例题：n=6，S²=2，写 95% 方差置信区间。",
+    "solution": "自由度 5，区间 [10/χ²5,0.975，10/χ²5,0.025]，不需将标准差误当方差。"
+  },
+  "relatedIds": [
+    "pr-estimate-normal-mean",
+    "pr-estimate-consistency"
+  ],
+  "topicIds": [
+    "pr-confidence-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-ode-bernoulli",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "伯努利方程降为线性",
+  "summary": "用幂代换消去非线性y^n。",
+  "conditions": [
+    "y'+py=qy^n，n≠0,1；在非零解区间代换。"
+  ],
+  "steps": [
+    "先检查y=0是否为解。",
+    "令z=y^{1-n}并推导线性方程。",
+    "解z再回代，限制实数分支。"
+  ],
+  "formula": "z'+(1-n)pz=(1-n)q",
+  "pitfalls": [
+    "代换需乘1-n；回代可能有定义域与分支限制。"
+  ],
+  "example": {
+    "prompt": "自编例题：解y'+y=y²的非零解。",
+    "solution": "令z=1/y，得z'-z=-1，z=1+Ce^x，y=1/(1+Ce^x)，分母不能为0；另有y=0。"
+  },
+  "relatedIds": [
+    "hm-ode-linear-first",
+    "hm-ode-modeling"
+  ],
+  "topicIds": [
+    "ode-ode-bernoulli"
+  ],
+  "status": "reviewed"
+}

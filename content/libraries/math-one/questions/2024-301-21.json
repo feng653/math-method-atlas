@@ -1,0 +1,23 @@
+{
+  "id": "2024-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "21",
+  "summary": "递推矩阵幂",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 5
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-diagonalization",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 5 页第 21 题：将联立递推写成列向量迭代；系数矩阵具有互异特征根，可相似对角化求幂。"
+    },
+    {
+      "methodId": "la-matrix-product",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 5 页第 21 题：将矩阵幂作用于初始列向量，读出三条数列。"
+    }
+  ]
+}

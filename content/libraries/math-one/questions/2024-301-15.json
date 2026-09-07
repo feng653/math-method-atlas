@@ -1,0 +1,18 @@
+{
+  "id": "2024-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2024",
+  "number": "15",
+  "summary": "二次型不等式",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+    "page": 4
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-completion",
+      "verification": "verified",
+      "note": "核对来源 PDF 第 4 页第 15 题：配方后识别非负平方权重；非负参数用加权柯西不等式，负参数构造向量反例。"
+    }
+  ]
+}

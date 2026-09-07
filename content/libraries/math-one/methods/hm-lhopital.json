@@ -1,0 +1,31 @@
+{
+  "id": "hm-lhopital",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "洛必达法则",
+  "summary": "对满足条件的不定式转化为导数比极限。",
+  "conditions": [
+    "分子分母同趋0或绝对值同趋∞；去心邻域可导，分母导数不为0；导数比极限存在或为无穷。"
+  ],
+  "steps": [
+    "确认是0/0或∞/∞型。",
+    "分别求导分子和分母。",
+    "再次确认使用条件；导数比无极限时换方法。"
+  ],
+  "formula": "\\lim\\frac{f}{g}=\\lim\\frac{f'}{g'}",
+  "pitfalls": [
+    "不能对非不定式直接求导；导数比无极限不说明原极限不存在。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 lim(x→∞) ln x/x。",
+    "solution": "为∞/∞型，在x>0可导且分母导数为1。导数比为1/x，趋0，原极限为0。"
+  },
+  "relatedIds": [
+    "hm-equivalent-infinitesimal",
+    "hm-taylor-limit"
+  ],
+  "topicIds": [
+    "limits-lhopital"
+  ],
+  "status": "reviewed"
+}

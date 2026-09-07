@@ -1,0 +1,32 @@
+{
+  "id": "la-det-row-operations",
+  "libraryId": "math-one",
+  "chapterId": "la-determinants",
+  "title": "初等变换化三角",
+  "summary": "追踪换行与倍乘因子，将行列式化为三角形。",
+  "conditions": [
+    "仅方阵有行列式",
+    "将一行的倍数加到另一行不改变行列式"
+  ],
+  "steps": [
+    "用倍加消去下三角元素",
+    "记录换行次数和倍乘系数",
+    "取对角线乘积并还原因子"
+  ],
+  "formula": "\\det U=\\prod_{i=1}^n u_{ii}",
+  "pitfalls": [
+    "整行乘 k 会使行列式乘 k；换行使符号改变"
+  ],
+  "example": {
+    "prompt": "自编例题：求 [[1,2],[3,5]] 的行列式。",
+    "solution": "第二行减第一行的 3 倍得 [[1,2],[0,−1]]，行列式为 −1。"
+  },
+  "relatedIds": [
+    "la-det-block",
+    "la-det-expansion"
+  ],
+  "topicIds": [
+    "la-det-compute"
+  ],
+  "status": "reviewed"
+}

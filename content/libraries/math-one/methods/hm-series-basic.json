@@ -1,0 +1,31 @@
+{
+  "id": "hm-series-basic",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "级数必要条件与几何级数",
+  "summary": "先查通项趋零，再识别可求部分和的结构。",
+  "conditions": [
+    "数项级数；收敛定义为部分和数列收敛。"
+  ],
+  "steps": [
+    "计算通项极限，不为0则发散。",
+    "识别几何或裂项结构。",
+    "求部分和极限。"
+  ],
+  "formula": "\\sum_{n=0}^\\infty ar^n=\\frac a{1-r},\\quad |r|<1",
+  "pitfalls": [
+    "通项趋零只是必要条件，例如调和级数仍发散。"
+  ],
+  "example": {
+    "prompt": "自编例题：求Σ(n=1到∞)1/[n(n+1)]。",
+    "solution": "1/[n(n+1)]=1/n-1/(n+1)，前N项和1-1/(N+1)，极限1。"
+  },
+  "relatedIds": [
+    "hm-series-comparison",
+    "hm-ratio-root-test"
+  ],
+  "topicIds": [
+    "series-series-basic"
+  ],
+  "status": "reviewed"
+}

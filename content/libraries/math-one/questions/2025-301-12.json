@@ -1,0 +1,18 @@
+{
+  "id": "2025-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2025",
+  "number": "12",
+  "summary": "傅里叶跳点",
+  "source": {
+    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
+    "page": 8
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-fourier-half-range",
+      "verification": "verified",
+      "note": "原题第8页第12题：奇延拓再取左右均值。"
+    }
+  ]
+}

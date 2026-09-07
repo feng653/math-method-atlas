@@ -1,0 +1,31 @@
+{
+  "id": "la-quadratic-matrix",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "二次型写对称矩阵",
+  "summary": "交叉项系数一分为二，写成 xᵀAx。",
+  "conditions": [
+    "实二次型，可采用唯一实对称表示矩阵"
+  ],
+  "steps": [
+    "平方项系数放对角",
+    "交叉项系数的一半放两个对称位置",
+    "展开乘积核对"
+  ],
+  "formula": "f(x)=x^TAx,\\quad a_{ij}=\\tfrac12[x_ix_j]f\\ (i\\ne j)",
+  "pitfalls": [
+    "交叉项系数直接填矩阵会重复计算两次"
+  ],
+  "example": {
+    "prompt": "自编例题：写出 2x²+6xy+5y² 的矩阵。",
+    "solution": "对称矩阵为 [[2,3],[3,5]]，其 xᵀAx 展开为所给二次型。"
+  },
+  "relatedIds": [
+    "la-quadratic-completion",
+    "la-quadratic-orthogonal"
+  ],
+  "topicIds": [
+    "la-quadratic-reduction"
+  ],
+  "status": "reviewed"
+}

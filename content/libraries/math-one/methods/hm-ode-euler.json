@@ -1,0 +1,30 @@
+{
+  "id": "hm-ode-euler",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "欧拉方程对数换元",
+  "summary": "用x=e^t把欧拉型方程转成常系数方程。",
+  "conditions": [
+    "在x>0或x<0的单一区间求解，最高阶系数按x的阶数排列。"
+  ],
+  "steps": [
+    "设t=ln|x|、y(x)=Y(t)。",
+    "代入xy'=Y'、x²y''=Y''-Y'。",
+    "解常系数方程并回代。"
+  ],
+  "formula": "x^2y''+axy'+by=0\\Rightarrow Y''+(a-1)Y'+bY=0",
+  "pitfalls": [
+    "x=0是奇点；不能默认解可跨越0延拓。"
+  ],
+  "example": {
+    "prompt": "自编例题：解x²y''-xy'+y=0，x>0。",
+    "solution": "换元得Y''-2Y'+Y=0，Y=(C₁+C₂t)e^t，故y=x(C₁+C₂ln x)。"
+  },
+  "relatedIds": [
+    "hm-ode-characteristic"
+  ],
+  "topicIds": [
+    "ode-ode-euler"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hm-arc-work-integral",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "弧长与物理量微元",
+  "summary": "选取正确几何或物理微元后累加。",
+  "conditions": [
+    "弧长采用 y(x) 在有限区间连续可导（或有限分段连续可导）的图形曲线。",
+    "一维功积分中的 F(x) 是力沿位移方向的有符号分量；曲线路径用向量场点乘位移微元。"
+  ],
+  "steps": [
+    "写出微元ds、dW或dm。",
+    "将微元用单一变量表达。",
+    "确定范围后定积分。"
+  ],
+  "formula": "L=\\int_a^b\\sqrt{1+y'^2}\\,dx,\\quad W=\\int_a^b F(x)dx",
+  "pitfalls": [
+    "弧长不能仅积分 dy；功的力分量可能为负，不能直接使用力的大小代替有符号分量。"
+  ],
+  "example": {
+    "prompt": "自编例题：求y=(2/3)x^{3/2}在[0,3]的弧长。",
+    "solution": "y'=√x，L=∫₀³√(1+x)dx=(2/3)[(1+x)^{3/2}]₀³=14/3。"
+  },
+  "relatedIds": [
+    "hm-integral-area-volume",
+    "hm-integral-mass-centroid"
+  ],
+  "topicIds": [
+    "integrals-arc-work-integral"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-multivariable-chain",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "多元复合函数求导",
+  "summary": "按依赖路径累加每一条链式贡献。",
+  "conditions": [
+    "各内外层满足所用阶数的可微条件。"
+  ],
+  "steps": [
+    "列变量依赖关系。",
+    "每条路径乘导数，再求和。",
+    "二阶求导继续对所有依赖项使用链式法则。"
+  ],
+  "formula": "z_x=f_u u_x+f_v v_x",
+  "pitfalls": [
+    "外函数偏导与复合后的偏导含义不同；二阶漏交叉项最常见。"
+  ],
+  "example": {
+    "prompt": "自编例题：z=u²+v，u=x+y，v=xy，求z_x。",
+    "solution": "f_u=2u、f_v=1，u_x=1、v_x=y，故z_x=2(x+y)+y=2x+3y。"
+  },
+  "relatedIds": [
+    "hm-multivariable-implicit",
+    "hm-tangent-plane"
+  ],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

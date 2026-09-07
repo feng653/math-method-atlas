@@ -1,0 +1,30 @@
+{
+  "id": "hm-squeeze",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "夹逼与有界量乘无穷小",
+  "summary": "利用上下界或绝对值控制极限。",
+  "conditions": [
+    "可构造同极限的上下界，或写成有界量乘趋零量。"
+  ],
+  "steps": [
+    "估计振荡量的绝对值。",
+    "将目标夹在易求极限的函数之间。",
+    "证明两侧同趋目标值。"
+  ],
+  "formula": "a(x)\\le f(x)\\le b(x),\\quad a,b\\to L\\Rightarrow f\\to L",
+  "pitfalls": [
+    "有界不等于收敛；只有有界量与无穷小相乘才可直接得零。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 lim(x→0) x²sin(1/x)。",
+    "solution": "绝对值不超过x²，而x²→0，因此极限为0。"
+  },
+  "relatedIds": [
+    "hm-recursive-limit"
+  ],
+  "topicIds": [
+    "limits-squeeze"
+  ],
+  "status": "reviewed"
+}

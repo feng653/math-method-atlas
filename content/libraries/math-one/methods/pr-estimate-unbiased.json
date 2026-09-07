@@ -1,0 +1,31 @@
+{
+  "id": "pr-estimate-unbiased",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "期望检验无偏与均方误差",
+  "summary": "用估计量的期望和方差衡量偏差与精度。",
+  "conditions": [
+    "相关期望和方差存在"
+  ],
+  "steps": [
+    "计算 Eθ(T) 与目标参数之差",
+    "差为 0 则无偏",
+    "比较 MSE=方差+偏差平方"
+  ],
+  "formula": "\\operatorname{MSE}(T)=\\operatorname{Var}(T)+(ET-\\theta)^2",
+  "pitfalls": [
+    "无偏不意味着在所有估计量中均方误差最小"
+  ],
+  "example": {
+    "prompt": "自编例题：独立同分布样本量 n≥2、总体方差 σ² 有限，比较分母 n 与 n−1 的样本离差平方和估计。",
+    "solution": "E[Σ(Xi−X̄)²]=(n−1)σ²，因此除以 n−1 无偏；除以 n 的期望为 (n−1)σ²/n。"
+  },
+  "relatedIds": [
+    "pr-estimate-consistency",
+    "pr-estimate-efficiency"
+  ],
+  "topicIds": [
+    "pr-estimator-properties-topic"
+  ],
+  "status": "reviewed"
+}

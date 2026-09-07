@@ -1,0 +1,32 @@
+{
+  "id": "hm-gauss",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "高斯散度公式",
+  "summary": "闭曲面的外向通量转化为体积分。",
+  "conditions": [
+    "V 为有界立体，边界分片光滑且封闭，取外向法向。",
+    "向量场在包含立体及边界的开邻域具有连续一阶偏导。"
+  ],
+  "steps": [
+    "确认闭合；缺面时补面。",
+    "计算散度并对体积分。",
+    "减去补面通量并调整方向。"
+  ],
+  "formula": "\\oiint_{\\partial V}F\\cdot n\\,dS=\\iiint_V\\nabla\\cdot F\\,dV",
+  "pitfalls": [
+    "内部有奇点时不可直接用；内向法线需变号。"
+  ],
+  "example": {
+    "prompt": "自编例题：F=(x,y,z)通过单位球外表面的通量。",
+    "solution": "散度3，球体积4π/3，通量4π。"
+  },
+  "relatedIds": [
+    "hm-surface-integrals",
+    "hm-stokes"
+  ],
+  "topicIds": [
+    "multiple-integrals-gauss"
+  ],
+  "status": "reviewed"
+}

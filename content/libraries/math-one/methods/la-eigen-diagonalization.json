@@ -1,0 +1,31 @@
+{
+  "id": "la-eigen-diagonalization",
+  "libraryId": "math-one",
+  "chapterId": "la-eigen",
+  "title": "独立特征向量构造相似对角化",
+  "summary": "检查所有特征空间维数之和是否达到 n。",
+  "conditions": [
+    "在选定数域上有 n 个线性无关特征向量时可用"
+  ],
+  "steps": [
+    "求每个特征空间基",
+    "合并检查共 n 个向量",
+    "依列组成 P，按同样顺序排列特征值"
+  ],
+  "formula": "P^{-1}AP=\\Lambda,\\quad A^m=P\\Lambda^mP^{-1}",
+  "pitfalls": [
+    "重根不必不可对角化；关键是几何重数"
+  ],
+  "example": {
+    "prompt": "自编例题：A=[[2,1],[0,3]] 对角化。",
+    "solution": "取 P=[[1,1],[0,1]]，则 P⁻¹AP=diag(2,3)。"
+  },
+  "relatedIds": [
+    "la-eigen-similarity",
+    "la-eigen-characteristic"
+  ],
+  "topicIds": [
+    "la-diagonalization-topic"
+  ],
+  "status": "reviewed"
+}

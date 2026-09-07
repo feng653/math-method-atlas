@@ -1,0 +1,31 @@
+{
+  "id": "hm-leibniz-high-derivative",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "高阶导数与莱布尼茨公式",
+  "summary": "利用简单因子的高阶导数处理乘积。",
+  "conditions": [
+    "函数具有所需n阶导数。"
+  ],
+  "steps": [
+    "识别周期导数或低次多项式因子。",
+    "代入乘积n阶导公式。",
+    "删去高阶为0的多项式导数项。"
+  ],
+  "formula": "(uv)^{(n)}=\\sum_{k=0}^n\\binom nk u^{(k)}v^{(n-k)}",
+  "pitfalls": [
+    "组合数不可漏；阶数从0到n两端都要计。"
+  ],
+  "example": {
+    "prompt": "自编例题：求n≥1时(xe^x)的n阶导。",
+    "solution": "x的0阶和1阶导非零，故结果为xe^x+ne^x=(x+n)e^x。"
+  },
+  "relatedIds": [
+    "hm-chain-log-differentiation",
+    "hm-taylor-remainder"
+  ],
+  "topicIds": [
+    "derivatives-leibniz-high-derivative"
+  ],
+  "status": "reviewed"
+}

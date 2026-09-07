@@ -1,0 +1,31 @@
+{
+  "id": "hm-ode-undetermined",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "待定系数与共振修正",
+  "summary": "对多项式、指数、三角型右端选特解形式。",
+  "conditions": [
+    "常系数线性方程，右端为多项式、指数、正弦余弦及其有限乘积或和。",
+    "公式中 s 是 λ 在齐次特征多项式中的重数，若不是特征根则 s=0。"
+  ],
+  "steps": [
+    "先求齐次特征根。",
+    "依据右端设特解，遇重合根乘对应次幂x。",
+    "代入求系数并加齐次通解。"
+  ],
+  "formula": "f(x)=e^{\\lambda x}P_m(x)\\Rightarrow y_p=x^s e^{\\lambda x}Q_m(x)",
+  "pitfalls": [
+    "共振不乘x会无解；正余弦右端通常都需列入待定式。"
+  ],
+  "example": {
+    "prompt": "自编例题：求y''-y=e^x的通解。",
+    "solution": "齐次根±1，e^x共振，设y_p=Axe^x，代入得2Ae^x=e^x，A=1/2；通解C₁e^x+C₂e^{-x}+xe^x/2。"
+  },
+  "relatedIds": [
+    "hm-ode-characteristic"
+  ],
+  "topicIds": [
+    "ode-ode-undetermined"
+  ],
+  "status": "reviewed"
+}

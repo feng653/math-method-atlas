@@ -1,0 +1,31 @@
+{
+  "id": "hm-trig-substitution",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "三角恒等式与根式代换",
+  "summary": "用恒等式降幂或三角代换消去根式。",
+  "conditions": [
+    "所选代换区间使根号符号确定。"
+  ],
+  "steps": [
+    "识别a²-x²、a²+x²或x²-a²结构。",
+    "选择正弦、正切或正割代换。",
+    "简化后积分并依据区间回代。"
+  ],
+  "formula": "x=a\\sin t\\Rightarrow\\sqrt{a^2-x^2}=a\\cos t\\ (a>0,|t|<\\pi/2)",
+  "pitfalls": [
+    "√(cos²t)=|cos t|，不可无条件去绝对值。"
+  ],
+  "example": {
+    "prompt": "自编例题：求∫dx/√(4-x²)，|x|<2。",
+    "solution": "令x=2sin t，t∈(-π/2,π/2)，dx=2cos t dt，积分为t+C=arcsin(x/2)+C。"
+  },
+  "relatedIds": [
+    "hm-substitution-integral",
+    "hm-rational-integral"
+  ],
+  "topicIds": [
+    "integrals-trig-substitution"
+  ],
+  "status": "reviewed"
+}

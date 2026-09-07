@@ -1,0 +1,32 @@
+{
+  "id": "la-system-consistency",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "系数秩与增广秩判解",
+  "summary": "用两个秩判断无解、唯一解或无穷多解。",
+  "conditions": [
+    "n 为未知量个数",
+    "实数或复数域上线性方程组"
+  ],
+  "steps": [
+    "构造完整增广矩阵 [A|b] 并作行消元",
+    "分别比较系数矩阵与增广矩阵的秩",
+    "两秩相等时，秩等于 n 则唯一解，小于 n 则有 n−r 个自由变量"
+  ],
+  "formula": "Ax=b\\text{ 有解}\\iff r(A)=r([A\\mid b])",
+  "pitfalls": [
+    "增广列的主元不能算入系数矩阵秩"
+  ],
+  "example": {
+    "prompt": "自编例题：x+y=1，2x+2y=3 是否有解？",
+    "solution": "第二式减第一式 2 倍得到 0=1，系数秩 1，增广秩 2，因此无解。"
+  },
+  "relatedIds": [
+    "la-system-cramer",
+    "la-system-parameter"
+  ],
+  "topicIds": [
+    "la-system-solvability"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-taylor-limit",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "泰勒展开求极限",
+  "summary": "按抵消深度选择展开阶数。",
+  "conditions": [
+    "展开点附近有相应阶数的Peano展开。"
+  ],
+  "steps": [
+    "先估计分母阶数。",
+    "将分子各项展开到首个不抵消项，保留余项。",
+    "消去低阶项再约去同阶幂。"
+  ],
+  "formula": "f(x)=\\sum_{k=0}^{n}\\frac{f^{(k)}(0)}{k!}x^k+o(x^n)",
+  "pitfalls": [
+    "只写近似号不能控制余项；复合展开要保留产生目标阶数的交叉项。"
+  ],
+  "example": {
+    "prompt": "自编例题：求 lim(x→0)(e^x-1-x)/x²。",
+    "solution": "e^x=1+x+x²/2+o(x²)，分子为x²/2+o(x²)，故极限1/2。"
+  },
+  "relatedIds": [
+    "hm-equivalent-infinitesimal",
+    "hm-lhopital"
+  ],
+  "topicIds": [
+    "limits-taylor-limit"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hm-alternating-series",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "交错级数与绝对条件收敛",
+  "summary": "先考察绝对值，再使用莱布尼茨判别。",
+  "conditions": [
+    "正幅值最终单调趋零可用交错判别。"
+  ],
+  "steps": [
+    "检查Σ|a_n|。",
+    "若不收敛，检验交错幅值单调且趋0。",
+    "分别给出绝对或条件收敛结论。"
+  ],
+  "formula": "b_n\\downarrow0\\Rightarrow\\sum(-1)^{n-1}b_n\\text{收敛}",
+  "pitfalls": [
+    "符号交替本身不足以保证收敛；幅值趋零不可漏。"
+  ],
+  "example": {
+    "prompt": "自编例题：判断Σ(-1)^{n-1}/n。",
+    "solution": "1/n单调趋0，交错级数收敛；绝对值级数是发散调和级数，故条件收敛。"
+  },
+  "relatedIds": [
+    "hm-series-comparison",
+    "hm-power-radius"
+  ],
+  "topicIds": [
+    "series-alternating-series"
+  ],
+  "status": "reviewed"
+}

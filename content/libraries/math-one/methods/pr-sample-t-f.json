@@ -1,0 +1,32 @@
+{
+  "id": "pr-sample-t-f",
+  "libraryId": "math-one",
+  "chapterId": "pr-sampling",
+  "title": "独立标准正态与卡方构造 t、F",
+  "summary": "按分布定义识别比值并检查独立性。",
+  "conditions": [
+    "Z~N(0,1)、U~χ²_m、V~χ²_n，m,n 为正自由度",
+    "构造 t 时 Z 与 U 独立；构造 F 时 U 与 V 独立"
+  ],
+  "steps": [
+    "把分子变为标准正态或卡方除自由度",
+    "把分母卡方除自由度",
+    "t 型分母开平方，F 型不开平方"
+  ],
+  "formula": "\\frac{Z}{\\sqrt{U/m}}\\sim t_m,\\quad\\frac{U/m}{V/n}\\sim F_{m,n}",
+  "pitfalls": [
+    "缺少独立性不能直接套用 t/F 分布"
+  ],
+  "example": {
+    "prompt": "自编例题：U~χ²4、V~χ²6 独立，求 3U/(2V) 的分布。",
+    "solution": "(U/4)/(V/6)=3U/(2V)，所以服从 F(4,6)。"
+  },
+  "relatedIds": [
+    "pr-sample-chi-square",
+    "pr-sample-normal"
+  ],
+  "topicIds": [
+    "pr-normal-sampling-topic"
+  ],
+  "status": "reviewed"
+}

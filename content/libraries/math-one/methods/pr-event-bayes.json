@@ -1,0 +1,32 @@
+{
+  "id": "pr-event-bayes",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "贝叶斯逆向归因",
+  "summary": "观察结果后，更新不同原因的概率。",
+  "conditions": [
+    "原因事件组成完备组",
+    "被观察事件 A 的概率大于 0"
+  ],
+  "steps": [
+    "求每个原因与结果的联合概率",
+    "用全概率求观察结果概率",
+    "目标联合概率除以总概率"
+  ],
+  "formula": "P(B_j\\mid A)=\\frac{P(B_j)P(A\\mid B_j)}{\\sum_iP(B_i)P(A\\mid B_i)}",
+  "pitfalls": [
+    "后验必须包括先验权重"
+  ],
+  "example": {
+    "prompt": "自编例题：甲乙产量各半，次品率分别为 1% 和 4%；抽到次品，来自乙的概率。",
+    "solution": "后验为 (0.5×0.04)/(0.5×0.01+0.5×0.04)=0.8。"
+  },
+  "relatedIds": [
+    "pr-event-conditional",
+    "pr-event-independence"
+  ],
+  "topicIds": [
+    "pr-conditional-topic"
+  ],
+  "status": "reviewed"
+}

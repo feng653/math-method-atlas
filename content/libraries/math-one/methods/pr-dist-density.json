@@ -1,0 +1,31 @@
+{
+  "id": "pr-dist-density",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "连续密度归一化与积分",
+  "summary": "在支持集上积分求概率与分布函数。",
+  "conditions": [
+    "密度几乎处处非负，积分为 1"
+  ],
+  "steps": [
+    "明确密度非零区间",
+    "积分归一化",
+    "在事件区域积分，分段写 F"
+  ],
+  "formula": "P(a<X<b)=\\int_a^b f(x)\\,dx",
+  "pitfalls": [
+    "密度值不是单点概率，连续变量单点概率为 0"
+  ],
+  "example": {
+    "prompt": "自编例题：f(x)=cx，0<x<2，求 c 与 P(X<1)。",
+    "solution": "积分 0 到 2 得 2c=1，c=1/2；积分 0 到 1 得概率 1/4。"
+  },
+  "relatedIds": [
+    "pr-dist-exponential",
+    "pr-dist-normal"
+  ],
+  "topicIds": [
+    "pr-continuous-topic"
+  ],
+  "status": "reviewed"
+}

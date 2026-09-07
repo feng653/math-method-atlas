@@ -1,0 +1,32 @@
+{
+  "id": "pr-joint-conditional",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "联合密度除边缘求条件密度",
+  "summary": "在边缘密度为正的位置标准化截面。",
+  "conditions": [
+    "fX(x)>0",
+    "连续条件密度按密度定义，不能除以 P(X=x)"
+  ],
+  "steps": [
+    "先求边缘密度",
+    "联合密度除以该边缘",
+    "保留对应条件支持区间"
+  ],
+  "formula": "f_{Y\\mid X}(y\\mid x)=\\frac{f_{X,Y}(x,y)}{f_X(x)}",
+  "pitfalls": [
+    "条件密度必须对条件支持集积分为 1"
+  ],
+  "example": {
+    "prompt": "自编例题：在 0<y<x<1 上联合密度为 2，求 Y|X=x。",
+    "solution": "fX(x)=2x，因此条件密度为 1/x，0<y<x，即 (0,x) 上均匀分布。"
+  },
+  "relatedIds": [
+    "pr-joint-independence",
+    "pr-joint-convolution"
+  ],
+  "topicIds": [
+    "pr-joint-conditional-topic"
+  ],
+  "status": "reviewed"
+}

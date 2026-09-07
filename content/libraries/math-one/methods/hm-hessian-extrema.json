@@ -1,0 +1,30 @@
+{
+  "id": "hm-hessian-extrema",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "二元函数无约束极值",
+  "summary": "用驻点和二阶型判断局部极值。",
+  "conditions": [
+    "函数二阶偏导在邻域连续；内部极值候选满足梯度0。"
+  ],
+  "steps": [
+    "解f_x=f_y=0。",
+    "计算A=f_xx、B=f_xy、C=f_yy及AC-B²。",
+    "正行列式按A符号分类，负为鞍点，零另用定义。"
+  ],
+  "formula": "D=AC-B^2>0:\\ A>0\\Rightarrow\\text{极小},\\ A<0\\Rightarrow\\text{极大}",
+  "pitfalls": [
+    "D=0不能判定；闭区域最值还需检查边界。"
+  ],
+  "example": {
+    "prompt": "自编例题：求f=x²+xy+y²的极值。",
+    "solution": "梯度方程2x+y=0、x+2y=0仅原点。A=C=2、B=1，D=3>0且A>0，原点严格极小，值0。"
+  },
+  "relatedIds": [
+    "hm-lagrange-multipliers"
+  ],
+  "topicIds": [
+    "multivariable-hessian-extrema"
+  ],
+  "status": "reviewed"
+}

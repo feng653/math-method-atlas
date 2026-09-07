@@ -1,0 +1,13 @@
+{
+  "id": "proof-contradiction", "libraryId": "proof-toolkit", "chapterId": "proof-basics",
+  "title": "反证法", "summary": "假设结论的否定，结合已知条件导出矛盾。",
+  "conditions": ["目标命题及其否定必须表述准确", "推理中的矛盾必须来自假设与已知条件"],
+  "steps": ["写出结论的否定，交换相应全称与存在量词", "在该假设下进行合法推理", "指出与已知事实或逻辑一致性矛盾，因此原命题成立"],
+  "formula": "(\\neg P \\Rightarrow \\bot) \\Rightarrow P",
+  "pitfalls": ["不能把命题的逆命题当成否定", "循环引用待证命题不构成证明"],
+  "example": {
+    "prompt": "自编：证明不存在最小的正实数。",
+    "solution": "假设最小正实数为 a，则 a>0。数 a/2 满足 0<a/2<a，与 a 最小矛盾，所以不存在最小正实数。"
+  },
+  "relatedIds": ["proof-counterexample", "proof-induction"], "topicIds": ["contradiction"], "status": "draft"
+}

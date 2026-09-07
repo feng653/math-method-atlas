@@ -1,0 +1,30 @@
+{
+  "id": "hm-improper-integral",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "反常积分与比较判别",
+  "summary": "将无穷区间或奇点积分定义为单侧极限。",
+  "conditions": [
+    "识别全部无穷端点和无界奇点；比较判别通常针对非负函数。"
+  ],
+  "steps": [
+    "在每个奇点处分拆。",
+    "分别求极限，或与幂函数比较。",
+    "所有部分收敛才能判定原积分收敛。"
+  ],
+  "formula": "\\int_1^\\infty x^{-p}dx<\\infty\\iff p>1",
+  "pitfalls": [
+    "不能用跨奇点原函数差掩盖发散；柯西主值不等于反常积分。"
+  ],
+  "example": {
+    "prompt": "自编例题：判断∫₁^∞1/x² dx并求值。",
+    "solution": "截断为∫₁^R x^{-2}dx=1-1/R，R→∞得1，故收敛。"
+  },
+  "relatedIds": [
+    "hm-series-comparison"
+  ],
+  "topicIds": [
+    "integrals-improper-integral"
+  ],
+  "status": "reviewed"
+}

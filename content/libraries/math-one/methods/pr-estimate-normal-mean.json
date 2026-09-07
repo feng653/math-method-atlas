@@ -1,0 +1,33 @@
+{
+  "id": "pr-estimate-normal-mean",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "正态总体均值置信区间",
+  "summary": "按总体方差已知或未知选择 z 或 t 枢轴量。",
+  "conditions": [
+    "独立同分布正态样本，总体方差严格为正",
+    "未知方差分支 n≥2；0<α<1",
+    "q_p 表示分布左侧累计概率 p 的分位数"
+  ],
+  "steps": [
+    "明确置信水平 1−α",
+    "已知 σ 用 z，未知用 S 和 t(n−1)",
+    "将枢轴不等式反解为 μ 区间"
+  ],
+  "formula": "\\bar X\\pm z_{1-\\alpha/2}\\sigma/\\sqrt n\\ ;\\quad\\bar X\\pm t_{n-1,1-\\alpha/2}S/\\sqrt n",
+  "pitfalls": [
+    "置信水平描述抽样程序的覆盖率，不是固定参数的后验概率"
+  ],
+  "example": {
+    "prompt": "自编例题：正态总体 σ=2，n=16，样本均值 10，求 95% 均值区间。",
+    "solution": "使用 z0.975≈1.96，半宽 1.96×2/4=0.98，区间 [9.02,10.98]。"
+  },
+  "relatedIds": [
+    "pr-estimate-normal-variance",
+    "pr-estimate-consistency"
+  ],
+  "topicIds": [
+    "pr-confidence-topic"
+  ],
+  "status": "reviewed"
+}

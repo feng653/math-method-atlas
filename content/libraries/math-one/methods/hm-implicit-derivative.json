@@ -1,0 +1,32 @@
+{
+  "id": "hm-implicit-derivative",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "隐函数求导",
+  "summary": "将y看作x的函数并用链式法则。",
+  "conditions": [
+    "F 在目标点的开邻域有连续一阶偏导，点满足 F(x,y)=0 且 F_y≠0，因此局部可解出可微隐函数 y(x)。",
+    "求二阶导时还需相应二阶连续偏导。"
+  ],
+  "steps": [
+    "对等式两侧关于x求导。",
+    "收集y'项并解出。",
+    "二阶时继续求导并代入已得y'。"
+  ],
+  "formula": "y'=-\\frac{F_x}{F_y}",
+  "pitfalls": [
+    "含y的项求导必须乘y'；F_y=0不能直接用此公式。"
+  ],
+  "example": {
+    "prompt": "自编例题：x²+y²=5在(1,2)处求切线。",
+    "solution": "2x+2yy'=0，点处y'=-1/2，故切线y-2=-(x-1)/2。"
+  },
+  "relatedIds": [
+    "hm-chain-log-differentiation",
+    "hm-parametric-derivative"
+  ],
+  "topicIds": [
+    "derivatives-implicit-derivative"
+  ],
+  "status": "reviewed"
+}

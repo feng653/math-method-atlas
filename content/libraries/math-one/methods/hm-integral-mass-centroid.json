@@ -1,0 +1,31 @@
+{
+  "id": "hm-integral-mass-centroid",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "重积分的质量、质心与转动惯量",
+  "summary": "在区域上积分密度和相应力臂权重。",
+  "conditions": [
+    "密度非负、总质量有限且非零。"
+  ],
+  "steps": [
+    "写质量微元dm=ρdA或ρdV。",
+    "积分求质量与一阶矩。",
+    "质心除以总质量，惯量乘轴距离平方。"
+  ],
+  "formula": "\\bar x=\\frac{\\int x\\,dm}{M},\\quad I_z=\\int(x^2+y^2)\\,dm",
+  "pitfalls": [
+    "关于x轴的平面惯量权重是y²；几何中心只适用于相应对称密度。"
+  ],
+  "example": {
+    "prompt": "自编例题：均匀三角形0≤x≤1、0≤y≤x的质心。",
+    "solution": "面积1/2；∬x dA=1/3，∬y dA=1/6，故质心(2/3,1/3)。"
+  },
+  "relatedIds": [
+    "hm-integral-area-volume",
+    "hm-arc-work-integral"
+  ],
+  "topicIds": [
+    "multiple-integrals-integral-mass-centroid"
+  ],
+  "status": "reviewed"
+}

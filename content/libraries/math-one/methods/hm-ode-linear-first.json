@@ -1,0 +1,31 @@
+{
+  "id": "hm-ode-linear-first",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "一阶线性方程积分因子",
+  "summary": "用积分因子把左侧写成乘积导数。",
+  "conditions": [
+    "方程已归一为y'+p(x)y=q(x)，系数在区间连续。"
+  ],
+  "steps": [
+    "确定p、q。",
+    "乘μ=e^{∫pdx}。",
+    "积分(μy)'=μq并代初值。"
+  ],
+  "formula": "y=e^{-\\int p dx}\\left(\\int q e^{\\int p dx}dx+C\\right)",
+  "pitfalls": [
+    "最高阶导前系数需先除去；积分因子乘到右侧不可漏。"
+  ],
+  "example": {
+    "prompt": "自编例题：解y'+y=1，y(0)=0。",
+    "solution": "积分因子e^x，(e^xy)'=e^x，y=1+Ce^{-x}；初值得C=-1，故y=1-e^{-x}。"
+  },
+  "relatedIds": [
+    "hm-ode-bernoulli",
+    "hm-ode-modeling"
+  ],
+  "topicIds": [
+    "ode-ode-linear-first"
+  ],
+  "status": "reviewed"
+}

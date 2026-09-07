@@ -1,0 +1,32 @@
+{
+  "id": "pr-sample-normal",
+  "libraryId": "math-one",
+  "chapterId": "pr-sampling",
+  "title": "正态样本均值分布与独立性",
+  "summary": "直接使用正态总体的精确抽样结论。",
+  "conditions": [
+    "样本独立同分布于 N(μ,σ²)，σ²>0",
+    "涉及通常样本方差 S² 及独立性时 n≥2"
+  ],
+  "steps": [
+    "识别样本量",
+    "均值分布为 N(μ,σ²/n)",
+    "正态条件下均值与样本方差独立"
+  ],
+  "formula": "\\bar X\\sim N(\\mu,\\sigma^2/n),\\quad\\bar X\\perp S^2",
+  "pitfalls": [
+    "一般总体下均值与样本方差不保证独立"
+  ],
+  "example": {
+    "prompt": "自编例题：16 个独立 N(5,4) 样本，求样本均值分布。",
+    "solution": "均值分布为 N(5,4/16)=N(5,1/4)，这里第二参数是方差。"
+  },
+  "relatedIds": [
+    "pr-sample-chi-square",
+    "pr-sample-t-f"
+  ],
+  "topicIds": [
+    "pr-normal-sampling-topic"
+  ],
+  "status": "reviewed"
+}
