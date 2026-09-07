@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "la-vector-coordinate",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 5 题。逐列写新基在旧基下的坐标，注意旧基已有缩放。"
+      "verification": "verified",
+      "note": "独立方法关联复核：新基的每个向量在已缩放旧基下逐列解坐标，过渡矩阵方向与卡片 BC=D 一致。"
     }
   ]
 }

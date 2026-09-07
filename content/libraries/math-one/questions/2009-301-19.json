@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-gauss",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 19 题。挖去包围原点的小球后在无奇点壳层用散度定理，再算球面通量。"
+      "verification": "verified",
+      "note": "独立方法关联复核：已读显示公式为径向 r⁻³ 场；原点奇性禁止直接对整个椭球用Gauss，先挖球再对无奇点壳层用定理。"
     }
   ]
 }

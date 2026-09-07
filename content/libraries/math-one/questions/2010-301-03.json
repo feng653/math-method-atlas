@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-improper-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 3 题。分别看零端幂函数比较与另一端对数奇性，不合并端点条件。"
+      "verification": "verified",
+      "note": "独立方法关联复核：从根式层级辨认零端比较幂为2/m−1/n，正整数参数使其大于−1；另一端为可积对数幂奇性。"
     }
   ]
 }

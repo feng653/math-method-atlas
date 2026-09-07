@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-characteristic",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 10 题。齐次通解给重特征根，再设多项式特解并代入初值。"
+      "verification": "verified",
+      "note": "独立方法关联复核：齐次解的指数和一次因子确定重根1，非齐次多项式右端可作待定系数，再代初值。"
     },
     {
       "methodId": "hm-ode-undetermined",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 10 题。齐次通解给重特征根，再设多项式特解并代入初值。"
+      "verification": "verified",
+      "note": "独立方法关联复核：齐次解的指数和一次因子确定重根1，非齐次多项式右端可作待定系数，再代初值。"
     }
   ]
 }

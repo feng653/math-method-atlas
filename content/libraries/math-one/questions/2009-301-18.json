@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-mean-value-proof",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 18 题。减去端点割线构造罗尔函数，再在缩小区间将差商化为中值导数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：端点割线差形成等端值辅助函数，罗尔推出中值等式；再以趋零区间将右差商化为内点导数。"
     },
     {
       "methodId": "hm-derivative-definition",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 18 题。减去端点割线构造罗尔函数，再在缩小区间将差商化为中值导数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：端点割线差形成等端值辅助函数，罗尔推出中值等式；再以趋零区间将右差商化为内点导数。"
     }
   ]
 }

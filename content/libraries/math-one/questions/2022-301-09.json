@@ -5,8 +5,7 @@
   "number": "9",
   "summary": "样本矩概率",
   "source": {
-    "page": 3,
-    "url": "https://www.125yan.com/file_download/58s410.html"
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2022/"
   },
   "methodLinks": [
     {
@@ -14,5 +13,6 @@
       "verification": "verified",
       "note": "主agent独立重读题面复核：把平方样本视作新变量，其方差用四阶矩，独立性令均值方差除以n。"
     }
-  ]
+  ],
+  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"
 }

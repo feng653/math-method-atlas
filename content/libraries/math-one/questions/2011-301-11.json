@@ -5,8 +5,20 @@
   "number": "11",
   "summary": "积分函数偏导",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+    "url": "https://doc.kmf.com/ky_material/9d/6b/9d6bef7c75bbc53cd3467885eacaa600.pdf",
+    "page": 4
   },
-  "methodLinks": [],
-  "sourceNote": "来源积分式缺少所求偏导变量，暂不建立方法关联。"
+  "methodLinks": [
+    {
+      "methodId": "hm-newton-leibniz",
+      "verification": "verified",
+      "note": "独立方法关联复核：视觉核对KMF镜像PDF第4页，积分上限是xy而非社区漏字后的y；两次链式求导后在指定点代入。"
+    },
+    {
+      "methodId": "hm-multivariable-chain",
+      "verification": "verified",
+      "note": "独立方法关联复核：视觉核对KMF镜像PDF第4页，积分上限是xy而非社区漏字后的y；两次链式求导后在指定点代入。"
+    }
+  ],
+  "sourceNote": "独立视觉核对镜像PDF第4页，积分上限为xy，修复原社区来源漏x；来源仍为第三方，后附解析不作为证据。"
 }

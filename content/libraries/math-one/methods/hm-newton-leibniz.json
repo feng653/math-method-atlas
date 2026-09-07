@@ -3,22 +3,22 @@
   "libraryId": "math-one",
   "chapterId": "integrals",
   "title": "牛顿莱布尼茨与变限积分",
-  "summary": "用原函数计算定积分，并求变上限积分导数。",
+  "summary": "明确原函数族与定积分基本性质，再应用变限积分求导。",
   "conditions": [
     "连续被积函数可直接应用；变限函数可导。"
   ],
   "steps": [
-    "定积分先找原函数并代上下限。",
-    "变限积分按上下端点分别应用链式法则。",
-    "两端可变时上限贡献减下限贡献。"
+    "原函数 F 满足 F′=f；同一区间任意两原函数只差常数，不定积分 F+C 表示整个原函数族。",
+    "定积分是带符号的累积量；利用线性、区间可加、交换上下限变号等性质整理，连续 f 可用 ∫ₐᵇf=F(b)−F(a)。",
+    "变限积分按上下端点分别链式求导，上限贡献减下限贡献；被积函数还含外参数时需额外求参数项。"
   ],
-  "formula": "\\frac d{dx}\\int_{a(x)}^{b(x)}f(t)dt=f(b)b'-f(a)a'",
+  "formula": "\\int f(x)dx=F(x)+C\\ (F'=f),\\quad\\int_a^b f=F(b)-F(a),\\quad\\int_a^b f+\\int_b^c f=\\int_a^c f,\\quad\\frac d{dx}\\int_{a(x)}^{b(x)}f(t)dt=f(b)b'-f(a)a'",
   "pitfalls": [
     "被积变量t不是外部x；被积函数另含x时不能只求端点项。"
   ],
   "example": {
-    "prompt": "自编例题：F(x)=∫ₓ^{x²}e^t dt，求F'。",
-    "solution": "F'=e^{x²}·2x-e^x，故F'=2xe^{x²}-e^x。"
+    "prompt": "自编：求 x 的原函数族和 ∫₁⁰x dx，再求 G(x)=∫ₓ^{x²}eᵗdt 的导数。",
+    "solution": "原函数族 x²/2+C；交换上下限使定积分为 −1/2，与无向面积不同。G′=2xe^{x²}−eˣ，上下限两项均保留。"
   },
   "relatedIds": [
     "hm-integration-by-parts",

@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-estimate-moments",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 23 题。积分求总体一阶矩，并独立构造对数似然比较估计。"
+      "verification": "verified",
+      "note": "独立方法关联复核：显示密度为λ²x exp(-λx)，积分矩与对数似然均可直接求，支持域不依赖λ。"
     },
     {
       "methodId": "pr-estimate-mle",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 23 题。积分求总体一阶矩，并独立构造对数似然比较估计。"
+      "verification": "verified",
+      "note": "独立方法关联复核：显示密度为λ²x exp(-λx)，积分矩与对数似然均可直接求，支持域不依赖λ。"
     }
   ]
 }

@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-joint-marginal",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 22 题。指数配方积分归一化，求边缘密度后作密度比。"
+      "verification": "verified",
+      "note": "独立方法关联复核：指数可配方为−(y−x)²−x²；积分归一化求A与X边缘，再取密度比求条件密度。"
     },
     {
       "methodId": "pr-joint-conditional",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 22 题。指数配方积分归一化，求边缘密度后作密度比。"
+      "verification": "verified",
+      "note": "独立方法关联复核：指数可配方为−(y−x)²−x²；积分归一化求A与X边缘，再取密度比求条件密度。"
     }
   ]
 }

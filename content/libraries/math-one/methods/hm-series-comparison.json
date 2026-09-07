@@ -8,17 +8,17 @@
     "足够大n时各项非负；极限比较基准项为正。"
   ],
   "steps": [
-    "选取同阶的熟知级数。",
-    "算比值极限或建立大小关系。",
-    "根据比较方向得出结论。"
+    "先选正项基准：p 级数 p>1 收敛、p≤1 发散；几何级数用其公比条件。",
+    "若最终 0≤aₙ≤bₙ，大级数收敛推出小级数收敛，小级数发散推出大级数发散。",
+    "也可算 aₙ/bₙ 的正有限极限判同敛散；极限为 0 或无穷时只能按相应比较方向推。"
   ],
-  "formula": "a_n/b_n\\to c\\in(0,\\infty)\\Rightarrow\\sum a_n,\\sum b_n\\text{同敛散}",
+  "formula": "\\sum_{n=1}^{\\infty}\\frac1{n^p}\\text{收敛}\\iff p>1;\\quad a_n/b_n\\to c\\in(0,\\infty)\\Rightarrow\\sum a_n,\\sum b_n\\text{同敛散}",
   "pitfalls": [
     "较小级数发散可推出较大者发散，反向不能推。"
   ],
   "example": {
-    "prompt": "自编例题：判断Σ1/(n²+n)敛散。",
-    "solution": "与1/n²比值n²/(n²+n)→1，p=2的级数收敛，所以原级数收敛。"
+    "prompt": "自编：判断 Σ1/(n²+n) 与 Σ1/√(n²+n) 的敛散。",
+    "solution": "第一项与 1/n² 的比趋 1，p=2>1，收敛。第二项与 1/n 的比 n/√(n²+n) 趋 1，p=1 的调和级数发散，故第二级数发散。"
   },
   "relatedIds": [
     "hm-improper-integral",

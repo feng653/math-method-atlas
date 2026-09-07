@@ -637,6 +637,10 @@
         {
           "id": "audit-bivariate-normal",
           "title": "二维正态参数、条件与线性组合"
+        },
+        {
+          "id": "pr-joint-cdf-topic",
+          "title": "一般二维分布函数与矩形概率"
         }
       ]
     },

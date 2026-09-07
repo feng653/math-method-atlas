@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-linear-first",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 10 题。乘积分因子，积分后由初值确定常数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：乘eˣ后左侧为乘积导数，积分cos x并用零初值确定常数。"
     }
   ]
 }

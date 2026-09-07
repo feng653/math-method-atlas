@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "la-system-general",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 20 题。分别求矩阵及其平方方程的通解，再对线性组合反复左乘矩阵消元。"
+      "verification": "verified",
+      "note": "独立方法关联复核：按题面矩阵分别消元求线性方程通解，利用Aξ1=0及方程链反复左乘可证明无关，不采信站点消元。"
     },
     {
       "methodId": "la-vector-dependence",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 20 题。分别求矩阵及其平方方程的通解，再对线性组合反复左乘矩阵消元。"
+      "verification": "verified",
+      "note": "独立方法关联复核：按题面矩阵分别消元求线性方程通解，利用Aξ1=0及方程链反复左乘可证明无关，不采信站点消元。"
     }
   ]
 }

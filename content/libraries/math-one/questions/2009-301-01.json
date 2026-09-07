@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-taylor-limit",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 1 题。展开到首个非零阶，先消除一次项再匹配三次项。"
+      "verification": "verified",
+      "note": "独立方法关联复核：展开 x−sin(ax) 后一次项须消失，再把三次首项与对数乘积比较，泰勒方法适用。"
     }
   ]
 }

@@ -10,15 +10,16 @@
   "steps": [
     "明确密度非零区间",
     "积分归一化",
-    "在事件区域积分，分段写 F"
+    "在事件区域积分，分段写 F",
+    "若 X~U(a,b)，必须 a<b；密度在(a,b)为1/(b−a)，CDF在左侧为0、区间内为(x−a)/(b−a)、右侧为1。均值(a+b)/2，方差(b−a)²/12。"
   ],
-  "formula": "P(a<X<b)=\\int_a^b f(x)\\,dx",
+  "formula": "P(a<X<b)=\\int_a^b f(x)\\,dx,\\qquad X\\sim U(a,b)\\Rightarrow EX=\\frac{a+b}{2},\\ \\operatorname{Var}X=\\frac{(b-a)^2}{12}",
   "pitfalls": [
     "密度值不是单点概率，连续变量单点概率为 0"
   ],
   "example": {
-    "prompt": "自编例题：f(x)=cx，0<x<2，求 c 与 P(X<1)。",
-    "solution": "积分 0 到 2 得 2c=1，c=1/2；积分 0 到 1 得概率 1/4。"
+    "prompt": "自编例题：X~U(2,6)，写CDF并求P(3<X≤5)、均值方差。",
+    "solution": "CDF为0（x<2）、(x−2)/4（2≤x<6）、1（x≥6）；概率1/2，均值4，方差4/3。"
   },
   "relatedIds": [
     "pr-dist-exponential",

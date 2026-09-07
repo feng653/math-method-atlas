@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-classic",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 14 题。归一化识别泊松分布，二阶矩由均值和方差恢复。"
+      "verification": "verified",
+      "note": "独立方法关联复核：概率归一化识别参数1的泊松分布，E(X²)=Var(X)+(EX)²。"
     },
     {
       "methodId": "pr-moment-variance",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 14 题。归一化识别泊松分布，二阶矩由均值和方差恢复。"
+      "verification": "verified",
+      "note": "独立方法关联复核：概率归一化识别参数1的泊松分布，E(X²)=Var(X)+(EX)²。"
     }
   ]
 }

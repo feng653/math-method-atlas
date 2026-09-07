@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-double-cartesian",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 19 题。交换为两次单积分并分别分部积分，边界函数条件消去边界项。"
+      "verification": "verified",
+      "note": "独立方法关联复核：矩形域上连续混合偏导可累次积分，两次分部，边界给定恒等式及其导数使边界项消失。"
     },
     {
       "methodId": "hm-integration-by-parts",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 19 题。交换为两次单积分并分别分部积分，边界函数条件消去边界项。"
+      "verification": "verified",
+      "note": "独立方法关联复核：矩形域上连续混合偏导可累次积分，两次分部，边界给定恒等式及其导数使边界项消失。"
     }
   ]
 }

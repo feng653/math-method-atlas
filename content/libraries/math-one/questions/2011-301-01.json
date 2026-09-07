@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-concavity-asymptote",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 1 题。考察各候选点附近二阶导数的首个非零项及符号变化。"
+      "verification": "verified",
+      "note": "独立方法关联复核：多项式在候选零点可微，局部二阶导的首非零项可判断左右凹凸符号变化。"
     }
   ]
 }

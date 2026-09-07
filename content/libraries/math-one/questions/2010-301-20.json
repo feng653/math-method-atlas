@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "la-system-parameter",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 20 题。两个不同解要求系数秩不足且增广秩一致，分参数消元求通解。"
+      "verification": "verified",
+      "note": "独立方法关联复核：存在不同解意味着可解且系数秩不足，按λ分支消元确定相容参数，再构造特解加齐次解。"
     },
     {
       "methodId": "la-system-general",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 20 题。两个不同解要求系数秩不足且增广秩一致，分参数消元求通解。"
+      "verification": "verified",
+      "note": "独立方法关联复核：存在不同解意味着可解且系数秩不足，按λ分支消元确定相容参数，再构造特解加齐次解。"
     }
   ]
 }

@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-riemann-sum",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 4 题。提出网格面积因子，识别单位正方形上的二重积分。"
+      "verification": "verified",
+      "note": "独立方法关联复核：双重和可分离成两个一维Riemann和的乘积，也等价于单位正方形累次积分，避免把一维卡生搬到一般二维。"
     },
     {
       "methodId": "hm-double-cartesian",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 4 题。提出网格面积因子，识别单位正方形上的二重积分。"
+      "verification": "verified",
+      "note": "独立方法关联复核：双重和可分离成两个一维Riemann和的乘积，也等价于单位正方形累次积分，避免把一维卡生搬到一般二维。"
     }
   ]
 }

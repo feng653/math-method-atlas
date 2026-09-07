@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-event-total",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 8 题。按离散因子取值分情况，常值分支产生点质量。"
+      "verification": "verified",
+      "note": "独立方法关联复核：按离散因子为0或1作全概率分解，零因子产生原点点质量，连续正态分支没有额外跳跃。"
     },
     {
       "methodId": "pr-dist-cdf",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 8 题。按离散因子取值分情况，常值分支产生点质量。"
+      "verification": "verified",
+      "note": "独立方法关联复核：按离散因子为0或1作全概率分解，零因子产生原点点质量，连续正态分支没有额外跳跃。"
     }
   ]
 }

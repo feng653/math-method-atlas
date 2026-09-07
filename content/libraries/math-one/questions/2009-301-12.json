@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-triple-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 12 题。利用球坐标或坐标轮换对称简化二次项积分。"
+      "verification": "verified",
+      "note": "独立方法关联复核：单位球上的连续被积函数可球坐标积分，或以坐标置换对称合并三个二次项。"
     }
   ]
 }

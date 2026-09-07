@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-cdf",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 7 题。点概率等于分布函数该点值减左极限。"
+      "verification": "verified",
+      "note": "独立方法关联复核：所求点质量是CDF在该点的跳跃，使用函数值与左极限之差。"
     }
   ]
 }

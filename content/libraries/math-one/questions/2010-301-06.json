@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-symmetric",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 6 题。特征值满足同一多项式，实对称可对角化且秩确定非零重数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：实对称矩阵可正交对角化，特征根满足λ²+λ=0，秩3确定三个非零根。"
     }
   ]
 }

@@ -1,0 +1,1599 @@
+{
+  "schemaVersion": 1,
+  "type": "syllabus-items",
+  "libraryId": "math-one",
+  "targetVersion": "2026",
+  "evidenceVersion": "2019",
+  "status": "historical-only",
+  "sourceUrl": "https://jtb.ncbcjxau.edu.cn/uploadfile/3/Attachment/667c3cc0da.pdf",
+  "items": [
+    {
+      "id": "2019-hm-1-01",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 1,
+      "page": 1,
+      "label": "函数表达与建模",
+      "candidateMethodIds": [
+        "hm-function-domain",
+        "hm-function-properties"
+      ]
+    },
+    {
+      "id": "2019-hm-1-02",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 2,
+      "page": 1,
+      "label": "函数四种性质",
+      "candidateMethodIds": [
+        "hm-function-properties"
+      ]
+    },
+    {
+      "id": "2019-hm-1-03",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 3,
+      "page": 1,
+      "label": "复合分段反函数与隐函数",
+      "candidateMethodIds": [
+        "hm-function-domain",
+        "hm-continuity-piecewise",
+        "hm-implicit-derivative"
+      ]
+    },
+    {
+      "id": "2019-hm-1-04",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 4,
+      "page": 1,
+      "label": "初等图形识别",
+      "candidateMethodIds": [
+        "hm-function-properties"
+      ]
+    },
+    {
+      "id": "2019-hm-1-05",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 5,
+      "page": 1,
+      "label": "极限与双侧关系",
+      "candidateMethodIds": [
+        "hm-limit-definition"
+      ]
+    },
+    {
+      "id": "2019-hm-1-06",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 6,
+      "page": 1,
+      "label": "极限运算",
+      "candidateMethodIds": [
+        "hm-limit-definition"
+      ]
+    },
+    {
+      "id": "2019-hm-1-07",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 7,
+      "page": 1,
+      "label": "存在准则与重要极限",
+      "candidateMethodIds": [
+        "hm-squeeze",
+        "hm-recursive-limit",
+        "hm-important-limits"
+      ]
+    },
+    {
+      "id": "2019-hm-1-08",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 8,
+      "page": 1,
+      "label": "无穷小无穷大与小量比较",
+      "candidateMethodIds": [
+        "hm-infinitesimal-order",
+        "hm-equivalent-infinitesimal"
+      ]
+    },
+    {
+      "id": "2019-hm-1-09",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 9,
+      "page": 2,
+      "label": "连续和间断分类",
+      "candidateMethodIds": [
+        "hm-continuity-piecewise"
+      ]
+    },
+    {
+      "id": "2019-hm-1-10",
+      "groupId": "req-limits",
+      "subject": "高等数学",
+      "chapterNumber": 1,
+      "number": 10,
+      "page": 2,
+      "label": "闭区间连续性质",
+      "candidateMethodIds": [
+        "hm-intermediate-value",
+        "hm-monotonic-extrema"
+      ]
+    },
+    {
+      "id": "2019-hm-2-01",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 1,
+      "page": 2,
+      "label": "导数微分意义与切线",
+      "candidateMethodIds": [
+        "hm-derivative-definition",
+        "hm-differential-approximation",
+        "hm-plane-tangent-normal"
+      ]
+    },
+    {
+      "id": "2019-hm-2-02",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 2,
+      "page": 2,
+      "label": "求导规则与微分",
+      "candidateMethodIds": [
+        "hm-chain-log-differentiation",
+        "hm-differential-approximation"
+      ]
+    },
+    {
+      "id": "2019-hm-2-03",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 3,
+      "page": 2,
+      "label": "高阶求导",
+      "candidateMethodIds": [
+        "hm-leibniz-high-derivative"
+      ]
+    },
+    {
+      "id": "2019-hm-2-04",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 4,
+      "page": 2,
+      "label": "特殊表达求导",
+      "candidateMethodIds": [
+        "hm-derivative-definition",
+        "hm-implicit-derivative",
+        "hm-parametric-derivative",
+        "hm-inverse-derivative"
+      ]
+    },
+    {
+      "id": "2019-hm-2-05",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 5,
+      "page": 2,
+      "label": "中值与泰勒定理",
+      "candidateMethodIds": [
+        "hm-mean-value-proof",
+        "hm-cauchy-mean-value",
+        "hm-taylor-remainder"
+      ]
+    },
+    {
+      "id": "2019-hm-2-06",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 6,
+      "page": 2,
+      "label": "未定式求极限",
+      "candidateMethodIds": [
+        "hm-lhopital"
+      ]
+    },
+    {
+      "id": "2019-hm-2-07",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 7,
+      "page": 2,
+      "label": "单调极值与最值",
+      "candidateMethodIds": [
+        "hm-monotonic-extrema"
+      ]
+    },
+    {
+      "id": "2019-hm-2-08",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 8,
+      "page": 2,
+      "label": "曲线形态与渐近线",
+      "candidateMethodIds": [
+        "hm-concavity-asymptote"
+      ]
+    },
+    {
+      "id": "2019-hm-2-09",
+      "groupId": "req-derivatives",
+      "subject": "高等数学",
+      "chapterNumber": 2,
+      "number": 9,
+      "page": 2,
+      "label": "曲率与曲率圆",
+      "candidateMethodIds": [
+        "hm-curvature-circle"
+      ]
+    },
+    {
+      "id": "2019-hm-3-01",
+      "groupId": "req-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 3,
+      "number": 1,
+      "page": 3,
+      "label": "原函数与积分概念",
+      "candidateMethodIds": [
+        "hm-newton-leibniz",
+        "hm-riemann-sum"
+      ]
+    },
+    {
+      "id": "2019-hm-3-02",
+      "groupId": "req-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 3,
+      "number": 2,
+      "page": 3,
+      "label": "基本积分性质中值换元分部",
+      "candidateMethodIds": [
+        "hm-newton-leibniz",
+        "hm-integral-inequality",
+        "hm-substitution-integral",
+        "hm-integration-by-parts"
+      ]
+    },
+    {
+      "id": "2019-hm-3-03",
+      "groupId": "req-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 3,
+      "number": 3,
+      "page": 3,
+      "label": "有理三角根式积分",
+      "candidateMethodIds": [
+        "hm-rational-integral",
+        "hm-trig-substitution"
+      ]
+    },
+    {
+      "id": "2019-hm-3-04",
+      "groupId": "req-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 3,
+      "number": 4,
+      "page": 3,
+      "label": "变限求导与微积分联系",
+      "candidateMethodIds": [
+        "hm-newton-leibniz"
+      ]
+    },
+    {
+      "id": "2019-hm-3-05",
+      "groupId": "req-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 3,
+      "number": 5,
+      "page": 3,
+      "label": "反常积分",
+      "candidateMethodIds": [
+        "hm-improper-integral"
+      ]
+    },
+    {
+      "id": "2019-hm-3-06",
+      "groupId": "req-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 3,
+      "number": 6,
+      "page": 3,
+      "label": "积分几何物理应用",
+      "candidateMethodIds": [
+        "hm-integral-area-volume",
+        "hm-arc-work-integral",
+        "hm-revolution-area",
+        "hm-cross-section-average",
+        "hm-pressure-gravity",
+        "hm-integral-mass-centroid"
+      ]
+    },
+    {
+      "id": "2019-hm-4-01",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 1,
+      "page": 3,
+      "label": "空间坐标与向量",
+      "candidateMethodIds": [
+        "hm-vector-products"
+      ]
+    },
+    {
+      "id": "2019-hm-4-02",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 2,
+      "page": 3,
+      "label": "向量积与位置关系",
+      "candidateMethodIds": [
+        "hm-vector-products"
+      ]
+    },
+    {
+      "id": "2019-hm-4-03",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 3,
+      "page": 3,
+      "label": "方向余弦与坐标运算",
+      "candidateMethodIds": [
+        "hm-direction-cosines",
+        "hm-vector-products"
+      ]
+    },
+    {
+      "id": "2019-hm-4-04",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 4,
+      "page": 3,
+      "label": "直线平面方程",
+      "candidateMethodIds": [
+        "hm-line-plane-equations"
+      ]
+    },
+    {
+      "id": "2019-hm-4-05",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 5,
+      "page": 3,
+      "label": "空间夹角与相互关系",
+      "candidateMethodIds": [
+        "hm-space-angle-distance",
+        "hm-line-plane-equations"
+      ]
+    },
+    {
+      "id": "2019-hm-4-06",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 6,
+      "page": 3,
+      "label": "点线面距离",
+      "candidateMethodIds": [
+        "hm-space-angle-distance"
+      ]
+    },
+    {
+      "id": "2019-hm-4-07",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 7,
+      "page": 3,
+      "label": "曲面曲线方程含义",
+      "candidateMethodIds": [
+        "hm-quadric-surfaces",
+        "hm-space-intersections"
+      ]
+    },
+    {
+      "id": "2019-hm-4-08",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 8,
+      "page": 3,
+      "label": "二次曲面与旋转柱面",
+      "candidateMethodIds": [
+        "hm-quadric-surfaces",
+        "hm-revolution-cylinder"
+      ]
+    },
+    {
+      "id": "2019-hm-4-09",
+      "groupId": "req-geometry",
+      "subject": "高等数学",
+      "chapterNumber": 4,
+      "number": 9,
+      "page": 3,
+      "label": "空间曲线表达与投影",
+      "candidateMethodIds": [
+        "hm-space-intersections",
+        "hm-space-tangent"
+      ]
+    },
+    {
+      "id": "2019-hm-5-01",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 1,
+      "page": 4,
+      "label": "多元函数与几何意义",
+      "candidateMethodIds": [
+        "hm-multivariable-limit"
+      ]
+    },
+    {
+      "id": "2019-hm-5-02",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 2,
+      "page": 4,
+      "label": "多元连续与闭域性质",
+      "candidateMethodIds": [
+        "hm-multivariable-limit",
+        "hm-lagrange-multipliers"
+      ]
+    },
+    {
+      "id": "2019-hm-5-03",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 3,
+      "page": 4,
+      "label": "偏导全微分与判别",
+      "candidateMethodIds": [
+        "hm-partial-total-differential"
+      ]
+    },
+    {
+      "id": "2019-hm-5-04",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 4,
+      "page": 4,
+      "label": "方向导数和梯度",
+      "candidateMethodIds": [
+        "hm-direction-gradient"
+      ]
+    },
+    {
+      "id": "2019-hm-5-05",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 5,
+      "page": 4,
+      "label": "复合偏导一二阶",
+      "candidateMethodIds": [
+        "hm-multivariable-chain"
+      ]
+    },
+    {
+      "id": "2019-hm-5-06",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 6,
+      "page": 4,
+      "label": "隐函数存在与偏导",
+      "candidateMethodIds": [
+        "hm-multivariable-implicit"
+      ]
+    },
+    {
+      "id": "2019-hm-5-07",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 7,
+      "page": 4,
+      "label": "空间切线切面法向",
+      "candidateMethodIds": [
+        "hm-space-tangent",
+        "hm-tangent-plane"
+      ]
+    },
+    {
+      "id": "2019-hm-5-08",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 8,
+      "page": 4,
+      "label": "二元二阶泰勒",
+      "candidateMethodIds": [
+        "hm-second-taylor"
+      ]
+    },
+    {
+      "id": "2019-hm-5-09",
+      "groupId": "req-multivariable",
+      "subject": "高等数学",
+      "chapterNumber": 5,
+      "number": 9,
+      "page": 4,
+      "label": "多元极值与约束优化",
+      "candidateMethodIds": [
+        "hm-hessian-extrema",
+        "hm-lagrange-multipliers"
+      ]
+    },
+    {
+      "id": "2019-hm-6-01",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 1,
+      "page": 4,
+      "label": "重积分概念性质",
+      "candidateMethodIds": [
+        "hm-double-cartesian",
+        "hm-triple-integral"
+      ]
+    },
+    {
+      "id": "2019-hm-6-02",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 2,
+      "page": 4,
+      "label": "二三重积分坐标计算",
+      "candidateMethodIds": [
+        "hm-double-cartesian",
+        "hm-double-polar",
+        "hm-triple-integral"
+      ]
+    },
+    {
+      "id": "2019-hm-6-03",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 3,
+      "page": 4,
+      "label": "两类线积分及联系",
+      "candidateMethodIds": [
+        "hm-line-first-kind",
+        "hm-line-second-kind"
+      ]
+    },
+    {
+      "id": "2019-hm-6-04",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 4,
+      "page": 4,
+      "label": "线积分计算",
+      "candidateMethodIds": [
+        "hm-line-first-kind",
+        "hm-line-second-kind"
+      ]
+    },
+    {
+      "id": "2019-hm-6-05",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 5,
+      "page": 4,
+      "label": "格林与势函数",
+      "candidateMethodIds": [
+        "hm-green",
+        "hm-path-independence"
+      ]
+    },
+    {
+      "id": "2019-hm-6-06",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 6,
+      "page": 4,
+      "label": "面积分及高斯斯托克斯",
+      "candidateMethodIds": [
+        "hm-surface-integrals",
+        "hm-gauss",
+        "hm-stokes"
+      ]
+    },
+    {
+      "id": "2019-hm-6-07",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 7,
+      "page": 4,
+      "label": "散度旋度",
+      "candidateMethodIds": [
+        "hm-divergence",
+        "hm-curl"
+      ]
+    },
+    {
+      "id": "2019-hm-6-08",
+      "groupId": "req-multiple-integrals",
+      "subject": "高等数学",
+      "chapterNumber": 6,
+      "number": 8,
+      "page": 4,
+      "label": "多元积分应用",
+      "candidateMethodIds": [
+        "hm-integral-mass-centroid",
+        "hm-surface-integrals",
+        "hm-line-second-kind",
+        "hm-pressure-gravity"
+      ]
+    },
+    {
+      "id": "2019-hm-7-01",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 1,
+      "page": 5,
+      "label": "级数定义和基本性质",
+      "candidateMethodIds": [
+        "hm-series-basic"
+      ]
+    },
+    {
+      "id": "2019-hm-7-02",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 2,
+      "page": 5,
+      "label": "几何级数与p级数敛散",
+      "candidateMethodIds": [
+        "hm-series-basic",
+        "hm-series-comparison"
+      ]
+    },
+    {
+      "id": "2019-hm-7-03",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 3,
+      "page": 5,
+      "label": "正项级数判别",
+      "candidateMethodIds": [
+        "hm-series-comparison",
+        "hm-ratio-root-test"
+      ]
+    },
+    {
+      "id": "2019-hm-7-04",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 4,
+      "page": 5,
+      "label": "交错判别",
+      "candidateMethodIds": [
+        "hm-alternating-series"
+      ]
+    },
+    {
+      "id": "2019-hm-7-05",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 5,
+      "page": 5,
+      "label": "绝对与条件收敛",
+      "candidateMethodIds": [
+        "hm-alternating-series"
+      ]
+    },
+    {
+      "id": "2019-hm-7-06",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 6,
+      "page": 5,
+      "label": "函数项收敛域与和",
+      "candidateMethodIds": [
+        "hm-series-basic",
+        "hm-power-radius"
+      ]
+    },
+    {
+      "id": "2019-hm-7-07",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 7,
+      "page": 5,
+      "label": "幂级数半径与端点",
+      "candidateMethodIds": [
+        "hm-power-radius"
+      ]
+    },
+    {
+      "id": "2019-hm-7-08",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 8,
+      "page": 5,
+      "label": "逐项运算与求和",
+      "candidateMethodIds": [
+        "hm-power-sum"
+      ]
+    },
+    {
+      "id": "2019-hm-7-09",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 9,
+      "page": 5,
+      "label": "泰勒级数成立条件",
+      "candidateMethodIds": [
+        "hm-taylor-remainder",
+        "hm-taylor-expansion"
+      ]
+    },
+    {
+      "id": "2019-hm-7-10",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 10,
+      "page": 5,
+      "label": "常用展开与间接展开",
+      "candidateMethodIds": [
+        "hm-taylor-expansion"
+      ]
+    },
+    {
+      "id": "2019-hm-7-11",
+      "groupId": "req-series",
+      "subject": "高等数学",
+      "chapterNumber": 7,
+      "number": 11,
+      "page": 5,
+      "label": "傅里叶与半区间展开",
+      "candidateMethodIds": [
+        "hm-fourier",
+        "hm-fourier-half-range"
+      ]
+    },
+    {
+      "id": "2019-hm-8-01",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 1,
+      "page": 5,
+      "label": "方程阶数与解概念",
+      "candidateMethodIds": [
+        "hm-linear-ode-structure"
+      ]
+    },
+    {
+      "id": "2019-hm-8-02",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 2,
+      "page": 5,
+      "label": "分离变量和一阶线性",
+      "candidateMethodIds": [
+        "hm-ode-separable",
+        "hm-ode-linear-first"
+      ]
+    },
+    {
+      "id": "2019-hm-8-03",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 3,
+      "page": 5,
+      "label": "齐次伯努利全微分及简单代换",
+      "candidateMethodIds": [
+        "hm-ode-homogeneous",
+        "hm-ode-bernoulli",
+        "hm-exact-ode"
+      ]
+    },
+    {
+      "id": "2019-hm-8-04",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 4,
+      "page": 5,
+      "label": "高阶降阶",
+      "candidateMethodIds": [
+        "hm-ode-reduction"
+      ]
+    },
+    {
+      "id": "2019-hm-8-05",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 5,
+      "page": 5,
+      "label": "线性解的结构",
+      "candidateMethodIds": [
+        "hm-linear-ode-structure"
+      ]
+    },
+    {
+      "id": "2019-hm-8-06",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 6,
+      "page": 5,
+      "label": "常系数齐次方程",
+      "candidateMethodIds": [
+        "hm-ode-characteristic"
+      ]
+    },
+    {
+      "id": "2019-hm-8-07",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 7,
+      "page": 5,
+      "label": "常系数非齐次方程",
+      "candidateMethodIds": [
+        "hm-ode-undetermined"
+      ]
+    },
+    {
+      "id": "2019-hm-8-08",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 8,
+      "page": 6,
+      "label": "欧拉方程",
+      "candidateMethodIds": [
+        "hm-ode-euler"
+      ]
+    },
+    {
+      "id": "2019-hm-8-09",
+      "groupId": "req-ode",
+      "subject": "高等数学",
+      "chapterNumber": 8,
+      "number": 9,
+      "page": 6,
+      "label": "微分方程应用",
+      "candidateMethodIds": [
+        "hm-ode-modeling"
+      ]
+    },
+    {
+      "id": "2019-la-1-01",
+      "groupId": "req-la-determinants",
+      "subject": "线性代数",
+      "chapterNumber": 1,
+      "number": 1,
+      "page": 6,
+      "label": "行列式含义与性质",
+      "candidateMethodIds": [
+        "la-det-row-operations"
+      ]
+    },
+    {
+      "id": "2019-la-1-02",
+      "groupId": "req-la-determinants",
+      "subject": "线性代数",
+      "chapterNumber": 1,
+      "number": 2,
+      "page": 6,
+      "label": "变换与展开计算",
+      "candidateMethodIds": [
+        "la-det-row-operations",
+        "la-det-expansion"
+      ]
+    },
+    {
+      "id": "2019-la-2-01",
+      "groupId": "req-la-matrices",
+      "subject": "线性代数",
+      "chapterNumber": 2,
+      "number": 1,
+      "page": 6,
+      "label": "矩阵类型及性质",
+      "candidateMethodIds": [
+        "la-matrix-product"
+      ]
+    },
+    {
+      "id": "2019-la-2-02",
+      "groupId": "req-la-matrices",
+      "subject": "线性代数",
+      "chapterNumber": 2,
+      "number": 2,
+      "page": 6,
+      "label": "矩阵运算与幂",
+      "candidateMethodIds": [
+        "la-matrix-product",
+        "la-matrix-power"
+      ]
+    },
+    {
+      "id": "2019-la-2-03",
+      "groupId": "req-la-matrices",
+      "subject": "线性代数",
+      "chapterNumber": 2,
+      "number": 3,
+      "page": 6,
+      "label": "可逆性与伴随求逆",
+      "candidateMethodIds": [
+        "la-matrix-inverse",
+        "la-matrix-adjugate"
+      ]
+    },
+    {
+      "id": "2019-la-2-04",
+      "groupId": "req-la-matrices",
+      "subject": "线性代数",
+      "chapterNumber": 2,
+      "number": 4,
+      "page": 6,
+      "label": "初等变换等价秩与逆",
+      "candidateMethodIds": [
+        "la-matrix-elementary",
+        "la-matrix-rank",
+        "la-matrix-inverse"
+      ]
+    },
+    {
+      "id": "2019-la-2-05",
+      "groupId": "req-la-matrices",
+      "subject": "线性代数",
+      "chapterNumber": 2,
+      "number": 5,
+      "page": 6,
+      "label": "分块运算",
+      "candidateMethodIds": [
+        "la-block-operations"
+      ]
+    },
+    {
+      "id": "2019-la-3-01",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 1,
+      "page": 6,
+      "label": "向量组合与表示",
+      "candidateMethodIds": [
+        "la-vector-representation"
+      ]
+    },
+    {
+      "id": "2019-la-3-02",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 2,
+      "page": 7,
+      "label": "相关无关判别",
+      "candidateMethodIds": [
+        "la-vector-dependence"
+      ]
+    },
+    {
+      "id": "2019-la-3-03",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 3,
+      "page": 7,
+      "label": "极大无关组与秩",
+      "candidateMethodIds": [
+        "la-vector-basis"
+      ]
+    },
+    {
+      "id": "2019-la-3-04",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 4,
+      "page": 7,
+      "label": "向量组等价与矩阵秩",
+      "candidateMethodIds": [
+        "la-subspace-equivalence",
+        "la-matrix-rank"
+      ]
+    },
+    {
+      "id": "2019-la-3-05",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 5,
+      "page": 7,
+      "label": "空间子空间基与维数",
+      "candidateMethodIds": [
+        "la-subspace-equivalence",
+        "la-vector-coordinate"
+      ]
+    },
+    {
+      "id": "2019-la-3-06",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 6,
+      "page": 7,
+      "label": "基坐标与过渡",
+      "candidateMethodIds": [
+        "la-vector-coordinate"
+      ]
+    },
+    {
+      "id": "2019-la-3-07",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 7,
+      "page": 7,
+      "label": "内积与施密特",
+      "candidateMethodIds": [
+        "la-vector-orthogonal"
+      ]
+    },
+    {
+      "id": "2019-la-3-08",
+      "groupId": "req-la-vectors",
+      "subject": "线性代数",
+      "chapterNumber": 3,
+      "number": 8,
+      "page": 7,
+      "label": "正交基与正交矩阵",
+      "candidateMethodIds": [
+        "la-vector-orthogonal",
+        "la-eigen-symmetric"
+      ]
+    },
+    {
+      "id": "2019-la-4-01",
+      "groupId": "req-la-systems",
+      "subject": "线性代数",
+      "chapterNumber": 4,
+      "number": 1,
+      "page": 7,
+      "label": "克拉默求解",
+      "candidateMethodIds": [
+        "la-system-cramer"
+      ]
+    },
+    {
+      "id": "2019-la-4-02",
+      "groupId": "req-la-systems",
+      "subject": "线性代数",
+      "chapterNumber": 4,
+      "number": 2,
+      "page": 7,
+      "label": "齐次非齐次有解条件",
+      "candidateMethodIds": [
+        "la-system-consistency",
+        "la-system-homogeneous"
+      ]
+    },
+    {
+      "id": "2019-la-4-03",
+      "groupId": "req-la-systems",
+      "subject": "线性代数",
+      "chapterNumber": 4,
+      "number": 3,
+      "page": 7,
+      "label": "基础解系与解空间",
+      "candidateMethodIds": [
+        "la-system-homogeneous"
+      ]
+    },
+    {
+      "id": "2019-la-4-04",
+      "groupId": "req-la-systems",
+      "subject": "线性代数",
+      "chapterNumber": 4,
+      "number": 4,
+      "page": 7,
+      "label": "非齐次通解结构",
+      "candidateMethodIds": [
+        "la-system-general"
+      ]
+    },
+    {
+      "id": "2019-la-4-05",
+      "groupId": "req-la-systems",
+      "subject": "线性代数",
+      "chapterNumber": 4,
+      "number": 5,
+      "page": 7,
+      "label": "行变换求解",
+      "candidateMethodIds": [
+        "la-system-parameter",
+        "la-system-general"
+      ]
+    },
+    {
+      "id": "2019-la-5-01",
+      "groupId": "req-la-eigen",
+      "subject": "线性代数",
+      "chapterNumber": 5,
+      "number": 1,
+      "page": 7,
+      "label": "特征根向量及性质",
+      "candidateMethodIds": [
+        "la-eigen-characteristic"
+      ]
+    },
+    {
+      "id": "2019-la-5-02",
+      "groupId": "req-la-eigen",
+      "subject": "线性代数",
+      "chapterNumber": 5,
+      "number": 2,
+      "page": 7,
+      "label": "相似与对角化",
+      "candidateMethodIds": [
+        "la-eigen-similarity",
+        "la-eigen-diagonalization"
+      ]
+    },
+    {
+      "id": "2019-la-5-03",
+      "groupId": "req-la-eigen",
+      "subject": "线性代数",
+      "chapterNumber": 5,
+      "number": 3,
+      "page": 7,
+      "label": "实对称阵的谱性质",
+      "candidateMethodIds": [
+        "la-eigen-symmetric"
+      ]
+    },
+    {
+      "id": "2019-la-6-01",
+      "groupId": "req-la-quadratic",
+      "subject": "线性代数",
+      "chapterNumber": 6,
+      "number": 1,
+      "page": 8,
+      "label": "矩阵表达合同与惯性",
+      "candidateMethodIds": [
+        "la-quadratic-matrix",
+        "la-inertia-canonical"
+      ]
+    },
+    {
+      "id": "2019-la-6-02",
+      "groupId": "req-la-quadratic",
+      "subject": "线性代数",
+      "chapterNumber": 6,
+      "number": 2,
+      "page": 8,
+      "label": "正交与配方化简",
+      "candidateMethodIds": [
+        "la-quadratic-orthogonal",
+        "la-quadratic-completion"
+      ]
+    },
+    {
+      "id": "2019-la-6-03",
+      "groupId": "req-la-quadratic",
+      "subject": "线性代数",
+      "chapterNumber": 6,
+      "number": 3,
+      "page": 8,
+      "label": "正定判别",
+      "candidateMethodIds": [
+        "la-quadratic-positive"
+      ]
+    },
+    {
+      "id": "2019-pr-1-01",
+      "groupId": "req-pr-events",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 1,
+      "number": 1,
+      "page": 8,
+      "label": "样本空间与事件运算",
+      "candidateMethodIds": [
+        "pr-event-union",
+        "pr-event-counting"
+      ]
+    },
+    {
+      "id": "2019-pr-1-02",
+      "groupId": "req-pr-events",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 1,
+      "number": 2,
+      "page": 8,
+      "label": "概率公式与概型",
+      "candidateMethodIds": [
+        "pr-event-conditional",
+        "pr-event-counting",
+        "pr-geometric-probability",
+        "pr-event-union",
+        "pr-event-total",
+        "pr-event-bayes"
+      ]
+    },
+    {
+      "id": "2019-pr-1-03",
+      "groupId": "req-pr-events",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 1,
+      "number": 3,
+      "page": 8,
+      "label": "独立性与重复试验",
+      "candidateMethodIds": [
+        "pr-event-independence",
+        "pr-dist-classic"
+      ]
+    },
+    {
+      "id": "2019-pr-2-01",
+      "groupId": "req-pr-distributions",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 2,
+      "number": 1,
+      "page": 8,
+      "label": "随机变量与累计概率",
+      "candidateMethodIds": [
+        "pr-dist-cdf"
+      ]
+    },
+    {
+      "id": "2019-pr-2-02",
+      "groupId": "req-pr-distributions",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 2,
+      "number": 2,
+      "page": 8,
+      "label": "常见离散模型",
+      "candidateMethodIds": [
+        "pr-dist-discrete",
+        "pr-dist-classic",
+        "pr-dist-geometric",
+        "pr-dist-hypergeometric"
+      ]
+    },
+    {
+      "id": "2019-pr-2-03",
+      "groupId": "req-pr-distributions",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 2,
+      "number": 3,
+      "page": 8,
+      "label": "二项的泊松近似",
+      "candidateMethodIds": [
+        "pr-poisson-approximation"
+      ]
+    },
+    {
+      "id": "2019-pr-2-04",
+      "groupId": "req-pr-distributions",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 2,
+      "number": 4,
+      "page": 8,
+      "label": "密度与常见连续模型",
+      "candidateMethodIds": [
+        "pr-dist-density",
+        "pr-dist-normal",
+        "pr-dist-exponential"
+      ]
+    },
+    {
+      "id": "2019-pr-2-05",
+      "groupId": "req-pr-distributions",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 2,
+      "number": 5,
+      "page": 8,
+      "label": "单变量函数分布",
+      "candidateMethodIds": [
+        "pr-dist-transform"
+      ]
+    },
+    {
+      "id": "2019-pr-3-01",
+      "groupId": "req-pr-joint",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 3,
+      "number": 1,
+      "page": 9,
+      "label": "联合边缘条件及事件",
+      "candidateMethodIds": [
+        "pr-joint-cdf",
+        "pr-discrete-joint",
+        "pr-joint-marginal",
+        "pr-joint-conditional"
+      ]
+    },
+    {
+      "id": "2019-pr-3-02",
+      "groupId": "req-pr-joint",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 3,
+      "number": 2,
+      "page": 9,
+      "label": "独立与不相关",
+      "candidateMethodIds": [
+        "pr-joint-independence",
+        "pr-moment-correlation"
+      ]
+    },
+    {
+      "id": "2019-pr-3-03",
+      "groupId": "req-pr-joint",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 3,
+      "number": 3,
+      "page": 9,
+      "label": "二维均匀与正态",
+      "candidateMethodIds": [
+        "pr-joint-marginal",
+        "pr-bivariate-normal"
+      ]
+    },
+    {
+      "id": "2019-pr-3-04",
+      "groupId": "req-pr-joint",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 3,
+      "number": 4,
+      "page": 9,
+      "label": "多变量函数分布",
+      "candidateMethodIds": [
+        "pr-joint-transform",
+        "pr-joint-convolution",
+        "pr-joint-max-min",
+        "pr-discrete-joint"
+      ]
+    },
+    {
+      "id": "2019-pr-4-01",
+      "groupId": "req-pr-moments",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 4,
+      "number": 1,
+      "page": 9,
+      "label": "数字特征及常用模型矩",
+      "candidateMethodIds": [
+        "pr-moment-expectation",
+        "pr-moment-variance",
+        "pr-moment-covariance",
+        "pr-moment-correlation",
+        "pr-dist-classic",
+        "pr-dist-geometric",
+        "pr-dist-hypergeometric",
+        "pr-dist-density",
+        "pr-dist-normal",
+        "pr-dist-exponential"
+      ]
+    },
+    {
+      "id": "2019-pr-4-02",
+      "groupId": "req-pr-moments",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 4,
+      "number": 2,
+      "page": 9,
+      "label": "函数期望",
+      "candidateMethodIds": [
+        "pr-moment-expectation",
+        "pr-moment-total-expectation"
+      ]
+    },
+    {
+      "id": "2019-pr-5-01",
+      "groupId": "req-pr-limit",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 5,
+      "number": 1,
+      "page": 9,
+      "label": "切比雪夫概率界",
+      "candidateMethodIds": [
+        "pr-moment-inequality"
+      ]
+    },
+    {
+      "id": "2019-pr-5-02",
+      "groupId": "req-pr-limit",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 5,
+      "number": 2,
+      "page": 9,
+      "label": "三种大数定律",
+      "candidateMethodIds": [
+        "pr-chebyshev-lln",
+        "pr-limit-lln"
+      ]
+    },
+    {
+      "id": "2019-pr-5-03",
+      "groupId": "req-pr-limit",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 5,
+      "number": 3,
+      "page": 9,
+      "label": "二项与同分布中心极限",
+      "candidateMethodIds": [
+        "pr-limit-binomial",
+        "pr-limit-clt"
+      ]
+    },
+    {
+      "id": "2019-pr-6-01",
+      "groupId": "req-pr-sampling",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 6,
+      "number": 1,
+      "page": 10,
+      "label": "总体样本统计量与矩",
+      "candidateMethodIds": [
+        "pr-sample-empirical"
+      ]
+    },
+    {
+      "id": "2019-pr-6-02",
+      "groupId": "req-pr-sampling",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 6,
+      "number": 2,
+      "page": 10,
+      "label": "抽样分布性质和分位数",
+      "candidateMethodIds": [
+        "pr-sample-chi-square",
+        "pr-sample-t-f"
+      ]
+    },
+    {
+      "id": "2019-pr-6-03",
+      "groupId": "req-pr-sampling",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 6,
+      "number": 3,
+      "page": 10,
+      "label": "正态样本分布",
+      "candidateMethodIds": [
+        "pr-sample-normal",
+        "pr-sample-chi-square",
+        "pr-sample-t-f"
+      ]
+    },
+    {
+      "id": "2019-pr-7-01",
+      "groupId": "req-pr-estimation",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 7,
+      "number": 1,
+      "page": 10,
+      "label": "点估计及估计量与估计值",
+      "candidateMethodIds": [
+        "pr-estimate-unbiased",
+        "pr-estimate-moments"
+      ]
+    },
+    {
+      "id": "2019-pr-7-02",
+      "groupId": "req-pr-estimation",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 7,
+      "number": 2,
+      "page": 10,
+      "label": "矩法与似然法",
+      "candidateMethodIds": [
+        "pr-estimate-moments",
+        "pr-estimate-mle"
+      ]
+    },
+    {
+      "id": "2019-pr-7-03",
+      "groupId": "req-pr-estimation",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 7,
+      "number": 3,
+      "page": 10,
+      "label": "无偏效率与相合",
+      "candidateMethodIds": [
+        "pr-estimate-unbiased",
+        "pr-estimate-efficiency",
+        "pr-estimate-consistency"
+      ]
+    },
+    {
+      "id": "2019-pr-7-04",
+      "groupId": "req-pr-estimation",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 7,
+      "number": 4,
+      "page": 10,
+      "label": "单双总体区间",
+      "candidateMethodIds": [
+        "pr-estimate-normal-mean",
+        "pr-estimate-normal-variance",
+        "pr-two-means-interval",
+        "pr-two-variances-interval"
+      ]
+    },
+    {
+      "id": "2019-pr-8-01",
+      "groupId": "req-pr-testing",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 8,
+      "number": 1,
+      "page": 10,
+      "label": "检验步骤与两类错",
+      "candidateMethodIds": [
+        "pr-test-errors",
+        "pr-test-normal-mean"
+      ]
+    },
+    {
+      "id": "2019-pr-8-02",
+      "groupId": "req-pr-testing",
+      "subject": "概率论与数理统计",
+      "chapterNumber": 8,
+      "number": 2,
+      "page": 10,
+      "label": "单双正态均值方差检验",
+      "candidateMethodIds": [
+        "pr-test-normal-mean",
+        "pr-test-normal-variance",
+        "pr-test-two-means",
+        "pr-test-two-variances"
+      ]
+    }
+  ]
+}

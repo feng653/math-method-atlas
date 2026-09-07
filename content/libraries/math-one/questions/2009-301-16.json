@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-integral-area-volume",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 16 题。积分求相邻幂曲线面积，部分和消项；子级数可关联对数级数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：先对相邻幂函数之差积分得面积，再对得到的有理项消项，奇数子项可由对数幂级数求和。"
     },
     {
       "methodId": "hm-power-sum",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 16 题。积分求相邻幂曲线面积，部分和消项；子级数可关联对数级数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：先对相邻幂函数之差积分得面积，再对得到的有理项消项，奇数子项可由对数幂级数求和。"
     }
   ]
 }

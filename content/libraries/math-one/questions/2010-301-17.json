@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-integral-inequality",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 17 题。用对数小于自变量建立积分上界，并令可计算上界趋零。"
+      "verification": "verified",
+      "note": "独立方法关联复核：0<ln(1+t)<t给正积分上界，tⁿ|ln t|积分可算且趋零，适用积分比较与夹逼。"
     },
     {
       "methodId": "hm-squeeze",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 17 题。用对数小于自变量建立积分上界，并令可计算上界趋零。"
+      "verification": "verified",
+      "note": "独立方法关联复核：0<ln(1+t)<t给正积分上界，tⁿ|ln t|积分可算且趋零，适用积分比较与夹逼。"
     }
   ]
 }

@@ -5,20 +5,20 @@
   "title": "多元复合函数求导",
   "summary": "按依赖路径累加每一条链式贡献。",
   "conditions": [
-    "各内外层满足所用阶数的可微条件。"
+    "一阶公式要求各内外层可微；所列二阶公式可在外函数 f 及内函数 u、v 均为 C² 的邻域内使用。"
   ],
   "steps": [
     "列变量依赖关系。",
     "每条路径乘导数，再求和。",
     "二阶求导继续对所有依赖项使用链式法则。"
   ],
-  "formula": "z_x=f_u u_x+f_v v_x",
+  "formula": "z_x=f_u u_x+f_v v_x,\\quad z_{xx}=f_{uu}u_x^2+2f_{uv}u_xv_x+f_{vv}v_x^2+f_u u_{xx}+f_v v_{xx}\\quad(f\\in C^2)",
   "pitfalls": [
     "外函数偏导与复合后的偏导含义不同；二阶漏交叉项最常见。"
   ],
   "example": {
-    "prompt": "自编例题：z=u²+v，u=x+y，v=xy，求z_x。",
-    "solution": "f_u=2u、f_v=1，u_x=1、v_x=y，故z_x=2(x+y)+y=2x+3y。"
+    "prompt": "自编：z=u²+v²，u=x²+y、v=xy，求 zx 与 zxx。",
+    "solution": "fu=2u、fv=2v，ux=2x、vx=y，故 zx=4x(x²+y)+2xy²。再求导得 zxx=12x²+4y+2y²。用二阶链式复算：fuu ux²=8x²，fvv vx²=2y²，fu uxx=4(x²+y)，混合项和 vxx 项为零，合计一致。"
   },
   "relatedIds": [
     "hm-multivariable-implicit",

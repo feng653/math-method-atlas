@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-multivariable-implicit",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 2 题。对两个比值变量分别链式求导，再用线性组合消去公共项。"
+      "verification": "verified",
+      "note": "独立方法关联复核：比值坐标对x,y求导，非零F第二偏导给局部隐函数条件，加权求和消去第一偏导。"
     }
   ]
 }

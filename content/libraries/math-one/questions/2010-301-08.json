@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-density",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 8 题。分别积分负半轴的正态部分和正半轴的均匀部分。"
+      "verification": "verified",
+      "note": "独立方法关联复核：正态负半轴质量为1/2，给定均匀分布正半轴质量为3/4，非负性及积分为1给参数条件。"
     }
   ]
 }

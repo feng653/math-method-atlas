@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-matrix",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 21 题。写对称矩阵求特征值，以两个正项一个零项筛参数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：读取独立公式块写实对称矩阵；特征值随参数平移，再以两个正方向和一零方向筛选。"
     },
     {
       "methodId": "la-eigen-characteristic",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 21 题。写对称矩阵求特征值，以两个正项一个零项筛参数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：读取独立公式块写实对称矩阵；特征值随参数平移，再以两个正方向和一零方向筛选。"
     }
   ]
 }

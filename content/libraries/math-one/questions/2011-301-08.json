@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-joint-independence",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 8 题。最大值与最小值的乘积恒等于原变量乘积，再用独立分解期望。"
+      "verification": "verified",
+      "note": "独立方法关联复核：max(X,Y)min(X,Y)=XY恒成立，独立与期望存在保证乘积期望分解，不要求U,V独立。"
     },
     {
       "methodId": "pr-moment-expectation",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 8 题。最大值与最小值的乘积恒等于原变量乘积，再用独立分解期望。"
+      "verification": "verified",
+      "note": "独立方法关联复核：max(X,Y)min(X,Y)=XY恒成立，独立与期望存在保证乘积期望分解，不要求U,V独立。"
     }
   ]
 }

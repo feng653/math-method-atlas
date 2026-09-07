@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-line-first-kind",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 11 题。以横坐标参数化，把弧长元写成导数平方和的根式。"
+      "verification": "verified",
+      "note": "独立方法关联复核：曲线为光滑抛物线段，参数 x 给 ds=√(1+4x²)dx，满足第一类线积分条件。"
     }
   ]
 }

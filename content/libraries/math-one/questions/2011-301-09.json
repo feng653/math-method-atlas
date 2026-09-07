@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-arc-work-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 9 题。先对变上限积分求导，再代入平面曲线弧长公式。"
+      "verification": "verified",
+      "note": "独立方法关联复核：变上限积分导数为tan x，弧长元是√(1+tan²x)dx；明确不采用镜像PDF误写成(tan x)²的解析。"
     },
     {
       "methodId": "hm-newton-leibniz",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 9 题。先对变上限积分求导，再代入平面曲线弧长公式。"
+      "verification": "verified",
+      "note": "独立方法关联复核：变上限积分导数为tan x，弧长元是√(1+tan²x)dx；明确不采用镜像PDF误写成(tan x)²的解析。"
     }
   ]
 }

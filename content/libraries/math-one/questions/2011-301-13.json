@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-orthogonal",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 13 题。正交变换保持特征值，用给定标准形匹配特征多项式。"
+      "verification": "verified",
+      "note": "独立方法关联复核：二次曲面实对称系数矩阵的谱由正交标准形给出，可用特征多项式匹配参数。"
     }
   ]
 }

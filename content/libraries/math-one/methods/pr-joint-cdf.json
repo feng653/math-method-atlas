@@ -1,0 +1,29 @@
+{
+  "id": "pr-joint-cdf",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "一般二维分布函数与矩形概率",
+  "summary": "直接用联合累计概率处理离散、连续或含奇异分量的分布，不预设二维密度存在。",
+  "conditions": [
+    "F(x,y)=P(X≤x,Y≤y)；X、Y为实随机变量。",
+    "候选联合CDF须各坐标右连续、任一坐标趋负无穷时极限0、两坐标趋正无穷时极限1，且每个半开矩形的二重增量非负。"
+  ],
+  "steps": [
+    "将事件拆成可计算的矩形或条件分支；不能仅凭两个边缘分布构造联合分布。",
+    "半开矩形(a,b]×(c,d]使用四项容斥；含左端点时对相应下边界改用左极限。",
+    "令另一坐标趋正无穷取得边缘CDF，检查F(x,y)≤min(FX(x),FY(y))。",
+    "独立等价于对所有x,y均有F(x,y)=FX(x)FY(y)。有对角线集中概率时仍可用CDF，不能强行二次求导替代整份分布。"
+  ],
+  "formula": "P(a<X≤b,c<Y≤d)=F(b,d)-F(a,d)-F(b,c)+F(a,c),\\quad F_X(x)=\\lim_{y\\to+\\infty}F(x,y)",
+  "pitfalls": [
+    "分别单调和边缘正确不足以保证候选函数是联合CDF，还要所有矩形增量非负。",
+    "连续边缘不保证存在二维密度；混合或奇异部分可能在求导后丢失。"
+  ],
+  "example": {
+    "prompt": "自编例题：U~U(0,1)，X=Y=U。写联合CDF并求P(0<X≤1/2,1/4<Y≤3/4)。",
+    "solution": "F(x,y)=max(0,min(1,x,y))。四项容斥为1/2−0−1/4+0=1/4；也等于U落在(1/4,1/2]的概率。概率集中在对角线上，不存在普通二维密度。"
+  },
+  "relatedIds": ["pr-dist-cdf", "pr-joint-marginal", "pr-joint-independence"],
+  "topicIds": ["pr-joint-cdf-topic"],
+  "status": "reviewed"
+}

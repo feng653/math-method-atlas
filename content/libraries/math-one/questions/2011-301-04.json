@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-integral-inequality",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 4 题。在积分区间比较正弦余弦和余切，再利用对数单调性。"
+      "verification": "verified",
+      "note": "独立方法关联复核：在(0,π/4)逐点比较sin、cos、cot的对数；端点对数反常积分可积，积分保序。"
     }
   ]
 }

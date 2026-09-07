@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-power-radius",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 18 题。先逐个检验端点，再由反正切级数乘自变量得到和函数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：以x²为变量判半径并分别检查x=±1，和函数由反正切级数乘x得到。"
     },
     {
       "methodId": "hm-power-sum",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 18 题。先逐个检验端点，再由反正切级数乘自变量得到和函数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：以x²为变量判半径并分别检查x=±1，和函数由反正切级数乘x得到。"
     }
   ]
 }

@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-integral-mass-centroid",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 12 题。用等密度体积及一阶矩求纵坐标，圆截面便于分层。"
+      "verification": "verified",
+      "note": "独立方法关联复核：均匀抛物体的截面积为πz，体积与z一阶矩积分之比给质心坐标。"
     },
     {
       "methodId": "hm-triple-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 12 题。用等密度体积及一阶矩求纵坐标，圆截面便于分层。"
+      "verification": "verified",
+      "note": "独立方法关联复核：均匀抛物体的截面积为πz，体积与z一阶矩积分之比给质心坐标。"
     }
   ]
 }

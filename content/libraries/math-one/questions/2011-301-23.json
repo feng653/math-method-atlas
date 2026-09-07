@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-estimate-mle",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 23 题。从正态似然求方差估计，按已知均值标准化平方和计算期望方差。"
+      "verification": "verified",
+      "note": "独立方法关联复核：正态均值已知，似然估计是绕真均值的平方和除n；对应卡方自由度n，不是样本均值中心化的n−1。"
     },
     {
       "methodId": "pr-sample-chi-square",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 23 题。从正态似然求方差估计，按已知均值标准化平方和计算期望方差。"
+      "verification": "verified",
+      "note": "独立关联与新增分支复核：题中已知真均值中心化平方和除总体方差服从χ²_n；方法现明确n与n−1两分支，可据χ²_n的一二阶矩求估计量期望和方差。"
     }
   ]
 }

@@ -5,20 +5,21 @@
   "title": "样本均值方差与经验分布",
   "summary": "由观测值计算不含未知参数的统计量。",
   "conditions": [
-    "样本量 n≥2 才定义通常的无偏样本方差"
+    "样本量 n≥2 才定义分母为 n−1 的样本方差；称其为总体方差的无偏估计时，还要求样本独立同分布且总体二阶矩有限。"
   ],
   "steps": [
     "求样本均值",
     "以 n−1 为分母求 S²",
-    "经验分布按不超过 x 的样本比例计算"
+    "经验分布按不超过 x 的样本比例计算",
+    "k阶样本原点矩为n⁻¹ΣXᵢ^k，样本中心矩为n⁻¹Σ(Xᵢ−X̄)^k；二阶中心矩=(n−1)S²/n。它们是样本的函数，不能混用总体未知矩。"
   ],
-  "formula": "S^2=\\frac{\\sum_i(X_i-\\bar X)^2}{n-1},\\quad F_n(x)=\\frac1n\\sum_i\\mathbf1_{X_i\\le x}",
+  "formula": "S^2=\\frac{\\sum_i(X_i-\\bar X)^2}{n-1},\\quad F_n(x)=\\frac1n\\sum_i\\mathbf1_{X_i\\le x},\\qquad A_k=\\frac1n\\sum_iX_i^k,\\quad M_k=\\frac1n\\sum_i(X_i-\\bar X)^k,\\quad M_2=\\frac{n-1}{n}S^2",
   "pitfalls": [
     "统计量不能包含未知总体参数"
   ],
   "example": {
-    "prompt": "自编例题：样本为 1,2,3，求均值、S² 和 Fn(2)。",
-    "solution": "均值 2，S²=(1+0+1)/2=1，Fn(2)=2/3。"
+    "prompt": "自编例题：样本1,2,3，求二阶原点矩、二阶中心矩、S²与Fn(2)。",
+    "solution": "A2=14/3，均值2，所以M2=14/3−4=2/3；S²=1；Fn(2)=2/3。"
   },
   "relatedIds": [
     "pr-sample-chi-square",

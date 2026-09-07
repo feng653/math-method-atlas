@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-power-indeterminate",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 15 题。先取对数，把底数偏离一的首项与指数增长配对。"
+      "verification": "verified",
+      "note": "独立方法关联复核：已读取单独公式块：底数ln(1+x)/x趋1，指数1/(eˣ−1)；对数的一阶项配合泰勒得到有限极限。"
     },
     {
       "methodId": "hm-taylor-limit",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 15 题。先取对数，把底数偏离一的首项与指数增长配对。"
+      "verification": "verified",
+      "note": "独立方法关联复核：已读取单独公式块：底数ln(1+x)/x趋1，指数1/(eˣ−1)；对数的一阶项配合泰勒得到有限极限。"
     }
   ]
 }

@@ -11,15 +11,16 @@
   "steps": [
     "画出或写出支持域不等式",
     "固定目标变量，确定另一变量范围",
-    "积分消去另一变量"
+    "积分消去另一变量",
+    "区域 D 均匀分布要求 D 可测且面积 A 有限、严格为正；联合密度为1/A乘D的指示函数。边缘由截线长度除A给出，一般不均匀。"
   ],
-  "formula": "f_X(x)=\\int_{-\\infty}^{\\infty}f_{X,Y}(x,y)\\,dy",
+  "formula": "f_X(x)=\\int_{-\\infty}^{\\infty}f_{X,Y}(x,y)\\,dy,\\qquad f_{X,Y}(x,y)=\\frac{\\mathbf1_D(x,y)}{\\operatorname{area}(D)}",
   "pitfalls": [
     "积分界随固定变量变化时不能写成常数"
   ],
   "example": {
-    "prompt": "自编例题：联合密度在 0<y<x<1 内为 2，求 fX。",
-    "solution": "固定 0<x<1，y 从 0 到 x，fX(x)=2x；其他处为 0。"
+    "prompt": "自编例题：(X,Y)在三角域0<y<x<2均匀分布，求联合密度、fX及P(Y<X/2)。",
+    "solution": "面积2，联合密度在域内1/2；固定0<x<2时截线长x，fX=x/2，其他为0。事件面积是原面积一半，概率1/2；X并非均匀分布。"
   },
   "relatedIds": [
     "pr-joint-conditional",

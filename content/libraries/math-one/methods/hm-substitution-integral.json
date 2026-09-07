@@ -5,21 +5,21 @@
   "title": "不定积分换元",
   "summary": "识别复合函数及其微分因子。",
   "conditions": [
-    "F 是 f 在相关区间的原函数，即 F′=f；复合函数 g 可导且取值落在该区间。",
-    "若采用逆向变量代换，需选择使回代合法的区间和分支。"
+    "F′=f；复合函数 g 可导且取值落在原函数区间。逆向代换另需选择合法分支。",
+    "基本表按各函数的实定义区间使用：一般实幂可统一在 x>0 使用；1/x 在不跨零区间；aˣ 要求 a>0、a≠1；反正弦条目要求 |x|<1，正切/余切条目避开分母零点。"
   ],
   "steps": [
     "选择u使复杂内层变简单。",
     "将dx与其余因子全部改写。",
     "积分后代回并补常数。"
   ],
-  "formula": "\\int f(g(x))g'(x)\\,dx=F(g(x))+C",
+  "formula": "\\int x^pdx=\\frac{x^{p+1}}{p+1}+C\\ (p\\ne-1),\\quad\\int\\frac{dx}{x}=\\ln|x|+C;\\quad\\int e^x dx=e^x+C,\\quad\\int a^x dx=\\frac{a^x}{\\ln a}+C;\\quad\\int\\cos x\\,dx=\\sin x+C,\\quad\\int\\sin x\\,dx=-\\cos x+C;\\quad\\int\\frac{dx}{\\cos^2x}=\\tan x+C,\\quad\\int\\frac{dx}{\\sin^2x}=-\\cot x+C;\\quad\\int\\frac{dx}{1+x^2}=\\arctan x+C,\\quad\\int\\frac{dx}{\\sqrt{1-x^2}}=\\arcsin x+C;\\quad\\int f(g(x))g'(x)dx=F(g(x))+C",
   "pitfalls": [
     "不能只替换函数不替换微分；不定积分结果要回代。"
   ],
   "example": {
-    "prompt": "自编例题：求∫2x cos(x²) dx。",
-    "solution": "令u=x²，du=2x dx，积分为sin u+C=sin(x²)+C。"
+    "prompt": "自编：用基本表与换元求 ∫2x cos(x²)dx、∫dx/(4+x²)，并说明 ∫dx/x 的区间限制。",
+    "solution": "令 u=x²，第一式为 sin(x²)+C。第二式令 u=x/2，得 (1/2)∫du/(1+u²)=(1/2)arctan(x/2)+C。1/x 的原函数为 ln|x|+C，但只在不跨零的区间讨论，正负两段的常数可各自不同。"
   },
   "relatedIds": [
     "hm-trig-substitution",

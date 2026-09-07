@@ -11,15 +11,16 @@
   "steps": [
     "判断是固定试验成功数还是时间空间内事件数",
     "确定 n,p 或 λ",
-    "代入质量函数计算"
+    "代入质量函数计算",
+    "二项含 n=1 的0-1分布；其均值np、方差np(1−p)。泊松的均值和方差均为λ。"
   ],
-  "formula": "P(B=k)=\\binom nkp^k(1-p)^{n-k},\\quad P(N=k)=e^{-\\lambda}\\lambda^k/k!",
+  "formula": "P(B=k)=\\binom nkp^k(1-p)^{n-k},\\quad P(N=k)=e^{-\\lambda}\\lambda^k/k!,\\qquad EB=np,\\ \\operatorname{Var}B=np(1-p),\\ EN=\\operatorname{Var}N=\\lambda",
   "pitfalls": [
-    "均值给定不足以证明泊松分布"
+    "均值给定不足以证明泊松分布；二项 p=0 或 p=1 时为退化分布，可直接令 B=0 或 B=n，避免把边界的 0⁰ 当成未定义概率。"
   ],
   "example": {
-    "prompt": "自编例题：独立 4 次试验，每次成功率 1/2，恰好 2 次成功的概率。",
-    "solution": "B~Bin(4,1/2)，概率 C(4,2)/16=3/8。"
+    "prompt": "自编例题：B~Bin(4,1/2)，N~Pois(3)。求P(B=2)及两者均值方差。",
+    "solution": "P(B=2)=6/16=3/8；EB=2、VarB=1；EN=VarN=3。"
   },
   "relatedIds": [
     "pr-dist-discrete",

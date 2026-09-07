@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-series-comparison",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 4 题。趋零序列最终有界，用绝对收敛项支配目标正项级数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：a_n 趋零而有界，|b_n|可和则也最终小于1，故 a_n²b_n² 被常数倍 |b_n| 支配，可用正项比较。"
     }
   ]
 }

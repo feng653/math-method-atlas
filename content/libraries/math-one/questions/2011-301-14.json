@@ -9,14 +9,14 @@
   },
   "methodLinks": [
     {
-      "methodId": "pr-joint-independence",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 14 题。二维正态零相关给独立，再把二阶矩写成方差加均值平方。"
+      "methodId": "pr-bivariate-normal",
+      "verification": "verified",
+      "note": "独立方法关联复核：联合二维正态ρ=0推出独立，再以EY²=σ²+μ²计算混合矩，不能将一般零相关当独立。"
     },
     {
       "methodId": "pr-moment-variance",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 14 题。二维正态零相关给独立，再把二阶矩写成方差加均值平方。"
+      "verification": "verified",
+      "note": "独立方法关联复核：联合二维正态ρ=0推出独立，再以EY²=σ²+μ²计算混合矩，不能将一般零相关当独立。"
     }
   ]
 }

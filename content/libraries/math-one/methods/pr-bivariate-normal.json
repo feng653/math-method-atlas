@@ -12,16 +12,17 @@
     "读取两个均值、方差和相关系数。",
     "线性组合 aX+bY 为正态，均值线性相加，方差含 2abρσXσY。",
     "条件 X|Y=y 的均值为 μX+ρσX(y-μY)/σY，方差为 σX²(1-ρ²)。",
-    "联合正态时不相关等价于独立；超出联合正态时只保留独立推出不相关。"
+    "联合正态时不相关等价于独立；超出联合正态时只保留独立推出不相关。",
+    "非退化联合密度的指数是标准化变量 u=(x−μX)/σX、v=(y−μY)/σY 的二次型 (u²−2ρuv+v²)/(2(1−ρ²))；连同归一化系数识别参数，不只看交叉项。"
   ],
-  "formula": "X\\mid Y=y\\sim N\\left(\\mu_X+\\rho\\frac{\\sigma_X}{\\sigma_Y}(y-\\mu_Y),\\sigma_X^2(1-\\rho^2)\\right)",
+  "formula": "X\\mid Y=y\\sim N\\left(\\mu_X+\\rho\\frac{\\sigma_X}{\\sigma_Y}(y-\\mu_Y),\\sigma_X^2(1-\\rho^2)\\right),\\qquad f(x,y)=\\frac{\\exp[-(u^2-2\\rho uv+v^2)/(2(1-\\rho^2))]}{2\\pi\\sigma_X\\sigma_Y\\sqrt{1-\\rho^2}},\\quad u=\\frac{x-\\mu_X}{\\sigma_X},\\ v=\\frac{y-\\mu_Y}{\\sigma_Y}",
   "pitfalls": [
     "ρ=±1 属退化情形，不能当成普通二维密度。",
     "线性组合方差不能遗漏协方差项。"
   ],
   "example": {
-    "prompt": "自编例题：联合正态的 X、Y 均值均为 0、方差均为 1，ρ=1/2。求 X|Y=2 和 X+Y 的分布。",
-    "solution": "条件均值 (1/2)·2=1，条件方差 1-1/4=3/4，因此 X|Y=2~N(1,3/4)。和的均值 0，方差 1+1+2·(1/2)=3，故 X+Y~N(0,3)。"
+    "prompt": "自编例题：联合正态X,Y均值0、方差1、ρ=1/2。写密度并求X|Y=2及X+Y分布。",
+    "solution": "密度为 exp[−2(x²−xy+y²)/3]/(π√3)。条件均值1、方差3/4，故X|Y=2~N(1,3/4)；和的均值0、方差3，故X+Y~N(0,3)。"
   },
   "relatedIds": [
     "pr-joint-independence",

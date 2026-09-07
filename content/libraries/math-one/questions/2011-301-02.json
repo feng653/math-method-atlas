@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-power-radius",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 2 题。单调趋零给交错端点收敛，正项部分和无界给另一端发散。"
+      "verification": "verified",
+      "note": "独立方法关联复核：单调趋零给交错端点收敛，正项部分和无界给另一端发散，由此锁定半径和端点。"
     },
     {
       "methodId": "hm-alternating-series",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 2 题。单调趋零给交错端点收敛，正项部分和无界给另一端发散。"
+      "verification": "verified",
+      "note": "独立方法关联复核：单调趋零给交错端点收敛，正项部分和无界给另一端发散，由此锁定半径和端点。"
     }
   ]
 }

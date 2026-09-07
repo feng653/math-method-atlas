@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-quadric-surfaces",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 17 题。求平面切线后旋转成曲面，沿轴切片作面积差积分。"
+      "verification": "verified",
+      "note": "独立方法关联复核：平面椭圆切线旋转构成二次曲面，沿旋转轴写外内截面积差求体积；不把识别卡当作完整构造步骤。"
     },
     {
       "methodId": "hm-integral-area-volume",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 17 题。求平面切线后旋转成曲面，沿轴切片作面积差积分。"
+      "verification": "verified",
+      "note": "独立方法关联复核：平面椭圆切线旋转构成二次曲面，沿旋转轴写外内截面积差求体积；不把识别卡当作完整构造步骤。"
     }
   ]
 }

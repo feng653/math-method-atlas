@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-stokes",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 12 题。取交线所在平面内圆盘跨面，方向与从上方所见逆时针一致。"
+      "verification": "verified",
+      "note": "独立方法关联复核：交线在平面内围成椭圆跨面，向上法向与从+z看逆时针一致，场为多项式可用Stokes。"
     }
   ]
 }

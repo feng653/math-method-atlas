@@ -5,14 +5,15 @@
   "number": "9",
   "summary": "复合混合偏导",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+    "url": "https://lxy.zust.edu.cn/__local/5/D0/ED/BE001CD3E468023340D11150942_B9D1F5E3_9C49E.pdf?e=.pdf",
+    "page": 9
   },
   "methodLinks": [
     {
       "methodId": "hm-multivariable-chain",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 9 题。连续两次链式求导；源题未明确二阶偏导条件，需复核原卷。"
+      "verification": "verified",
+      "note": "独立查看高校托管文登PDF第9页实际题面，明确给出二阶连续偏导。对z=f(x,xy)先取zx=f1+yf2，再对y求导得xf12+f2+xyf22；内层光滑且外层C²，链式关联适用。"
     }
   ],
-  "sourceNote": "来源题面未明确二阶偏导条件，待原卷对照。"
+  "sourceNote": "2026-09-08独立渲染核对PDF第9页，题面明确二阶连续偏导，解决旧社区转录遗漏。来源为浙江科技大学高校域名托管的文登试题分析，不冒称考试主管部门官方发布。"
 }

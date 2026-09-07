@@ -5,8 +5,7 @@
   "number": "12",
   "summary": "对数积分",
   "source": {
-    "page": 4,
-    "url": "https://www.125yan.com/file_download/58s410.html"
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2022/"
   },
   "methodLinks": [
     {
@@ -14,5 +13,6 @@
       "verification": "verified",
       "note": "主agent独立重读题面复核：将对数作为待微分因子，另一幂函数求原函数后处理端点。"
     }
-  ]
+  ],
+  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"
 }

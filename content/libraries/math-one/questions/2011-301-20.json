@@ -5,18 +5,20 @@
   "number": "20",
   "summary": "向量组互表",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+    "url": "https://wuli.wiki/files/fc96a92b2b2c6495.pdf",
+    "page": 35
   },
   "methodLinks": [
     {
       "methodId": "la-vector-representation",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 20 题。原组满秩时不能反向表示意味着另一组降秩，再解坐标方程。"
+      "verification": "verified",
+      "note": "独立视觉核对合订PDF第35页：参数在第三个β向量末坐标，与社区题干一致；原α组满秩，β组不能表示它要求β降秩，再解表示方程。"
     },
     {
       "methodId": "la-matrix-rank",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 20 题。原组满秩时不能反向表示意味着另一组降秩，再解坐标方程。"
+      "verification": "verified",
+      "note": "独立视觉核对合订PDF第35页：参数在第三个β向量末坐标，与社区题干一致；原α组满秩，β组不能表示它要求β降秩，再解表示方程。"
     }
-  ]
+  ],
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
 }

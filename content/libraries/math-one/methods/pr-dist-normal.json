@@ -10,15 +10,16 @@
   "steps": [
     "从各端点减 μ",
     "除以标准差 σ",
-    "用标准正态分布函数求差，必要时用对称性"
+    "用标准正态分布函数求差，必要时用对称性",
+    "N(μ,σ²) 的均值为μ、方差为σ²，标准差为σ。"
   ],
-  "formula": "P(a<X\\le b)=\\Phi((b-\\mu)/\\sigma)-\\Phi((a-\\mu)/\\sigma)",
+  "formula": "P(a<X\\le b)=\\Phi((b-\\mu)/\\sigma)-\\Phi((a-\\mu)/\\sigma),\\qquad EX=\\mu,\\quad\\operatorname{Var}X=\\sigma^2",
   "pitfalls": [
     "N(μ,σ²) 的第二参数是方差，不是标准差"
   ],
   "example": {
-    "prompt": "自编例题：X~N(2,9)，求 P(X≤5)。",
-    "solution": "标准化端点 (5−2)/3=1，概率 Φ(1)≈0.8413。"
+    "prompt": "自编例题：X~N(2,9)，求P(X≤5)、均值和标准差。",
+    "solution": "概率Φ(1)≈0.8413；均值2，标准差3。"
   },
   "relatedIds": [
     "pr-dist-density",

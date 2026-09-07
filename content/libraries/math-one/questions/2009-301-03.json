@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-newton-leibniz",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 3 题。积分函数的导数由原函数图形给出，结合零点值与有向面积判断。"
+      "verification": "verified",
+      "note": "独立方法关联复核：已看原函数及四个选项图；变限积分连续，连续段导数等于 f，零点及面积决定图形；间断端点单独看单侧斜率。"
     }
   ]
 }

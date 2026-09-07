@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-hessian-extrema",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 3 题。由驻点条件写二阶偏导，检查海森矩阵正定的充分条件。"
+      "verification": "verified",
+      "note": "独立方法关联复核：题设二阶连续且f正，链式偏导合法，驻点Hessian的两个对角项与乘积给极小充分条件。"
     }
   ]
 }

@@ -11,15 +11,16 @@
   "steps": [
     "确认参数为速率而非均值",
     "尾概率使用 exp(−λt)",
-    "条件等待时间用无记忆性消去已经等待的时间"
+    "条件等待时间用无记忆性消去已经等待的时间",
+    "速率参数为λ时均值1/λ、方差1/λ²；不能把速率与尺度互换。"
   ],
-  "formula": "P(X>t)=e^{-\\lambda t},\\quad P(X>s+t\\mid X>s)=e^{-\\lambda t}",
+  "formula": "P(X>t)=e^{-\\lambda t},\\quad P(X>s+t\\mid X>s)=e^{-\\lambda t},\\qquad EX=1/\\lambda,\\quad\\operatorname{Var}X=1/\\lambda^2",
   "pitfalls": [
     "无记忆性不是所有连续分布都具备"
   ],
   "example": {
-    "prompt": "自编例题：等待时间速率为 2，已等 1 个时间单位，再等超过 0.5 的概率。",
-    "solution": "条件概率等于 P(X>0.5)=e⁻¹。"
+    "prompt": "自编例题：指数等待时间速率2，已等1后再等超过0.5的概率及总体均值方差。",
+    "solution": "条件概率e⁻¹；总体均值1/2，方差1/4。"
   },
   "relatedIds": [
     "pr-dist-density",

@@ -30,7 +30,7 @@
 | 高数八 / 5–6 / 1–9 | hm-ode-separable、hm-ode-reduction、hm-linear-ode-structure、hm-ode-euler | 全微分方程缺少；其他简单换元及三类降阶需例题补强 |
 | 线代一 / 6 / 1–2 | la-det-row-operations、la-det-expansion | 候选已在；定义及性质待条款复核 |
 | 线代二 / 6 / 1–5 | la-matrix-product、la-matrix-inverse、la-matrix-adjugate、la-matrix-rank | 分块矩阵运算缺少；特殊矩阵与等价性质偏薄，分块行列式不等于分块运算 |
-| 线代三 / 7 / 1–8 | la-vector-representation、la-vector-basis、la-vector-coordinate、la-vector-orthogonal | 子空间判别与向量组等价缺独立方法；正交矩阵性质需加强 |
+| 线代三 / 6–7 / 1–8 | la-vector-representation、la-vector-basis、la-vector-coordinate、la-vector-orthogonal | 子空间判别与向量组等价缺独立方法；正交矩阵性质需加强 |
 | 线代四 / 7 / 1–5 | la-system-cramer、la-system-consistency、la-system-homogeneous、la-system-general | 候选已在；零空间维数及必要充分条件待复核 |
 | 线代五 / 7 / 1–3 | la-eigen-characteristic、la-eigen-diagonalization、la-eigen-symmetric | 候选已在；相似与合同区别需交叉提醒 |
 | 线代六 / 8 / 1–3 | la-quadratic-matrix、la-quadratic-completion、la-quadratic-positive | 惯性/合同/规范形仅零散提到，补专门判别与缩放步骤 |
@@ -63,3 +63,5 @@
 在取得目标版原文后，将 22 组细化为逐要求及子要求的稳定 ID，保存来源页/编号、内容摘要、candidate/verified/missing 映射。由既有 coverage.ts 增加独立要求覆盖计算，保留“方法 topic 完成率”与“目标课纲已核验覆盖率”两种不同数值。未取得目标原文前后者显示未核验；不能把本轮 123 个历史编号自动迁移成 2026 完整分母。
 
 验收顺序：补 24 条及偏薄项→独立数学复核→取得目标版原文→逐子要求重新映射与核验→零遗漏报告。当前审计是可靠性受限的差距发现，不是 P2 最终完成证明。
+
+历史编号细化已落盘：math-one-2019-items.json 共123项，记录原编号起始页与原创短标签、candidateMethodIds。CLI对照同源22组检查每个编号无遗漏/重复，页号与候选引用有效；content:report列候选数量，不给它赋予已核验覆盖率。向量第1要求起始于物理第6页，旧group第7页已纠正。细分候选映射仍需原文与内容人工逐子要求核验，2026官方原文未取得。

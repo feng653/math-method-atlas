@@ -5,18 +5,20 @@
   "number": "19",
   "summary": "切面轨迹与面积分",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+    "url": "https://wuli.wiki/files/fc96a92b2b2c6495.pdf",
+    "page": 39
   },
   "methodLinks": [
     {
       "methodId": "hm-tangent-plane",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 19 题。切平面垂直条件约束法向量，确定分界后向坐标平面投影面积元。"
+      "verification": "verified",
+      "note": "独立视觉核对合订PDF第39页：切面垂直给2z−y=0，上半曲面投影后面积因子与被积根号约消；切平面与第一类面积分方法适用。"
     },
     {
       "methodId": "hm-surface-integrals",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 19 题。切平面垂直条件约束法向量，确定分界后向坐标平面投影面积元。"
+      "verification": "verified",
+      "note": "独立视觉核对合订PDF第39页：切面垂直给2z−y=0，上半曲面投影后面积因子与被积根号约消；切平面与第一类面积分方法适用。"
     }
-  ]
+  ],
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
 }

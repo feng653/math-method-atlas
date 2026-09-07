@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-event-conditional",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 22 题。条件事件缩小颜色范围，联合分布逐个枚举两次独立抽样。"
+      "verification": "verified",
+      "note": "独立方法关联复核：抽样有放回，给定无白球后仍可在红黑条件空间计算；联合计数可枚举两次取球。"
     },
     {
       "methodId": "pr-event-counting",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 22 题。条件事件缩小颜色范围，联合分布逐个枚举两次独立抽样。"
+      "verification": "verified",
+      "note": "独立方法关联复核：抽样有放回，给定无白球后仍可在红黑条件空间计算；联合计数可枚举两次取球。"
     }
   ]
 }

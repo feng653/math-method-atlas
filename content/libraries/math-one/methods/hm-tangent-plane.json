@@ -12,13 +12,13 @@
     "计算并代入梯度。",
     "写点法式切平面与梯度方向法线。"
   ],
-  "formula": "\\nabla F(P)\\cdot(r-P)=0",
+  "formula": "\\nabla F(P)\\cdot(r-P)=0\\quad\\text{（切平面）},\\qquad r=P+t\\nabla F(P)\\quad\\text{（法线）}",
   "pitfalls": [
     "梯度为0时公式退化，不能把0=0当切平面。"
   ],
   "example": {
-    "prompt": "自编例题：求z=x²+y²在(1,1,2)处切平面。",
-    "solution": "取F=x²+y²-z，梯度(2,2,-1)，切平面2(x-1)+2(y-1)-(z-2)=0，即z=2x+2y-2。"
+    "prompt": "自编：求 z=x²+y² 在 (1,1,2) 处的切平面与法线。",
+    "solution": "取 F=x²+y²−z，梯度为 (2,2,−1) 且非零。切平面 2(x−1)+2(y−1)−(z−2)=0，即 z=2x+2y−2；法线 (x,y,z)=(1,1,2)+t(2,2,−1)。"
   },
   "relatedIds": [
     "hm-multivariable-chain",

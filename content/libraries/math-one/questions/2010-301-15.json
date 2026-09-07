@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-undetermined",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 15 题。指数对应特征根时增加待定特解的乘幂次数，再比较系数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：右端指数与特征根重合一次，应给待定多项式乘x，符合共振修正。"
     }
   ]
 }

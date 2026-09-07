@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-substitution-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 10 题。令根号内变量平方替换，连同积分上下限与微分一并变换。"
+      "verification": "verified",
+      "note": "独立方法关联复核：根式结构以 x=t² 代换，分母与微分因子约消，并同步更换有限积分上下限。"
     }
   ]
 }

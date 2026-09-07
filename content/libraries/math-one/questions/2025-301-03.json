@@ -5,19 +5,19 @@
   "number": "3",
   "summary": "平均极限",
   "source": {
-    "url": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf",
-    "page": 3
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2025/"
   },
   "methodLinks": [
     {
       "methodId": "hm-lhopital",
-      "verification": "pending",
-      "note": "原题第3页第3题：积分平均作商求导。 独立复核：当前洛必达卡仅含0/0和分子分母均无穷版；本题积分未必趋无穷，此关联条件不足，保留待审。"
+      "verification": "verified",
+      "note": "独立重读两源第 3 题：采用闭端点版本，积分有限且变上限原函数可导。分母 x→∞、导数为 1，分子导数 f(x) 有极限；已用柯西中值定理独立复核新版分母无穷法则，不再要求积分分子趋无穷。"
     },
     {
       "methodId": "hm-integral-inequality",
       "verification": "verified",
-      "note": "独立复核：在固定分点拆积分，有限首段除以x趋零，尾段由函数与极限之差的上界控制。"
+      "note": "独立重读闭端点题面：连续性保证有限首段积分存在；分段后首段除 x 趋零，尾段由 |f−a|<ε 控制。高校 PDF 的开端点版本须另补零端可积条件，不能无条件沿用。"
     }
-  ]
+  ],
+  "sourceNote": "高校 PDF 第 3 页写 (0,+∞)，不足以保证零端积分存在；本链接第 3 题写 [0,+∞) 上可导，修复此端点条件。关联按后者清晰版本核验；两个转载来源均非官方认证，未默认开端点函数可积。"
 }

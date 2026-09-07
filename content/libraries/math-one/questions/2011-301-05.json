@@ -5,14 +5,15 @@
   "number": "5",
   "summary": "初等矩阵还原",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+    "url": "https://wuli.wiki/files/fc96a92b2b2c6495.pdf",
+    "page": 33
   },
   "methodLinks": [
     {
       "methodId": "la-matrix-elementary",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 5 题。行变换左乘、列变换右乘，把到单位阵的等式反解。"
+      "verification": "verified",
+      "note": "独立视觉核对合订PDF第33页：先第二列加第一列，再交换第二、三行，与P2一致；由P2 A P1=I反解，修复旧HTML行号错误。"
     }
   ],
-  "sourceNote": "来源行交换文字与初等矩阵可能不一致，待原卷对照。"
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
 }

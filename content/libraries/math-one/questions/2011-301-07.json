@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-density",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 7 题。检验非负性与积分为一，也可识别两个分布函数乘积的导数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：候选函数非负，正确组合是F1F2的导数，积分端点差为1；可作为独立变量最大值密度构造。"
     },
     {
       "methodId": "pr-joint-max-min",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 7 题。检验非负性与积分为一，也可识别两个分布函数乘积的导数。"
+      "verification": "verified",
+      "note": "独立方法关联复核：候选函数非负，正确组合是F1F2的导数，积分端点差为1；可作为独立变量最大值密度构造。"
     }
   ]
 }

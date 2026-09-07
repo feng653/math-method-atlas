@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "pr-estimate-unbiased",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 23 题。将频数线性组合写成独立样本函数之和，匹配参数多项式并计算方差。"
+      "verification": "verified",
+      "note": "独立方法关联复核：频数写成独立样本指标函数之和，匹配θ多项式求无偏系数，再对单样本函数求方差后乘n。"
     },
     {
       "methodId": "pr-moment-variance",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 23 题。将频数线性组合写成独立样本函数之和，匹配参数多项式并计算方差。"
+      "verification": "verified",
+      "note": "独立方法关联复核：频数写成独立样本指标函数之和，匹配θ多项式求无偏系数，再对单样本函数求方差后乘n。"
     }
   ]
 }

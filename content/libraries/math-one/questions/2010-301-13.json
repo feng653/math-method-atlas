@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "la-vector-dependence",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 13 题。先确认两列独立，再令第三列由它们表示匹配末坐标。"
+      "verification": "verified",
+      "note": "独立方法关联复核：前两列独立，令第三列为其线性组合，由各坐标一致性确定参数并保证维数2。"
     }
   ]
 }

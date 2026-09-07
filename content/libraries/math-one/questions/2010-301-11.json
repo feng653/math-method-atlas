@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-line-second-kind",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 11 题。在绝对值转折处分段参数化，按给定方向累加。"
+      "verification": "verified",
+      "note": "独立方法关联复核：绝对值路径在0处分成两条光滑线段，给定方向从左到右，参数代入第二类积分。"
     }
   ]
 }

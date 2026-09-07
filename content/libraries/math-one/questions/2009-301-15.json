@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "hm-hessian-extrema",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 15 题。在对数定义域内解驻点，再检查海森矩阵正定性。"
+      "verification": "verified",
+      "note": "独立方法关联复核：y>0 是定义域；求驻点并计算二阶型，驻点处严格正定，Hessian判据适用。"
     }
   ]
 }

@@ -5,8 +5,7 @@
   "number": "8",
   "summary": "组合方差",
   "source": {
-    "page": 3,
-    "url": "https://www.125yan.com/file_download/58s410.html"
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2022/"
   },
   "methodLinks": [
     {
@@ -14,5 +13,6 @@
       "verification": "verified",
       "note": "主agent独立重读题面复核：方差计算保留给定的协方差，不能假设两变量独立。"
     }
-  ]
+  ],
+  "sourceNote": "原PDF链接本轮连接出现TLS证书错误；改用已逐题阅读核对的公开HTML转载，未认证官方原卷。"
 }

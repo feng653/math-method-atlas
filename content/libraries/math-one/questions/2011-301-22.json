@@ -9,14 +9,14 @@
   },
   "methodLinks": [
     {
-      "methodId": "pr-joint-marginal",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 22 题。平方相等限制非零格点，结合边缘概率恢复联合表，再计算乘积与相关。"
+      "methodId": "pr-discrete-joint",
+      "verification": "verified",
+      "note": "独立方法关联复核：已读两张离散表，平方相等只允许(0,0)、(1,−1)、(1,1)三个格点；按边缘恢复概率，再合并乘积并计算相关。"
     },
     {
       "methodId": "pr-moment-correlation",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 22 题。平方相等限制非零格点，结合边缘概率恢复联合表，再计算乘积与相关。"
+      "verification": "verified",
+      "note": "独立方法关联复核：已读两张离散表，平方相等只允许(0,0)、(1,−1)、(1,1)三个格点；按边缘恢复概率，再合并乘积并计算相关。"
     }
   ]
 }

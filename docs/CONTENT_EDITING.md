@@ -31,3 +31,5 @@ LaTeX 反斜杠在 JSON 中写成 `\\`，只在 formula 中写公式，不放 HT
 运行 `pnpm content:report` 查看实际待审关联、未映射题、方法审校与topic缺口。`content/requirements/`的历史要求/真题缺口另受既有校验器检查；历史要求通过校验不会自动成为目标年份的官方课纲。
 
 新增体系不需要改前端：loader 自动读取匹配目录。独立体系 `proof-toolkit` 的计数、方法引用与数学一完全隔离；它是自定义工具集，不是中国考试课纲。
+
+历史课纲编号编辑：content/requirements/*-items.json 只记录同源audit内的真实编号、起始页、原创短标签和候选入口。保留historical-only状态；新增目标版本需独立来源及审计，不能直接改成reviewed。运行content:check检查跨文档编号完整性。

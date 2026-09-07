@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "hm-monotonic-extrema",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 17 题。利用奇偶对称，按参数讨论导数符号并结合无穷远行为计根。"
+      "verification": "verified",
+      "note": "独立方法关联复核：函数奇性、导数k/(1+x²)−1及两端趋势确定根数；k>1时含零根和一对非零根，不采信镜像“两根”误述。"
     },
     {
       "methodId": "hm-intermediate-value",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 17 题。利用奇偶对称，按参数讨论导数符号并结合无穷远行为计根。"
+      "verification": "verified",
+      "note": "独立方法关联复核：函数奇性、导数k/(1+x²)−1及两端趋势确定根数；k>1时含零根和一对非零根，不采信镜像“两根”误述。"
     }
   ]
 }

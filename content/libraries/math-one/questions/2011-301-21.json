@@ -5,13 +5,15 @@
   "number": "21",
   "summary": "已知作用还原矩阵",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+    "url": "https://wuli.wiki/files/fc96a92b2b2c6495.pdf",
+    "page": 36
   },
   "methodLinks": [
     {
       "methodId": "la-eigen-diagonalization",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 21 题。给定作用产生两条特征方向，秩约束补出零特征值后构造基。"
+      "verification": "verified",
+      "note": "独立视觉核对合订PDF第36页：题面明确实对称矩阵，补足旧HTML遗漏；两个非零特征方向和其正交补构成对角化基，秩2给第三特征值0。"
     }
-  ]
+  ],
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
 }

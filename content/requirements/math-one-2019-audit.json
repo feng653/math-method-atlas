@@ -190,7 +190,7 @@
       "id": "req-la-vectors",
       "chapterId": "la-vectors",
       "sourceSection": "线代三",
-      "sourcePage": 7,
+      "sourcePage": 6,
       "requirementRange": "1-8",
       "summary": "线性表示相关；秩与等价；子空间基坐标；换基与正交",
       "candidateMethodIds": [

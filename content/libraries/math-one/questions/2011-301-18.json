@@ -10,13 +10,14 @@
   "methodLinks": [
     {
       "methodId": "hm-integral-inequality",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 18 题。用积分或中值定理夹住对数增量，再证目标数列单调有界。"
+      "verification": "verified",
+      "note": "独立复核：对1/t在[n,n+1]的积分用端点值严格夹界，得到题设对数不等式；再用于相邻差及调和和的下界。"
     },
     {
       "methodId": "hm-recursive-limit",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 18 题。用积分或中值定理夹住对数增量，再证目标数列单调有界。"
+      "verification": "verified",
+      "note": "独立二审实际题面及扩展后的方法卡：相邻差1/(n+1)−ln(1+1/n)<0，调和和大于ln(n+1)，因此a_n>0；递减有下界即收敛。现卡明确适用于一般数列，无需自治递推或求不动点。"
     }
-  ]
+  ],
+  "sourceNote": "2026-09-08独立重读实际题面，并审核一般单调有界方法扩展；两条关联均已核验。来源为社区转录，不视为官方试卷认证。"
 }

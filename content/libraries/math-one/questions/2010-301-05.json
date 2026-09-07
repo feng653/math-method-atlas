@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "la-rank-inequalities",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 5 题。单位乘积给秩下界，再结合矩阵行列数上界。"
+      "verification": "verified",
+      "note": "独立方法关联复核：AB=I_m 给乘积秩m，结合A行数与B列数的上界推出两者秩m，适用秩不等式。"
     }
   ]
 }

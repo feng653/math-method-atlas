@@ -10,13 +10,13 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-orthogonal",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 21 题。零特征方向的正交补对应单位特征值，再给全体特征值平移检查正定。"
+      "verification": "verified",
+      "note": "独立方法关联复核：正交标准形给谱1,1,0，已知零特征单位方向u可写A=I−uuᵀ；A+I可直接检查顺序主子式为正。"
     },
     {
       "methodId": "la-quadratic-positive",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 21 题。零特征方向的正交补对应单位特征值，再给全体特征值平移检查正定。"
+      "verification": "verified",
+      "note": "独立方法关联复核：正交标准形给谱1,1,0，已知零特征单位方向u可写A=I−uuᵀ；A+I可直接检查顺序主子式为正。"
     }
   ]
 }

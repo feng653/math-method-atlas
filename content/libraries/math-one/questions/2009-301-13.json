@@ -10,8 +10,8 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-characteristic",
-      "verification": "pending",
-      "note": "待独立复核：来源HTML第 13 题。让外积矩阵作用于其列方向，内积给非零特征值。"
+      "verification": "verified",
+      "note": "独立方法关联复核：外积矩阵作用于 β 得2β，且非零内积保证秩1，直接验证非零特征值符合特征定义。"
     }
   ]
 }
