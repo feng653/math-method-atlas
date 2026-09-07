@@ -743,5 +743,10 @@
         }
       ]
     }
-  ]
+  ],
+  "examScope": {
+    "exam": "301",
+    "startYear": 2009,
+    "endYear": 2026
+  }
 }

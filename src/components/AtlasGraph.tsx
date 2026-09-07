@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
 import { Expand, Focus, Minus, Plus, RotateCcw } from 'lucide-react';
-import { buildGraph, type AtlasNode as NodeType } from '../domain/graph';
+import { buildGraph, graphNodeId, type AtlasNode as NodeType } from '../domain/graph';
 import type { Library, Method } from '../domain/schema';
 import { AtlasNode } from './AtlasNode';
 
@@ -20,34 +20,36 @@ export function AtlasGraph({ library, methods, selected, chapter, onSelect, onCh
   useEffect(() => {
     if (!flow) return;
     const timer = setTimeout(() => {
-      const node = selected ? flow.getNode(selected) : undefined;
+      const node = selected ? flow.getNode(graphNodeId('method', selected)) : undefined;
       if (node) void flow.setCenter(node.position.x + 105, node.position.y + 25, { zoom: 1.05, duration: duration() });
       else void flow.fitView({ padding: 0.22, duration: duration() });
     }, 80);
     return () => clearTimeout(timer);
   }, [flow, graph, selected]);
   useEffect(() => {
-    setNodes((current) => current.map((node) => ({ ...node, selected: node.id === selected })));
+    setNodes((current) => current.map((node) => ({ ...node, selected: node.data.methodId === selected })));
   }, [selected, graph, setNodes]);
   const selectedMethod = methods.find((method) => method.id === selected);
+  const selectedNodeId = graphNodeId('method', selected);
   const motionAllowed = duration() > 0;
   const edges = graph.edges.map((edge) => ({ ...edge,
-    animated: motionAllowed && edge.target === selected,
-    style: { ...edge.style, opacity: selected && edge.target !== selected ? 0.13 : edge.style?.opacity },
+    animated: motionAllowed && edge.target === selectedNodeId,
+    style: { ...edge.style, opacity: selected && edge.target !== selectedNodeId ? 0.13 : edge.style?.opacity },
   }));
   if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
-    if (nodes.some((node) => node.id === relatedId)) edges.push({ id: `relation-${relatedId}`,
-      source: selected, target: relatedId, animated: motionAllowed, type: 'default',
+    const relatedNodeId = graphNodeId('method', relatedId);
+    if (nodes.some((node) => node.id === relatedNodeId)) edges.push({ id: `relation-${relatedId}`,
+      source: selectedNodeId, target: relatedNodeId, animated: motionAllowed, type: 'default',
       style: { stroke: '#b48c53', strokeDasharray: '5 6', strokeWidth: 1.3, opacity: 0.65 } });
   }
   function activateNode(id: string) {
     const node = nodes.find((item) => item.id === id);
-    if (node?.data.kind === 'method') onSelect(node.id);
+    if (node?.data.kind === 'method') onSelect(node.data.methodId ?? '');
     else if (node?.data.kind === 'chapter') onChapter(node.data.chapterId ?? '');
     else if (node) onChapter('');
   }
   function restoreLayout() {
-    setNodes(graph.nodes.map((node) => ({ ...node, selected: node.id === selected })));
+    setNodes(graph.nodes.map((node) => ({ ...node, selected: node.data.methodId === selected })));
     requestAnimationFrame(() => { void flow?.fitView({ duration: duration() }); });
   }
   return <section className="graph-stage" aria-label="可拖拽缩放的方法思维导图" onKeyDownCapture={(event) => {

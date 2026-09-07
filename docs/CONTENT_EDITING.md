@@ -33,3 +33,5 @@ LaTeX 反斜杠在 JSON 中写成 `\\`，只在 formula 中写公式，不放 HT
 新增体系不需要改前端：loader 自动读取匹配目录。独立体系 `proof-toolkit` 的计数、方法引用与数学一完全隔离；它是自定义工具集，不是中国考试课纲。
 
 历史课纲编号编辑：content/requirements/*-items.json 只记录同源audit内的真实编号、起始页、原创短标签和候选入口。保留historical-only状态；新增目标版本需独立来源及审计，不能直接改成reviewed。运行content:check检查跨文档编号完整性。
+
+可选examScope：体系清单可声明单个考试代码的年度目标{exam,startYear,endYear}，每年一卷。它决定目标完整索引分母，和当前已收录卷数分开；未声明时不显示目标分母。变更范围需依据产品目标，不可为消除缺卷缩小范围。

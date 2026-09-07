@@ -58,7 +58,7 @@ export default function App() {
       {routeNotice && !query.trim() && <div className="search-results glass-panel" role="status">
         <p>{routeNotice}</p><button onClick={() => setRouteNotice('')}>知道了</button></div>}
       {query.trim() && <div className="search-results glass-panel" aria-label="搜索结果">
-        <p role="status">{results.length ? `找到 ${results.length} 个方法` : '没有匹配的方法，试试“极限”或“换元”。'}</p>
+        <p role="status">{results.length ? `找到 ${results.length} 个方法` : '没有匹配的方法，试试更短的关键词。'}</p>
         {results.slice(0, 15).map((result) => <button key={result.id} onClick={() => select(result.id)}>
           <strong>{result.title}</strong><small>{result.summary}</small></button>)}
         {results.length > 15 && <p>仅显示前 15 项，请细化关键词。</p>}
@@ -70,9 +70,10 @@ export default function App() {
     </nav>
     {chapter && <button className="back-overview" onClick={() => { setChapter(''); setSelected(''); }}>← 全部章节</button>}
     <Suspense fallback={<aside className="detail-panel glass-panel" role="status">正在加载内容…</aside>}>
-      {method && <MethodDetail method={method} methods={methods} questions={questions} papers={papers} onSelect={select} onClose={() => setSelected('')} />}
+      {method && <MethodDetail method={method} methods={methods} questions={questions} papers={papers}
+        examScope={library.examScope} onSelect={select} onClose={() => setSelected('')} />}
       {panel === 'papers' && <PaperLibrary key={library.id} papers={papers} questions={questions} methods={methods}
-        chapters={library.chapters} onClose={() => setPanel('none')} onSelect={select} />}
+        chapters={library.chapters} examScope={library.examScope} onClose={() => setPanel('none')} onSelect={select} />}
     </Suspense>
     {panel === 'directory' && <LibraryNavigation library={library} libraries={data.libraries}
       onLibrary={(id) => { setLibraryId(id); setSelected(''); setChapter(''); setQuery(''); setRouteNotice(''); }} methods={methods} onClose={() => setPanel('none')}

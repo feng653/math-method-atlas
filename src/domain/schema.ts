@@ -10,10 +10,15 @@ const formula = z.string().max(8000).refine(
   (value) => !/\\(?:html\w*|href|url|includegraphics|class|style|def|gdef|edef|xdef|let|futurelet|newcommand|renewcommand)\b/i.test(value),
   'Unsafe or unsupported LaTeX command',
 );
+export const examScopeSchema = z.object({
+  exam: text, startYear: z.number().int().min(1987).max(2100),
+  endYear: z.number().int().min(1987).max(2100),
+}).strict().refine((scope) => scope.startYear <= scope.endYear, 'Exam scope years must be ordered');
 
 export const librarySchema = z.object({
   schemaVersion: z.literal(1), id, title: text, description: text,
   syllabus: z.object({ version: text, sourceUrl: httpsUrl, reviewStatus: status }).strict(),
+  examScope: examScopeSchema.optional(),
   chapters: z.array(z.object({
     id, title: text, subject: text,
     syllabusTopics: z.array(z.object({ id, title: text }).strict()).min(1),

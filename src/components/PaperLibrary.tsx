@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { ArrowUpRight, X } from 'lucide-react';
 import type { Paper, Question, Method, Library } from '../domain/schema';
+import { getArchiveStats } from '../domain/archive-statistics';
+import { ArchiveCoverage } from './ArchiveCoverage';
 
 type Props = { papers: Paper[]; questions: Question[]; methods: Method[]; chapters: Library['chapters']; onClose: () => void;
+  examScope?: Library['examScope'];
   onSelect: (id: string) => void };
-export function PaperLibrary({ papers, questions, methods, chapters, onClose, onSelect }: Props) {
+export function PaperLibrary({ papers, questions, methods, chapters, examScope, onClose, onSelect }: Props) {
   const [year, setYear] = useState('');
   const [methodId, setMethodId] = useState('');
   const [subject, setSubject] = useState('');
+  const archive = getArchiveStats(papers, questions, examScope);
   const subjects = [...new Set(chapters.map((chapter) => chapter.subject))];
   const eligibleMethods = methods.filter((method) => !subject || chapters.some((chapter) =>
     chapter.id === method.chapterId && chapter.subject === subject));
@@ -22,8 +26,8 @@ export function PaperLibrary({ papers, questions, methods, chapters, onClose, on
     <header className="panel-header"><span className="eyebrow">ARCHIVE / 真题</span>
       <button aria-label="关闭真题库" onClick={onClose}><X size={19} /></button></header>
     <div className="detail-scroll"><h1>让方法回到题目里。</h1>
-      <p className="muted">当前 {papers.length} 卷有来源，{questions.length} 题已索引；其中 {questions.filter((q) => q.methodLinks.some((l) => l.verification === 'verified')).length} 题有核验关联。</p>
-      <label className="field-label">年份<select aria-label="年份" value={year} onChange={(event) => setYear(event.target.value)}>
+      <ArchiveCoverage stats={archive} />
+      {papers.length > 0 && <><label className="field-label">年份<select aria-label="年份" value={year} onChange={(event) => setYear(event.target.value)}>
         <option value="">全部年份</option>{[...papers].sort((a, b) => b.year - a.year).map((paper) =>
           <option key={paper.id} value={paper.year}>{paper.year}</option>)}</select></label>
       <details><summary>按学科与方法筛选</summary>
@@ -31,16 +35,16 @@ export function PaperLibrary({ papers, questions, methods, chapters, onClose, on
           <option value="">全部学科</option>{subjects.map((item) => <option key={item}>{item}</option>)}</select></label>
         <label className="field-label">关联方法<select aria-label="关联方法" value={methodId} onChange={(event) => setMethodId(event.target.value)}>
           <option value="">全部方法</option>{eligibleMethods.map((method) => <option key={method.id} value={method.id}>{method.title}</option>)}</select></label>
-      </details>
-      {!papers.length && <p>尚未收录真题来源。</p>}
+      </details></>}
       {papers.length > 0 && !filtered.length && <p role="status">此筛选下暂无关联记录。</p>}
       {filtered.map((paper) => {
         const entries = matchingQuestions.filter((question) => question.paperId === paper.id);
+        const stats = archive.perPaper.find((item) => item.paperId === paper.id)!;
         return <section className="paper" key={paper.id}><h2>{paper.title}</h2>
           <a href={paper.source.url} target="_blank" rel="noreferrer">查看来源原卷 <ArrowUpRight size={14} /></a>
           <p className="fine-print">{paper.sourceNote ?? '公开转载来源，尚未完成官方原卷逐字核对。'}</p>
-          <p className="fine-print">已索引 {questions.filter((q) => q.paperId === paper.id).length}/{paper.expectedQuestionCount ?? '待核'} 题 ·
-            {paper.status === 'complete' ? '逐题索引齐全' : '收录进行中'}</p>
+          <p className="fine-print">已索引 {stats.indexed}/{stats.expected ?? '待核'} 题 ·
+            {stats.complete ? '逐题索引齐全' : '收录进行中'}</p>
           {!entries.length && <p className="muted">{methodId || subject ? '此筛选下暂无关联记录。' : '逐题内容待录入。'}</p>}
           {entries.map((question) => <article className="question-card" key={question.id}>
             <a href={`${question.source.url}${question.source.page ? `#page=${question.source.page}` : ''}`} target="_blank" rel="noreferrer">
@@ -52,6 +56,6 @@ export function PaperLibrary({ papers, questions, methods, chapters, onClose, on
             <details><summary>关联依据</summary>{question.methodLinks.map((link) => <p key={link.methodId}>{link.note}</p>)}</details>
           </article>)}</section>;
       })}
-      <p className="fine-print">原题在来源站点查看，本库保存原创方法分析与索引。未收录年份不参与频次统计。</p>
+      {papers.length > 0 && <p className="fine-print">原题在来源站点查看，本库保存原创方法分析与索引。</p>}
     </div></aside>;
 }

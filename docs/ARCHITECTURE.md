@@ -23,7 +23,7 @@ ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。
 
 | 实体 | 必需语义 |
 | --- | --- |
-| Library | schemaVersion:1、id、title、description、syllabus:{version,sourceUrl,reviewStatus}、chapters |
+| Library | schemaVersion:1、id、title、description、syllabus:{version,sourceUrl,reviewStatus}、chapters、可选examScope:{exam,startYear,endYear}（每年一卷的目标范围） |
 | Chapter | id、title、subject、syllabusTopics:[{id,title}]；数组顺序即显示顺序 |
 | Method | id、libraryId、chapterId、title、summary、conditions:string[]、steps:string[]、formula:string、pitfalls:string[]、example:{prompt,solution}、relatedIds:string[]、topicIds:string[]、status:draft/reviewed |
 | Paper | id、libraryId、year、exam、title、source:{url,page?}、status:indexed/partial/complete；目录存在不代表题目已完整收录 |
@@ -62,3 +62,5 @@ ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。
 每次提交运行内容校验、250 行门禁、相关测试、生产构建。必测：未知引用、重复 ID、verified 无来源或说明、pending 不计数、同题关联去重、同卷多题计一次试卷、体系切换隔离、课纲缺映射。浏览器烟测：体系切换→搜索→定位→详情→真题来源；全图/局部/缩放/拖拽；键盘与 reduced-motion。构建成功不等于浏览器验证通过。
 
 超过约 1000 可见节点且实际浏览器测试发现卡顿后，再引入按视口渲染/聚类与布局 worker。拥有服务器编辑/审核需求后，再讨论数据库/API；现阶段 Git 即编辑、审核、历史与回滚机制。
+
+覆盖统计：archive-statistics.ts统一计算收录年份、主问题去重数、核验入口题数、逐卷索引完整性及声明目标缺卷年份；MethodDetail、PaperLibrary和content:report共用。目标范围来自Library.examScope，缺卷不能缩小分母；未声明目标的体系不套用数学一范围。索引完整性不等于来源官方认证。
