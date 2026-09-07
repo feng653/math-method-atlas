@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "5",
+  "summary": "矩阵单侧逆秩",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-rank-inequalities",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 5 题。单位乘积给秩下界，再结合矩阵行列数上界。"
+    }
+  ]
+}

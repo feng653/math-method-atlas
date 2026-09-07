@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第19题：补线围成区域并扣除补线贡献；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 19 题。补纵轴线段封闭路径，在含内部的光滑多项式场上应用格林公式并扣补段。",
       "methodId": "hm-green"
     }
   ]

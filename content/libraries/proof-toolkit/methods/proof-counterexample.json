@@ -9,5 +9,6 @@
     "prompt": "自编：判断“每个连续函数在每一点都可导”是否成立。",
     "solution": "取 f(x)=|x|。它在实数轴上连续，但在 0 的左导数为 -1，右导数为 1，故在 0 不可导。这是满足连续前提而违反处处可导结论的反例。"
   },
-  "relatedIds": ["proof-contradiction"], "topicIds": ["counterexample"], "status": "draft"
+  "relatedIds": ["proof-contradiction"], "topicIds": ["counterexample"], "status": "reviewed"
 }
+

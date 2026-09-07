@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-newton-leibniz",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 4 题。按图中速度差的正负累计位移，并计入初始距离。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 4 题：位置差等于初始距离加速度差的定积分；按图上有向面积判断。"
     }
   ]
 }

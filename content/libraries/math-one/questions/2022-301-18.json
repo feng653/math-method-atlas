@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-double-polar",
-      "verification": "pending",
-      "note": "原题第6页第18题：分区并转换极坐标积分；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：圆边界提示极坐标；直线条件决定角度和半径边界，分片后含雅可比。"
     }
   ]
 }

@@ -8,5 +8,12 @@
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
     "page": 2
   },
-  "methodLinks": []
+  "methodLinks": [
+    {
+      "methodId": "pr-probability-bounds",
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 7 题：事件包含关系给 P(AB)≤min(P(A),P(B))≤(P(A)+P(B))/2；仅认证概率界操作，选项字形仍损坏。"
+    }
+  ],
+  "sourceNote": "初始页图不等号损坏；csgraduates 同年题面选项也有重复，未认证选择项。事件一般概率界及包含关系足以独立确认方法适用。"
 }

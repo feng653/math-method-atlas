@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第5题：按前两个坐标检验线性关系；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 5 题。第三、四向量前两坐标互反，和只沿末坐标方向，相关组合存在。",
       "methodId": "la-vector-dependence"
     }
   ]

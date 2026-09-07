@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-event-conditional",
-      "verification": "pending",
-      "note": "原题第5页第16题：用互斥和独立先算分子分母；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：分子为并事件，分母另加与两者互斥的事件，交项用已知独立性。"
     }
   ]
 }

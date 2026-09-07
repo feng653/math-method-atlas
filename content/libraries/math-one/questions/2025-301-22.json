@@ -12,7 +12,12 @@
     {
       "methodId": "pr-moment-expectation",
       "verification": "verified",
-      "note": "原题第16页第22题：按赔付函数积分。"
+      "note": "原题第16页第22题：按赔付函数积分。 独立复核：用赔付额作为损失的分段函数求期望，阈值以下贡献为零。"
+    },
+    {
+      "methodId": "pr-event-total",
+      "verification": "verified",
+      "note": "独立复核：按年度事件次数的各取值划分，混合条件二项分布以求理赔次数分布。"
     }
   ]
 }

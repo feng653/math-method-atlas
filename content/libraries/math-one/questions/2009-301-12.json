@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "12",
+  "summary": "球内体积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-triple-integral",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 12 题。利用球坐标或坐标轮换对称简化二次项积分。"
+    }
+  ]
+}

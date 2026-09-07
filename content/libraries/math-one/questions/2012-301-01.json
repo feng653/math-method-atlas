@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第1题：约分后分别查有限点与无穷远；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 1 题。约分后只有一个有限极点；无穷远函数趋常数，分别检验竖直和水平线。",
       "methodId": "hm-concavity-asymptote"
     }
   ]

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第7题：先用独立性求交集再算差集；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 7 题。事件差概率写作交补，独立性允许乘积并解出另一事件概率。",
       "methodId": "pr-event-independence"
     }
   ]

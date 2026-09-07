@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-fourier-half-range",
-      "verification": "pending",
-      "note": "原题第3页第13题：偶延拓计算余弦系数；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：余弦展开对应偶延拓；利用端点或半周期求和隔离偶数项。"
     }
   ]
 }

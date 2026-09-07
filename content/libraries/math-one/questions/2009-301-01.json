@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "1",
+  "summary": "等价无穷小反参",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-taylor-limit",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 1 题。展开到首个非零阶，先消除一次项再匹配三次项。"
+    }
+  ]
+}

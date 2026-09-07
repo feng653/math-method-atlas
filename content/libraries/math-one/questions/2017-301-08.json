@@ -5,19 +5,19 @@
   "number": "8",
   "summary": "卡方尺度辨析",
   "source": {
-    "url": "https://kaoyan.xdf.cn/202310/13540317.html",
-    "page": 2
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2017/"
   },
   "methodLinks": [
     {
       "methodId": "pr-sample-chi-square",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 8 题。正态量须先按实际方差标准化，样本离差平方和另有自由度。"
+      "verification": "verified",
+      "note": "独立二次核对新东方第 2 页图及本链接第 8 题：独立正态样本且 n≥2；离差平方和与中心化平方和分别对应 n−1 与 n 自由度。"
     },
     {
       "methodId": "pr-sample-normal",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 8 题。正态量须先按实际方差标准化，样本离差平方和另有自由度。"
+      "verification": "verified",
+      "note": "独立二次核对新东方第 2 页图及本链接第 8 题：独立正态样本且 n≥2；离差平方和与中心化平方和分别对应 n−1 与 n 自由度。"
     }
-  ]
+  ],
+  "sourceNote": "原新东方第 2 页图样本量条件字形损坏；已用本链接第 8 题明确的 n≥2 对照。个人整理来源，不是官方原卷认证。"
 }

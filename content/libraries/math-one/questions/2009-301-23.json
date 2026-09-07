@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "23",
+  "summary": "密度参数估计",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-moments",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 23 题。积分求总体一阶矩，并独立构造对数似然比较估计。"
+    },
+    {
+      "methodId": "pr-estimate-mle",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 23 题。积分求总体一阶矩，并独立构造对数似然比较估计。"
+    }
+  ]
+}

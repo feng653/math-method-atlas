@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-continuity-piecewise",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 1 页第 2 题。分别积分，并使拼接点函数值连续及导数匹配。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 2 题：先分段积分且对数部分分部积分，再令原函数在拼接点连续。"
     },
     {
       "methodId": "hm-integration-by-parts",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 1 页第 2 题。分别积分，并使拼接点函数值连续及导数匹配。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 2 题：先分段积分且对数部分分部积分，再令原函数在拼接点连续。"
     }
   ]
 }

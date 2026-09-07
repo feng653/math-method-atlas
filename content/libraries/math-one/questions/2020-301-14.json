@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第3页第14题：分别求混合矩与两均值；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 14 题。对称性使两个均值为零，协方差归结为 X sinX 的期望积分。",
+      "verification": "verified",
       "methodId": "pr-moment-covariance"
     }
   ]

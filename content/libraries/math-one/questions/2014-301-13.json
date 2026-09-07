@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第13题：配方后按剩余平方项的符号分类；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 13 题。逐项配方后剩余平方系数控制负惯性指数，零系数边界要包括。",
       "methodId": "la-quadratic-completion"
     }
   ]

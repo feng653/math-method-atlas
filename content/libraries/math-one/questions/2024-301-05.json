@@ -12,7 +12,7 @@
     {
       "methodId": "la-system-consistency",
       "verification": "verified",
-      "note": "核对来源 PDF 第 2 页第 5 题：图示共交一直线，解集有一个自由参数；比较系数秩和增广秩。"
+      "note": "独立二次核对来源 第 2 页图 第 5 题：图中三平面共线，系数秩与增广秩均为 2，系统相容且有自由元。"
     }
   ]
 }

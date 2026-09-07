@@ -12,7 +12,7 @@
     {
       "methodId": "hm-surface-integrals",
       "verification": "verified",
-      "note": "核对来源 PDF 第 1 页第 2 题：图形曲面的有向面积元投影须使用向上法向。"
+      "note": "独立二次核对来源 第 1 页图 第 2 题：球面指定部分先核法向方向，再用方向余弦将第二类曲面积分转第一类。"
     }
   ]
 }

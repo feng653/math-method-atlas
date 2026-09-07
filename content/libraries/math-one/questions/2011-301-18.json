@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "18",
+  "summary": "对数界与数列",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integral-inequality",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 18 题。用积分或中值定理夹住对数增量，再证目标数列单调有界。"
+    },
+    {
+      "methodId": "hm-recursive-limit",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 18 题。用积分或中值定理夹住对数增量，再证目标数列单调有界。"
+    }
+  ]
+}

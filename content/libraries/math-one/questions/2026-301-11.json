@@ -13,6 +13,11 @@
       "methodId": "hm-vector-products",
       "verification": "verified",
       "note": "初录候选：来源 PDF 第 5 页第 11 题。先按向量坐标计算叉积；散度定义仍需补独立方法卡。 独立复核（2026-09-08，重读题面）：叉积可直接按分量计算；此关联仅覆盖叉积子步骤。"
+    },
+    {
+      "verification": "verified",
+      "methodId": "hm-divergence",
+      "note": "独立重读第5页：叉积场为多项式场，可按各分量自身坐标偏导求散度"
     }
   ]
 }

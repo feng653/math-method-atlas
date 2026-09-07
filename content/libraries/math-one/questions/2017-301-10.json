@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-characteristic",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 10 题。求特征复根并写指数乘正弦余弦的实通解。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 10 题：二阶常系数方程的共轭复根给指数乘正余弦。"
     }
   ]
 }

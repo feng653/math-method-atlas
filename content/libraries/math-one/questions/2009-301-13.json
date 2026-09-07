@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "13",
+  "summary": "秩一非零特征值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-characteristic",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 13 题。让外积矩阵作用于其列方向，内积给非零特征值。"
+    }
+  ]
+}

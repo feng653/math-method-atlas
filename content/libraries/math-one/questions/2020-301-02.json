@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第1页第2题：从差商核对可导必要条件；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 2 题。仅有极限零不能代替零点取值；可导蕴含连续，再由差商与根号量比较。",
+      "verification": "verified",
       "methodId": "hm-derivative-definition"
     }
   ]

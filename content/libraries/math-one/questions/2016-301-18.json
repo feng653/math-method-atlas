@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-gauss",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 10 页第 18 题。外侧闭曲面通量化为四面体内散度的三重积分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 10 页图 第 18 题：封闭外向多面体曲面应用高斯公式，散度是 2x+1。"
     }
   ]
 }

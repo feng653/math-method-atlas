@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "2",
+  "summary": "隐函数齐次关系",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-implicit",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 2 题。对两个比值变量分别链式求导，再用线性组合消去公共项。"
+    }
+  ]
+}

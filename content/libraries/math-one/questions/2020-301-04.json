@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第4题：区分原级数与偶数项子级数；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 4 题。收敛半径内全级数绝对收敛，故偶项子级数若发散则点必在边界或外部。",
+      "verification": "verified",
       "methodId": "hm-power-radius"
     }
   ]

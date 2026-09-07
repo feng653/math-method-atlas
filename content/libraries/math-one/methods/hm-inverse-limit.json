@@ -1,0 +1,16 @@
+{
+  "id": "hm-inverse-limit",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "连续反函数传递数列极限",
+  "summary": "在单调可逆的区间内，从变换后的极限恢复原变量极限。",
+  "conditions": ["映射在所选闭区间连续且严格单调，因此在像区间上有连续反函数。", "原数列的每项均在该区间；变换后极限属于像区间。"],
+  "steps": ["确认数列取值区间及变换在此区间上的单调性。", "设变换后的极限为L，利用像区间闭性确认反函数在L处有定义。", "将每项写成反函数作用于变换后项，再用连续性传递极限。", "若原变换不单射，另检查交替符号等反例，不能无条件反推。"],
+  "formula": "u_n\\in[a,b],\\ f(u_n)\\to L\\quad\\Rightarrow\\quad u_n=f^{-1}(f(u_n))\\to f^{-1}(L)",
+  "pitfalls": ["连续函数像的收敛一般不能反推原序列收敛；平方和偶函数容易丢失符号。", "开区间的像未必含极限点，不能省略定义域检查。"],
+  "example": {"prompt": "自编：u_n∈[0,1]，且sin u_n→sin(1/3)，证明u_n→1/3。", "solution": "sin在[0,1]连续严格递增，像为[0,sin1]，arcsin在其上连续。由u_n=arcsin(sin u_n)，极限为arcsin(sin(1/3))=1/3。对比v_n=(-1)^n有v_n²→1却不收敛，说明单射条件必要。"},
+  "relatedIds": ["hm-function-domain", "hm-limit-definition"],
+  "topicIds": ["audit-inverse-limit"],
+  "status": "reviewed"
+}
+

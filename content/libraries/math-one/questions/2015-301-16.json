@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-modeling",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。由切线截距写三角形面积，得到可分离方程后使用初值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 16 题：切线截距三角形面积转为 y'=y²/8，再用初值分离变量。"
     },
     {
       "methodId": "hm-ode-separable",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。由切线截距写三角形面积，得到可分离方程后使用初值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 16 题：切线截距三角形面积转为 y'=y²/8，再用初值分离变量。"
     }
   ]
 }

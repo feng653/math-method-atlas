@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第3页第17题：将系数递推转成和函数方程；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 17 题。系数比控制收敛域，域内逐项求导把递推转成和函数的一阶方程。",
+      "verification": "verified",
       "methodId": "hm-power-sum"
     }
   ]

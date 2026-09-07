@@ -12,7 +12,7 @@
     {
       "methodId": "hm-fourier-half-range",
       "verification": "verified",
-      "note": "原题第8页第12题：奇延拓再取左右均值。"
+      "note": "原题第8页第12题：奇延拓再取左右均值。 独立复核：正弦展开对应奇延拓，再周期移位，在跳点取左右极限均值。"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "id": "math-one-2010",
+  "libraryId": "math-one",
+  "year": 2010,
+  "exam": "301",
+  "title": "2010年考研数学一",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "status": "complete",
+  "expectedQuestionCount": 23,
+  "sourceNote": "非官方发布；题号索引齐全，方法关联待独立复核，转载许可未知。"
+}

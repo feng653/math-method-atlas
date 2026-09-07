@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第13题：将余子式关系转成伴随矩阵等式；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 13 题。代数余子式矩阵是伴随的转置；乘原矩阵转置用伴随恒等式，非零条件排除零矩阵。",
       "methodId": "la-matrix-adjugate"
     }
   ]

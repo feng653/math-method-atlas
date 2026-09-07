@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-event-independence",
-      "verification": "pending",
-      "note": "原题第3页第16题：对共同取值联合概率求和；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：对两离散变量共同可能值分别计算联合概率，独立性允许概率相乘。"
     }
   ]
 }

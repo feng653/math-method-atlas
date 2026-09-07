@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第6题：把线性组合等于零化成原向量关系；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 6 题。原组独立保证变换后两列独立；第三向量为零提供逆命题反例。",
       "methodId": "la-vector-dependence"
     }
   ]

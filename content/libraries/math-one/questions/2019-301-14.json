@@ -5,13 +5,15 @@
   "number": "14",
   "summary": "分布函数变换",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 3
   },
   "methodLinks": [
     {
-      "note": "转载网页第14题：先求分布函数再反解概率事件；待独立复核。",
+      "note": "独立复核：来源第 14 题。先由密度求均值与分布函数，再把分布函数值的事件转为原变量区间。",
       "methodId": "pr-dist-transform",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

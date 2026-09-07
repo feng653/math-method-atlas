@@ -5,13 +5,15 @@
   "number": "17",
   "summary": "无界面积",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 3
   },
   "methodLinks": [
     {
-      "note": "转载网页第17题：按符号分区积分再累加；待独立复核。",
+      "note": "独立复核：来源第 17 题。几何面积积分须取绝对值，按正弦半周期分段并把衰减因子组成几何级数。",
       "methodId": "hm-integral-area-volume",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

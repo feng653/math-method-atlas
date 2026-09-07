@@ -5,13 +5,15 @@
   "number": "15",
   "summary": "积分极限",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#15"
+    "url": "https://doc.kmf.com/ky_material/77/a2/77a25f193cfa52d46d8c504e15e96620.pdf",
+    "page": 7
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第15题：求导消去变上限积分并展开指数；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 15 题，第 7 页。已读PDF确认上下限及分母；先确认无穷型，再用变上限求导和指数二阶展开。",
       "methodId": "hm-lhopital"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

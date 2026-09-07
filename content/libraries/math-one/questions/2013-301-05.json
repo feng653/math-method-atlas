@@ -9,9 +9,9 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第5题：利用可逆右乘保持秩与列空间；待独立复核。",
-      "methodId": "la-matrix-rank"
+      "methodId": "la-vector-representation",
+      "verification": "verified",
+      "note": "独立复核：来源第 5 题。可逆右乘使两组列相互线性表示；单有同秩不足以证明等价，已替换为向量表示。"
     }
   ]
 }

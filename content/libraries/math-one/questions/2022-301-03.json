@@ -8,5 +8,11 @@
     "page": 1,
     "url": "https://www.125yan.com/file_download/58s410.html"
   },
-  "methodLinks": []
+  "methodLinks": [
+    {
+      "methodId": "hm-inverse-limit",
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：余弦取值在[0,1]，正弦在此区间连续严格单调，反函数连续可传递极限；不能恢复原序列符号。"
+    }
+  ]
 }

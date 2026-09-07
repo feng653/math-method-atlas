@@ -12,7 +12,7 @@
     {
       "methodId": "hm-definite-symmetry",
       "verification": "verified",
-      "note": "核对来源 PDF 第 1 页第 1 题：负自变量代换后检查积分上下限与被积函数的奇偶性。"
+      "note": "独立二次核对来源 第 1 页图 第 1 题：变上限积分先换元比较正负自变量，利用被积函数奇偶性判原函数奇偶性。"
     }
   ]
 }

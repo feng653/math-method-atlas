@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-orthogonal",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 21 题。标准形缺一平方项意味着零特征值，先解参数再单位正交化特征向量。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 21 题：实对称矩阵先由秩条件定参数，再用正交特征基化二次型。"
     }
   ]
 }

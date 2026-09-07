@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "6",
+  "summary": "分块伴随矩阵",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-adjugate",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 6 题。先求分块行列式及逆，再用伴随矩阵等于行列式乘逆。"
+    },
+    {
+      "methodId": "la-det-block",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 6 题。先求分块行列式及逆，再用伴随矩阵等于行列式乘逆。"
+    }
+  ]
+}

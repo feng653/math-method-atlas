@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第4题：对两个待定系数求驻点并判极小；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 4 题。把积分看作两个系数的二次函数，偏导给正规方程，海森正定保证全局最小。",
       "methodId": "hm-hessian-extrema"
     }
   ]

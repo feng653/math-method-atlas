@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-02",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "2",
+  "summary": "对称区域积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-double-cartesian",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 2 题。按正方形内四个三角形设积分界，以反射对称及被积函数符号比较。"
+    }
+  ]
+}

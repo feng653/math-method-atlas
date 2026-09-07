@@ -10,9 +10,9 @@
   },
   "methodLinks": [
     {
-      "methodId": "hm-continuity-piecewise",
-      "verification": "pending",
-      "note": "原题第1页第1题：区分趋近极限与该点取值；待独立复核。"
+      "methodId": "hm-squeeze",
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：比值极限给出去心邻域有界，乘趋零的对数即可推出函数趋零；不要求点值连续。"
     }
   ]
 }

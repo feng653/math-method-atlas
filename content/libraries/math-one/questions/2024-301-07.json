@@ -12,12 +12,12 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "核对来源 PDF 第 2 页第 7 题：零空间方向与其正交补分别构成特征子空间，选基后求矩阵幂。"
+      "note": "独立二次核对来源 第 2 页图 第 7 题：矩阵在 α 的方向为零、在正交补为恒等，构造完整特征基后判相似和对角化。"
     },
     {
       "methodId": "la-eigen-similarity",
       "verification": "verified",
-      "note": "核对来源 PDF 第 2 页第 7 题：对角形式计算幂的迹，再利用相似保持迹。"
+      "note": "独立二次核对来源 第 2 页图 第 7 题：矩阵在 α 的方向为零、在正交补为恒等，构造完整特征基后判相似和对角化。"
     }
   ]
 }

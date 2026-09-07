@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "14",
+  "summary": "阶乘分布二阶矩",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-classic",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 14 题。归一化识别泊松分布，二阶矩由均值和方差恢复。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 14 题。归一化识别泊松分布，二阶矩由均值和方差恢复。"
+    }
+  ]
+}

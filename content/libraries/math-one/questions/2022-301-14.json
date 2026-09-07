@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ratio-root-test",
-      "verification": "pending",
-      "note": "原题第4页第14题：求相邻项比值并另查边界；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：对阶乘通项取相邻比，先确定临界参数，再单独处理边界。"
     }
   ]
 }

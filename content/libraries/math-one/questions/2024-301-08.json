@@ -12,12 +12,12 @@
     {
       "methodId": "pr-dist-normal",
       "verification": "verified",
-      "note": "核对来源 PDF 第 2 页第 8 题：独立正态的线性组合仍为正态，将两个事件分别标准化后比较累计概率。"
+      "note": "独立二次核对来源 第 2 页图 第 8 题：独立正态线性组合仍正态，方差按系数平方相加。"
     },
     {
       "methodId": "pr-moment-variance",
       "verification": "verified",
-      "note": "核对来源 PDF 第 2 页第 8 题：线性组合方差按系数平方加权，独立性使协方差为零。"
+      "note": "独立二次核对来源 第 2 页图 第 8 题：独立正态线性组合仍正态，方差按系数平方相加。"
     }
   ]
 }

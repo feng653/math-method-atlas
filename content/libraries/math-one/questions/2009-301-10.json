@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "10",
+  "summary": "重根方程初值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-characteristic",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 10 题。齐次通解给重特征根，再设多项式特解并代入初值。"
+    },
+    {
+      "methodId": "hm-ode-undetermined",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 10 题。齐次通解给重特征根，再设多项式特解并代入初值。"
+    }
+  ]
+}

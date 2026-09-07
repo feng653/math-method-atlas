@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-density",
-      "note": "原题第2页第7题：利用对称轴分配两侧概率；待独立复核。",
-      "verification": "pending"
+      "note": "独立复核：来源第 7 题。密度关于给定中心对称，中心区间外的两侧尾概率相同。",
+      "verification": "verified"
     }
   ]
 }

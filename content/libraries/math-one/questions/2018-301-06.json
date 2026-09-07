@@ -5,14 +5,15 @@
   "number": "6",
   "summary": "分块秩",
   "source": {
-    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
+    "url": "https://kaoyan.xdf.cn/202310/13540313.html",
     "page": 2
   },
   "methodLinks": [
     {
       "methodId": "la-matrix-rank",
-      "note": "原题第2页第6题：通过分块消元比较秩；待独立复核。",
-      "verification": "pending"
+      "note": "独立复核：来源第 6 题。乘积 AB 的每列属于 A 的列空间，拼接后列空间不变。",
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"
 }

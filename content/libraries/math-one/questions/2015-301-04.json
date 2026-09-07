@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-double-polar",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 4 题。双曲线给径向上下界，两条射线给角度范围，并保留雅可比。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 4 题：第一象限两射线夹角固定，双曲线给极径上下界，使用极坐标并乘 r。"
     }
   ]
 }

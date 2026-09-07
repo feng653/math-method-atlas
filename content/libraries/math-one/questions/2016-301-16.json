@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-characteristic",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 8 页第 16 题。特征根均负保证积分收敛，再将方程积分结合初值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 8 页图 第 16 题：特征根 −1±√(1−k) 都负，指数解在正半轴可积，再结合初值求积分。"
     },
     {
       "methodId": "hm-improper-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 8 页第 16 题。特征根均负保证积分收敛，再将方程积分结合初值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 8 页图 第 16 题：特征根 −1±√(1−k) 都负，指数解在正半轴可积，再结合初值求积分。"
     }
   ]
 }

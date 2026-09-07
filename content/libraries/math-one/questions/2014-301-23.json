@@ -5,13 +5,15 @@
   "number": "23",
   "summary": "尺度估计",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#23"
+    "url": "https://doc.kmf.com/ky_material/77/a2/77a25f193cfa52d46d8c504e15e96620.pdf",
+    "page": 13
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第23题：由密度写似然并求尺度极值；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 23 题，第 13 页。分布函数求导给尺度似然，平方样本均值给极大似然估计，再可用大数定律。",
       "methodId": "pr-estimate-mle"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

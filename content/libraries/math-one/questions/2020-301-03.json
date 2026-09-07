@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第1页第3题：将可微定义写成线性项加余项；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 3 题。切向量与法向量垂直，合并全微分近似后用向量正交关系求比例极限。",
+      "verification": "verified",
       "methodId": "hm-partial-total-differential"
     }
   ]

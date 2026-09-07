@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "17",
+  "summary": "参数方程根数",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 17 题。利用奇偶对称，按参数讨论导数符号并结合无穷远行为计根。"
+    },
+    {
+      "methodId": "hm-intermediate-value",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 17 题。利用奇偶对称，按参数讨论导数符号并结合无穷远行为计根。"
+    }
+  ]
+}

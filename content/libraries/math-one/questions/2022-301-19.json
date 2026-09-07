@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-stokes",
-      "verification": "pending",
-      "note": "原题第6页第19题：按给定方向对旋度作曲面积分；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：边界方向与曲面方向按右手规则配对，旋度的通量取代边界环流。"
     }
   ]
 }

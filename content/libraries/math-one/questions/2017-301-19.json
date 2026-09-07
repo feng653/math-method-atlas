@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-space-intersections",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 19 题。消元求投影边界，密度乘曲面面积元后在投影区域积分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 19 题：交曲线先投影得到参数边界，锥面面积元乘题给密度，不能把曲面积分当投影面积。"
     },
     {
       "methodId": "hm-surface-integrals",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 19 题。消元求投影边界，密度乘曲面面积元后在投影区域积分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 19 题：交曲线先投影得到参数边界，锥面面积元乘题给密度，不能把曲面积分当投影面积。"
     }
   ]
 }

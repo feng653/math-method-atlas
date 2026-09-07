@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "20",
+  "summary": "非唯一解反参",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-system-parameter",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 20 题。两个不同解要求系数秩不足且增广秩一致，分参数消元求通解。"
+    },
+    {
+      "methodId": "la-system-general",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 20 题。两个不同解要求系数秩不足且增广秩一致，分参数消元求通解。"
+    }
+  ]
+}

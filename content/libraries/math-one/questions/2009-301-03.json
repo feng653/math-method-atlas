@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "3",
+  "summary": "变限积分图像",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-newton-leibniz",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 3 题。积分函数的导数由原函数图形给出，结合零点值与有向面积判断。"
+    }
+  ]
+}

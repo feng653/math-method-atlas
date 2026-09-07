@@ -10,9 +10,9 @@
   },
   "methodLinks": [
     {
-      "methodId": "la-system-consistency",
-      "verification": "pending",
-      "note": "原题第3页第15题：将内积约束写成方程；待独立复核。"
+      "methodId": "la-vector-coordinate",
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：把内积条件写成基向量Gram系统求坐标，不能只做有解性判断就结束。"
     }
   ]
 }

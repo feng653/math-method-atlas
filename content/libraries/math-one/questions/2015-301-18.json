@@ -11,13 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-derivative-definition",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 18 题。差商中加减中间项证明两因子法则，多因子由归纳推广。"
-    },
-    {
-      "methodId": "hm-leibniz-high-derivative",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 18 题。差商中加减中间项证明两因子法则，多因子由归纳推广。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 18 题：以差商加减同一项证明两因子乘积法则，再归纳至多因子；不要求高阶可导。"
     }
   ]
 }

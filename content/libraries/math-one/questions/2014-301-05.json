@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第5题：交换行列后识别分块结构；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 5 题。交换行列整理成两个二阶块，追踪交换奇偶后行列式为块行列式乘积。",
       "methodId": "la-det-block"
     }
   ]

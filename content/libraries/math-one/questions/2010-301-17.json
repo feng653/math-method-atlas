@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "17",
+  "summary": "积分序列夹逼",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integral-inequality",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 17 题。用对数小于自变量建立积分上界，并令可计算上界趋零。"
+    },
+    {
+      "methodId": "hm-squeeze",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 17 题。用对数小于自变量建立积分上界，并令可计算上界趋零。"
+    }
+  ]
+}

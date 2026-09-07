@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-multivariable-implicit",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 5 页第 11 题。先由点坐标求隐变量值，对恒等式微分解出全微分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 11 题：题给点隐式方程关于 z 的偏导不为零，链式求导后解出 z 的偏导。"
     }
   ]
 }

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-linear-first",
-      "verification": "pending",
-      "note": "原题第3页第17题：截距关系写成一阶方程；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：切线截距关系转为一阶线性方程，再用初值确定常数。"
     }
   ]
 }

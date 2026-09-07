@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-linear-ode-structure",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 2 页第 3 题。两个特解相减得到齐次解，先反求系数再回代。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 3 题：一阶线性方程两个特解之差为齐次解，通解是特解加其倍数。"
     }
   ]
 }

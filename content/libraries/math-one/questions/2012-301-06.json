@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第6题：检查新基向量所属特征空间；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 6 题。同一重特征子空间内换基不改变对应特征值；变换仍可逆。",
       "methodId": "la-eigen-diagonalization"
     }
   ]

@@ -12,7 +12,7 @@
     {
       "methodId": "hm-double-cartesian",
       "verification": "verified",
-      "note": "原题第3页第4题：重新投影并分段。"
+      "note": "原题第3页第4题：重新投影并分段。 独立复核：按水平切片重述抛物线外侧区域，左右两段分别积分，不能假定被积函数偶对称。"
     }
   ]
 }

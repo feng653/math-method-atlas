@@ -3,22 +3,22 @@
   "libraryId": "math-one",
   "chapterId": "multiple-integrals",
   "title": "第二类曲线积分与功",
-  "summary": "将向量场沿有向路径积分。",
+  "summary": "沿指定方向积分向量场，通过单位切向量转换为第一类积分。",
   "conditions": [
-    "有向分段光滑曲线和连续场。"
+    "有向分段光滑正则曲线、连续向量场；单位切向量 τ 须与积分方向一致。"
   ],
   "steps": [
-    "选择符合方向的参数。",
-    "计算dx、dy、dz。",
-    "代入并逐项相加积分。"
+    "利用线性及首尾相接路径的可加性；反向路径使积分变号。",
+    "选择符合方向的参数，计算 dx、dy、dz 后代入；也可用 dx=τx ds 等关系转为 ∫L F·τ ds。",
+    "利用 |∫L F·dr|≤∫L ||F||ds 估界；第二类的被积切向分量会随方向反转，不能只换成速度模。"
   ],
-  "formula": "\\int_L Pdx+Qdy+Rdz=\\int F(r(t))\\cdot r'(t)dt",
+  "formula": "\\int_L P\\,dx+Q\\,dy+R\\,dz=\\int_a^b F(r(t))\\cdot r'(t)\\,dt=\\int_L F\\cdot\\tau\\,ds,\\quad \\int_{-L}F\\cdot dr=-\\int_L F\\cdot dr",
   "pitfalls": [
     "反向积分变号；微分不可用速度模替代。"
   ],
   "example": {
-    "prompt": "自编例题：沿(0,0)到(1,1)直线计算∫x dy-y dx。",
-    "solution": "取x=t、y=t，t从0到1，dx=dy=dt，被积式t-t=0，结果0。"
+    "prompt": "自编：沿 (0,0) 到 (1,1) 的直线计算 ∫x dy，并用第一类关系及反向路径核对。",
+    "solution": "取 r(t)=(t,t)，0≤t≤1，得 ∫₀¹t dt=1/2。单位切向量 (1,1)/√2，ds=√2dt，F=(0,x)，故 F·τ ds=(t/√2)√2dt=t dt，与直接法一致。反向积分为 −1/2。"
   },
   "relatedIds": [
     "hm-line-first-kind",

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第15题：构造差函数并控制导数符号；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 15 题。差函数为偶函数，可在正半区通过导数正性证非负。",
       "methodId": "hm-monotonic-extrema"
     }
   ]

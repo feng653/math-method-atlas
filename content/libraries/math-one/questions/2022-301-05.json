@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-diagonalization",
-      "verification": "pending",
-      "note": "原题第2页第5题：用特征子空间维数检验条件；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：区分互异特征值的充分条件和满组独立特征向量的充要条件。"
     }
   ]
 }

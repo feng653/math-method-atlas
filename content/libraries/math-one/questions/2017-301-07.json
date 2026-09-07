@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-event-conditional",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 7 题。各条件概率按定义展开，正分母交叉相乘整理成同一不等式。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 7 题：各事件概率严格介于 0 与 1，乘正分母将条件概率不等式化为同一个交叉乘积判据。"
     }
   ]
 }

@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-correlation",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 4 页第 8 题。用每次试验的互斥指示变量算协方差，再除标准差。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 8 题：两个独立试验的互斥类别计数，用交叉矩算协方差再标准化为相关系数。"
     },
     {
       "methodId": "pr-moment-covariance",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 4 页第 8 题。用每次试验的互斥指示变量算协方差，再除标准差。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 8 题：两个独立试验的互斥类别计数，用交叉矩算协方差再标准化为相关系数。"
     }
   ]
 }

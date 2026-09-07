@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-intermediate-value",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 18 题。先用端点附近异号定位零点，再对函数平方的导数使用罗尔定理。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 18 题：先用端点及近零符号取零点，再对平方函数或适当辅助函数使用罗尔定理产生导数零点。"
     },
     {
       "methodId": "hm-mean-value-proof",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 18 题。先用端点附近异号定位零点，再对函数平方的导数使用罗尔定理。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 18 题：先用端点及近零符号取零点，再对平方函数或适当辅助函数使用罗尔定理产生导数零点。"
     }
   ]
 }

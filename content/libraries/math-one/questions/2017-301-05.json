@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-characteristic",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 5 题。沿单位向量及其正交补计算矩阵作用，检查是否有零特征值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 5 题：单位向量张成的方向被 I−ααᵀ 消去，可直接判零特征值。"
     }
   ]
 }

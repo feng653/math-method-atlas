@@ -5,13 +5,15 @@
   "number": "21",
   "summary": "二次型矩阵",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#21"
+    "url": "https://kaoyan.xdf.cn/202310/13540425.html",
+    "page": 4
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第21题：将线性式平方表示为外积；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 21 题，第 4 页。第二来源已确认首平方项系数二，按外积写矩阵；原源遗漏该系数，已换链接。",
       "methodId": "la-quadratic-matrix"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。原HTML首项系数遗漏，页图中系数与子问一致。"
 }

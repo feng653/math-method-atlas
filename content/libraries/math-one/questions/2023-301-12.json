@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-tangent-plane",
-      "verification": "pending",
-      "note": "原题第3页第12题：计算两偏导作为系数；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：在给定点求两偏导，以函数值和梯度构造切平面。"
     }
   ]
 }

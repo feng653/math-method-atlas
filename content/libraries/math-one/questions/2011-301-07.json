@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "7",
+  "summary": "密度函数构造",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-density",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 7 题。检验非负性与积分为一，也可识别两个分布函数乘积的导数。"
+    },
+    {
+      "methodId": "pr-joint-max-min",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 7 题。检验非负性与积分为一，也可识别两个分布函数乘积的导数。"
+    }
+  ]
+}

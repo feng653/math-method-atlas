@@ -12,7 +12,7 @@
     {
       "methodId": "hm-double-cartesian",
       "verification": "verified",
-      "note": "核对来源 PDF 第 4 页第 17 题：按水平截面保留给定积分界，先对横坐标积分；无需误换曲边。"
+      "note": "独立二次核对来源 第 4 页图 第 17 题：按 x 固定切片拆圆外区域，上下限来自单位圆与外边界。"
     }
   ]
 }

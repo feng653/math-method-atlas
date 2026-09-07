@@ -1,0 +1,18 @@
+{
+  "id": "2011-301-05",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "5",
+  "summary": "初等矩阵还原",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-elementary",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 5 题。行变换左乘、列变换右乘，把到单位阵的等式反解。"
+    }
+  ],
+  "sourceNote": "来源行交换文字与初等矩阵可能不一致，待原卷对照。"
+}

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第10题：配方根式后作三角代换；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 10 题。根式配成圆弧形式后作平移正弦换元，连同端点变换。",
       "methodId": "hm-trig-substitution"
     }
   ]

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第2题：由隐式曲面梯度求法向量；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 2 题。定义函数梯度在指定点非零，用梯度为法向量写切平面。",
       "methodId": "hm-tangent-plane"
     }
   ]

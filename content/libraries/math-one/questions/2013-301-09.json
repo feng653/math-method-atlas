@@ -5,13 +5,15 @@
   "number": "9",
   "summary": "隐式极限",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#9"
+    "url": "https://kaoyan.xdf.cn/202310/13540425.html",
+    "page": 2
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第9题：将缩小自变量的差值写成差商；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 9 题，第 2 页。页图确认指数括号范围；零点隐变量为一，所给数列是该点的导数差商。",
       "methodId": "hm-derivative-definition"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

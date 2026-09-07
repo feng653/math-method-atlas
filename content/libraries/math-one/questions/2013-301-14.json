@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第14题：用生存概率比值消去已等待时间；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 14 题。条件概率按指数尾概率作比，平移部分相消。",
       "methodId": "pr-dist-exponential"
     }
   ]

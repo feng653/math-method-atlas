@@ -11,8 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-parametric-derivative",
-      "verification": "pending",
-      "note": "原题第2页第3题：分参数正负计算导数；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：仅在参数非零的两侧使用参数求导，零点另依导数定义拼接。"
+    },
+    {
+      "methodId": "hm-derivative-definition",
+      "verification": "verified",
+      "note": "零点的参数表示含绝对值，须用左右导数定义，不能直接代入参数求导公式。"
     }
   ]
 }

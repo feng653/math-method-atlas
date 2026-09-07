@@ -12,7 +12,12 @@
     {
       "methodId": "hm-mean-value-proof",
       "verification": "verified",
-      "note": "原题第12页第19题：在相邻区间用中值。"
+      "note": "原题第12页第19题：在相邻区间用中值。 独立复核：在相邻两区间分别取中值点可证明必要方向；充分方向需再用割线极限，不能沿用同一中值点。"
+    },
+    {
+      "methodId": "hm-convex-secant",
+      "verification": "verified",
+      "note": "独立复核：三点严格割线关系与可导条件一起连接凸性、割线极限和导数严格单调；须处理等号排除。"
     }
   ]
 }

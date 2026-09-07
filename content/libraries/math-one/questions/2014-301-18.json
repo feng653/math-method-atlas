@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第18题：补盖成闭面后扣去盖面通量；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 18 题。补上顶圆盘，原上侧对封闭体为内向，散度定理必须取负号且补面通量为零。",
       "methodId": "hm-gauss"
     }
   ]

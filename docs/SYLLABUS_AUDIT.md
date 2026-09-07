@@ -45,7 +45,7 @@
 
 ## 可直接交给内容 agent 的 24 个任务
 
-`content/requirements/math-one-2019-audit.json` 的 gaps 是唯一精确任务表：包含 chapterId、topicId、proposedMethodId、原文要求定位。全部 topic 已写入 library.json，尚未新增方法，因此当前缺口可被已有 getCoverage 真实显示。
+`content/requirements/math-one-2019-audit.json` 的 gaps 是本轮精确任务表：包含 chapterId、topicId、proposedMethodId、原文要求定位。后续实施已补24方法并完成独立审校，证据在reviews/audit-gaps.md。历史gap列表保留作为来源追踪；当前未覆盖条目由getCoverage计算，不将已完成补写继续计为缺失。
 
 | 优先批次 | proposedMethodId |
 | --- | --- |

@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第1页第1题：比较变上限积分的首项阶数；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 1 题。先比较各被积函数近零幂阶，再连同变上限的阶一起积分，不能只比较被积函数。",
+      "verification": "verified",
       "methodId": "hm-infinitesimal-order"
     }
   ]

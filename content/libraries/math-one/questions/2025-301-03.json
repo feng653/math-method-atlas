@@ -11,8 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-lhopital",
+      "verification": "pending",
+      "note": "原题第3页第3题：积分平均作商求导。 独立复核：当前洛必达卡仅含0/0和分子分母均无穷版；本题积分未必趋无穷，此关联条件不足，保留待审。"
+    },
+    {
+      "methodId": "hm-integral-inequality",
       "verification": "verified",
-      "note": "原题第3页第3题：积分平均作商求导。"
+      "note": "独立复核：在固定分点拆积分，有限首段除以x趋零，尾段由函数与极限之差的上界控制。"
     }
   ]
 }

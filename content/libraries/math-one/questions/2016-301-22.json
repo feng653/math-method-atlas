@@ -10,14 +10,14 @@
   },
   "methodLinks": [
     {
-      "methodId": "pr-joint-transform",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 14 页第 22 题。面积归一化联合密度，按指示变量取值划区计算分布并检验独立。"
+      "methodId": "pr-event-total",
+      "verification": "verified",
+      "note": "独立二次核对来源 第 14 页图 第 22 题：指标变量 U 分割上下区域；用事件联合概率反例否定独立，按 U=0、1 的完备事件组求 Z 的分布；映射不满足二维可逆雅可比条件。"
     },
     {
       "methodId": "pr-joint-independence",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 14 页第 22 题。面积归一化联合密度，按指示变量取值划区计算分布并检验独立。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 14 页图 第 22 题：指标变量 U 分割上下区域；用事件联合概率反例否定独立，按 U=0、1 的完备事件组求 Z 的分布；映射不满足二维可逆雅可比条件。"
     }
   ]
 }

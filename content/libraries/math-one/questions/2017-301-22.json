@@ -11,13 +11,14 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-expectation",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 22 题。先积分求连续变量均值；再按离散变量取值加权平移密度。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 22 题：X 为两点离散量，Y 有连续密度；对 X 分层得移位分布混合，不能套两连续密度卷积；E(Y)=2/3。"
     },
     {
-      "methodId": "pr-joint-convolution",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 22 题。先积分求连续变量均值；再按离散变量取值加权平移密度。"
+      "methodId": "pr-event-total",
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 22 题：X 为两点离散量，Y 有连续密度；对 X 分层得移位分布混合，不能套两连续密度卷积；E(Y)=2/3。"
     }
-  ]
+  ],
+  "sourceNote": "原页图第 I 问概率比较符号损坏；期望计算与第 II 问离散连续混合分布足以确认现有关联，不认证第 I 问损坏的比较方向。"
 }

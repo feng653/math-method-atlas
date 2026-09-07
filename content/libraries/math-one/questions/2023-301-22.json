@@ -11,8 +11,13 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-covariance",
-      "verification": "pending",
-      "note": "原题第4页第22题：用联合密度计算混合矩；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：积分区域的两轴对称给出一阶矩与混合矩；不相关不等价于独立。"
+    },
+    {
+      "methodId": "pr-dist-transform",
+      "verification": "verified",
+      "note": "对半径平方变量先求分布函数，将事件化为同心圆盘再积分，避免退化二维雅可比。"
     }
   ]
 }

@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "la-vector-coordinate",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 20 题。写过渡矩阵并证可逆；同坐标转为其减单位矩阵的非零核。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 20 题：把新基写成旧基下的列矩阵，等坐标条件给齐次系统并先检查基可逆。"
     },
     {
       "methodId": "la-system-homogeneous",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 20 题。写过渡矩阵并证可逆；同坐标转为其减单位矩阵的非零核。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 20 题：把新基写成旧基下的列矩阵，等坐标条件给齐次系统并先检查基可逆。"
     }
   ]
 }

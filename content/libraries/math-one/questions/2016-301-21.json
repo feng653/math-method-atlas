@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "la-matrix-power",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 13 页第 21 题。先对角化求幂，由乘法结合律递推另一矩阵的高次幂及列表示。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 13 页图 第 21 题：三个互异特征值可对角化计算 A⁹⁹；由 B²=BA 归纳 B¹⁰⁰=BA⁹⁹，按列乘法解释。"
     },
     {
       "methodId": "la-matrix-product",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 13 页第 21 题。先对角化求幂，由乘法结合律递推另一矩阵的高次幂及列表示。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 13 页图 第 21 题：三个互异特征值可对角化计算 A⁹⁹；由 B²=BA 归纳 B¹⁰⁰=BA⁹⁹，按列乘法解释。"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "22",
+  "summary": "联合密度配方",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-marginal",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 22 题。指数配方积分归一化，求边缘密度后作密度比。"
+    },
+    {
+      "methodId": "pr-joint-conditional",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 22 题。指数配方积分归一化，求边缘密度后作密度比。"
+    }
+  ]
+}

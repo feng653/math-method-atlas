@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-expectation",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 14 题。分布函数的加权和对应混合密度，期望按权重线性求和。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 14 题：正态混合分布的期望按权重线性组合，均值为 2。"
     },
     {
       "methodId": "pr-dist-normal",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 14 题。分布函数的加权和对应混合密度，期望按权重线性求和。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 14 题：正态混合分布的期望按权重线性组合，均值为 2。"
     }
   ]
 }

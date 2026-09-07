@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第8题：利用两段长度的确定线性关系；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 8 题。两段长度之和固定，中心化后一段是另一段的负数且方差非零。",
       "methodId": "pr-moment-correlation"
     }
   ]

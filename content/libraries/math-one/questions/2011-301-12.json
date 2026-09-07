@@ -1,0 +1,17 @@
+{
+  "id": "2011-301-12",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "12",
+  "summary": "空间闭曲线积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-stokes",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 12 题。取交线所在平面内圆盘跨面，方向与从上方所见逆时针一致。"
+    }
+  ]
+}

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-power-sum",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 12 题。由几何级数在收敛区间内逐项求导得到目标级数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 12 题：对几何级数逐项求导并匹配系数，保持收敛区间。"
     }
   ]
 }

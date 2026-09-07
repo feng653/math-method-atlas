@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第7题：对联合密度在次序区域积分；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 7 题。独立联合密度在一个变量小于另一个变量的半平面积分，可逐层使用指数尾概率。",
       "methodId": "pr-joint-independence"
     }
   ]

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-det-expansion",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 13 题。沿首行展开得到低阶行列式递推，再解递推式。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 13 题：按稀疏列展开并保留余子式符号，得到带状行列式递推。"
     }
   ]
 }

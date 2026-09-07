@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-multivariable-chain",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 15 题。对两条内函数连续使用链式法则并代入指定点。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 15 题：二元复合函数连续二次求导，保留二阶链式中的混合偏导与内层二阶项。"
     }
   ]
 }

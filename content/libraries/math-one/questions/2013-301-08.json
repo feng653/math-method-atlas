@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第8题：利用t变量平方的F分布关系；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 8 题。t变量平方服从对应F分布；正阈值两侧尾部因对称相等。",
       "methodId": "pr-sample-t-f"
     }
   ]

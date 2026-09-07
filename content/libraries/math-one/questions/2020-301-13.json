@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第3页第13题：利用对称结构进行行列消元；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 13 题。成对加减行列可拆分四阶行列式，行列变换需同步跟踪行列式因子。",
+      "verification": "verified",
       "methodId": "la-det-row-operations"
     }
   ]

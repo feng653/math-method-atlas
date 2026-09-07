@@ -1,0 +1,17 @@
+{
+  "id": "2011-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "21",
+  "summary": "已知作用还原矩阵",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-diagonalization",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 21 题。给定作用产生两条特征方向，秩约束补出零特征值后构造基。"
+    }
+  ]
+}

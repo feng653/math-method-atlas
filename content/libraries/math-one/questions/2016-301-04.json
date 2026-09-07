@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-derivative-definition",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 2 页第 4 题。右侧差商由分段区间夹住，再和左导数比较。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 4 题：右侧阶梯函数差商被 1 与 (n+1)/n 夹住，左差商也是 1。"
     },
     {
       "methodId": "hm-squeeze",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 2 页第 4 题。右侧差商由分段区间夹住，再和左导数比较。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 4 题：右侧阶梯函数差商被 1 与 (n+1)/n 夹住，左差商也是 1。"
     }
   ]
 }

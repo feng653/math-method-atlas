@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第23题：利用正态差的密度建立似然；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 23 题。独立正态差的方差相加；已知零均值的似然给平方和估计，再直接取期望。",
       "methodId": "pr-estimate-mle"
     }
   ]

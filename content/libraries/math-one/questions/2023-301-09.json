@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-sample-t-f",
-      "verification": "pending",
-      "note": "原题第3页第9题：标准化两个独立方差；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：样本方差各除对应总体方差，利用独立卡方比并保留自由度n−1、m−1。"
     }
   ]
 }

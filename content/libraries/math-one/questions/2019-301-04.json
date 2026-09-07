@@ -5,13 +5,15 @@
   "number": "4",
   "summary": "路径无关",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 1
   },
   "methodLinks": [
     {
-      "note": "转载网页第4题：检验区域与交叉偏导条件；待独立复核。",
+      "note": "独立复核：来源第 4 题。上半平面单连通，比较 P 的 y 偏导与 Q 的 x 偏导，并排除域内奇点。",
       "methodId": "hm-path-independence",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

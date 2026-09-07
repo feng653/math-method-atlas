@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-lhopital",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 5 页第 9 题。先对变上限积分求导，再比较三角函数与对数主项。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 9 题：变上限积分求导后用等价量比较分子分母，极限为 1/2。"
     },
     {
       "methodId": "hm-equivalent-infinitesimal",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 5 页第 9 题。先对变上限积分求导，再比较三角函数与对数主项。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 9 题：变上限积分求导后用等价量比较分子分母，极限为 1/2。"
     }
   ]
 }

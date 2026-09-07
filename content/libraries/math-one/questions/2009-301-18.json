@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "18",
+  "summary": "中值定理证明",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-mean-value-proof",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 18 题。减去端点割线构造罗尔函数，再在缩小区间将差商化为中值导数。"
+    },
+    {
+      "methodId": "hm-derivative-definition",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 18 题。减去端点割线构造罗尔函数，再在缩小区间将差商化为中值导数。"
+    }
+  ]
+}

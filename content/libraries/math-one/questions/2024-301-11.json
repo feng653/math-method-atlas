@@ -12,12 +12,12 @@
     {
       "methodId": "hm-power-indeterminate",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 11 题：先用指数与对数复合改写变量幂，保留最低非零主部。"
+      "note": "独立二次核对来源 第 3 页图 第 11 题：先对变幂取对数，再按所需三阶展开，最后用 exp u−1 与 u 等价。"
     },
     {
       "methodId": "hm-taylor-limit",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 11 题：展开到分母对应阶数，比较系数确定参数。"
+      "note": "独立二次核对来源 第 3 页图 第 11 题：先对变幂取对数，再按所需三阶展开，最后用 exp u−1 与 u 等价。"
     }
   ]
 }

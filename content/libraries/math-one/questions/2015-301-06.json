@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-orthogonal",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 6 题。特征向量换序使相应平方项系数换序，向量变号不改变平方项。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 6 题：更换正交特征向量列次序会对应重排对角项，变号不改变特征值。"
     }
   ]
 }

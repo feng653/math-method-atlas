@@ -1,0 +1,17 @@
+{
+  "id": "2011-301-03",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "3",
+  "summary": "乘积函数极值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-hessian-extrema",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 3 题。由驻点条件写二阶偏导，检查海森矩阵正定的充分条件。"
+    }
+  ]
+}

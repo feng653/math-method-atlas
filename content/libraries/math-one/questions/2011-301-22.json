@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "22",
+  "summary": "约束联合分布",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-marginal",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 22 题。平方相等限制非零格点，结合边缘概率恢复联合表，再计算乘积与相关。"
+    },
+    {
+      "methodId": "pr-moment-correlation",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 22 题。平方相等限制非零格点，结合边缘概率恢复联合表，再计算乘积与相关。"
+    }
+  ]
+}

@@ -65,6 +65,10 @@
         {
           "id": "audit-important-limits",
           "title": "两个重要极限的直接代换"
+        },
+        {
+          "id": "audit-inverse-limit",
+          "title": "连续反函数与数列极限传递"
         }
       ]
     },

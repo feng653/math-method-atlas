@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第21题：构造对应特征空间的基；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 21 题。两矩阵均秩一且同一非零特征值，零特征空间维数足够，故同一对角形式。",
       "methodId": "la-eigen-similarity"
     }
   ]

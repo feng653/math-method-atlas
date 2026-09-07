@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-monotonic-extrema",
-      "verification": "pending",
-      "note": "原题第4页第13题：以变量和作上界后求单变量最大值；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：令非负变量之和固定，以平方和上界化为一元极值，并检查边界达到条件。"
     }
   ]
 }

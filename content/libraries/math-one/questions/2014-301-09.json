@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第9题：在指定点计算偏导数；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 9 题。图形曲面的两偏导给平面系数，指定点在曲面上。",
       "methodId": "hm-tangent-plane"
     }
   ]

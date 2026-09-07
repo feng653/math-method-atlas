@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-taylor-limit",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 15 题。展开到三阶，令低阶项抵消后识别非零首项。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 15 题：展开到三阶，先令一次、二次系数消失再识别等价三阶项。"
     }
   ]
 }

@@ -12,7 +12,7 @@
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "原题第11页第18题：按比值变量求偏导。"
+      "note": "原题第11页第18题：按比值变量求偏导。 独立复核：对比值中间变量应用多元链式法则，将偏微分关系化为一元常微分关系。"
     }
   ]
 }

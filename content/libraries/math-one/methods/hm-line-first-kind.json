@@ -3,22 +3,24 @@
   "libraryId": "math-one",
   "chapterId": "multiple-integrals",
   "title": "第一类曲线积分参数化",
-  "summary": "用弧长微元积分标量。",
+  "summary": "用弧长微元积分标量，利用无向性、分段可加与弧长估界。",
   "conditions": [
-    "曲线分段光滑，参数化正则。"
+    "曲线分段光滑、有限长，分片采用正则参数化；标量函数在曲线上连续。",
+    "曲线拆分只在端点等弧长为零的集合重叠，参数化须避免重复覆盖。",
+    "使用估界时 m、M 是积分区域上标量函数的下界与上界。"
   ],
   "steps": [
-    "选择参数范围并写坐标。",
-    "计算速度模得到ds。",
-    "代入标量函数积分。"
+    "先用线性与分段可加性简化；反向走同一曲线不会改变第一类积分。",
+    "选择参数范围并写坐标，计算速度模得到 ds，代入标量函数积分。",
+    "以 mℓ(L)≤∫L f ds≤Mℓ(L) 及 |∫L f ds|≤∫L |f| ds 检查结果；与有向积分比较时需加入单位切向量。"
   ],
-  "formula": "\\int_L f\\,ds=\\int_\\alpha^\\beta f(r(t))|r'(t)|dt",
+  "formula": "\\int_L f\\,ds=\\int_a^b f(r(t))\\|r'(t)\\|\\,dt,\\quad \\int_{-L}f\\,ds=\\int_L f\\,ds,\\quad m\\ell(L)\\le\\int_L f\\,ds\\le M\\ell(L)",
   "pitfalls": [
     "第一类与方向无关，不能把ds写成带符号的dx。"
   ],
   "example": {
-    "prompt": "自编例题：单位圆上求∮x² ds。",
-    "solution": "取x=cos t、y=sin t，0≤t≤2π，ds=dt，积分cos²t得π。"
+    "prompt": "自编：单位圆上求 ∮x²ds，并说明反向绕行及拆成两个半圆的结果。",
+    "solution": "取 x=cos t、y=sin t，0≤t≤2π，ds=dt，积分为 π；反向仍为 π。两个半圆各得 π/2，和为 π。由 0≤x²≤1、圆长 2π，估界为 [0,2π]。"
   },
   "relatedIds": [
     "hm-line-second-kind",

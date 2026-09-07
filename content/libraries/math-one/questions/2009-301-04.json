@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "4",
+  "summary": "乘积级数敛散",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-series-comparison",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 4 题。趋零序列最终有界，用绝对收敛项支配目标正项级数。"
+    }
+  ]
+}

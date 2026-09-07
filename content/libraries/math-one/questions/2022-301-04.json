@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-integral-inequality",
-      "verification": "pending",
-      "note": "原题第2页第4题：先逐点比较被积函数；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：先在相同区间比较被积函数，分母保持正号，再用定积分保序。"
     }
   ]
 }

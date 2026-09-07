@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "pr-joint-max-min",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 16 页第 23 题。独立样本最大值分布为单个分布函数的幂，积分求期望后调整倍数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 16 页图 第 23 题：独立样本最大值分布为单个分布的三次方，积分得 E(T)=9θ/10，再取无偏倍数。"
     },
     {
       "methodId": "pr-estimate-unbiased",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 16 页第 23 题。独立样本最大值分布为单个分布函数的幂，积分求期望后调整倍数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 16 页图 第 23 题：独立样本最大值分布为单个分布的三次方，积分得 E(T)=9θ/10，再取无偏倍数。"
     }
   ]
 }

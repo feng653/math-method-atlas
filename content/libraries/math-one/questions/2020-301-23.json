@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第4页第23题：由分布函数求密度再最大化似然；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 23 题。由分布函数求生存概率及条件生存概率，再对尺度写似然求驻点并检查最大值。",
+      "verification": "verified",
       "methodId": "pr-estimate-mle"
     }
   ]

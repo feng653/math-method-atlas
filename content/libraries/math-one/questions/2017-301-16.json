@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-riemann-sum",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。把求和写成等距黎曼和，所得对数定积分用分部积分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 16 题：把和式整理为网格宽 1/n 的黎曼和，再对对数积分分部积分。"
     },
     {
       "methodId": "hm-integration-by-parts",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 16 题。把求和写成等距黎曼和，所得对数定积分用分部积分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 16 题：把和式整理为网格宽 1/n 的黎曼和，再对对数积分分部积分。"
     }
   ]
 }

@@ -12,7 +12,7 @@
     {
       "methodId": "hm-derivative-definition",
       "verification": "verified",
-      "note": "核对来源 PDF 第 1 页第 4 题：可导先蕴含点处连续，再将差商与题设极限比较。"
+      "note": "独立二次核对来源 第 1 页图 第 4 题：导数存在必须使用真实点值作差商，仅有函数极限不能替代题给点值。"
     }
   ]
 }

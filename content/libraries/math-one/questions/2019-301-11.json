@@ -5,13 +5,15 @@
   "number": "11",
   "summary": "幂级数和",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 2
   },
   "methodLinks": [
     {
-      "note": "转载网页第11题：把自变量平方根代入余弦展开；待独立复核。",
+      "note": "独立复核：来源第 11 题。以平方根作代入量识别余弦的偶次幂展开，原级数在正轴收敛。",
       "methodId": "hm-power-sum",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

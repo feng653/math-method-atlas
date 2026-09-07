@@ -5,13 +5,15 @@
   "number": "2",
   "summary": "分段极值",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 1
   },
   "methodLinks": [
     {
-      "note": "转载网页第2题：左右差商与邻域函数符号分别检查；待独立复核。",
+      "note": "独立复核：来源第 2 题。左右差商中对数项发散，同时检查零点两侧函数符号判断极值。",
       "methodId": "hm-derivative-definition",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

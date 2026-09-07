@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "19",
+  "summary": "切面轨迹与面积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-tangent-plane",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 19 题。切平面垂直条件约束法向量，确定分界后向坐标平面投影面积元。"
+    },
+    {
+      "methodId": "hm-surface-integrals",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 19 题。切平面垂直条件约束法向量，确定分界后向坐标平面投影面积元。"
+    }
+  ]
+}

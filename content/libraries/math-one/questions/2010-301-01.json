@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-01",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "1",
+  "summary": "无穷远幂指极限",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-indeterminate",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 1 题。先取对数，将底数化为一加无穷小并保留一阶系数。"
+    }
+  ]
+}

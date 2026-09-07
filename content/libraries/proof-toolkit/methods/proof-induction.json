@@ -9,5 +9,6 @@
     "prompt": "自编：证明前 n 个正奇数之和等于 n²。",
     "solution": "n=1 时 1=1²。假设前 k 项和为 k²，则前 k+1 项和为 k²+2(k+1)-1=(k+1)²。因此对所有正整数 n 成立。"
   },
-  "relatedIds": ["proof-contradiction"], "topicIds": ["induction"], "status": "draft"
+  "relatedIds": ["proof-contradiction"], "topicIds": ["induction"], "status": "reviewed"
 }
+

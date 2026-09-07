@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第2题：用二阶导符号判断曲线与弦线位置；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 2 题。非负二阶导保证凸性，函数图在端点弦下；其他单调条件不控制弦位置。",
       "methodId": "hm-concavity-asymptote"
     }
   ]

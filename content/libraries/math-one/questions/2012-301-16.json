@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第16题：由一阶条件找驻点并判断类型；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 16 题。驻点在横坐标正负单位值且纵坐标零，二阶判据分别给极大和极小。",
       "methodId": "hm-hessian-extrema"
     }
   ]

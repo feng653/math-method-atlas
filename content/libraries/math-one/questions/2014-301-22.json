@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第22题：按离散条件分别累计概率；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 22 题。按离散条件变量分情况混合两个均匀分布，分布函数须分支拼接。",
       "methodId": "pr-event-total"
     }
   ]

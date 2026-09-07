@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-diagonalization",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 20 题。列关系给核向量，互异特征值限制秩，再写特解加齐次通解。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 20 题：互异特征值给特征基，利用给定列条件确定矩阵作用并解相容线性系统。"
     },
     {
       "methodId": "la-system-general",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 20 题。列关系给核向量，互异特征值限制秩，再写特解加齐次通解。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 20 题：互异特征值给特征基，利用给定列条件确定矩阵作用并解相容线性系统。"
     }
   ]
 }

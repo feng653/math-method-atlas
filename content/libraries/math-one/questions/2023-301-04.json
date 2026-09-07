@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-series-comparison",
-      "verification": "pending",
-      "note": "原题第2页第4题：对差项使用非负性；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：先构造正项差级数；用绝对值三角不等式比较，不能直接对有符号原通项套比较法。"
     }
   ]
 }

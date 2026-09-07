@@ -12,12 +12,12 @@
     {
       "methodId": "pr-moment-total-expectation",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 9 题：从条件均匀分布先求条件均值，再对边缘分布平均。"
+      "note": "独立二次核对来源 第 3 页图 第 9 题：先算 E(Y|X) 再积分得均值与 E(XY)，由此计算协方差。"
     },
     {
       "methodId": "pr-moment-covariance",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 9 题：混合矩同样先作条件平均，随后减去两个均值之积。"
+      "note": "独立二次核对来源 第 3 页图 第 9 题：先算 E(Y|X) 再积分得均值与 E(XY)，由此计算协方差。"
     }
   ]
 }

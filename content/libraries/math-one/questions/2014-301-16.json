@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第16题：隐式求导找驻点再判极值；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 16 题。隐式偏导分母为正定二次式且原曲线不经过原点，可合法求导并分类驻点。",
       "methodId": "hm-implicit-derivative"
     }
   ]

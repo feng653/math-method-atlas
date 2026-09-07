@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第11题：逐变量求偏导后代入点坐标；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 11 题。逐变量偏导组成梯度，在给定非零分母点代入。",
       "methodId": "hm-direction-gradient"
     }
   ]

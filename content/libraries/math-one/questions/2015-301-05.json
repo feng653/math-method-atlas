@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-system-parameter",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 5 题。先由行列式零筛参数，再比较增广矩阵秩。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 5 题：按参数值比较系数矩阵和增广矩阵的秩；无穷多解要求同秩且小于未知数数目。"
     }
   ]
 }

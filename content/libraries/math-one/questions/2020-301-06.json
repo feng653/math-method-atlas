@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第6题：由直线交点关系提取线性组合；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 6 题。两直线交点的参数方程相等，整理成偏移向量属于两方向向量张成空间。",
+      "verification": "verified",
       "methodId": "la-vector-representation"
     }
   ]

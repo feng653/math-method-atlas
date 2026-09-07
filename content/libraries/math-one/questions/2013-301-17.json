@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第17题：解驻点方程后作二阶判别；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 17 题。偏导共同为零给候选驻点，海森行列式区分鞍点与极小点。",
       "methodId": "hm-hessian-extrema"
     }
   ]

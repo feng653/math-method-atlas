@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-diagonalization",
-      "verification": "pending",
-      "note": "原题第2页第6题：核对独立特征向量数；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：重根处核维数必须达到代数重数，不能只看三角矩阵的对角元。"
     }
   ]
 }

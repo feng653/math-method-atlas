@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第3题：用奇延拓和周期定位输入；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 3 题。正弦级数对应长度一的奇延拓，先按周期归约再按奇性确定符号。",
       "methodId": "hm-fourier-half-range"
     }
   ]

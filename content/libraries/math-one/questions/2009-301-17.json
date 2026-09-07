@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-17",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "17",
+  "summary": "相切旋转体",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-quadric-surfaces",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 17 题。求平面切线后旋转成曲面，沿轴切片作面积差积分。"
+    },
+    {
+      "methodId": "hm-integral-area-volume",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 17 题。求平面切线后旋转成曲面，沿轴切片作面积差积分。"
+    }
+  ]
+}

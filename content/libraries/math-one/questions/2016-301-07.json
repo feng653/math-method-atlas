@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-normal",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 3 页第 7 题。标准化阈值后由标准正态分布函数的单调性判断。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 7 题：正态标准化将阈值 μ+σ² 化为 σ，结合分布函数单调性比较。"
     }
   ]
 }

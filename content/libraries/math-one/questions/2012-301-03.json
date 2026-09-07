@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第3题：区分联合极限与单路径极限；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 3 题。以距离平方为阶的有界比值给出小于距离的一阶余项；方向路径用于反证其他选项。",
       "methodId": "hm-multivariable-limit"
     }
   ]

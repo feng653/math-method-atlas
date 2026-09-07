@@ -5,13 +5,15 @@
   "number": "10",
   "summary": "微分特解",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 2
   },
   "methodLinks": [
     {
-      "note": "转载网页第10题：分离变量积分后用初值选支；待独立复核。",
+      "note": "独立复核：来源第 10 题。初值附近 y 为正，分离变量积分后用初值确定积分常数和平方根分支。",
       "methodId": "hm-ode-separable",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "23",
+  "summary": "已知均值估方差",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-mle",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 23 题。从正态似然求方差估计，按已知均值标准化平方和计算期望方差。"
+    },
+    {
+      "methodId": "pr-sample-chi-square",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 23 题。从正态似然求方差估计，按已知均值标准化平方和计算期望方差。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-18",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "18",
+  "summary": "偶次幂级数求和",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-power-radius",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 18 题。先逐个检验端点，再由反正切级数乘自变量得到和函数。"
+    },
+    {
+      "methodId": "hm-power-sum",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 18 题。先逐个检验端点，再由反正切级数乘自变量得到和函数。"
+    }
+  ]
+}

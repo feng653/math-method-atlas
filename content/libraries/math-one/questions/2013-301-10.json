@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第10题：已知解作差提取齐次通解；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 10 题。任意两特解之差为齐次解，两条不同指数线性无关，另取一特解相加。",
       "methodId": "hm-linear-ode-structure"
     }
   ]

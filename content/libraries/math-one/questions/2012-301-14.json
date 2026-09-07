@@ -5,13 +5,15 @@
   "number": "14",
   "summary": "条件事件",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#14"
+    "url": "https://kaoyan.xdf.cn/202310/13540427.html",
+    "page": 2
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第14题：先化简与补事件的交集；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 14 题，第 2 页。已读页图确认条件事件为C的补；不相容使AB包含于该补事件。",
       "methodId": "pr-event-conditional"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

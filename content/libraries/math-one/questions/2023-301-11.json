@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-taylor-limit",
-      "verification": "pending",
-      "note": "原题第3页第11题：展开并比较首个非零项；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：分别展开至首个未抵消阶，匹配等价主项而非只比较函数值。"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "16",
+  "summary": "含参变限积分极值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-newton-leibniz",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 16 题。先拆开参数乘积再对上限求导，按导数符号分段。"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 16 题。先拆开参数乘积再对上限求导，按导数符号分段。"
+    }
+  ]
+}

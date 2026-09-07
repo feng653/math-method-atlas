@@ -9,9 +9,9 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第10题：用周期和奇性把输入移回给定区间；待独立复核。",
-      "methodId": "hm-function-domain"
+      "methodId": "hm-newton-leibniz",
+      "verification": "verified",
+      "note": "独立复核：来源第 10 题。原定义域卡不处理奇性周期；改用积分恢复函数，以奇性确定常数后周期归约。"
     }
   ]
 }

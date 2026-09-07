@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-path-independence",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 11 题。圆盘内分母不为零，比较交叉偏导确定参数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 11 题：圆盘单连通且分母不为零，检验交叉偏导相等确定参数。"
     }
   ]
 }

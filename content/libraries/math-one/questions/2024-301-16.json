@@ -12,12 +12,12 @@
     {
       "methodId": "pr-event-conditional",
       "verification": "verified",
-      "note": "核对来源 PDF 第 4 页第 16 题：分子取目标与条件事件的交集，分母用至少一次成功的补事件。"
+      "note": "独立二次核对来源 第 4 页图 第 16 题：独立伯努利概率先求三次全成功，再除以至少一次成功的概率。"
     },
     {
       "methodId": "pr-event-independence",
       "verification": "verified",
-      "note": "核对来源 PDF 第 4 页第 16 题：独立重复试验中，全成功和全失败的概率可连乘。"
+      "note": "独立二次核对来源 第 4 页图 第 16 题：独立伯努利概率先求三次全成功，再除以至少一次成功的概率。"
     }
   ]
 }

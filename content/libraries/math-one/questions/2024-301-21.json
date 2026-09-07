@@ -12,12 +12,12 @@
     {
       "methodId": "la-eigen-diagonalization",
       "verification": "verified",
-      "note": "核对来源 PDF 第 5 页第 21 题：将联立递推写成列向量迭代；系数矩阵具有互异特征根，可相似对角化求幂。"
+      "note": "独立二次核对来源 第 5 页图 第 21 题：把递推列向量写为矩阵幂，在特征基中计算并用矩阵乘法还原。"
     },
     {
       "methodId": "la-matrix-product",
       "verification": "verified",
-      "note": "核对来源 PDF 第 5 页第 21 题：将矩阵幂作用于初始列向量，读出三条数列。"
+      "note": "独立二次核对来源 第 5 页图 第 21 题：把递推列向量写为矩阵幂，在特征基中计算并用矩阵乘法还原。"
     }
   ]
 }

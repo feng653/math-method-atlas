@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第14题：计算样本平方和期望后解系数；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 14 题。在给定支撑积分二阶矩，再由样本平方和期望匹配目标参数。",
       "methodId": "pr-estimate-unbiased"
     }
   ]

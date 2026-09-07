@@ -1,0 +1,17 @@
+{
+  "id": "2011-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "16",
+  "summary": "含极值内函数求导",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-chain",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 16 题。内函数在可导极值点的一阶导为零，链式求导后代入。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-20",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "20",
+  "summary": "向量组互表",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-vector-representation",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 20 题。原组满秩时不能反向表示意味着另一组降秩，再解坐标方程。"
+    },
+    {
+      "methodId": "la-matrix-rank",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 20 题。原组满秩时不能反向表示意味着另一组降秩，再解坐标方程。"
+    }
+  ]
+}

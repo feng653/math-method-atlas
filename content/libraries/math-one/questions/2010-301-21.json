@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-21",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "21",
+  "summary": "投影二次型",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 21 题。零特征方向的正交补对应单位特征值，再给全体特征值平移检查正定。"
+    },
+    {
+      "methodId": "la-quadratic-positive",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 21 题。零特征方向的正交补对应单位特征值，再给全体特征值平移检查正定。"
+    }
+  ]
+}

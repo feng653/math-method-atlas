@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-power-radius",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 3 题。条件收敛锁定原幂级数半径，乘以序号不改变根上极限，再比较两点距离。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 3 题：条件收敛给原幂级数半径 1，乘 n 不改变半径；不能假设相邻系数比极限存在。"
     }
   ]
 }

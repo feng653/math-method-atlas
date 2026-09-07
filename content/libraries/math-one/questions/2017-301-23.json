@@ -11,18 +11,18 @@
   "methodLinks": [
     {
       "methodId": "pr-dist-transform",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 5 页第 23 题。先合并正负两支得到误差密度，再分别使用一阶矩与对数似然估计尺度。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 23 题：绝对偏差是半正态，正负原像概率合并给密度；再算一阶矩和样本似然估计尺度。"
     },
     {
       "methodId": "pr-estimate-moments",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 5 页第 23 题。先合并正负两支得到误差密度，再分别使用一阶矩与对数似然估计尺度。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 23 题：绝对偏差是半正态，正负原像概率合并给密度；再算一阶矩和样本似然估计尺度。"
     },
     {
       "methodId": "pr-estimate-mle",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 5 页第 23 题。先合并正负两支得到误差密度，再分别使用一阶矩与对数似然估计尺度。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 23 题：绝对偏差是半正态，正负原像概率合并给密度；再算一阶矩和样本似然估计尺度。"
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "15",
+  "summary": "共振非齐次方程",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-undetermined",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 15 题。指数对应特征根时增加待定特解的乘幂次数，再比较系数。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-16",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "16",
+  "summary": "面积级数求和",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-integral-area-volume",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 16 题。积分求相邻幂曲线面积，部分和消项；子级数可关联对数级数。"
+    },
+    {
+      "methodId": "hm-power-sum",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 16 题。积分求相邻幂曲线面积，部分和消项；子级数可关联对数级数。"
+    }
+  ]
+}

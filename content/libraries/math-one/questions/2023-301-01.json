@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-concavity-asymptote",
-      "verification": "pending",
-      "note": "原题第2页第1题：先求斜率再取截距极限；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：渐近线需分别求斜率和截距极限，定义域的有限断点也应检查。"
     }
   ]
 }

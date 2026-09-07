@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "9",
+  "summary": "积分曲线弧长",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-arc-work-integral",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 9 题。先对变上限积分求导，再代入平面曲线弧长公式。"
+    },
+    {
+      "methodId": "hm-newton-leibniz",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 9 题。先对变上限积分求导，再代入平面曲线弧长公式。"
+    }
+  ]
+}

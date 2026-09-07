@@ -10,9 +10,9 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第7题：拆成恰好一件发生的互斥事件；待独立复核。",
-      "verification": "pending",
-      "methodId": "pr-event-counting"
+      "methodId": "pr-event-union",
+      "verification": "verified",
+      "note": "独立复核：来源第 7 题。将恰有一个事件发生写成事件差，再用容斥和已知交概率；没有等可能样本空间，删除计数关联。"
     }
   ]
 }

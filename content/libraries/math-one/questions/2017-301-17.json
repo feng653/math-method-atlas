@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-implicit-derivative",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 17 题。隐式求导筛驻点，再检查导数左右符号。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 17 题：隐函数关于 y 的偏导恒正，求导得到驻点，再判导数符号分类。"
     },
     {
       "methodId": "hm-monotonic-extrema",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 17 题。隐式求导筛驻点，再检查导数左右符号。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 17 题：隐函数关于 y 的偏导恒正，求导得到驻点，再判导数符号分类。"
     }
   ]
 }

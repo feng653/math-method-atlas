@@ -5,13 +5,15 @@
   "number": "21",
   "summary": "二次型对角化",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#21"
+    "url": "https://kaoyan.xdf.cn/202310/13540427.html",
+    "page": 4
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第21题：先由秩确定参数再正交对角化；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 21 题，第 4 页。已看矩阵页图；实矩阵与其格拉姆矩阵同秩，求参数后对称正交对角化。",
       "methodId": "la-quadratic-orthogonal"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-monotonic-extrema",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 2 题。对函数平方求导，将乘积符号转成平方的单调性。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 2 题：对 f² 求导得 2ff'>0，从而比较端点平方大小。"
     }
   ]
 }

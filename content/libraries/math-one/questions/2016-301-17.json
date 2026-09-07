@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-path-independence",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 9 页第 17 题。恢复势函数，用端点差得到单变量函数后求最小值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 9 页图 第 17 题：微分形式是 df，曲线积分化端点差；所得单变量函数求导判最小值。"
     },
     {
       "methodId": "hm-monotonic-extrema",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 9 页第 17 题。恢复势函数，用端点差得到单变量函数后求最小值。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 9 页图 第 17 题：微分形式是 df，曲线积分化端点差；所得单变量函数求导判最小值。"
     }
   ]
 }

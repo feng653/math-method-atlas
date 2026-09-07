@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第22题：按原变量分区计算原像概率；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 22 题。分段映射产生两个原子及连续区间；用原像事件求分布，不能只用连续换元密度。",
       "methodId": "pr-dist-transform"
     }
   ]

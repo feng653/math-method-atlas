@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第18题：将切线长度条件写成导数关系；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 18 题。参数切向量给切线截距距离约束，从正导数选分支，再以参数面积积分。",
       "methodId": "hm-ode-modeling"
     }
   ]

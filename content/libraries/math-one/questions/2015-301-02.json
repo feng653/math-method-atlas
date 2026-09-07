@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-undetermined",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 2 题。将给定特解及两阶导数代回，比较各指数项系数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 2 题：将给定指数型特解代回并按指数项配系数，得到 a=−3、b=2、c=−1；只认证待定系数操作。"
     }
   ]
 }

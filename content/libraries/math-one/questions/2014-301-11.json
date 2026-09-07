@@ -5,13 +5,15 @@
   "number": "11",
   "summary": "齐次方程",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#11"
+    "url": "https://doc.kmf.com/ky_material/77/a2/77a25f193cfa52d46d8c504e15e96620.pdf",
+    "page": 5
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第11题：以因变量与自变量之比换元；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 11 题，第 5 页。令纵横坐标比为新变量化可分离方程；PDF与HTML初值指数不同，已标版本差异。",
       "methodId": "hm-ode-homogeneous"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。HTML初值与PDF初值指数不同；方法适用性一致，数值答案须按当前来源。"
 }

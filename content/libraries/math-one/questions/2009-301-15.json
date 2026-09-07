@@ -1,0 +1,17 @@
+{
+  "id": "2009-301-15",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "15",
+  "summary": "二元函数极值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-hessian-extrema",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 15 题。在对数定义域内解驻点，再检查海森矩阵正定性。"
+    }
+  ]
+}

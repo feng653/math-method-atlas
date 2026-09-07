@@ -5,13 +5,15 @@
   "number": "19",
   "summary": "级数比较",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#19"
+    "url": "https://doc.kmf.com/ky_material/77/a2/77a25f193cfa52d46d8c504e15e96620.pdf",
+    "page": 9
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第19题：从余弦关系建立项的比较界；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 19 题，第 9 页。由余弦单调先夹住两数列，再用余弦差及正弦界把目标商支配于可和数列。",
       "methodId": "hm-series-comparison"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

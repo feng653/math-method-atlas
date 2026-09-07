@@ -5,19 +5,19 @@
   "number": "23",
   "summary": "均匀端点估计",
   "source": {
-    "url": "https://kaoyan.xdf.cn/202310/13540418.html",
-    "page": 4
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2015/"
   },
   "methodLinks": [
     {
       "methodId": "pr-estimate-moments",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 23 题。用总体均值反解参数；似然须保留样本最小值对支撑端点的限制。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 4 页图 第 23 题：均匀区间均值反解矩估计；最大似然的端点取到问题仍需清晰题面，暂不认证该关联。"
     },
     {
       "methodId": "pr-estimate-mle",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 4 页第 23 题。用总体均值反解参数；似然须保留样本最小值对支撑端点的限制。"
+      "verification": "verified",
+      "note": "主agent独立重读第二来源：支撑θ≤x≤1。似然为(1−θ)^(−n)且θ≤样本最小值；在可行参数内严格递增，闭端点处取得最大值，估计为样本最小值。"
     }
-  ]
+  ],
+  "sourceNote": "原图密度支撑端点字形损坏；第二来源明确写θ≤x≤1。本题关联按该闭端点转载版本核验，尚未认证官方原卷。"
 }

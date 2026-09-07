@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-definite-symmetry",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 10 题。拆出奇函数项和绝对值偶函数项。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 10 题：对称区间上分离奇函数零积分和绝对值偶函数积分。"
     }
   ]
 }

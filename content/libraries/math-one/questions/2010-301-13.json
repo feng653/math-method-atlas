@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "13",
+  "summary": "向量组降秩",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-vector-dependence",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 13 题。先确认两列独立，再令第三列由它们表示匹配末坐标。"
+    }
+  ]
+}

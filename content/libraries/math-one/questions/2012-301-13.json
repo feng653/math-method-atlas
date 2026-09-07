@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第13题：分别考察给定向量及其正交补；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 13 题。单位向量方向映到零，其正交补保持不变，所以像空间二维。",
       "methodId": "la-matrix-rank"
     }
   ]

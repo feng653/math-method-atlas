@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第12题：先对积分上限变量求导；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 12 题。对含参变上限积分应用乘积和链式法则，再代入指定点；不能仅求上限导数。",
+      "verification": "verified",
       "methodId": "hm-multivariable-chain"
     }
   ]

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-definite-symmetry",
-      "verification": "pending",
-      "note": "原题第3页第14题：平移区间后用函数关系；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：平移积分区间并扣除重叠段，使用给定的函数差关系。"
     }
   ]
 }

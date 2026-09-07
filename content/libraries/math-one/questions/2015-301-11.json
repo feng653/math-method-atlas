@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-multivariable-implicit",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 11 题。先确定隐变量在指定点的值，再对约束微分。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 11 题：隐式方程在题给点对 z 的偏导非零，可按隐函数偏导公式求值。"
     }
   ]
 }

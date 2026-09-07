@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "la-eigen-diagonalization",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 6 题。相同特征值不足以判相似，比较重根的特征子空间维数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 6 题：区分重特征值的特征子空间维数；可对角化者才与对应对角矩阵相似。"
     },
     {
       "methodId": "la-eigen-similarity",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 6 题。相同特征值不足以判相似，比较重根的特征子空间维数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 6 题：区分重特征值的特征子空间维数；可对角化者才与对应对角矩阵相似。"
     }
   ]
 }

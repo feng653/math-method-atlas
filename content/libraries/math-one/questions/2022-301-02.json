@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-multivariable-chain",
-      "verification": "pending",
-      "note": "原题第1页第2题：按中间变量逐项求偏导；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：分别计算乘积与比值中间变量偏导，将加权偏导组合化简。"
     }
   ]
 }

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-triple-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 12 题。写四面体的逐层界，可利用三个坐标的对称性。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 12 题：单纯形上一次函数的三重积分，可逐层积分或作轴向尺度替换。"
     }
   ]
 }

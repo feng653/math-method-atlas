@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-det-expansion",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 6 页第 13 题。沿末行展开，利用其余子式的三角结构。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 6 页图 第 13 题：沿稀疏首列或末行展开，得到 λ⁴+λ³+2λ²+3λ+4。"
     }
   ]
 }

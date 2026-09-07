@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "9",
+  "summary": "参数曲线二阶导",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-parametric-derivative",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 9 题。先对参数求导，再用除以横坐标参数导数的算子连续求导。"
+    }
+  ]
+}

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第4题：转成区域积分比较被积函数符号；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 4 题。格林公式得到二次多项式面积积分，比较各椭圆包含的正负区域。",
       "methodId": "hm-green"
     }
   ]

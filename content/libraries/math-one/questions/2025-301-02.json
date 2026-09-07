@@ -12,7 +12,7 @@
     {
       "methodId": "hm-alternating-series",
       "verification": "verified",
-      "note": "原题第2页第2题：先查绝对收敛。"
+      "note": "原题第2页第2题：先查绝对收敛。 独立复核：先分离交错符号，再比较绝对值级数与p级数，条件与绝对收敛需分别判断。"
     }
   ]
 }

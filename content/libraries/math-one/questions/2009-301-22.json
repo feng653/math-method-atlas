@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-22",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "22",
+  "summary": "放回抽球分布",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-conditional",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 22 题。条件事件缩小颜色范围，联合分布逐个枚举两次独立抽样。"
+    },
+    {
+      "methodId": "pr-event-counting",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 22 题。条件事件缩小颜色范围，联合分布逐个枚举两次独立抽样。"
+    }
+  ]
+}

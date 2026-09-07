@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-matrix-rank",
-      "verification": "pending",
-      "note": "原题第2页第5题：分块消元后比较主元；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：利用单位分块初等消元得到秩表达式，再结合零乘积给出的秩限制。"
     }
   ]
 }

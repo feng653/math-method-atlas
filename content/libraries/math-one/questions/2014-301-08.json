@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第8题：分别计算混合密度与样本平均的矩；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 8 题。混合密度二阶矩与独立平均的方差不同，展开两者之差为非负平方及方差项。",
       "methodId": "pr-moment-variance"
     }
   ]

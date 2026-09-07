@@ -5,13 +5,15 @@
   "number": "9",
   "summary": "复合偏导",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2019/"
+    "url": "https://kaoyan.xdf.cn/202310/13540306.html",
+    "page": 2
   },
   "methodLinks": [
     {
-      "note": "转载网页第9题：逐项求偏导并消去复合项；待独立复核。",
+      "note": "独立复核：来源第 9 题。链式求两个偏导后，题设加权组合使未知函数导数项抵消。",
       "methodId": "hm-multivariable-chain",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核采用新东方页图，page 为图序号；第19题正文在第4图，第23题密度在第5图。部分不等号排印异常，结合原HTML确认适用条件。"
 }

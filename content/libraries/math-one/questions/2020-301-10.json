@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第10题：对一阶导数再按参数求导；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 10 题。先求 dy/dx，再对参数求导并除以 dx/dt，检查指定参数处分母非零。",
+      "verification": "verified",
       "methodId": "hm-parametric-derivative"
     }
   ]

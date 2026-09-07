@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第11题：由特征根衰减性控制无穷远边界；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 11 题。正阻尼使特征根实部为负，解和导数趋零；积分微分方程得到反常积分。",
+      "verification": "verified",
       "methodId": "hm-ode-characteristic"
     }
   ]

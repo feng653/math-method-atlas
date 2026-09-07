@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-double-polar",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 7 页第 15 题。按题给极坐标区域代入横坐标并乘面积雅可比。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 7 页图 第 15 题：题面已给极坐标区域，代入 x=r cosθ 并计面积因子 r。"
     }
   ]
 }

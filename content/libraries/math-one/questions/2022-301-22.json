@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-estimate-mle",
-      "verification": "pending",
-      "note": "原题第9页第22题：对两组独立样本的联合似然求极值；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：两个独立样本的尺度参数不同，似然分开后相乘，再对共同参数求极值。"
     }
   ]
 }

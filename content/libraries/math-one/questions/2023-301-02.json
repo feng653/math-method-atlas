@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-ode-characteristic",
-      "verification": "pending",
-      "note": "原题第2页第2题：用特征根排除增长项；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：常系数根的实部控制两端增长，重根还会引入多项式因子。"
     }
   ]
 }

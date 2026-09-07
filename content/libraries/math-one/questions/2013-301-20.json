@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第20题：设矩阵元素后联立线性方程；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 20 题。将未知矩阵分量展开，交换子等式成为线性方程组，并用迹零筛参数。",
       "methodId": "la-matrix-product"
     }
   ]

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-direction-gradient",
-      "verification": "pending",
-      "note": "原题第4页第11题：计算梯度的长度；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：可微函数的单位方向最大导数为梯度模，先在指定点求梯度。"
     }
   ]
 }

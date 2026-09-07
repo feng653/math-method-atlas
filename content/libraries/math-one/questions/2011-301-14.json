@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-14",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "14",
+  "summary": "正态混合矩",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-independence",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 14 题。二维正态零相关给独立，再把二阶矩写成方差加均值平方。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 14 题。二维正态零相关给独立，再把二阶矩写成方差加均值平方。"
+    }
+  ]
+}

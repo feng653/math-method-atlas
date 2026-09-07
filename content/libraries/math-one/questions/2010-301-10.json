@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "10",
+  "summary": "根式定积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-substitution-integral",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 10 题。令根号内变量平方替换，连同积分上下限与微分一并变换。"
+    }
+  ]
+}

@@ -11,8 +11,9 @@
   "methodLinks": [
     {
       "methodId": "pr-estimate-normal-mean",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 7 页第 14 题。常用正态均值双侧区间以样本均值为中心，由上端点恢复半宽。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 7 页图 第 14 题：按通常正态均值中心对称双侧区间，中心 9.5、半宽 1.3，另一端为 8.2。"
     }
-  ]
+  ],
+  "sourceNote": "区间另一端按教材通常使用的以样本均值为中心的等尾双侧区间解释；一般不对称置信区间不能由单个上限唯一推出下限。"
 }

@@ -12,7 +12,7 @@
     {
       "methodId": "la-quadratic-completion",
       "verification": "verified",
-      "note": "核对来源 PDF 第 4 页第 15 题：配方后识别非负平方权重；非负参数用加权柯西不等式，负参数构造向量反例。"
+      "note": "独立二次核对来源 第 4 页图 第 15 题：平方配方法或正定半正定条件控制参数，边界也要纳入。"
     }
   ]
 }

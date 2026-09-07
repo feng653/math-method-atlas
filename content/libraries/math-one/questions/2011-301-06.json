@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "6",
+  "summary": "伴随矩阵解系",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-matrix-adjugate",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 6 题。原矩阵核维数给秩，结合伴随秩与乘积恒等式筛选独立列。"
+    },
+    {
+      "methodId": "la-system-homogeneous",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 6 题。原矩阵核维数给秩，结合伴随秩与乘积恒等式筛选独立列。"
+    }
+  ]
+}

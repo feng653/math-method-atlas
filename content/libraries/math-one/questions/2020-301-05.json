@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第2页第5题：将列操作表示成可逆右乘；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 5 题。初等列变换写成右乘可逆矩阵，利用其逆矩阵判断等式方向。",
+      "verification": "verified",
       "methodId": "la-matrix-elementary"
     }
   ]

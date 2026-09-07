@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-covariance",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 8 题。将乘积期望拆开，用不相关消去协方差，并以方差恢复二阶矩。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 8 题：题面仅不相关；由协方差为零算混合矩，E(X²)=Var(X)+E(X)²，无需独立。"
     },
     {
       "methodId": "pr-moment-variance",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 8 题。将乘积期望拆开，用不相关消去协方差，并以方差恢复二阶矩。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 8 题：题面仅不相关；由协方差为零算混合矩，E(X²)=Var(X)+E(X)²，无需独立。"
     }
   ]
 }

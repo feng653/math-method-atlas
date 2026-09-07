@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "7",
+  "summary": "混合正态均值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-normal",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 7 题。把分布函数加权和看成混合分布，按各分量均值加权。"
+    },
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 7 题。把分布函数加权和看成混合分布，按各分量均值加权。"
+    }
+  ]
+}

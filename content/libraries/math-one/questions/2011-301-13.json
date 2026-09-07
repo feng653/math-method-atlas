@@ -1,0 +1,17 @@
+{
+  "id": "2011-301-13",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "13",
+  "summary": "曲面谱反参",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 13 题。正交变换保持特征值，用给定标准形匹配特征多项式。"
+    }
+  ]
+}

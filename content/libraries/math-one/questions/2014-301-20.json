@@ -5,13 +5,15 @@
   "number": "20",
   "summary": "矩阵右逆",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2014/#20"
+    "url": "https://doc.kmf.com/ky_material/77/a2/77a25f193cfa52d46d8c504e15e96620.pdf",
+    "page": 10
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第20题：将矩阵方程逐列转成非齐次系统；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 20 题，第 10 页。已读三行四列矩阵；求核后矩阵右逆逐列是特解加同一核向量。",
       "methodId": "la-system-general"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

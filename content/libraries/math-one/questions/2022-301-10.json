@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-total-expectation",
-      "verification": "pending",
-      "note": "原题第3页第10题：条件平均计算一阶和混合矩；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：通过条件均值和条件二阶矩计算所需混合矩，再标准化协方差。"
     }
   ]
 }

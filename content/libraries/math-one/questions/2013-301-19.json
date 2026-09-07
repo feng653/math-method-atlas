@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第19题：按高度写圆截面并求一阶矩；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 19 题。旋转后横截面半径平方是轴坐标二次式，形心用体积与一阶矩之比。",
       "methodId": "hm-integral-mass-centroid"
     }
   ]

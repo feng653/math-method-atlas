@@ -12,7 +12,7 @@
     {
       "methodId": "hm-multivariable-chain",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 12 题：二阶链式法则逐项求导；内层一阶导在目标点消失，留下内层二阶导贡献。"
+      "note": "独立二次核对来源 第 3 页图 第 12 题：连续两次链式求导，内层一阶导在给定点为零会消去二阶偏导项。"
     }
   ]
 }

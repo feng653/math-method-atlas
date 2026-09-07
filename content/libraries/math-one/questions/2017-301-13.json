@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-matrix-rank",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 13 题。原向量组组成可逆矩阵，右乘它不改变矩阵秩。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 13 题：可逆基矩阵右乘不改变矩阵秩。"
     }
   ]
 }

@@ -8,5 +8,11 @@
     "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
     "page": 5
   },
-  "methodLinks": []
+  "methodLinks": [
+    {
+      "methodId": "hm-curl",
+      "verification": "verified",
+      "note": "独立二次核对来源 第 5 页图 第 10 题：按旋度三分量定义求偏导，得到 (0,1,y−1)。"
+    }
+  ]
 }

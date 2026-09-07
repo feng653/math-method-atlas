@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-inequality",
-      "verification": "pending",
-      "note": "原题第3页第9题：对样本二阶矩应用切比雪夫界；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：把平方样本视作新变量，其方差用四阶矩，独立性令均值方差除以n。"
     }
   ]
 }

@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-orthogonal",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 3 页第 6 题。对称矩阵正交对角化后按正负平方项识别曲面。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 6 题：对称矩阵特征值 5、−1、−1，正交化识别二次曲面类型。"
     },
     {
       "methodId": "hm-quadric-surfaces",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 3 页第 6 题。对称矩阵正交对角化后按正负平方项识别曲面。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 6 题：对称矩阵特征值 5、−1、−1，正交化识别二次曲面类型。"
     }
   ]
 }

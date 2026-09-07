@@ -12,12 +12,12 @@
     {
       "methodId": "pr-joint-convolution",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 10 题：对差值先将第二变量取相反数后作卷积，再把绝对值的正负原像概率相加。"
+      "note": "独立二次核对来源 第 3 页图 第 10 题：先将差改为 X+(−Y) 作独立连续卷积，再对差取绝对值合并两侧；支撑决定指数分段。"
     },
     {
       "methodId": "pr-dist-exponential",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 10 题：按两种大小顺序计算尾事件，识别所得生存函数。"
+      "note": "独立二次核对来源 第 3 页图 第 10 题：先将差改为 X+(−Y) 作独立连续卷积，再对差取绝对值合并两侧；支撑决定指数分段。"
     }
   ]
 }

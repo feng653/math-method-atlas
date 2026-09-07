@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "la-system-parameter",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 11 页第 20 题。把矩阵右端逐列处理，增广消元分临界参数判断解并保留自由量。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 11 页图 第 20 题：逐参数行消元，分别比较秩并把相容矩阵方程写成特解加齐次解。"
     },
     {
       "methodId": "la-system-general",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 11 页第 20 题。把矩阵右端逐列处理，增广消元分临界参数判断解并保留自由量。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 11 页图 第 20 题：逐参数行消元，分别比较秩并把相容矩阵方程写成特解加齐次解。"
     }
   ]
 }

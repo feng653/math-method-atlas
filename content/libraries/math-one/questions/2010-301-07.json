@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-07",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "7",
+  "summary": "分布跳跃概率",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-cdf",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 7 题。点概率等于分布函数该点值减左极限。"
+    }
+  ]
+}

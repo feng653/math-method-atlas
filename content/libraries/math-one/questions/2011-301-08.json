@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "8",
+  "summary": "最大最小乘积",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-joint-independence",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 8 题。最大值与最小值的乘积恒等于原变量乘积，再用独立分解期望。"
+    },
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 8 题。最大值与最小值的乘积恒等于原变量乘积，再用独立分解期望。"
+    }
+  ]
+}

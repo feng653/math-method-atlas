@@ -11,13 +11,14 @@
   "methodLinks": [
     {
       "methodId": "hm-continuity-piecewise",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 1 题。计算右极限并与零点值匹配。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 1 题：右支以 1−cos√x 等价于 x/2 求极限，和拼接值比较；损坏的第二支范围不作为新增假设。"
     },
     {
       "methodId": "hm-equivalent-infinitesimal",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 1 题。计算右极限并与零点值匹配。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 1 题：右支以 1−cos√x 等价于 x/2 求极限，和拼接值比较；损坏的第二支范围不作为新增假设。"
     }
-  ]
+  ],
+  "sourceNote": "页图第二分支范围排印损坏；只确认可见右支的极限和与拼接值比较的方法，不认证损坏字形。"
 }

@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第3页第15题：解驻点并检查二阶判别式；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 15 题。解驻点方程后以 Hessian 行列式和首主元判定，不能把所有驻点当极值。",
+      "verification": "verified",
       "methodId": "hm-hessian-extrema"
     }
   ]

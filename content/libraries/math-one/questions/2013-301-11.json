@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第11题：对参数导数的比值再次求导；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 11 题。先求参数导数比，再对参数求导并除横坐标导数；指定点分母非零。",
       "methodId": "hm-parametric-derivative"
     }
   ]

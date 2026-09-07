@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第4题：按周期移位比较正负积分段；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 4 题。按每个半周期平移，指数权重递增而正弦交替变号，比较相邻面积。",
       "methodId": "hm-integral-inequality"
     }
   ]

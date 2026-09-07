@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "8",
+  "summary": "拼接密度归一",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-dist-density",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 8 题。分别积分负半轴的正态部分和正半轴的均匀部分。"
+    }
+  ]
+}

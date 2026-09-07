@@ -12,7 +12,7 @@
     {
       "methodId": "hm-direction-gradient",
       "verification": "verified",
-      "note": "原题第8页第13题：方向先单位化。"
+      "note": "原题第8页第13题：方向先单位化。 独立复核：梯度在指定点取值，方向向量先归一化后点乘。"
     }
   ]
 }

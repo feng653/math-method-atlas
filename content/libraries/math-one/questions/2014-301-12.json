@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第12题：参数化交线并跟随给定方向；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 12 题。空间圆按方位角参数化，平面约束确定第三坐标，方向与逆时针一致。",
       "methodId": "hm-line-second-kind"
     }
   ]

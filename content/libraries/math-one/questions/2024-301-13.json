@@ -12,12 +12,12 @@
     {
       "methodId": "hm-fourier-half-range",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 13 题：通过偶延拓计算余弦系数，并取题目指定的奇数下标。"
+      "note": "独立二次核对来源 第 3 页图 第 13 题：半区间余弦系数积分求出后，利用小角正弦等价量处理奇指标极限。"
     },
     {
       "methodId": "hm-equivalent-infinitesimal",
       "verification": "verified",
-      "note": "核对来源 PDF 第 3 页第 13 题：系数趋零后，正弦与其自变量等价，转为代数极限。"
+      "note": "独立二次核对来源 第 3 页图 第 13 题：半区间余弦系数积分求出后，利用小角正弦等价量处理奇指标极限。"
     }
   ]
 }

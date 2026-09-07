@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-improper-integral",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 1 页第 1 题。在零点和无穷远分别比较幂函数，两端均收敛才成立。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 1 题：分别在零点与无穷远作幂函数比较，两端可积条件都要满足。"
     }
   ]
 }

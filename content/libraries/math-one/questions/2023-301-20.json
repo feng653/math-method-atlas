@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-taylor-remainder",
-      "verification": "pending",
-      "note": "原题第4页第20题：双侧展开并结合内点条件；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：两侧分别展开并保留各自余项点，之后用二阶导连续性合并范围。"
     }
   ]
 }

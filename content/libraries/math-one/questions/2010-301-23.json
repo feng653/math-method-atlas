@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-23",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "23",
+  "summary": "频数无偏估计",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-estimate-unbiased",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 23 题。将频数线性组合写成独立样本函数之和，匹配参数多项式并计算方差。"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 23 题。将频数线性组合写成独立样本函数之和，匹配参数多项式并计算方差。"
+    }
+  ]
+}

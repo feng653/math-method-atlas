@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第3页第18题：投影后按下侧法向代入；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 18 题。向下法向与开圆锥直接参数化；未知函数只有连续性，不能用需偏导的散度定理，代入通量后该项抵消。",
+      "verification": "verified",
       "methodId": "hm-surface-integrals"
     }
   ]

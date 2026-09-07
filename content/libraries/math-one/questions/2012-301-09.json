@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第9题：先求齐次通解再代入另一个条件；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 9 题。齐次特征根产生两种指数，再用第二恒等式筛系数。",
       "methodId": "hm-ode-characteristic"
     }
   ]

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第3题：画出积分区域后按另一轴分段；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 3 题。投影域由半圆和直线组成，分区换次序；极坐标还须保留径向雅可比。",
       "methodId": "hm-double-cartesian"
     }
   ]

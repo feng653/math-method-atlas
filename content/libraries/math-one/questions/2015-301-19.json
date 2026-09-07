@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "hm-line-second-kind",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 19 题。由球面与平面交线取正确半弧参数，按起终点确定方向。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 19 题：上半球和斜平面的交线只能取指定半弧，参数化后代入有向第二类线积分。"
     },
     {
       "methodId": "hm-space-intersections",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 3 页第 19 题。由球面与平面交线取正确半弧参数，按起终点确定方向。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 3 页图 第 19 题：上半球和斜平面的交线只能取指定半弧，参数化后代入有向第二类线积分。"
     }
   ]
 }

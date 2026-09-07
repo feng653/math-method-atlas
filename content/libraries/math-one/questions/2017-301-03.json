@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-direction-gradient",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 3 题。先把给定方向单位化，再与梯度点乘。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 3 题：方向向量先单位化，再与题给点梯度作内积。"
     }
   ]
 }

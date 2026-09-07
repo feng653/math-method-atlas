@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "pr-moment-expectation",
-      "verification": "pending",
-      "note": "原题第3页第8题：按离散取值分段求和；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：按离散分布求绝对偏差，先按绝对值符号改变处分开求和。"
     }
   ]
 }

@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-taylor-remainder",
-      "verification": "pending",
-      "note": "原题第7页第20题：中点展开后积分并分析余项符号；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：必要方向在中心作二阶展开并令区间缩小；余项条件由二阶连续保证。"
     }
   ]
 }

@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第6题：借实对称矩阵谱判断相似条件；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 6 题。实对称矩阵可正交对角化；匹配目标谱的二阶不变量后参数平方项必须消失。",
       "methodId": "la-eigen-symmetric"
     }
   ]

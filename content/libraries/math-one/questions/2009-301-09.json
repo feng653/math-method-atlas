@@ -1,0 +1,18 @@
+{
+  "id": "2009-301-09",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "9",
+  "summary": "复合混合偏导",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-multivariable-chain",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 9 题。连续两次链式求导；源题未明确二阶偏导条件，需复核原卷。"
+    }
+  ],
+  "sourceNote": "来源题面未明确二阶偏导条件，待原卷对照。"
+}

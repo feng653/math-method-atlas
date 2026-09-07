@@ -1,0 +1,22 @@
+{
+  "id": "2010-301-04",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "4",
+  "summary": "双重求和极限",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-riemann-sum",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 4 题。提出网格面积因子，识别单位正方形上的二重积分。"
+    },
+    {
+      "methodId": "hm-double-cartesian",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 4 题。提出网格面积因子，识别单位正方形上的二重积分。"
+    }
+  ]
+}

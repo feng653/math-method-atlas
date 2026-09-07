@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "la-quadratic-completion",
-      "verification": "pending",
-      "note": "原题第4页第21题：先配方再检查变换可逆；待独立复核。"
+      "verification": "verified",
+      "note": "主agent独立重读题面复核：配方和可逆缩放处理合同，正交变换还须比较谱，二者不可混同。"
     }
   ]
 }

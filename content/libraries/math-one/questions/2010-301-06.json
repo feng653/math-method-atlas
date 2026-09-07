@@ -1,0 +1,17 @@
+{
+  "id": "2010-301-06",
+  "libraryId": "math-one",
+  "paperId": "math-one-2010",
+  "number": "6",
+  "summary": "多项式矩阵谱",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2010/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "la-eigen-symmetric",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 6 题。特征值满足同一多项式，实对称可对角化且秩确定非零重数。"
+    }
+  ]
+}

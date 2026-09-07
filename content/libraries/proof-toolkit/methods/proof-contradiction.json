@@ -9,5 +9,6 @@
     "prompt": "自编：证明不存在最小的正实数。",
     "solution": "假设最小正实数为 a，则 a>0。数 a/2 满足 0<a/2<a，与 a 最小矛盾，所以不存在最小正实数。"
   },
-  "relatedIds": ["proof-counterexample", "proof-induction"], "topicIds": ["contradiction"], "status": "draft"
+  "relatedIds": ["proof-counterexample", "proof-induction"], "topicIds": ["contradiction"], "status": "reviewed"
 }
+

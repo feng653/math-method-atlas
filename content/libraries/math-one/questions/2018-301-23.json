@@ -5,14 +5,15 @@
   "number": "23",
   "summary": "尺度估计",
   "source": {
-    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
-    "page": 6
+    "url": "https://kaoyan.xdf.cn/202310/13540313.html",
+    "page": 4
   },
   "methodLinks": [
     {
       "methodId": "pr-estimate-mle",
-      "note": "原题第6页第23题：对数似然求导并检查极大性；待独立复核。",
-      "verification": "pending"
+      "note": "独立复核：来源第 23 题。对尺度参数写对数似然；估计量为样本绝对值均值，绝对值服从指数分布可求矩。",
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"
 }

@@ -5,13 +5,15 @@
   "number": "23",
   "summary": "参数估计",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#23"
+    "url": "https://kaoyan.xdf.cn/202310/13540425.html",
+    "page": 4
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第23题：对密度参数写对数似然并求极值；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 23 题，第 4 页。页图确认倒数型指数密度；正参数似然含对数项及样本倒数和，极值在内部。",
       "methodId": "pr-estimate-mle"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

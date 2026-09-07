@@ -1,0 +1,22 @@
+{
+  "id": "2011-301-19",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "19",
+  "summary": "混合偏导积分",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-double-cartesian",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 19 题。交换为两次单积分并分别分部积分，边界函数条件消去边界项。"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 19 题。交换为两次单积分并分别分部积分，边界函数条件消去边界项。"
+    }
+  ]
+}

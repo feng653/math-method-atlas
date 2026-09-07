@@ -1,0 +1,17 @@
+{
+  "id": "2011-301-10",
+  "libraryId": "math-one",
+  "paperId": "math-one-2011",
+  "number": "10",
+  "summary": "线性方程初值",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2011/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "hm-ode-linear-first",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 10 题。乘积分因子，积分后由初值确定常数。"
+    }
+  ]
+}

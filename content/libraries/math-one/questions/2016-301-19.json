@@ -11,18 +11,18 @@
   "methodLinks": [
     {
       "methodId": "hm-mean-value-proof",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 10 页第 19 题。中值定理使相邻差按几何级数缩小，望远镜和推出极限，再由连续性解固定点范围。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 10 页图 第 19 题：0<f'<1/2 使相邻差同号且绝对值几何衰减，级数比较给有界性，数列单调有界收敛；再对固定极限用中值定理约束其范围。"
     },
     {
       "methodId": "hm-series-comparison",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 10 页第 19 题。中值定理使相邻差按几何级数缩小，望远镜和推出极限，再由连续性解固定点范围。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 10 页图 第 19 题：0<f'<1/2 使相邻差同号且绝对值几何衰减，级数比较给有界性，数列单调有界收敛；再对固定极限用中值定理约束其范围。"
     },
     {
       "methodId": "hm-recursive-limit",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 10 页第 19 题。中值定理使相邻差按几何级数缩小，望远镜和推出极限，再由连续性解固定点范围。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 10 页图 第 19 题：0<f'<1/2 使相邻差同号且绝对值几何衰减，级数比较给有界性，数列单调有界收敛；再对固定极限用中值定理约束其范围。"
     }
   ]
 }

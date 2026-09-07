@@ -9,9 +9,10 @@
   },
   "methodLinks": [
     {
-      "note": "转载网页第18题：分部积分连接不同指标；待独立复核。",
+      "note": "独立复核：来源第 18 题。对积分分部得到跨两项递推，结合单调性夹逼相邻比值；采用 HTML 的 n+2 分母，第二源 n−2 为排印错误。",
       "methodId": "hm-integration-by-parts",
-      "verification": "pending"
+      "verification": "verified"
     }
-  ]
+  ],
+  "sourceNote": "保留全文HTML来源；新东方第3图递推分母误排为 n−2，积分分部独立核算应为 n+2。"
 }

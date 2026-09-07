@@ -5,14 +5,20 @@
   "number": "22",
   "summary": "乘积随机量",
   "source": {
-    "url": "https://cdn1.kybimg.com/ohr/2017/12/24/175341_5a3f792517f79.pdf",
-    "page": 5
+    "url": "https://kaoyan.xdf.cn/202310/13540313.html",
+    "page": 4
   },
   "methodLinks": [
     {
-      "methodId": "pr-joint-transform",
-      "note": "原题第5页第22题：按离散符号分支求概率质量；待独立复核。",
-      "verification": "pending"
+      "methodId": "pr-event-total",
+      "verification": "verified",
+      "note": "独立复核：来源第 22 题。按符号变量条件化求离散混合分布，并以 E(XZ)−EX·EZ 求协方差；不适用连续雅可比。"
+    },
+    {
+      "methodId": "pr-moment-covariance",
+      "verification": "verified",
+      "note": "独立复核：来源第 22 题。按符号变量条件化求离散混合分布，并以 E(XZ)−EX·EZ 求协方差；不适用连续雅可比。"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用新东方页图；page 为文章内试卷图序号。第14题跨第2、3图，第20题跨第3、4图。原PDF存在遗漏参数、互斥符号、题意等排印问题。"
 }

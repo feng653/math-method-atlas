@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-concavity-asymptote",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 1 页第 1 题。根据二阶导数左右符号是否改变判断，包括二阶导数不存在处。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 1 页图 第 1 题：二阶导数图的符号改变才产生拐点；接触零轴而不变号不计。"
     }
   ]
 }

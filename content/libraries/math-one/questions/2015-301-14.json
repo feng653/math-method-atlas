@@ -11,13 +11,13 @@
   "methodLinks": [
     {
       "methodId": "pr-joint-independence",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 14 题。二维正态的零相关给独立性，平移后将乘积负事件拆成异号象限。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 14 题：联合正态且零相关给独立；中心化后两个半轴事件相乘。"
     },
     {
       "methodId": "pr-dist-normal",
-      "verification": "pending",
-      "note": "待独立复核：来源文章内试卷页图第 2 页第 14 题。二维正态的零相关给独立性，平移后将乘积负事件拆成异号象限。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 2 页图 第 14 题：联合正态且零相关给独立；中心化后两个半轴事件相乘。"
     }
   ]
 }

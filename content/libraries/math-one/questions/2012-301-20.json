@@ -5,13 +5,15 @@
   "number": "20",
   "summary": "参数方程组",
   "source": {
-    "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#20"
+    "url": "https://kaoyan.xdf.cn/202310/13540427.html",
+    "page": 4
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第20题：按行列式和增广矩阵秩分类；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 20 题，第 4 页。循环参数矩阵行列式筛奇异实参数；增广消元检验一致性并找自由变量。",
       "methodId": "la-system-parameter"
     }
-  ]
+  ],
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
 }

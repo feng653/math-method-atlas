@@ -10,8 +10,8 @@
   },
   "methodLinks": [
     {
-      "note": "原题第3页第19题：围绕最大绝对值点分段用中值定理；待独立复核。",
-      "verification": "pending",
+      "note": "独立复核：来源第 19 题。取绝对值最大点分别用两段中值定理；等号约束结合该点导数为零处理第二问。",
+      "verification": "verified",
       "methodId": "hm-mean-value-proof"
     }
   ]

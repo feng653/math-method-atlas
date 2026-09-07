@@ -1,0 +1,22 @@
+{
+  "id": "2009-301-08",
+  "libraryId": "math-one",
+  "paperId": "math-one-2009",
+  "number": "8",
+  "summary": "混合分布跳跃",
+  "source": {
+    "url": "https://www.csgraduates.com/study_methods/math/math1/2009/"
+  },
+  "methodLinks": [
+    {
+      "methodId": "pr-event-total",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 8 题。按离散因子取值分情况，常值分支产生点质量。"
+    },
+    {
+      "methodId": "pr-dist-cdf",
+      "verification": "pending",
+      "note": "待独立复核：来源HTML第 8 题。按离散因子取值分情况，常值分支产生点质量。"
+    }
+  ]
+}

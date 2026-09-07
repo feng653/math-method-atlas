@@ -9,8 +9,8 @@
   },
   "methodLinks": [
     {
-      "verification": "pending",
-      "note": "转载网页第15题：对外层积分分部以消去内层积分；待独立复核。",
+      "verification": "verified",
+      "note": "独立复核：来源第 15 题。变限积分作为分部因子，其导数恢复被积函数；零端需检验边界项极限。",
       "methodId": "hm-integration-by-parts"
     }
   ]

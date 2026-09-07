@@ -11,8 +11,8 @@
   "methodLinks": [
     {
       "methodId": "hm-taylor-expansion",
-      "verification": "pending",
-      "note": "待独立复核：来源PDF第 6 页第 12 题。展开反正切与有理式，三次项系数对应三阶导数。"
+      "verification": "verified",
+      "note": "独立二次核对来源 第 6 页图 第 12 题：分别展开 arctan x 与有理函数至三阶，由三阶导值确定系数。"
     }
   ]
 }
