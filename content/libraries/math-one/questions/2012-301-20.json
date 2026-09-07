@@ -25,7 +25,39 @@
       "methodId": "la-system-parameter",
       "role": "primary",
       "roleNote": "按奇异参数分支检验相容性并求自由变量，直接分类方程组解。"
+    },
+    {
+      "methodId": "la-det-expansion",
+      "verification": "verified",
+      "note": "独立子问入口核验：新东方第4图的4阶循环矩阵按首行展开，只有全对角项与完整4循环项非零；4循环符号为负，因此det A=1−a⁴。方阵与代数余子式符号条件满足。",
+      "role": "primary",
+      "roleNote": "直接完成题面(I)：计算参数行列式。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "计算参数行列式",
+      "methodIds": [
+        "la-det-expansion"
+      ],
+      "evidenceNote": "所选来源第20题题面（文章图4）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "判断无穷多解并给通解",
+      "methodIds": [
+        "la-system-parameter"
+      ],
+      "evidenceNote": "所选来源第20题题面（文章图4）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第20题题面（文章图4）已逐项核对全部显式子问标号。"
+  }
 }

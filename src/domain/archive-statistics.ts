@@ -21,9 +21,23 @@ export function getPaperStats(paper: Paper, questions: Question[]) {
   const expected = paper.expectedQuestionCount;
   const complete = paper.status === 'complete' && expected !== undefined && numbers.size === expected
     && Array.from({ length: expected }, (_, index) => index + 1).every((number) => numbers.has(number));
+  const uniqueQuestions = [...new Map(entries.map((question) => [questionKey(question), question])).values()];
+  const unaudited = uniqueQuestions.filter((question) => !question.subquestionAudit
+    || question.subquestionAudit.expectedCount !== (question.subquestions?.length ?? 0));
+  const subquestions = {
+    recorded: uniqueQuestions.reduce((sum, question) => sum + (question.subquestions?.length ?? 0), 0),
+    auditedQuestions: uniqueQuestions.length - unaudited.length,
+    unauditedQuestionIds: unaudited.map((question) => question.id),
+    unmappedParts: uniqueQuestions.flatMap((question) => (question.subquestions ?? [])
+      .filter((part) => !part.methodIds.length).map((part) => `${question.id}/${part.id}`)),
+    partsWithoutVerifiedMethods: uniqueQuestions.flatMap((question) => (question.subquestions ?? [])
+      .filter((part) => !part.methodIds.some((id) => question.methodLinks.some((link) =>
+        link.methodId === id && link.verification === 'verified'))).map((part) => `${question.id}/${part.id}`)),
+    complete: complete && unaudited.length === 0,
+  };
   return { paperId: paper.id, year: paper.year, expected, indexed: keys.size,
     questionsWithVerifiedLinks: verifiedKeys.size, verifiedLinks: verifiedLinks.size,
-    pendingLinks: pendingLinks.size, roleCounts, complete,
+    pendingLinks: pendingLinks.size, roleCounts, complete, subquestions,
     questionsWithoutVerifiedPrimary: [...new Map(entries.filter((question) => !primaryKeys.has(questionKey(question)))
       .map((question) => [questionKey(question), question.id])).values()],
     unmappedQuestions: [...new Map(entries.filter((question) => !question.methodLinks.length)
@@ -42,6 +56,11 @@ export function getArchiveStats(papers: Paper[], questions: Question[], scope?: 
   return { paperCount: unique.length, indexedQuestionCount: perPaper.reduce((sum, paper) => sum + paper.indexed, 0),
     verifiedQuestionCount: perPaper.reduce((sum, paper) => sum + paper.questionsWithVerifiedLinks, 0),
     completePaperCount: perPaper.filter((paper) => paper.complete).length,
+    subquestions: {
+      recorded: perPaper.reduce((sum, paper) => sum + paper.subquestions.recorded, 0),
+      auditedQuestions: perPaper.reduce((sum, paper) => sum + paper.subquestions.auditedQuestions, 0),
+      completePapers: perPaper.filter((paper) => paper.subquestions.complete).length,
+    },
     startYear: years[0], endYear: years.at(-1), perPaper,
     target: scope ? { ...scope, expectedPapers: targetYears.length,
       completePapers: targetYears.filter((year) => completeYears.has(year)).length,

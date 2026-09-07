@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "补线闭合后应用格林并扣补段，直接计算开路径积分。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第19题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

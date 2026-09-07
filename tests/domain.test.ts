@@ -99,6 +99,16 @@ describe('content integrity', () => {
     expect(errors).toContain('subquestion method missing from parent');
   });
 
+  it('requires audited part counts to match while preserving unaudited input', () => {
+    const data = fixture();
+    data.questions[0].subquestionAudit = { expectedCount: 0, checkedOn: '2026-09-08', note: '原题未列子问编号' };
+    expect(validateAtlas(data)).toEqual([]);
+    data.questions[0].subquestionAudit.expectedCount = 2;
+    expect(validateAtlas(data).join(' ')).toContain('Audited subquestion count');
+    delete data.questions[0].subquestionAudit;
+    expect(validateAtlas(data)).toEqual([]);
+  });
+
   it('rejects repeated question numbers even with different ids', () => {
     const data = fixture();
     data.papers[0].expectedQuestionCount = 2;

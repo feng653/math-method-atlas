@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "消去低阶项并匹配首项系数，直接确定所求参数。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第1题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

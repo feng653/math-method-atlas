@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "差集写成交补并用独立乘积，直接解事件概率。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第7题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

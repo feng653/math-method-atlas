@@ -25,7 +25,39 @@
       "methodId": "pr-estimate-mle",
       "role": "primary",
       "roleNote": "参数对数似然内部极值直接求估计量。"
+    },
+    {
+      "methodId": "pr-estimate-moments",
+      "verification": "verified",
+      "note": "独立子问入口核验：新东方第4图密度为θ²x⁻³exp(−θ/x)，x>0、θ>0。令u=θ/x计算EX=θ∫₀∞e⁻ᵘdu=θ，绝对一阶矩有限且可识别参数，矩方程给θ的估计为样本均值；样本严格正保证估计落在参数空间。",
+      "role": "primary",
+      "roleNote": "直接完成题面(I)：以总体矩确定参数估计。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "以总体矩确定参数估计",
+      "methodIds": [
+        "pr-estimate-moments"
+      ],
+      "evidenceNote": "所选来源第23题题面（文章图4）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求似然极值估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "所选来源第23题题面（文章图4）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第23题题面（文章图4）已逐项核对全部显式子问标号。"
+  }
 }

@@ -22,5 +22,10 @@
       "role": "primary",
       "roleNote": "取联合与边缘密度之比，直接求条件密度。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第22题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

@@ -22,5 +22,30 @@
       "role": "primary",
       "roleNote": "由正下界与趋零上界直接推出所求极限。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "比较两类积分大小",
+      "methodIds": [
+        "hm-integral-inequality"
+      ],
+      "evidenceNote": "所选来源第17题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求积分数列极限",
+      "methodIds": [
+        "hm-squeeze"
+      ],
+      "evidenceNote": "所选来源第17题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第17题题面已逐项核对全部显式子问标号。"
+  }
 }

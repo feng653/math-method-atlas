@@ -30,6 +30,8 @@ LaTeX 反斜杠在 JSON 中写成 `\\`，只在 formula 中写公式，不放 HT
 
 子问写入父题可选 `subquestions` 数组，每项为 `{id,label,summary,methodIds,evidenceNote,source?}`。id和原标号label在本题内唯一；methodIds仅引用父题已有方法关联，可为空，不重复保存verification或主辅角色。必须根据题面显式编号划分，不能把解析步骤编成子问；未写数组表示尚未结构化，已录数不代表全部子问齐全。参考2015-301-21、2016-301-23、2017-301-23。
 
+逐题子问边界审计写 `subquestionAudit:{expectedCount,checkedOn,note}`，只有实际核对该题全部编号后填写；expectedCount须等于已录子问数。无显式编号时填0并省略subquestions；尚未审计时省略subquestionAudit，不能把空数组当已确认没有子问。嵌套编号保留完整label（如(1)(i)），仅存末级任务，避免同时计父容器。空methodIds是显式待补缺口；父题已有核验入口不代表每个子问均已解决。content:report逐卷列未审题和未关联子问。
+
 来源可增加 `source.metadata`：publisher、level（official/university-hosted/third-party/unknown）、checkedOn（实际检查日）、availability（available/unavailable/unverified）、evidence、bodyMode（external-link）、rightsNote。访问成功不等于官方发布，未知转载许可继续只存外链与原创摘要。题目与试卷是同一资源时继承元数据（忽略hash、保留query）；换来源必须单独取证，不复制整卷身份。缺失元数据显示待登记。
 
 source.page默认PDF物理页；文章图片序号须同时写 `locatorKind: "image-index"`，前端显示“文章第N张试卷图”并打开文章，不伪造#page跳转。子问同源可省略source，跨页/异来源时明确覆盖并核对定位。

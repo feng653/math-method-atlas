@@ -24,7 +24,55 @@
       "methodId": "pr-estimate-mle",
       "role": "primary",
       "roleNote": "对应第Ⅱ问尺度参数的最大似然估计；不声称覆盖第Ⅰ问矩及第Ⅲ问相合极限。"
+    },
+    {
+      "methodId": "pr-moment-expectation",
+      "verification": "verified",
+      "note": "独立子问入口核验：KMF第13页的F(x)=1−exp(−x²/θ)，x≥0、θ>0，给f(x)=2x exp(−x²/θ)/θ。令u=x²/θ，EX=√θ∫₀∞u^(1/2)e⁻ᵘdu=√(πθ)/2，EX²=θ∫₀∞ue⁻ᵘdu=θ；积分均有限，按密度计算原点矩合法。",
+      "role": "primary",
+      "roleNote": "直接完成题面(I)：求总体前两阶原点矩。"
+    },
+    {
+      "methodId": "pr-limit-lln",
+      "verification": "verified",
+      "note": "独立子问入口核验：KMF第13页第三问判断θ估计量的依概率极限。第Ⅱ问Tₙ=(1/n)ΣXᵢ²；变量Xᵢ²仍独立同分布，且E|Xᵢ²|=θ<∞，辛钦大数定律给Tₙ依概率趋θ，因此存在a=θ使所有ε>0的偏差概率趋零。",
+      "role": "primary",
+      "roleNote": "直接完成题面(III)：判断估计量的概率极限。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "求总体前两阶原点矩",
+      "methodIds": [
+        "pr-moment-expectation"
+      ],
+      "evidenceNote": "所选来源第23题题面（PDF物理页13）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求尺度参数似然估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "所选来源第23题题面（PDF物理页13）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-3",
+      "label": "(III)",
+      "summary": "判断估计量的概率极限",
+      "methodIds": [
+        "pr-limit-lln"
+      ],
+      "evidenceNote": "所选来源第23题题面（PDF物理页13）明确列出(III)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第23题题面（PDF物理页13）已逐项核对全部显式子问标号。"
+  }
 }

@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "化为带符号面积积分后比较椭圆域，直接判断闭线积分大小。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第4题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

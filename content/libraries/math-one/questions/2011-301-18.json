@@ -23,5 +23,30 @@
       "roleNote": "第Ⅱ问证明递减且有下界后直接得数列收敛。"
     }
   ],
-  "sourceNote": "2026-09-08独立重读实际题面，并审核一般单调有界方法扩展；两条关联均已核验。来源为社区转录，不视为官方试卷认证。"
+  "sourceNote": "2026-09-08独立重读实际题面，并审核一般单调有界方法扩展；两条关联均已核验。来源为社区转录，不视为官方试卷认证。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(1)",
+      "summary": "证明对数的严格双边界",
+      "methodIds": [
+        "hm-integral-inequality"
+      ],
+      "evidenceNote": "所选来源第18题题面明确列出(1)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(2)",
+      "summary": "证明调和和减对数收敛",
+      "methodIds": [
+        "hm-recursive-limit"
+      ],
+      "evidenceNote": "所选来源第18题题面明确列出(2)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第18题题面已逐项核对全部显式子问标号。"
+  }
 }

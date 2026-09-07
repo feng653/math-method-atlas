@@ -14,6 +14,38 @@
       "methodId": "hm-power-sum",
       "role": "primary",
       "roleNote": "逐项二阶求导与递推系数直接证明第Ⅰ问和函数微分方程。"
+    },
+    {
+      "methodId": "hm-ode-characteristic",
+      "verification": "verified",
+      "note": "独立子问入口核验：递推给S″−S=0，且S(0)=a₀=3、S′(0)=a₁=1。特征根±1，S=C₁eˣ+C₂e⁻ˣ；初值给C₁=2、C₂=1，故S=2eˣ+e⁻ˣ。方程为实常系数齐次，第一问已保证逐项求导合法。",
+      "role": "primary",
+      "roleNote": "直接完成题面(II)：求和函数显式表达。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "由递推证明和函数方程",
+      "methodIds": [
+        "hm-power-sum"
+      ],
+      "evidenceNote": "所选来源第16题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求和函数显式表达",
+      "methodIds": [
+        "hm-ode-characteristic"
+      ],
+      "evidenceNote": "所选来源第16题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第16题题面已逐项核对全部显式子问标号。"
+  }
 }

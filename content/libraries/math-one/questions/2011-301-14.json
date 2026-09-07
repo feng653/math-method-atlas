@@ -22,5 +22,10 @@
       "role": "supporting",
       "roleNote": "由均值方差还原二阶矩，提供混合矩乘积中的一个因子。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第14题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

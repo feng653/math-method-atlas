@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "统一距离估计及反例路径直接判断给定连续性命题。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第3题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

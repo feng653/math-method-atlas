@@ -15,5 +15,30 @@
       "role": "primary",
       "roleNote": "分别用中值定理和辅助函数罗尔定理，直接完成两项存在性证明。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "证明一阶导数取指定值",
+      "methodIds": [
+        "hm-mean-value-proof"
+      ],
+      "evidenceNote": "所选来源第18题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "证明两阶导数和取指定值",
+      "methodIds": [
+        "hm-mean-value-proof"
+      ],
+      "evidenceNote": "所选来源第18题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第18题题面已逐项核对全部显式子问标号。"
+  }
 }

@@ -33,5 +33,30 @@
       "roleNote": "第Ⅰ问由无法表示且原组满秩推出另一组降秩，直接筛参数。"
     }
   ],
-  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "由不能表示确定参数",
+      "methodIds": [
+        "la-matrix-rank"
+      ],
+      "evidenceNote": "所选来源第20题题面（PDF物理页35）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求向量表示系数",
+      "methodIds": [
+        "la-vector-representation"
+      ],
+      "evidenceNote": "所选来源第20题题面（PDF物理页35）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第20题题面（PDF物理页35）已逐项核对全部显式子问标号。"
+  }
 }

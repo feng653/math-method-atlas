@@ -14,6 +14,54 @@
       "methodId": "pr-estimate-mle",
       "role": "primary",
       "roleNote": "零均值正态差样本的似然极值，直接求尺度估计量。"
+    },
+    {
+      "methodId": "pr-bivariate-normal",
+      "verification": "verified",
+      "note": "独立子问入口核验：原题明确X与Y独立正态，故联合密度为边缘正态密度之积，满足联合二维正态且相关系数0。Z=X−Y均值0，方差σ²+2σ²=3σ²；密度为exp(−z²/(6σ²))/√(6πσ²)，σ>0保证非退化。",
+      "role": "primary",
+      "roleNote": "直接完成题面(I)：确定正态差的密度。"
+    },
+    {
+      "methodId": "pr-estimate-unbiased",
+      "verification": "verified",
+      "note": "独立子问入口核验：第Ⅱ问得T=ΣZᵢ²/(3n)。由Zᵢ均值0、方差3σ²，E Zᵢ²=3σ²有限，故对每个σ²>0有ET=σ²。统计量表达式不含未知参数，无偏条件成立。",
+      "role": "primary",
+      "roleNote": "直接完成题面(III)：验证估计量无偏。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "确定正态差的密度",
+      "methodIds": [
+        "pr-bivariate-normal"
+      ],
+      "evidenceNote": "所选来源第23题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "由样本求尺度估计",
+      "methodIds": [
+        "pr-estimate-mle"
+      ],
+      "evidenceNote": "所选来源第23题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-3",
+      "label": "(III)",
+      "summary": "验证估计量无偏",
+      "methodIds": [
+        "pr-estimate-unbiased"
+      ],
+      "evidenceNote": "所选来源第23题题面明确列出(III)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第23题题面已逐项核对全部显式子问标号。"
+  }
 }

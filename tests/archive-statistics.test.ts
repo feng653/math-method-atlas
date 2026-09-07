@@ -56,4 +56,28 @@ describe('archive coverage', () => {
     expect(getPaperStats(paper(2020), [pending, verified])).toMatchObject({ questionsWithVerifiedLinks: 1,
       roleCounts: { primary: 1, supporting: 1, unclassified: 0 } });
   });
+  it('distinguishes audited absence from unreviewed parts and deduplicates part counts', () => {
+    const first = question(2020, 1);
+    const second = question(2020, 2);
+    first.subquestionAudit = { expectedCount: 0, checkedOn: '2026-09-08', note: '无子问编号' };
+    second.subquestions = [{ id: 'part-1', label: '(I)', summary: '求值', methodIds: [], evidenceNote: '题面编号' }];
+    const stats = getPaperStats(paper(2020), [first, second, { ...second, id: 'duplicate' }]);
+    expect(stats.subquestions).toEqual({ recorded: 1, auditedQuestions: 1,
+      unauditedQuestionIds: ['duplicate'], unmappedParts: ['duplicate/part-1'],
+      partsWithoutVerifiedMethods: ['duplicate/part-1'], complete: false });
+    second.subquestionAudit = { expectedCount: 1, checkedOn: '2026-09-08', note: '仅一个原编号' };
+    expect(getPaperStats(paper(2020), [first, second]).subquestions.complete).toBe(true);
+    expect(getArchiveStats([paper(2020)], [first, second]).subquestions)
+      .toEqual({ recorded: 1, auditedQuestions: 2, completePapers: 1 });
+    expect(getPaperStats(paper(2020), [first]).subquestions.complete).toBe(false);
+  });
+  it('keeps pending-only subquestion routes in the verification gap report', () => {
+    const entry = question(2020, 1, false);
+    entry.subquestions = [{ id: 'part-1', label: '(I)', summary: '求值', methodIds: ['method'], evidenceNote: '原编号' }];
+    const stats = getPaperStats(paper(2020), [entry]);
+    expect(stats.subquestions.unmappedParts).toEqual([]);
+    expect(stats.subquestions.partsWithoutVerifiedMethods).toEqual(['q-2020-1/part-1']);
+    entry.methodLinks[0].verification = 'verified';
+    expect(getPaperStats(paper(2020), [entry]).subquestions.partsWithoutVerifiedMethods).toEqual([]);
+  });
 });

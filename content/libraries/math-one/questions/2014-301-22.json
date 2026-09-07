@@ -14,6 +14,38 @@
       "methodId": "pr-event-total",
       "role": "primary",
       "roleNote": "按离散条件变量混合概率，直接求分段分布函数。"
+    },
+    {
+      "methodId": "pr-moment-total-expectation",
+      "verification": "verified",
+      "note": "独立子问入口核验：原题X等概率取1、2，Y|X=i服从U(0,i)，所以E(Y|X=i)=i/2，EY=(1/2)(1/2)+(1/2)(2/2)=3/4。Y有界于0与2之间，绝对可积，塔式公式条件满足。",
+      "role": "primary",
+      "roleNote": "直接完成题面(II)：求混合变量的期望。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "由条件分布混合求分布函数",
+      "methodIds": [
+        "pr-event-total"
+      ],
+      "evidenceNote": "所选来源第22题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求混合变量的期望",
+      "methodIds": [
+        "pr-moment-total-expectation"
+      ],
+      "evidenceNote": "所选来源第22题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第22题题面已逐项核对全部显式子问标号。"
+  }
 }

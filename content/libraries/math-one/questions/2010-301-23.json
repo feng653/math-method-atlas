@@ -22,5 +22,10 @@
       "role": "primary",
       "roleNote": "对单样本函数求方差后利用独立和，直接求估计量方差。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第23题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

@@ -40,6 +40,8 @@ ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。
 
 Question.subquestions为主问题内可选子条目：id、原标号label、原创summary、methodIds、evidenceNote、可选source。方法引用必须属于父题methodLinks，不复制核验和主辅状态；子问只展示关联方法。频次与试卷完整性保持主问题级计数，未登记子问不能解释为原题没有子问。
 
+subquestionAudit独立记录题面编号边界核验（expectedCount/checkedOn/note），数量必须与子问数组一致；expectedCount=0表示已确认无显式编号，省略审计字段表示未知。统计纯函数输出已录子问、已审主题数、未审主题ID及空方法子问；子问边界全部核验不等于所有任务都有已核验方法。
+
 | 建议位置 | 唯一职责 / 接口 |
 | --- | --- |
 | `src/domain/schema*.ts` | 实体类型与运行时结构检查，类型通过 z.infer 推导；schema 超长时按实体拆 |

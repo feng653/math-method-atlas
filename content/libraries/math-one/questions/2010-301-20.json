@@ -22,5 +22,30 @@
       "role": "primary",
       "roleNote": "在合法参数分支写特解加齐次解，直接给通解。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "由多解条件确定参数",
+      "methodIds": [
+        "la-system-parameter"
+      ],
+      "evidenceNote": "所选来源第20题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "给出方程组全部解",
+      "methodIds": [
+        "la-system-general"
+      ],
+      "evidenceNote": "所选来源第20题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第20题题面已逐项核对全部显式子问标号。"
+  }
 }

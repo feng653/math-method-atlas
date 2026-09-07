@@ -22,5 +22,39 @@
       "role": "primary",
       "roleNote": "由联合表的矩直接计算题目要求的相关系数。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "恢复二维联合概率表",
+      "methodIds": [
+        "pr-discrete-joint"
+      ],
+      "evidenceNote": "所选来源第22题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求乘积变量分布",
+      "methodIds": [
+        "pr-discrete-joint"
+      ],
+      "evidenceNote": "所选来源第22题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-3",
+      "label": "(III)",
+      "summary": "计算两变量相关系数",
+      "methodIds": [
+        "pr-moment-correlation"
+      ],
+      "evidenceNote": "所选来源第22题题面明确列出(III)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 3,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第22题题面已逐项核对全部显式子问标号。"
+  }
 }

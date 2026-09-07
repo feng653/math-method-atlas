@@ -25,7 +25,39 @@
       "methodId": "la-quadratic-orthogonal",
       "role": "primary",
       "roleNote": "参数确定后的实对称矩阵正交对角化，直接给二次型标准形。"
+    },
+    {
+      "methodId": "la-matrix-rank",
+      "verification": "verified",
+      "note": "独立子问入口核验：新东方第4图给出的实4×3矩阵构成G=AᵀA，其行为(2,0,1−a)、(0,a²+1,1−a)、(1−a,1−a,a²+3)。前两主元2、a²+1均非零，消元后末主元为(a+1)²(a²+3)/(2(a²+1))，故秩恰为2当且仅当a=−1；直接对二次型矩阵消元，无须假设A为方阵。",
+      "role": "primary",
+      "roleNote": "直接完成题面(I)：由二次型秩确定参数。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "由二次型秩确定参数",
+      "methodIds": [
+        "la-matrix-rank"
+      ],
+      "evidenceNote": "所选来源第21题题面（文章图4）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "构造正交标准化变换",
+      "methodIds": [
+        "la-quadratic-orthogonal"
+      ],
+      "evidenceNote": "所选来源第21题题面（文章图4）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第21题题面（文章图4）已逐项核对全部显式子问标号。"
+  }
 }

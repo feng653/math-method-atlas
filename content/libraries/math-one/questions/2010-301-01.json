@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "取对数控制指数与底数偏差，直接求幂指极限。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第1题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

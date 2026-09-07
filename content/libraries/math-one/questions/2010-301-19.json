@@ -23,15 +23,20 @@
       "verification": "verified",
       "note": "独立视觉核对合订PDF第39页：切面垂直给2z−y=0，上半曲面投影后面积因子与被积根号约消；切平面与第一类面积分方法适用。",
       "role": "primary",
-      "roleNote": "用切平面垂直条件直接确定第Ⅰ问点的轨迹。"
+      "roleNote": "用切平面垂直条件直接确定题目所求轨迹。"
     },
     {
       "methodId": "hm-surface-integrals",
       "verification": "verified",
       "note": "独立视觉核对合订PDF第39页：切面垂直给2z−y=0，上半曲面投影后面积因子与被积根号约消；切平面与第一类面积分方法适用。",
       "role": "primary",
-      "roleNote": "投影面积元与被积因子约消，直接完成面积分小问。"
+      "roleNote": "投影面积元与被积因子约消，直接完成题目所求曲面积分。"
     }
   ],
-  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。",
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第19题题面（PDF物理页39）已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

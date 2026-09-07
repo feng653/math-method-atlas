@@ -26,5 +26,30 @@
       "roleNote": "逐列写右逆方程的特解加核，直接求所有右逆。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "求齐次方程的基础解系",
+      "methodIds": [
+        "la-system-general"
+      ],
+      "evidenceNote": "所选来源第20题题面（PDF物理页10）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "求矩阵的全部右逆",
+      "methodIds": [
+        "la-system-general"
+      ],
+      "evidenceNote": "所选来源第20题题面（PDF物理页10）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第20题题面（PDF物理页10）已逐项核对全部显式子问标号。"
+  }
 }

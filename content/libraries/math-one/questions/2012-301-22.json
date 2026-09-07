@@ -25,7 +25,39 @@
       "methodId": "pr-moment-covariance",
       "role": "primary",
       "roleNote": "按联合表算矩并双线性展开，直接算目标协方差。"
+    },
+    {
+      "methodId": "pr-discrete-joint",
+      "verification": "verified",
+      "note": "独立子问入口核验：新东方第4图按行X列Y读取联合表。X=2Y仅可能格子(0,0)、(2,1)，概率分别1/4、0，总概率1/4；各格非负且全表和为1，用联合表合并事件而非边缘相乘。",
+      "role": "primary",
+      "roleNote": "直接完成题面(I)：汇总满足线性关系的概率。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "汇总满足线性关系的概率",
+      "methodIds": [
+        "pr-discrete-joint"
+      ],
+      "evidenceNote": "所选来源第22题题面（文章图4）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "计算差与原变量协方差",
+      "methodIds": [
+        "pr-moment-covariance"
+      ],
+      "evidenceNote": "所选来源第22题题面（文章图4）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第22题题面（文章图4）已逐项核对全部显式子问标号。"
+  }
 }

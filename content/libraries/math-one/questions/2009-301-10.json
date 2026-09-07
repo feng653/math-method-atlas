@@ -22,5 +22,10 @@
       "role": "primary",
       "roleNote": "构造多项式特解并代初值，直接求目标非齐次解。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第10题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

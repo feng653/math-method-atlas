@@ -9,7 +9,7 @@
 | 协作规则 | `AGENTS.md` | 250 行门禁已接入check与CI |
 | 内容类型与校验 | `src/domain/schema.ts`、`validate.ts` | 唯一契约，结构和跨文件引用 |
 | 来源证据 | `src/domain/source.ts`、`components/SourceDetails.tsx` | 唯一sourceSchema；同文档锚点可继承整卷元数据，不同查询/资源不继承；说明按需展开 |
-| 子问索引 | `schema.ts`的subquestions、`components/Subquestions.tsx` | 子问只引用父题methodLinks；ID/标号唯一，统计仍以主问题为单位；未录不等于无子问 |
+| 子问索引 | `schema.ts`的subquestions/subquestionAudit、`components/Subquestions.tsx` | 子问引用父题methodLinks；边界审计数强校验，archive-statistics共用未审/空关联报告；频次仍按主问题 |
 | 内容读取 | `src/data/load.ts` | Vite glob构建时读取多体系JSON |
 | 搜索/覆盖/频次 | `src/domain/search.ts`、`coverage.ts`、`statistics.ts` | 纯函数；去重/搜索/覆盖负例已测 |
 | 主辅方法标注 | `schema.ts`的methodLinks、`src/domain/method-roles.ts` | 独立于核验状态；roleNote说明直接任务或中间作用；两阅读面板展示 |

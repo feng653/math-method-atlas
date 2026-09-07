@@ -25,7 +25,39 @@
       "methodId": "la-quadratic-matrix",
       "role": "primary",
       "roleNote": "按平方线性式的外积直接证明第Ⅰ问矩阵表示。"
+    },
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "verification": "verified",
+      "note": "独立子问入口核验：新东方第4图确认G=2ααᵀ+ββᵀ，且α、β是正交单位向量。补单位γ垂直二者，则Gα=2α、Gβ=β、Gγ=0；Q=(α,β,γ)正交，x=Qy得到2y₁²+y₂²。G实对称满足卡片条件。",
+      "role": "primary",
+      "roleNote": "直接完成题面(II)：证明正交变换后的标准形。"
     }
   ],
-  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。原HTML首项系数遗漏，页图中系数与子问一致。"
+  "sourceNote": "独立复核改用已读第二来源；页号为PDF物理页或文章内试卷页图序号。原HTML首项系数遗漏，页图中系数与子问一致。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "证明平方和的矩阵表示",
+      "methodIds": [
+        "la-quadratic-matrix"
+      ],
+      "evidenceNote": "所选来源第21题题面（文章图4）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "证明正交变换后的标准形",
+      "methodIds": [
+        "la-quadratic-orthogonal"
+      ],
+      "evidenceNote": "所选来源第21题题面（文章图4）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第21题题面（文章图4）已逐项核对全部显式子问标号。"
+  }
 }

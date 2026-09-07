@@ -22,5 +22,31 @@
       "role": "supporting",
       "roleNote": "将右端差商极限识别为右导数，补足第二问的结论转接。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "证明拉格朗日中值结论",
+      "methodIds": [
+        "hm-mean-value-proof"
+      ],
+      "evidenceNote": "所选来源第18题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "证明端点右导数结论",
+      "methodIds": [
+        "hm-mean-value-proof",
+        "hm-derivative-definition"
+      ],
+      "evidenceNote": "所选来源第18题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第18题题面已逐项核对全部显式子问标号。"
+  }
 }

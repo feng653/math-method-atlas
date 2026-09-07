@@ -26,5 +26,30 @@
       "roleNote": "由已知特征方向与正交补组成基，直接还原矩阵。"
     }
   ],
-  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。"
+  "sourceNote": "已独立查看合订PDF对应页面，修复旧来源歧义；仍是第三方转载，不作官方真实性认证。",
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "确定矩阵的谱与特征方向",
+      "methodIds": [
+        "la-eigen-diagonalization"
+      ],
+      "evidenceNote": "所选来源第21题题面（PDF物理页36）明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "重建实对称矩阵",
+      "methodIds": [
+        "la-eigen-diagonalization"
+      ],
+      "evidenceNote": "所选来源第21题题面（PDF物理页36）明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第21题题面（PDF物理页36）已逐项核对全部显式子问标号。"
+  }
 }

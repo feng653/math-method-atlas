@@ -50,13 +50,18 @@ export const questionSchema = z.object({
     id, label: text, summary: text, methodIds: ids, evidenceNote: text,
     source: source.optional(),
   }).strict()).min(1).optional(),
+  subquestionAudit: z.object({
+    expectedCount: z.number().int().nonnegative(), checkedOn: z.iso.date(), note: text,
+  }).strict().optional(),
   methodLinks: z.array(z.object({
     methodId: id, verification: z.enum(['pending', 'verified']), note: z.string(),
     role: methodRoleSchema.optional(), roleNote: text.optional(),
   }).strict().refine((link) => link.verification !== 'verified' || link.note.trim().length > 0,
     'Verified method link needs evidence note').refine((link) => !link.role || link.role === 'unclassified' || !!link.roleNote,
     'Classified method role needs roleNote')),
-}).strict();
+}).strict().refine((question) => !question.subquestionAudit
+  || question.subquestionAudit.expectedCount === (question.subquestions?.length ?? 0),
+  'Audited subquestion count must match recorded parts');
 
 export const atlasSchema = z.object({
   libraries: z.array(librarySchema).min(1), methods: z.array(methodSchema),

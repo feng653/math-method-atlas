@@ -15,5 +15,10 @@
       "role": "primary",
       "roleNote": "匹配样本均值和方差的期望，直接确定无偏组合。"
     }
-  ]
+  ],
+  "subquestionAudit": {
+    "expectedCount": 0,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第14题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  }
 }

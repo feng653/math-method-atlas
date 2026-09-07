@@ -22,5 +22,30 @@
       "role": "primary",
       "roleNote": "沿旋转轴积分截面积差，直接完成第Ⅱ问体积。"
     }
-  ]
+  ],
+  "subquestions": [
+    {
+      "id": "part-1",
+      "label": "(I)",
+      "summary": "构造两旋转曲面方程",
+      "methodIds": [
+        "hm-quadric-surfaces"
+      ],
+      "evidenceNote": "所选来源第17题题面明确列出(I)任务；按原题标号边界记录，不拆解答步骤。"
+    },
+    {
+      "id": "part-2",
+      "label": "(II)",
+      "summary": "计算曲面间体积",
+      "methodIds": [
+        "hm-integral-area-volume"
+      ],
+      "evidenceNote": "所选来源第17题题面明确列出(II)任务；按原题标号边界记录，不拆解答步骤。"
+    }
+  ],
+  "subquestionAudit": {
+    "expectedCount": 2,
+    "checkedOn": "2026-09-08",
+    "note": "所选来源第17题题面已逐项核对全部显式子问标号。"
+  }
 }
