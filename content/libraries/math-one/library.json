@@ -26,6 +26,14 @@
         {
           "id": "basic-thinking-structure",
           "title": "计算后识别结构（学习策略）"
+        },
+        {
+          "id": "basic-thinking-hidden-constraint",
+          "title": "概念关键词转必要条件（学习策略）"
+        },
+        {
+          "id": "basic-thinking-geometry",
+          "title": "几何语言转变量关系（学习策略）"
         }
       ]
     },

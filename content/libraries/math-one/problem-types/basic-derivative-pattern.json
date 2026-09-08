@@ -6,19 +6,38 @@
   "title": "导数与系数呈现固定组合",
   "summary": "先按常规规则计算，再检查结果是否是某个整体的导数。",
   "recognition": [
-    "相邻阶导数同时出现，例如tg″+g′；或方程缺少未知函数本身。"
+    "相邻阶导数同时出现，例如tg″+g′；或方程缺少未知函数本身。",
+    "函数与其导数配对出现，例如yy′与y²，可用(y²)′=2yy′。"
   ],
   "strategy": [
     "尝试逆用乘积求导，并展开核对。",
-    "认不出时先降阶或使用已知方程通法。"
+    "认不出时先降阶或使用已知方程通法。",
+    "看到yy′与y²时令v=y²；求解后恢复正负分支并检查定义区间。"
   ],
   "methods": [
     {
       "methodId": "basic-recognize-after-calculation",
       "when": "从计算结果中识别结构与通法退路"
+    },
+    {
+      "methodId": "basic-whole-substitution",
+      "when": "函数与其导数的乘积正好是某个整体量的导数"
     }
   ],
-  "formulas": [],
+  "formulas": [
+    {
+      "id": "basic-square-derivative",
+      "title": "函数与导数配对时改用平方量",
+      "latex": "v=y^2,\\quad v^{\\prime}=2yy^{\\prime},\\qquad yy^{\\prime}=y^2-x\\Longrightarrow v^{\\prime}-2v=-2x",
+      "conditions": [
+        "y可导；回代实函数要求v≥0，恢复光滑正负分支时检查零点与初值。"
+      ],
+      "derivation": "对y²使用链式法则，再将yy′和y²分别替成v′/2与v。",
+      "methodIds": [
+        "basic-whole-substitution"
+      ]
+    }
+  ],
   "questionIds": [],
   "boundaries": [
     "触发条件是尝试方法的提示，不保证该方法一定可用。",

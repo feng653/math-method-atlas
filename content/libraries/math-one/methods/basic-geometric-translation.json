@@ -1,0 +1,39 @@
+{
+  "id": "basic-geometric-translation",
+  "title": "把几何关系翻译成坐标与导数",
+  "summary": "曲线由任意点的切线、法线、交点或中点关系描述时，先设一般点，再把斜率与垂直关系写成方程。",
+  "conditions": [
+    "触发：要求一条曲线，已知任意点处的几何构造满足关系。",
+    "用y=y(x)及切向量(1,y′)要求该段导数有限；竖直切线或不可写成函数的部分需另查。"
+  ],
+  "steps": [
+    "设一般点P=(x,y)，用y′表示切线方向(1,y′)。",
+    "为未知交点设置坐标，用垂直、相交、中点等逐条列式；优先用向量点积避免除以零斜率。",
+    "把辅助点代回给定轨迹方程，消去辅助坐标，得到x、y、y′的关系。",
+    "若出现yy′与y²，用v=y²合并成一阶线性方程。",
+    "代入经过点确定常数，再选择满足初值的分支与合法区间，回验几何关系。"
+  ],
+  "formula": "P=(x,y),\\ Q=(q,0),\\quad (q-x,-y)\\cdot(1,y^{\\prime})=0\\quad\\Longrightarrow\\quad q=x+yy^{\\prime}",
+  "pitfalls": [
+    "题目说“任意点”，应先用一般坐标建模，不能只在给定点列法线。",
+    "法线斜率−1/y′在y′=0时不能直接使用；点积关系仍可用。",
+    "v=y²求出后有正负分支；初值决定分支，实数解还要求v≥0，光滑分支通常取v>0。"
+  ],
+  "example": {
+    "prompt": "第29题讨论：曲线过(0,2)，任意点P的法线与x轴交于Q，PQ中点在2Y²=X上，求曲线。",
+    "solution": "设P=(x,y)、Q=(q,0)。法线垂直切向量，得q=x+yy′；中点M=(q/2,y/2)，代入2Y²=X得q=y²，于是yy′=y²−x。看到yy′与y²配对，令v=y²，得v′−2v=−2x。解得v=Ce^(2x)+x+1/2；由y(0)=2得C=7/2。故y=√[(7/2)e^(2x)+x+1/2]，取含0且根号内严格为正的最大连通区间。回验yy′=y²−x，所以Q横坐标确为y²，中点满足抛物线；初值也成立。"
+  },
+  "relatedIds": [
+    "hm-plane-tangent-normal",
+    "hm-ode-modeling",
+    "hm-ode-linear-first",
+    "basic-whole-substitution",
+    "basic-recognize-after-calculation"
+  ],
+  "topicIds": [
+    "basic-thinking-geometry"
+  ],
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "status": "reviewed"
+}

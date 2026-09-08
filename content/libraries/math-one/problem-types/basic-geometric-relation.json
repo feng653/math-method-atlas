@@ -1,0 +1,37 @@
+{
+  "id": "basic-geometric-relation",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "title": "任意点的几何构造满足固定关系",
+  "summary": "先设一般点，将切线、法线、交点、中点等逐一写成坐标和导数关系。",
+  "recognition": [
+    "未知曲线由任意点处的斜率、垂直、距离或辅助点轨迹描述。"
+  ],
+  "strategy": [
+    "设一般点和辅助点，不急着代给定点。",
+    "用坐标、导数及向量关系列式，消去辅助量。",
+    "得到微分方程后再用经过点定常数与分支。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-geometric-translation",
+      "when": "将几何条件译成可计算方程"
+    },
+    {
+      "methodId": "hm-plane-tangent-normal",
+      "when": "把切线法线写成方向或垂直关系"
+    },
+    {
+      "methodId": "hm-ode-modeling",
+      "when": "由几何约束建立带初值的方程"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "这是尝试方法的提示，不保证单凭关键词即可套公式；先核对条件。",
+    "第28、29题为用户讨论示例，未确认历年真题来源，不进入考试频次。"
+  ],
+  "status": "reviewed"
+}

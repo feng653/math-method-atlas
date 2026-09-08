@@ -1,0 +1,32 @@
+{
+  "id": "basic-structural-keyword",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "title": "出现带有隐含约束的概念关键词",
+  "summary": "先把全微分、可微、相切等名称翻译成定义或必要条件。",
+  "recognition": [
+    "题目用一个概念描述表达式或对象，但没有把该概念的约束展开。"
+  ],
+  "strategy": [
+    "写出该概念意味着什么。",
+    "核对所用性质的假设，转成等式或限制再求解。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-hidden-constraint",
+      "when": "由关键词提取未明说的约束"
+    },
+    {
+      "methodId": "hm-exact-ode",
+      "when": "出现全微分时检查相容关系并恢复势函数"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "这是尝试方法的提示，不保证单凭关键词即可套公式；先核对条件。",
+    "第28、29题为用户讨论示例，未确认历年真题来源，不进入考试频次。"
+  ],
+  "status": "reviewed"
+}

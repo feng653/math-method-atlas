@@ -1,0 +1,37 @@
+{
+  "id": "basic-hidden-constraint",
+  "title": "把概念关键词翻译成必要条件",
+  "summary": "题目说某表达式是全微分、某函数可微或某几何对象相切时，先展开定义或必要性质，寻找未直接写出的等式。",
+  "conditions": [
+    "触发：题目给出带有结构约束的名称，却没有直接列出可计算关系。",
+    "使用定理前核对假设；已知全微分时提取必要相容条件，不等于仅凭局部条件就证明全局存在。"
+  ],
+  "steps": [
+    "圈出关键词，问它的定义或必要性质是什么。",
+    "全微分du=Pdx+Qdy意味着ux=P、uy=Q；混合偏导连续时有Py=Qx。",
+    "把含未知函数的系数代入相容条件，先确定函数，再由任一偏导积分求u。",
+    "对y积分的“常数”应写成h(x)，再用另一个偏导确定；最后两项一起回验。"
+  ],
+  "formula": "du=P\\,dx+Q\\,dy\\quad\\Longrightarrow\\quad u_x=P,\\ u_y=Q,\\quad P_y=Q_x\\ \\text{（混合偏导连续时）}",
+  "pitfalls": [
+    "“全微分”是约束，不只是题目背景；直接分别积分后相加会重复计算。",
+    "对一个变量积分后，积分项可依赖另一个变量；不要过早写成常数。",
+    "Py=Qx作为充分条件还需检查区域等条件；本题已明确给出全微分。"
+  ],
+  "example": {
+    "prompt": "第28题讨论：du=[e^x+f″(x)]y dx+f(x)dy，f(0)=4、f′(0)=3，求f和u。",
+    "solution": "看到全微分，先令Py=Qx：e^x+f″=f′。缺f可令p=f′，得p′−p=−e^x，即(e^(−x)p)′=−1。p(0)=3给p=(3−x)e^x；积分并用f(0)=4得f=(4−x)e^x。再由uy=f得u=y(4−x)e^x+h(x)，与ux=P比较得h′=0，故u=y(4−x)e^x+C。回验ux=y(3−x)e^x、uy=(4−x)e^x，且e^x+f″=(3−x)e^x。"
+  },
+  "relatedIds": [
+    "hm-exact-ode",
+    "hm-path-independence",
+    "hm-ode-reduction",
+    "hm-ode-linear-first"
+  ],
+  "topicIds": [
+    "basic-thinking-hidden-constraint"
+  ],
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "status": "reviewed"
+}
