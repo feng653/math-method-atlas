@@ -35,3 +35,5 @@
 维护规则：新增能力只补一行“职责→路径→状态/证据”；一个职责只能有一个主入口。保留必要公共函数名、数据入口和关键限制，不复制代码与完整目录树。路径变更同提交更新。未验证项写明，不用“完成”代替证据。
 
 开始实现前先读本表，再 `rg` 搜职责/函数/实体；找到现有实现就扩展它。设计参考 ARCHITECTURE.md，里程碑参考 ROADMAP.md。不得新增第二套 loader、search、图谱、统计或校验器。
+
+临时手机测试站：https://feng653.github.io/math-method-atlas-preview/ 。独立仓库feng653/math-method-atlas-preview，仅发布dev/mobile-dot-graph的64467f1静态快照；正式站不受影响。更新需重新构建并推送预览仓库，不自动同步、不自动过期。构建命令：pnpm exec vite build --base /math-method-atlas-preview/。
