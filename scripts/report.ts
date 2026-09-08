@@ -19,16 +19,18 @@ for (const dir of await readdir('content/libraries')) {
   const methods = (await files(join(base, 'methods'))).map((item) => methodSchema.parse(item));
   const papers = (await files(join(base, 'papers'))).map((item) => paperSchema.parse(item));
   const questions = (await files(join(base, 'questions'))).map((item) => questionSchema.parse(item));
-  const types = (await files(join(base, 'problem-types'))).map((item) => problemTypeSchema.parse(item));
+  const groups = (await files(join(base, 'problem-types'))).map((item) => problemTypeSchema.parse(item));
+  const types = groups.filter((item) => item.kind !== 'trigger');
   const classified = new Set(types.flatMap((type) => type.methods.map((choice) => choice.methodId)));
   const archive = getArchiveStats(papers, questions, library.examScope);
   result.push({ library: library.id, version: library.syllabus.version,
     targetSyllabusVerified: library.syllabus.reviewStatus === 'reviewed',
     methods: methods.length, reviewedMethods: methods.filter((m) => m.status === 'reviewed').length,
+    triggerConditions: groups.filter((item) => item.kind === 'trigger').length,
     problemTypes: { count: types.length, reviewed: types.filter((type) => type.status === 'reviewed').length,
       formulas: types.reduce((count, type) => count + type.formulas.length, 0),
-      chaptersWithoutTypes: library.chapters.filter((chapter) => !types.some((type) => type.chapterId === chapter.id)).map((chapter) => chapter.id),
-      methodsWithoutTypes: methods.filter((method) => !classified.has(method.id)).map((method) => method.id),
+      chaptersWithoutTypes: library.chapters.filter((chapter) => !chapter.supplementary && !types.some((type) => type.chapterId === chapter.id)).map((chapter) => chapter.id),
+      methodsWithoutTypes: methods.filter((method) => !library.chapters.find((chapter) => chapter.id === method.chapterId)?.supplementary && !classified.has(method.id)).map((method) => method.id),
       note: '已有方法进入题型不代表候选方法穷尽；草案真题归属不计为题型考试频次。' },
     topicCoverage: getCoverage(library, methods),
     archiveCoverage: { ...archive, perPaper: undefined },

@@ -73,9 +73,9 @@ export default function App() {
       {routeNotice && !query.trim() && <div className="search-results glass-panel" role="status">
         <p>{routeNotice}</p><button onClick={() => setRouteNotice('')}>知道了</button></div>}
       {query.trim() && <div className="search-results glass-panel" aria-label="搜索结果">
-        <p role="status">{results.length || typeResults.length ? `找到 ${typeResults.length} 个题型 · ${results.length} 个方法` : '没有匹配结果，试试更短的关键词。'}</p>
+        <p role="status">{results.length || typeResults.length ? `找到 ${typeResults.filter((type) => type.kind !== 'trigger').length} 个题型 · ${typeResults.filter((type) => type.kind === 'trigger').length} 个触发条件 · ${results.length} 个方法` : '没有匹配结果，试试更短的关键词。'}</p>
         {typeResults.slice(0, 6).map((type) => <button key={`type-${type.id}`} onClick={() => selectType(type.id)}>
-          <strong>题型 · {type.title}</strong><small>{type.summary}</small></button>)}
+          <strong>{type.kind === 'trigger' ? '触发条件' : '题型'} · {type.title}</strong><small>{type.summary}</small></button>)}
         {results.slice(0, 15).map((result) => <button key={result.id} onClick={() => select(result.id)}>
           <strong>{result.title}</strong><small>{result.summary}</small></button>)}
         {(results.length > 15 || typeResults.length > 6) && <p>结果已截取，请细化关键词。</p>}

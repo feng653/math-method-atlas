@@ -1,0 +1,47 @@
+{
+  "id": "basic-repeated-expression",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "title": "出现重复的多变量式子或函数组合",
+  "summary": "同一式子反复出现，可以先整体换元，简化变量依赖和计算。",
+  "recognition": [
+    "例如x²+y²、x+y反复出现，或某个乘积及其导数组合反复出现。"
+  ],
+  "strategy": [
+    "将重复式子记为一个新变量。",
+    "若外层还有固定组合，再给整个组合命名。",
+    "检查方程能否只用新变量表示，并同步变换范围和初值。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-whole-substitution",
+      "when": "用整体命名减少重复展开"
+    },
+    {
+      "methodId": "hm-multivariable-chain",
+      "when": "换元后按依赖关系求导"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "basic-radial-laplacian",
+      "title": "径向复合函数的二阶偏导和",
+      "latex": "t=x^2+y^2,\\quad z=g(t)\\quad\\Longrightarrow\\quad z_{xx}+z_{yy}=4g^{\\prime}(t)+4tg^{\\prime\\prime}(t)",
+      "conditions": [
+        "g在t所在开区间内二次连续可导；本题先在t>1推导，再用t=1的初值。"
+      ],
+      "derivation": "zx=2xg′，zxx=2g′+4x²g″；同理zyy=2g′+4y²g″，相加并代入t。",
+      "methodIds": [
+        "hm-multivariable-chain",
+        "basic-whole-substitution"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "触发条件是尝试方法的提示，不保证该方法一定可用。",
+    "属于学习策略补充，不是题型或新增课纲要求；例子不计入考试频次。"
+  ],
+  "status": "reviewed"
+}

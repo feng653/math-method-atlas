@@ -18,7 +18,7 @@ export function LibraryNavigation({ library, libraries, onLibrary, methods, prob
         <summary><span>{chapter.title}<small>{chapter.subject}</small></span></summary>
         <button className="focus-chapter" onClick={() => onChapter(chapter.id)}>在图中聚焦章节 <ChevronRight size={14} /></button>
         {problemTypes.filter((type) => type.chapterId === chapter.id).map((type) =>
-          <button className="method-item" key={type.id} onClick={() => onProblemType(type.id)}>题型 · {type.title}</button>)}
+          <button className="method-item" key={type.id} onClick={() => onProblemType(type.id)}>{type.kind === 'trigger' ? '触发条件' : '题型'} · {type.title}</button>)}
         {methods.filter((method) => method.chapterId === chapter.id).map((method) =>
           <button className="method-item" key={method.id} onClick={() => onSelect(method.id)}>{method.title}</button>)}
       </details>)}

@@ -37,6 +37,7 @@ export const methodSchema = z.object({
 
 export const problemTypeSchema = z.object({
   id, libraryId: id, chapterId: id, title: text, summary: text,
+  kind: z.enum(['problem', 'trigger']).optional(),
   recognition: z.array(text).min(1), strategy: z.array(text).min(1),
   methods: z.array(z.object({ methodId: id, when: text }).strict()).min(1),
   formulas: z.array(z.object({ id, title: text, latex: formula.refine((value) => !!value.trim(), 'Formula cannot be empty'),

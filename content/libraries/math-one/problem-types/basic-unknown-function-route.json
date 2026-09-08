@@ -2,68 +2,27 @@
   "id": "basic-unknown-function-route",
   "libraryId": "math-one",
   "chapterId": "basic-thinking",
-  "title": "未知函数：由约束建方程，再求性质",
-  "summary": "第27题讨论路线：偏导约束→一元方程→整体代换或欧拉通法→初值→最值。",
+  "kind": "trigger",
+  "title": "目标明确，但缺少可直接使用的信息",
+  "summary": "先找出目标缺什么，再选择能补足信息的条件。",
   "recognition": [
-    "要求未知函数的最值或性质，只给初值及积分、导数或偏导关系。",
-    "同一复合内层反复出现；计算后出现乘积导数组合。"
+    "要求函数性质或数值，却没有表达式、导数符号或可用估计。"
   ],
   "strategy": [
-    "先问目标缺什么，再找哪条约束能补足。",
-    "重复内层记为t；先常规求导，发现重复组合后再设g=tf。",
-    "逆用乘积求导；不易识别则降阶或欧拉换元。",
-    "用初值定常数，回代并用导数符号确认全区间最大值。"
+    "列出目标所缺的信息。",
+    "寻找能提供该信息的约束，再选对应基本方法。"
   ],
   "methods": [
     {
       "methodId": "basic-goal-gap",
-      "when": "不知道从哪里开始时，确定下一步所需信息"
-    },
-    {
-      "methodId": "basic-whole-substitution",
-      "when": "内层或外层完整组合反复出现"
-    },
-    {
-      "methodId": "basic-recognize-after-calculation",
-      "when": "计算中出现相邻阶导数的固定组合"
-    },
-    {
-      "methodId": "hm-multivariable-chain",
-      "when": "将偏导约束翻译为一元方程"
-    },
-    {
-      "methodId": "hm-ode-reduction",
-      "when": "方程缺g，令p=g′"
-    },
-    {
-      "methodId": "hm-ode-euler",
-      "when": "直接计算得到匹配幂次的欧拉方程"
-    },
-    {
-      "methodId": "hm-monotonic-extrema",
-      "when": "已获得函数表达式或导数符号"
+      "when": "先决定下一步需要什么信息"
     }
   ],
-  "formulas": [
-    {
-      "id": "basic-radial-laplacian",
-      "title": "径向复合函数的二阶偏导和",
-      "latex": "t=x^2+y^2,\\quad z=g(t)\\quad\\Longrightarrow\\quad z_{xx}+z_{yy}=4g^{\\prime}(t)+4tg^{\\prime\\prime}(t)",
-      "conditions": [
-        "g在t所在开区间内二次连续可导；本题先在t>1推导，再用t=1的初值。"
-      ],
-      "derivation": "zx=2xg′，zxx=2g′+4x²g″；同理zyy=2g′+4y²g″，相加并代入t。",
-      "methodIds": [
-        "hm-multivariable-chain",
-        "basic-whole-substitution"
-      ]
-    }
-  ],
+  "formulas": [],
   "questionIds": [],
   "boundaries": [
-    "这是学习策略补充，不是新增官方课纲要求。",
-    "第27题来自本次用户讨论，未确认真题年份来源，不计入考试频次。",
-    "不必每次求完整函数；若已有足够的符号或估计，可直接完成目标。"
+    "触发条件是尝试方法的提示，不保证该方法一定可用。",
+    "属于学习策略补充，不是题型或新增课纲要求；例子不计入考试频次。"
   ],
   "status": "reviewed"
 }

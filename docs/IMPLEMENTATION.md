@@ -41,3 +41,5 @@
 2026-09-08：用户确认dev/mobile-dot-graph合入main；圆点模式与动画休眠成为主分支实现。临时预览继续保留64467f1快照。
 
 基础思路章节：basic-thinking，3张触发式策略卡与basic-unknown-function-route组合路线卡。Chapter.supplementary为补充章节标记，coverage.ts排除其条目；目录、搜索、图谱仍使用既有入口。第27题只作讨论推演，不增加真题记录或考试频次。
+
+基础思路改为触发条件层：分组kind=trigger（省略仍为题型），3个通用触发入口引用现有方法。复用schema/loader/图谱/详情，目录与搜索区分标签；触发详情无历年真题区，CLI禁止其分类真题。report独立计数触发条件；旧basic-unknown-function-route ID保留为目标信息缺口入口。

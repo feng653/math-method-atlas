@@ -4,6 +4,7 @@ export function validateProblemTypes(data: AtlasData): string[] {
   const errors: string[] = [], seen = new Set<string>();
   for (const type of data.problemTypes) {
     const label = `${type.libraryId}/${type.id}`;
+    if (type.kind === 'trigger' && type.questionIds.length) errors.push(`${label}: trigger conditions do not classify exam questions`);
     if (seen.has(label)) errors.push(`${label}: duplicate problem type`);
     seen.add(label);
     const library = data.libraries.find((item) => item.id === type.libraryId);

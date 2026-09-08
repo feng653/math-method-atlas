@@ -20,7 +20,7 @@ export function addProblemTypes(graph: { nodes: AtlasNode[]; edges: Edge[] }, ty
     const position = chapterId ? { x: index % 2 ? 160 : -370, y: (Math.floor(index / 2) - (types.length / 4)) * 180 }
       : { x: (parent.position.x + average.x) / 2, y: (parent.position.y + average.y) / 2 };
     nodes.push({ id, type: 'atlas', position, data: { kind: 'problem', label: type.title,
-      subtitle: `${type.methods.length} 个可选方法`, color: parent.data.color,
+      subtitle: `${type.kind === 'trigger' ? '触发条件 · ' : ''}${type.methods.length} 个可选方法`, color: parent.data.color,
       problemTypeId: type.id, chapterId: type.chapterId } });
     const left = position.x < parent.position.x;
     edges.push({ id: `task-${type.id}`, source: parent.id, target: id, type: 'default',

@@ -21,7 +21,7 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
     const local = buildGraph(library, methods.filter((method) => choices.has(method.id))
       .map((method) => ({ ...method, chapterId: focused.chapterId })), focused.chapterId, true);
     local.nodes[0].data = { ...local.nodes[0].data, label: focused.title, kind: 'problem',
-      problemTypeId: focused.id, subtitle: `${choices.size} 个可选方法` };
+      problemTypeId: focused.id, subtitle: `${focused.kind === 'trigger' ? '触发条件 · ' : ''}${choices.size} 个可选方法` };
     return local;
   }
   const rootId = graphNodeId('root', library.id);
