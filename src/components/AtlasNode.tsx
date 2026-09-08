@@ -3,6 +3,12 @@ import { Handle, Position, type NodeProps } from '@xyflow/react';
 import type { AtlasNode as AtlasNodeType } from '../domain/graph';
 
 export const AtlasNode = memo(function AtlasNode({ data, selected }: NodeProps<AtlasNodeType>) {
+  if (data.compact) return <div className={`atlas-dot-node ${data.kind} ${selected ? 'is-selected' : ''}`}
+    title={data.label} style={{ '--branch-color': data.color } as React.CSSProperties}>
+    <Handle id="dot-target" type="target" position={Position.Left} isConnectable={false} />
+    <span className="node-dot" /><strong>{data.label}</strong>
+    <Handle id="dot-source" type="source" position={Position.Left} isConnectable={false} />
+  </div>;
   return <div className={`atlas-node ${data.kind} ${selected ? 'is-selected' : ''}`}
     style={{ '--branch-color': data.color } as React.CSSProperties}>
     <Handle id="left-target" type="target" position={Position.Left} isConnectable={false} />

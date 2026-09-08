@@ -1,4 +1,14 @@
 .graph-stage { position: absolute; inset: 0; background: radial-gradient(ellipse at 48% 40%, #fdfefb 0, #f5f7f1 65%, #f0f3ec 100%); }
+.atlas-dot-node { width: 240px; height: 44px; display: flex; align-items: center; gap: 9px; }
+.atlas-dot-node strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 500; color: #375342; }
+.atlas-dot-node .node-dot { width: 12px; height: 12px; opacity: 0.9; }
+.atlas-dot-node.root .node-dot { width: 18px; height: 18px; }
+.atlas-dot-node.chapter .node-dot { width: 16px; height: 16px; }
+.atlas-dot-node.root strong, .atlas-dot-node.chapter strong { font-weight: 650; color: var(--branch-color); }
+.atlas-dot-node.is-selected strong, .react-flow__node-atlas:hover .atlas-dot-node strong { color: var(--branch-color); }
+.atlas-dot-node .react-flow__handle { left: 6px; top: 50%; width: 1px; height: 1px; min-width: 1px; min-height: 1px; border: 0; opacity: 0; }
+.atlas-dot-node.root .react-flow__handle { left: 9px; }
+.atlas-dot-node.chapter .react-flow__handle { left: 8px; }
 .react-flow__node-atlas { cursor: grab; border-radius: 12px; }
 .react-flow__node-atlas.dragging { cursor: grabbing; }
 .atlas-node { width: 210px; display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 15px; border: 1px solid #e0e7de; border-radius: 12px; background: #fffffff5; box-shadow: 0 3px 12px #29463405; transition: box-shadow 180ms ease, border-color 180ms ease; }

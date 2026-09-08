@@ -5,7 +5,7 @@ import { addProblemTypes } from './problem-graph';
 import { hierarchyLayout } from './hierarchy-layout';
 
 export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method' | 'problem';
-  subtitle: string; color: string; chapterId?: string; methodId?: string; problemTypeId?: string };
+  subtitle: string; color: string; compact?: boolean; chapterId?: string; methodId?: string; problemTypeId?: string };
 export type AtlasNode = Node<AtlasNodeData>;
 export const graphNodeId = (kind: AtlasNodeData['kind'], id: string) => `${kind}:${id}`;
 export const subjectColors: Record<string, string> = {

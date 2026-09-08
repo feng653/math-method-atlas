@@ -17,7 +17,11 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const [motion, setMotion] = useState(true);
   const [allLinks, setAllLinks] = useState(false);
   const [hovered, setHovered] = useState('');
-  const graph = useMemo(() => buildGraph(library, methods, chapter, allMethods, problemTypes, problemType),
+  const graph = useMemo(() => {
+    const result = buildGraph(library, methods, chapter, allMethods, problemTypes, problemType);
+    const compact = allMethods && !chapter && !problemType;
+    return { ...result, nodes: result.nodes.map((node) => ({ ...node, data: { ...node.data, compact } })) };
+  },
     [library, methods, chapter, allMethods, problemTypes, problemType]);
   const [nodes, setNodes, onNodesChange] = useNodesState<NodeType>(graph.nodes);
   const primary = useMemo(() => primaryEdgeIds(graph.nodes, graph.edges), [graph]);
@@ -48,6 +52,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     const a = byId.get(edge.source), b = byId.get(edge.target);
     const related = edge.source === active || edge.target === active;
     return { ...edge, ...(a && b ? edgeHandles(a, b) : {}),
+      ...(a?.data.compact ? { sourceHandle: 'dot-source', targetHandle: 'dot-target', type: 'straight' } : {}),
       animated: motionAllowed && related,
       style: { ...edge.style, opacity: active ? (related ? 0.85 : 0.07) : edge.style?.opacity } };
   });
