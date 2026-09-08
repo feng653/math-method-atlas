@@ -20,7 +20,7 @@
 | 布局与画布 | `src/domain/graph.ts`、`src/components/AtlasGraph.tsx` | graphNodeId区分root/chapter/method内部ID，data.methodId保留内容ID；空方法体系/保留名/跨库隔离回归；拖动仅会话 |
 | 弹性联动 | `src/domain/elastic-layout.ts`、`src/components/useElasticGraph.ts` | 径向弹簧/阻尼/碰撞排斥；松手采纳新间距，无原位吸引；质心软约束；可暂停及减少动态 |
 | 默认层级布局 | `src/domain/hierarchy-layout.ts`（graph.ts调用） | 主干树按子树大小分配连续扇区，章节/题型/方法分层；固定主干归属，节点避碰；不干预后续自由拖动 |
-| 测试分支圆点模式 | `AtlasGraph.tsx`、`AtlasNode.tsx`、`styles/graph.css` | 仅完整图谱compact节点：圆点+单行标题、2端口直线；章节概览及局部保留卡片 |
+| 完整图谱圆点模式 | `AtlasGraph.tsx`、`AtlasNode.tsx`、`styles/graph.css` | 仅完整图谱compact节点：圆点+单行标题、2端口直线；章节概览及局部保留卡片 |
 | 动画休眠 | `domain/motion-scheduler.ts`、`components/useElasticGraph.ts` | 交互后1.8秒休眠并取消帧；拖动唤醒；隐藏/暂停立即取消；粗指针最多20次模拟/秒 |
 | 连线可读性 | `src/domain/edge-layout.ts` | 共享方法主干父边选择与动态朝向端口；悬停/焦点展开直接关联、一键全部连线；语义关系不删减 |
 | 题型内容 | `schema.ts`的problemTypeSchema、`domain/problem-types.ts` | 每体系problem-types目录；方法选择/条件公式/显式真题归属；唯一CLI校验引用与KaTeX，报告未归类方法 |
@@ -37,3 +37,5 @@
 开始实现前先读本表，再 `rg` 搜职责/函数/实体；找到现有实现就扩展它。设计参考 ARCHITECTURE.md，里程碑参考 ROADMAP.md。不得新增第二套 loader、search、图谱、统计或校验器。
 
 临时手机测试站：https://feng653.github.io/math-method-atlas-preview/ 。独立仓库feng653/math-method-atlas-preview，仅发布dev/mobile-dot-graph的64467f1静态快照；正式站不受影响。更新需重新构建并推送预览仓库，不自动同步、不自动过期。构建命令：pnpm exec vite build --base /math-method-atlas-preview/。
+
+2026-09-08：用户确认dev/mobile-dot-graph合入main；圆点模式与动画休眠成为主分支实现。临时预览继续保留64467f1快照。

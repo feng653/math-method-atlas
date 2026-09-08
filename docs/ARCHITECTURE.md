@@ -74,4 +74,4 @@ subquestionAudit独立记录题面编号边界核验（expectedCount/checkedOn/n
 覆盖统计：archive-statistics.ts统一计算收录年份、主问题去重数、核验入口题数、逐卷索引完整性及声明目标缺卷年份；MethodDetail、PaperLibrary和content:report共用。目标范围来自Library.examScope，缺卷不能缩小分母；未声明目标的体系不套用数学一范围。索引完整性不等于来源官方认证。
 
 
-测试分支dev/mobile-dot-graph：完整图谱以compact数据标记驱动轻量圆点标题组件，减少端口为每节点2个，使用直线边；章节概览与局部卡片保持原样。motion-scheduler仅在加载、恢复布局、拖动、键盘移动或重新可见时安排短时模拟，最后唤醒1.8秒后取消rAF；暂停/后台立即取消。粗指针50ms、其他40ms最小模拟间隔，低于0.05世界单位的位移不更新React节点引用。休眠不代表关闭交互。dev分支只运行CI，不部署正式Pages。
+圆点模式（2026-09-08从dev/mobile-dot-graph合入main）：完整图谱以compact数据标记驱动轻量圆点标题组件，减少端口为每节点2个，使用直线边；章节概览与局部卡片保持原样。motion-scheduler仅在加载、恢复布局、拖动、键盘移动或重新可见时安排短时模拟，最后唤醒1.8秒后取消rAF；暂停/后台立即取消。粗指针50ms、其他40ms最小模拟间隔，低于0.05世界单位的位移不更新React节点引用。休眠不代表关闭交互。dev分支只运行CI，不部署正式Pages。
