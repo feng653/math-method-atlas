@@ -1,0 +1,34 @@
+{
+  "id": "basic-whole-substitution",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "重复结构整体代换",
+  "summary": "复合内层反复出现，或乘积及其导数组合反复出现：先换字母，再将整个组合命名。",
+  "conditions": [
+    "触发：x²+y²等相同内层多次出现；或f+tf′等组合在计算中重复。",
+    "代换必须让方程只依赖新变量；记录新变量范围、可微性及回代条件。"
+  ],
+  "steps": [
+    "先用t代替重复内层，仅为简化记号：t=x²+y²，且t≥1。",
+    "观察外层完整组合：z=tf(t)，可设g(t)=tf(t)，避免反复拆乘积。",
+    "同步转换初值：g(1)=f(1)，g′(1)=f(1)+f′(1)。",
+    "求解后回代f(t)=g(t)/t；除t前检查t不为0。"
+  ],
+  "formula": "g(t)=tf(t),\\quad g^{\\prime}=f+tf^{\\prime},\\quad g^{\\prime\\prime}=2f^{\\prime}+tf^{\\prime\\prime}",
+  "pitfalls": [
+    "换字母不等于自动消除了原变量；必须检验能否闭合。",
+    "不能照搬原初值给g，也不能漏掉乘积导数。"
+  ],
+  "example": {
+    "prompt": "推演示例：z=(x²+y²)f(x²+y²)，为什么可以考虑整体代换？",
+    "solution": "先记t=x²+y²，得到z=tf(t)。直接求导会反复出现f+tf′和2f′+tf″，恰为(tf)′和(tf)″；因此令g=tf是对已出现结构命名，不是猜答案。"
+  },
+  "relatedIds": [
+    "hm-multivariable-chain",
+    "hm-chain-log-differentiation"
+  ],
+  "topicIds": [
+    "basic-thinking-whole"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "basic-recognize-after-calculation",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "先常规计算，再识别导数结构",
+  "summary": "看不出巧法时先按规则求导；遇到相邻阶导数的组合，再尝试逆用乘积求导或降阶。",
+  "conditions": [
+    "触发：出现tg″+g′、f+tf′等组合，或方程缺少未知函数本身。",
+    "识别必须展开核对；不匹配时回到已有通法，不能强凑。"
+  ],
+  "steps": [
+    "先按乘积和链式法则计算，保留重复组合，不急于全部展开。",
+    "逆用乘积求导检查tg″+g′=(tg′)′，将二阶方程化为一次积分。",
+    "认不出也可令p=g′降阶：tp′+p=0，再用一阶方程方法。",
+    "若直接得到t²f″+3tf′+f=0，可走欧拉方程对数换元；求解后核对初值与原式。"
+  ],
+  "formula": "tg^{\\prime\\prime}+g^{\\prime}=(tg^{\\prime})^{\\prime}=0\\quad\\Longrightarrow\\quad tg^{\\prime}=C",
+  "pitfalls": [
+    "必须保留积分常数；除变量或未知量前检查零值情形。",
+    "允许先算出方程再回头简化，不要求第一眼想到整体代换。"
+  ],
+  "example": {
+    "prompt": "推演示例：tg″+g′=0，t≥1，g(1)=0，g′(1)=1。",
+    "solution": "由(tg′)′=0得tg′=C，初值给C=1；积分g=ln t+D，再由g(1)=0得D=0。回代f=ln t/t后，f′=(1−ln t)/t²，先增后减，最大值1/e在t=e取得。"
+  },
+  "relatedIds": [
+    "hm-ode-reduction",
+    "hm-ode-euler",
+    "hm-ode-separable",
+    "hm-monotonic-extrema"
+  ],
+  "topicIds": [
+    "basic-thinking-structure"
+  ],
+  "status": "reviewed"
+}

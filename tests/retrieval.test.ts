@@ -44,5 +44,11 @@ describe('retrieval and evidence', () => {
     expect(getCoverage(library, [method, unrelated])).toEqual({ total: 2, written: 1, reviewed: 0,
       missing: [{ id: 'continuity', title: '连续性' }] });
     expect(getCoverage(library, [{ ...method, status: 'reviewed' }]).reviewed).toBe(1);
+    const baseline = getCoverage(library, [method]);
+    library.chapters.push({ id: 'thinking', title: '基础思路', subject: '学习策略', supplementary: true,
+      syllabusTopics: [{ id: 'strategy', title: '整体代换' }] });
+    const strategy = { ...method, id: 'strategy', chapterId: 'thinking', topicIds: ['strategy'], status: 'reviewed' as const };
+    expect(getCoverage(library, [method, strategy])).toEqual(baseline);
+    expect(getCoverage(library, [method])).toEqual(baseline);
   });
 });

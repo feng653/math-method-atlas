@@ -39,3 +39,5 @@
 临时手机测试站：https://feng653.github.io/math-method-atlas-preview/ 。独立仓库feng653/math-method-atlas-preview，仅发布dev/mobile-dot-graph的64467f1静态快照；正式站不受影响。更新需重新构建并推送预览仓库，不自动同步、不自动过期。构建命令：pnpm exec vite build --base /math-method-atlas-preview/。
 
 2026-09-08：用户确认dev/mobile-dot-graph合入main；圆点模式与动画休眠成为主分支实现。临时预览继续保留64467f1快照。
+
+基础思路章节：basic-thinking，3张触发式策略卡与basic-unknown-function-route组合路线卡。Chapter.supplementary为补充章节标记，coverage.ts排除其条目；目录、搜索、图谱仍使用既有入口。第27题只作讨论推演，不增加真题记录或考试频次。

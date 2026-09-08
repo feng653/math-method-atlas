@@ -10,6 +10,26 @@
   },
   "chapters": [
     {
+      "id": "basic-thinking",
+      "title": "基础思路",
+      "subject": "学习策略",
+      "supplementary": true,
+      "syllabusTopics": [
+        {
+          "id": "basic-thinking-goal",
+          "title": "从目标倒推缺失信息（学习策略）"
+        },
+        {
+          "id": "basic-thinking-whole",
+          "title": "重复结构整体代换（学习策略）"
+        },
+        {
+          "id": "basic-thinking-structure",
+          "title": "计算后识别结构（学习策略）"
+        }
+      ]
+    },
+    {
       "id": "limits",
       "title": "函数、极限与连续",
       "subject": "高等数学",

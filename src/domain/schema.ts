@@ -21,7 +21,7 @@ export const librarySchema = z.object({
   syllabus: z.object({ version: text, sourceUrl: httpsUrl, reviewStatus: status }).strict(),
   examScope: examScopeSchema.optional(),
   chapters: z.array(z.object({
-    id, title: text, subject: text,
+    id, title: text, subject: text, supplementary: z.boolean().optional(),
     syllabusTopics: z.array(z.object({ id, title: text }).strict()).min(1),
   }).strict()).min(1),
 }).strict();

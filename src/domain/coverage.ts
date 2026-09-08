@@ -1,7 +1,7 @@
 import type { Library, Method } from './schema';
 
 export function getCoverage(library: Library, methods: Method[]) {
-  const topics = library.chapters.flatMap((chapter) => chapter.syllabusTopics);
+  const topics = library.chapters.filter((chapter) => !chapter.supplementary).flatMap((chapter) => chapter.syllabusTopics);
   const scoped = methods.filter((method) => method.libraryId === library.id);
   const writtenIds = new Set(scoped.flatMap((method) => method.topicIds));
   const reviewedIds = new Set(scoped.filter((method) => method.status === 'reviewed').flatMap((method) => method.topicIds));
