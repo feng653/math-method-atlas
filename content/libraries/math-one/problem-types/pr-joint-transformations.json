@@ -1,0 +1,57 @@
+{
+  "id": "pr-joint-transformations",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "求和、极值与二维变换分布",
+  "summary": "独立和可卷积，极值将CDF事件改成同时不等式",
+  "recognition": [
+    "任务是两个变量的函数、最大最小值或成对变换",
+    "先区分独立性与变换可逆性"
+  ],
+  "strategy": [
+    "独立和可卷积，极值将CDF事件改成同时不等式",
+    "二维可逆分支用逆变换雅可比并逐分支相加",
+    "变换降维或奇异时回到原像区域积分"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-joint-convolution",
+      "when": "独立连续变量之和或差"
+    },
+    {
+      "methodId": "pr-joint-max-min",
+      "when": "独立变量最大或最小，非同分布保留不同CDF"
+    },
+    {
+      "methodId": "pr-joint-transform",
+      "when": "连续联合密度且可分片构造非零雅可比逆变换"
+    },
+    {
+      "methodId": "pr-dist-transform",
+      "when": "一维目标、降维或多对一情形用原像事件"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-joint-transformations-formula-1",
+      "title": "独立同分布极值的密度",
+      "latex": "f_{M}(x)=nF(x)^{n-1}f(x),\\quad f_{m}(x)=n[1-F(x)]^{n-1}f(x)",
+      "conditions": [
+        "X₁,…,Xₙ独立同分布且绝对连续",
+        "M为最大值，m为最小值，n≥1"
+      ],
+      "derivation": "P(M≤x)=F(x)ⁿ，P(m>x)=[1−F(x)]ⁿ；分别求导得到密度。必须由样本独立性才可连乘。",
+      "methodIds": [
+        "pr-joint-max-min"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2024-301-10",
+    "2024-301-22"
+  ],
+  "boundaries": [
+    "2026Q22缺明确独立寿命条件，不用该题佐证极值连乘公式。"
+  ],
+  "status": "draft"
+}

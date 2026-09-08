@@ -1,0 +1,57 @@
+{
+  "id": "pr-joint-conditioning",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "条件分布与联合正态参数",
+  "summary": "先算条件值处的边缘分母并核实为正",
+  "recognition": [
+    "给联合密度、联合表或明确联合正态",
+    "目标是在观测一维之后求另一维分布"
+  ],
+  "strategy": [
+    "先算条件值处的边缘分母并核实为正",
+    "联合正态可配方得条件均值和方差",
+    "非正态时按支持截面相除，不由边缘正态推联合正态"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-joint-conditional",
+      "when": "连续联合密度且条件边缘密度正"
+    },
+    {
+      "methodId": "pr-discrete-joint",
+      "when": "条件事件Y=y有正概率的离散表"
+    },
+    {
+      "methodId": "pr-bivariate-normal",
+      "when": "明确联合正态时求条件分布或线性组合"
+    },
+    {
+      "methodId": "pr-joint-independence",
+      "when": "判断条件分布是否与所给条件无关"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-joint-conditioning-formula-1",
+      "title": "联合正态的独立残差",
+      "latex": "R=X-\\mu_X-\\rho\\frac{\\sigma_X}{\\sigma_Y}(Y-\\mu_Y),\\quad R\\perp Y,\\quad R\\sim N(0,\\sigma_X^2(1-\\rho^2))",
+      "conditions": [
+        "X,Y联合正态，σX,σY>0，|ρ|<1"
+      ],
+      "derivation": "R是联合正态向量的线性组合；Cov(R,Y)=ρσXσY−ρσXσY=0，联合正态下不相关即独立。展开方差得σX²(1−ρ²)。",
+      "methodIds": [
+        "pr-bivariate-normal",
+        "pr-joint-independence"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-10",
+    "2024-301-09"
+  ],
+  "boundaries": [
+    "这两道关联题用于条件计算路线，不据它们的摘要额外认定联合正态。"
+  ],
+  "status": "draft"
+}

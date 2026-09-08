@@ -1,18 +1,31 @@
 import { Position, type Edge, type Node } from '@xyflow/react';
-import type { Library, Method } from './schema';
+import type { Library, Method, ProblemType } from './schema';
 import { separateNodes } from './layout';
+import { addProblemTypes } from './problem-graph';
 
-export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method';
-  subtitle: string; color: string; chapterId?: string; methodId?: string };
+export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method' | 'problem';
+  subtitle: string; color: string; chapterId?: string; methodId?: string; problemTypeId?: string };
 export type AtlasNode = Node<AtlasNodeData>;
 export const graphNodeId = (kind: AtlasNodeData['kind'], id: string) => `${kind}:${id}`;
 export const subjectColors: Record<string, string> = {
   '高等数学': '#0f766e', '线性代数': '#7660a3', '概率统计': '#aa642c',
 };
 
-export function buildGraph(library: Library, methods: Method[], chapterId = '', allMethods = false) {
+export function buildGraph(library: Library, methods: Method[], chapterId = '', allMethods = false,
+  problemTypes: ProblemType[] = [], problemTypeId = ''): { nodes: AtlasNode[]; edges: Edge[] } {
   methods = methods.filter((method) => method.libraryId === library.id);
+  const focused = problemTypes.find((type) => type.libraryId === library.id && type.id === problemTypeId);
+  if (focused) {
+    const choices = new Set(focused.methods.map((choice) => choice.methodId));
+    const local = buildGraph(library, methods.filter((method) => choices.has(method.id))
+      .map((method) => ({ ...method, chapterId: focused.chapterId })), focused.chapterId, true);
+    local.nodes[0].data = { ...local.nodes[0].data, label: focused.title, kind: 'problem',
+      problemTypeId: focused.id, subtitle: `${choices.size} 个可选方法` };
+    return local;
+  }
   const rootId = graphNodeId('root', library.id);
+  const chapterChoices = new Set(problemTypes.filter((type) => type.libraryId === library.id && type.chapterId === chapterId)
+    .flatMap((type) => type.methods.map((choice) => choice.methodId)));
   const chapters = library.chapters.filter((chapter) => !chapterId || chapter.id === chapterId);
   const nodes: AtlasNode[] = [];
   const edges: Edge[] = [];
@@ -42,7 +55,7 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
     const cx = chapterId ? 0 : Math.cos(angle) * radius;
     const cy = chapterId ? 0 : Math.sin(angle) * radius;
     const color = subjectColors[chapter.subject] ?? '#0f766e';
-    const chapterMethods = methods.filter((method) => method.chapterId === chapter.id);
+    const chapterMethods = methods.filter((method) => method.chapterId === chapter.id || (!!chapterId && chapterChoices.has(method.id)));
     if (!chapterId) {
       nodes.push({ id: graphNodeId('chapter', chapter.id), type: 'atlas', position: { x: cx - 105, y: cy - 30 },
         data: { label: chapter.title, subtitle: `${chapterMethods.length} 个方法`, kind: 'chapter', color, chapterId: chapter.id } });
@@ -71,5 +84,7 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
         target: graphNodeId('method', method.id), type: 'default', style: { stroke: color, opacity: 0.26, strokeWidth: 1.2 } });
     });
   });
-  return { nodes: allMethods && !chapterId ? separateNodes(nodes) : nodes, edges };
+  const graph = { nodes: allMethods && !chapterId ? separateNodes(nodes) : nodes, edges };
+  return addProblemTypes(graph, problemTypes.filter((type) => type.libraryId === library.id
+    && (!chapterId || type.chapterId === chapterId)), chapterId, library.id);
 }

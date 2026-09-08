@@ -1,0 +1,57 @@
+{
+  "id": "surface-area-flux",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "求曲面面积、质量与定向通量",
+  "summary": "先区分标量面积与向量通量，再决定直接投影或补面。",
+  "recognition": [
+    "出现dS、三种有向投影微元，或开曲面可加简单盖面闭合。"
+  ],
+  "strategy": [
+    "写明确法向及曲面覆盖范围。",
+    "标量用面积元，通量用有向面积向量；封闭且场光滑时比较Gauss，开曲面补面后减掉盖面。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-surface-integrals",
+      "when": "曲面能写图形或参数式，直接计算面积/通量。"
+    },
+    {
+      "methodId": "hm-gauss",
+      "when": "闭合外向曲面且立体内场C¹，散度更简单时。"
+    },
+    {
+      "methodId": "hm-divergence",
+      "when": "准备Gauss时先求散度，或验证场是否无源。"
+    },
+    {
+      "methodId": "hm-integral-mass-centroid",
+      "when": "曲面有密度需要面积质量和矩，使用dm=ρdS。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "cap-subtraction",
+      "title": "补盖面计算通量",
+      "latex": "\\iint_S F\\cdot n\\,dS=\\iiint_V\\operatorname{div}F\\,dV-\\iint_C F\\cdot n\\,dS",
+      "conditions": [
+        "S与C合成V的全部边界且均取外向；边界分片光滑；F在V及边界的开邻域C¹。"
+      ],
+      "derivation": "Gauss给整个边界通量；用曲面可加性拆成S和盖面C，移项即可。若题给S内向还需整体取负。",
+      "methodIds": [
+        "hm-gauss",
+        "hm-surface-integrals",
+        "hm-divergence"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2017-301-19",
+    "2016-301-18",
+    "2018-301-17"
+  ],
+  "boundaries": [
+    "2017Q19第二问才是曲面质量目标；不能把质量面积元换成投影面积，奇点处不能用补面掩盖。"
+  ],
+  "status": "draft"
+}

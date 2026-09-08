@@ -1,0 +1,71 @@
+{
+  "id": "pt-first-order-ode",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "一阶方程分型与求解",
+  "summary": "按可分离、线性、y/x齐次、伯努利或恰当结构分流",
+  "recognition": [
+    "一阶导数关系或一阶微分形式"
+  ],
+  "strategy": [
+    "按可分离、线性、y/x齐次、伯努利或恰当结构分流",
+    "除未知函数前保留零解；实幂与对数变换需选合法分支"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-ode-separable",
+      "when": "右端为x函数与y函数乘积"
+    },
+    {
+      "methodId": "hm-ode-linear-first",
+      "when": "系数连续的一阶线性方程"
+    },
+    {
+      "methodId": "hm-ode-homogeneous",
+      "when": "y′=F(y/x)，区间不跨x=0"
+    },
+    {
+      "methodId": "hm-ode-bernoulli",
+      "when": "非线性幂可换元到线性，零分支另查"
+    },
+    {
+      "methodId": "hm-exact-ode",
+      "when": "M_y=N_x及域条件支持势函数"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-first-order-ode-formula-1",
+      "title": "伯努利线性化",
+      "latex": "z=y^{1-n}\\ \\Longrightarrow\\ z'+(1-n)pz=(1-n)q",
+      "conditions": [
+        "原式y′+py=q yⁿ，n≠1，y非零且实幂可导"
+      ],
+      "derivation": "乘(1−n)y^(−n)，导数项变成z′；零解需代原式。",
+      "methodIds": [
+        "hm-ode-bernoulli",
+        "hm-ode-linear-first"
+      ]
+    },
+    {
+      "id": "pt-first-order-ode-formula-2",
+      "title": "线性初值公式",
+      "latex": "y(x)=e^{-P(x)}\\left[y(x_0)+\\int_{x_0}^xe^{P(t)}q(t)dt\\right],\\quad P(x)=\\int_{x_0}^xp(t)dt",
+      "conditions": [
+        "y′+py=q，p、q在同一区间连续"
+      ],
+      "derivation": "乘e^P化乘积导数，积分并用P(x₀)=0。",
+      "methodIds": [
+        "hm-ode-linear-first"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2011-301-10",
+    "2014-301-11"
+  ],
+  "boundaries": [
+    "任何除法与换元先核合法区间，丢失的平衡解须单独回代。"
+  ],
+  "status": "draft"
+}

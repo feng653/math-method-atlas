@@ -1,0 +1,55 @@
+{
+  "id": "pr-distributions-functions",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "求随机变量函数的分布",
+  "summary": "先写P(g(X)≤y)并确定y的取值范围",
+  "recognition": [
+    "目标变量含绝对值、平方、分段或非单调映射",
+    "不能机械只取一个反函数分支"
+  ],
+  "strategy": [
+    "先写P(g(X)≤y)并确定y的取值范围",
+    "把原像拆成互斥区间或离散取值后求概率",
+    "有常值分段时检查原子质量，最后检查CDF两端"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-dist-transform",
+      "when": "一般分段或多对一映射优先分布函数法"
+    },
+    {
+      "methodId": "pr-dist-cdf",
+      "when": "函数分布含跳跃或需端点处理"
+    },
+    {
+      "methodId": "pr-dist-density",
+      "when": "得到连续CDF后在各光滑分段求导"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-distributions-functions-formula-1",
+      "title": "平方变换的密度",
+      "latex": "f_{X^2}(y)=\\frac{f_X(\\sqrt y)+f_X(-\\sqrt y)}{2\\sqrt y}\\quad(y>0)",
+      "conditions": [
+        "X具有概率密度",
+        "公式在相应密度存在处成立，y<0密度为0"
+      ],
+      "derivation": "y≥0时P(X²≤y)=P(−√y≤X≤√y)，对CDF差求导；两个反像分别贡献1/(2√y)的雅可比因子。",
+      "methodIds": [
+        "pr-dist-transform",
+        "pr-dist-density"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-22",
+    "2023-301-22",
+    "2024-301-10"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

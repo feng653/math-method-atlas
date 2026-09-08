@@ -1,0 +1,71 @@
+{
+  "id": "pt-derivative-computation",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "显式、隐式、参数与高阶求导",
+  "summary": "识别表示方式后选择求导变量及合法分母",
+  "recognition": [
+    "函数由表达式、方程、参数或逆关系给出"
+  ],
+  "strategy": [
+    "识别表示方式后选择求导变量及合法分母",
+    "每一次参数高阶导都要除x′；隐式分母非零；乘积高阶用莱布尼茨"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-chain-log-differentiation",
+      "when": "基本表、四则、复合及变量幂"
+    },
+    {
+      "methodId": "hm-implicit-derivative",
+      "when": "F_y非零的隐函数分支"
+    },
+    {
+      "methodId": "hm-parametric-derivative",
+      "when": "参数横坐标导数非零"
+    },
+    {
+      "methodId": "hm-inverse-derivative",
+      "when": "局部反函数或一阶微分形式"
+    },
+    {
+      "methodId": "hm-leibniz-high-derivative",
+      "when": "乘积高阶或周期导数结构"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-derivative-computation-formula-1",
+      "title": "参数二阶导",
+      "latex": "\\frac{d^2y}{dx^2}=\\frac{y''(t)x'(t)-y'(t)x''(t)}{[x'(t)]^3}",
+      "conditions": [
+        "参数函数二次可导，x′≠0"
+      ],
+      "derivation": "对y′/x′按t求商导，再除x′。",
+      "methodIds": [
+        "hm-parametric-derivative"
+      ]
+    },
+    {
+      "id": "pt-derivative-computation-formula-2",
+      "title": "隐式二阶导",
+      "latex": "y''=-\\frac{F_{xx}+2F_{xy}y'+F_{yy}(y')^2}{F_y}",
+      "conditions": [
+        "在F(x,y(x))=0的解支上；F有二阶连续偏导，F_y≠0"
+      ],
+      "derivation": "沿x对F_x+F_y y′=0求全导，解出y″。",
+      "methodIds": [
+        "hm-implicit-derivative"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-09",
+    "2013-301-11",
+    "2014-301-16"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

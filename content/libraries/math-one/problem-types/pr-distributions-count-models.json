@@ -1,0 +1,62 @@
+{
+  "id": "pr-distributions-count-models",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "建立离散计数与等待模型",
+  "summary": "先写可能值与试验机制再选分布",
+  "recognition": [
+    "目标是次数、首次成功或不放回抽取个数的分布",
+    "识别固定试验数与随机等待时间的区别"
+  ],
+  "strategy": [
+    "先写可能值与试验机制再选分布",
+    "独立固定次数用二项，稀疏计数看泊松；不放回用超几何",
+    "首次成功用几何分布并明确从1计数；近似题另记录近似条件"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-dist-discrete",
+      "when": "给离散质量函数时先归一化并求和"
+    },
+    {
+      "methodId": "pr-dist-classic",
+      "when": "固定独立伯努利次数或泊松计数模型"
+    },
+    {
+      "methodId": "pr-dist-geometric",
+      "when": "独立重复试验直到首次成功，取值从1开始"
+    },
+    {
+      "methodId": "pr-dist-hypergeometric",
+      "when": "有限总体不放回抽样"
+    },
+    {
+      "methodId": "pr-poisson-approximation",
+      "when": "二项n大p小且np适中时作泊松近似"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-distributions-count-models-formula-1",
+      "title": "二项和的相加性",
+      "latex": "X\\sim B(n,p),\\ Y\\sim B(m,p),\\ X\\perp Y\\ \\Longrightarrow\\ X+Y\\sim B(n+m,p)",
+      "conditions": [
+        "n,m为非负整数，0≤p≤1",
+        "X,Y独立且成功概率相同"
+      ],
+      "derivation": "把两个计数分别表示为n和m个独立同参数伯努利变量之和，再合并为n+m次独立试验。",
+      "methodIds": [
+        "pr-dist-classic",
+        "pr-dist-discrete"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2025-301-09",
+    "2023-301-16"
+  ],
+  "boundaries": [
+    "超几何不是独立伯努利和；泊松近似误差不能由模型名称自动保证。"
+  ],
+  "status": "draft"
+}

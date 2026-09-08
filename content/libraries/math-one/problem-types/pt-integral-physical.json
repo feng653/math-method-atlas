@@ -1,0 +1,47 @@
+{
+  "id": "pt-integral-physical",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分物理应用",
+  "summary": "明确坐标、单位和受力方向，再写微元",
+  "recognition": [
+    "位置变化的功、压力或引力"
+  ],
+  "strategy": [
+    "明确坐标、单位和受力方向，再写微元",
+    "静水深度不等于任意板面坐标；引力先投影再叠加"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-pressure-gravity",
+      "when": "静水压强或分布质量引力"
+    },
+    {
+      "methodId": "hm-arc-work-integral",
+      "when": "变力做功或曲线累积"
+    },
+    {
+      "methodId": "hm-cross-section-average",
+      "when": "截宽/截面能直接定义微元"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-integral-physical-formula-1",
+      "title": "竖直板静水压力",
+      "latex": "F=\\rho g\\int_a^b h\\,w(h)\\,dh",
+      "conditions": [
+        "液体静止、密度ρ恒定；h≥0为垂直深度，w为该深度水平板宽"
+      ],
+      "derivation": "压强ρgh乘面积元w(h)dh后积分；两侧大气压抵消时不计。",
+      "methodIds": [
+        "hm-pressure-gravity"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "密度变化要放入微元积分；方向分量不能用大小直接相加。"
+  ],
+  "status": "draft"
+}

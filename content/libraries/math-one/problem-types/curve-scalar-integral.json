@@ -1,0 +1,50 @@
+{
+  "id": "curve-scalar-integral",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "求弧长、线密度质量和第一类曲线积分",
+  "summary": "以弧长度量积分，方向反转不改变结果。",
+  "recognition": [
+    "积分含ds，曲线可能是参数曲线或两个曲面的交线。"
+  ],
+  "strategy": [
+    "先确定整条曲线及参数范围。",
+    "计算速度模，代入标量函数；检查对称是否同时保持弧段和被积函数。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-line-first-kind",
+      "when": "标量乘ds或线密度质量，直接用速度模。"
+    },
+    {
+      "methodId": "hm-space-intersections",
+      "when": "交线尚无参数，需要联立消元保留指定半弧。"
+    },
+    {
+      "methodId": "hm-vector-products",
+      "when": "圆位于斜平面时，选平面内正交基参数化以简化速度模。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "circle-arclength",
+      "title": "正交圆参数的弧长元",
+      "latex": "r(t)=c+R(u\\cos t+v\\sin t),\\qquad ds=R\\,dt",
+      "conditions": [
+        "R>0；u,v为互相正交的单位向量；t按不重复弧段增加。"
+      ],
+      "derivation": "r′=R(−u sin t+v cos t)，平方模因交叉点积为0等于R²，故弧长元为Rdt。",
+      "methodIds": [
+        "hm-line-first-kind",
+        "hm-vector-products"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2018-301-12"
+  ],
+  "boundaries": [
+    "被积函数在某坐标反号时，必须确认该变换保持完整曲线后才能抵消。"
+  ],
+  "status": "draft"
+}

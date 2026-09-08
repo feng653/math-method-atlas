@@ -1,0 +1,50 @@
+{
+  "id": "pt-continuity-roots",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "连续拼接、间断分类与零点",
+  "summary": "先分左右极限与函数值，再检查连续和零点",
+  "recognition": [
+    "分段连接点、左右极限或根存在性"
+  ],
+  "strategy": [
+    "先分左右极限与函数值，再检查连续和零点",
+    "零点存在与唯一性分别证明"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-continuity-piecewise",
+      "when": "连接点与间断类型"
+    },
+    {
+      "methodId": "hm-intermediate-value",
+      "when": "闭区间连续、端点异号"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "when": "导数符号给严格单调和唯一性"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-continuity-roots-formula-1",
+      "title": "唯一零点判据",
+      "latex": "f(a)f(b)<0,\\quad f'(x)>0\\ (a<x<b)\\ \\Longrightarrow\\ \\exists!c\\in(a,b):f(c)=0",
+      "conditions": [
+        "a<b，f闭区间连续、内部可导"
+      ],
+      "derivation": "介值给存在，中值定理给严格递增，故至多一根。",
+      "methodIds": [
+        "hm-intermediate-value",
+        "hm-monotonic-extrema"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2011-301-17"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "pt-sequence-convergence",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "数列收敛、递推与反函数极限",
+  "summary": "先证明收敛再求候选极限",
+  "recognition": [
+    "数列递推、和式或隐式定义"
+  ],
+  "strategy": [
+    "先证明收敛再求候选极限",
+    "检查不变区间与上下界，不能只解固定点方程"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-recursive-limit",
+      "when": "能证明单调有界，含非自治数列"
+    },
+    {
+      "methodId": "hm-squeeze",
+      "when": "可构造趋同上下界"
+    },
+    {
+      "methodId": "hm-inverse-limit",
+      "when": "严格单调连续反函数在合法值域传递极限"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-sequence-convergence-formula-1",
+      "title": "收缩误差",
+      "latex": "|x_{n+1}-\\ell|\\le q|x_n-\\ell|\\ \\Longrightarrow\\ |x_n-\\ell|\\le q^{n-1}|x_1-\\ell|\\to0",
+      "conditions": [
+        "0≤q<1，不等式对所有n成立"
+      ],
+      "derivation": "递推代入n−1次，用几何数列趋0夹逼。",
+      "methodIds": [
+        "hm-squeeze"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2011-301-18"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

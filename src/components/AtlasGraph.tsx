@@ -2,18 +2,20 @@ import { useEffect, useMemo, useState } from 'react';
 import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
 import { Focus, Minus, Plus, RotateCcw, Waves } from 'lucide-react';
 import { buildGraph, graphNodeId, type AtlasNode as NodeType } from '../domain/graph';
-import type { Library, Method } from '../domain/schema';
+import type { Library, Method, ProblemType } from '../domain/schema';
 import { AtlasNode } from './AtlasNode';
 import { useElasticGraph } from './useElasticGraph';
 
 const nodeTypes = { atlas: AtlasNode };
 type Props = { library: Library; methods: Method[]; selected: string; chapter: string;
+  problemTypes: ProblemType[]; problemType: string; onProblemType: (id: string) => void;
   onSelect: (id: string) => void; onChapter: (id: string) => void };
 
-export function AtlasGraph({ library, methods, selected, chapter, onSelect, onChapter }: Props) {
+export function AtlasGraph({ library, methods, selected, chapter, problemTypes, problemType, onProblemType, onSelect, onChapter }: Props) {
   const [allMethods, setAllMethods] = useState(true);
   const [motion, setMotion] = useState(true);
-  const graph = useMemo(() => buildGraph(library, methods, chapter, allMethods), [library, methods, chapter, allMethods]);
+  const graph = useMemo(() => buildGraph(library, methods, chapter, allMethods, problemTypes, problemType),
+    [library, methods, chapter, allMethods, problemTypes, problemType]);
   const [nodes, setNodes, onNodesChange] = useNodesState<NodeType>(graph.nodes);
   const elastic = useElasticGraph(graph.nodes, graph.edges, motion, setNodes);
   const [flow, setFlow] = useState<ReactFlowInstance<NodeType> | null>(null);
@@ -48,6 +50,7 @@ export function AtlasGraph({ library, methods, selected, chapter, onSelect, onCh
   function activateNode(id: string) {
     const node = nodes.find((item) => item.id === id);
     if (node?.data.kind === 'method') onSelect(node.data.methodId ?? '');
+    else if (node?.data.kind === 'problem') onProblemType(node.data.problemTypeId ?? '');
     else if (node?.data.kind === 'chapter') onChapter(node.data.chapterId ?? '');
     else if (node) onChapter('');
   }

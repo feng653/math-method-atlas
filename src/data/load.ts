@@ -5,6 +5,7 @@ const modules = {
   methods: import.meta.glob('../../content/libraries/*/methods/*.json', { eager: true, import: 'default' }),
   papers: import.meta.glob('../../content/libraries/*/papers/*.json', { eager: true, import: 'default' }),
   questions: import.meta.glob('../../content/libraries/*/questions/*.json', { eager: true, import: 'default' }),
+  problemTypes: import.meta.glob('../../content/libraries/*/problem-types/*.json', { eager: true, import: 'default' }),
 };
 
 export const data: AtlasData = atlasSchema.parse(Object.fromEntries(

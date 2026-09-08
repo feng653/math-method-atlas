@@ -6,6 +6,8 @@
 .atlas-node small { display: block; margin-top: 5px; font-size: 10px; color: #687e6e; letter-spacing: 0.3px; }
 .atlas-node.chapter { border-color: color-mix(in srgb, var(--branch-color) 24%, white); background: color-mix(in srgb, var(--branch-color) 5%, white); }
 .atlas-node.chapter strong { color: var(--branch-color); font-weight: 600; font-size: 14px; }
+.atlas-node.problem { border-color: var(--branch-color); border-radius: 24px; background: #f9fcf7; }
+.atlas-node.problem strong { color: var(--branch-color); }
 .atlas-node.root { min-height: 80px; width: 220px; background: #f9fcf7; border: 1px solid #9db7a5; border-radius: 22px; padding: 18px; box-shadow: 0 6px 32px #2f58350a; }
 .atlas-node.root strong { font-family: "Noto Serif SC", "Songti SC", SimSun, serif; font-size: 21px; font-weight: 500; letter-spacing: 1px; }
 .atlas-node.root .node-dot { display: none; }

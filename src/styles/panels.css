@@ -1,4 +1,9 @@
 .glass-panel { background: #fffffff7; border: 1px solid #e0e6dc; border-radius: 18px; box-shadow: 0 12px 50px #2f49300d; }
+.type-choice { padding: 12px 0; border-bottom: 1px solid #e8ede5; }
+.type-choice button { display: flex; gap: 10px; align-items: center; color: #0f766e; text-align: left; }
+.type-choice p, .derived-formula p { font-size: 13px; line-height: 1.8; color: #5f7167; }
+.derived-formula { padding: 13px 0; border-bottom: 1px solid #e8ede5; }
+.derived-formula summary { cursor: pointer; font-size: 13px; line-height: 1.7; }
 .detail-panel, .navigation-panel { position: absolute; top: 91px; bottom: 22px; z-index: 20; display: flex; flex-direction: column; overflow: hidden; animation: panel-enter 230ms ease-out; }
 .detail-panel { right: 22px; width: 405px; }
 .navigation-panel { left: 22px; width: 325px; }

@@ -1,0 +1,64 @@
+{
+  "id": "multivariable-optimization",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求多元极值和约束最值",
+  "summary": "区分局部驻点判别、边界候选与全局存在性。",
+  "recognition": [
+    "求二元函数极值，或带几何/资源等式约束的最大最小值。"
+  ],
+  "strategy": [
+    "先查是否有约束以及可行域是否紧。",
+    "列内部驻点、边界与奇异点，局部判别或全局比较后给结果。",
+    "二阶判别退化时，把原函数增量独立写出；证明极值控制整个邻域，否定极值可用两条异号路径。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-hessian-extrema",
+      "when": "无约束内部驻点且C²成立，Hessian可快速分类。 D=0时转实际增量的配方、统一估界或异号路径，不由零Hessian硬判。"
+    },
+    {
+      "methodId": "hm-lagrange-multipliers",
+      "when": "等式约束正则，需在约束曲线面上求极值。"
+    },
+    {
+      "methodId": "hm-second-taylor",
+      "when": "二阶型不定可证鞍点；半正定时需继续查高阶/方向，不能硬判。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "quadratic-increment",
+      "title": "驻点二阶型",
+      "latex": "\\Delta f=\\tfrac12(Ah^2+2Bhk+Ck^2)+o(h^2+k^2),\\qquad D=AC-B^2",
+      "conditions": [
+        "f在驻点邻域C²；A=fxx、B=fxy、C=fyy在该点。"
+      ],
+      "derivation": "二阶Taylor的一阶项因梯度为0消失。D>0且A>0时二次型正定，余项较小不改符号，故严格极小；D<0时两方向异号。",
+      "methodIds": [
+        "hm-second-taylor",
+        "hm-hessian-extrema"
+      ]
+    },
+    {
+      "id": "quartic-positive-bound",
+      "title": "四次增量的统一正下界",
+      "latex": "h^4+k^4\\ge\\frac12(h^2+k^2)^2>0\\quad((h,k)\\ne(0,0))",
+      "conditions": [
+        "适用于增量恰为h⁴+k⁴，或已证明增量不小于该正下界的情形；不能忽略未知余项。"
+      ],
+      "derivation": "由(h²−k²)²≥0得h⁴+k⁴≥2h²k²，整理为所列下界；该估计对所有方向同时成立，所以可证明零Hessian处的严格极小。",
+      "methodIds": [
+        "hm-hessian-extrema"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-15",
+    "2018-301-16"
+  ],
+  "boundaries": [
+    "乘子方程是必要条件，不替代边界检查与全局性；D=0仅二阶判别失效，须使用实际增量。有限条路径同号不能证明极值。"
+  ],
+  "status": "draft"
+}

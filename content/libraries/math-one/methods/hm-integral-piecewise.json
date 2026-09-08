@@ -1,0 +1,37 @@
+{
+  "id": "hm-integral-piecewise",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "分段积分与绝对值拆区间",
+  "summary": "按分段点、零点和奇点划分区间，再分别计算有向积分。",
+  "conditions": [
+    "分段有限且各段可积；若含无界点，改用两侧独立的反常积分并分别判敛。",
+    "计算几何面积时上下函数的差可能变号，需要确定零点及各段符号。",
+    "绝对值的有限拆段公式要求存在有限划分 a=x₀<…<xₙ=b，使每个开子区间内f不变号。可积或连续本身不保证零点及变号次数有限。"
+  ],
+  "steps": [
+    "找出分段定义点、绝对值内部零点和分母奇点。",
+    "将所有分界点按区间顺序排列，逐段判号并写明实际表达式。",
+    "用积分可加性逐段算值；区分有向积分与绝对面积。",
+    "若求分段原函数并要求连续，用交界条件协调各段积分常数。"
+  ],
+  "formula": "\\int_a^b |f(x)|dx=\\sum_i s_i\\int_{x_i}^{x_{i+1}}f(x)dx,\\quad s_i=\\operatorname{sgn}(f)\\ \\text{on }(x_i,x_{i+1})",
+  "pitfalls": [
+    "∫|f|通常不等于|∫f|。",
+    "对称区间上奇点两侧的发散不能相互抵消。",
+    "若存在无限次变号，不能声称已枚举全部零点；须另用极限、估计或证明合法的无穷分解。"
+  ],
+  "example": {
+    "prompt": "自编：求∫₀²|x−1|dx，并与|∫₀²(x−1)dx|比较。",
+    "solution": "在1处分段，前段∫₀¹(1−x)=1/2，后段∫₁²(x−1)=1/2，总值1；有向积分正负抵消为0，取绝对值后仍为0。"
+  },
+  "relatedIds": [
+    "hm-newton-leibniz",
+    "hm-integral-area-volume",
+    "hm-improper-integral"
+  ],
+  "topicIds": [
+    "integrals-newton-leibniz"
+  ],
+  "status": "reviewed"
+}

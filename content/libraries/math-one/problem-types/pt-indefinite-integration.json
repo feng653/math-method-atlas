@@ -1,0 +1,185 @@
+{
+  "id": "pt-indefinite-integration",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "计算不定积分",
+  "summary": "先化简凑微分，再依结构选换元、分部、部分分式或递推",
+  "recognition": [
+    "求原函数，含乘积、复合、有理式、三角或根式"
+  ],
+  "strategy": [
+    "先化简凑微分，再依结构选换元、分部、部分分式或递推",
+    "有理式先长除；三角幂先恒等变换；最后求导回验并加常数"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-substitution-integral",
+      "when": "内函数导数可配成微分"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "when": "多项式乘指数三角、对数反三角"
+    },
+    {
+      "methodId": "hm-rational-integral",
+      "when": "有理函数长除后按实因子分解"
+    },
+    {
+      "methodId": "hm-trig-substitution",
+      "when": "三角有理式与二次根式"
+    },
+    {
+      "methodId": "hm-integral-recurrence",
+      "when": "同族参数n可通过分部降低"
+    },
+    {
+      "methodId": "hm-newton-leibniz",
+      "when": "先用基本原函数表与线性拆项直接积分；求导核验结果，不强行换元。"
+    },
+    {
+      "methodId": "hm-integral-piecewise",
+      "when": "分段函数或绝对值需先明确各区间表达式，再按连续性要求协调积分常数。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-indefinite-integration-formula-1",
+      "title": "对数微分识别",
+      "latex": "\\int\\frac{g'(x)}{g(x)}dx=\\ln|g(x)|+C",
+      "conditions": [
+        "g可导且在所选区间非零"
+      ],
+      "derivation": "对ln|g|求导为g′/g；不同连通区间常数可不同。",
+      "methodIds": [
+        "hm-substitution-integral"
+      ]
+    },
+    {
+      "id": "pt-indefinite-integration-formula-2",
+      "title": "指数三角原函数",
+      "latex": "\\int e^{ax}\\cos bx\\,dx=\\frac{e^{ax}(a\\cos bx+b\\sin bx)}{a^2+b^2}+C",
+      "conditions": [
+        "a,b实数且a²+b²>0"
+      ],
+      "derivation": "对右式求导，交叉sin项抵消，cos项系数为a²+b²；亦可两次分部联立。",
+      "methodIds": [
+        "hm-integration-by-parts"
+      ]
+    },
+    {
+      "id": "pt-indefinite-integration-formula-3",
+      "title": "半角万能代换",
+      "latex": "t=\\tan(x/2),\\quad\\sin x=\\frac{2t}{1+t^2},\\quad\\cos x=\\frac{1-t^2}{1+t^2},\\quad dx=\\frac{2dt}{1+t^2}",
+      "conditions": [
+        "局部区间不跨x=(2k+1)π；原分母非零"
+      ],
+      "derivation": "由倍角公式和dt/dx=(1+t²)/2得到，转为有理积分。",
+      "methodIds": [
+        "hm-trig-substitution",
+        "hm-rational-integral"
+      ]
+    },
+    {
+      "id": "pt-indefinite-integration-formula-4",
+      "title": "圆根式代换",
+      "latex": "x=a\\sin t,\\quad \\sqrt{a^2-x^2}=a\\cos t,\\quad dx=a\\cos t\\,dt",
+      "conditions": [
+        "a>0，t∈[−π/2,π/2]，此时cos t≥0"
+      ],
+      "derivation": "平方根应先是a|cos t|；选单调主区间才可去绝对值。",
+      "methodIds": [
+        "hm-trig-substitution"
+      ]
+    },
+    {
+      "id": "pt-indefinite-integration-formula-5",
+      "title": "指数多项式递推",
+      "latex": "I_n=\\int x^ne^{ax}dx=\\frac{x^ne^{ax}}a-\\frac na I_{n-1}",
+      "conditions": [
+        "a≠0，n正整数，等式按原函数族理解"
+      ],
+      "derivation": "取u=xⁿ、dv=e^(ax)dx分部一次。",
+      "methodIds": [
+        "hm-integral-recurrence",
+        "hm-integration-by-parts"
+      ]
+    },
+    {
+      "id": "scaled-arctangent",
+      "title": "平方和分母",
+      "latex": "\\int\\frac{dx}{a^2+x^2}=\\frac1a\\arctan\\frac xa+C",
+      "conditions": [
+        "a>0，x为实数"
+      ],
+      "derivation": "令u=x/a，dx=a du，提取1/a后使用反正切基本积分。",
+      "methodIds": [
+        "hm-substitution-integral"
+      ]
+    },
+    {
+      "id": "difference-squares-log",
+      "title": "平方差分母",
+      "latex": "\\int\\frac{dx}{x^2-a^2}=\\frac1{2a}\\ln\\left|\\frac{x-a}{x+a}\\right|+C",
+      "conditions": [
+        "a>0，所选区间不跨±a"
+      ],
+      "derivation": "分解为[1/(x−a)−1/(x+a)]/(2a)，分别积分并合并对数。",
+      "methodIds": [
+        "hm-rational-integral"
+      ]
+    },
+    {
+      "id": "positive-root-log",
+      "title": "平方和根式",
+      "latex": "\\int\\frac{dx}{\\sqrt{x^2+a^2}}=\\ln\\left(x+\\sqrt{x^2+a^2}\\right)+C",
+      "conditions": [
+        "a>0；此时根号严格大于|x|，对数真数恒正"
+      ],
+      "derivation": "对右式求导，分子1+x/√(x²+a²)除以x+√(x²+a²)，约去公共因子得1/√(x²+a²)。",
+      "methodIds": [
+        "hm-trig-substitution"
+      ]
+    },
+    {
+      "id": "squared-quadratic-denominator",
+      "title": "二次分母平方降阶",
+      "latex": "\\int\\frac{dx}{(x^2+a^2)^2}=\\frac{x}{2a^2(x^2+a^2)}+\\frac1{2a^3}\\arctan\\frac xa+C",
+      "conditions": [
+        "a>0"
+      ],
+      "derivation": "计算[x/(x²+a²)]′=(a²−x²)/(x²+a²)²，与1/(x²+a²)相加得到2a²/(x²+a²)²，再积分。",
+      "methodIds": [
+        "hm-rational-integral"
+      ]
+    },
+    {
+      "id": "exponential-sine",
+      "title": "指数乘正弦",
+      "latex": "\\int e^{ax}\\sin bx\\,dx=\\frac{e^{ax}(a\\sin bx-b\\cos bx)}{a^2+b^2}+C",
+      "conditions": [
+        "a,b为实数且a²+b²>0"
+      ],
+      "derivation": "两次分部联立，或对右式求导；余弦交叉项抵消，正弦系数化为a²+b²。",
+      "methodIds": [
+        "hm-integration-by-parts"
+      ]
+    },
+    {
+      "id": "circle-root-arcsine",
+      "title": "圆根式基本积分",
+      "latex": "\\int\\frac{dx}{\\sqrt{a^2-x^2}}=\\arcsin\\frac xa+C",
+      "conditions": [
+        "a>0，|x|<a"
+      ],
+      "derivation": "令x=a sin t，取t在(−π/2,π/2)，微分a cos t抵消正根a cos t，积分后回代。",
+      "methodIds": [
+        "hm-trig-substitution"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "原函数在不同连通区间常数可不同；并非所有初等被积式都有初等原函数。"
+  ],
+  "status": "draft"
+}

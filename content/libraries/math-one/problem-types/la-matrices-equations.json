@@ -1,0 +1,63 @@
+{
+  "id": "la-matrices-equations",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "矩阵运算、求逆与矩阵方程",
+  "summary": "先按尺寸核对每个乘积，再决定从哪侧乘逆矩阵",
+  "recognition": [
+    "目标是未知矩阵、逆阵或伴随阵",
+    "乘法次序和分块尺寸是首要约束"
+  ],
+  "strategy": [
+    "先按尺寸核对每个乘积，再决定从哪侧乘逆矩阵",
+    "普通矩阵用增广消元，分块结构可用块消元",
+    "伴随阵问题先用AA*=det(A)I；奇异情形不写逆阵"
+  ],
+  "methods": [
+    {
+      "methodId": "la-matrix-product",
+      "when": "翻译矩阵等式或特殊矩阵运算"
+    },
+    {
+      "methodId": "la-matrix-inverse",
+      "when": "已知可逆或需直接增广求逆"
+    },
+    {
+      "methodId": "la-matrix-elementary",
+      "when": "行列变换需要写成左乘或右乘"
+    },
+    {
+      "methodId": "la-matrix-adjugate",
+      "when": "出现伴随矩阵或其行列和"
+    },
+    {
+      "methodId": "la-block-operations",
+      "when": "分块乘法尺寸匹配且块消元可行"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-matrices-equations-formula-1",
+      "title": "两侧矩阵方程的解",
+      "latex": "AXB=C\\quad\\Longrightarrow\\quad X=A^{-1}CB^{-1}",
+      "conditions": [
+        "A,B分别为可逆方阵",
+        "C和X尺寸与乘积相容"
+      ],
+      "derivation": "先左乘A⁻¹消去A，再右乘B⁻¹消去B；代回由结合律得到C，逆运算同时证明唯一。",
+      "methodIds": [
+        "la-matrix-inverse",
+        "la-matrix-product"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-15",
+    "2026-301-05",
+    "2021-301-15"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

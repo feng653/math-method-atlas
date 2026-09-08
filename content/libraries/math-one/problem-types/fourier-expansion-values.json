@@ -1,0 +1,44 @@
+{
+  "id": "fourier-expansion-values",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "求三角级数展开及边界收敛值",
+  "summary": "按周期、奇偶性和半区间要求选择延拓。",
+  "recognition": [
+    "给周期函数或只给(0,l)上的函数，要求正弦/余弦展开或某点级数和。"
+  ],
+  "strategy": [
+    "明确周期与延拓方式。",
+    "计算系数并检查充分收敛条件；间断点和周期接缝用延拓后的左右平均。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-fourier",
+      "when": "给整周期定义或需要完整正余弦系数时。"
+    },
+    {
+      "methodId": "hm-fourier-half-range",
+      "when": "只给正半区间并明确仅正弦或仅余弦时。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "half-range-endpoint",
+      "title": "半区间延拓在零点的和值",
+      "latex": "S_{\\rm odd}(0)=0,\\qquad S_{\\rm even}(0)=f(0+)",
+      "conditions": [
+        "f在(0,l)分段C¹，有限分段且端点单侧极限有限；采用2l周期奇/偶延拓。"
+      ],
+      "derivation": "奇延拓在0左极限为−f(0+)，右为f(0+)，平均为0；偶延拓两侧均为f(0+)，平均仍是该值。单点人为赋值不改变系数。",
+      "methodIds": [
+        "hm-fourier",
+        "hm-fourier-half-range"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "未核选出与此目标匹配的真题，题目列表留空；不因为其他题使用级数方法就列为傅里叶真题。"
+  ],
+  "status": "draft"
+}

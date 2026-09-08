@@ -1,0 +1,54 @@
+{
+  "id": "power-series-domain",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "求幂级数半径、收敛域与端点",
+  "summary": "内部绝对收敛与端点数项判别分别处理。",
+  "recognition": [
+    "变量以(x−c)^n出现，或已知某点条件收敛推断半径。"
+  ],
+  "strategy": [
+    "识别中心与真正的幂次。",
+    "先求半径，再将有限端点代回原式；已知条件收敛点必在有限半径边界。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-power-radius",
+      "when": "系数根值/比值可算，或已知内外收敛信息时。"
+    },
+    {
+      "methodId": "hm-ratio-root-test",
+      "when": "固定x后项比或根值可直接给绝对收敛区间。"
+    },
+    {
+      "methodId": "hm-alternating-series",
+      "when": "某端点化为交错数项级数时。"
+    },
+    {
+      "methodId": "hm-series-comparison",
+      "when": "端点变成正项p型时，用比较完成边界。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "polynomial-weight-radius",
+      "title": "乘多项式权重不改半径",
+      "latex": "\\limsup_{n\\to\\infty}|n^k a_n|^{1/n}=\\limsup_{n\\to\\infty}|a_n|^{1/n}",
+      "conditions": [
+        "k为固定实数；n≥1；考虑相同中心的两幂级数，允许半径0或∞。"
+      ],
+      "derivation": "n^(k/n)→1且为正，将其上下夹在1±ε并乘原非负根值序列，取上极限后令ε→0；因此根值半径相同。",
+      "methodIds": [
+        "hm-power-radius"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2015-301-03",
+    "2020-301-17"
+  ],
+  "boundaries": [
+    "半径不变不保证端点敛散不变；不能假设未知系数的相邻比极限存在。"
+  ],
+  "status": "draft"
+}

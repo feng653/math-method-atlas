@@ -1,0 +1,50 @@
+{
+  "id": "multivariable-local-behavior",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "判断多元极限、连续与可微",
+  "summary": "区分路径极限和统一线性近似，避免逐轴推全局。",
+  "recognition": [
+    "分段定义或趋近二元原点；要求连续、偏导、可微或近似余项阶。"
+  ],
+  "strategy": [
+    "先限定定义域内合法路径。",
+    "否定用两路径；肯定用关于距离的统一估计；可微再检查扣除线性项的余量。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-multivariable-limit",
+      "when": "沿不同路径疑似得到不同值，或可用半径统一估计时。"
+    },
+    {
+      "methodId": "hm-partial-total-differential",
+      "when": "已有偏导但需判可微，必须检查线性余量与距离之比。"
+    },
+    {
+      "methodId": "hm-second-taylor",
+      "when": "邻域C²已成立时，可用二阶展开控制误差；不能用它证明未知的C²。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "differentiability-residual",
+      "title": "可微余量的判据",
+      "latex": "\\frac{f(a+h,b+k)-f(a,b)-Ah-Bk}{\\sqrt{h^2+k^2}}\\longrightarrow0",
+      "conditions": [
+        "(a,b)为定义域内点；A、B为固定实数；(h,k)≠(0,0)。"
+      ],
+      "derivation": "可微定义为线性主部加o(距离)；除以距离即该极限。沿两坐标轴可推出A=fx、B=fy。",
+      "methodIds": [
+        "hm-partial-total-differential",
+        "hm-multivariable-limit"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-03"
+  ],
+  "boundaries": [
+    "该真题已给可微，使用线性余量求极限；不是从零判断可微的例子。"
+  ],
+  "status": "draft"
+}

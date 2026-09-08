@@ -1,0 +1,58 @@
+{
+  "id": "la-matrices-rank",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "计算秩或证明乘积秩约束",
+  "summary": "先尝试可逆行列变换化阶梯或分块对角",
+  "recognition": [
+    "目标是普通或分块矩阵的秩",
+    "已知AB=0等关系需转成像与核的包含"
+  ],
+  "strategy": [
+    "先尝试可逆行列变换化阶梯或分块对角",
+    "对乘积用上下界夹逼，零乘积用像包含于核",
+    "参数主元变零时分支复算"
+  ],
+  "methods": [
+    {
+      "methodId": "la-matrix-rank",
+      "when": "具体矩阵消元求主元数"
+    },
+    {
+      "methodId": "la-rank-inequalities",
+      "when": "只给乘积、零乘积或多个秩关系"
+    },
+    {
+      "methodId": "la-block-operations",
+      "when": "分块结构可用可逆块变换分离"
+    },
+    {
+      "methodId": "la-matrix-elementary",
+      "when": "需要证明变换前后秩不变"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-matrices-rank-formula-1",
+      "title": "实矩阵与Gram矩阵等秩",
+      "latex": "\\operatorname{rank}(A^TA)=\\operatorname{rank}(A)",
+      "conditions": [
+        "A为实m×n矩阵"
+      ],
+      "derivation": "AᵀAx=0推出xᵀAᵀAx=‖Ax‖²=0，反向显然；两者核相同且列数均为n，秩零度定理给结论。",
+      "methodIds": [
+        "la-matrix-rank",
+        "la-rank-inequalities"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-07",
+    "2023-301-05",
+    "2025-301-07"
+  ],
+  "boundaries": [
+    "普通复矩阵需用共轭转置；分块对角秩可加，不等于任意分块的对角秩可加。"
+  ],
+  "status": "draft"
+}

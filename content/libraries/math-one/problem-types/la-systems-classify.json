@@ -1,0 +1,58 @@
+{
+  "id": "la-systems-classify",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "判有解、唯一解与参数分支",
+  "summary": "比较系数矩阵和增广矩阵的秩",
+  "recognition": [
+    "求系统的相容条件、解的个数或同解关系",
+    "含参系数消元可能丢分支"
+  ],
+  "strategy": [
+    "比较系数矩阵和增广矩阵的秩",
+    "按主元是否为零逐支消元，先判相容再判自由元",
+    "方阵非奇异且只求少数分量时用克拉默法则"
+  ],
+  "methods": [
+    {
+      "methodId": "la-system-consistency",
+      "when": "判断有解与解的个数"
+    },
+    {
+      "methodId": "la-system-parameter",
+      "when": "参数影响主元或增广列相容条件"
+    },
+    {
+      "methodId": "la-system-cramer",
+      "when": "方阵行列式非零且目标分量少"
+    },
+    {
+      "methodId": "la-system-homogeneous",
+      "when": "同解齐次系统比较核空间"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-systems-classify-formula-1",
+      "title": "相容系统解集的维数",
+      "latex": "\\mathcal S=x_p+\\ker A,\\qquad \\dim\\mathcal S=n-\\operatorname{rank}A",
+      "conditions": [
+        "A有n列且Ax=b相容",
+        "维数指仿射维数"
+      ],
+      "derivation": "任意解减特解落入kerA，反之特解加核向量仍为解；核的维数由秩零度定理给出。",
+      "methodIds": [
+        "la-system-consistency",
+        "la-system-homogeneous"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2024-301-05",
+    "2022-301-06"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

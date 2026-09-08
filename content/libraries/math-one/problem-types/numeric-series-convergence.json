@@ -1,0 +1,53 @@
+{
+  "id": "numeric-series-convergence",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "判数项级数敛散和收敛类型",
+  "summary": "从通项与符号结构选定义、比较、比值或交错判别。",
+  "recognition": [
+    "求敛散、绝对/条件收敛，或参数使级数收敛。"
+  ],
+  "strategy": [
+    "先检查通项是否趋零和部分和能否裂项。",
+    "正项比较标准级数；阶乘指数优先比值/根值；变号先查绝对收敛再查交错条件。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-series-basic",
+      "when": "部分和能首尾抵消，或通项不趋零已足以否定。"
+    },
+    {
+      "methodId": "hm-series-comparison",
+      "when": "一般项与p级数/几何级数同阶，或可建立正项上下界。"
+    },
+    {
+      "methodId": "hm-ratio-root-test",
+      "when": "阶乘、指数或n次幂使相邻比/根值简化。"
+    },
+    {
+      "methodId": "hm-alternating-series",
+      "when": "正幅值最终单调趋零，且绝对收敛另需独立判断。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "telescoping-limit",
+      "title": "差分级数的和",
+      "latex": "\\sum_{n=1}^{\\infty}(b_{n+1}-b_n)=L-b_1",
+      "conditions": [
+        "bn为实数列且bn→L有限。"
+      ],
+      "derivation": "有限部分和先严格相消得到b(N+1)−b1，再取极限；无须交换无穷求和顺序。",
+      "methodIds": [
+        "hm-series-basic"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2019-301-03"
+  ],
+  "boundaries": [
+    "比值极限等于1不作结论；交错收敛不代表绝对收敛。"
+  ],
+  "status": "draft"
+}

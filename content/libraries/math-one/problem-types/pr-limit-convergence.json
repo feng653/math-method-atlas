@@ -1,0 +1,53 @@
+{
+  "id": "pr-limit-convergence",
+  "libraryId": "math-one",
+  "chapterId": "pr-limit",
+  "title": "样本平均的收敛与概率误差控制",
+  "summary": "把表达式识别为独立同分布平均或伯努利频率",
+  "recognition": [
+    "目标是依概率极限或达到精度的样本量",
+    "不能把收敛结论当成有限样本等式"
+  ],
+  "strategy": [
+    "把表达式识别为独立同分布平均或伯努利频率",
+    "仅有有限一阶绝对矩时用相应大数定律",
+    "若有有限方差，可用切比雪夫界直接给样本量充分条件"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-limit-lln",
+      "when": "独立同分布且E|X|有限，证明均值依概率收敛"
+    },
+    {
+      "methodId": "pr-chebyshev-lln",
+      "when": "由方差衰减证明收敛或处理伯努利频率"
+    },
+    {
+      "methodId": "pr-moment-inequality",
+      "when": "需要有限n下的偏差概率保证"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-limit-convergence-formula-1",
+      "title": "均值误差与样本量",
+      "latex": "P(|\\bar X_n-\\mu|\\ge\\varepsilon)\\le\\frac{\\sigma^2}{n\\varepsilon^2},\\quad n\\ge\\frac{\\sigma^2}{\\delta\\varepsilon^2}\\Rightarrow P(|\\bar X_n-\\mu|<\\varepsilon)\\ge1-\\delta",
+      "conditions": [
+        "独立同分布样本，均值μ和有限方差σ²",
+        "ε>0，0<δ<1，样本量取满足界的正整数"
+      ],
+      "derivation": "独立性给均值方差σ²/n，代入切比雪夫不等式；令上界不超过δ后取补事件。",
+      "methodIds": [
+        "pr-chebyshev-lln",
+        "pr-moment-inequality"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-09"
+  ],
+  "boundaries": [
+    "达到该样本量是充分条件而非最小所需量；有限一阶矩足以用大数定律但不足以套方差界。"
+  ],
+  "status": "draft"
+}

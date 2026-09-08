@@ -1,0 +1,56 @@
+{
+  "id": "pr-events-conditional-inference",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "条件概率、分层计算与逆向归因",
+  "summary": "先标出条件事件并核实分母正",
+  "recognition": [
+    "已知某事件发生后求另一事件概率",
+    "多阶段模型或隐含来源类别需要分层"
+  ],
+  "strategy": [
+    "先标出条件事件并核实分母正",
+    "按来源划分算各分支乘法概率再加总",
+    "观察结果后反推类别时使用贝叶斯归一化"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-event-conditional",
+      "when": "直接条件事件、尾事件或分步联合概率"
+    },
+    {
+      "methodId": "pr-event-total",
+      "when": "完备互斥划分下求总体概率"
+    },
+    {
+      "methodId": "pr-event-bayes",
+      "when": "已知结果反推来源类别"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-events-conditional-inference-formula-1",
+      "title": "条件优势比的贝叶斯更新",
+      "latex": "\\frac{P(B\\mid A)}{P(B^c\\mid A)}=\\frac{P(A\\mid B)}{P(A\\mid B^c)}\\frac{P(B)}{P(B^c)}",
+      "conditions": [
+        "0<P(B)<1，P(A)>0",
+        "P(A|Bᶜ)>0，使显示分母非零"
+      ],
+      "derivation": "分别写B和Bᶜ的贝叶斯式，相除时公共证据概率P(A)消去，剩似然比乘先验比。",
+      "methodIds": [
+        "pr-event-bayes",
+        "pr-event-conditional"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-08",
+    "2021-301-16",
+    "2024-301-16",
+    "2026-301-10"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

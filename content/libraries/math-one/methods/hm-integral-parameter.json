@@ -1,0 +1,34 @@
+{
+  "id": "hm-integral-parameter",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "含参积分求导与边界项",
+  "summary": "区分端点随参数变化和被积函数随参数变化的贡献。",
+  "conditions": [
+    "有限区间情形：f(t,x)及其对x的偏导在包含积分区域的矩形上连续，α(x)、β(x)可导且取值在该矩形内。",
+    "反常积分不能直接沿用这组有限区间条件；需另证可交换求导与极限，本卡不提供无条件交换。"
+  ],
+  "steps": [
+    "用t作积分变量，x作外参数，分清依赖。",
+    "检查f和偏导的连续性及端点可导性。",
+    "求上端点贡献减下端点贡献，再加被积函数的参数偏导积分。",
+    "如用求导法计算原积分，最后积分回参数并用可算参数值定常数。"
+  ],
+  "formula": "\\frac d{dx}\\int_{\\alpha(x)}^{\\beta(x)}f(t,x)dt=f(\\beta(x),x)\\beta'(x)-f(\\alpha(x),x)\\alpha'(x)+\\int_{\\alpha(x)}^{\\beta(x)}\\frac{\\partial f}{\\partial x}(t,x)dt",
+  "pitfalls": [
+    "固定上下限不意味着导数为零。",
+    "有奇点、无穷区间或偏导不连续时必须重新验证条件；常规考题优先用显式展开和基本定理。"
+  ],
+  "example": {
+    "prompt": "自编：求H(x)=∫₀ˣ(x−t)eᵗdt的导数。",
+    "solution": "上端点项为(x−x)eˣ=0，下端点项为0；参数偏导为eᵗ，故H′(x)=∫₀ˣeᵗdt=eˣ−1。也可展开x∫eᵗ−∫teᵗ按乘积法则复核。"
+  },
+  "relatedIds": [
+    "hm-newton-leibniz",
+    "hm-integral-identity"
+  ],
+  "topicIds": [
+    "integrals-newton-leibniz"
+  ],
+  "status": "reviewed"
+}

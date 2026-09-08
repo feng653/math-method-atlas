@@ -1,0 +1,35 @@
+{
+  "id": "hm-integral-identity",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分等式：作差、求导与初值",
+  "summary": "把待证积分恒等式化为零函数或常函数，并用一个基点确定常数。",
+  "conditions": [
+    "涉及变上限或参数的两边在同一连通区间可导；求导依据需单独验证。",
+    "固定端点的等式先用换元、分部或线性化为可核验的差，不能凭导数为零就忽略常数。"
+  ],
+  "steps": [
+    "定义差函数 H(x)=左边−右边，写清变量区间。",
+    "用变限积分求导、链式法则或合法的参数求导算 H′。",
+    "证明 H′=0，再验证区间内一个基点 H(x₀)=0。",
+    "若等式不含变量，则尝试端点反射配对、分部搬移导数或直接化简差值。"
+  ],
+  "formula": "H'(x)=0\\ \\text{on }I,\\ H(x_0)=0\\ \\Longrightarrow\\ H(x)=0\\quad(x\\in I)",
+  "pitfalls": [
+    "不同连通区间的常数可能不同。",
+    "被积函数含外参数时，只求积分上限项通常错误。"
+  ],
+  "example": {
+    "prompt": "自编：f连续，证明 ∫₀ˣ(x−t)f(t)dt=∫₀ˣ[∫₀ᵘf(t)dt]du。",
+    "solution": "记F(x)=∫₀ˣf(t)dt，左边=xF(x)−∫₀ˣtf(t)dt，其导数为F(x)，右边导数同为F(x)；两边在x=0均为0，故同一区间恒等。"
+  },
+  "relatedIds": [
+    "hm-newton-leibniz",
+    "hm-integration-by-parts",
+    "hm-definite-symmetry"
+  ],
+  "topicIds": [
+    "integrals-newton-leibniz"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "spatial-metric",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "求空间长度、夹角与体积",
+  "summary": "把几何度量转成向量投影及三种积。",
+  "recognition": [
+    "题目给点坐标、方向或法向，求夹角、距离、投影或体积。"
+  ],
+  "strategy": [
+    "把点差写成向量，先查非零和退化情况。",
+    "按长度/角度/面积体积选择点积、叉积或混合积。",
+    "两直线非平行用共同法向投影；平行用线上一点到另一线的距离。零距离再区分相交与重合。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-vector-products",
+      "when": "给边向量，需面积、体积或正交关系时选择相应积。"
+    },
+    {
+      "methodId": "hm-direction-cosines",
+      "when": "给坐标轴夹角或方向比例，先规范成单位向量。"
+    },
+    {
+      "methodId": "hm-space-angle-distance",
+      "when": "求点线、点面或两直线最短距离时用投影；两线先按方向叉积是否为零分支，平行时退回点线距离。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "orthogonal-projection-length",
+      "title": "垂直分量长度",
+      "latex": "d^2=\\|w\\|^2-\\frac{(w\\cdot v)^2}{\\|v\\|^2}",
+      "conditions": [
+        "v≠0；w=P−A，直线经过A且方向为v。"
+      ],
+      "derivation": "沿v的投影为((w·v)/||v||²)v，与余量正交；勾股分解得到点到直线距离平方。",
+      "methodIds": [
+        "hm-vector-products",
+        "hm-space-angle-distance"
+      ]
+    },
+    {
+      "id": "two-lines-distance",
+      "title": "两直线距离的分支公式",
+      "latex": "d=\\begin{cases}\\dfrac{|(B-A)\\cdot(u\\times v)|}{\\|u\\times v\\|},&u\\times v\\ne0,\\\\[4pt]\\dfrac{\\|(B-A)\\times u\\|}{\\|u\\|},&u\\times v=0.\\end{cases}",
+      "conditions": [
+        "L1=A+tu、L2=B+sv，u和v均非零；参数t,s遍历实数。"
+      ],
+      "derivation": "非平行时所有连接向量在共同法向u×v上的投影固定，其余在span(u,v)中的分量可通过唯一的t,s消去，因此最短长度是该投影模；平行时沿共同方向移动不改变点线垂直距离。",
+      "methodIds": [
+        "hm-space-angle-distance",
+        "hm-vector-products"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "无向线面角与有向向量夹角不能混用；非平行分支给0表示相交，平行分支给0表示重合。"
+  ],
+  "status": "draft"
+}

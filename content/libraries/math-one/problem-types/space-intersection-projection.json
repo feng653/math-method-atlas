@@ -1,0 +1,55 @@
+{
+  "id": "space-intersection-projection",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "求交线与平面投影",
+  "summary": "先联立几何约束，再消去投影方向坐标。",
+  "recognition": [
+    "两个曲面相交，要求交线方程或其投影；常为积分区域的前置目标。"
+  ],
+  "strategy": [
+    "列两方程及高度、半空间约束。",
+    "消元后检查每个投影点确有原像，必要时分支参数化。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-space-intersections",
+      "when": "直接给两曲面，消去被投影坐标最短时使用。"
+    },
+    {
+      "methodId": "hm-line-plane-equations",
+      "when": "相交对象包含平面或结果为直线，用法向联立得到方向。"
+    },
+    {
+      "methodId": "hm-revolution-cylinder",
+      "when": "圆柱或旋转曲面可用到轴距离简化联立方程。"
+    },
+    {
+      "methodId": "hm-vector-products",
+      "when": "两平面法向独立时，叉积直接给交线方向。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "two-planes-line",
+      "title": "两平面交线方向",
+      "latex": "v=n_1\\times n_2,\\qquad r=r_0+t v",
+      "conditions": [
+        "两平面法向n1、n2不平行；r0同时满足两平面方程。"
+      ],
+      "derivation": "交线方向与两个法向都垂直，叉积非零给该方向；两独立平面方程的解空间维数为1。",
+      "methodIds": [
+        "hm-line-plane-equations",
+        "hm-vector-products",
+        "hm-space-intersections"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2017-301-19"
+  ],
+  "boundaries": [
+    "2017Q19仅第一问匹配投影目标；质量任务属积分题型。消元得到必要条件不自动充分。"
+  ],
+  "status": "draft"
+}

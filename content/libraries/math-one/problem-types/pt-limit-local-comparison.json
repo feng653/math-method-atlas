@@ -1,0 +1,67 @@
+{
+  "id": "pt-limit-local-comparison",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "函数极限、主部与待定参数",
+  "summary": "先定趋近方式与形式，再保留首个不抵消主部",
+  "recognition": [
+    "不定式、相消差或指定等价关系"
+  ],
+  "strategy": [
+    "先定趋近方式与形式，再保留首个不抵消主部",
+    "乘商可等价替换；差式须展开；洛必达独立检查分母导数与导数比极限"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-limit-definition",
+      "when": "先判左右极限及基本存在条件"
+    },
+    {
+      "methodId": "hm-important-limits",
+      "when": "可直接化重要极限且内变量趋0"
+    },
+    {
+      "methodId": "hm-equivalent-infinitesimal",
+      "when": "乘商中主部替换不触发抵消"
+    },
+    {
+      "methodId": "hm-infinitesimal-order",
+      "when": "指定无穷小阶数或参数抵消"
+    },
+    {
+      "methodId": "hm-taylor-limit",
+      "when": "相减后需保留高阶项"
+    },
+    {
+      "methodId": "hm-lhopital",
+      "when": "满足0/0或无穷分母型法则条件"
+    },
+    {
+      "methodId": "hm-squeeze",
+      "when": "振荡因子有统一界"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-limit-local-comparison-formula-1",
+      "title": "二阶残差",
+      "latex": "e^x-1-x\\sim x^2/2,\\quad\\ln(1+x)-x\\sim-x^2/2",
+      "conditions": [
+        "x趋0，第二式1+x>0"
+      ],
+      "derivation": "零点泰勒展开到二阶，余项o(x²)除以x²趋0。",
+      "methodIds": [
+        "hm-taylor-limit",
+        "hm-infinitesimal-order"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2009-301-01",
+    "2014-301-15"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

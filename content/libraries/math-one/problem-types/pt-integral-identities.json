@@ -1,0 +1,80 @@
+{
+  "id": "pt-integral-identities",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分等式与恒等关系证明",
+  "summary": "先找同一对象的不同表示，再比较导数与一个基值",
+  "recognition": [
+    "要求两个积分相等、满足恒等关系或由导数约束反推积分"
+  ],
+  "strategy": [
+    "先找同一对象的不同表示，再比较导数与一个基值",
+    "反射换元、分部和参数求导按结构选择；不可把需证明的等式当换序前提"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-integral-identity",
+      "when": "两边作差、求导后匹配并核基值"
+    },
+    {
+      "methodId": "hm-definite-symmetry",
+      "when": "等式来自区间反射或平移"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "when": "导数积或积分核可转移微分"
+    },
+    {
+      "methodId": "hm-integral-parameter",
+      "when": "含参恒等式可在有条件下求导"
+    },
+    {
+      "methodId": "hm-substitution-integral",
+      "when": "两边积分核存在可逆变量替换时，同步变换微分与端点；反射只是其中一例。"
+    },
+    {
+      "methodId": "hm-newton-leibniz",
+      "when": "将导数积分还原端点差，或以原函数族与基值证明两种累积表示相同。"
+    },
+    {
+      "methodId": "hm-riemann-sum",
+      "when": "两边可表示为同一可积函数的黎曼和极限时，先证明网格及采样条件。"
+    },
+    {
+      "methodId": "hm-double-cartesian",
+      "when": "两次累次积分表示同一区域时，核在有界正规区域及其边界连续可换序；更一般情形须验证绝对可积等Fubini条件，不忽略区域与奇点。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-integral-identities-formula-1",
+      "title": "导数加基值判恒等",
+      "latex": "F'(x)=G'(x),\\quad F(x_0)=G(x_0)\\quad\\Longrightarrow\\quad F(x)=G(x)",
+      "conditions": [
+        "F、G在同一连通区间可导，x₀在该区间"
+      ],
+      "derivation": "差函数导数为0，中值定理说明差恒定，再由基值为0。",
+      "methodIds": [
+        "hm-integral-identity"
+      ]
+    },
+    {
+      "id": "pt-integral-identities-formula-2",
+      "title": "积分分部恒等式",
+      "latex": "\\int_a^bf'g+\\int_a^bfg'=f(b)g(b)-f(a)g(a)",
+      "conditions": [
+        "f、g在[a,b]连续可导"
+      ],
+      "derivation": "乘积求导后积分，用牛顿莱布尼茨。",
+      "methodIds": [
+        "hm-integration-by-parts",
+        "hm-integral-identity"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "此类按证明目标划分；不是所有求积分数值题都应归到等式证明。"
+  ],
+  "status": "draft"
+}

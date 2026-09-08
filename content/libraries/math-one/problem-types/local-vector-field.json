@@ -1,0 +1,51 @@
+{
+  "id": "local-vector-field",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "求散度、旋度及局部恒等式",
+  "summary": "分清标量源强与向量旋转量，按坐标求偏导。",
+  "recognition": [
+    "题目直接要求div或rot，而未要求边界积分。"
+  ],
+  "strategy": [
+    "先写场的三个分量，按右手坐标顺序求导。",
+    "若需判断势场可进一步查curl；恒等式需要足够混合偏导正则性。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-divergence",
+      "when": "问源强或div时，只对每个分量自身坐标求偏导后相加。"
+    },
+    {
+      "methodId": "hm-curl",
+      "when": "问rot时计算三个交叉偏导差，不把curl当标量。"
+    },
+    {
+      "methodId": "hm-path-independence",
+      "when": "局部curl为零后还需判断全域势函数时，检查域拓扑或直接构造。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "div-curl-zero",
+      "title": "旋度的散度为零",
+      "latex": "\\operatorname{div}(\\operatorname{curl}F)=0",
+      "conditions": [
+        "F三个分量在所考察开域C²；使用右手直角坐标。"
+      ],
+      "derivation": "展开为Ryx−Qzx+Pzy−Rxy+Qxz−Pyz；连续混合偏导可交换，三对分别抵消。",
+      "methodIds": [
+        "hm-divergence",
+        "hm-curl"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2018-301-11",
+    "2016-301-10"
+  ],
+  "boundaries": [
+    "这些题只要求旋度坐标，不声称考查散度旋度恒等式；C¹一般不足以使用全部二阶混合偏导交换。"
+  ],
+  "status": "draft"
+}

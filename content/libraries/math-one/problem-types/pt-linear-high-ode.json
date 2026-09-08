@@ -1,0 +1,65 @@
+{
+  "id": "pt-linear-high-ode",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "常系数高阶方程与解的叠加",
+  "summary": "先求齐次基，再选非齐次特解",
+  "recognition": [
+    "高阶线性方程或多个特解反推通解"
+  ],
+  "strategy": [
+    "先求齐次基，再选非齐次特解",
+    "计重根和共振次数；特解之差需检查独立性才能当齐次基"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-ode-characteristic",
+      "when": "常系数齐次的特征根与重数"
+    },
+    {
+      "methodId": "hm-ode-undetermined",
+      "when": "右端多项式×指数×三角的有限和"
+    },
+    {
+      "methodId": "hm-linear-ode-structure",
+      "when": "由特解差与解空间维数重建"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-linear-high-ode-formula-1",
+      "title": "指数移位",
+      "latex": "P(D)[e^{ax}v(x)]=e^{ax}P(D+a)v(x)",
+      "conditions": [
+        "P为常系数多项式，v有足够阶导数"
+      ],
+      "derivation": "D(e^(ax)v)=e^(ax)(D+a)v，按阶归纳后线性组合。",
+      "methodIds": [
+        "hm-ode-undetermined",
+        "hm-ode-characteristic"
+      ]
+    },
+    {
+      "id": "pt-linear-high-ode-formula-2",
+      "title": "特解差",
+      "latex": "L[y_1]=L[y_2]=f\\ \\Longrightarrow\\ L[y_1-y_2]=0",
+      "conditions": [
+        "L线性，解在同一区间"
+      ],
+      "derivation": "由算子线性相减；差函数不自动构成独立基。",
+      "methodIds": [
+        "hm-linear-ode-structure"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2009-301-10",
+    "2010-301-15",
+    "2013-301-10",
+    "2014-301-17"
+  ],
+  "boundaries": [
+    "任何除法与换元先核合法区间，丢失的平衡解须单独回代。"
+  ],
+  "status": "draft"
+}

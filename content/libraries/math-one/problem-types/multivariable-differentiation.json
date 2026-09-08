@@ -1,0 +1,51 @@
+{
+  "id": "multivariable-differentiation",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求复合或隐式函数偏导与微分",
+  "summary": "按变量依赖选择直接链式或解微分线性系统。",
+  "recognition": [
+    "外函数未知但偏导可保留符号，或未知函数由一组方程定义。"
+  ],
+  "strategy": [
+    "画变量依赖关系，确认实际独立变量。",
+    "直接复合逐路径累加；隐式关系先微分后解待求导数，高阶项保留全部乘积项。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-multivariable-chain",
+      "when": "显式给u(x,y)、v(x,y)及f(u,v)，从内到外链式求导。"
+    },
+    {
+      "methodId": "hm-multivariable-implicit",
+      "when": "未知变量只由方程定义，且对未知量Jacobian可逆时。"
+    },
+    {
+      "methodId": "hm-partial-total-differential",
+      "when": "要求全微分时，将所得偏导乘各独立增量汇总。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "implicit-differential",
+      "title": "隐式全微分",
+      "latex": "dz=-\\frac{F_x}{F_z}\\,dx-\\frac{F_y}{F_z}\\,dy",
+      "conditions": [
+        "F在目标点邻域C¹，F(x0,y0,z0)=0，Fz在该点非零。"
+      ],
+      "derivation": "隐函数定理先保证局部z(x,y)可微；对F=0微分，移项并除以Fz。",
+      "methodIds": [
+        "hm-multivariable-implicit",
+        "hm-partial-total-differential"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2017-301-15",
+    "2016-301-11"
+  ],
+  "boundaries": [
+    "隐式偏导分母为零时需要单独分析；一阶可微不足以直接使用二阶链式。"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "la-systems-solutions",
+  "libraryId": "math-one",
+  "chapterId": "la-systems",
+  "title": "求基础解系与非齐次全体解",
+  "summary": "阶梯化后让自由变量依次取标准单位值生成基础解系",
+  "recognition": [
+    "任务是明确写出所有向量或解集几何",
+    "仅说有解或算一个解不够"
+  ],
+  "strategy": [
+    "阶梯化后让自由变量依次取标准单位值生成基础解系",
+    "相容非齐次系统另取一特解",
+    "代回验证且保留题目额外非零约束"
+  ],
+  "methods": [
+    {
+      "methodId": "la-system-homogeneous",
+      "when": "求齐次全解或由向量条件整理出的核"
+    },
+    {
+      "methodId": "la-system-general",
+      "when": "已知非齐次相容，求特解加核空间"
+    },
+    {
+      "methodId": "la-system-parameter",
+      "when": "参数变化影响自由变量与特解"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-systems-solutions-formula-1",
+      "title": "两解的仿射组合",
+      "latex": "Au=b,\\ Av=b\\ \\Longrightarrow\\ A(tu+(1-t)v)=b",
+      "conditions": [
+        "u,v是同一非齐次系统的解",
+        "t为任意实数"
+      ],
+      "derivation": "线性性给右端tb+(1−t)b=b；同时u−v属于核。若核一维且u≠v，此仿射直线就是全解。",
+      "methodIds": [
+        "la-system-general",
+        "la-system-homogeneous"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2025-301-06",
+    "2025-301-21",
+    "2022-301-21"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

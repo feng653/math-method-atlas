@@ -1,0 +1,50 @@
+{
+  "id": "double-integral-coordinate-choice",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "计算二重积分与换序换元",
+  "summary": "由区域边界和被积函数一起决定坐标。",
+  "recognition": [
+    "积分上下限嵌套复杂，区域呈圆形/斜边界，或内积分无初等原函数。"
+  ],
+  "strategy": [
+    "画区域并检查积分可积性。",
+    "比较竖条、横条、极坐标或组合变量；换序和换元后重新写完整区域。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-double-cartesian",
+      "when": "横条比竖条简单，或换序后内积分可算时。"
+    },
+    {
+      "methodId": "hm-double-polar",
+      "when": "圆、扇形和x²+y²出现时，考虑r与角度。"
+    },
+    {
+      "methodId": "hm-general-jacobian",
+      "when": "边界或函数主要依赖x+y、x−y等组合时。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "elliptic-polar",
+      "title": "椭圆尺度极坐标",
+      "latex": "x=ar\\cos\\theta,\\quad y=br\\sin\\theta,\\quad dx\\,dy=ab\\,r\\,dr\\,d\\theta",
+      "conditions": [
+        "a,b>0；用r≥0和不重复的角域；函数与区域满足积分换元条件。"
+      ],
+      "derivation": "先从单位圆盘按两轴尺度a、b拉伸，行列式ab；再作极坐标，其行列式r，两步行列式相乘。",
+      "methodIds": [
+        "hm-double-polar",
+        "hm-general-jacobian"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2016-301-15"
+  ],
+  "boundaries": [
+    "题面已给极域不意味着可漏Jacobian；条件收敛反常积分不能随意换序。"
+  ],
+  "status": "draft"
+}

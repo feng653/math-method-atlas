@@ -1,0 +1,61 @@
+{
+  "id": "pr-moments-variance-dependence",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "方差、相关性与概率界",
+  "summary": "先求一二阶矩及混合矩，再组装方差与协方差",
+  "recognition": [
+    "目标是线性组合方差、相关系数或偏离概率界",
+    "协方差交叉项可能决定最值"
+  ],
+  "strategy": [
+    "先求一二阶矩及混合矩，再组装方差与协方差",
+    "相关系数须两方差严格正",
+    "只知均方信息时给切比雪夫界，不把界写成精确概率"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-moment-variance",
+      "when": "展开平方或求线性组合方差"
+    },
+    {
+      "methodId": "pr-moment-covariance",
+      "when": "从混合矩或独立差变量推出协方差"
+    },
+    {
+      "methodId": "pr-moment-correlation",
+      "when": "标准化协方差且方差非零"
+    },
+    {
+      "methodId": "pr-moment-inequality",
+      "when": "只知均值方差而要求偏离概率上界"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-moments-variance-dependence-formula-1",
+      "title": "条件方差分解",
+      "latex": "\\operatorname{Var}(Y)=E[\\operatorname{Var}(Y\\mid X)]+\\operatorname{Var}(E[Y\\mid X])",
+      "conditions": [
+        "E(Y²)<∞"
+      ],
+      "derivation": "令m(X)=E(Y|X)，写Y−EY=(Y−m)+(m−EY)；条件均值使交叉项期望为零，两平方项分别给右侧两项。",
+      "methodIds": [
+        "pr-moment-variance",
+        "pr-moment-covariance"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-08",
+    "2022-301-09",
+    "2022-301-22",
+    "2025-301-08",
+    "2026-301-08",
+    "2026-301-16"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

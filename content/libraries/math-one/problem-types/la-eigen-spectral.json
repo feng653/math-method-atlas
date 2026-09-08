@@ -1,0 +1,55 @@
+{
+  "id": "la-eigen-spectral",
+  "libraryId": "math-one",
+  "chapterId": "la-eigen",
+  "title": "求特征结构并判断能否对角化",
+  "summary": "求特征多项式并逐根解核",
+  "recognition": [
+    "目标是特征值、特征向量或可对角化参数",
+    "重根必须检查对应核维数"
+  ],
+  "strategy": [
+    "求特征多项式并逐根解核",
+    "几何重数总和达到阶数才有满组特征基",
+    "实对称矩阵优先在各特征空间正交化"
+  ],
+  "methods": [
+    {
+      "methodId": "la-eigen-characteristic",
+      "when": "从特征多项式和核求谱与特征子空间"
+    },
+    {
+      "methodId": "la-eigen-diagonalization",
+      "when": "普通矩阵以满组独立特征向量判断或构造"
+    },
+    {
+      "methodId": "la-eigen-symmetric",
+      "when": "实对称矩阵可构造标准正交特征基"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-eigen-spectral-formula-1",
+      "title": "多项式作用于特征向量",
+      "latex": "Av=\\lambda v\\quad\\Longrightarrow\\quad p(A)v=p(\\lambda)v",
+      "conditions": [
+        "v≠0且p为标量多项式"
+      ],
+      "derivation": "反复作用得Aᵏv=λᵏv，按p的系数线性组合。它给出已知特征向量在矩阵多项式下的特征值，不自动证明对角化。",
+      "methodIds": [
+        "la-eigen-characteristic",
+        "la-eigen-diagonalization"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-05",
+    "2023-301-06",
+    "2026-301-15",
+    "2025-301-21"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "pt-function-admissibility",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "定义域、复合反函数与函数性质",
+  "summary": "先约束定义域，再归约到已知区间",
+  "recognition": [
+    "求表达式定义范围或由性质归约取值"
+  ],
+  "strategy": [
+    "先约束定义域，再归约到已知区间",
+    "反函数先限到严格单调分支；周期与奇偶变换后检查点仍合法"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-function-domain",
+      "when": "根式、对数、复合及反函数先取定义域"
+    },
+    {
+      "methodId": "hm-function-properties",
+      "when": "奇偶、周期与初等图形归约取值"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-function-admissibility-formula-1",
+      "title": "周期与奇性",
+      "latex": "f(x+kT)=f(x),\\quad f(-x)=-f(x)",
+      "conditions": [
+        "k为整数，T是周期，f为奇函数，相关点都在定义域"
+      ],
+      "derivation": "先作周期平移，再作奇性反射；不能把局部表达式直接延伸全域。",
+      "methodIds": [
+        "hm-function-properties"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2014-301-10"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

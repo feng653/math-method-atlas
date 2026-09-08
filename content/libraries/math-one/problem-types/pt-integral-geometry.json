@@ -1,0 +1,72 @@
+{
+  "id": "pt-integral-geometry",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分几何应用",
+  "summary": "画截面后选正确几何微元，区分面积与弧长",
+  "recognition": [
+    "求面积、截面体积、弧长或旋转侧面积"
+  ],
+  "strategy": [
+    "画截面后选正确几何微元，区分面积与弧长",
+    "交点、分段和半径先确定；无界区域补截断极限"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-integral-area-volume",
+      "when": "上减下面积或旋转圆环体积"
+    },
+    {
+      "methodId": "hm-cross-section-average",
+      "when": "一般截面积或函数平均值"
+    },
+    {
+      "methodId": "hm-arc-work-integral",
+      "when": "弧长与曲线累积量"
+    },
+    {
+      "methodId": "hm-revolution-area",
+      "when": "周长乘弧长元求旋转侧面积"
+    },
+    {
+      "methodId": "hm-improper-integral",
+      "when": "无界区域或端点奇性"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-integral-geometry-formula-1",
+      "title": "参数旋转侧面积",
+      "latex": "S=2\\pi\\int_\\alpha^\\beta |y(t)|\\sqrt{[x'(t)]^2+[y'(t)]^2}\\,dt",
+      "conditions": [
+        "分段C¹正则曲线绕x轴，不重复描同一曲面片；积分收敛"
+      ],
+      "derivation": "圆台侧面微元为2πr ds，r=|y|，参数弧长元代入。",
+      "methodIds": [
+        "hm-revolution-area",
+        "hm-arc-work-integral"
+      ]
+    },
+    {
+      "id": "pt-integral-geometry-formula-2",
+      "title": "平行截面体积",
+      "latex": "V=\\int_a^b A(x)dx",
+      "conditions": [
+        "A为真实截面积且可积"
+      ],
+      "derivation": "薄片体积A(x)Δx作黎曼和极限。",
+      "methodIds": [
+        "hm-cross-section-average"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2009-301-16",
+    "2011-301-09",
+    "2012-301-18"
+  ],
+  "boundaries": [
+    "先核各公式的独立条件；同一题可归属多个实际任务题型。"
+  ],
+  "status": "draft"
+}

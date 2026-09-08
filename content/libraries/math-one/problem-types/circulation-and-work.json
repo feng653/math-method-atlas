@@ -1,0 +1,56 @@
+{
+  "id": "circulation-and-work",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "求有向功、闭路环流与势差",
+  "summary": "比较直接参数化、势函数和区域公式。",
+  "recognition": [
+    "积分含Pdx+Qdy+Rdz，曲线开闭性和场奇点决定路线。"
+  ],
+  "strategy": [
+    "先核方向、是否闭合、奇点是否在跨面/区域内。",
+    "直接参数化总是先检查的候选；有势函数取端点差，平面/空间闭路再选择Green/Stokes。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-line-second-kind",
+      "when": "曲线易参数化，或区域内部有奇点使区域定理不适用。"
+    },
+    {
+      "methodId": "hm-path-independence",
+      "when": "可找到全域势函数，或单连通域满足交叉偏导条件。"
+    },
+    {
+      "methodId": "hm-green",
+      "when": "平面闭路且整个区域上场C¹，旋度分量比边界积分简单。"
+    },
+    {
+      "methodId": "hm-stokes",
+      "when": "空间闭路可选容易的跨面，旋度通量比曲线参数简单。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "constant-curl-area",
+      "title": "常旋度平面环流",
+      "latex": "\\oint_{\\partial D}(P\\,dx+Q\\,dy)=c\\,\\operatorname{area}(D)",
+      "conditions": [
+        "D有界、边界分段光滑且正向；P,Q在D及边界的开邻域C¹；Qx−Py=c为常数。"
+      ],
+      "derivation": "Green公式将环流换为∬D(Qx−Py)dA；常数c提取后剩区域面积。",
+      "methodIds": [
+        "hm-green",
+        "hm-line-second-kind"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2015-301-19",
+    "2020-301-16",
+    "2016-301-17"
+  ],
+  "boundaries": [
+    "2020Q16内部有奇点，仅匹配直接参数路线，不作为Green正例。开曲线不能未经补边就用闭路公式。"
+  ],
+  "status": "draft"
+}

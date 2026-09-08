@@ -1,0 +1,51 @@
+{
+  "id": "pt-power-limits",
+  "libraryId": "math-one",
+  "chapterId": "limits",
+  "title": "幂指不定式",
+  "summary": "先确保底数正，取对数化乘积",
+  "recognition": [
+    "变量底数与指数共同趋极限"
+  ],
+  "strategy": [
+    "先确保底数正，取对数化乘积",
+    "算出对数极限后再由指数连续性还原"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-power-indeterminate",
+      "when": "正底数幂指不定式"
+    },
+    {
+      "methodId": "hm-taylor-limit",
+      "when": "对数表达式有高阶抵消"
+    },
+    {
+      "methodId": "hm-important-limits",
+      "when": "1+u型底数可直接比较"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-power-limits-formula-1",
+      "title": "指数化判据",
+      "latex": "u\\to0,\\quad vu\\to L\\in\\mathbb R\\quad\\Longrightarrow\\quad(1+u)^v\\to e^L",
+      "conditions": [
+        "邻域中1+u>0"
+      ],
+      "derivation": "ln(1+u)/u趋1，对数v ln(1+u)趋L，取指数。u=0处按连续值解释。",
+      "methodIds": [
+        "hm-power-indeterminate",
+        "hm-important-limits"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-01",
+    "2011-301-15"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

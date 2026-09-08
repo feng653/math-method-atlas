@@ -1,0 +1,54 @@
+{
+  "id": "pr-sampling-statistics",
+  "libraryId": "math-one",
+  "chapterId": "pr-sampling",
+  "title": "识别样本统计量与均值平方和分布",
+  "summary": "先确认简单随机样本和总体正态性",
+  "recognition": [
+    "目标是样本均值、样本方差或标准化平方和的分布",
+    "已知总体均值与用样本均值中心化的自由度不同"
+  ],
+  "strategy": [
+    "先确认简单随机样本和总体正态性",
+    "总体均值已知的中心平方和保留n自由度",
+    "用样本均值估计中心则减去1自由度，且正态样本均值与样本方差独立"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-sample-empirical",
+      "when": "辨认总体、简单样本、统计量和观测值并计算样本矩"
+    },
+    {
+      "methodId": "pr-sample-normal",
+      "when": "正态样本均值分布或均值与方差的独立性"
+    },
+    {
+      "methodId": "pr-sample-chi-square",
+      "when": "正态标准平方和以及是否损失一个自由度"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-sampling-statistics-formula-1",
+      "title": "正态样本平方和的独立分解",
+      "latex": "\\frac{\\sum_{i=1}^n(X_i-\\mu)^2}{\\sigma^2}=\\frac{(n-1)S^2}{\\sigma^2}+\\frac{n(\\bar X-\\mu)^2}{\\sigma^2},\\quad \\chi_n^2=\\chi_{n-1}^2+\\chi_1^2",
+      "conditions": [
+        "Xᵢ为N(μ,σ²)简单样本，σ²>0，n≥2",
+        "S²分母n−1；右边两随机量独立，末式表示相应分布分解"
+      ],
+      "derivation": "展开Xᵢ−μ=(Xᵢ−均值)+(均值−μ)，中心偏差和为零消去交叉项；正交变换将标准样本分为均值方向和n−1个残差方向，故平方和独立。",
+      "methodIds": [
+        "pr-sample-chi-square",
+        "pr-sample-normal"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2023-301-10",
+    "2021-301-10"
+  ],
+  "boundaries": [
+    "未给正态性时仍可算样本矩，但这些有限样本精确分布及独立性不能无条件沿用。"
+  ],
+  "status": "draft"
+}

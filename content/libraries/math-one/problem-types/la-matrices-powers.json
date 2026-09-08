@@ -1,0 +1,58 @@
+{
+  "id": "la-matrices-powers",
+  "libraryId": "math-one",
+  "chapterId": "la-matrices",
+  "title": "矩阵幂与线性递推通项",
+  "summary": "低秩先分解A=BC，把幂降到CB",
+  "recognition": [
+    "求A的正整数幂或向量递推通项",
+    "观察低秩、幂零扰动与可对角化结构"
+  ],
+  "strategy": [
+    "低秩先分解A=BC，把幂降到CB",
+    "可对角化时在特征基求幂；单位阵加幂零部分用有限二项式",
+    "还原原坐标并独立检查零次幂及初值"
+  ],
+  "methods": [
+    {
+      "methodId": "la-matrix-power",
+      "when": "可写成标量单位阵加幂零矩阵或有低次代数关系"
+    },
+    {
+      "methodId": "la-rank-factor-power",
+      "when": "秩远小于阶数且可构造列秩分解"
+    },
+    {
+      "methodId": "la-eigen-diagonalization",
+      "when": "能找到满组独立特征向量"
+    },
+    {
+      "methodId": "la-matrix-product",
+      "when": "从递推列出A并用乘法还原序列"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-matrices-powers-formula-1",
+      "title": "秩一矩阵的正整数幂",
+      "latex": "A=uv^T\\quad\\Longrightarrow\\quad A^k=(v^Tu)^{k-1}uv^T\\quad(k\\ge1)",
+      "conditions": [
+        "u,v为同维列向量",
+        "k=1时标量零次幂约定为1，或单独写A¹=A"
+      ],
+      "derivation": "A²=u(vᵀu)vᵀ；再用归纳法每次右乘A多出一个标量vᵀu。若vᵀu=0则所有k≥2的幂为零。",
+      "methodIds": [
+        "la-rank-factor-power",
+        "la-matrix-power"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2024-301-21",
+    "2026-301-21"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

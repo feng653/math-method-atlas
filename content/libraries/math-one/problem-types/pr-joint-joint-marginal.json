@@ -1,0 +1,57 @@
+{
+  "id": "pr-joint-joint-marginal",
+  "libraryId": "math-one",
+  "chapterId": "pr-joint",
+  "title": "联合分布、边缘分布与独立性",
+  "summary": "先确认离散、绝对连续或含奇异部分",
+  "recognition": [
+    "目标是联合表、联合CDF、边缘或独立判定",
+    "支持集可能不是矩形，甚至没有二维密度"
+  ],
+  "strategy": [
+    "先确认离散、绝对连续或含奇异部分",
+    "离散逐行列求和，连续按真实支持积分，一般分布用CDF矩形增量",
+    "独立应核对完整分布分解，零协方差不能替代"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-discrete-joint",
+      "when": "给有限或可数联合表时求和"
+    },
+    {
+      "methodId": "pr-joint-cdf",
+      "when": "一般二维分布或矩形概率，无须假定密度存在"
+    },
+    {
+      "methodId": "pr-joint-marginal",
+      "when": "有联合密度时按支持积分求边缘"
+    },
+    {
+      "methodId": "pr-joint-independence",
+      "when": "通过CDF分解，或相应联合质量/密度分解判断独立"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-joint-joint-marginal-formula-1",
+      "title": "二维矩形概率",
+      "latex": "P(a<X\\le b,c<Y\\le d)=F(b,d)-F(a,d)-F(b,c)+F(a,c)",
+      "conditions": [
+        "a≤b,c≤d，F(x,y)=P(X≤x,Y≤y)"
+      ],
+      "derivation": "从右上矩形扣除左边和下边两个区域，加回重复扣除的左下角；开闭端点与CDF定义一致。",
+      "methodIds": [
+        "pr-joint-cdf"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-22",
+    "2021-301-16",
+    "2023-301-22"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

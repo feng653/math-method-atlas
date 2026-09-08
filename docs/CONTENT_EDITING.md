@@ -1,5 +1,9 @@
 # AI 内容编辑速查
 
+题型放在 `content/libraries/<id>/problem-types/<type-id>.json`。字段以problemTypeSchema为准：识别特征recognition、解题检查顺序strategy、methods[{methodId,when}]、formulas[{id,title,latex,conditions,derivation,methodIds}]、questionIds和boundaries。公式的methodIds必须属于本题型候选方法，跨章方法可复用；不复制方法实体。数学条件直接写完整数组字符串，不用竖线分割，以免破坏绝对值和条件概率。
+
+questionIds按实际作答目标人工核对，不能由共享方法自动推断；空数组表示待选真题。复合题可以归多个题型，题型卡所选题数量不是考试频次。新题型先draft；编号引用/KaTeX通过仅代表结构可用，独立审查选择条件、公式推导和归属后才能考虑reviewed。content:report列无题型章节、未归类方法及公式数量；零缺口仍不表示数学技巧穷尽。
+
 编辑入口是 `content/libraries/` 中的 JSON；前端只读，无须 computer use。类型与字段规则见 `src/domain/schema.ts`，跨文件规则见 `src/domain/validate.ts`。完整的小体系可复制 `proof-toolkit/` 的结构再替换 ID 和内容。
 
 1. 先读 `docs/IMPLEMENTATION.md` 并检索同类方法，避免重复。

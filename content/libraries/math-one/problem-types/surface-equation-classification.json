@@ -1,0 +1,50 @@
+{
+  "id": "surface-equation-classification",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "构造并识别空间曲面方程",
+  "summary": "根据母线、轴线、截面或二次式确定空间对象。",
+  "recognition": [
+    "已知平面曲线绕轴旋转、沿方向平移，或需识别含交叉项的二次曲面。"
+  ],
+  "strategy": [
+    "先保留定义范围再消元。",
+    "交叉二次项先正交化；用截面核对是实曲面还是退化集合。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-revolution-cylinder",
+      "when": "已知母线与运动方式时保留轴向坐标和到轴距离。"
+    },
+    {
+      "methodId": "hm-quadric-surfaces",
+      "when": "方程已给，配方和截面能辨椭球、双曲面、锥面等。"
+    },
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "when": "二次型有交叉项，先用实对称谱分解旋转坐标。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "rotation-radius",
+      "title": "绕z轴消去转角",
+      "latex": "x^2+y^2=r^2,\\qquad H(\\sqrt{x^2+y^2},z)=0",
+      "conditions": [
+        "母线以r≥0表示在rz半平面内，方程为H(r,z)=0；旋转一周。"
+      ],
+      "derivation": "参数点(r cosθ,r sinθ,z)满足x²+y²=r²；以非负根恢复r并保留原母线的不等式范围。",
+      "methodIds": [
+        "hm-revolution-cylinder",
+        "hm-quadric-surfaces"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2016-301-06"
+  ],
+  "boundaries": [
+    "同一方法可提供备选步骤；该真题要求识别二次曲面，不是旋转曲面构造题。"
+  ],
+  "status": "draft"
+}

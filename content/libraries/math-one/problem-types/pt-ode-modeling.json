@@ -1,0 +1,55 @@
+{
+  "id": "pt-ode-modeling",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "变化率或几何约束重建函数",
+  "summary": "先从文字与几何约束建立导数关系，再调用方程解法",
+  "recognition": [
+    "题目给比例、流入流出、切线关系与初值"
+  ],
+  "strategy": [
+    "先从文字与几何约束建立导数关系，再调用方程解法",
+    "核单位、正性和区间；求函数与求面积是不同任务"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-ode-modeling",
+      "when": "由关系建立方程并解释初值解"
+    },
+    {
+      "methodId": "hm-ode-separable",
+      "when": "比例增长衰减或可分离约束"
+    },
+    {
+      "methodId": "hm-ode-linear-first",
+      "when": "线性损耗加外部输入"
+    },
+    {
+      "methodId": "hm-integral-area-volume",
+      "when": "解出几何曲线后另问面积"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-ode-modeling-formula-1",
+      "title": "恒定输入与线性损耗",
+      "latex": "M'=a-bM,\\ M(0)=M_0\\ \\Longrightarrow\\ M(t)=a/b+(M_0-a/b)e^{-bt}",
+      "conditions": [
+        "a≥0，b>0，M₀≥0，t≥0"
+      ],
+      "derivation": "平移N=M−a/b后N′=−bN分离；结果非负且趋a/b。",
+      "methodIds": [
+        "hm-ode-modeling",
+        "hm-ode-separable",
+        "hm-ode-linear-first"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2012-301-18"
+  ],
+  "boundaries": [
+    "任何除法与换元先核合法区间，丢失的平衡解须单独回代。"
+  ],
+  "status": "draft"
+}

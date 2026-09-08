@@ -1,0 +1,51 @@
+{
+  "id": "volume-mass-moments",
+  "libraryId": "math-one",
+  "chapterId": "multiple-integrals",
+  "title": "求体积分、质量、质心与惯量",
+  "summary": "先分层或换坐标，再按物理目标确定权重。",
+  "recognition": [
+    "三维区域、非均匀密度、截面随高度变化，要求体积或一阶/二阶矩。"
+  ],
+  "strategy": [
+    "确定dm=ρdV及质量有限非零。",
+    "按截面几何选柱/球/直角坐标，分别积质量及所需矩，最后取比或组合。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-triple-integral",
+      "when": "目标是体积积分，截面或球面柱面对称可以降低复杂度。"
+    },
+    {
+      "methodId": "hm-integral-mass-centroid",
+      "when": "有质量、形心或转动惯量含义，需要明确密度和力臂。"
+    },
+    {
+      "methodId": "hm-double-cartesian",
+      "when": "固定高度截面为平移区域，先算面积和截面矩再积高度。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "section-centroid",
+      "title": "截面积求轴向形心",
+      "latex": "V=\\int_a^b A(z)\\,dz,\\qquad \\bar z=\\frac{\\int_a^b zA(z)\\,dz}{\\int_a^b A(z)\\,dz}",
+      "conditions": [
+        "立体可按z截面分层；均匀正密度；有限体积V>0及一阶矩存在。"
+      ],
+      "derivation": "固定z时，体积薄层为A(z)dz；z在同一截面为常数，轴向一阶矩为zA(z)dz，均匀密度在比值中消去。",
+      "methodIds": [
+        "hm-triple-integral",
+        "hm-integral-mass-centroid"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2015-301-12",
+    "2019-301-19"
+  ],
+  "boundaries": [
+    "非均匀密度不能直接用无权截面积代替质量；形心要计算所有被问坐标。"
+  ],
+  "status": "draft"
+}

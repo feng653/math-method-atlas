@@ -35,6 +35,16 @@ export const methodSchema = z.object({
   status,
 }).strict();
 
+export const problemTypeSchema = z.object({
+  id, libraryId: id, chapterId: id, title: text, summary: text,
+  recognition: z.array(text).min(1), strategy: z.array(text).min(1),
+  methods: z.array(z.object({ methodId: id, when: text }).strict()).min(1),
+  formulas: z.array(z.object({ id, title: text, latex: formula.refine((value) => !!value.trim(), 'Formula cannot be empty'),
+    conditions: z.array(text).min(1), derivation: text, methodIds: ids.min(1),
+  }).strict()),
+  questionIds: ids, boundaries: z.array(text).min(1), status,
+}).strict();
+
 export const paperSchema = z.object({
   id, libraryId: id, year: z.number().int().min(1987).max(2100), exam: text, title: text, source,
   status: z.enum(['indexed', 'partial', 'complete']),
@@ -66,10 +76,12 @@ export const questionSchema = z.object({
 export const atlasSchema = z.object({
   libraries: z.array(librarySchema).min(1), methods: z.array(methodSchema),
   papers: z.array(paperSchema), questions: z.array(questionSchema),
+  problemTypes: z.array(problemTypeSchema).default([]),
 }).strict();
 
 export type Library = z.infer<typeof librarySchema>;
 export type Method = z.infer<typeof methodSchema>;
 export type Paper = z.infer<typeof paperSchema>;
 export type Question = z.infer<typeof questionSchema>;
+export type ProblemType = z.infer<typeof problemTypeSchema>;
 export type AtlasData = z.infer<typeof atlasSchema>;

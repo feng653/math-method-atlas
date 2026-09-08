@@ -1,0 +1,34 @@
+{
+  "id": "hm-integral-recurrence",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分递推与降幂",
+  "summary": "对含整数参数的一族积分，用分部和恒等变换建立降阶关系。",
+  "conditions": [
+    "每个参数对应的积分存在；反常积分须先截断并验证边界极限。",
+    "递推参数的取值和基例必须明确，不能越过分母为零或公式失效的参数。"
+  ],
+  "steps": [
+    "将积分记作 Iₙ，找可求导降幂的一因子。",
+    "分部积分，保留端点项。",
+    "用恒等式把余项改成 Iₙ 和低阶积分，解出 Iₙ。",
+    "给出基例并按奇偶分别递推。"
+  ],
+  "formula": "I_n=\\int_0^{\\pi/2}\\sin^n x\\,dx=\\frac{n-1}{n}I_{n-2}\\ (n\\ge2),\\quad I_0=\\frac\\pi2,\\ I_1=1",
+  "pitfalls": [
+    "只写递推式不写基例无法定值。",
+    "含指数或反常端点的边界项不能默认消失。"
+  ],
+  "example": {
+    "prompt": "自编：用递推求 ∫₀^{π/2}sin⁴x dx。",
+    "solution": "分部取u=sin^{n−1}x，dv=sin x dx，边界项为0，得Iₙ=(n−1)(Iₙ₋₂−Iₙ)，故I₄=(3/4)(1/2)(π/2)=3π/16。"
+  },
+  "relatedIds": [
+    "hm-integration-by-parts",
+    "hm-trig-substitution"
+  ],
+  "topicIds": [
+    "integrals-integration-by-parts"
+  ],
+  "status": "reviewed"
+}

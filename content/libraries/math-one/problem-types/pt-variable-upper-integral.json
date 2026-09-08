@@ -1,0 +1,67 @@
+{
+  "id": "pt-variable-upper-integral",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "变上限与含参积分求导",
+  "summary": "分清外参数与积分变量，再选变限或带参数求导",
+  "recognition": [
+    "上限依赖x，或核也含x"
+  ],
+  "strategy": [
+    "分清外参数与积分变量，再选变限或带参数求导",
+    "端点项与核偏导分别计算，最终回到极限/极值或方程"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-newton-leibniz",
+      "when": "核不含外参数，连续变上限"
+    },
+    {
+      "methodId": "hm-chain-log-differentiation",
+      "when": "复合上下限的链式因子"
+    },
+    {
+      "methodId": "hm-integral-parameter",
+      "when": "核同时含外参数，连续偏导条件允许求导"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "when": "求导后直接判断极值"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-variable-upper-integral-formula-1",
+      "title": "双变限公式",
+      "latex": "\\frac d{dx}\\int_{u(x)}^{v(x)}f(t)dt=f(v(x))v'(x)-f(u(x))u'(x)",
+      "conditions": [
+        "f连续，u、v可导且在合法区间"
+      ],
+      "derivation": "写成固定基点原函数F(v)−F(u)并链式求导。",
+      "methodIds": [
+        "hm-newton-leibniz",
+        "hm-chain-log-differentiation"
+      ]
+    },
+    {
+      "id": "pt-variable-upper-integral-formula-2",
+      "title": "线性核抵消",
+      "latex": "G(x)=\\int_a^x(x-t)f(t)dt\\quad\\Longrightarrow\\quad G'(x)=\\int_a^xf(t)dt,\\quad G''(x)=f(x)",
+      "conditions": [
+        "f连续，a固定"
+      ],
+      "derivation": "拆成x∫f−∫tf求导，端点xf(x)相消。",
+      "methodIds": [
+        "hm-newton-leibniz",
+        "hm-integral-parameter"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-16"
+  ],
+  "boundaries": [
+    "先核各公式的独立条件；同一题可归属多个实际任务题型。"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "pr-testing-variance-tests",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "单总体方差与双总体方差比检验",
+  "summary": "单总体在原假设方差下标准化样本平方和",
+  "recognition": [
+    "任务是检验离散程度或比较两正态总体方差",
+    "F检验必须明确方差比方向"
+  ],
+  "strategy": [
+    "单总体在原假设方差下标准化样本平方和",
+    "双总体以样本方差比除以原假设方差比构造F",
+    "按备择选单尾或等尾双侧临界域，拒绝与未拒绝分别表述"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-test-normal-variance",
+      "when": "单正态总体方差检验，通常均值未知使用n−1自由度"
+    },
+    {
+      "methodId": "pr-test-two-variances",
+      "when": "独立双正态总体方差比检验"
+    },
+    {
+      "methodId": "pr-test-errors",
+      "when": "由确定的临界域解释错误率及功效"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-testing-variance-tests-formula-1",
+      "title": "方差比原假设下的F枢轴",
+      "latex": "H_0:\\frac{\\sigma_1^2}{\\sigma_2^2}=r_0\\quad\\Longrightarrow\\quad V=\\frac{S_1^2}{r_0 S_2^2}\\sim F_{n_1-1,n_2-1}",
+      "conditions": [
+        "两组独立正态简单样本，n₁,n₂≥2，总体方差正，r₀>0",
+        "Sⱼ²使用nⱼ−1分母"
+      ],
+      "derivation": "各样本方差除对应总体方差，乘自由度后为独立卡方；按自由度归一化相除，再用原假设替换真实方差比即得V。",
+      "methodIds": [
+        "pr-test-two-variances"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "不拒绝不能表述为证明原假设正确；非正态情形这些精确卡方/F检验可能不保持声称的错误率。"
+  ],
+  "status": "draft"
+}

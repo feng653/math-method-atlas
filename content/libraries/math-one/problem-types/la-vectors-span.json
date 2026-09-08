@@ -1,0 +1,59 @@
+{
+  "id": "la-vectors-span",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "判断相关、线性表示与空间关系",
+  "summary": "把向量排成列矩阵，表示问题写Ax=b，相关问题写Ax=0",
+  "recognition": [
+    "目标是相关性、极大无关组、共同表示或子空间相等",
+    "向量组等价要求互相表示"
+  ],
+  "strategy": [
+    "把向量排成列矩阵，表示问题写Ax=b，相关问题写Ax=0",
+    "主元列应回到原矩阵选取",
+    "交空间求共同表示系数；等价用两向包含或拼接秩"
+  ],
+  "methods": [
+    {
+      "methodId": "la-vector-dependence",
+      "when": "判断齐次表示是否有非零系数"
+    },
+    {
+      "methodId": "la-vector-representation",
+      "when": "指定向量能否表示及求系数"
+    },
+    {
+      "methodId": "la-vector-basis",
+      "when": "提取原向量中的极大无关组"
+    },
+    {
+      "methodId": "la-subspace-equivalence",
+      "when": "判断子空间、向量组等价、交与和"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-vectors-span-formula-1",
+      "title": "和空间与交空间的维数",
+      "latex": "\\dim(U+V)=\\dim U+\\dim V-\\dim(U\\cap V)",
+      "conditions": [
+        "U,V是同一有限维向量空间的子空间"
+      ],
+      "derivation": "先取交空间基，分别补成U和V的基；合并且只保留一次公共基后构成U+V的基，计数得到公式。",
+      "methodIds": [
+        "la-subspace-equivalence",
+        "la-vector-basis"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-07",
+    "2023-301-07",
+    "2024-301-06",
+    "2026-301-06"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

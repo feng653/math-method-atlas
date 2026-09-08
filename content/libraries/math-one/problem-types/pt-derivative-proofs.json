@@ -1,0 +1,54 @@
+{
+  "id": "pt-derivative-proofs",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "中值定理与凸性证明",
+  "summary": "从目标构造辅助函数，先安排端点条件",
+  "recognition": [
+    "存在中间点、函数差界或割线不等式"
+  ],
+  "strategy": [
+    "从目标构造辅助函数，先安排端点条件",
+    "导数比考虑柯西；线性夹界考虑凸性；误差阶考虑泰勒"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-mean-value-proof",
+      "when": "等端点或辅助函数可用罗尔/拉格朗日"
+    },
+    {
+      "methodId": "hm-cauchy-mean-value",
+      "when": "两个函数增量的比"
+    },
+    {
+      "methodId": "hm-convex-secant",
+      "when": "凸函数的切线/割线界"
+    },
+    {
+      "methodId": "hm-taylor-remainder",
+      "when": "目标需要指定误差阶或符号"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-derivative-proofs-formula-1",
+      "title": "切线与弦线夹界",
+      "latex": "f(a)+f'(a)(x-a)\\le f(x)\\le\\frac{b-x}{b-a}f(a)+\\frac{x-a}{b-a}f(b)",
+      "conditions": [
+        "a<b，x∈[a,b]，f在包含[a,b]的开区间内可导且凸（特别a处导数存在）"
+      ],
+      "derivation": "左边用凸函数导数单调及中值定理；右边将x写为端点凸组合。",
+      "methodIds": [
+        "hm-convex-secant"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2009-301-18",
+    "2012-301-15"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

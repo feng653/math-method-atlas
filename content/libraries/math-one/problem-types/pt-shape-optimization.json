@@ -1,0 +1,55 @@
+{
+  "id": "pt-shape-optimization",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "极值、凹凸、渐近线与曲线几何",
+  "summary": "先定定义域，列驻点、不可导点及边界",
+  "recognition": [
+    "图形性质、最值、拐点、切法线或曲率"
+  ],
+  "strategy": [
+    "先定定义域，列驻点、不可导点及边界",
+    "极值查一阶变号，拐点查二阶变号；渐近线分方向"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-monotonic-extrema",
+      "when": "单调、极值与闭域边界最值"
+    },
+    {
+      "methodId": "hm-concavity-asymptote",
+      "when": "凹凸、拐点及无穷趋势"
+    },
+    {
+      "methodId": "hm-plane-tangent-normal",
+      "when": "切线法线的点与方向"
+    },
+    {
+      "methodId": "hm-curvature-circle",
+      "when": "曲率半径及曲率圆心"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-shape-optimization-formula-1",
+      "title": "曲率圆心",
+      "latex": "C=\\left(x-\\frac{f'(1+(f')^2)}{f''},\\ f+\\frac{1+(f')^2}{f''}\\right)",
+      "conditions": [
+        "f二次可导，f″≠0"
+      ],
+      "derivation": "单位法向量(-f′,1)/√(1+f′²)乘有符号半径(1+f′²)^(3/2)/f″再加曲线点。",
+      "methodIds": [
+        "hm-curvature-circle"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2011-301-01",
+    "2011-301-17",
+    "2014-301-16"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

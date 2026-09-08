@@ -1,0 +1,67 @@
+{
+  "id": "pt-improper-convergence",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "反常积分的敛散性与求值",
+  "summary": "定位所有瑕点并分别截断，收敛后才合并代数项",
+  "recognition": [
+    "区间无穷、核无界或参数影响端点收敛"
+  ],
+  "strategy": [
+    "定位所有瑕点并分别截断，收敛后才合并代数项",
+    "非负函数比主部；符号变化时区分绝对收敛与普通收敛"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-improper-integral",
+      "when": "各瑕点独立极限与p比较"
+    },
+    {
+      "methodId": "hm-equivalent-infinitesimal",
+      "when": "端点正函数有可比主部"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "when": "边界项能证明收敛且余项更简单"
+    },
+    {
+      "methodId": "hm-substitution-integral",
+      "when": "换元把奇性变为标准p型"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-improper-convergence-formula-1",
+      "title": "对数临界判别",
+      "latex": "\\int_e^\\infty\\frac{dx}{x(\\ln x)^p}\\text{ 收敛}\\iff p>1",
+      "conditions": [
+        "p实数，被积函数正"
+      ],
+      "derivation": "t=ln x化为∫₁∞t^(−p)dt。",
+      "methodIds": [
+        "hm-improper-integral",
+        "hm-substitution-integral"
+      ]
+    },
+    {
+      "id": "pt-improper-convergence-formula-2",
+      "title": "零端幂积分",
+      "latex": "\\int_0^1x^{-p}dx=\\frac1{1-p}\\quad(p<1)",
+      "conditions": [
+        "p实数；p≥1发散"
+      ],
+      "derivation": "先从ε积分到1再取极限，p=1单独用对数。",
+      "methodIds": [
+        "hm-improper-integral"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-03",
+    "2013-301-12"
+  ],
+  "boundaries": [
+    "柯西主值不等于两边分别收敛的普通反常积分；不能把两个发散积分相减。"
+  ],
+  "status": "draft"
+}

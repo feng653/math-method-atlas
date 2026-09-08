@@ -1,0 +1,63 @@
+{
+  "id": "pt-reducible-ode",
+  "libraryId": "math-one",
+  "chapterId": "ode",
+  "title": "缺项降阶与欧拉换元",
+  "summary": "辨认缺失变量后用p=y′或p(y)=y′降阶，欧拉型用ln|x|",
+  "recognition": [
+    "缺y、缺x或系数含匹配导数阶的x幂"
+  ],
+  "strategy": [
+    "辨认缺失变量后用p=y′或p(y)=y′降阶，欧拉型用ln|x|",
+    "新变量方程求解后回代，常值解和跨零点需另查"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-ode-reduction",
+      "when": "缺y或缺x可闭合成低阶方程"
+    },
+    {
+      "methodId": "hm-ode-euler",
+      "when": "匹配x幂的欧拉型，区间固定符号"
+    },
+    {
+      "methodId": "hm-ode-characteristic",
+      "when": "换元后常系数齐次"
+    },
+    {
+      "methodId": "hm-ode-separable",
+      "when": "降阶方程可分离"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-reducible-ode-formula-1",
+      "title": "欧拉二阶换元",
+      "latex": "t=\\ln|x|,\\quad xy'=Y_t,\\quad x^2y''=Y_{tt}-Y_t",
+      "conditions": [
+        "x≠0且固定符号，y=Y(t)二次可导"
+      ],
+      "derivation": "dt/dx=1/x，先求y′=Y_t/x再求二阶。",
+      "methodIds": [
+        "hm-ode-euler"
+      ]
+    },
+    {
+      "id": "pt-reducible-ode-formula-2",
+      "title": "缺x的降阶",
+      "latex": "p(y)=y',\\quad y''=p\\frac{dp}{dy}",
+      "conditions": [
+        "局部以y作变量；常值解单独查"
+      ],
+      "derivation": "链式dp/dx=(dp/dy)y′；不可在全部转折点默认反函数存在。",
+      "methodIds": [
+        "hm-ode-reduction"
+      ]
+    }
+  ],
+  "questionIds": [],
+  "boundaries": [
+    "任何除法与换元先核合法区间，丢失的平衡解须单独回代。"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "power-series-expansion-sum",
+  "libraryId": "math-one",
+  "chapterId": "series",
+  "title": "展开函数、求级数和与读取高阶导数",
+  "summary": "从标准展开、逐项求导积分或递推方程构造目标系数。",
+  "recognition": [
+    "含n、1/n、阶乘等系数；求和函数、Taylor系数或高阶导值。"
+  ],
+  "strategy": [
+    "先确认展开区间和收敛半径。",
+    "匹配五个标准展开，必要时移位、求导积分或将递推转方程；用中心值定常数。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-taylor-expansion",
+      "when": "目标函数能由指数、正弦、余弦、对数、广义二项式组合。"
+    },
+    {
+      "methodId": "hm-power-sum",
+      "when": "系数有n或1/n，或递推能转成和函数方程。"
+    },
+    {
+      "methodId": "hm-series-basic",
+      "when": "几何级数或有限部分和直接可算时。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "weighted-geometric",
+      "title": "几何级数两次求导后的加权和",
+      "latex": "\\sum_{n=1}^{\\infty}n^2x^n=\\frac{x(1+x)}{(1-x)^3}",
+      "conditions": [
+        "|x|<1。"
+      ],
+      "derivation": "从Σx^n=1/(1−x)出发，施加算子x d/dx得到Σn x^n=x/(1−x)²，再施加一次并化简。两次操作均在半径内部合法。",
+      "methodIds": [
+        "hm-power-sum",
+        "hm-series-basic"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-17",
+    "2017-301-12",
+    "2017-301-09"
+  ],
+  "boundaries": [
+    "读取n阶导须乘n!；任意阶可导不自动等于其Taylor级数。"
+  ],
+  "status": "draft"
+}

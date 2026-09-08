@@ -1,0 +1,55 @@
+{
+  "id": "la-eigen-similarity",
+  "libraryId": "math-one",
+  "chapterId": "la-eigen",
+  "title": "判断相似并构造变换或矩阵函数",
+  "summary": "先比较特征多项式、迹和行列式筛除不可能",
+  "recognition": [
+    "目标是相似矩阵、变换基或正定平方根",
+    "相似不变量能排除却未必能确认"
+  ],
+  "strategy": [
+    "先比较特征多项式、迹和行列式筛除不可能",
+    "确认可对角化后按相同特征值排列基，再拼出相似变换",
+    "实对称正定平方根在正交特征基中取正根"
+  ],
+  "methods": [
+    {
+      "methodId": "la-eigen-similarity",
+      "when": "用必要不变量排除或通过基构造相似"
+    },
+    {
+      "methodId": "la-eigen-diagonalization",
+      "when": "两矩阵有可匹配特征基时构造"
+    },
+    {
+      "methodId": "la-eigen-symmetric",
+      "when": "实对称矩阵需要正交变换或谱函数"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-eigen-similarity-formula-1",
+      "title": "正定平方根的谱构造",
+      "latex": "A=Q\\operatorname{diag}(\\lambda_i)Q^T\\ \\Longrightarrow\\ B=Q\\operatorname{diag}(\\sqrt{\\lambda_i})Q^T,\\quad B^2=A",
+      "conditions": [
+        "A为实对称正定矩阵",
+        "Q为正交矩阵且所有λᵢ>0"
+      ],
+      "derivation": "用QᵀQ=I相乘得B²=A，平方根特征值全正使B正定。若C也为正定平方根，则CA=AC；在A每个特征空间上，C正定且C²=λI，故C=√λI，给唯一性。",
+      "methodIds": [
+        "la-eigen-symmetric",
+        "la-eigen-similarity"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-21",
+    "2020-301-21",
+    "2024-301-07"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "pt-integral-bounds",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分不等式、中值与极限估计",
+  "summary": "先核符号并构造点态界，再积分或用平方非负",
+  "recognition": [
+    "目标为界、比较、中间点或积分序列极限"
+  ],
+  "strategy": [
+    "先核符号并构造点态界，再积分或用平方非负",
+    "等号成立与严格性单独查；极限应有统一界"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-integral-inequality",
+      "when": "点态比较或不变号权的中值"
+    },
+    {
+      "methodId": "hm-integral-cauchy",
+      "when": "平方可积函数的乘积界"
+    },
+    {
+      "methodId": "hm-squeeze",
+      "when": "上下积分界趋同"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "when": "对数矩上界可算"
+    },
+    {
+      "methodId": "hm-monotonic-extrema",
+      "when": "先证明被积函数不等式"
+    },
+    {
+      "methodId": "hm-convex-secant",
+      "when": "积分核凸时，所选点可导可用切线下界，否则需先证明支持直线存在；割线上界来自凸组合定义，再积分估计平均值。"
+    },
+    {
+      "methodId": "hm-taylor-remainder",
+      "when": "已知高阶导数符号或界时，先得到带余项的点态界，再对完整区间积分。"
+    },
+    {
+      "methodId": "hm-mean-value-proof",
+      "when": "需要构造存在点或控制差商时，验证连续/可导条件后引入辅助函数。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-integral-bounds-formula-1",
+      "title": "Cauchy积分界",
+      "latex": "\\left|\\int_a^bfg\\right|^2\\le\\left(\\int_a^bf^2\\right)\\left(\\int_a^bg^2\\right)",
+      "conditions": [
+        "f、g实连续，a<b；更一般平方可积时亦成立"
+      ],
+      "derivation": "∫(f−tg)²≥0是t的非负二次式，判别式≤0；g平方积分为0时独立处理。",
+      "methodIds": [
+        "hm-integral-cauchy"
+      ]
+    },
+    {
+      "id": "pt-integral-bounds-formula-2",
+      "title": "对数矩积分",
+      "latex": "\\int_0^1t^n(-\\ln t)dt=\\frac1{(n+1)^2}",
+      "conditions": [
+        "实n>−1；0端按反常极限"
+      ],
+      "derivation": "在ε到1分部，ε^(n+1)ln ε趋0，余下幂积分除n+1。",
+      "methodIds": [
+        "hm-integration-by-parts"
+      ]
+    },
+    {
+      "id": "pt-integral-bounds-formula-3",
+      "title": "非负权平均界",
+      "latex": "m\\int_a^bg\\le\\int_a^bfg\\le M\\int_a^bg",
+      "conditions": [
+        "a<b，m≤f≤M，g≥0，相关函数在[a,b]可积"
+      ],
+      "derivation": "将mg≤fg≤Mg逐点积分；求中值点另需连续性。",
+      "methodIds": [
+        "hm-integral-inequality"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-17",
+    "2011-301-18"
+  ],
+  "boundaries": [
+    "先核各公式的独立条件；同一题可归属多个实际任务题型。"
+  ],
+  "status": "draft"
+}

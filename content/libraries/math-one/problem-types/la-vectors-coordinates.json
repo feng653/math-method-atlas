@@ -1,0 +1,54 @@
+{
+  "id": "la-vectors-coordinates",
+  "libraryId": "math-one",
+  "chapterId": "la-vectors",
+  "title": "求坐标、过渡矩阵与正交基",
+  "summary": "一般基用基矩阵解坐标，内积数据先写Gram方程",
+  "recognition": [
+    "给定一组基、内积或坐标变换",
+    "目标是新坐标或标准正交基"
+  ],
+  "strategy": [
+    "一般基用基矩阵解坐标，内积数据先写Gram方程",
+    "正交化逐步扣除已构造方向的投影，再单位化",
+    "过渡矩阵先写旧基乘矩阵等于新基再定坐标方向"
+  ],
+  "methods": [
+    {
+      "methodId": "la-vector-coordinate",
+      "when": "一般基的坐标或基变换，不能直接以内积充当坐标"
+    },
+    {
+      "methodId": "la-vector-orthogonal",
+      "when": "给出线性无关向量且需要标准正交基"
+    },
+    {
+      "methodId": "la-matrix-inverse",
+      "when": "基矩阵方阵可逆时显式写坐标变换"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-vectors-coordinates-formula-1",
+      "title": "一般基下的Gram坐标方程",
+      "latex": "G c=b,\\qquad G_{ij}=\\langle v_i,v_j\\rangle,\\quad b_i=\\langle v_i,x\\rangle",
+      "conditions": [
+        "v₁,…,vᵣ为实内积空间中线性无关向量",
+        "x属于其张成空间"
+      ],
+      "derivation": "由x=Σcⱼvⱼ逐一与vᵢ取内积得Gc=b；cᵀGc=‖Σcⱼvⱼ‖²说明G正定可逆，坐标唯一。",
+      "methodIds": [
+        "la-vector-coordinate",
+        "la-vector-orthogonal"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-06",
+    "2023-301-15"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

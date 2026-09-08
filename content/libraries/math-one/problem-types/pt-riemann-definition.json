@@ -1,0 +1,66 @@
+{
+  "id": "pt-riemann-definition",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "积分定义、性质与存在性",
+  "summary": "先区别有界闭区间积分与反常积分，再检查可积条件",
+  "recognition": [
+    "积分存在性判断或网格和式极限"
+  ],
+  "strategy": [
+    "先区别有界闭区间积分与反常积分，再检查可积条件",
+    "连续函数可积，有限分段连续有界也可积；黎曼和需要网格趋细"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-riemann-sum",
+      "when": "网格求和直接对应积分定义"
+    },
+    {
+      "methodId": "hm-integral-piecewise",
+      "when": "有限分段可积与区间可加"
+    },
+    {
+      "methodId": "hm-newton-leibniz",
+      "when": "连续核的原函数存在与求值"
+    },
+    {
+      "methodId": "hm-squeeze",
+      "when": "估计采样误差或上下和"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-riemann-definition-formula-1",
+      "title": "标准网格极限",
+      "latex": "\\lim_{n\\to\\infty}\\frac{b-a}{n}\\sum_{k=1}^n f\\left(a+\\frac{k(b-a)}n\\right)=\\int_a^bf(x)dx",
+      "conditions": [
+        "a<b，f在[a,b]黎曼可积"
+      ],
+      "derivation": "分割宽度趋0，右端点为合法采样点，直接由黎曼积分定义。",
+      "methodIds": [
+        "hm-riemann-sum"
+      ]
+    },
+    {
+      "id": "pt-riemann-definition-formula-2",
+      "title": "有限点改值不变积分",
+      "latex": "f=g\\text{ 除有限点外}\\ \\Longrightarrow\\ \\int_a^bf=\\int_a^bg",
+      "conditions": [
+        "f、g均在[a,b]有界且黎曼可积"
+      ],
+      "derivation": "差只在有限点非零，用总长度任意小的区间覆盖这些点，绝对积分上界趋0。",
+      "methodIds": [
+        "hm-riemann-sum",
+        "hm-integral-piecewise"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-04"
+  ],
+  "boundaries": [
+    "黎曼可积不要求处处连续；“有原函数”与“黎曼可积”不能无条件互推。"
+  ],
+  "status": "draft"
+}

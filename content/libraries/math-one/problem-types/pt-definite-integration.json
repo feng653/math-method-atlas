@@ -1,0 +1,107 @@
+{
+  "id": "pt-definite-integration",
+  "libraryId": "math-one",
+  "chapterId": "integrals",
+  "title": "计算定积分",
+  "summary": "先看分段、绝对值、奇偶与区间反射，再决定是否求原函数",
+  "recognition": [
+    "有限区间求积分值，可能不用原函数"
+  ],
+  "strategy": [
+    "先看分段、绝对值、奇偶与区间反射，再决定是否求原函数",
+    "换元同步换限；分部保留端点；递推给初值"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-newton-leibniz",
+      "when": "存在可用原函数且条件成立"
+    },
+    {
+      "methodId": "hm-definite-symmetry",
+      "when": "奇偶、周期、反射互补"
+    },
+    {
+      "methodId": "hm-substitution-integral",
+      "when": "内函数代换可连同上下限处理"
+    },
+    {
+      "methodId": "hm-integration-by-parts",
+      "when": "导一个因子后简化"
+    },
+    {
+      "methodId": "hm-rational-integral",
+      "when": "有理函数可按因子分解"
+    },
+    {
+      "methodId": "hm-trig-substitution",
+      "when": "三角幂或二次根式"
+    },
+    {
+      "methodId": "hm-integral-piecewise",
+      "when": "绝对值或定义式切换需拆区间"
+    },
+    {
+      "methodId": "hm-integral-recurrence",
+      "when": "同族积分可由低阶基值递推"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-definite-integration-formula-1",
+      "title": "反射平均",
+      "latex": "\\int_a^bf(x)dx=\\frac12\\int_a^b[f(x)+f(a+b-x)]dx",
+      "conditions": [
+        "f在[a,b]可积"
+      ],
+      "derivation": "对原积分作u=a+b−x代换，与原式相加。",
+      "methodIds": [
+        "hm-definite-symmetry"
+      ]
+    },
+    {
+      "id": "pt-definite-integration-formula-2",
+      "title": "对称权重",
+      "latex": "f(a+b-x)=f(x)\\ \\Longrightarrow\\ \\int_a^bxf(x)dx=\\frac{a+b}{2}\\int_a^bf(x)dx",
+      "conditions": [
+        "f可积且对称关系在区间成立"
+      ],
+      "derivation": "对左式反射得到∫(a+b−x)f(x)，相加消x。",
+      "methodIds": [
+        "hm-definite-symmetry"
+      ]
+    },
+    {
+      "id": "pt-definite-integration-formula-3",
+      "title": "Wallis递推",
+      "latex": "J_n=\\int_0^{\\pi/2}\\sin^nx\\,dx=\\frac{n-1}{n}J_{n-2},\\quad J_0=\\pi/2,\\ J_1=1",
+      "conditions": [
+        "n为整数且n≥2"
+      ],
+      "derivation": "分离sin x分部，用cos²=1−sin²整理；sin^(n−1)x cos x端点项为0。",
+      "methodIds": [
+        "hm-integral-recurrence",
+        "hm-integration-by-parts"
+      ]
+    },
+    {
+      "id": "pt-definite-integration-formula-4",
+      "title": "绝对值分段",
+      "latex": "\\int_a^b|f|=-\\int_a^cf+\\int_c^bf",
+      "conditions": [
+        "a≤c≤b，f可积，在[a,c]非正、[c,b]非负"
+      ],
+      "derivation": "分别将绝对值替换成−f和f并用区间可加性。",
+      "methodIds": [
+        "hm-integral-piecewise"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-10",
+    "2012-301-10"
+  ],
+  "boundaries": [
+    "先核各公式的独立条件；同一题可归属多个实际任务题型。"
+  ],
+  "status": "draft"
+}

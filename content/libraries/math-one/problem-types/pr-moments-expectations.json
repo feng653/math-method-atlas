@@ -1,0 +1,54 @@
+{
+  "id": "pr-moments-expectations",
+  "libraryId": "math-one",
+  "chapterId": "pr-moments",
+  "title": "直接或分层计算期望与函数期望",
+  "summary": "只求期望时直接对原变量求函数期望，无须先找函数分布",
+  "recognition": [
+    "目标是期望、混合矩或损失函数平均",
+    "条件模型可能比边缘密度更容易求"
+  ],
+  "strategy": [
+    "只求期望时直接对原变量求函数期望，无须先找函数分布",
+    "分层模型先取条件期望再平均",
+    "线性性不需要独立，乘积拆期望则需要额外条件"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-moment-expectation",
+      "when": "给概率分布且目标为函数期望"
+    },
+    {
+      "methodId": "pr-moment-total-expectation",
+      "when": "条件均值或条件分布已知，比边缘计算方便"
+    },
+    {
+      "methodId": "pr-moment-covariance",
+      "when": "目标含E(XY)与协方差的换算"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-moments-expectations-formula-1",
+      "title": "非负变量的尾积分",
+      "latex": "E(X)=\\int_0^\\infty P(X>t)\\,dt",
+      "conditions": [
+        "X≥0，允许两边同时为正无穷",
+        "需要有限均值时另核查尾积分收敛"
+      ],
+      "derivation": "逐点有X=∫₀∞1{X>t}dt，对非负函数交换积分与期望，指标函数期望为尾概率。",
+      "methodIds": [
+        "pr-moment-expectation"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2023-301-08",
+    "2025-301-22",
+    "2021-301-22"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

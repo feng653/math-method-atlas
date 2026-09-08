@@ -1,0 +1,52 @@
+{
+  "id": "la-determinants-evaluate",
+  "libraryId": "math-one",
+  "chapterId": "la-determinants",
+  "title": "计算数值或结构行列式",
+  "summary": "先用结构制造零元，再在展开与分块乘积之间选择",
+  "recognition": [
+    "目标是行列式值或关于参数的多项式",
+    "观察零元、比例行列与分块三角结构"
+  ],
+  "strategy": [
+    "先用结构制造零元，再在展开与分块乘积之间选择",
+    "初等变换逐步记录交换符号与倍乘系数",
+    "参数不能直接作除数；保留其零值分支"
+  ],
+  "methods": [
+    {
+      "methodId": "la-det-row-operations",
+      "when": "常规行列式以消元降低阶数；交换和倍乘必须跟踪"
+    },
+    {
+      "methodId": "la-det-expansion",
+      "when": "某行列零元较多或要求代数余子式之和"
+    },
+    {
+      "methodId": "la-det-block",
+      "when": "方形对角块且一侧非对角块为零时直接分解"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-determinants-evaluate-formula-1",
+      "title": "秩一扰动的行列式",
+      "latex": "\\det(I_n+uv^T)=1+v^Tu",
+      "conditions": [
+        "u,v为n维列向量"
+      ],
+      "derivation": "按列的多线性展开，每列是单位列加u的倍数；含两列u的项为零，只剩1与各uᵢvᵢ之和。",
+      "methodIds": [
+        "la-det-row-operations",
+        "la-det-expansion"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-13"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

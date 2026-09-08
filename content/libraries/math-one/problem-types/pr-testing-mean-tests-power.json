@@ -1,0 +1,54 @@
+{
+  "id": "pr-testing-mean-tests-power",
+  "libraryId": "math-one",
+  "chapterId": "pr-testing",
+  "title": "均值检验、拒绝域与两类错误",
+  "summary": "写原假设和备择方向，再按方差已知与否选择Z或t",
+  "recognition": [
+    "目标是均值假设判断或指定备择下的错误概率",
+    "检验方向应先于观察样本选定"
+  ],
+  "strategy": [
+    "写原假设和备择方向，再按方差已知与否选择Z或t",
+    "双样本合并t须独立正态且共同未知方差",
+    "第一类错误在原假设下算，第二类错误在指定备择下算不拒绝概率"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-test-normal-mean",
+      "when": "单正态总体的均值Z或t检验"
+    },
+    {
+      "methodId": "pr-test-two-means",
+      "when": "双正态均值差，已知方差Z或未知等方差合并t"
+    },
+    {
+      "methodId": "pr-test-errors",
+      "when": "明确拒绝域后求第一第二类错误和功效"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-testing-mean-tests-power-formula-1",
+      "title": "已知方差右侧Z检验的功效",
+      "latex": "\\pi(\\mu)=1-\\Phi\\!\\left(z_{1-\\alpha}-\\frac{\\sqrt n(\\mu-\\mu_0)}{\\sigma}\\right),\\quad \\beta(\\mu)=1-\\pi(\\mu)",
+      "conditions": [
+        "正态简单样本，已知σ>0，n≥1",
+        "拒绝域为均值>μ₀+z₁₋α σ/√n，0<α<1；备择μ>μ₀"
+      ],
+      "derivation": "在真实均值μ下，(均值−μ)/(σ/√n)为标准正态，将拒绝阈值按此分布标准化得尾概率；其补集为第二类错误。μ=μ₀时功效等于α。",
+      "methodIds": [
+        "pr-test-normal-mean",
+        "pr-test-errors"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-10",
+    "2025-301-10"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

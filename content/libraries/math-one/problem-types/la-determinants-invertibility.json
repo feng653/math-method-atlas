@@ -1,0 +1,53 @@
+{
+  "id": "la-determinants-invertibility",
+  "libraryId": "math-one",
+  "chapterId": "la-determinants",
+  "title": "用行列式判可逆与参数分支",
+  "summary": "将可逆性转成行列式非零并完整分解",
+  "recognition": [
+    "目标是可逆参数范围或奇异时的关系",
+    "可逆条件常藏在乘积或方程唯一解中"
+  ],
+  "strategy": [
+    "将可逆性转成行列式非零并完整分解",
+    "零点代回原矩阵检查，不沿用仅在非零时成立的约分",
+    "需要唯一解时可转入克拉默路线"
+  ],
+  "methods": [
+    {
+      "methodId": "la-det-parameter",
+      "when": "参数行列式的零点决定奇异分支"
+    },
+    {
+      "methodId": "la-det-row-operations",
+      "when": "先用不丢参数分支的变换计算行列式"
+    },
+    {
+      "methodId": "la-system-cramer",
+      "when": "非零行列式且只求少数未知量时替列求值"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-determinants-invertibility-formula-1",
+      "title": "乘积与逆的行列式",
+      "latex": "\\det(AB)=\\det A\\det B,\\qquad \\det(A^{-1})=(\\det A)^{-1}",
+      "conditions": [
+        "A,B为同阶方阵",
+        "第二式要求A可逆"
+      ],
+      "derivation": "对乘积逐列作多线性展开，重复列项消失得到乘积律；再对AA⁻¹=I取行列式。",
+      "methodIds": [
+        "la-det-row-operations",
+        "la-det-parameter"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2025-301-15"
+  ],
+  "boundaries": [
+    "行列式只能直接用于方阵；奇异并不单独决定两个系统是否同解。"
+  ],
+  "status": "draft"
+}

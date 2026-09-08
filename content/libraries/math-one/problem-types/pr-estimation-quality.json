@@ -1,0 +1,59 @@
+{
+  "id": "pr-estimation-quality",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "无偏修正、均方误差与相合性比较",
+  "summary": "先算估计量期望与方差，区分偏差和随机波动",
+  "recognition": [
+    "任务是选估计量系数、比较好坏或证明相合",
+    "无偏最优与均方误差最优不一定相同"
+  ],
+  "strategy": [
+    "先算估计量期望与方差，区分偏差和随机波动",
+    "固定候选族内分别最小化方差或均方误差",
+    "均方误差趋零可用概率界推出相合，不能把无偏当成相合"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-estimate-unbiased",
+      "when": "计算偏差、无偏系数和均方误差"
+    },
+    {
+      "methodId": "pr-estimate-efficiency",
+      "when": "在明确无偏候选估计量之间比较方差"
+    },
+    {
+      "methodId": "pr-estimate-consistency",
+      "when": "通过偏差和方差或均方收敛证明相合"
+    },
+    {
+      "methodId": "pr-moment-variance",
+      "when": "补足估计量方差，保留协方差项"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-estimation-quality-formula-1",
+      "title": "缩放族的均方误差最优系数",
+      "latex": "E(T)=a\\theta,\\ E(T^2)=b\\theta^2\\quad\\Rightarrow\\quad \\operatorname{MSE}(cT)=\\theta^2(bc^2-2ac+1),\\quad c_*=a/b",
+      "conditions": [
+        "a,b为已知常数且b>0，θ≠0",
+        "c在全体实数中选择；若限制c范围需另比较边界"
+      ],
+      "derivation": "展开E(cT−θ)²并代入一二阶矩，关于c的严格凸二次式在a/b处唯一取最小；无偏系数为1/a（a≠0），一般不同。",
+      "methodIds": [
+        "pr-estimate-unbiased",
+        "pr-estimate-efficiency"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2024-301-22",
+    "2021-301-09",
+    "2023-301-10"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

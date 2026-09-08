@@ -1,0 +1,52 @@
+{
+  "id": "pr-events-direct-probability",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "事件运算与直接概率计算",
+  "summary": "把语言写成并交补，至少一个优先看补事件",
+  "recognition": [
+    "目标是恰好、至少、同时发生等事件概率",
+    "先判离散等可能还是连续均匀区域模型"
+  ],
+  "strategy": [
+    "把语言写成并交补，至少一个优先看补事件",
+    "有限等可能模型用计数比，几何概型用测度比",
+    "已有边缘和交概率时用容斥，不假设等可能"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-event-counting",
+      "when": "有限且各基本结果等可能，可组合计数"
+    },
+    {
+      "methodId": "pr-geometric-probability",
+      "when": "样本点在有限测度区域均匀分布"
+    },
+    {
+      "methodId": "pr-event-union",
+      "when": "以并交补的概率关系整理事件"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-events-direct-probability-formula-1",
+      "title": "两个事件恰有一个发生",
+      "latex": "P(A\\triangle B)=P(A)+P(B)-2P(A\\cap B)",
+      "conditions": [
+        "A,B为同一概率空间中的事件，无须独立"
+      ],
+      "derivation": "将对称差拆成互斥的A\\B和B\\A；各概率从边缘中减去交概率，相加即得。",
+      "methodIds": [
+        "pr-event-union"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-07",
+    "2025-301-16"
+  ],
+  "boundaries": [
+    "几何概率的区域比例依赖均匀性，不能把任意连续密度当作均匀。"
+  ],
+  "status": "draft"
+}

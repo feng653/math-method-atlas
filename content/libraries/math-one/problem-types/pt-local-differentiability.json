@@ -1,0 +1,50 @@
+{
+  "id": "pt-local-differentiability",
+  "libraryId": "math-one",
+  "chapterId": "derivatives",
+  "title": "可导性、微分与近似误差",
+  "summary": "先核可导，再提取线性主部",
+  "recognition": [
+    "连接点差商或局部近似"
+  ],
+  "strategy": [
+    "先核可导，再提取线性主部",
+    "近似值应带误差阶或统一误差界"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-derivative-definition",
+      "when": "分段点不能直接套邻域导数"
+    },
+    {
+      "methodId": "hm-differential-approximation",
+      "when": "小扰动线性估计"
+    },
+    {
+      "methodId": "hm-taylor-remainder",
+      "when": "需要定量截断误差"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pt-local-differentiability-formula-1",
+      "title": "线性近似误差",
+      "latex": "|f(a+h)-f(a)-f'(a)h|\\le Mh^2/2",
+      "conditions": [
+        "f在两点间二次连续可导，|f″|≤M"
+      ],
+      "derivation": "二阶拉格朗日余项f″(ξ)h²/2取绝对值。",
+      "methodIds": [
+        "hm-taylor-remainder",
+        "hm-differential-approximation"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2013-301-09"
+  ],
+  "boundaries": [
+    "候选方法不是无条件通用；须先逐项核适用条件。"
+  ],
+  "status": "draft"
+}

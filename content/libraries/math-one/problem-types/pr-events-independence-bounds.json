@@ -1,0 +1,52 @@
+{
+  "id": "pr-events-independence-bounds",
+  "libraryId": "math-one",
+  "chapterId": "pr-events",
+  "title": "判断事件独立与概率可行范围",
+  "summary": "由非负性和包含关系先约束交概率",
+  "recognition": [
+    "只给若干事件概率，要判断独立或求未知交概率的范围",
+    "独立不等于互斥"
+  ],
+  "strategy": [
+    "由非负性和包含关系先约束交概率",
+    "独立必须核对相应交概率等于边缘乘积",
+    "多个事件连乘需相互独立，两两独立通常不足"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-event-independence",
+      "when": "题设明确独立或需要按定义判独立"
+    },
+    {
+      "methodId": "pr-probability-bounds",
+      "when": "求交并概率可行区间或排除矛盾数据"
+    },
+    {
+      "methodId": "pr-event-union",
+      "when": "用容斥将未知量改写成已知边缘与交项"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-events-independence-bounds-formula-1",
+      "title": "交概率的可行区间",
+      "latex": "\\max\\{0,p+q-1\\}\\le P(A\\cap B)\\le\\min\\{p,q\\}",
+      "conditions": [
+        "p=P(A),q=P(B)且均在[0,1]"
+      ],
+      "derivation": "交集包含于每一事件给上界；并概率p+q−交概率≤1以及交概率非负给下界。四个互斥区域的概率可按此区间构造，说明界可达。",
+      "methodIds": [
+        "pr-probability-bounds",
+        "pr-event-union"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-16"
+  ],
+  "boundaries": [
+    "独立性只在已知或已证明的事件集合上使用；条件独立不自动推出无条件独立。"
+  ],
+  "status": "draft"
+}

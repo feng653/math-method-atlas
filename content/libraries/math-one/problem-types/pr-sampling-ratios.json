@@ -1,0 +1,52 @@
+{
+  "id": "pr-sampling-ratios",
+  "libraryId": "math-one",
+  "chapterId": "pr-sampling",
+  "title": "构造t或F统计量并核定自由度",
+  "summary": "逐项识别标准正态或卡方量",
+  "recognition": [
+    "出现标准化均值除样本标准差，或两组样本方差之比",
+    "独立性和自由度归一化都是条件"
+  ],
+  "strategy": [
+    "逐项识别标准正态或卡方量",
+    "核实分子与分母独立后，卡方除各自自由度",
+    "交换F比值时同时交换两个自由度"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-sample-t-f",
+      "when": "标准正态与卡方比或两个卡方比的构造"
+    },
+    {
+      "methodId": "pr-sample-chi-square",
+      "when": "先把正态样本方差转成卡方"
+    },
+    {
+      "methodId": "pr-sample-normal",
+      "when": "证明样本均值方向与残差方向独立"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-sampling-ratios-formula-1",
+      "title": "t平方与F、F的倒数",
+      "latex": "T\\sim t_\\nu\\Rightarrow T^2\\sim F_{1,\\nu},\\qquad V\\sim F_{r,s}\\Rightarrow V^{-1}\\sim F_{s,r}",
+      "conditions": [
+        "ν,r,s为正自由度",
+        "分布构造中对应正态与卡方量相互独立"
+      ],
+      "derivation": "T=Z/√(U/ν)，平方后Z²为自由度1卡方，与U独立；F为两个按自由度归一化卡方之比，取倒数只交换分子分母。",
+      "methodIds": [
+        "pr-sample-t-f"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2023-301-09"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

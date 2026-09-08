@@ -1,0 +1,60 @@
+{
+  "id": "la-quadratic-normal-form",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "二次型标准化与几何识别",
+  "summary": "交叉项系数折半写实对称矩阵",
+  "recognition": [
+    "任务是写矩阵、合同标准形或正交标准形",
+    "正交变换与一般可逆替换要求不同"
+  ],
+  "strategy": [
+    "交叉项系数折半写实对称矩阵",
+    "一般可逆替换可配方；要求保持长度角度时取正交特征基",
+    "惯性指数给规范形，具体特征值决定正交标准形与曲面尺度"
+  ],
+  "methods": [
+    {
+      "methodId": "la-quadratic-matrix",
+      "when": "将表达式写成xᵀAx或识别零水平集"
+    },
+    {
+      "methodId": "la-quadratic-completion",
+      "when": "允许一般可逆替换且平方结构明显"
+    },
+    {
+      "methodId": "la-quadratic-orthogonal",
+      "when": "明确要求正交变换或曲面主轴"
+    },
+    {
+      "methodId": "la-inertia-canonical",
+      "when": "目标是规范形、惯性指数或合同判定"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-quadratic-normal-form-formula-1",
+      "title": "纯交叉项的可逆配方",
+      "latex": "2xy=\\frac12(x+y)^2-\\frac12(x-y)^2",
+      "conditions": [
+        "x,y为实变量",
+        "替换u=x+y,v=x−y的行列式为−2非零"
+      ],
+      "derivation": "直接展开平方差得到4xy再除以2；此式给一正一负方向。变换未单位化，不能把系数直接当作原矩阵的正交谱。",
+      "methodIds": [
+        "la-quadratic-completion",
+        "la-inertia-canonical"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-05",
+    "2023-301-21",
+    "2026-301-07",
+    "2022-301-21"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

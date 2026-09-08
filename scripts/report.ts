@@ -1,6 +1,6 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { librarySchema, methodSchema, paperSchema, questionSchema } from '../src/domain/schema';
+import { librarySchema, methodSchema, paperSchema, questionSchema, problemTypeSchema } from '../src/domain/schema';
 import { getCoverage } from '../src/domain/coverage';
 import { requirementItemsSchema } from '../src/domain/requirement-items';
 import { getArchiveStats } from '../src/domain/archive-statistics';
@@ -19,10 +19,17 @@ for (const dir of await readdir('content/libraries')) {
   const methods = (await files(join(base, 'methods'))).map((item) => methodSchema.parse(item));
   const papers = (await files(join(base, 'papers'))).map((item) => paperSchema.parse(item));
   const questions = (await files(join(base, 'questions'))).map((item) => questionSchema.parse(item));
+  const types = (await files(join(base, 'problem-types'))).map((item) => problemTypeSchema.parse(item));
+  const classified = new Set(types.flatMap((type) => type.methods.map((choice) => choice.methodId)));
   const archive = getArchiveStats(papers, questions, library.examScope);
   result.push({ library: library.id, version: library.syllabus.version,
     targetSyllabusVerified: library.syllabus.reviewStatus === 'reviewed',
     methods: methods.length, reviewedMethods: methods.filter((m) => m.status === 'reviewed').length,
+    problemTypes: { count: types.length, reviewed: types.filter((type) => type.status === 'reviewed').length,
+      formulas: types.reduce((count, type) => count + type.formulas.length, 0),
+      chaptersWithoutTypes: library.chapters.filter((chapter) => !types.some((type) => type.chapterId === chapter.id)).map((chapter) => chapter.id),
+      methodsWithoutTypes: methods.filter((method) => !classified.has(method.id)).map((method) => method.id),
+      note: '已有方法进入题型不代表候选方法穷尽；草案真题归属不计为题型考试频次。' },
     topicCoverage: getCoverage(library, methods),
     archiveCoverage: { ...archive, perPaper: undefined },
     historicalRequirements: requirementDocuments.filter((document) => document.libraryId === library.id).map((document) => ({

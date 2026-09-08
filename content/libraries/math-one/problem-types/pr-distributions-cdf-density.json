@@ -1,0 +1,58 @@
+{
+  "id": "pr-distributions-cdf-density",
+  "libraryId": "math-one",
+  "chapterId": "pr-distributions",
+  "title": "求分布函数、密度与区间概率",
+  "summary": "先核实非负、归一化、右连续及两端极限",
+  "recognition": [
+    "给分段分布函数或待定常数密度",
+    "有端点跳跃时需保留点质量"
+  ],
+  "strategy": [
+    "先核实非负、归一化、右连续及两端极限",
+    "区间概率按端点开闭取CDF与左极限",
+    "指数尾概率或正态标准化满足模型时可缩短积分"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-dist-cdf",
+      "when": "一般或含跳跃分布函数与开闭区间概率"
+    },
+    {
+      "methodId": "pr-dist-density",
+      "when": "绝对连续分布的归一化、积分与求密度"
+    },
+    {
+      "methodId": "pr-dist-exponential",
+      "when": "正半轴指数模型的尾概率和无记忆性"
+    },
+    {
+      "methodId": "pr-dist-normal",
+      "when": "正态变量区间概率标准化"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-distributions-cdf-density-formula-1",
+      "title": "一般区间与点质量",
+      "latex": "P(a\\le X\\le b)=F(b)-F(a-),\\qquad P(X=a)=F(a)-F(a-)",
+      "conditions": [
+        "F为X的分布函数，a≤b",
+        "F(a−)表示左极限"
+      ],
+      "derivation": "事件X≤b扣除X<a得到闭区间；X≤a扣除X<a得到单点。连续分布时左极限等于函数值，点质量才为零。",
+      "methodIds": [
+        "pr-dist-cdf"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2026-301-09",
+    "2026-301-10",
+    "2024-301-08"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

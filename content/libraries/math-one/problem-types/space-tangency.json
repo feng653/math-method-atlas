@@ -1,0 +1,50 @@
+{
+  "id": "space-tangency",
+  "libraryId": "math-one",
+  "chapterId": "geometry",
+  "title": "求空间切线、法平面与切平面",
+  "summary": "根据曲线或曲面的维数确定切向与法向。",
+  "recognition": [
+    "指定接触点，或要求过给定点的切平面、交曲线切线和法平面。"
+  ],
+  "strategy": [
+    "查目标点在对象上以及正则性。",
+    "曲线先求切向；曲面先求法向；再写点向式并代几何附加条件。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-space-tangent",
+      "when": "参数曲线导向非零，或两曲面梯度叉积非零时求切线/法平面。"
+    },
+    {
+      "methodId": "hm-tangent-plane",
+      "when": "单个光滑曲面梯度非零时求切平面/法线。"
+    },
+    {
+      "methodId": "hm-line-plane-equations",
+      "when": "已经得到方向或法向后，用统一点向式写目标方程。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "graph-tangent",
+      "title": "图形曲面切平面",
+      "latex": "z-z_0=g_x(x_0,y_0)(x-x_0)+g_y(x_0,y_0)(y-y_0)",
+      "conditions": [
+        "g在点附近C¹；z0=g(x0,y0)。"
+      ],
+      "derivation": "写F=z−g(x,y)，梯度为(−gx,−gy,1)恒非零，将梯度与位移点积为0后整理。",
+      "methodIds": [
+        "hm-tangent-plane",
+        "hm-line-plane-equations"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2018-301-02"
+  ],
+  "boundaries": [
+    "曲线的法平面与曲面的切平面是不同对象；奇点不能套正则公式。"
+  ],
+  "status": "draft"
+}

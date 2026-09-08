@@ -1,0 +1,50 @@
+{
+  "id": "directional-optimization",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求方向导数与最大变化率",
+  "summary": "先归一化方向，再区分固定点与移动点的优化。",
+  "recognition": [
+    "沿某向量求变化率，或最大方向导数给定反推参数/求最优点。"
+  ],
+  "strategy": [
+    "将方向向量归一化。",
+    "固定点用梯度点积；若点也变化，将梯度模作为新目标再处理点约束。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-direction-gradient",
+      "when": "函数可微，求给定方向变化率或该点最大变化率。"
+    },
+    {
+      "methodId": "hm-direction-cosines",
+      "when": "方向以坐标轴夹角给出，检查三个余弦平方和为1。"
+    },
+    {
+      "methodId": "hm-lagrange-multipliers",
+      "when": "最大变化率还需在曲线面上选点时，对梯度模平方优化。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "max-direction",
+      "title": "最大方向导数",
+      "latex": "\\max_{\\|e\\|=1}D_e f=\\|\\nabla f\\|,\\qquad e_{\\max}=\\frac{\\nabla f}{\\|\\nabla f\\|}",
+      "conditions": [
+        "f在目标点可微；最优方向公式另要求梯度非零。"
+      ],
+      "derivation": "由Cauchy不等式梯度点积不超过其模，方向与梯度同向时等号成立；梯度为0时所有单位方向均给0。",
+      "methodIds": [
+        "hm-direction-gradient",
+        "hm-direction-cosines"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2015-301-17"
+  ],
+  "boundaries": [
+    "不能把未单位化向量直接代方向导数；零梯度没有唯一最优方向。"
+  ],
+  "status": "draft"
+}

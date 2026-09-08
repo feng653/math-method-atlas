@@ -1,0 +1,53 @@
+{
+  "id": "pr-estimation-point-estimators",
+  "libraryId": "math-one",
+  "chapterId": "pr-estimation",
+  "title": "构造矩估计或极大似然估计",
+  "summary": "先区分随机估计量与代入数据的估计值",
+  "recognition": [
+    "任务是由样本构造未知参数的估计量",
+    "参数可能出现在密度支持域而非仅指数项"
+  ],
+  "strategy": [
+    "先区分随机估计量与代入数据的估计值",
+    "矩估计用可识别总体矩匹配样本矩",
+    "极大似然先写支持约束，再求内部驻点并比较边界"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-estimate-moments",
+      "when": "已有易解的总体矩且参数可由这些矩识别"
+    },
+    {
+      "methodId": "pr-estimate-mle",
+      "when": "已给模型或似然，须保留参数支持域"
+    },
+    {
+      "methodId": "pr-estimate-unbiased",
+      "when": "明确统计量和估计值并核查是否需要无偏修正"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-estimation-point-estimators-formula-1",
+      "title": "指数尺度的矩估计与似然估计一致",
+      "latex": "X_i\\overset{\\mathrm{iid}}\\sim\\operatorname{Exp}(\\text{scale }\\theta)\\quad\\Rightarrow\\quad\\widehat\\theta_{\\rm MM}=\\widehat\\theta_{\\rm ML}=\\bar X",
+      "conditions": [
+        "θ>0，n≥1，密度θ⁻¹exp(−x/θ)，x>0",
+        "样本为独立同分布，几乎必然Σxᵢ>0"
+      ],
+      "derivation": "EX=θ给矩估计为均值；对数似然−n logθ−Σxᵢ/θ的导数为(Σxᵢ−nθ)/θ²，在均值两侧由正转负，得到全局最大。",
+      "methodIds": [
+        "pr-estimate-moments",
+        "pr-estimate-mle"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2022-301-22"
+  ],
+  "boundaries": [
+    "示例题采用两个不同尺度的独立样本，需要依各组密度写共同参数似然，不能直接套单样本均值结论。"
+  ],
+  "status": "draft"
+}

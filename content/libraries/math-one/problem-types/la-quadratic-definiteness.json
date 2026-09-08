@@ -1,0 +1,53 @@
+{
+  "id": "la-quadratic-definiteness",
+  "libraryId": "math-one",
+  "chapterId": "la-quadratic",
+  "title": "判正定与求二次不等式参数范围",
+  "summary": "实对称矩阵正定可用顺序主子式或特征值全正",
+  "recognition": [
+    "目标是对所有非零向量严格正，或对所有向量非负",
+    "需要区分正定与半正定边界"
+  ],
+  "strategy": [
+    "实对称矩阵正定可用顺序主子式或特征值全正",
+    "不等式允许等号时用平方和或全部特征值非负",
+    "边界参数独立代入，不能把正定判据的严格号机械改为非严格号"
+  ],
+  "methods": [
+    {
+      "methodId": "la-quadratic-positive",
+      "when": "严格正定时用顺序主子式"
+    },
+    {
+      "methodId": "la-quadratic-completion",
+      "when": "非负性可通过平方和及剩余项直接判断"
+    },
+    {
+      "methodId": "la-eigen-symmetric",
+      "when": "对称矩阵以完整实谱判断正定或半正定"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "la-quadratic-definiteness-formula-1",
+      "title": "配方消元的正定条件",
+      "latex": "\\begin{pmatrix}a&b^T\\\\ b&C\\end{pmatrix}>0\\iff a>0,\\ C-\\frac{bb^T}{a}>0",
+      "conditions": [
+        "矩阵为实对称分块矩阵，a为标量",
+        "右式以a>0为前提"
+      ],
+      "derivation": "二次型配成a(x+bᵀy/a)²+yᵀ(C−bbᵀ/a)y；替换可逆，取y=0得a必须正，再在平方项为零的子空间得到剩余矩阵正定。",
+      "methodIds": [
+        "la-quadratic-positive",
+        "la-quadratic-completion"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2024-301-15"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

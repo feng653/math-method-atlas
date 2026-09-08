@@ -1,0 +1,53 @@
+{
+  "id": "pr-limit-normal-approximation",
+  "libraryId": "math-one",
+  "chapterId": "pr-limit",
+  "title": "随机和或计数的正态近似",
+  "summary": "先计算单项均值与非零有限方差",
+  "recognition": [
+    "求大量独立同分布变量之和或二项计数尾概率",
+    "目标明确要求近似或渐近分布"
+  ],
+  "strategy": [
+    "先计算单项均值与非零有限方差",
+    "对和减nμ再除σ√n，将阈值也标准化",
+    "整数计数采用连续性修正，最后标明是近似"
+  ],
+  "methods": [
+    {
+      "methodId": "pr-limit-clt",
+      "when": "独立同分布且方差有限严格正，近似和或均值"
+    },
+    {
+      "methodId": "pr-limit-binomial",
+      "when": "二项计数的正态近似，需要两类期望次数均不太小"
+    },
+    {
+      "methodId": "pr-dist-normal",
+      "when": "标准化后计算标准正态区间概率"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "pr-limit-normal-approximation-formula-1",
+      "title": "二项整数区间的连续性修正",
+      "latex": "P(a\\le K\\le b)\\approx\\Phi\\!\\left(\\frac{b+1/2-np}{\\sqrt{np(1-p)}}\\right)-\\Phi\\!\\left(\\frac{a-1/2-np}{\\sqrt{np(1-p)}}\\right)",
+      "conditions": [
+        "K服从B(n,p)，0<p<1，a,b为整数且0≤a≤b≤n",
+        "np与n(1−p)均足够大以支持近似；式子不提供统一误差保证"
+      ],
+      "derivation": "每个整数质量点用宽1的连续小区间近似，a到b对应[a−1/2,b+1/2]；再按二项均值和方差标准化。",
+      "methodIds": [
+        "pr-limit-binomial",
+        "pr-limit-clt"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2020-301-08"
+  ],
+  "boundaries": [
+    "本题型是现有基本路线的编排草案，不能据此断言替代技巧穷尽。"
+  ],
+  "status": "draft"
+}

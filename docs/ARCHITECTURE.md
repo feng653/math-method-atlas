@@ -36,6 +36,8 @@ ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。
 
 ## 模块与 API 边界
 
+V2增加ProblemType实体（唯一schema.ts）：题型属于一个章节，methods多对多引用同体系方法并写选择条件；formulas记录推导公式及基本方法引用，questionIds显式记录作答目标归属。problem-types.ts校验与查询、现有loader/CLI/report统一接入；无单独后端。graph.ts继续作为唯一布局入口，problem-graph.ts插入题型层并保留共享方法单节点；聚焦题型包含其全部候选方法，允许跨章复用。题型卡、目录和搜索共用App选择，hash使用type参数。题型草案的选题数不进入已核验方法频次。
+
 来源契约由 `domain/source.ts` 唯一定义，schema.ts引用。source.metadata记录发布者/级别、检查日期/可用性、真实性证据和外链许可边界；题目可继承同一文档的整卷元数据（忽略fragment，保留query差异）。缺元数据保持未知，不能由HTTP成功推官方身份。
 
 Question.subquestions为主问题内可选子条目：id、原标号label、原创summary、methodIds、evidenceNote、可选source。方法引用必须属于父题methodLinks，不复制核验和主辅状态；子问只展示关联方法。频次与试卷完整性保持主问题级计数，未登记子问不能解释为原题没有子问。
