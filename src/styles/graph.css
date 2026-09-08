@@ -36,8 +36,8 @@
 .is-flowing .atlas-node.chapter .node-dot { animation: ink-breathe 5s ease-in-out infinite alternate; }
 @keyframes root-breathe { 50% { box-shadow: 0 0 0 12px #7fae9709, 0 0 70px #549b7720; } }
 @keyframes ink-breathe { to { opacity: 1; box-shadow: 0 0 0 5px color-mix(in srgb, var(--branch-color) 10%, transparent); } }
-.graph-views { position: absolute; bottom: 125px; left: 50%; transform: translateX(-50%); display: flex; padding: 3px; border: 1px solid #dfe6dc; border-radius: 30px; background: #ffffffdb; white-space: nowrap; }
-.graph-views button { padding: 9px 16px; min-height: 40px; border-radius: 24px; font-size: 12px; color: #6b7d70; }
+.graph-views { position: absolute; bottom: 125px; left: 50%; transform: translateX(-50%); display: flex; width: max-content; max-width: calc(100% - 32px); flex-wrap: nowrap; padding: 3px; border: 1px solid #dfe6dc; border-radius: 30px; background: #ffffffdb; white-space: nowrap; }
+.graph-views button { flex: 0 0 auto; padding: 9px 16px; min-height: 44px; border-radius: 24px; font-size: 12px; color: #6b7d70; }
 .graph-views button[aria-pressed="true"] { background: #e9f0e6; color: #254c47; }
 .graph-views small { margin-left: 5px; font-size: 10px; opacity: 0.65; }
 .canvas-controls button[aria-pressed="true"] { color: #0f766e; background: #edf4e9; }
@@ -54,3 +54,6 @@
   .canvas-hint { display: none; }
   .graph-views { bottom: 115px; }
 }
+
+.graph-views .category-back { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  background: #ffffffed; border: 1px solid #dfe6dc; max-width: calc(100vw - 32px); overflow: hidden; text-overflow: ellipsis; }

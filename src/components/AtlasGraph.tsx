@@ -106,7 +106,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
       <Background color="#ccd6cf" gap={30} size={0.9} />
     </ReactFlow>
     <div className="graph-views" aria-label="图谱范围">
-      {category && <button onClick={() => setCategoryView(null)} title="返回全部思路分类">← {thinkingCategories.find((item) => item.id === category)?.title}</button>}
+      {category && <button className="category-back" onClick={() => setCategoryView(null)} title="返回全部思路分类">← {thinkingCategories.find((item) => item.id === category)?.title}</button>}
       <button aria-pressed={allMethods && !chapter} onClick={() => { setAllMethods(true); onChapter('');
         if (allMethods && !chapter) void flow?.fitView({ duration: duration(), padding: 0.22 }); }}>
         完整图谱 <small>{methods.length}</small></button>

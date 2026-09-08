@@ -43,3 +43,5 @@
 基础思路唯一入口：`thinking-schema.ts` 定义分类与样本；`thinking.ts` 校验样本引用并计算抽样覆盖；`trigger-graph.ts` 在既有图谱中插入四类分类节点。`ThinkingCoverage` 展示范围，`ThinkingSamples` 在触发卡片内展示原创推理与原题外链。样本按题分文件存 `thinking-samples/<questionId>.json`，不改变题型归属或考试频次。基础章节仍 supplementary；13 个触发条件、13 张基础策略卡，数量以 content:report 为准。分类局部视图仅会话有效，章节/触发/方法仍使用既有 hash 深链。
 
 例题排版唯一入口 `MethodExample.tsx`：example.formulas 为题面公式，solution 兼容旧字符串或 [{title,text,formulas}]；新步骤共用 Formula，CLI 校验所有公式。第27—29题是用户讨论示例，不认定真题。第29题已纠正中点横坐标，详情见 reviews/thinking-map.md。
+
+图谱范围按钮：graph.css 以 max-content + nowrap 保持两个切换按钮单行；category-back 独立定位在上方，不参与胶囊宽度。禁止在 thinking.css 恢复 flex-wrap；抽样说明在上方区域，避免遮住底部控制。

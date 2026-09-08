@@ -1,7 +1,7 @@
 .atlas-node.category { background: #fafbf7; border: 1px solid var(--branch-color); }
 .atlas-node.category strong { color: var(--branch-color); font-size: 15px; }
 .thinking-nav-category { font-size: 12px; color: #52766b; margin: 18px 9px 5px; }
-.thinking-coverage { position: absolute; left: 30px; bottom: 58px; z-index: 4; max-width: 390px;
+.thinking-coverage { position: absolute; left: 30px; top: 146px; bottom: auto; z-index: 4; max-width: 390px;
   background: #fffffff2; border: 1px solid #e2e8df; border-radius: 10px; padding: 0 13px; }
 .thinking-coverage summary { min-height: 40px; font-size: 11px; }
 .thinking-coverage p { font-size: 12px; line-height: 1.8; margin-bottom: 12px; }
@@ -17,9 +17,8 @@
   .search-area { right: 190px; }
 }
 @media (max-width: 600px) {
-  .thinking-coverage { left: 16px; right: 16px; bottom: 110px; max-width: none; }
+  .thinking-coverage { left: 16px; right: 16px; top: 186px; bottom: auto; max-width: none; }
   .thinking-sample p, .thinking-sample li { font-size: 16px; }
   .thinking-sample .sample-boundary { font-size: 14px; }
   .thinking-sample summary { font-size: 16px; }
-  .graph-views { max-width: calc(100vw - 32px); flex-wrap: wrap; }
 }
