@@ -1,0 +1,25 @@
+{
+  "questionId": "2011-301-19",
+  "chapterIds": [
+    "multiple-integrals",
+    "integrals"
+  ],
+  "signal": "矩形域中积分含混合偏导，已知边界恒等式和原函数积分。",
+  "reasoning": [
+    "目标和已知仅差导数与坐标因子，提示分部把导数从未知函数搬走。",
+    "矩形域先累次化，再两次分部；边界恒等式及沿边导数使边界项消失，余项回到已知积分。"
+  ],
+  "methodIds": [
+    "hm-double-cartesian",
+    "hm-integration-by-parts"
+  ],
+  "boundary": "边界为零不代表所有方向导数都为零，只能使用沿该边合法求导的信息。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2011-301-19",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-structural-keyword",
+    "basic-derivative-pattern"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "questionId": "2011-301-16",
+  "chapterIds": [
+    "multivariable"
+  ],
+  "signal": "复合函数混合偏导中，内函数只给可导与某点取极值。",
+  "reasoning": [
+    "“可导且极值”先翻译成该点一阶导为零，避免追求没有给出的高阶导。",
+    "选先对y再对x的顺序，使链式计算只用到内函数一阶导，最后代入极值信息消项。"
+  ],
+  "methodIds": [
+    "hm-multivariable-chain"
+  ],
+  "boundary": "不要为了固定求导顺序擅自假设内函数二阶可导。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2011-301-16",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-structural-keyword",
+    "basic-symmetry-linearity"
+  ]
+}

@@ -1,0 +1,331 @@
+[
+  {
+    "questionId": "2009-301-08",
+    "chapterIds": [
+      "pr-events",
+      "pr-distributions"
+    ],
+    "signal": "离散开关与连续量相乘，目标是分布函数的跳点。",
+    "reasoning": [
+      "开关取零会把一整段概率压到同一点，先按开关值分层，而非直接寻找连续密度。",
+      "把点质量分支与连续正态分支组合成CDF，依据跳高等于单点概率识别间断。"
+    ],
+    "methodIds": [
+      "pr-event-total",
+      "pr-dist-cdf"
+    ],
+    "strategyTags": [
+      "按事件分层",
+      "识别点质量"
+    ],
+    "boundary": "混合分布可同时有点质量和连续部分；不能给整分布硬套密度。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2010-301-22",
+    "chapterIds": [
+      "pr-joint"
+    ],
+    "signal": "联合密度的指数有交叉项，同时要求边缘和条件密度。",
+    "reasoning": [
+      "先配方为平移平方项与剩余项，使内积分可识别为高斯型积分。",
+      "用归一化确定常数，再积分消去另一变量得到边缘密度。",
+      "在边缘密度为正处取联合与边缘之比，得到条件密度。"
+    ],
+    "methodIds": [
+      "pr-joint-marginal",
+      "pr-joint-conditional"
+    ],
+    "strategyTags": [
+      "先配方简化",
+      "积分消元",
+      "归一化后取比"
+    ],
+    "boundary": "条件密度只在分母正的取值上使用；指数可配方不等于两个原变量独立。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2011-301-23",
+    "chapterIds": [
+      "pr-estimation",
+      "pr-sampling"
+    ],
+    "signal": "正态总体的真均值已知，目标为方差估计及估计量的矩。",
+    "reasoning": [
+      "已知均值无需再估计，似然中保留绕真均值的平方和并极大化方差参数。",
+      "将同一平方和除以总体方差，识别为自由度n的卡方变量。",
+      "用卡方一二阶矩按缩放还原估计量的期望和方差。"
+    ],
+    "methodIds": [
+      "pr-estimate-mle",
+      "pr-sample-chi-square"
+    ],
+    "strategyTags": [
+      "先识别已知参数",
+      "标准化识别分布",
+      "由分布求矩"
+    ],
+    "boundary": "绕真均值平方和的自由度是n；不能误用扣除样本均值后的n−1。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2013-301-08",
+    "chapterIds": [
+      "pr-sampling"
+    ],
+    "signal": "概率关系同时出现t分布和F分布，阈值为正。",
+    "reasoning": [
+      "平方能把t变量转成对应自由度的F变量，先把双侧绝对值事件写成平方事件。",
+      "利用t分布关于零对称，将正阈值一侧尾概率与双侧尾概率联系起来。"
+    ],
+    "methodIds": [
+      "pr-sample-t-f"
+    ],
+    "strategyTags": [
+      "变换识别分布",
+      "利用对称性"
+    ],
+    "boundary": "平方丢失符号，不能把单侧事件直接等同于平方事件；先确认阈值正和自由度对应。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2014-301-23",
+    "chapterIds": [
+      "pr-estimation",
+      "pr-moments",
+      "pr-limit"
+    ],
+    "signal": "尺度模型由CDF给出，还要求总体矩、似然估计和概率极限。",
+    "reasoning": [
+      "先对CDF求导恢复密度，令平方变量按尺度归一，化简总体前两阶矩积分。",
+      "按密度构造样本似然，得到平方样本值的平均作为尺度估计。",
+      "把平方样本视为新的独立同分布变量，核对其一阶绝对矩有限，再用大数定律判断估计的概率极限。"
+    ],
+    "methodIds": [
+      "pr-moment-expectation",
+      "pr-estimate-mle",
+      "pr-limit-lln"
+    ],
+    "strategyTags": [
+      "变换简化积分",
+      "按目标拆任务",
+      "先核矩再用极限定理"
+    ],
+    "boundary": "依概率收敛不是有限样本恒等；对新变量用大数定律前必须重新检查可积性。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2015-301-08",
+    "chapterIds": [
+      "pr-moments"
+    ],
+    "signal": "目标是多项式期望，已知均值、方差和不相关性，而未给独立性。",
+    "reasoning": [
+      "先代数展开目标，把它拆成二阶原点矩、混合矩和一阶矩。",
+      "用方差还原二阶矩，用零协方差还原混合矩。",
+      "最后由期望线性组合所需矩，不必推导联合分布。"
+    ],
+    "methodIds": [
+      "pr-moment-expectation",
+      "pr-moment-variance",
+      "pr-moment-covariance"
+    ],
+    "strategyTags": [
+      "先展开目标",
+      "用已知矩还原",
+      "最少分布信息"
+    ],
+    "boundary": "期望线性不要求独立；混合矩的分解在此来自不相关条件，不能推广到任意非线性函数。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2016-301-22",
+    "chapterIds": [
+      "pr-joint",
+      "pr-events"
+    ],
+    "signal": "区域均匀分布通过指标变量分段变换，要求密度、独立性和新变量分布。",
+    "reasoning": [
+      "区域面积有限且为正，先用面积倒数得到联合密度。",
+      "指标变量把原区域分成两块，按两块对应的事件分别计算新变量的CDF，再按全概率相加。",
+      "判断独立性时寻找联合事件与边缘乘积不符的反例，无需强行构造完整联合密度。"
+    ],
+    "methodIds": [
+      "pr-joint-marginal",
+      "pr-event-total",
+      "pr-joint-independence"
+    ],
+    "strategyTags": [
+      "按区域分层",
+      "先求CDF",
+      "用反例否定"
+    ],
+    "boundary": "指标变换不是可逆二维光滑变换，不能直接套Jacobian密度公式。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2017-301-23",
+    "chapterIds": [
+      "pr-distributions",
+      "pr-estimation"
+    ],
+    "signal": "仅观测正态误差的绝对值，并分别要求分布、矩估计和似然估计。",
+    "reasoning": [
+      "绝对值有正负两条原像，先把两侧概率合并，得到绝对误差的密度。",
+      "矩估计按题目限定的一阶矩把总体矩与样本矩匹配。",
+      "似然估计另从绝对误差观测的密度构造样本似然，不能复用未经说明的原始带符号观测模型。"
+    ],
+    "methodIds": [
+      "pr-dist-transform",
+      "pr-estimate-moments",
+      "pr-estimate-mle"
+    ],
+    "strategyTags": [
+      "合并多重原像",
+      "先确认观测模型",
+      "按目标拆任务"
+    ],
+    "boundary": "变换后的样本信息与带符号误差不同；一阶矩估计与似然估计是不同任务，不混称同一推导。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2018-301-08",
+    "chapterIds": [
+      "pr-testing"
+    ],
+    "signal": "同一已知方差双侧均值检验，只改变显著性水平并比较决策。",
+    "reasoning": [
+      "统计量和观测值保持不变，将不同水平的检验写为标准正态尾部拒绝域。",
+      "较小显著性水平对应更大的绝对临界值，所以拒绝域嵌套缩小。",
+      "据集合包含关系判断哪些决策可以推出，而不是把拒绝与不拒绝都对称倒推。"
+    ],
+    "methodIds": [
+      "pr-test-normal-mean"
+    ],
+    "strategyTags": [
+      "比较集合包含",
+      "固定对象改阈值"
+    ],
+    "boundary": "不拒绝不证明原假设为真；拒绝域单向包含不允许任意逆命题。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2019-301-22",
+    "chapterIds": [
+      "pr-events",
+      "pr-moments",
+      "pr-joint"
+    ],
+    "signal": "正连续量乘离散正负符号，分别要求密度、不相关参数和独立性。",
+    "reasoning": [
+      "按符号值拆成正、负支，使用全概率组合密度。",
+      "不相关目标只需算协方差并解其为零的参数条件。",
+      "独立性另作事件乘积检查：构造交集不可能但边缘概率都正的事件，否定独立。"
+    ],
+    "methodIds": [
+      "pr-event-total",
+      "pr-moment-covariance",
+      "pr-joint-independence"
+    ],
+    "strategyTags": [
+      "按事件分层",
+      "区分判断强度",
+      "用反例否定"
+    ],
+    "boundary": "协方差为零不保证独立；混合离散连续结构不能直接套二维可逆密度变换。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2020-301-08",
+    "chapterIds": [
+      "pr-limit"
+    ],
+    "signal": "许多独立同分布伯努利变量的和，要求给定阈值的概率近似。",
+    "reasoning": [
+      "先由单项均值和方差得到和的均值及标准差。",
+      "把原阈值事件同步标准化，保留不等号方向。",
+      "用中心极限定理把标准化和的CDF近似为标准正态CDF，按所求左右尾取值。"
+    ],
+    "methodIds": [
+      "pr-limit-clt"
+    ],
+    "strategyTags": [
+      "中心化与标准化",
+      "先核矩再用极限定理"
+    ],
+    "boundary": "这是近似而非有限样本精确恒等；不能把和的标准差误写成方差或漏掉平方根。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2021-301-10",
+    "chapterIds": [
+      "pr-testing",
+      "pr-sampling"
+    ],
+    "signal": "给定拒绝域，要求在指定备择均值下的第二类错误概率。",
+    "reasoning": [
+      "第二类错误对应未拒绝原假设，先取拒绝域的补集。",
+      "计算概率时切换到指定备择参数下的样本均值分布，标准误仍由总体标准差除以√n。",
+      "在备择分布中标准化补集边界并计算概率。"
+    ],
+    "methodIds": [
+      "pr-test-errors",
+      "pr-sample-normal"
+    ],
+    "strategyTags": [
+      "先明确概率背景",
+      "补事件",
+      "中心化与标准化"
+    ],
+    "boundary": "第二类错误不是在原假设下计算，也一般不等于1−显著性水平。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2024-301-10",
+    "chapterIds": [
+      "pr-joint",
+      "pr-distributions"
+    ],
+    "signal": "独立连续变量之差再取绝对值，要求识别所得分布。",
+    "reasoning": [
+      "先把差写成X+(−Y)，依据原指数支持集分段确定卷积积分界。",
+      "得到差的两侧密度后，再为绝对值合并正负原像。",
+      "按所得支持集和密度形式识别分布参数，而不只比较名称。"
+    ],
+    "methodIds": [
+      "pr-joint-convolution",
+      "pr-dist-exponential"
+    ],
+    "strategyTags": [
+      "先处理内层变换",
+      "合并多重原像",
+      "按支持集分段"
+    ],
+    "boundary": "连续卷积要求所用变量独立且有密度；绝对值合并两支时不能漏掉一侧。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  },
+  {
+    "questionId": "2025-301-22",
+    "chapterIds": [
+      "pr-moments",
+      "pr-events"
+    ],
+    "signal": "赔付按损失阈值分段，另一目标是随机年度次数下的理赔次数分布。",
+    "reasoning": [
+      "先把赔付写成损失的分段函数，阈值以下为零，按原损失分布求该函数期望。",
+      "对次数分布先固定年度事件次数，在此条件下计算理赔次数的二项分布。",
+      "再对年度次数所有可能取值按全概率混合。"
+    ],
+    "methodIds": [
+      "pr-moment-expectation",
+      "pr-event-total"
+    ],
+    "strategyTags": [
+      "先定义目标变量",
+      "按事件分层",
+      "条件化后混合"
+    ],
+    "boundary": "赔付金额与理赔次数是不同目标；随机总次数不能直接代入固定次数二项模型而不混合。",
+    "evidenceBasis": "已审索引摘要/核验note"
+  }
+]

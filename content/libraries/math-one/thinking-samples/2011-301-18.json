@@ -1,0 +1,25 @@
+{
+  "questionId": "2011-301-18",
+  "chapterIds": [
+    "limits",
+    "integrals"
+  ],
+  "signal": "先证明对数双边界，再判断调和和减对数的数列收敛。",
+  "reasoning": [
+    "后一目标需要相邻差符号和下界，因此把前一不等式看作后一步的工具。",
+    "把对数写成1/t的短区间积分，用单调端点界证明相邻差负，再给正下界。"
+  ],
+  "methodIds": [
+    "hm-integral-inequality",
+    "hm-recursive-limit"
+  ],
+  "boundary": "单调递减不单独保证有限极限，还必须有下界。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2011-301-18",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-unknown-function-route",
+    "basic-auxiliary-comparison"
+  ]
+}

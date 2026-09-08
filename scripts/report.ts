@@ -1,6 +1,8 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { librarySchema, methodSchema, paperSchema, questionSchema, problemTypeSchema } from '../src/domain/schema';
+import { thinkingSampleSchema } from '../src/domain/thinking-schema';
+import { thinkingCoverage } from '../src/domain/thinking';
 import { getCoverage } from '../src/domain/coverage';
 import { requirementItemsSchema } from '../src/domain/requirement-items';
 import { getArchiveStats } from '../src/domain/archive-statistics';
@@ -20,12 +22,14 @@ for (const dir of await readdir('content/libraries')) {
   const papers = (await files(join(base, 'papers'))).map((item) => paperSchema.parse(item));
   const questions = (await files(join(base, 'questions'))).map((item) => questionSchema.parse(item));
   const groups = (await files(join(base, 'problem-types'))).map((item) => problemTypeSchema.parse(item));
+  const samples = (await files(join(base, 'thinking-samples'))).map((item) => thinkingSampleSchema.parse(item));
   const types = groups.filter((item) => item.kind !== 'trigger');
   const classified = new Set(types.flatMap((type) => type.methods.map((choice) => choice.methodId)));
   const archive = getArchiveStats(papers, questions, library.examScope);
   result.push({ library: library.id, version: library.syllabus.version,
     targetSyllabusVerified: library.syllabus.reviewStatus === 'reviewed',
     methods: methods.length, reviewedMethods: methods.filter((m) => m.status === 'reviewed').length,
+    thinkingCoverage: thinkingCoverage(library, samples, papers, groups, questions),
     triggerConditions: groups.filter((item) => item.kind === 'trigger').length,
     problemTypes: { count: types.length, reviewed: types.filter((type) => type.status === 'reviewed').length,
       formulas: types.reduce((count, type) => count + type.formulas.length, 0),

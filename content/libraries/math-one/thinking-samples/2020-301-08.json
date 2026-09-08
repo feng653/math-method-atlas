@@ -1,0 +1,24 @@
+{
+  "questionId": "2020-301-08",
+  "chapterIds": [
+    "pr-limit"
+  ],
+  "signal": "许多独立同分布伯努利变量的和，要求给定阈值的概率近似。",
+  "reasoning": [
+    "先由单项均值和方差得到和的均值及标准差。",
+    "把原阈值事件同步标准化，保留不等号方向。",
+    "用中心极限定理把标准化和的CDF近似为标准正态CDF，按所求左右尾取值。"
+  ],
+  "methodIds": [
+    "pr-limit-clt"
+  ],
+  "boundary": "这是近似而非有限样本精确恒等；不能把和的标准差误写成方差或漏掉平方根。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2020-301-08",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-model-match",
+    "basic-final-check"
+  ]
+}

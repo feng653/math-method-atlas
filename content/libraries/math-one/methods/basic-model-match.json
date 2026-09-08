@@ -1,0 +1,28 @@
+{
+  "id": "basic-model-match",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "先核条件，再匹配标准模型",
+  "summary": "标准化、求导或整理后可能出现已知方程、分布或级数。",
+  "conditions": [
+    "标准化、求导或整理后可能出现已知方程、分布或级数。"
+  ],
+  "steps": [
+    "列出模型要求的条件与参数。",
+    "做最少变换使结构对齐。",
+    "核对定义域、自由度或收敛条件再调用结论。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "形状相似不保证假设成立；近似结论不能当精确等式。"
+  ],
+  "example": {
+    "prompt": "自编推演：正态总体真均值已知，出现绕真均值的样本平方和。",
+    "solution": "除以总体方差后识别卡方结构；未估计均值，不扣除一项自由度。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-model-match-topic"
+  ],
+  "status": "reviewed"
+}

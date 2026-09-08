@@ -1,0 +1,24 @@
+{
+  "questionId": "2014-301-16",
+  "chapterIds": [
+    "derivatives"
+  ],
+  "signal": "函数由隐方程给出，却要求极值。",
+  "reasoning": [
+    "目标需要导数符号，先确认隐式求导的分母沿解支不为零。",
+    "利用原方程约束函数符号，再把导数符号化为简单组合的变号，检验全部驻点。"
+  ],
+  "methodIds": [
+    "hm-implicit-derivative",
+    "hm-monotonic-extrema"
+  ],
+  "boundary": "仅解出y′=0还不能判极值；也不能跳过隐函数分母合法性。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2014-301-16",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-case-split",
+    "basic-final-check"
+  ]
+}

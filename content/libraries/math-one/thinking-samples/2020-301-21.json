@@ -1,0 +1,26 @@
+{
+  "questionId": "2020-301-21",
+  "chapterIds": [
+    "la-matrices",
+    "la-eigen"
+  ],
+  "signal": "给出一个不是特征向量的非零向量及它在矩阵作用下的像，并要求用它们构造可逆列阵和相似形式。",
+  "reasoning": [
+    "要把这两列当作基，首先缺的是无关性；假设相关，就会有Aα=cα，与已知非特征向量冲突，因此该信息正好保障基矩阵可逆。",
+    "原矩阵的具体元素未必最容易处理，而题设已有向量及其像的递推关系，所以在这组基下逐列写矩阵作用，直接得到较简单的表示。",
+    "基变换已经给出相似关系；若目标还要求对角化，再利用已审路线中的相异特征值构造特征基，不把得到一种相似形当成全部任务完成。"
+  ],
+  "methodIds": [
+    "la-matrix-inverse",
+    "la-eigen-similarity"
+  ],
+  "boundary": "此处由两列无关推出方阵可逆依赖题中二维情形；在更高维空间，两个无关向量通常还不足以构成全空间基。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2020-301-21",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-structural-keyword"
+  ]
+}

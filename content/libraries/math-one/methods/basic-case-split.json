@@ -1,0 +1,28 @@
+{
+  "id": "basic-case-split",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "先隔离退化情形",
+  "summary": "除数、主元、判别式或模型假设可能随参数失效。",
+  "conditions": [
+    "除数、主元、判别式或模型假设可能随参数失效。"
+  ],
+  "steps": [
+    "标出即将除以或假定非零的量。",
+    "先求它们为零的临界情形。",
+    "常规分支按通法求，临界分支回到原条件。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "行列式为零只是无唯一解，不保证无穷多解。"
+  ],
+  "example": {
+    "prompt": "自编推演：带参数线性方程组，要求无穷多解。",
+    "solution": "先由系数行列式筛出候选参数，再逐一比较系数矩阵与增广矩阵的秩。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-case-split-topic"
+  ],
+  "status": "reviewed"
+}

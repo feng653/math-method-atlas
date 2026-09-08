@@ -1,0 +1,24 @@
+{
+  "questionId": "2009-301-10",
+  "chapterIds": [
+    "ode"
+  ],
+  "signal": "已给齐次通解结构，又要求同系数非齐次初值解。",
+  "reasoning": [
+    "指数乘一次多项式说明对应特征根重复，可先反推系数。",
+    "再按非齐次右端选多项式特解，和齐次通解相加后代入两个初值。"
+  ],
+  "methodIds": [
+    "hm-ode-characteristic",
+    "hm-ode-undetermined"
+  ],
+  "boundary": "特征根重数控制齐次基；不能从右端形式直接猜完整初值解。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-10",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-structural-keyword",
+    "basic-model-match"
+  ]
+}

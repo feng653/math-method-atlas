@@ -1,0 +1,24 @@
+{
+  "questionId": "2021-301-07",
+  "chapterIds": [
+    "la-matrices"
+  ],
+  "signal": "目标比较分块矩阵的秩，已审路线同时涉及可逆块消元与实矩阵的Gram形式。",
+  "reasoning": [
+    "只问秩就不必恢复矩阵每个元素；优先寻找保持秩的可逆块变换，让耦合块变成可辨认的简单块。",
+    "若化简中出现AᵀA，不直接按外观猜秩，而是把其零向量条件转成平方范数：AᵀAx=0使‖Ax‖²=0，于是比较两个核。",
+    "核相同且定义域维数相同才给出等秩；把这一结论带回块消元后的表达式，完成秩比较。"
+  ],
+  "methodIds": [
+    "la-matrix-rank"
+  ],
+  "boundary": "原索引记录两个转载源对实矩阵或实对称矩阵的措辞不同；这里只提炼已核验可用的实Gram等秩与块消元，不确认选项字母或官方题面。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2021-301-07",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-structural-keyword"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "basic-auxiliary-comparison",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "verify",
+  "title": "直接求值困难，但目标只需证明或估计",
+  "summary": "要证明等式、不等式、存在性或收敛，无需完整求值。",
+  "recognition": [
+    "要证明等式、不等式、存在性或收敛，无需完整求值。"
+  ],
+  "strategy": [
+    "把目标改写为差为零、符号或上下界。",
+    "构造能承接已知条件的差函数、弦线或比较量。",
+    "用单调性、中值定理或夹逼完成目标。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-auxiliary-comparison",
+      "when": "构造可比较的辅助对象"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "存在性不等于唯一性；比较方向与端点假设要核对。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

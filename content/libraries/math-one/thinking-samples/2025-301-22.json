@@ -1,0 +1,26 @@
+{
+  "questionId": "2025-301-22",
+  "chapterIds": [
+    "pr-moments",
+    "pr-events"
+  ],
+  "signal": "赔付按损失阈值分段，另一目标是随机年度次数下的理赔次数分布。",
+  "reasoning": [
+    "先把赔付写成损失的分段函数，阈值以下为零，按原损失分布求该函数期望。",
+    "对次数分布先固定年度事件次数，在此条件下计算理赔次数的二项分布。",
+    "再对年度次数所有可能取值按全概率混合。"
+  ],
+  "methodIds": [
+    "pr-moment-expectation",
+    "pr-event-total"
+  ],
+  "boundary": "赔付金额与理赔次数是不同目标；随机总次数不能直接代入固定次数二项模型而不混合。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2025-301-22",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-unknown-function-route",
+    "basic-partition"
+  ]
+}

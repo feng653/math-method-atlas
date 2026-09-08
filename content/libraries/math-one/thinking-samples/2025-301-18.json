@@ -1,0 +1,26 @@
+{
+  "questionId": "2025-301-18",
+  "chapterIds": [
+    "multivariable",
+    "ode"
+  ],
+  "signal": "未知函数始终以x/y为自变量，带x²、xy、y²的二阶偏导组合及对角线条件。",
+  "reasoning": [
+    "比值内层与齐次系数匹配，先记u=x/y并保留u>0，再按链式核算组合。",
+    "得到u²f″+uf′=1后用t=ln u变为F″=1；对角线信息转换成u=1的两个初值，再回代。"
+  ],
+  "methodIds": [
+    "hm-multivariable-chain",
+    "hm-ode-euler"
+  ],
+  "boundary": "x=y对应u=1；不能把原偏导初值原样当作f′，也不能跨u=0使用对数。",
+  "evidenceBasis": "本次重新打开高校托管17页PDF https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf，并实际查看此前该PDF物理第11页渲染缓存图，确认第18题比值内层、偏导组合、正半轴与对角线初值；没有把高校托管标为官方。",
+  "id": "2025-301-18",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-repeated-expression",
+    "basic-equivalent-representation",
+    "basic-model-match"
+  ]
+}

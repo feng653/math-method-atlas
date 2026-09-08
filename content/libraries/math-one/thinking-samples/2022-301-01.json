@@ -1,0 +1,23 @@
+{
+  "id": "2022-301-01",
+  "libraryId": "math-one",
+  "questionId": "2022-301-01",
+  "chapterIds": [
+    "limits"
+  ],
+  "triggerIds": [
+    "basic-auxiliary-comparison",
+    "basic-final-check"
+  ],
+  "methodIds": [
+    "hm-squeeze"
+  ],
+  "signal": "已知比值极限，目标却是分子函数极限与点值的关系。",
+  "reasoning": [
+    "把函数写成有界比值与趋零量的乘积，先在去心邻域内估计。",
+    "用有界乘无穷小推出函数极限，再区分极限与点值；没有连续性条件不能补出点值。"
+  ],
+  "boundary": "有限极限只提供局部有界；极限结论不自动决定该点函数值。",
+  "evidenceBasis": "依据已审2022年第1题索引及主agent核验note；该索引采用公开HTML转载，未认证官方原卷。本轮未重查原题。",
+  "status": "reviewed"
+}

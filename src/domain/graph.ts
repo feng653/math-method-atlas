@@ -3,9 +3,10 @@ import type { Library, Method, ProblemType } from './schema';
 import { separateNodes } from './layout';
 import { addProblemTypes } from './problem-graph';
 import { hierarchyLayout } from './hierarchy-layout';
+import { addTriggerCategories } from './trigger-graph';
 
-export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method' | 'problem';
-  subtitle: string; color: string; compact?: boolean; chapterId?: string; methodId?: string; problemTypeId?: string };
+export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method' | 'problem' | 'category';
+  subtitle: string; color: string; compact?: boolean; chapterId?: string; methodId?: string; problemTypeId?: string; categoryId?: string };
 export type AtlasNode = Node<AtlasNodeData>;
 export const graphNodeId = (kind: AtlasNodeData['kind'], id: string) => `${kind}:${id}`;
 export const subjectColors: Record<string, string> = {
@@ -86,6 +87,6 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
     });
   });
   const graph = { nodes: allMethods && !chapterId ? separateNodes(nodes) : nodes, edges };
-  return hierarchyLayout(addProblemTypes(graph, problemTypes.filter((type) => type.libraryId === library.id
-    && (!chapterId || type.chapterId === chapterId)), chapterId, library.id));
+  const groups = problemTypes.filter((type) => type.libraryId === library.id && (!chapterId || type.chapterId === chapterId));
+  return hierarchyLayout(addTriggerCategories(addProblemTypes(graph, groups, chapterId, library.id), groups));
 }

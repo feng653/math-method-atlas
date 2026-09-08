@@ -1,0 +1,25 @@
+{
+  "questionId": "2009-301-08",
+  "chapterIds": [
+    "pr-events",
+    "pr-distributions"
+  ],
+  "signal": "离散开关与连续量相乘，目标是分布函数的跳点。",
+  "reasoning": [
+    "开关取零会把一整段概率压到同一点，先按开关值分层，而非直接寻找连续密度。",
+    "把点质量分支与连续正态分支组合成CDF，依据跳高等于单点概率识别间断。"
+  ],
+  "methodIds": [
+    "pr-event-total",
+    "pr-dist-cdf"
+  ],
+  "boundary": "混合分布可同时有点质量和连续部分；不能给整分布硬套密度。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2009-301-08",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-partition",
+    "basic-structural-keyword"
+  ]
+}

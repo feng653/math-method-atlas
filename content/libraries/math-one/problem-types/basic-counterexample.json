@@ -1,0 +1,30 @@
+{
+  "id": "basic-counterexample",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "verify",
+  "title": "要判断全称命题或两个概念是否等价",
+  "summary": "命题声称任意成立，或想从较弱条件推出较强结论。",
+  "recognition": [
+    "命题声称任意成立，或想从较弱条件推出较强结论。"
+  ],
+  "strategy": [
+    "先写清推理方向和量词。",
+    "找结论必须满足的不变量或事件关系。",
+    "若能构造违反者即可否定；特例成立仍不能证明全称。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-counterexample",
+      "when": "先查必要条件与简单反例"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "必要条件满足不代表充分；反例必须同时满足原假设。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

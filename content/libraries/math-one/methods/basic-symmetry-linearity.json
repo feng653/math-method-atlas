@@ -1,0 +1,28 @@
+{
+  "id": "basic-symmetry-linearity",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "利用对称与线性减少计算",
+  "summary": "目标可拆成简单项，或变换前后有相同部分。",
+  "conditions": [
+    "目标可拆成简单项，或变换前后有相同部分。"
+  ],
+  "steps": [
+    "比较变换前后的符号、区域与约束。",
+    "利用线性拆分，或相加相减消去公共项。",
+    "只计算未被消去的量。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "区域和权重也须保持对称；不相关不能代替独立。"
+  ],
+  "example": {
+    "prompt": "自编推演：若两个函数满足同一个非齐次线性方程，它们的差满足什么？",
+    "solution": "由线性性相减，公共右端消失，差满足齐次方程；要构成通解还需核对线性无关性。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-symmetry-linearity-topic"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,25 @@
+{
+  "questionId": "2010-301-16",
+  "chapterIds": [
+    "integrals",
+    "derivatives"
+  ],
+  "signal": "变上限积分的核同时含外部变量，最终要求单调和极值。",
+  "reasoning": [
+    "先拆成外部因子乘普通变限积分，避免把核中的参数依赖漏掉。",
+    "分别按乘积和基本定理求导，保留到端点项自然抵消后，再判断余式符号。"
+  ],
+  "methodIds": [
+    "hm-newton-leibniz",
+    "hm-monotonic-extrema"
+  ],
+  "boundary": "含参积分不能只对上限求导；端点项消失需要算出来。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2010-301-16",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-derivative-pattern",
+    "basic-symmetry-linearity"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "questionId": "2010-301-19",
+  "chapterIds": [
+    "multivariable",
+    "multiple-integrals"
+  ],
+  "signal": "椭球切平面与坐标面垂直，求切点轨迹并计算其上方曲面积分。",
+  "reasoning": [
+    "先把两个平面垂直转成法向量约束，从椭球梯度读出2z−y=0，比先求全体切平面省一步。",
+    "再按所求曲面片选择投影；面积元里的根式恰与被积因子匹配，应先约简再积分。"
+  ],
+  "methodIds": [
+    "hm-tangent-plane",
+    "hm-surface-integrals"
+  ],
+  "boundary": "投影只能覆盖题目指定的上方曲面片；不能漏分支或忽略面积元绝对值。",
+  "evidenceBasis": "本次重新打开公开40页PDF https://wuli.wiki/files/fc96a92b2b2c6495.pdf，并实际查看此前从该PDF渲染的物理第39页缓存图；核对第19题题面、垂直条件及曲面积分因子，同时读取本地verified记录。",
+  "id": "2010-301-19",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-geometric-relation",
+    "basic-structural-keyword",
+    "basic-equivalent-representation"
+  ]
+}

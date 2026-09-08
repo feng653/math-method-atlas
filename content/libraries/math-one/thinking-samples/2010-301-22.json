@@ -1,0 +1,25 @@
+{
+  "questionId": "2010-301-22",
+  "chapterIds": [
+    "pr-joint"
+  ],
+  "signal": "联合密度的指数有交叉项，同时要求边缘和条件密度。",
+  "reasoning": [
+    "先配方为平移平方项与剩余项，使内积分可识别为高斯型积分。",
+    "用归一化确定常数，再积分消去另一变量得到边缘密度。",
+    "在边缘密度为正处取联合与边缘之比，得到条件密度。"
+  ],
+  "methodIds": [
+    "pr-joint-marginal",
+    "pr-joint-conditional"
+  ],
+  "boundary": "条件密度只在分母正的取值上使用；指数可配方不等于两个原变量独立。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2010-301-22",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-final-check"
+  ]
+}

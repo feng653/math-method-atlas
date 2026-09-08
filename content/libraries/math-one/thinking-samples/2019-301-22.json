@@ -1,0 +1,28 @@
+{
+  "questionId": "2019-301-22",
+  "chapterIds": [
+    "pr-events",
+    "pr-moments",
+    "pr-joint"
+  ],
+  "signal": "正连续量乘离散正负符号，分别要求密度、不相关参数和独立性。",
+  "reasoning": [
+    "按符号值拆成正、负支，使用全概率组合密度。",
+    "不相关目标只需算协方差并解其为零的参数条件。",
+    "独立性另作事件乘积检查：构造交集不可能但边缘概率都正的事件，否定独立。"
+  ],
+  "methodIds": [
+    "pr-event-total",
+    "pr-moment-covariance",
+    "pr-joint-independence"
+  ],
+  "boundary": "协方差为零不保证独立；混合离散连续结构不能直接套二维可逆密度变换。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2019-301-22",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-partition",
+    "basic-counterexample"
+  ]
+}

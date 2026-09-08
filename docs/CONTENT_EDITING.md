@@ -49,3 +49,8 @@ source.page默认PDF物理页；文章图片序号须同时写 `locatorKind: "im
 可选examScope：体系清单可声明单个考试代码的年度目标{exam,startYear,endYear}，每年一卷。它决定目标完整索引分母，和当前已收录卷数分开；未声明时不显示目标分母。变更范围需依据产品目标，不可为消除缺卷缩小范围。
 
 主辅角色与核验是两条独立轴：methodLinks.role可为primary（直接解决至少一个明确求值/证明/判断任务，可多个主入口）、supporting（中间变换/引理/计算工具）、unclassified（证据不足或尚未分类）。分类须填写简短原创roleNote；不能根据数组位置或标签数量猜角色。角色不能提升verification，待核主方法仍不计频次；已核验的主、辅方法均参与当前证据频次。旧条目省略角色按待分类展示。原note继续保留数学核验依据。
+
+
+基础思路分类：kind=trigger 的分组必须填写 category=read/transform/branch/verify，仍放在 problem-types/，questionIds 保持空。先匹配现有触发条件，再决定是否新增；技术方法仍引用 methods/ 的唯一条目。
+
+真题思路样本放 thinking-samples/<questionId>.json：id 与 questionId 相同，填写 libraryId、chapterIds、triggerIds、methodIds、signal、reasoning（至少两步）、boundary、evidenceBasis、status。参考2022-301-01。methodIds 必须来自该题已核验关联；chapterIds 必须由这些方法支撑。evidenceBasis 区分“本轮复查原题”与“根据已有索引/note提炼”，不能把可解析或同伴提案当作官方核验。样本只记录原创思考链，不复制整段解析，也不参与频次。修订同题时合并到原文件。

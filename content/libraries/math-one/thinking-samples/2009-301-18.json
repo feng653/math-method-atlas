@@ -1,0 +1,23 @@
+{
+  "questionId": "2009-301-18",
+  "chapterIds": [
+    "derivatives"
+  ],
+  "signal": "要证明中值等式及端点右导数结论。",
+  "reasoning": [
+    "目标差值中有割线斜率，减去连接端点的直线可造出等端值辅助函数。",
+    "罗尔给内部导数等式；第二目标把右差商放到缩小区间中，再利用内部导数极限。"
+  ],
+  "methodIds": [
+    "hm-mean-value-proof",
+    "hm-derivative-definition"
+  ],
+  "boundary": "内点导数存在不自动给端点导数，必须回到单侧差商。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-18",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-auxiliary-comparison"
+  ]
+}

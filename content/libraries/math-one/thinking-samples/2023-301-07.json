@@ -1,0 +1,25 @@
+{
+  "questionId": "2023-301-07",
+  "chapterIds": [
+    "la-vectors"
+  ],
+  "signal": "同一个向量要同时能由两组向量表示，两个独立的表示条件必须落到同一对象上。",
+  "reasoning": [
+    "分别求两组张成空间并不能直接给公共部分；把共同向量同时写成Ac和Bd，令Ac=Bd，让共同性成为一个等式。",
+    "移项得到关于表示系数的齐次系统，选择解系数而不是猜共同向量，因为现有消元方法已经能处理这个系统。",
+    "系数解仍不是最终公共向量，必须代回Ac；不同系数可能对应同一向量或零向量，所以按还原后的向量判断共同部分。"
+  ],
+  "methodIds": [
+    "la-vector-representation"
+  ],
+  "boundary": "系数系统的解空间与两张成空间的交不是同一个空间，不能不经代回就把系数自由度当成交空间维数。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2023-301-07",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-structural-keyword",
+    "basic-equivalent-representation",
+    "basic-final-check"
+  ]
+}

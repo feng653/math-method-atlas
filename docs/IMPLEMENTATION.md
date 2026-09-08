@@ -40,10 +40,6 @@
 
 2026-09-08：用户确认dev/mobile-dot-graph合入main；圆点模式与动画休眠成为主分支实现。临时预览继续保留64467f1快照。
 
-基础思路章节：basic-thinking，3张触发式策略卡与basic-unknown-function-route组合路线卡。Chapter.supplementary为补充章节标记，coverage.ts排除其条目；目录、搜索、图谱仍使用既有入口。第27题只作讨论推演，不增加真题记录或考试频次。
+基础思路唯一入口：`thinking-schema.ts` 定义分类与样本；`thinking.ts` 校验样本引用并计算抽样覆盖；`trigger-graph.ts` 在既有图谱中插入四类分类节点。`ThinkingCoverage` 展示范围，`ThinkingSamples` 在触发卡片内展示原创推理与原题外链。样本按题分文件存 `thinking-samples/<questionId>.json`，不改变题型归属或考试频次。基础章节仍 supplementary；13 个触发条件、13 张基础策略卡，数量以 content:report 为准。分类局部视图仅会话有效，章节/触发/方法仍使用既有 hash 深链。
 
-基础思路改为触发条件层：分组kind=trigger（省略仍为题型），3个通用触发入口引用现有方法。复用schema/loader/图谱/详情，目录与搜索区分标签；触发详情无历年真题区，CLI禁止其分类真题。report独立计数触发条件；旧basic-unknown-function-route ID保留为目标信息缺口入口。
-
-基础思路第28/29题扩展：新增basic-structural-keyword与basic-geometric-relation触发入口，分别引用basic-hidden-constraint、basic-geometric-translation；平方量代换扩展既有basic-derivative-pattern/basic-whole-substitution，不复制求导与ODE方法。
-
-例题排版唯一入口MethodExample.tsx：example.formulas为题面公式，solution兼容旧字符串或[{title,text,formulas}]；旧文本按句分段，新步骤共用Formula数学渲染。CLI校验所有新增公式。第27—29讨论示例已转分步结构，默认标题为例题，不误标自编。
+例题排版唯一入口 `MethodExample.tsx`：example.formulas 为题面公式，solution 兼容旧字符串或 [{title,text,formulas}]；新步骤共用 Formula，CLI 校验所有公式。第27—29题是用户讨论示例，不认定真题。第29题已纠正中点横坐标，详情见 reviews/thinking-map.md。

@@ -1,0 +1,27 @@
+{
+  "questionId": "2016-301-22",
+  "chapterIds": [
+    "pr-joint",
+    "pr-events"
+  ],
+  "signal": "区域均匀分布通过指标变量分段变换，要求密度、独立性和新变量分布。",
+  "reasoning": [
+    "区域面积有限且为正，先用面积倒数得到联合密度。",
+    "指标变量把原区域分成两块，按两块对应的事件分别计算新变量的CDF，再按全概率相加。",
+    "判断独立性时寻找联合事件与边缘乘积不符的反例，无需强行构造完整联合密度。"
+  ],
+  "methodIds": [
+    "pr-joint-marginal",
+    "pr-event-total",
+    "pr-joint-independence"
+  ],
+  "boundary": "指标变换不是可逆二维光滑变换，不能直接套Jacobian密度公式。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2016-301-22",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-partition",
+    "basic-counterexample"
+  ]
+}

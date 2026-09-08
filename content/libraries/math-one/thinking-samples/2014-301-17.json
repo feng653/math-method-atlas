@@ -1,0 +1,26 @@
+{
+  "questionId": "2014-301-17",
+  "chapterIds": [
+    "multivariable",
+    "ode"
+  ],
+  "signal": "同一内层eˣcos y反复出现，二阶偏导组合约束未知外函数。",
+  "reasoning": [
+    "重复内层适合命名为u，但必须先算偏导检查条件能否只依赖u。",
+    "链式项相加抵消一阶项，化为常系数ODE；由初值定常数，再回代检查偏导条件。"
+  ],
+  "methodIds": [
+    "hm-multivariable-chain",
+    "hm-ode-undetermined"
+  ],
+  "boundary": "换字母不等于降维成功；初值也必须同步转换。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2014-301-17",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-repeated-expression",
+    "basic-derivative-pattern",
+    "basic-model-match"
+  ]
+}

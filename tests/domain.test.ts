@@ -6,7 +6,7 @@ import { getPaperStats } from '../src/domain/archive-statistics';
 
 function fixture(): AtlasData {
   return {
-    problemTypes: [],
+    problemTypes: [], thinkingSamples: [],
     libraries: [{ schemaVersion: 1, id: 'test', title: '测试', description: '测试体系',
       syllabus: { version: '2026', sourceUrl: 'https://example.org/syllabus', reviewStatus: 'draft' },
       chapters: [{ id: 'limits', title: '极限', subject: '高数', syllabusTopics: [{ id: 'limit', title: '求极限' }] }],

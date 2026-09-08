@@ -1,0 +1,23 @@
+{
+  "questionId": "2013-301-12",
+  "chapterIds": [
+    "integrals"
+  ],
+  "signal": "无穷上限积分含对数与有理分母。",
+  "reasoning": [
+    "对数求导会简化，而另一因子容易积分，所以分部优于直接寻找复杂原函数。",
+    "先在有限上限做分部，再分别核对边界项和剩余积分的极限。"
+  ],
+  "methodIds": [
+    "hm-integration-by-parts"
+  ],
+  "boundary": "不能把无穷端点直接当普通端点，也不能拆成两个发散积分相减。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2013-301-12",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-derivative-pattern",
+    "basic-final-check"
+  ]
+}

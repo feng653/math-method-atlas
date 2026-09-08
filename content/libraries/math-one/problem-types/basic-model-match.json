@@ -1,0 +1,30 @@
+{
+  "id": "basic-model-match",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "transform",
+  "title": "表达式接近熟悉模型，但形式尚未对齐",
+  "summary": "标准化、求导或整理后可能出现已知方程、分布或级数。",
+  "recognition": [
+    "标准化、求导或整理后可能出现已知方程、分布或级数。"
+  ],
+  "strategy": [
+    "列出模型要求的条件与参数。",
+    "做最少变换使结构对齐。",
+    "核对定义域、自由度或收敛条件再调用结论。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-model-match",
+      "when": "先核条件，再匹配标准模型"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "形状相似不保证假设成立；近似结论不能当精确等式。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

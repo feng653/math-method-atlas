@@ -1,0 +1,25 @@
+{
+  "questionId": "2013-301-16",
+  "chapterIds": [
+    "series",
+    "ode"
+  ],
+  "signal": "系数递推含n(n−1)，且给前两个系数。",
+  "reasoning": [
+    "n(n−1)正是幂级数二阶求导的系数信号，先把递推整体求和。",
+    "证明逐项求导合法后得到和函数ODE，前两个系数就是函数和一阶导初值。"
+  ],
+  "methodIds": [
+    "hm-power-sum",
+    "hm-ode-characteristic"
+  ],
+  "boundary": "没有收敛区间依据时不能仅凭形式求和就宣布解析函数恒等式。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2013-301-16",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-derivative-pattern",
+    "basic-model-match"
+  ]
+}

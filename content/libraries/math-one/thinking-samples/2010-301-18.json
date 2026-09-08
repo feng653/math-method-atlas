@@ -1,0 +1,25 @@
+{
+  "questionId": "2010-301-18",
+  "chapterIds": [
+    "series"
+  ],
+  "signal": "级数只含偶次幂，既问收敛域又问和函数。",
+  "reasoning": [
+    "先把x²视为整体确定内部半径，避免对中间零系数机械求比。",
+    "认出反正切基本展开并乘适当幂得到和函数；x=±1要分别回原级数检查。"
+  ],
+  "methodIds": [
+    "hm-power-radius",
+    "hm-power-sum"
+  ],
+  "boundary": "内部和函数公式不能未经端点收敛核验就延伸到边界。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2010-301-18",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-repeated-expression",
+    "basic-model-match",
+    "basic-final-check"
+  ]
+}

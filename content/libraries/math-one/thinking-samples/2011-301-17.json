@@ -1,0 +1,26 @@
+{
+  "questionId": "2011-301-17",
+  "chapterIds": [
+    "derivatives",
+    "limits"
+  ],
+  "signal": "参数影响一个奇函数方程的实根个数。",
+  "reasoning": [
+    "根数不能仅靠求解显式方程，先由导数看参数何时改变单调结构。",
+    "利用奇性只分析正半轴，再用端点趋势和介值保证根存在，最后补零根与负根。"
+  ],
+  "methodIds": [
+    "hm-monotonic-extrema",
+    "hm-intermediate-value"
+  ],
+  "boundary": "驻点数不等于根数；不得把零根遗漏或将正负对称根只算一个。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2011-301-17",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-symmetry-linearity",
+    "basic-case-split",
+    "basic-final-check"
+  ]
+}

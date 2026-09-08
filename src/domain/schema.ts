@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { sourceSchema as source } from './source';
+import { thinkingCategorySchema, thinkingSampleSchema } from './thinking-schema';
 
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const text = z.string().trim().min(1);
@@ -40,6 +41,7 @@ export const methodSchema = z.object({
 export const problemTypeSchema = z.object({
   id, libraryId: id, chapterId: id, title: text, summary: text,
   kind: z.enum(['problem', 'trigger']).optional(),
+  category: thinkingCategorySchema.optional(),
   recognition: z.array(text).min(1), strategy: z.array(text).min(1),
   methods: z.array(z.object({ methodId: id, when: text }).strict()).min(1),
   formulas: z.array(z.object({ id, title: text, latex: formula.refine((value) => !!value.trim(), 'Formula cannot be empty'),
@@ -80,6 +82,7 @@ export const atlasSchema = z.object({
   libraries: z.array(librarySchema).min(1), methods: z.array(methodSchema),
   papers: z.array(paperSchema), questions: z.array(questionSchema),
   problemTypes: z.array(problemTypeSchema).default([]),
+  thinkingSamples: z.array(thinkingSampleSchema).default([]),
 }).strict();
 
 export type Library = z.infer<typeof librarySchema>;

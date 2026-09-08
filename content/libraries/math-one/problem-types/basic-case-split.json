@@ -1,0 +1,30 @@
+{
+  "id": "basic-case-split",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "branch",
+  "title": "参数、零值或边界会改变可用条件",
+  "summary": "除数、主元、判别式或模型假设可能随参数失效。",
+  "recognition": [
+    "除数、主元、判别式或模型假设可能随参数失效。"
+  ],
+  "strategy": [
+    "标出即将除以或假定非零的量。",
+    "先求它们为零的临界情形。",
+    "常规分支按通法求，临界分支回到原条件。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-case-split",
+      "when": "先隔离退化情形"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "行列式为零只是无唯一解，不保证无穷多解。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

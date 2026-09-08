@@ -1,0 +1,27 @@
+{
+  "questionId": "2012-301-18",
+  "chapterIds": [
+    "integrals",
+    "ode"
+  ],
+  "signal": "参数曲线任意点的切线截距满足固定距离，另求区域面积。",
+  "reasoning": [
+    "几何条件适用于任意点，应先用一般参数点与切向量表达截距差。",
+    "距离关系化成导数方程后，用正导数选择分支；求面积另写参数薄片，并以截断极限处理无穷横坐标。"
+  ],
+  "methodIds": [
+    "hm-ode-modeling",
+    "hm-integral-area-volume",
+    "hm-improper-integral"
+  ],
+  "boundary": "函数求出不代表面积目标完成；参数有限端点可能对应无穷横坐标。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2012-301-18",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-geometric-relation",
+    "basic-unknown-function-route",
+    "basic-final-check"
+  ]
+}

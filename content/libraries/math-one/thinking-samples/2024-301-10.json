@@ -1,0 +1,26 @@
+{
+  "questionId": "2024-301-10",
+  "chapterIds": [
+    "pr-joint",
+    "pr-distributions"
+  ],
+  "signal": "独立连续变量之差再取绝对值，要求识别所得分布。",
+  "reasoning": [
+    "先把差写成X+(−Y)，依据原指数支持集分段确定卷积积分界。",
+    "得到差的两侧密度后，再为绝对值合并正负原像。",
+    "按所得支持集和密度形式识别分布参数，而不只比较名称。"
+  ],
+  "methodIds": [
+    "pr-joint-convolution",
+    "pr-dist-exponential"
+  ],
+  "boundary": "连续卷积要求所用变量独立且有密度；绝对值合并两支时不能漏掉一侧。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2024-301-10",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-partition",
+    "basic-model-match"
+  ]
+}

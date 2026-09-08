@@ -1,0 +1,29 @@
+{
+  "questionId": "2014-301-23",
+  "chapterIds": [
+    "pr-estimation",
+    "pr-moments",
+    "pr-limit"
+  ],
+  "signal": "尺度模型由CDF给出，还要求总体矩、似然估计和概率极限。",
+  "reasoning": [
+    "先对CDF求导恢复密度，令平方变量按尺度归一，化简总体前两阶矩积分。",
+    "按密度构造样本似然，得到平方样本值的平均作为尺度估计。",
+    "把平方样本视为新的独立同分布变量，核对其一阶绝对矩有限，再用大数定律判断估计的概率极限。"
+  ],
+  "methodIds": [
+    "pr-moment-expectation",
+    "pr-estimate-mle",
+    "pr-limit-lln"
+  ],
+  "boundary": "依概率收敛不是有限样本恒等；对新变量用大数定律前必须重新检查可积性。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2014-301-23",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-repeated-expression",
+    "basic-unknown-function-route",
+    "basic-model-match"
+  ]
+}

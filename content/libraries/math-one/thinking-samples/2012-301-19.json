@@ -1,0 +1,23 @@
+{
+  "questionId": "2012-301-19",
+  "chapterIds": [
+    "multiple-integrals"
+  ],
+  "signal": "多段开曲线积分，而场是光滑多项式。",
+  "reasoning": [
+    "直接分段参数化会重复计算；若补一条简单线段能闭合，可先借格林简化。",
+    "明确闭合方向和区域，算闭合积分后减去补段贡献。"
+  ],
+  "methodIds": [
+    "hm-green"
+  ],
+  "boundary": "开路径不能直接套格林，补段即使简单也不能未经计算就省略。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2012-301-19",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-final-check"
+  ]
+}

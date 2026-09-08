@@ -1,0 +1,25 @@
+{
+  "questionId": "2013-301-19",
+  "chapterIds": [
+    "geometry",
+    "multiple-integrals"
+  ],
+  "signal": "给出一条直线绕轴旋转，再求两平面间立体形心。",
+  "reasoning": [
+    "旋转保留高度和到轴距离，因此先参数化母线而不是猜二次曲面类型。",
+    "由每个高度的截面半径写体积和一阶矩，利用旋转对称性先消去两个形心坐标。"
+  ],
+  "methodIds": [
+    "hm-revolution-cylinder",
+    "hm-integral-mass-centroid"
+  ],
+  "boundary": "平方代换可能扩充范围，必须同步保留母线参数及上下截平面。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2013-301-19",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-geometric-relation",
+    "basic-symmetry-linearity"
+  ]
+}

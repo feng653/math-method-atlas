@@ -1,0 +1,30 @@
+{
+  "id": "basic-equivalent-representation",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "transform",
+  "title": "原表示繁琐，存在保持目标的变换",
+  "summary": "换元、配方、换基或分解能使结构更简单。",
+  "recognition": [
+    "换元、配方、换基或分解能使结构更简单。"
+  ],
+  "strategy": [
+    "先明确要保留的是值、解集、秩还是谱。",
+    "选择可逆变换，或记录非可逆变换的原像和补偿。",
+    "在新表示下求解，再还原目标。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-equivalent-representation",
+      "when": "换一种表示，保留所求性质"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "相似与合同保留的性质不同；绝对值、平方会丢失符号。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

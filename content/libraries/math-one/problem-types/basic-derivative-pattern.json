@@ -28,7 +28,7 @@
     {
       "id": "basic-square-derivative",
       "title": "函数与导数配对时改用平方量",
-      "latex": "v=y^2,\\quad v^{\\prime}=2yy^{\\prime},\\qquad yy^{\\prime}=y^2-x\\Longrightarrow v^{\\prime}-2v=-2x",
+      "latex": "v=y^2,\\quad v^{\\prime}=2yy^{\\prime},\\qquad yy^{\\prime}=y^2-2x\\Longrightarrow v^{\\prime}-2v=-4x",
       "conditions": [
         "y可导；回代实函数要求v≥0，恢复光滑正负分支时检查零点与初值。"
       ],
@@ -43,5 +43,6 @@
     "触发条件是尝试方法的提示，不保证该方法一定可用。",
     "属于学习策略补充，不是题型或新增课纲要求；例子不计入考试频次。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "category": "transform"
 }

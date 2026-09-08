@@ -1,0 +1,26 @@
+{
+  "questionId": "2023-301-21",
+  "chapterIds": [
+    "la-quadratic",
+    "la-eigen"
+  ],
+  "signal": "两项任务分别允许一般可逆替换与要求正交替换；措辞变化改变了变换必须保持的量。",
+  "reasoning": [
+    "先识别允许的操作范围：一般可逆替换可以配方和缩放，因此用平方结构构造合同化简。",
+    "转到正交要求时，不能沿用任意缩放；由于正交逆等于转置，正交合同同时也是相似，所以先检查它必须保持的迹。",
+    "已审note给两个系数矩阵的迹分别为5和3，必要条件已矛盾，可以直接否定存在性，避免徒劳求变换矩阵。"
+  ],
+  "methodIds": [
+    "la-quadratic-completion",
+    "la-eigen-similarity"
+  ],
+  "boundary": "迹不等足以否定正交相似，迹相等则远不足以保证存在；普通合同与正交合同不能因都写成PᵀAP而混同。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2023-301-21",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-counterexample",
+    "basic-equivalent-representation"
+  ]
+}

@@ -75,3 +75,10 @@ subquestionAudit独立记录题面编号边界核验（expectedCount/checkedOn/n
 
 
 圆点模式（2026-09-08从dev/mobile-dot-graph合入main）：完整图谱以compact数据标记驱动轻量圆点标题组件，减少端口为每节点2个，使用直线边；章节概览与局部卡片保持原样。motion-scheduler仅在加载、恢复布局、拖动、键盘移动或重新可见时安排短时模拟，最后唤醒1.8秒后取消rAF；暂停/后台立即取消。粗指针50ms、其他40ms最小模拟间隔，低于0.05世界单位的位移不更新React节点引用。休眠不代表关闭交互。dev分支只运行CI，不部署正式Pages。
+
+
+## 做题思路图谱
+
+基础思路是 supplementary 章节：章节 → 读题/变换/分支/验证分类 → 触发条件 → 基础策略与既有技术方法。普通章节保留题型层。分类枚举集中在 thinking-schema.ts，trigger-graph.ts 只改触发分支；布局依据实际树深度，不再假定三层。点击分类在当前章节筛选，点击触发进入既有 type 路由。分类筛选仅会话状态，不改变内容关系。
+
+thinking-samples 是独立证据实体，一题一文件，id=questionId。chapterIds 必须由样本所引用的已核验技术方法支撑；triggerIds 只能引用同库触发条件。signal → reasoning → boundary 记录原创推理，evidenceBasis 说明本轮是否重查原题。与 question.methodLinks 分离，不能把抽样标签变成考试频次。thinking.ts 是校验及抽样覆盖的唯一计算入口；页面/CLI 共用。未来补样本先找已有题号，合并新推理而非复制实体；待审关联不能成为已核验样本的方法依据。

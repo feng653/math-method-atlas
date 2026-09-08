@@ -1,0 +1,27 @@
+{
+  "questionId": "2015-301-08",
+  "chapterIds": [
+    "pr-moments"
+  ],
+  "signal": "目标是多项式期望，已知均值、方差和不相关性，而未给独立性。",
+  "reasoning": [
+    "先代数展开目标，把它拆成二阶原点矩、混合矩和一阶矩。",
+    "用方差还原二阶矩，用零协方差还原混合矩。",
+    "最后由期望线性组合所需矩，不必推导联合分布。"
+  ],
+  "methodIds": [
+    "pr-moment-expectation",
+    "pr-moment-variance",
+    "pr-moment-covariance"
+  ],
+  "boundary": "期望线性不要求独立；混合矩的分解在此来自不相关条件，不能推广到任意非线性函数。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2015-301-08",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-unknown-function-route",
+    "basic-symmetry-linearity",
+    "basic-structural-keyword"
+  ]
+}

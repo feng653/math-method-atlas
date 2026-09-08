@@ -1,0 +1,25 @@
+{
+  "questionId": "2024-301-15",
+  "chapterIds": [
+    "la-quadratic"
+  ],
+  "signal": "二次表达式的不等式要求对全部变量成立，需要把无限多组代入压缩成可以统一判断的结构。",
+  "reasoning": [
+    "试少量变量只能给必要限制，不能证明对所有变量成立，所以优先把表达式配成平方项与剩余项，寻找统一的非负依据。",
+    "配方后先读出系数的充分条件，再选择使其他平方项消失的变量检查剩余项，以判断这些条件是否也是必要的。",
+    "目标允许等号时，参数边界可能合法；因此把使某个平方系数为零的边界单独代回，不能只求严格正定范围。"
+  ],
+  "methodIds": [
+    "la-quadratic-completion"
+  ],
+  "boundary": "索引未逐项给出原二次式系数，本样本不补造具体参数范围；特殊代入只能帮助证明必要性，充分性仍需完整配方或其他合法判据。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2024-301-15",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-auxiliary-comparison",
+    "basic-case-split"
+  ]
+}

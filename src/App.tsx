@@ -1,10 +1,11 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
-import { BookOpen, ChevronDown, ListTree, Search, X } from 'lucide-react';
+import { BookOpen, ChevronDown, Compass, ListTree, Search, X } from 'lucide-react';
 import { data } from './data/load';
 import { searchMethods, searchProblemTypes } from './domain/search';
 import { AtlasGraph } from './components/AtlasGraph';
 import { LibraryNavigation } from './components/LibraryNavigation';
 import { atlasRouteHash, resolveAtlasRoute } from './domain/route';
+import { ThinkingCoverage } from './components/ThinkingCoverage';
 
 const MethodDetail = lazy(() => import('./components/MethodDetail').then((module) => ({ default: module.MethodDetail })));
 const PaperLibrary = lazy(() => import('./components/PaperLibrary').then((module) => ({ default: module.PaperLibrary })));
@@ -82,12 +83,16 @@ export default function App() {
       </div>}
     </div>
     <nav className="utility-nav" aria-label="辅助导航">
+      {library.chapters.some((item) => item.id === 'basic-thinking') && <button aria-label="打开做题思路图谱" title="做题思路图谱"
+        onClick={() => { clearType(); setChapter('basic-thinking'); setSelected(''); setPanel('none'); setQuery(''); }}><Compass size={19} /></button>}
       <button aria-label="打开章节目录" title="章节目录" onClick={() => { clearType(); setPanel(panel === 'directory' ? 'none' : 'directory'); setSelected(''); }}><ListTree size={19} /></button>
       <button aria-label="打开历年真题" title="历年真题" onClick={() => { clearType(); setPanel(panel === 'papers' ? 'none' : 'papers'); setSelected(''); }}><BookOpen size={18} /></button>
     </nav>
     {chapter && <button className="back-overview" onClick={() => { clearType(); setChapter(''); setSelected(''); }}>← 全部章节</button>}
+    {chapter === 'basic-thinking' && !method && !problemType && panel === 'none' && <ThinkingCoverage library={library} data={data} />}
     <Suspense fallback={<aside className="detail-panel glass-panel" role="status">正在加载内容…</aside>}>
       {problemType && <ProblemTypeDetail type={problemType} methods={methods} questions={questions} papers={papers}
+        samples={data.thinkingSamples}
         onSelect={select} onClose={clearType} />}
       {method && <MethodDetail method={method} methods={methods} questions={questions} papers={papers}
         examScope={library.examScope} onSelect={select} onClose={() => setSelected('')} />}

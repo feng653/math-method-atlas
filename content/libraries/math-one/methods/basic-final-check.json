@@ -1,0 +1,28 @@
+{
+  "id": "basic-final-check",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "回到原条件，检查边界与意义",
+  "summary": "平方、消元、求导、定理应用或候选筛选可能遗漏约束。",
+  "conditions": [
+    "平方、消元、求导、定理应用或候选筛选可能遗漏约束。"
+  ],
+  "steps": [
+    "代回原式、初值或几何定义。",
+    "核对定义域、符号、端点与退化情形。",
+    "确认答案强度：局部或全局、近似或精确、存在或唯一。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "不能只代回变形后的方程；归一化不能替代非负与支持集检查。"
+  ],
+  "example": {
+    "prompt": "自编推演：由切线和法线条件求出了候选曲线，如何收尾？",
+    "solution": "重建辅助点与中点坐标，代入原几何曲线，再检查初始点及所取分支。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-final-check-topic"
+  ],
+  "status": "reviewed"
+}

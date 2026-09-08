@@ -1,0 +1,24 @@
+{
+  "questionId": "2020-301-13",
+  "chapterIds": [
+    "la-determinants"
+  ],
+  "signal": "已审计算路径指出成对行列做加减后能拆开四阶结构，提示原表示掩盖了可分离部分。",
+  "reasoning": [
+    "目标只要行列式值，不需要逐个余子式，因此先找能制造零块的成对加减，改变表示以缩小后续运算。",
+    "变换可能保值、改变符号或引入倍数，所以每做一步就记录对行列式的影响；结构简化不能以丢失整体因子为代价。",
+    "出现可分离结构后再计算低阶行列式，最后恢复先前记录的符号与倍数，回到原来的目标量。"
+  ],
+  "methodIds": [
+    "la-det-row-operations"
+  ],
+  "boundary": "只有被证明可逆或有明确行列式规则的变换才可使用；不由本样本推断任意分块行列式都等于对角块乘积。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2020-301-13",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-final-check"
+  ]
+}

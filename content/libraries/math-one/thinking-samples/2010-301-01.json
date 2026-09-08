@@ -1,0 +1,23 @@
+{
+  "questionId": "2010-301-01",
+  "chapterIds": [
+    "limits"
+  ],
+  "signal": "底数趋1而指数随变量无界。",
+  "reasoning": [
+    "直接把底数替成1会丢掉累积效应，应先把幂取对数。",
+    "保留底数偏离1的一阶量，计算指数乘对数的极限，再由指数连续性还原。"
+  ],
+  "methodIds": [
+    "hm-power-indeterminate"
+  ],
+  "boundary": "取实对数须先确认邻域中底数为正。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2010-301-01",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-equivalent-representation",
+    "basic-model-match"
+  ]
+}

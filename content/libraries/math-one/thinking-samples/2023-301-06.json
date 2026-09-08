@@ -1,0 +1,24 @@
+{
+  "questionId": "2023-301-06",
+  "chapterIds": [
+    "la-eigen"
+  ],
+  "signal": "三角结构容易读出特征根，但题目实际判断可对角化，重复特征根处仍缺独立方向数。",
+  "reasoning": [
+    "先把可对角化翻译为能找到满组独立特征向量；只读对角元解决的是特征根问题，还没有解决目标。",
+    "相异根对应方向自动独立，检查成本应集中在重根处，所以计算A−λI的核维数，比较它与该根的代数重数。",
+    "若重根缺少方向就不能对角化；若各重根方向数都足够，再汇总成满组基，并单独检查使秩变化的参数值。"
+  ],
+  "methodIds": [
+    "la-eigen-diagonalization"
+  ],
+  "boundary": "三角矩阵不自动可对角化；核维数必须在对应参数取值下计算，不能把通常参数下的主元数直接沿用到退化点。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2023-301-06",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-case-split",
+    "basic-structural-keyword"
+  ]
+}

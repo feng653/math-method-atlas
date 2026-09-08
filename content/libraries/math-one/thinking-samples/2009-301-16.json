@@ -1,0 +1,26 @@
+{
+  "questionId": "2009-301-16",
+  "chapterIds": [
+    "series",
+    "integrals"
+  ],
+  "signal": "数列项定义为相邻幂曲线间面积，要求全项和及奇数子项和。",
+  "reasoning": [
+    "先把几何项变成明确积分通项，才能判断级数结构。",
+    "全项和出现裂项就写有限部分和后取极限；奇数子项另识别对数级数，不强用同一套路。"
+  ],
+  "methodIds": [
+    "hm-integral-area-volume",
+    "hm-series-basic",
+    "hm-power-sum"
+  ],
+  "boundary": "原级数与奇数子级数的求和步骤不同；不要无条件交换无限和与积分。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-16",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-unknown-function-route",
+    "basic-symmetry-linearity"
+  ]
+}

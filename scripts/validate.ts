@@ -7,7 +7,7 @@ import { validateAtlas } from '../src/domain/validate';
 import { validateRequirements } from '../src/domain/requirements';
 
 const root = fileURLToPath(new URL('../content/libraries/', import.meta.url));
-const records: Record<string, unknown[]> = { libraries: [], methods: [], papers: [], questions: [], problemTypes: [] };
+const records: Record<string, unknown[]> = { libraries: [], methods: [], papers: [], questions: [], problemTypes: [], thinkingSamples: [] };
 const errors: string[] = [];
 async function readJson(path: string, target: string, expectedId: string, expectedLibrary?: string) {
   try {
@@ -23,12 +23,13 @@ for (const directory of await readdir(root, { withFileTypes: true })) {
   if (!directory.isDirectory()) continue;
   const base = join(root, directory.name);
   await readJson(join(base, 'library.json'), 'libraries', directory.name);
-  for (const kind of ['methods', 'papers', 'questions', 'problem-types']) {
+  for (const kind of ['methods', 'papers', 'questions', 'problem-types', 'thinking-samples']) {
     let files: string[] = [];
     try { files = await readdir(join(base, kind)); }
     catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }
     for (const file of files.filter((name) => name.endsWith('.json'))) {
-      await readJson(join(base, kind, file), kind === 'problem-types' ? 'problemTypes' : kind, file.slice(0, -5), directory.name);
+      const target = kind === 'problem-types' ? 'problemTypes' : kind === 'thinking-samples' ? 'thinkingSamples' : kind;
+      await readJson(join(base, kind, file), target, file.slice(0, -5), directory.name);
     }
   }
 }
@@ -58,5 +59,5 @@ if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Content valid: ${records.libraries.length} libraries, ${records.methods.length} methods, ${records.problemTypes.length} problem types, ${records.papers.length} papers, ${records.questions.length} questions.`);
+  console.log(`Content valid: ${records.libraries.length} libraries, ${records.methods.length} methods, ${records.problemTypes.length} groups, ${records.thinkingSamples.length} thinking samples, ${records.papers.length} papers, ${records.questions.length} questions.`);
 }

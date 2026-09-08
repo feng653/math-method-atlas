@@ -1,0 +1,30 @@
+{
+  "id": "basic-final-check",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "verify",
+  "title": "得到候选结果，或经历非等价变形",
+  "summary": "平方、消元、求导、定理应用或候选筛选可能遗漏约束。",
+  "recognition": [
+    "平方、消元、求导、定理应用或候选筛选可能遗漏约束。"
+  ],
+  "strategy": [
+    "代回原式、初值或几何定义。",
+    "核对定义域、符号、端点与退化情形。",
+    "确认答案强度：局部或全局、近似或精确、存在或唯一。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-final-check",
+      "when": "回到原条件，检查边界与意义"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "不能只代回变形后的方程；归一化不能替代非负与支持集检查。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

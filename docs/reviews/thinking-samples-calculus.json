@@ -1,0 +1,556 @@
+[
+  {
+    "questionId": "2009-301-01",
+    "chapterIds": [
+      "limits"
+    ],
+    "signal": "题目指定两个含参表达式为等价无穷小。",
+    "reasoning": [
+      "等价要求首个非零项的阶数和系数都相同，因此先展开低阶项，而不是逐个猜参数。",
+      "先让不应存在的一次项消失，再比较三次主部；参数确定后检查主部确实非零。"
+    ],
+    "methodIds": [
+      "hm-taylor-limit"
+    ],
+    "strategyTags": [
+      "关键词转条件",
+      "先找首个不消失项"
+    ],
+    "boundary": "相减时不能把两个函数各自替成低阶等价量后直接相减。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2010-301-01",
+    "chapterIds": [
+      "limits"
+    ],
+    "signal": "底数趋1而指数随变量无界。",
+    "reasoning": [
+      "直接把底数替成1会丢掉累积效应，应先把幂取对数。",
+      "保留底数偏离1的一阶量，计算指数乘对数的极限，再由指数连续性还原。"
+    ],
+    "methodIds": [
+      "hm-power-indeterminate"
+    ],
+    "strategyTags": [
+      "改变表达形式",
+      "保留有效阶数"
+    ],
+    "boundary": "取实对数须先确认邻域中底数为正。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2011-301-18",
+    "chapterIds": [
+      "limits",
+      "integrals"
+    ],
+    "signal": "先证明对数双边界，再判断调和和减对数的数列收敛。",
+    "reasoning": [
+      "后一目标需要相邻差符号和下界，因此把前一不等式看作后一步的工具。",
+      "把对数写成1/t的短区间积分，用单调端点界证明相邻差负，再给正下界。"
+    ],
+    "methodIds": [
+      "hm-integral-inequality",
+      "hm-recursive-limit"
+    ],
+    "strategyTags": [
+      "从目标倒推",
+      "把前问当工具",
+      "先证存在再求值"
+    ],
+    "boundary": "单调递减不单独保证有限极限，还必须有下界。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2009-301-18",
+    "chapterIds": [
+      "derivatives"
+    ],
+    "signal": "要证明中值等式及端点右导数结论。",
+    "reasoning": [
+      "目标差值中有割线斜率，减去连接端点的直线可造出等端值辅助函数。",
+      "罗尔给内部导数等式；第二目标把右差商放到缩小区间中，再利用内部导数极限。"
+    ],
+    "methodIds": [
+      "hm-mean-value-proof",
+      "hm-derivative-definition"
+    ],
+    "strategyTags": [
+      "倒推辅助函数",
+      "把目标改写成定义"
+    ],
+    "boundary": "内点导数存在不自动给端点导数，必须回到单侧差商。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2011-301-17",
+    "chapterIds": [
+      "derivatives",
+      "limits"
+    ],
+    "signal": "参数影响一个奇函数方程的实根个数。",
+    "reasoning": [
+      "根数不能仅靠求解显式方程，先由导数看参数何时改变单调结构。",
+      "利用奇性只分析正半轴，再用端点趋势和介值保证根存在，最后补零根与负根。"
+    ],
+    "methodIds": [
+      "hm-monotonic-extrema",
+      "hm-intermediate-value"
+    ],
+    "strategyTags": [
+      "参数分支",
+      "对称性减半",
+      "存在与唯一分开"
+    ],
+    "boundary": "驻点数不等于根数；不得把零根遗漏或将正负对称根只算一个。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2014-301-16",
+    "chapterIds": [
+      "derivatives"
+    ],
+    "signal": "函数由隐方程给出，却要求极值。",
+    "reasoning": [
+      "目标需要导数符号，先确认隐式求导的分母沿解支不为零。",
+      "利用原方程约束函数符号，再把导数符号化为简单组合的变号，检验全部驻点。"
+    ],
+    "methodIds": [
+      "hm-implicit-derivative",
+      "hm-monotonic-extrema"
+    ],
+    "strategyTags": [
+      "从目标倒推",
+      "利用原式限制",
+      "候选点回验"
+    ],
+    "boundary": "仅解出y′=0还不能判极值；也不能跳过隐函数分母合法性。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2010-301-16",
+    "chapterIds": [
+      "integrals",
+      "derivatives"
+    ],
+    "signal": "变上限积分的核同时含外部变量，最终要求单调和极值。",
+    "reasoning": [
+      "先拆成外部因子乘普通变限积分，避免把核中的参数依赖漏掉。",
+      "分别按乘积和基本定理求导，保留到端点项自然抵消后，再判断余式符号。"
+    ],
+    "methodIds": [
+      "hm-newton-leibniz",
+      "hm-monotonic-extrema"
+    ],
+    "strategyTags": [
+      "先常规计算再认结构",
+      "拆开依赖",
+      "从目标倒推"
+    ],
+    "boundary": "含参积分不能只对上限求导；端点项消失需要算出来。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2013-301-12",
+    "chapterIds": [
+      "integrals"
+    ],
+    "signal": "无穷上限积分含对数与有理分母。",
+    "reasoning": [
+      "对数求导会简化，而另一因子容易积分，所以分部优于直接寻找复杂原函数。",
+      "先在有限上限做分部，再分别核对边界项和剩余积分的极限。"
+    ],
+    "methodIds": [
+      "hm-integration-by-parts"
+    ],
+    "strategyTags": [
+      "降低复杂度",
+      "先截断后变形"
+    ],
+    "boundary": "不能把无穷端点直接当普通端点，也不能拆成两个发散积分相减。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2012-301-18",
+    "chapterIds": [
+      "integrals",
+      "ode"
+    ],
+    "signal": "参数曲线任意点的切线截距满足固定距离，另求区域面积。",
+    "reasoning": [
+      "几何条件适用于任意点，应先用一般参数点与切向量表达截距差。",
+      "距离关系化成导数方程后，用正导数选择分支；求面积另写参数薄片，并以截断极限处理无穷横坐标。"
+    ],
+    "methodIds": [
+      "hm-ode-modeling",
+      "hm-integral-area-volume",
+      "hm-improper-integral"
+    ],
+    "strategyTags": [
+      "几何转译",
+      "条件筛分支",
+      "复合目标逐项完成",
+      "先截断后变形"
+    ],
+    "boundary": "函数求出不代表面积目标完成；参数有限端点可能对应无穷横坐标。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2010-301-19",
+    "chapterIds": [
+      "geometry",
+      "multivariable",
+      "multiple-integrals"
+    ],
+    "signal": "椭球切平面与坐标面垂直，求切点轨迹并计算其上方曲面积分。",
+    "reasoning": [
+      "先把两个平面垂直转成法向量约束，从椭球梯度读出2z−y=0，比先求全体切平面省一步。",
+      "再按所求曲面片选择投影；面积元里的根式恰与被积因子匹配，应先约简再积分。"
+    ],
+    "methodIds": [
+      "hm-tangent-plane",
+      "hm-surface-integrals"
+    ],
+    "strategyTags": [
+      "几何转译",
+      "从目标倒推",
+      "先观察再展开"
+    ],
+    "boundary": "投影只能覆盖题目指定的上方曲面片；不能漏分支或忽略面积元绝对值。",
+    "evidenceBasis": "本次重新打开公开40页PDF https://wuli.wiki/files/fc96a92b2b2c6495.pdf，并实际查看此前从该PDF渲染的物理第39页缓存图；核对第19题题面、垂直条件及曲面积分因子，同时读取本地verified记录。"
+  },
+  {
+    "questionId": "2013-301-19",
+    "chapterIds": [
+      "geometry",
+      "multiple-integrals"
+    ],
+    "signal": "给出一条直线绕轴旋转，再求两平面间立体形心。",
+    "reasoning": [
+      "旋转保留高度和到轴距离，因此先参数化母线而不是猜二次曲面类型。",
+      "由每个高度的截面半径写体积和一阶矩，利用旋转对称性先消去两个形心坐标。"
+    ],
+    "methodIds": [
+      "hm-revolution-cylinder",
+      "hm-integral-mass-centroid"
+    ],
+    "strategyTags": [
+      "寻找不变量",
+      "对称性减量",
+      "几何转译"
+    ],
+    "boundary": "平方代换可能扩充范围，必须同步保留母线参数及上下截平面。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2009-301-15",
+    "chapterIds": [
+      "multivariable"
+    ],
+    "signal": "二元极值表达式含对数，定义域不是全平面。",
+    "reasoning": [
+      "先由对数限制y>0，再在合法内部求驻点。",
+      "对候选点计算Hessian二次型，严格正定才能直接判局部极小。"
+    ],
+    "methodIds": [
+      "hm-hessian-extrema"
+    ],
+    "strategyTags": [
+      "定义域先行",
+      "候选点分类"
+    ],
+    "boundary": "Hessian判据退化时不能硬判；局部极值不自动是全局最值。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2011-301-16",
+    "chapterIds": [
+      "multivariable",
+      "derivatives"
+    ],
+    "signal": "复合函数混合偏导中，内函数只给可导与某点取极值。",
+    "reasoning": [
+      "“可导且极值”先翻译成该点一阶导为零，避免追求没有给出的高阶导。",
+      "选先对y再对x的顺序，使链式计算只用到内函数一阶导，最后代入极值信息消项。"
+    ],
+    "methodIds": [
+      "hm-multivariable-chain"
+    ],
+    "strategyTags": [
+      "关键词转条件",
+      "按已知选择计算顺序",
+      "条件消项"
+    ],
+    "boundary": "不要为了固定求导顺序擅自假设内函数二阶可导。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2014-301-17",
+    "chapterIds": [
+      "multivariable",
+      "ode"
+    ],
+    "signal": "同一内层eˣcos y反复出现，二阶偏导组合约束未知外函数。",
+    "reasoning": [
+      "重复内层适合命名为u，但必须先算偏导检查条件能否只依赖u。",
+      "链式项相加抵消一阶项，化为常系数ODE；由初值定常数，再回代检查偏导条件。"
+    ],
+    "methodIds": [
+      "hm-multivariable-chain",
+      "hm-ode-undetermined"
+    ],
+    "strategyTags": [
+      "重复结构整体代换",
+      "先常规计算再认结构",
+      "回代验证"
+    ],
+    "boundary": "换字母不等于降维成功；初值也必须同步转换。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2009-301-19",
+    "chapterIds": [
+      "multiple-integrals"
+    ],
+    "signal": "封闭曲面通量的场在内部原点有奇性。",
+    "reasoning": [
+      "封闭面提示散度定理，但先查整个内部是否满足光滑条件。",
+      "挖去包围奇点的小球，在无奇性壳层用定理，再用内边界法向的反向关系补回通量。"
+    ],
+    "methodIds": [
+      "hm-gauss"
+    ],
+    "strategyTags": [
+      "先核定理条件",
+      "修补适用区域",
+      "方向与符号"
+    ],
+    "boundary": "不能因为曲面上无奇点就对整个体域直接用散度定理。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2011-301-19",
+    "chapterIds": [
+      "multiple-integrals",
+      "integrals"
+    ],
+    "signal": "矩形域中积分含混合偏导，已知边界恒等式和原函数积分。",
+    "reasoning": [
+      "目标和已知仅差导数与坐标因子，提示分部把导数从未知函数搬走。",
+      "矩形域先累次化，再两次分部；边界恒等式及沿边导数使边界项消失，余项回到已知积分。"
+    ],
+    "methodIds": [
+      "hm-double-cartesian",
+      "hm-integration-by-parts"
+    ],
+    "strategyTags": [
+      "从目标倒推",
+      "转移导数",
+      "边界消项"
+    ],
+    "boundary": "边界为零不代表所有方向导数都为零，只能使用沿该边合法求导的信息。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2012-301-19",
+    "chapterIds": [
+      "multiple-integrals"
+    ],
+    "signal": "多段开曲线积分，而场是光滑多项式。",
+    "reasoning": [
+      "直接分段参数化会重复计算；若补一条简单线段能闭合，可先借格林简化。",
+      "明确闭合方向和区域，算闭合积分后减去补段贡献。"
+    ],
+    "methodIds": [
+      "hm-green"
+    ],
+    "strategyTags": [
+      "补全定理结构",
+      "先增后减",
+      "方向与符号"
+    ],
+    "boundary": "开路径不能直接套格林，补段即使简单也不能未经计算就省略。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2009-301-16",
+    "chapterIds": [
+      "series",
+      "integrals"
+    ],
+    "signal": "数列项定义为相邻幂曲线间面积，要求全项和及奇数子项和。",
+    "reasoning": [
+      "先把几何项变成明确积分通项，才能判断级数结构。",
+      "全项和出现裂项就写有限部分和后取极限；奇数子项另识别对数级数，不强用同一套路。"
+    ],
+    "methodIds": [
+      "hm-integral-area-volume",
+      "hm-series-basic",
+      "hm-power-sum"
+    ],
+    "strategyTags": [
+      "先把对象显式化",
+      "分目标选路线",
+      "有限运算后取极限"
+    ],
+    "boundary": "原级数与奇数子级数的求和步骤不同；不要无条件交换无限和与积分。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2010-301-18",
+    "chapterIds": [
+      "series"
+    ],
+    "signal": "级数只含偶次幂，既问收敛域又问和函数。",
+    "reasoning": [
+      "先把x²视为整体确定内部半径，避免对中间零系数机械求比。",
+      "认出反正切基本展开并乘适当幂得到和函数；x=±1要分别回原级数检查。"
+    ],
+    "methodIds": [
+      "hm-power-radius",
+      "hm-power-sum"
+    ],
+    "strategyTags": [
+      "重复结构整体代换",
+      "内部与边界分开",
+      "匹配基本模型"
+    ],
+    "boundary": "内部和函数公式不能未经端点收敛核验就延伸到边界。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2013-301-16",
+    "chapterIds": [
+      "series",
+      "ode"
+    ],
+    "signal": "系数递推含n(n−1)，且给前两个系数。",
+    "reasoning": [
+      "n(n−1)正是幂级数二阶求导的系数信号，先把递推整体求和。",
+      "证明逐项求导合法后得到和函数ODE，前两个系数就是函数和一阶导初值。"
+    ],
+    "methodIds": [
+      "hm-power-sum",
+      "hm-ode-characteristic"
+    ],
+    "strategyTags": [
+      "系数识别导数",
+      "把离散关系变连续",
+      "同步转换初值"
+    ],
+    "boundary": "没有收敛区间依据时不能仅凭形式求和就宣布解析函数恒等式。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2009-301-10",
+    "chapterIds": [
+      "ode"
+    ],
+    "signal": "已给齐次通解结构，又要求同系数非齐次初值解。",
+    "reasoning": [
+      "指数乘一次多项式说明对应特征根重复，可先反推系数。",
+      "再按非齐次右端选多项式特解，和齐次通解相加后代入两个初值。"
+    ],
+    "methodIds": [
+      "hm-ode-characteristic",
+      "hm-ode-undetermined"
+    ],
+    "strategyTags": [
+      "关键词转条件",
+      "先还原结构",
+      "初值定自由度"
+    ],
+    "boundary": "特征根重数控制齐次基；不能从右端形式直接猜完整初值解。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2011-301-10",
+    "chapterIds": [
+      "ode"
+    ],
+    "signal": "一阶线性方程左侧为导数加函数，右侧含指数和三角。",
+    "reasoning": [
+      "左侧乘适当指数可成为一个乘积导数，比把两项分开积分可靠。",
+      "对整体积分并用初值确定常数，最后直接代回原方程。"
+    ],
+    "methodIds": [
+      "hm-ode-linear-first"
+    ],
+    "strategyTags": [
+      "逆认乘积导数",
+      "初值定常数",
+      "回代验证"
+    ],
+    "boundary": "积分常数不能省略；乘积分因子后右侧也必须同时乘。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2013-301-10",
+    "chapterIds": [
+      "ode"
+    ],
+    "signal": "已知同一二阶非齐次方程的三个解，要求通解。",
+    "reasoning": [
+      "同一右端的两个特解相减会消去非齐次项，先从差中提取齐次解。",
+      "确认两条差线性无关，作为二阶齐次基，再加回任一已知特解。"
+    ],
+    "methodIds": [
+      "hm-linear-ode-structure"
+    ],
+    "strategyTags": [
+      "相减消公共项",
+      "检查自由度",
+      "线性结构"
+    ],
+    "boundary": "两个差未必独立，不能只因给了三个解就自动认为基齐全。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  },
+  {
+    "questionId": "2025-301-18",
+    "chapterIds": [
+      "multivariable",
+      "ode"
+    ],
+    "signal": "未知函数始终以x/y为自变量，带x²、xy、y²的二阶偏导组合及对角线条件。",
+    "reasoning": [
+      "比值内层与齐次系数匹配，先记u=x/y并保留u>0，再按链式核算组合。",
+      "得到u²f″+uf′=1后用t=ln u变为F″=1；对角线信息转换成u=1的两个初值，再回代。"
+    ],
+    "methodIds": [
+      "hm-multivariable-chain",
+      "hm-ode-euler"
+    ],
+    "strategyTags": [
+      "重复结构整体代换",
+      "系数识别模型",
+      "同步转换初值",
+      "回代验证"
+    ],
+    "boundary": "x=y对应u=1；不能把原偏导初值原样当作f′，也不能跨u=0使用对数。",
+    "evidenceBasis": "本次重新打开高校托管17页PDF https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/ab27a44c5f0cbe5e.pdf，并实际查看此前该PDF物理第11页渲染缓存图，确认第18题比值内层、偏导组合、正半轴与对角线初值；没有把高校托管标为官方。"
+  },
+  {
+    "questionId": "2009-301-17",
+    "chapterIds": [
+      "geometry",
+      "integrals"
+    ],
+    "signal": "椭圆及其相切直线绕同一轴旋转，求曲面与夹层体积。",
+    "reasoning": [
+      "先在含轴平面识别母线和切点，旋转后保留轴向坐标与到轴距离。",
+      "识别旋转曲面后沿轴看内外截面，交界处分段再积分面积差。"
+    ],
+    "methodIds": [
+      "hm-quadric-surfaces",
+      "hm-integral-area-volume"
+    ],
+    "strategyTags": [
+      "几何转译",
+      "寻找不变量",
+      "分段处理"
+    ],
+    "boundary": "二次曲面识别卡只帮助识别，不应声称它独立提供所有切线构造步骤。",
+    "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。"
+  }
+]

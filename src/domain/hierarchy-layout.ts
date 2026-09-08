@@ -15,16 +15,16 @@ export function hierarchyLayout(graph: { nodes: AtlasNode[]; edges: Edge[] }) {
   if (!root) return graph;
   const rootId = root.id;
   const weights = new Map<string, number>();
-  function weigh(id: string): number {
+  let maxDepth = 1;
+  function weigh(id: string, depth = 0): number {
+    maxDepth = Math.max(maxDepth, depth);
     const list = children.get(id) ?? [];
-    const weight = list.length ? list.reduce((sum, child) => sum + weigh(child), 0) : 1;
+    const weight = list.length ? list.reduce((sum, child) => sum + weigh(child, depth + 1), 0) : 1;
     weights.set(id, weight);
     return weight;
   }
   const total = weigh(root.id);
   const positions = new Map<string, { x: number; y: number }>();
-  const maxDepth = graph.nodes.some((node) => node.data.kind === 'chapter') ? 3
-    : graph.nodes.some((node) => node.data.kind === 'problem') && root.data.kind !== 'problem' ? 2 : 1;
   const outerRadius = Math.max(maxDepth * 520, total * 16);
   const byId = new Map(graph.nodes.map((node) => [node.id, node]));
   function place(id: string, start: number, end: number, depth: number) {
@@ -47,7 +47,7 @@ export function hierarchyLayout(graph: { nodes: AtlasNode[]; edges: Edge[] }) {
   place(root.id, -Math.PI / 2, Math.PI * 1.5, 0);
   // Resolve crowding outward along the same ray, never sideways into a sibling sector.
   const placed: { x: number; y: number }[] = [];
-  const order = { root: 0, chapter: 1, problem: 2, method: 3 };
+  const order = { root: 0, chapter: 1, category: 2, problem: 3, method: 4 };
   for (const node of [...graph.nodes].sort((a, b) => order[a.data.kind] - order[b.data.kind])) {
     const point = positions.get(node.id)!;
     const dx = point.x + 105, dy = point.y + 30, length = Math.hypot(dx, dy);

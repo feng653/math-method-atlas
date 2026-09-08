@@ -1,0 +1,30 @@
+{
+  "id": "basic-partition",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "branch",
+  "title": "整体由不同情形、区域或原像组成",
+  "summary": "分段定义、随机开关、积分区域或多值变换使统一公式难写。",
+  "recognition": [
+    "分段定义、随机开关、积分区域或多值变换使统一公式难写。"
+  ],
+  "strategy": [
+    "选择使条件简单的分界。",
+    "检查各部分不遗漏、不重复；边界单独辨认。",
+    "分别计算，再按加法、全概率或原像合并。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-partition",
+      "when": "拆成互斥穷尽的部分"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "点质量不能塞进普通密度；条件概率要带分支权重。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

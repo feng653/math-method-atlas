@@ -1,0 +1,28 @@
+{
+  "id": "basic-auxiliary-comparison",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "构造可比较的辅助对象",
+  "summary": "要证明等式、不等式、存在性或收敛，无需完整求值。",
+  "conditions": [
+    "要证明等式、不等式、存在性或收敛，无需完整求值。"
+  ],
+  "steps": [
+    "把目标改写为差为零、符号或上下界。",
+    "构造能承接已知条件的差函数、弦线或比较量。",
+    "用单调性、中值定理或夹逼完成目标。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "存在性不等于唯一性；比较方向与端点假设要核对。"
+  ],
+  "example": {
+    "prompt": "自编推演：要求证明某处导数等于两端点连线斜率。",
+    "solution": "从原函数减去弦线，使辅助函数两端点值相等，再检查连续与可导条件以调用罗尔定理。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-auxiliary-comparison-topic"
+  ],
+  "status": "reviewed"
+}

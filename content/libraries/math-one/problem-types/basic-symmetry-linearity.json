@@ -1,0 +1,30 @@
+{
+  "id": "basic-symmetry-linearity",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "kind": "trigger",
+  "category": "transform",
+  "title": "存在对称、线性或可消去的公共项",
+  "summary": "目标可拆成简单项，或变换前后有相同部分。",
+  "recognition": [
+    "目标可拆成简单项，或变换前后有相同部分。"
+  ],
+  "strategy": [
+    "比较变换前后的符号、区域与约束。",
+    "利用线性拆分，或相加相减消去公共项。",
+    "只计算未被消去的量。"
+  ],
+  "methods": [
+    {
+      "methodId": "basic-symmetry-linearity",
+      "when": "利用对称与线性减少计算"
+    }
+  ],
+  "formulas": [],
+  "questionIds": [],
+  "boundaries": [
+    "区域和权重也须保持对称；不相关不能代替独立。",
+    "触发条件是尝试方向，不保证单一思路解决整题；样本不计作考试频次。"
+  ],
+  "status": "reviewed"
+}

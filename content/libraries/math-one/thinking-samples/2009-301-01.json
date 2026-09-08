@@ -1,0 +1,23 @@
+{
+  "questionId": "2009-301-01",
+  "chapterIds": [
+    "limits"
+  ],
+  "signal": "题目指定两个含参表达式为等价无穷小。",
+  "reasoning": [
+    "等价要求首个非零项的阶数和系数都相同，因此先展开低阶项，而不是逐个猜参数。",
+    "先让不应存在的一次项消失，再比较三次主部；参数确定后检查主部确实非零。"
+  ],
+  "methodIds": [
+    "hm-taylor-limit"
+  ],
+  "boundary": "相减时不能把两个函数各自替成低阶等价量后直接相减。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-01",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-unknown-function-route",
+    "basic-model-match"
+  ]
+}

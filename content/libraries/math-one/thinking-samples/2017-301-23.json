@@ -1,0 +1,27 @@
+{
+  "questionId": "2017-301-23",
+  "chapterIds": [
+    "pr-distributions",
+    "pr-estimation"
+  ],
+  "signal": "仅观测正态误差的绝对值，并分别要求分布、矩估计和似然估计。",
+  "reasoning": [
+    "绝对值有正负两条原像，先把两侧概率合并，得到绝对误差的密度。",
+    "矩估计按题目限定的一阶矩把总体矩与样本矩匹配。",
+    "似然估计另从绝对误差观测的密度构造样本似然，不能复用未经说明的原始带符号观测模型。"
+  ],
+  "methodIds": [
+    "pr-dist-transform",
+    "pr-estimate-moments",
+    "pr-estimate-mle"
+  ],
+  "boundary": "变换后的样本信息与带符号误差不同；一阶矩估计与似然估计是不同任务，不混称同一推导。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2017-301-23",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-partition",
+    "basic-unknown-function-route"
+  ]
+}

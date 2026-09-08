@@ -1,0 +1,23 @@
+{
+  "questionId": "2011-301-10",
+  "chapterIds": [
+    "ode"
+  ],
+  "signal": "一阶线性方程左侧为导数加函数，右侧含指数和三角。",
+  "reasoning": [
+    "左侧乘适当指数可成为一个乘积导数，比把两项分开积分可靠。",
+    "对整体积分并用初值确定常数，最后直接代回原方程。"
+  ],
+  "methodIds": [
+    "hm-ode-linear-first"
+  ],
+  "boundary": "积分常数不能省略；乘积分因子后右侧也必须同时乘。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2011-301-10",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-derivative-pattern",
+    "basic-model-match"
+  ]
+}

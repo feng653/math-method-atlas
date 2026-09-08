@@ -1,0 +1,28 @@
+{
+  "id": "basic-equivalent-representation",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "换一种表示，保留所求性质",
+  "summary": "换元、配方、换基或分解能使结构更简单。",
+  "conditions": [
+    "换元、配方、换基或分解能使结构更简单。"
+  ],
+  "steps": [
+    "先明确要保留的是值、解集、秩还是谱。",
+    "选择可逆变换，或记录非可逆变换的原像和补偿。",
+    "在新表示下求解，再还原目标。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "相似与合同保留的性质不同；绝对值、平方会丢失符号。"
+  ],
+  "example": {
+    "prompt": "自编推演：求矩阵高次幂，已知可分解为大矩阵与小矩阵的乘积。",
+    "solution": "先核对乘法维数，再将中间反复出现的小方阵作为运算核心；零次幂单独处理。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-equivalent-representation-topic"
+  ],
+  "status": "reviewed"
+}

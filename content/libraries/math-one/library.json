@@ -34,6 +34,38 @@
         {
           "id": "basic-thinking-geometry",
           "title": "几何语言转变量关系（学习策略）"
+        },
+        {
+          "id": "basic-equivalent-representation-topic",
+          "title": "换一种表示，保留所求性质"
+        },
+        {
+          "id": "basic-symmetry-linearity-topic",
+          "title": "利用对称与线性减少计算"
+        },
+        {
+          "id": "basic-model-match-topic",
+          "title": "先核条件，再匹配标准模型"
+        },
+        {
+          "id": "basic-case-split-topic",
+          "title": "先隔离退化情形"
+        },
+        {
+          "id": "basic-partition-topic",
+          "title": "拆成互斥穷尽的部分"
+        },
+        {
+          "id": "basic-auxiliary-comparison-topic",
+          "title": "构造可比较的辅助对象"
+        },
+        {
+          "id": "basic-counterexample-topic",
+          "title": "先查必要条件与简单反例"
+        },
+        {
+          "id": "basic-final-check-topic",
+          "title": "回到原条件，检查边界与意义"
         }
       ]
     },

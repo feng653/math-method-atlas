@@ -1,5 +1,6 @@
 import { ChevronRight, X } from 'lucide-react';
 import type { Library, Method, ProblemType } from '../domain/schema';
+import { thinkingCategories } from '../domain/thinking-schema';
 import { getCoverage } from '../domain/coverage';
 
 type Props = { library: Library; libraries: Library[]; onLibrary: (id: string) => void; methods: Method[]; onClose: () => void;
@@ -17,7 +18,12 @@ export function LibraryNavigation({ library, libraries, onLibrary, methods, prob
       {library.chapters.map((chapter) => <details key={chapter.id} className="chapter-item">
         <summary><span>{chapter.title}<small>{chapter.subject}</small></span></summary>
         <button className="focus-chapter" onClick={() => onChapter(chapter.id)}>在图中聚焦章节 <ChevronRight size={14} /></button>
-        {problemTypes.filter((type) => type.chapterId === chapter.id).map((type) =>
+        {chapter.supplementary && thinkingCategories.map((category) => <div key={category.id}>
+          <h3 className="thinking-nav-category">{category.title}</h3>
+          {problemTypes.filter((type) => type.chapterId === chapter.id && type.category === category.id).map((type) =>
+            <button className="method-item" key={type.id} onClick={() => onProblemType(type.id)}>{type.title}</button>)}
+        </div>)}
+        {problemTypes.filter((type) => type.chapterId === chapter.id && type.kind !== 'trigger').map((type) =>
           <button className="method-item" key={type.id} onClick={() => onProblemType(type.id)}>{type.kind === 'trigger' ? '触发条件' : '题型'} · {type.title}</button>)}
         {methods.filter((method) => method.chapterId === chapter.id).map((method) =>
           <button className="method-item" key={method.id} onClick={() => onSelect(method.id)}>{method.title}</button>)}

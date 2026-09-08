@@ -1,0 +1,23 @@
+{
+  "questionId": "2013-301-10",
+  "chapterIds": [
+    "ode"
+  ],
+  "signal": "已知同一二阶非齐次方程的三个解，要求通解。",
+  "reasoning": [
+    "同一右端的两个特解相减会消去非齐次项，先从差中提取齐次解。",
+    "确认两条差线性无关，作为二阶齐次基，再加回任一已知特解。"
+  ],
+  "methodIds": [
+    "hm-linear-ode-structure"
+  ],
+  "boundary": "两个差未必独立，不能只因给了三个解就自动认为基齐全。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2013-301-10",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-symmetry-linearity",
+    "basic-structural-keyword"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "questionId": "2011-301-23",
+  "chapterIds": [
+    "pr-estimation",
+    "pr-sampling"
+  ],
+  "signal": "正态总体的真均值已知，目标为方差估计及估计量的矩。",
+  "reasoning": [
+    "已知均值无需再估计，似然中保留绕真均值的平方和并极大化方差参数。",
+    "将同一平方和除以总体方差，识别为自由度n的卡方变量。",
+    "用卡方一二阶矩按缩放还原估计量的期望和方差。"
+  ],
+  "methodIds": [
+    "pr-estimate-mle",
+    "pr-sample-chi-square"
+  ],
+  "boundary": "绕真均值平方和的自由度是n；不能误用扣除样本均值后的n−1。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2011-301-23",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-model-match",
+    "basic-structural-keyword"
+  ]
+}

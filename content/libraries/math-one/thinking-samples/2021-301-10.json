@@ -1,0 +1,26 @@
+{
+  "questionId": "2021-301-10",
+  "chapterIds": [
+    "pr-testing",
+    "pr-sampling"
+  ],
+  "signal": "给定拒绝域，要求在指定备择均值下的第二类错误概率。",
+  "reasoning": [
+    "第二类错误对应未拒绝原假设，先取拒绝域的补集。",
+    "计算概率时切换到指定备择参数下的样本均值分布，标准误仍由总体标准差除以√n。",
+    "在备择分布中标准化补集边界并计算概率。"
+  ],
+  "methodIds": [
+    "pr-test-errors",
+    "pr-sample-normal"
+  ],
+  "boundary": "第二类错误不是在原假设下计算，也一般不等于1−显著性水平。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2021-301-10",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-structural-keyword",
+    "basic-model-match"
+  ]
+}

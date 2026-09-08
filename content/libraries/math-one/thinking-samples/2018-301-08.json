@@ -1,0 +1,24 @@
+{
+  "questionId": "2018-301-08",
+  "chapterIds": [
+    "pr-testing"
+  ],
+  "signal": "同一已知方差双侧均值检验，只改变显著性水平并比较决策。",
+  "reasoning": [
+    "统计量和观测值保持不变，将不同水平的检验写为标准正态尾部拒绝域。",
+    "较小显著性水平对应更大的绝对临界值，所以拒绝域嵌套缩小。",
+    "据集合包含关系判断哪些决策可以推出，而不是把拒绝与不拒绝都对称倒推。"
+  ],
+  "methodIds": [
+    "pr-test-normal-mean"
+  ],
+  "boundary": "不拒绝不证明原假设为真；拒绝域单向包含不允许任意逆命题。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2018-301-08",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-auxiliary-comparison",
+    "basic-counterexample"
+  ]
+}

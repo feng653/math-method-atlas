@@ -6,6 +6,7 @@ import { buildGraph, graphNodeId, type AtlasNode as NodeType } from '../domain/g
 import type { Library, Method, ProblemType } from '../domain/schema';
 import { AtlasNode } from './AtlasNode';
 import { useElasticGraph } from './useElasticGraph';
+import { thinkingCategories } from '../domain/thinking-schema';
 
 const nodeTypes = { atlas: AtlasNode };
 type Props = { library: Library; methods: Method[]; selected: string; chapter: string;
@@ -17,12 +18,18 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const [motion, setMotion] = useState(true);
   const [allLinks, setAllLinks] = useState(false);
   const [hovered, setHovered] = useState('');
+  const [categoryView, setCategoryView] = useState<{ id: string; chapter: string } | null>(null);
+  const category = !selected && !problemType && categoryView?.chapter === chapter ? categoryView.id : '';
+  useEffect(() => { if (!chapter) setCategoryView(null); }, [chapter]);
   const graph = useMemo(() => {
-    const result = buildGraph(library, methods, chapter, allMethods, problemTypes, problemType);
+    const groups = category ? problemTypes.filter((group) => group.chapterId === chapter && group.category === category) : problemTypes;
+    const choices = new Set(groups.flatMap((group) => group.methods.map((choice) => choice.methodId)));
+    const result = buildGraph(library, category ? methods.filter((method) => choices.has(method.id)) : methods,
+      chapter, allMethods, groups, problemType);
     const compact = allMethods && !chapter && !problemType;
     return { ...result, nodes: result.nodes.map((node) => ({ ...node, data: { ...node.data, compact } })) };
   },
-    [library, methods, chapter, allMethods, problemTypes, problemType]);
+    [library, methods, chapter, allMethods, problemTypes, problemType, category]);
   const [nodes, setNodes, onNodesChange] = useNodesState<NodeType>(graph.nodes);
   const primary = useMemo(() => primaryEdgeIds(graph.nodes, graph.edges), [graph]);
   const elastic = useElasticGraph(graph.nodes, graph.edges, motion, setNodes);
@@ -67,6 +74,10 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     if (node?.data.kind === 'method') onSelect(node.data.methodId ?? '');
     else if (node?.data.kind === 'problem') onProblemType(node.data.problemTypeId ?? '');
     else if (node?.data.kind === 'chapter') onChapter(node.data.chapterId ?? '');
+    else if (node?.data.kind === 'category') {
+      setCategoryView({ id: node.data.categoryId ?? '', chapter: node.data.chapterId ?? chapter });
+      onChapter(node.data.chapterId ?? chapter);
+    }
     else if (node) onChapter('');
   }
   function restoreLayout() {
@@ -95,6 +106,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
       <Background color="#ccd6cf" gap={30} size={0.9} />
     </ReactFlow>
     <div className="graph-views" aria-label="图谱范围">
+      {category && <button onClick={() => setCategoryView(null)} title="返回全部思路分类">← {thinkingCategories.find((item) => item.id === category)?.title}</button>}
       <button aria-pressed={allMethods && !chapter} onClick={() => { setAllMethods(true); onChapter('');
         if (allMethods && !chapter) void flow?.fitView({ duration: duration(), padding: 0.22 }); }}>
         完整图谱 <small>{methods.length}</small></button>

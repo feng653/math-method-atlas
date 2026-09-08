@@ -1,0 +1,26 @@
+{
+  "questionId": "2012-301-20",
+  "chapterIds": [
+    "la-determinants",
+    "la-systems"
+  ],
+  "signal": "先计算含参行列式，再要求无穷多解和通解；行列式结果提供筛选条件，但还缺相容性信息。",
+  "reasoning": [
+    "无穷多解不可能发生在系数矩阵可逆时，所以先借前问行列式筛出奇异参数，把后续消元限制在少数候选分支。",
+    "已审展开得到1−a⁴；对实参数先保留a=1与a=−1，再分别代回，而不是除掉可能为零的参数因子。",
+    "奇异只说明不能唯一解，尚可能无解；因此继续检查增广矩阵相容条件，再由自由变量写通解。"
+  ],
+  "methodIds": [
+    "la-det-expansion",
+    "la-system-parameter"
+  ],
+  "boundary": "a=±1只是奇异候选，不在本样本中直接断言两者都满足无穷多解；相容性及具体通解必须用原增广条件逐支确定。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2012-301-20",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-case-split",
+    "basic-final-check"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "questionId": "2026-301-21",
+  "chapterIds": [
+    "la-vectors",
+    "la-matrices"
+  ],
+  "signal": "前一任务要求确认两列构成极大无关组，后一任务要求计算高次矩阵幂；前问很可能为后问提供较小表示。",
+  "reasoning": [
+    "先证两列无关并表达其余列，因为只知道存在两列不足以保证它们承载整个矩阵的列空间。",
+    "把这两列组成G，把各列表示系数放进H，得到A=GH；这样前问结论变成可以直接操作的低秩分解。",
+    "直接连乘大矩阵重复劳动多，而结合律给Aᵏ=G(HG)ᵏ⁻¹H，所以转算较小的HG。",
+    "已审路线指出小矩阵具有幂零扰动结构，于是先验证幂零阶数再用有限展开，最后乘回G、H完成原高次幂任务。"
+  ],
+  "methodIds": [
+    "la-vector-basis",
+    "la-matrix-product",
+    "la-matrix-power",
+    "la-rank-factor-power"
+  ],
+  "boundary": "降维幂式适用于正整数k，零次幂单独处理；不能把GH与HG当成同尺寸矩阵或凭非零谱相同声称相似。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2026-301-21",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-unknown-function-route",
+    "basic-equivalent-representation"
+  ]
+}

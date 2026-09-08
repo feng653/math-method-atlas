@@ -7,7 +7,7 @@ const json = (file: string) => JSON.parse(readFileSync(file, 'utf8'));
 const base = 'content/libraries/math-one';
 const data = { libraries: [librarySchema.parse(json(`${base}/library.json`))],
   methods: readdirSync(`${base}/methods`).map((name) => methodSchema.parse(json(`${base}/methods/${name}`))),
-  papers: [], questions: [], problemTypes: [] };
+  papers: [], questions: [], problemTypes: [], thinkingSamples: [] };
 const audit = json('content/requirements/math-one-2019-audit.json');
 describe('external requirement audit', () => {
   it('validates an independently sourced historical audit without certifying its target version', () => {

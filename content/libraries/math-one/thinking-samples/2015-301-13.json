@@ -1,0 +1,24 @@
+{
+  "questionId": "2015-301-13",
+  "chapterIds": [
+    "la-determinants"
+  ],
+  "signal": "待算行列式呈带状且有稀疏列；删除少量行列后仍可能留下同样的结构。",
+  "reasoning": [
+    "直接按所有排列展开成本高，而稀疏列只有少数非零项，所以先从这列展开，压低第一步分支数。",
+    "展开后不急着继续逐项计算，而是比较余子式与原结构；若只是阶数降低，就给这族行列式统一命名，转成递推关系。",
+    "递推只规定各阶之间的关系，尚未确定数值，因此补上低阶基例，同时核查代数余子式符号。"
+  ],
+  "methodIds": [
+    "la-det-expansion"
+  ],
+  "boundary": "本轮未重读原卷；已审note确认稀疏展开可得递推，但未提供递推具体系数，本样本不补造系数或答案。",
+  "evidenceBasis": "依据已审题目摘要及方法核验记录提炼；本轮未重新查阅原题。",
+  "id": "2015-301-13",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-symmetry-linearity",
+    "basic-model-match"
+  ]
+}

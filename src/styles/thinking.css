@@ -1,0 +1,25 @@
+.atlas-node.category { background: #fafbf7; border: 1px solid var(--branch-color); }
+.atlas-node.category strong { color: var(--branch-color); font-size: 15px; }
+.thinking-nav-category { font-size: 12px; color: #52766b; margin: 18px 9px 5px; }
+.thinking-coverage { position: absolute; left: 30px; bottom: 58px; z-index: 4; max-width: 390px;
+  background: #fffffff2; border: 1px solid #e2e8df; border-radius: 10px; padding: 0 13px; }
+.thinking-coverage summary { min-height: 40px; font-size: 11px; }
+.thinking-coverage p { font-size: 12px; line-height: 1.8; margin-bottom: 12px; }
+.thinking-sample { border-top: 1px solid #dfe6dc; padding: 5px 0 12px; }
+.thinking-sample summary { font-size: 15px; line-height: 1.7; color: #294e44; padding: 14px 0; }
+.thinking-sample summary small { display: block; color: #64756b; font-weight: 400; font-size: 13px; padding-top: 5px; }
+.thinking-sample h3 { font-size: 13px; font-weight: 600; color: #51746a; margin: 20px 0 10px; }
+.thinking-sample p, .thinking-sample li { font-size: 15px; line-height: 1.9; overflow-wrap: anywhere; }
+.thinking-sample .sample-boundary { background: #f3f6ef; border-radius: 8px; padding: 12px; font-size: 13px; }
+.thinking-sample .fine-print { font-size: 11px; color: #69776e; }
+.thinking-sample .related-methods button { min-height: 44px; font-size: 12px; }
+@media (min-width: 601px) and (max-width: 1000px) {
+  .search-area { right: 190px; }
+}
+@media (max-width: 600px) {
+  .thinking-coverage { left: 16px; right: 16px; bottom: 110px; max-width: none; }
+  .thinking-sample p, .thinking-sample li { font-size: 16px; }
+  .thinking-sample .sample-boundary { font-size: 14px; }
+  .thinking-sample summary { font-size: 16px; }
+  .graph-views { max-width: calc(100vw - 32px); flex-wrap: wrap; }
+}

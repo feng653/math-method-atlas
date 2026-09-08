@@ -1,0 +1,23 @@
+{
+  "questionId": "2009-301-15",
+  "chapterIds": [
+    "multivariable"
+  ],
+  "signal": "二元极值表达式含对数，定义域不是全平面。",
+  "reasoning": [
+    "先由对数限制y>0，再在合法内部求驻点。",
+    "对候选点计算Hessian二次型，严格正定才能直接判局部极小。"
+  ],
+  "methodIds": [
+    "hm-hessian-extrema"
+  ],
+  "boundary": "Hessian判据退化时不能硬判；局部极值不自动是全局最值。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-15",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-case-split",
+    "basic-final-check"
+  ]
+}

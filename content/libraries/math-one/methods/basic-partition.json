@@ -1,0 +1,28 @@
+{
+  "id": "basic-partition",
+  "libraryId": "math-one",
+  "chapterId": "basic-thinking",
+  "title": "拆成互斥穷尽的部分",
+  "summary": "分段定义、随机开关、积分区域或多值变换使统一公式难写。",
+  "conditions": [
+    "分段定义、随机开关、积分区域或多值变换使统一公式难写。"
+  ],
+  "steps": [
+    "选择使条件简单的分界。",
+    "检查各部分不遗漏、不重复；边界单独辨认。",
+    "分别计算，再按加法、全概率或原像合并。"
+  ],
+  "formula": "",
+  "pitfalls": [
+    "点质量不能塞进普通密度；条件概率要带分支权重。"
+  ],
+  "example": {
+    "prompt": "自编推演：连续量乘一个可取零的随机开关，怎样找分布？",
+    "solution": "先按开关值分层：零分支形成点质量，其他分支计算条件分布，再按全概率合并。"
+  },
+  "relatedIds": [],
+  "topicIds": [
+    "basic-partition-topic"
+  ],
+  "status": "reviewed"
+}

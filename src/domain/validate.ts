@@ -1,5 +1,6 @@
 import { atlasSchema, type AtlasData } from './schema';
 import { validateProblemTypes } from './problem-types';
+import { validateThinking } from './thinking';
 
 export function validateAtlas(input: unknown): string[] {
   const result = atlasSchema.safeParse(input);
@@ -78,5 +79,5 @@ export function validateAtlas(input: unknown): string[] {
       if (!methods.has(key(question.libraryId, link.methodId))) errors.push(`${label}: unknown method ${link.methodId}`);
     }
   }
-  return [...errors, ...validateProblemTypes(data)];
+  return [...errors, ...validateProblemTypes(data), ...validateThinking(data)];
 }

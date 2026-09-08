@@ -1,0 +1,25 @@
+{
+  "questionId": "2009-301-17",
+  "chapterIds": [
+    "geometry",
+    "integrals"
+  ],
+  "signal": "椭圆及其相切直线绕同一轴旋转，求曲面与夹层体积。",
+  "reasoning": [
+    "先在含轴平面识别母线和切点，旋转后保留轴向坐标与到轴距离。",
+    "识别旋转曲面后沿轴看内外截面，交界处分段再积分面积差。"
+  ],
+  "methodIds": [
+    "hm-quadric-surfaces",
+    "hm-integral-area-volume"
+  ],
+  "boundary": "二次曲面识别卡只帮助识别，不应声称它独立提供所有切线构造步骤。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-17",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-geometric-relation",
+    "basic-partition"
+  ]
+}

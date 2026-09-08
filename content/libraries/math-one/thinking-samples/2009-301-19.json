@@ -1,0 +1,24 @@
+{
+  "questionId": "2009-301-19",
+  "chapterIds": [
+    "multiple-integrals"
+  ],
+  "signal": "封闭曲面通量的场在内部原点有奇性。",
+  "reasoning": [
+    "封闭面提示散度定理，但先查整个内部是否满足光滑条件。",
+    "挖去包围奇点的小球，在无奇性壳层用定理，再用内边界法向的反向关系补回通量。"
+  ],
+  "methodIds": [
+    "hm-gauss"
+  ],
+  "boundary": "不能因为曲面上无奇点就对整个体域直接用散度定理。",
+  "evidenceBasis": "本次读取本地题目JSON的summary、verified methodLinks及核验note；未在本次重新核对外部题面。",
+  "id": "2009-301-19",
+  "libraryId": "math-one",
+  "status": "reviewed",
+  "triggerIds": [
+    "basic-case-split",
+    "basic-partition",
+    "basic-final-check"
+  ]
+}
