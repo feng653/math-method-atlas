@@ -30,7 +30,9 @@ export const methodSchema = z.object({
   id, libraryId: id, chapterId: id, title: text, summary: text,
   conditions: z.array(text).min(1), steps: z.array(text).min(1), formula,
   pitfalls: z.array(text).min(1),
-  example: z.object({ prompt: text, solution: text }).strict(),
+  example: z.object({ prompt: text, formulas: z.array(formula).optional(),
+    solution: z.union([text, z.array(z.object({ title: text, text,
+      formulas: z.array(formula) }).strict()).min(1)]) }).strict(),
   relatedIds: ids, topicIds: ids.refine((values) => values.length > 0, 'Method needs a syllabus topic'),
   status,
 }).strict();

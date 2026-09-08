@@ -20,8 +20,36 @@
     "允许先算出方程再回头简化，不要求第一眼想到整体代换。"
   ],
   "example": {
-    "prompt": "推演示例：tg″+g′=0，t≥1，g(1)=0，g′(1)=1。",
-    "solution": "由(tg′)′=0得tg′=C，初值给C=1；积分g=ln t+D，再由g(1)=0得D=0。回代f=ln t/t后，f′=(1−ln t)/t²，先增后减，最大值1/e在t=e取得。"
+    "prompt": "第27题推演片段：整体代换后得到下列方程和初值，求回原函数的最大值。",
+    "formulas": [
+      "tg^{\\prime\\prime}+g^{\\prime}=0,\\quad t\\ge1",
+      "g(1)=0,\\quad g^{\\prime}(1)=1,\\quad f(t)=\\frac{g(t)}t"
+    ],
+    "solution": [
+      {
+        "title": "逆用乘积求导",
+        "text": "左侧正是一个整体的导数。",
+        "formulas": [
+          "(tg^{\\prime})^{\\prime}=0\\ \\Longrightarrow\\ tg^{\\prime}=C"
+        ]
+      },
+      {
+        "title": "代入初值，再积分",
+        "text": "导数初值确定C，函数初值确定第二个积分常数。",
+        "formulas": [
+          "C=1,\\quad g^{\\prime}=\\frac1t",
+          "g=\\ln t+D,\\quad D=0"
+        ]
+      },
+      {
+        "title": "回到最值目标",
+        "text": "函数在1到e递增，在e之后递减，因此得到全区间最大值。",
+        "formulas": [
+          "f(t)=\\frac{\\ln t}t,\\quad f^{\\prime}(t)=\\frac{1-\\ln t}{t^2}",
+          "\\boxed{f_{\\max}=f(e)=\\frac1e}"
+        ]
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-reduction",

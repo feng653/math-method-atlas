@@ -7,6 +7,7 @@ import { methodRoleLabel } from '../domain/method-roles';
 import { Formula } from './Formula';
 import { resolveSource, sourceHref } from '../domain/source';
 import { SourceDetails } from './SourceDetails';
+import { MethodExample } from './MethodExample';
 
 type Props = { method: Method; methods: Method[]; questions: Question[]; papers: Paper[];
   examScope?: Library['examScope'];
@@ -25,9 +26,7 @@ export function MethodDetail({ method, methods, questions, papers, examScope, on
       <ul>{method.conditions.map((text) => <li key={text}>{text}</li>)}</ul>
       <h2>怎么做</h2>
       <ol className="steps">{method.steps.map((text) => <li key={text}>{text}</li>)}</ol>
-      <div className="example"><span className="eyebrow">自编例题</span>
-        <p>{method.example.prompt}</p>
-        <details><summary>展开解答</summary><p>{method.example.solution}</p></details></div>
+      <MethodExample example={method.example} />
       <h2>留意这些条件</h2>
       <ul>{method.pitfalls.map((text) => <li key={text}>{text}</li>)}</ul>
       <h2>相关方法</h2>

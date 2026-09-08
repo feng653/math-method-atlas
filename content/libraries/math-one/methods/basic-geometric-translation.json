@@ -20,8 +20,54 @@
     "v=y²求出后有正负分支；初值决定分支，实数解还要求v≥0，光滑分支通常取v>0。"
   ],
   "example": {
-    "prompt": "第29题讨论：曲线过(0,2)，任意点P的法线与x轴交于Q，PQ中点在2Y²=X上，求曲线。",
-    "solution": "设P=(x,y)、Q=(q,0)。法线垂直切向量，得q=x+yy′；中点M=(q/2,y/2)，代入2Y²=X得q=y²，于是yy′=y²−x。看到yy′与y²配对，令v=y²，得v′−2v=−2x。解得v=Ce^(2x)+x+1/2；由y(0)=2得C=7/2。故y=√[(7/2)e^(2x)+x+1/2]，取含0且根号内严格为正的最大连通区间。回验yy′=y²−x，所以Q横坐标确为y²，中点满足抛物线；初值也成立。"
+    "prompt": "第29题：曲线经过(0,2)。任意点P的法线与横轴交于Q，线段PQ的中点在给定抛物线上，求曲线。",
+    "formulas": [
+      "2Y^2=X,\\qquad y(0)=2"
+    ],
+    "solution": [
+      {
+        "title": "先设一般点",
+        "text": "切线方向为(1,y′)。用法线与切线垂直列点积，避免除以零斜率。",
+        "formulas": [
+          "P=(x,y),\\quad Q=(q,0)",
+          "(q-x,-y)\\cdot(1,y^{\\prime})=0",
+          "q=x+yy^{\\prime}"
+        ]
+      },
+      {
+        "title": "把中点代入轨迹",
+        "text": "中点坐标代入抛物线，消去交点的横坐标。",
+        "formulas": [
+          "M=\\left(\\frac q2,\\frac y2\\right)",
+          "2\\left(\\frac y2\\right)^2=\\frac q2\\ \\Longrightarrow\\ q=y^2",
+          "yy^{\\prime}=y^2-x"
+        ]
+      },
+      {
+        "title": "看到配对结构，换成平方量",
+        "text": "函数与导数的乘积是平方量导数的一半，换元后成为一阶线性方程。",
+        "formulas": [
+          "v=y^2,\\quad v^{\\prime}=2yy^{\\prime}",
+          "v^{\\prime}-2v=-2x"
+        ]
+      },
+      {
+        "title": "求解并使用经过点",
+        "text": "积分因子为指数函数。用初值确定常数。",
+        "formulas": [
+          "(e^{-2x}v)^{\\prime}=-2xe^{-2x}",
+          "v=Ce^{2x}+x+\\frac12",
+          "v(0)=4\\ \\Longrightarrow\\ C=\\frac72"
+        ]
+      },
+      {
+        "title": "选分支并回验",
+        "text": "初值为正，选择正平方根，取含0且根号内严格为正的最大连通区间。回代得到q=y²，中点满足原抛物线。",
+        "formulas": [
+          "\\boxed{y=\\sqrt{\\frac72e^{2x}+x+\\frac12}}"
+        ]
+      }
+    ]
   },
   "relatedIds": [
     "hm-plane-tangent-normal",

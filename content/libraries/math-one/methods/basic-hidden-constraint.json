@@ -19,8 +19,54 @@
     "Py=Qx作为充分条件还需检查区域等条件；本题已明确给出全微分。"
   ],
   "example": {
-    "prompt": "第28题讨论：du=[e^x+f″(x)]y dx+f(x)dy，f(0)=4、f′(0)=3，求f和u。",
-    "solution": "看到全微分，先令Py=Qx：e^x+f″=f′。缺f可令p=f′，得p′−p=−e^x，即(e^(−x)p)′=−1。p(0)=3给p=(3−x)e^x；积分并用f(0)=4得f=(4−x)e^x。再由uy=f得u=y(4−x)e^x+h(x)，与ux=P比较得h′=0，故u=y(4−x)e^x+C。回验ux=y(3−x)e^x、uy=(4−x)e^x，且e^x+f″=(3−x)e^x。"
+    "prompt": "第28题：已知下式为全微分，且函数有连续二阶导数。利用初值求函数与势函数。",
+    "formulas": [
+      "du=[e^x+f^{\\prime\\prime}(x)]y\\,dx+f(x)\\,dy",
+      "f(0)=4,\\qquad f^{\\prime}(0)=3"
+    ],
+    "solution": [
+      {
+        "title": "把“全微分”转成约束",
+        "text": "分别记两个微分项的系数为P、Q。相容条件给出关于未知函数的方程。",
+        "formulas": [
+          "P_y=Q_x",
+          "e^x+f^{\\prime\\prime}=f^{\\prime}"
+        ]
+      },
+      {
+        "title": "缺少函数本身，先降阶",
+        "text": "令p为函数的一阶导数，再乘积分因子。",
+        "formulas": [
+          "p=f^{\\prime},\\quad p^{\\prime}-p=-e^x",
+          "(e^{-x}p)^{\\prime}=-1"
+        ]
+      },
+      {
+        "title": "用初值求出函数",
+        "text": "先用导数初值确定p，再积分并使用函数初值。",
+        "formulas": [
+          "p=(3-x)e^x",
+          "f=(4-x)e^x+D,\\quad D=0"
+        ]
+      },
+      {
+        "title": "恢复势函数",
+        "text": "由对y的偏导积分。积分项可能依赖x，先写成h(x)，再用另一偏导确定。",
+        "formulas": [
+          "u_y=f\\ \\Longrightarrow\\ u=y(4-x)e^x+h(x)",
+          "u_x=y(3-x)e^x+h^{\\prime}(x)=P",
+          "h^{\\prime}=0,\\quad \\boxed{u=y(4-x)e^x+C}"
+        ]
+      },
+      {
+        "title": "回验两个微分项",
+        "text": "求出的一阶偏导与原式两个系数一致；两个初值也满足。",
+        "formulas": [
+          "u_x=y(3-x)e^x=y(e^x+f^{\\prime\\prime})",
+          "u_y=(4-x)e^x=f(x)"
+        ]
+      }
+    ]
   },
   "relatedIds": [
     "hm-exact-ode",

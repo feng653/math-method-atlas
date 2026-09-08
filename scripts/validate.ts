@@ -43,8 +43,10 @@ if (parsed.success) {
   }
   for (const document of documents) errors.push(...validateRequirements(document, parsed.data, documents));
   for (const method of parsed.data.methods) {
-    try {
-      katex.renderToString(method.formula, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 });
+    const formulas = [method.formula, ...(method.example.formulas ?? []),
+      ...(typeof method.example.solution === 'string' ? [] : method.example.solution.flatMap((step) => step.formulas))];
+    for (const value of formulas) try {
+      katex.renderToString(value, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 });
     } catch (error) { errors.push(`${method.libraryId}/${method.id} formula: ${String(error)}`); }
   }
   for (const type of parsed.data.problemTypes) for (const formula of type.formulas) {

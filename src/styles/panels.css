@@ -23,6 +23,18 @@
 .method-role { font-size: 10px; opacity: 0.72; margin-left: 6px; }
 .example { background: #f5f7f1; border-left: 2px solid #a9bb99; padding: 18px; margin-top: 25px; border-radius: 0 9px 9px 0; }
 .example p { margin: 12px 0; }
+.example p { font-size: 15px; line-height: 1.9; color: #263e32; overflow-wrap: anywhere; }
+.example summary { min-height: 44px; display: list-item; padding: 10px 0; cursor: pointer; }
+.example-steps > section { padding: 18px 0; border-top: 1px solid #dce4d7; }
+.example-steps h3 { display: flex; align-items: baseline; gap: 9px; font-size: 15px; margin: 0 0 12px; color: #254c47; }
+.example-steps h3 > span { color: #607665; font-size: 12px; font-variant-numeric: tabular-nums; }
+.example .formula { max-width: 100%; margin: 12px 0; padding: 12px 8px; background: #fff; font-size: 15px; }
+.example .formula .katex-display { text-align: left; }
+.example-prose { padding-top: 10px; }
+@media (max-width: 700px) {
+  .example { padding: 16px 12px; margin-left: -8px; margin-right: -8px; }
+  .example p { font-size: 16px; }
+}
 summary { cursor: pointer; min-height: 38px; font-size: 12px; line-height: 1.6; padding: 9px 0; color: #56755f; }
 .related-methods { display: flex; flex-wrap: wrap; gap: 6px; }
 .related-methods button { min-height: 36px; padding: 6px 10px; border: 1px solid #e3e9df; border-radius: 7px; font-size: 11px; display: flex; align-items: center; gap: 5px; text-align: left; }

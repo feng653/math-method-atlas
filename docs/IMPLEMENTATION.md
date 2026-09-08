@@ -45,3 +45,5 @@
 基础思路改为触发条件层：分组kind=trigger（省略仍为题型），3个通用触发入口引用现有方法。复用schema/loader/图谱/详情，目录与搜索区分标签；触发详情无历年真题区，CLI禁止其分类真题。report独立计数触发条件；旧basic-unknown-function-route ID保留为目标信息缺口入口。
 
 基础思路第28/29题扩展：新增basic-structural-keyword与basic-geometric-relation触发入口，分别引用basic-hidden-constraint、basic-geometric-translation；平方量代换扩展既有basic-derivative-pattern/basic-whole-substitution，不复制求导与ODE方法。
+
+例题排版唯一入口MethodExample.tsx：example.formulas为题面公式，solution兼容旧字符串或[{title,text,formulas}]；旧文本按句分段，新步骤共用Formula数学渲染。CLI校验所有新增公式。第27—29讨论示例已转分步结构，默认标题为例题，不误标自编。
