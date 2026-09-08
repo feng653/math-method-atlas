@@ -19,6 +19,7 @@
 | 进度报告 | `scripts/report.ts` | pnpm content:report输出实际数量/待审关联/缺口/历史编号候选数 |
 | 布局与画布 | `src/domain/graph.ts`、`src/components/AtlasGraph.tsx` | graphNodeId区分root/chapter/method内部ID，data.methodId保留内容ID；空方法体系/保留名/跨库隔离回归；拖动仅会话 |
 | 弹性联动 | `src/domain/elastic-layout.ts`、`src/components/useElasticGraph.ts` | 径向弹簧/阻尼/碰撞排斥；松手采纳新间距，无原位吸引；质心软约束；可暂停及减少动态 |
+| 默认层级布局 | `src/domain/hierarchy-layout.ts`（graph.ts调用） | 主干树按子树大小分配连续扇区，章节/题型/方法分层；固定主干归属，节点避碰；不干预后续自由拖动 |
 | 连线可读性 | `src/domain/edge-layout.ts` | 共享方法主干父边选择与动态朝向端口；悬停/焦点展开直接关联、一键全部连线；语义关系不删减 |
 | 题型内容 | `schema.ts`的problemTypeSchema、`domain/problem-types.ts` | 每体系problem-types目录；方法选择/条件公式/显式真题归属；唯一CLI校验引用与KaTeX，报告未归类方法 |
 | 题型检索与图层 | `graph.ts`调用`problem-graph.ts`、`ProblemTypeDetail.tsx` | 章节→题型→共享方法节点，点击题型聚焦其方法及卡片；目录/搜索共用选择，hash type深链 |

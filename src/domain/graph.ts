@@ -2,6 +2,7 @@ import { Position, type Edge, type Node } from '@xyflow/react';
 import type { Library, Method, ProblemType } from './schema';
 import { separateNodes } from './layout';
 import { addProblemTypes } from './problem-graph';
+import { hierarchyLayout } from './hierarchy-layout';
 
 export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method' | 'problem';
   subtitle: string; color: string; chapterId?: string; methodId?: string; problemTypeId?: string };
@@ -85,6 +86,6 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
     });
   });
   const graph = { nodes: allMethods && !chapterId ? separateNodes(nodes) : nodes, edges };
-  return addProblemTypes(graph, problemTypes.filter((type) => type.libraryId === library.id
-    && (!chapterId || type.chapterId === chapterId)), chapterId, library.id);
+  return hierarchyLayout(addProblemTypes(graph, problemTypes.filter((type) => type.libraryId === library.id
+    && (!chapterId || type.chapterId === chapterId)), chapterId, library.id));
 }

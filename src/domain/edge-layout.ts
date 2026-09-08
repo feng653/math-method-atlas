@@ -7,6 +7,10 @@ export function primaryEdgeIds(nodes: AtlasNode[], edges: Edge[]) {
   const chosen = new Map<string, { id: string; score: number }>();
   const visible = new Set<string>();
   for (const edge of edges) {
+    if (typeof edge.data?.layoutPrimary === 'boolean') {
+      if (edge.data.layoutPrimary) visible.add(edge.id);
+      continue;
+    }
     if (!edge.id.startsWith('choice-')) { visible.add(edge.id); continue; }
     const a = byId.get(edge.source), b = byId.get(edge.target);
     if (!a || !b) continue;
