@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type Dispatch, type SetStateAction } from 'react';
 import type { Edge, NodeChange } from '@xyflow/react';
 import type { AtlasNode } from '../domain/graph';
-import { createElasticLayout, stepElasticLayout, type ElasticLayout } from '../domain/elastic-layout';
+import { createElasticLayout, retainElasticArrangement, stepElasticLayout, type ElasticLayout } from '../domain/elastic-layout';
 
 export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: boolean,
   setNodes: Dispatch<SetStateAction<AtlasNode[]>>) {
@@ -46,7 +46,10 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
         const body = simulation.current.bodies.get(change.id);
         if (body) { body.position = { ...change.position }; body.vx = 0; body.vy = 0; }
       }
+      if (!pinned.current && changes.some((change) => change.type === 'position' && change.position && !change.dragging)) {
+        retainElasticArrangement(simulation.current);
+      }
     },
-    release: (node: AtlasNode) => { drag(node); pinned.current = null; },
+    release: (node: AtlasNode) => { drag(node); pinned.current = null; retainElasticArrangement(simulation.current); },
     reset: () => { simulation.current = createElasticLayout(nodes, edges); pinned.current = null; } };
 }

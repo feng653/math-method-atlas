@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
-import { Focus, Minus, Plus, RotateCcw, Waves } from 'lucide-react';
+import { Focus, Minus, Plus, RotateCcw, Waves, Network } from 'lucide-react';
+import { edgeHandles, primaryEdgeIds } from '../domain/edge-layout';
 import { buildGraph, graphNodeId, type AtlasNode as NodeType } from '../domain/graph';
 import type { Library, Method, ProblemType } from '../domain/schema';
 import { AtlasNode } from './AtlasNode';
@@ -14,9 +15,12 @@ type Props = { library: Library; methods: Method[]; selected: string; chapter: s
 export function AtlasGraph({ library, methods, selected, chapter, problemTypes, problemType, onProblemType, onSelect, onChapter }: Props) {
   const [allMethods, setAllMethods] = useState(true);
   const [motion, setMotion] = useState(true);
+  const [allLinks, setAllLinks] = useState(false);
+  const [hovered, setHovered] = useState('');
   const graph = useMemo(() => buildGraph(library, methods, chapter, allMethods, problemTypes, problemType),
     [library, methods, chapter, allMethods, problemTypes, problemType]);
   const [nodes, setNodes, onNodesChange] = useNodesState<NodeType>(graph.nodes);
+  const primary = useMemo(() => primaryEdgeIds(graph.nodes, graph.edges), [graph]);
   const elastic = useElasticGraph(graph.nodes, graph.edges, motion, setNodes);
   const [flow, setFlow] = useState<ReactFlowInstance<NodeType> | null>(null);
   const [zoom, setZoom] = useState(1);
@@ -37,10 +41,16 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const selectedMethod = methods.find((method) => method.id === selected);
   const selectedNodeId = graphNodeId('method', selected);
   const motionAllowed = elastic.active;
-  const edges = graph.edges.map((edge) => ({ ...edge,
-    animated: motionAllowed && edge.target === selectedNodeId,
-    style: { ...edge.style, opacity: selected && edge.target !== selectedNodeId ? 0.13 : edge.style?.opacity },
-  }));
+  const byId = new Map(nodes.map((node) => [node.id, node]));
+  const active = hovered || (selected ? selectedNodeId : '');
+  const edges = graph.edges.filter((edge) => allLinks || primary.has(edge.id)
+    || edge.source === active || edge.target === active).map((edge) => {
+    const a = byId.get(edge.source), b = byId.get(edge.target);
+    const related = edge.source === active || edge.target === active;
+    return { ...edge, ...(a && b ? edgeHandles(a, b) : {}),
+      animated: motionAllowed && related,
+      style: { ...edge.style, opacity: active ? (related ? 0.85 : 0.07) : edge.style?.opacity } };
+  });
   if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
     const relatedNodeId = graphNodeId('method', relatedId);
     if (nodes.some((node) => node.id === relatedNodeId)) edges.push({ id: `relation-${relatedId}`,
@@ -64,10 +74,12 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     const wrapper = (event.target as HTMLElement).closest<HTMLElement>('.react-flow__node');
     if (!wrapper?.dataset.id) return;
     event.preventDefault(); event.stopPropagation(); activateNode(wrapper.dataset.id);
-  }}>
+  }} onFocusCapture={(event) => setHovered((event.target as HTMLElement).closest<HTMLElement>('.react-flow__node')?.dataset.id ?? '')}
+    onBlurCapture={() => setHovered('')}>
     <ReactFlow<NodeType> nodes={nodes} edges={edges} nodeTypes={nodeTypes}
       onNodesChange={(changes) => { elastic.sync(changes); onNodesChange(changes); }}
       onInit={setFlow} onMoveEnd={(_, viewport) => setZoom(viewport.zoom)}
+      onNodeMouseEnter={(_, node) => setHovered(node.id)} onNodeMouseLeave={() => setHovered('')}
       onNodeDragStart={(_, node) => elastic.drag(node)} onNodeDrag={(_, node) => elastic.drag(node)}
       onNodeDragStop={(_, node) => elastic.release(node)} nodeDragThreshold={5}
       onNodeClick={(_, node) => activateNode(node.id)}
@@ -92,7 +104,9 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
       <button aria-label={motion ? '暂停图谱流动' : '开启图谱流动'} title={motion ? '暂停图谱流动' : '开启图谱流动'}
         aria-pressed={motion} onClick={() => setMotion(!motion)}><Waves size={17} /></button>
       <button aria-label="恢复节点布局" title="恢复节点布局" onClick={restoreLayout}><RotateCcw size={16} /></button>
+      <button aria-label={allLinks ? '仅显示主干连线' : '显示全部关联连线'} title={allLinks ? '仅显示主干连线' : '显示全部关联连线'}
+        aria-pressed={allLinks} onClick={() => setAllLinks(!allLinks)}><Network size={17} /></button>
     </div>
-    <div className="canvas-hint">拖动节点感受牵引 · 滚轮缩放 · 点击节点深入</div>
+    <div className="canvas-hint">{allLinks ? '全部关联' : '主干连线 · 悬停展开关联'} · 拖动自由排布 · 点击深入</div>
   </section>;
 }
