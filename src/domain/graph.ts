@@ -48,7 +48,7 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
         data: { label: chapter.title, subtitle: `${chapterMethods.length} 个方法`, kind: 'chapter', color, chapterId: chapter.id } });
       edges.push({ id: `branch-${chapter.id}`, source: rootId, target: graphNodeId('chapter', chapter.id),
         sourceHandle: cx < 0 ? 'left-source' : 'right-source', targetHandle: cx < 0 ? 'right-target' : 'left-target',
-        style: { stroke: color, strokeWidth: 2, opacity: 0.4 }, type: 'straight' });
+        style: { stroke: color, strokeWidth: 2, opacity: 0.4 }, type: 'default' });
     }
     chapterMethods.forEach((method, m) => {
       const arc = chapterId ? Math.PI * 2 : Math.PI * 2 / chapters.length * 0.84;
@@ -68,7 +68,7 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
       edges.push({ id: `tree-${method.id}`, source: chapterId ? rootId : graphNodeId('chapter', chapter.id),
         sourceHandle: (chapterId ? left : Math.cos(localAngle) < 0) ? 'left-source' : 'right-source',
         targetHandle: (chapterId ? left : Math.cos(localAngle) < 0) ? 'right-target' : 'left-target',
-        target: graphNodeId('method', method.id), type: 'straight', style: { stroke: color, opacity: 0.26, strokeWidth: 1.2 } });
+        target: graphNodeId('method', method.id), type: 'default', style: { stroke: color, opacity: 0.26, strokeWidth: 1.2 } });
     });
   });
   return { nodes: allMethods && !chapterId ? separateNodes(nodes) : nodes, edges };

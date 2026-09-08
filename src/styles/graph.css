@@ -18,6 +18,17 @@
 .react-flow__node:focus-visible { outline: 2px solid #0f766e; outline-offset: 4px; }
 .react-flow__attribution { font-size: 8px !important; opacity: 0.6; background: transparent !important; }
 .react-flow__edge-path { transition: opacity 220ms ease; }
+.graph-stage .react-flow__edge-path { stroke-width: 2; }
+.graph-stage .atlas-node.method { border-color: color-mix(in srgb, var(--branch-color) 28%, white); }
+.is-flowing .atlas-node.root { animation: node-arrive 650ms ease both, root-breathe 7s ease-in-out infinite; }
+.is-flowing .atlas-node.chapter .node-dot { animation: ink-breathe 5s ease-in-out infinite alternate; }
+@keyframes root-breathe { 50% { box-shadow: 0 0 0 12px #7fae9709, 0 0 70px #549b7720; } }
+@keyframes ink-breathe { to { opacity: 1; box-shadow: 0 0 0 5px color-mix(in srgb, var(--branch-color) 10%, transparent); } }
+.graph-views { position: absolute; bottom: 125px; left: 50%; transform: translateX(-50%); display: flex; padding: 3px; border: 1px solid #dfe6dc; border-radius: 30px; background: #ffffffdb; white-space: nowrap; }
+.graph-views button { padding: 9px 16px; min-height: 40px; border-radius: 24px; font-size: 12px; color: #6b7d70; }
+.graph-views button[aria-pressed="true"] { background: #e9f0e6; color: #254c47; }
+.graph-views small { margin-left: 5px; font-size: 10px; opacity: 0.65; }
+.canvas-controls button[aria-pressed="true"] { color: #0f766e; background: #edf4e9; }
 .canvas-controls { display: flex; align-items: center; gap: 1px; position: absolute; bottom: 27px; left: 50%; transform: translateX(-50%); border: 1px solid #dfe6dc; background: #ffffffeb; box-shadow: 0 5px 22px #344b3608; border-radius: 14px; padding: 3px 6px; }
 .canvas-controls button { width: 40px; min-height: 38px; border-radius: 9px; display: grid; place-items: center; color: #607665; }
 .zoom-label { width: 40px; text-align: center; font-size: 10px; color: #6c7e6e; font-variant-numeric: tabular-nums; }
@@ -29,4 +40,5 @@
   .has-detail .graph-stage { right: 0; }
   .canvas-controls { bottom: max(22px, env(safe-area-inset-bottom)); }
   .canvas-hint { display: none; }
+  .graph-views { bottom: 115px; }
 }
