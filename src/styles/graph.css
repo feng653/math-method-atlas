@@ -94,3 +94,10 @@
   background: #0f766e; border: 3px solid white; }
 .connection-tension input:focus-visible { outline: 2px solid #0f766e; outline-offset: 8px; }
 .tension-ends { margin-top: 14px; font-size: 12px; color: #63796c; }
+
+.tension-heading { gap: 8px; }
+.tension-heading output { margin-left: auto; }
+.tension-toggle { display: grid; place-items: center; width: 30px; height: 30px; flex-shrink: 0;
+  border-radius: 9px; color: #607665; }
+.tension-toggle:hover { color: #0f766e; background: #edf4e9; }
+.connection-tension.is-collapsed { width: 44px; padding: 6px; left: min(242px, calc(100% - 60px)); }

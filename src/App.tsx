@@ -40,10 +40,10 @@ export default function App() {
     window.addEventListener('hashchange', change); window.addEventListener('keydown', escape);
     return () => { window.removeEventListener('hashchange', change); window.removeEventListener('keydown', escape); };
   }, []);
-  function select(id: string) {
-    setProblemTypeId('');
+  function select(id: string, preserveGraph = false) {
+    if (!preserveGraph) setProblemTypeId('');
     const target = methods.find((item) => item.id === id);
-    if (target?.chapterId !== chapter) setChapter(target?.chapterId ?? '');
+    if (!preserveGraph && target?.chapterId !== chapter) setChapter(target?.chapterId ?? '');
     setSelected(id); setQuery(''); setPanel((current) => current === 'directory' ? current : 'none'); setRouteNotice('');
   }
   function selectType(id: string) {
@@ -56,7 +56,7 @@ export default function App() {
   return <main className={method || problemType || panel === 'papers' ? 'atlas-app has-detail' : 'atlas-app'}>
     <AtlasGraph key={library.id} library={library} methods={methods} selected={selected} chapter={chapter}
       problemTypes={problemTypes} problemType={problemTypeId} onProblemType={selectType}
-      onSelect={select} onChapter={(id) => { clearType(); setChapter(id); setSelected(''); }} />
+      onSelect={(id) => select(id, true)} onChapter={(id) => { clearType(); setChapter(id); setSelected(''); }} />
     <header className="floating-header">
       <a className="brand" href="#" onClick={(event) => { event.preventDefault(); setChapter(''); setSelected('');
         clearType(); setPanel('none'); setQuery(''); setRouteNotice(''); }}>

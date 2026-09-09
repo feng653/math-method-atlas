@@ -23,7 +23,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const [highlightLevel, setHighlightLevel] = useState('');
   const [hovered, setHovered] = useState('');
   const [categoryView, setCategoryView] = useState<{ id: string; chapter: string } | null>(null);
-  const category = !selected && !problemType && categoryView?.chapter === chapter ? categoryView.id : '';
+  const category = !problemType && categoryView?.chapter === chapter ? categoryView.id : '';
   useEffect(() => { if (!chapter) setCategoryView(null); }, [chapter]);
   const graph = useMemo(() => {
     const groups = category ? problemTypes.filter((group) => group.chapterId === chapter && group.category === category) : problemTypes;
@@ -54,13 +54,9 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   useEffect(() => { setNodes(graph.nodes); }, [graph, setNodes]);
   useEffect(() => {
     if (!flow) return;
-    const timer = setTimeout(() => {
-      const node = selected ? flow.getNode(graphNodeId('method', selected)) : undefined;
-      if (node) void flow.setCenter(node.position.x + 105, node.position.y + 25, { zoom: 1.05, duration: duration() });
-      else readGraph(flow);
-    }, 80);
+    const timer = setTimeout(() => readGraph(flow), 80);
     return () => clearTimeout(timer);
-  }, [flow, graph, selected]);
+  }, [flow, graph]);
   useEffect(() => {
     setNodes((current) => current.map((node) => ({ ...node, selected: node.data.methodId === selected })));
   }, [selected, graph, setNodes]);
@@ -120,7 +116,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
       onNodeDragStop={(_, node) => elastic.release(node)} nodeDragThreshold={5}
       onNodeClick={(_, node) => activateNode(node.id)}
       minZoom={0.03} maxZoom={2.2} nodesConnectable={false} edgesReconnectable={false}
-      deleteKeyCode={null} selectionOnDrag={false} zoomOnDoubleClick={false}
+      autoPanOnNodeFocus={false} deleteKeyCode={null} selectionOnDrag={false} zoomOnDoubleClick={false}
       ariaLabelConfig={{ 'node.a11yDescription.default': '按 Enter 选择方法，方向键移动节点。',
         'node.a11yDescription.keyboardDisabled': '选择节点查看内容。' }}>
       <Background color="#ccd6cf" gap={30} size={0.9} />
