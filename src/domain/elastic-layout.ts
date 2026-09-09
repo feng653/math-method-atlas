@@ -44,7 +44,7 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
     if (dx === 0 && dy === 0) { a.vx -= 1; b.vx += 1; }
     const d = Math.max(1, Math.hypot(dx, dy));
     // Nearby pairs repel regardless of connectivity; soften the cutoff and singularity.
-    const force = (layout.initializing ? 7200 : 560) * (1 - d * d / (800 * 800)) / Math.max(900, d * d);
+    const force = (layout.initializing ? 9000 : 700) * (1 - d * d / (800 * 800)) / Math.max(900, d * d);
     a.vx -= dx / d * force; a.vy -= dy / d * force;
     b.vx += dx / d * force; b.vy += dy / d * force;
   }
@@ -55,4 +55,5 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
     body.position.x += body.vx; body.position.y += body.vy;
   }
 }
+
 

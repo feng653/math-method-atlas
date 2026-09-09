@@ -74,12 +74,6 @@
 .fixed-node-label small { display: block; font-size: 16px; color: #526958; }
 .atlas-anchor.is-selected strong, .atlas-anchor.chapter strong { color: var(--branch-color); font-weight: 700; }
 
-.level-picker { position: relative; flex-shrink: 0; }
-.level-options { position: absolute; bottom: calc(100% + 12px); right: -6px; z-index: 10;
-  display: flex; gap: 3px; padding: 5px; border: 1px solid #dfe6dc; border-radius: 14px;
-  background: #fffffffa; box-shadow: 0 5px 22px #344b3610; }
-.canvas-controls .level-options button { width: auto; padding: 0 12px; white-space: nowrap; font-size: 13px; }
 @media (max-width: 420px) { .canvas-controls .reading-size { padding-inline: 4px; font-size: 12px; }
   .zoom-label { width: 30px; flex-shrink: 0; }
-  .canvas-controls .level-options button { padding-inline: 9px; }
 }
