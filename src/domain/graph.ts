@@ -6,7 +6,7 @@ import { hierarchyLayout } from './hierarchy-layout';
 import { addTriggerCategories } from './trigger-graph';
 
 export type AtlasNodeData = { label: string; kind: 'root' | 'chapter' | 'method' | 'problem' | 'category';
-  subtitle: string; color: string; compact?: boolean; chapterId?: string; methodId?: string; problemTypeId?: string; categoryId?: string };
+  subtitle: string; color: string; compact?: boolean; dotSize?: number; chapterId?: string; methodId?: string; problemTypeId?: string; categoryId?: string };
 export type AtlasNode = Node<AtlasNodeData>;
 export const graphNodeId = (kind: AtlasNodeData['kind'], id: string) => `${kind}:${id}`;
 export const subjectColors: Record<string, string> = {

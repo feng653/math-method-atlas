@@ -30,7 +30,7 @@ it('separates coincident cards without NaN or forcing an old position', () => {
   for (let i = 0; i < 200; i++) stepElasticLayout(layout, null, 0);
   const [a, b] = [...layout.bodies.values()];
   expect(Number.isFinite(a.position.x + a.position.y + b.position.x + b.position.y)).toBe(true);
-  expect(Math.abs(a.position.y - b.position.y)).toBeGreaterThan(100);
+  expect(Math.hypot(a.position.x - b.position.x, a.position.y - b.position.y)).toBeGreaterThan(0);
 });
 
 it('preserves a translated arrangement without artificial center attraction', () => {

@@ -1,7 +1,7 @@
 import type { Edge } from '@xyflow/react';
 import type { AtlasNode } from './graph';
 import { primaryEdgeIds } from './edge-layout';
-import { createElasticLayout, stepElasticLayout, settleCollisions } from './elastic-layout';
+import { createElasticLayout, stepElasticLayout } from './elastic-layout';
 
 /** Allocate contiguous angular intervals to whole subtrees, then place depth rings. */
 export function radialSeed(graph: { nodes: AtlasNode[]; edges: Edge[] }) {
@@ -76,7 +76,6 @@ export function hierarchyLayout(graph: { nodes: AtlasNode[]; edges: Edge[] }, co
     quietTicks = maxSpeed < 0.12 ? quietTicks + 1 : 0;
     if (quietTicks >= 30) break;
   }
-  settleCollisions(layout);
   return { nodes: nodes.map(node => ({ ...node, position: { ...layout.bodies.get(node.id)!.position } })),
     edges: seed.edges, relaxation: { settled: quietTicks >= 30, ticks, maxSpeed } };
 }

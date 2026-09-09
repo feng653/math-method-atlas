@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
 import { Focus, Minus, Plus, RotateCcw, Waves, Network } from 'lucide-react';
-import { edgeHandles, primaryEdgeIds } from '../domain/edge-layout';
+import { primaryEdgeIds } from '../domain/edge-layout';
 import { buildGraph, graphNodeId, type AtlasNode as NodeType } from '../domain/graph';
 import type { Library, Method, ProblemType } from '../domain/schema';
+import { sizeGraphNodes } from '../domain/node-presentation';
 import { AtlasNode } from './AtlasNode';
 import { useElasticGraph } from './useElasticGraph';
 import { thinkingCategories } from '../domain/thinking-schema';
@@ -17,6 +18,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const [allMethods, setAllMethods] = useState(true);
   const [motion, setMotion] = useState(true);
   const [allLinks, setAllLinks] = useState(false);
+  const [highlightLevel, setHighlightLevel] = useState('');
   const [hovered, setHovered] = useState('');
   const [categoryView, setCategoryView] = useState<{ id: string; chapter: string } | null>(null);
   const category = !selected && !problemType && categoryView?.chapter === chapter ? categoryView.id : '';
@@ -27,7 +29,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     const result = buildGraph(library, category ? methods.filter((method) => choices.has(method.id)) : methods,
       chapter, allMethods, groups, problemType);
     const compact = allMethods && !chapter && !problemType;
-    return { ...result, nodes: result.nodes.map((node) => ({ ...node, data: { ...node.data, compact } })) };
+    return { ...result, nodes: sizeGraphNodes(result.nodes.map((node) => ({ ...node, data: { ...node.data, compact } })), result.edges) };
   },
     [library, methods, chapter, allMethods, problemTypes, problemType, category]);
   const [nodes, setNodes, onNodesChange] = useNodesState<NodeType>(graph.nodes);
@@ -38,7 +40,14 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const duration = () => matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 650;
   function readGraph(instance = flow) {
     if (!instance) return;
-    void instance.fitView({ padding: 0.06, maxZoom: 1.1, duration: duration() });
+    const labels = instance.getNodes();
+    if (!labels.length) return;
+    const left = Math.min(...labels.map(n => n.position.x - 150));
+    const top = Math.min(...labels.map(n => n.position.y));
+    const right = Math.max(...labels.map(n => n.position.x + 150));
+    const bottom = Math.max(...labels.map(n => n.position.y + 150));
+    void instance.fitBounds({ x: left, y: top, width: right - left, height: bottom - top },
+      { padding: 0.06, duration: duration() });
   }
   useEffect(() => { setNodes(graph.nodes); }, [graph, setNodes]);
   useEffect(() => {
@@ -56,22 +65,25 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const selectedMethod = methods.find((method) => method.id === selected);
   const selectedNodeId = graphNodeId('method', selected);
   const motionAllowed = elastic.active;
-  const byId = new Map(nodes.map((node) => [node.id, node]));
+  const byId = new Map(graph.nodes.map((node) => [node.id, node]));
+  const levels = [['chapter', '章节'], ['category', '分类'], ['problem', '题型'], ['method', '方法']]
+    .filter(([kind]) => graph.nodes.some(n => n.data.kind === kind));
   const active = hovered || (selected ? selectedNodeId : '');
-  const edges = graph.edges.filter((edge) => allLinks || primary.has(edge.id)
+  const edges = graph.edges.filter((edge) => allLinks || byId.get(edge.target)?.data.kind === highlightLevel || primary.has(edge.id)
     || edge.source === active || edge.target === active).map((edge) => {
     const a = byId.get(edge.source), b = byId.get(edge.target);
     const related = edge.source === active || edge.target === active;
-    return { ...edge, ...(a && b ? edgeHandles(a, b) : {}),
-      ...(a?.data.compact ? { sourceHandle: 'dot-source', targetHandle: 'dot-target', type: 'straight' } : {}),
+    const levelMatch = b?.data.kind === highlightLevel;
+    return { ...edge, sourceHandle: 'dot-source', targetHandle: 'dot-target', type: 'straight',
       animated: motionAllowed && related,
-      style: { ...edge.style, opacity: active ? (related ? 0.85 : 0.07)
+      style: { ...edge.style, strokeWidth: highlightLevel && levelMatch ? 3 : edge.style?.strokeWidth,
+        opacity: highlightLevel ? (levelMatch ? 1 : 0.05) : active ? (related ? 0.85 : 0.07)
         : a?.data.kind === 'root' && a.data.compact ? 0.09 : edge.style?.opacity } };
   });
   if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
     const relatedNodeId = graphNodeId('method', relatedId);
     if (nodes.some((node) => node.id === relatedNodeId)) edges.push({ id: `relation-${relatedId}`,
-      source: selectedNodeId, target: relatedNodeId, animated: motionAllowed, type: 'default',
+      source: selectedNodeId, target: relatedNodeId, sourceHandle: 'dot-source', targetHandle: 'dot-target', animated: motionAllowed, type: 'default',
       style: { stroke: '#b48c53', strokeDasharray: '5 6', strokeWidth: 1.3, opacity: 0.65 } });
   }
   function activateNode(id: string) {
@@ -110,6 +122,11 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
         'node.a11yDescription.keyboardDisabled': '选择节点查看内容。' }}>
       <Background color="#ccd6cf" gap={30} size={0.9} />
     </ReactFlow></div>
+    <div className="level-controls" aria-label="层级连线高亮">
+      <span>高亮连线</span><button aria-pressed={!highlightLevel} onClick={() => setHighlightLevel('')}>无</button>
+      {levels.map(([kind, label]) => <button key={kind} aria-pressed={highlightLevel === kind}
+        onClick={() => setHighlightLevel(highlightLevel === kind ? '' : kind)}>{label}</button>)}
+    </div>
     <div className="graph-views" aria-label="图谱范围">
       {category && <button className="category-back" onClick={() => setCategoryView(null)} title="返回全部思路分类">← {thinkingCategories.find((item) => item.id === category)?.title}</button>}
       <button aria-pressed={allMethods && !chapter} onClick={() => { setAllMethods(true); onChapter('');
