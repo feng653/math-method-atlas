@@ -69,7 +69,7 @@ export function hierarchyLayout(graph: { nodes: AtlasNode[]; edges: Edge[] }, co
   const layout = createElasticLayout(nodes, seed.edges, true, true);
   let quietTicks = 0;
   let ticks = 0, maxSpeed = 0;
-  for (let tick = 0; tick < 4000; tick++) {
+  for (let tick = 0; tick < 8000; tick++) {
     stepElasticLayout(layout, null, tick);
     ticks = tick + 1;
     maxSpeed = Math.max(0, ...[...layout.bodies.values()].map(body => Math.hypot(body.vx, body.vy)));

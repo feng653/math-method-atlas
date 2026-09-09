@@ -1,6 +1,5 @@
 import type { Edge, XYPosition } from '@xyflow/react';
 import type { AtlasNode } from './graph';
-import { nearbyPairs } from './spatial-neighbors';
 
 type Body = { id: string; position: XYPosition; vx: number; vy: number; degree: number; compact: boolean };
 type Spring = { a: Body; b: Body; length: number; strength: number };
@@ -27,24 +26,24 @@ export function retainElasticArrangement(layout: ElasticLayout) {
   for (const body of layout.bodies.values()) { body.vx = 0; body.vy = 0; }
 }
 
-export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, _time: number) {
+export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, _time: number, multipliers = { attraction: 1, repulsion: 1 }) {
   const bodies = [...layout.bodies.values()];
   for (const { a, b, length, strength } of layout.links) {
     const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
-    const d = Math.max(1, Math.hypot(dx, dy)), stretch = d - length;
+    const d = Math.max(1, Math.sqrt(dx * dx + dy * dy)), stretch = d - length;
     const tension = Math.max(0, stretch - 24);
-    const force = tension * strength * (layout.initializing ? 0.15 : 0.03) / Math.sqrt(Math.max(a.degree, b.degree, 1));
+    const force = multipliers.attraction * tension * strength * (layout.initializing ? 0.15 : 0.03) / Math.sqrt(Math.max(a.degree, b.degree, 1));
     a.vx += dx / d * force; a.vy += dy / d * force;
     b.vx -= dx / d * force; b.vy -= dy / d * force;
   }
-  for (const [i, j] of nearbyPairs(bodies, 800)) {
+  for (let i = 0; i < bodies.length; i++) for (let j = i + 1; j < bodies.length; j++) {
     const a = bodies[i], b = bodies[j];
     const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
     // Only the point has physical size; labels never contribute forces.
-    if (dx === 0 && dy === 0) { a.vx -= 1; b.vx += 1; }
-    const d = Math.max(1, Math.hypot(dx, dy));
-    // Nearby pairs repel regardless of connectivity; soften the cutoff and singularity.
-    const force = (layout.initializing ? 9000 : 700) * (1 - d * d / (800 * 800)) / Math.max(900, d * d);
+    if (dx === 0 && dy === 0) { a.vx -= multipliers.repulsion; b.vx += multipliers.repulsion; }
+    const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+    // Every pair repels at any distance; only soften the near-zero singularity.
+    const force = multipliers.repulsion * (layout.initializing ? 9000 : 700) / Math.max(900, d * d);
     a.vx -= dx / d * force; a.vy -= dy / d * force;
     b.vx += dx / d * force; b.vy += dy / d * force;
   }

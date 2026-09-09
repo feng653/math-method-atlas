@@ -1,3 +1,4 @@
+import { testForces } from './ForceTestSliders';
 import { useEffect, useRef, useState, type Dispatch, type SetStateAction } from 'react';
 import type { Edge, NodeChange } from '@xyflow/react';
 import type { AtlasNode } from '../domain/graph';
@@ -25,7 +26,7 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
     if (!enabled || reduced) { wake.current = () => {}; return; }
     const scheduler = createMotionScheduler({ now: () => performance.now(),
       request: (callback) => requestAnimationFrame(callback), cancel: (id) => cancelAnimationFrame(id) }, (time) => {
-        stepElasticLayout(simulation.current, pinned.current, time);
+        stepElasticLayout(simulation.current, pinned.current, time, import.meta.env.DEV ? testForces : undefined);
         setNodes((current) => {
           let changed = false;
           const next = current.map((node) => {

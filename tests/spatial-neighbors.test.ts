@@ -25,14 +25,15 @@ it('does not read distant points for pairwise distance calculations', () => {
   expect(reads).toBe(1000);
 });
 
-it('skips distant repulsion but still attracts along long connections', () => {
+it('repels distant unconnected nodes and attracts along long connections', () => {
   const nodes: AtlasNode[] = ['a', 'b'].map((id, i) => ({ id,
     position: { x: i * 1600, y: 2000 },
     data: { kind: 'method', label: id, subtitle: '', color: '#000' },
   }));
   const isolated = createElasticLayout(nodes, [], true);
   stepElasticLayout(isolated, null, 0);
-  expect([...isolated.bodies.values()].map(body => body.position)).toEqual(nodes.map(node => node.position));
+  expect(isolated.bodies.get('a')!.position.x).toBeLessThan(0);
+  expect(isolated.bodies.get('b')!.position.x).toBeGreaterThan(1600);
   const connected = createElasticLayout(nodes, [{ id: 'ab', source: 'a', target: 'b' }], true);
   stepElasticLayout(connected, null, 0);
   expect(connected.bodies.get('a')!.position.x).toBeGreaterThan(0);
