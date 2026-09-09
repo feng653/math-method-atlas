@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-lagrange-candidates",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用拉格朗日方程找约束候选",
+  "summary": "目标与等式约束为 $C^1$，且约束梯度非零时，条件极值满足乘子方程。解得的是候选点；取得最值还需要全局界、比较或其他充分证明。",
+  "article": "multivariable/methods/lagrange-candidates.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

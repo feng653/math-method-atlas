@@ -81,5 +81,12 @@
       "若r(s)始终在F=0上，对F(r(s))求导得∇F·r′=0。因此非零梯度同时垂直于各条曲面曲线的切向量。",
       "显式曲面可写F=f(x,y)−z，梯度为(f_x,f_y,−1)，不会为零；它与直接线性化得到的切面完全一致。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-graph-tangent",
+    "tool-multivariable-implicit-surface-tangent",
+    "tool-multivariable-unknown-contact-point",
+    "tool-multivariable-parametric-curve-tangent",
+    "tool-multivariable-intersection-curve-tangent"
+  ]
 }

@@ -16,11 +16,15 @@ export const subjectColors: Record<string, string> = {
 export function buildGraph(library: Library, methods: Method[], chapterId = '', allMethods = false,
   problemTypes: ProblemType[] = [], problemTypeId = ''): { nodes: AtlasNode[]; edges: Edge[] } {
   methods = methods.filter((method) => method.libraryId === library.id);
+  problemTypes = problemTypes.filter(type => !type.supersededBy);
+  const referenced = new Set(problemTypes.filter(type => !chapterId || type.chapterId === chapterId)
+    .flatMap(type => type.methods.map(choice => choice.methodId)));
+  methods = methods.filter(method => !method.supersededBy || referenced.has(method.id));
   const focused = problemTypes.find((type) => type.libraryId === library.id && type.id === problemTypeId);
   if (focused) {
     const choices = new Set(focused.methods.map((choice) => choice.methodId));
     const local = buildGraph(library, methods.filter((method) => choices.has(method.id))
-      .map((method) => ({ ...method, chapterId: focused.chapterId })), focused.chapterId, true);
+      .map((method) => ({ ...method, chapterId: focused.chapterId, supersededBy: undefined })), focused.chapterId, true);
     local.nodes[0].data = { ...local.nodes[0].data, label: focused.title, kind: 'problem',
       problemTypeId: focused.id, subtitle: `${focused.kind === 'trigger' ? '触发条件 · ' : ''}${choices.size} 个可选方法` };
     return local;

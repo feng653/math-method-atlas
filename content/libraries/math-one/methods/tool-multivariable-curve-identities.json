@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-curve-identities",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "沿两条曲线求导联立偏导",
+  "summary": "已知函数沿两条曲线的值，可分别求导，得到同一点梯度与两切向量的点积。两切向量线性无关时，便可解出两个偏导。",
+  "article": "multivariable/methods/curve-identities.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-axis-difference-quotient",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "轴向差商求偏导",
+  "summary": "在分段点求偏导，固定另一变量，用该点的实际函数值写双侧差商。不要把只在非接点成立的求导结果直接代入。",
+  "article": "multivariable/methods/axis-difference-quotient.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

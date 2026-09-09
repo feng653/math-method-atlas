@@ -16,7 +16,8 @@ it('links an exam example to the existing question source without claiming it is
 });
 
 it('renders structured steps with math and preserves readable legacy text', () => {
-  const method = data.methods.find((item) => item.id === 'basic-hidden-constraint')!;
+  const method = data.methods.find((item) => item.id === 'basic-hidden-constraint' && item.article === undefined)!;
+  if (method.article !== undefined) throw new Error('Expected structured example fixture');
   const html = renderToStaticMarkup(createElement(MethodExample, { example: method.example }));
   expect(html).toContain('example-steps');
   expect(html).toContain('katex-mathml');

@@ -88,5 +88,14 @@
       "沿可行曲线求导，约束梯度与切向量垂直；极值处目标梯度也与所有可行切向量垂直，故两者平行。",
       "对正权重二次目标且线性约束的问题，乘子法能找最优比例，柯西不等式可直接给全局下界，是互相复核的两条路线。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-constraint-elimination",
+    "tool-multivariable-symmetric-variables",
+    "tool-multivariable-constraint-parametrization",
+    "tool-multivariable-lagrange-candidates",
+    "tool-multivariable-boundary-exhaustion",
+    "tool-multivariable-global-inequality",
+    "tool-multivariable-quadratic-completion"
+  ]
 }

@@ -49,5 +49,9 @@
     "本组既有真题主要是含积分的具体表达式，不表示简单初等偏导从未考查。",
     "换序求混合偏导需满足连续混合偏导等充分条件；含参积分不能漏掉被积函数对参数的变化。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-explicit-partials",
+    "task-multivariable-integral-partials"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "task-multivariable-limit-nonexistence",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "证明二元极限不存在",
+  "summary": "选择能保留分子、分母主要项的路径，比较所得极限。两条路径给出不同值即可结束；所有直线给出相同值时，仍须尝试弯曲路径，不能宣告极限存在。",
+  "article": "multivariable/problem-types/limit-nonexistence/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-two-paths",
+      "when": "要否定极限，找定义域内趋近同一点而极限不同的两条路径。"
+    }
+  ],
+  "questionIds": [],
+  "status": "reviewed"
+}

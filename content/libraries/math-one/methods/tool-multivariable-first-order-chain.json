@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-first-order-chain",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "沿依赖关系作一阶链式求导",
+  "summary": "外函数和内函数在对应点可微时，每条依赖路径的导数相乘，再把各路径贡献相加。抽象偏导始终在内变量的当前值处计算。",
+  "article": "multivariable/methods/first-order-chain.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

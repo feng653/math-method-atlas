@@ -48,5 +48,10 @@
     "乘子方程仅给必要候选，不能替代存在性与全局比较。",
     "2015年第17题还需方向导数转梯度模，2024年第18题还需先求切平面，保留跨题型链接。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-constrained-extrema",
+    "task-multivariable-closed-domain-extrema",
+    "task-multivariable-quadratic-objective"
+  ]
 }

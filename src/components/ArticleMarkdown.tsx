@@ -4,6 +4,7 @@ import remarkMath from 'remark-math';
 import rehypeSlug from 'rehype-slug';
 import katex from 'katex';
 import { Formula } from './Formula';
+import { data } from '../data/load';
 import { articleUrl, resolveArticleLink } from '../domain/article';
 
 type Props = { path: string; body: string; onNavigate: (path: string, anchor?: string) => void };
@@ -22,7 +23,7 @@ export function ArticleMarkdown({ path, body, onNavigate }: Props) {
       a: ({ href = '', children }) => {
         const target = resolveArticleLink(path, href);
         if (!target) return <a href={href} target="_blank" rel="noreferrer">{children}</a>;
-        return <a href={articleUrl(location.href, target.path, target.anchor)} onClick={event => {
+        return <a href={articleUrl(location.href, target.path, target.anchor, data)} onClick={event => {
           if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
           event.preventDefault(); onNavigate(target.path, target.anchor);
         }}>{children}</a>;

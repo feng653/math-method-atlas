@@ -51,13 +51,14 @@ if (parsed.success) {
     }
   }
   for (const method of parsed.data.methods) {
+    if (method.article !== undefined) continue;
     const formulas = [method.formula, ...(method.example.formulas ?? []),
       ...(typeof method.example.solution === 'string' ? [] : method.example.solution.flatMap((step) => step.formulas))];
     for (const value of formulas) try {
       katex.renderToString(value, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 });
     } catch (error) { errors.push(`${method.libraryId}/${method.id} formula: ${String(error)}`); }
   }
-  for (const type of parsed.data.problemTypes) for (const formula of type.formulas) {
+  for (const type of parsed.data.problemTypes) for (const formula of ('formulas' in type ? type.formulas : [])) {
     try { katex.renderToString(formula.latex, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 }); }
     catch (error) { errors.push(`${type.libraryId}/${type.id}/${formula.id}: ${String(error)}`); }
   }
@@ -68,7 +69,7 @@ if (parsed.success) {
     }
   }
 }
-errors.push(...await validateArticles(fileURLToPath(new URL('../docs/textbook/', import.meta.url))));
+errors.push(...await validateArticles(fileURLToPath(new URL('../docs/textbook/', import.meta.url)), parsed.data));
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;

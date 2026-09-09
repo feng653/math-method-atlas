@@ -1,0 +1,25 @@
+{
+  "id": "task-multivariable-composite-first",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求复合函数一阶导数及偏导组合",
+  "summary": "画清中间变量的依赖关系，对每条依赖路径求导并相加。题目要求加权偏导组合时，可先组合中间变量的系数，观察未知外函数导数能否消去。",
+  "article": "multivariable/problem-types/composite-first/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-first-order-chain",
+      "when": "内外函数在对应点可微，按所有依赖路径作链式求导。"
+    },
+    {
+      "methodId": "tool-multivariable-weighted-derivative-cancellation",
+      "when": "已得到合法偏导式，可用题设加权组合消去中间导数。"
+    }
+  ],
+  "questionIds": [
+    "2010-301-02",
+    "2017-301-15",
+    "2019-301-09",
+    "2022-301-02"
+  ],
+  "status": "reviewed"
+}

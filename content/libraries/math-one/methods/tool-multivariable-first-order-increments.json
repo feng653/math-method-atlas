@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-first-order-increments",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "从一阶增量提取微分",
+  "summary": "已知可微时，先写“线性项加小余项”，再代入目标式。尤其适合点上条件、切平面误差及用可微展开求极限。",
+  "article": "multivariable/methods/first-order-increments.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

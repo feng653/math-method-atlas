@@ -1,45 +1,35 @@
 import { useEffect, useRef, useState } from 'react';
-import { articles } from '../data/load';
+import { articles, data } from '../data/load';
 import { articleTitle, articleUrl } from '../domain/article';
 import { searchArticles } from '../domain/search';
 import { ArticleMarkdown } from './ArticleMarkdown';
 import '../styles/articles.css';
 
-const root = 'multivariable/';
 const entries = [
   ['concepts.md', '概念'], ['problem-types/README.md', '题型'],
   ['methods/README.md', '工具箱'], ['questions/README.md', '真题'],
 ];
-function readLocation() {
-  const query = new URLSearchParams(location.search);
-  const path = query.get('article') ?? `${root}concepts.md`;
-  return { path: path.startsWith(root) && articles[path] ? path : `${root}concepts.md`,
-    anchor: query.get('section') ?? '' };
-}
-export function ChapterReader() {
-  const [current, setCurrent] = useState(readLocation);
+export function ChapterReader({ path, section = '' }: { path: string; section?: string }) {
+  const root = path.split('/')[0] + '/';
+  const current = { path, anchor: section };
   const [query, setQuery] = useState('');
   const container = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const changed = () => { setCurrent(readLocation()); setQuery(''); };
-    window.addEventListener('popstate', changed);
-    return () => window.removeEventListener('popstate', changed);
-  }, []);
   useEffect(() => {
     const target = current.anchor ? Array.from(container.current?.querySelectorAll('[id]') ?? [])
       .find(element => element.id === current.anchor) : undefined;
     if (target) target.scrollIntoView({ block: 'start' });
     else container.current?.closest('.detail-scroll')?.scrollTo(0, 0);
-  }, [current]);
+    setQuery('');
+  }, [path, section]);
   function navigate(path: string, anchor = '') {
     if (!articles[path]) return;
-    history.pushState(null, '', articleUrl(location.href, path, anchor));
-    setCurrent({ path, anchor }); setQuery('');
+    history.pushState(null, '', articleUrl(location.href, path, anchor, data));
+    window.dispatchEvent(new PopStateEvent('popstate'));
   }
   const results = searchArticles(articles, root, query);
   return <div className="chapter-reader" ref={container}>
     <nav className="article-nav" aria-label="本章文章">
-      {entries.map(([path, title]) => <button key={path}
+      {entries.filter(([path]) => articles[root + path]).map(([path, title]) => <button key={path}
         aria-current={current.path === root + path || current.path.startsWith(root + path.split('/')[0] + '/') ? 'page' : undefined}
         onClick={() => navigate(root + path)}>{title}</button>)}
     </nav>

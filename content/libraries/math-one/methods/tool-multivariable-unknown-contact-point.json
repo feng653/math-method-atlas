@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-unknown-contact-point",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "设未知切点再代入几何条件",
+  "summary": "给定“切平面经过某点”时，不要把该点误作切点。设未知切点，先写含参数的切平面，再把几何条件代入。",
+  "article": "multivariable/methods/unknown-contact-point.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-tangent-plane"
+  ],
+  "status": "reviewed"
+}

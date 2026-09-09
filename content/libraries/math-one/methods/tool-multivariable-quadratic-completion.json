@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-quadratic-completion",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "配方证明二次目标的全局最小",
+  "summary": "平方误差积分常可先展开并积分，化成参数的二次函数。再配方为“常数加非负平方和”，同时给出全局界与唯一取等参数。",
+  "article": "multivariable/methods/quadratic-completion.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

@@ -41,7 +41,13 @@ export function validateAtlas(input: unknown): string[] {
         errors.push(`${label}: invalid related method ${relatedId}`);
       }
     }
-    if (method.example.questionId) {
+    for (const id of method.supersededBy ?? []) {
+      const replacement = methods.get(key(method.libraryId, id));
+      if (!replacement || replacement.supersededBy || replacement.chapterId !== method.chapterId) {
+        errors.push(`${label}: invalid replacement ${id}`);
+      }
+    }
+    if (method.article === undefined && method.example.questionId) {
       const question = data.questions.find(item => item.libraryId === method.libraryId
         && item.id === method.example.questionId);
       if (!question) errors.push(`${label}: unknown example question ${method.example.questionId}`);

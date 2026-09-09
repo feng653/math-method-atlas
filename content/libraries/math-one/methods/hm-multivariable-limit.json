@@ -80,5 +80,11 @@
       "寻找路径适合反证；寻找统一不等式适合证明。分母含x⁴+y²时，令y=x²能让两项同阶，比只试y=kx更有效。",
       "可微是某个线性函数能留下o(r)误差。若已知f(0)=0并有f=O(r²)，线性主部可直接取零。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-continuity-substitution",
+    "tool-multivariable-squeeze-estimate",
+    "tool-multivariable-polar-uniform-estimate",
+    "tool-multivariable-two-paths"
+  ]
 }

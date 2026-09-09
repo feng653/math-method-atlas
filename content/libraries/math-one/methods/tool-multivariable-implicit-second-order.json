@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-implicit-second-order",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "对隐式一阶关系再求导",
+  "summary": "在 $F\\in C^2$ 且 $F_z\\ne0$ 的局部分支上，保留一阶导数关系再次求导，往往比对商式反复求导更清楚。必须把 $z$ 本身也当作复合函数。",
+  "article": "multivariable/methods/implicit-second-order.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-implicit"
+  ],
+  "status": "reviewed"
+}

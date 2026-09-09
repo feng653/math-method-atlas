@@ -8,6 +8,10 @@ export function validateProblemTypes(data: AtlasData): string[] {
     if (seen.has(label)) errors.push(`${label}: duplicate problem type`);
     seen.add(label);
     const library = data.libraries.find((item) => item.id === type.libraryId);
+    for (const id of type.supersededBy ?? []) if (!data.problemTypes.some(item =>
+      item.id === id && item.libraryId === type.libraryId && item.chapterId === type.chapterId && !item.supersededBy)) {
+      errors.push(`${label}: invalid replacement ${id}`);
+    }
     if (!library?.chapters.some((chapter) => chapter.id === type.chapterId)) errors.push(`${label}: unknown chapter`);
     const methodIds = new Set(type.methods.map((item) => item.methodId));
     if (methodIds.size !== type.methods.length) errors.push(`${label}: duplicate method choice`);
@@ -15,7 +19,7 @@ export function validateProblemTypes(data: AtlasData): string[] {
       errors.push(`${label}: unknown method ${id}`);
     }
     const formulas = new Set<string>();
-    for (const formula of type.formulas) {
+    for (const formula of ('formulas' in type ? type.formulas : [])) {
       if (formulas.has(formula.id)) errors.push(`${label}: duplicate formula ${formula.id}`);
       formulas.add(formula.id);
       for (const id of formula.methodIds) if (!methodIds.has(id)) errors.push(`${label}: formula method absent from choices ${id}`);

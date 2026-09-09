@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-implicit-linear-system",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "联立隐函数组的导数方程",
+  "summary": "多个隐变量相互依赖时，对各方程求导，未知导数组成线性方程组。先检查关于待求隐变量的雅可比行列式，而不是随意挑选变量。",
+  "article": "multivariable/methods/implicit-linear-system.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-implicit"
+  ],
+  "status": "reviewed"
+}

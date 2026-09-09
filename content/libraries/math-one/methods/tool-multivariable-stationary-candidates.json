@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-stationary-candidates",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用一阶必要条件找候选点",
+  "summary": "内点极值若有各一阶偏导，必满足梯度为零。先解这组必要条件；不可微点与边界另查。候选点仍须判别，不能直接称为极值点。",
+  "article": "multivariable/methods/stationary-candidates.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-hessian-extrema"
+  ],
+  "status": "reviewed"
+}

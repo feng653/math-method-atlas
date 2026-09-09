@@ -23,14 +23,18 @@ export const librarySchema = z.object({
   syllabus: z.object({ version: text, sourceUrl: httpsUrl, reviewStatus: status }).strict(),
   examScope: examScopeSchema.optional(),
   chapters: z.array(z.object({
-    id, title: text, subject: text, supplementary: z.boolean().optional(),
+    id, title: text, subject: text, supplementary: z.boolean().optional(), article: text.optional(),
     concepts: z.array(z.object({ title: text, explanation: text,
       formulas: z.array(formula).optional() }).strict()).optional(),
     syllabusTopics: z.array(z.object({ id, title: text }).strict()).min(1),
   }).strict()).min(1),
 }).strict();
 
-export const methodSchema = z.object({
+const methodIdentity = z.object({
+  id, libraryId: id, chapterId: id, title: text, summary: text,
+  relatedIds: ids, topicIds: ids.min(1), status, supersededBy: ids.min(1).optional(),
+});
+export const structuredMethodSchema = methodIdentity.extend({
   id, libraryId: id, chapterId: id, title: text, summary: text,
   conditions: z.array(text).min(1), steps: z.array(text).min(1), formula,
   learning: z.object({ intuition: text, symbols: z.array(z.object({ symbol: text, meaning: text }).strict()),
@@ -40,10 +44,18 @@ export const methodSchema = z.object({
     solution: z.union([text, z.array(z.object({ title: text, text,
       formulas: z.array(formula) }).strict()).min(1)]) }).strict(),
   relatedIds: ids, topicIds: ids.refine((values) => values.length > 0, 'Method needs a syllabus topic'),
-  status,
+  status, article: z.undefined().optional(),
 }).strict();
+export const methodSchema = z.union([structuredMethodSchema,
+  methodIdentity.extend({ article: text }).strict()]);
 
-export const problemTypeSchema = z.object({
+const typeIdentity = z.object({
+  id, libraryId: id, chapterId: id, title: text, summary: text,
+  kind: z.enum(['problem', 'trigger']).optional(), category: thinkingCategorySchema.optional(),
+  methods: z.array(z.object({ methodId: id, when: text }).strict()).min(1),
+  questionIds: ids, status, supersededBy: ids.min(1).optional(),
+});
+export const structuredProblemTypeSchema = typeIdentity.extend({
   id, libraryId: id, chapterId: id, title: text, summary: text,
   kind: z.enum(['problem', 'trigger']).optional(),
   category: thinkingCategorySchema.optional(),
@@ -52,8 +64,10 @@ export const problemTypeSchema = z.object({
   formulas: z.array(z.object({ id, title: text, latex: formula.refine((value) => !!value.trim(), 'Formula cannot be empty'),
     conditions: z.array(text).min(1), derivation: text, methodIds: ids.min(1),
   }).strict()),
-  questionIds: ids, boundaries: z.array(text).min(1), status,
+  questionIds: ids, boundaries: z.array(text).min(1), status, article: z.undefined().optional(),
 }).strict();
+export const problemTypeSchema = z.union([structuredProblemTypeSchema,
+  typeIdentity.extend({ article: text }).strict()]);
 
 export const paperSchema = z.object({
   id, libraryId: id, year: z.number().int().min(1987).max(2100), exam: text, title: text, source,
@@ -95,6 +109,8 @@ export const atlasSchema = z.object({
 
 export type Library = z.infer<typeof librarySchema>;
 export type Method = z.infer<typeof methodSchema>;
+export type StructuredMethod = z.infer<typeof structuredMethodSchema>;
+export type StructuredProblemType = z.infer<typeof structuredProblemTypeSchema>;
 export type Paper = z.infer<typeof paperSchema>;
 export type Question = z.infer<typeof questionSchema>;
 export type ProblemType = z.infer<typeof problemTypeSchema>;

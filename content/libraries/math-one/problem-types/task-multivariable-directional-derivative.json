@@ -1,0 +1,23 @@
+{
+  "id": "task-multivariable-directional-derivative",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求给定方向的方向导数",
+  "summary": "已知可微，先将方向单位化，再取梯度点积。分段点没有可微依据时，把射线代入差商定义；仅有坐标偏导存在不够。",
+  "article": "multivariable/problem-types/directional-derivative/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-directional-definition",
+      "when": "未保证可微，或分段点需要直接沿指定射线算差商。"
+    },
+    {
+      "methodId": "tool-multivariable-gradient-dot-product",
+      "when": "函数在该点可微，先将方向向量单位化，再与梯度点积。"
+    }
+  ],
+  "questionIds": [
+    "2017-301-03",
+    "2025-301-13"
+  ],
+  "status": "reviewed"
+}

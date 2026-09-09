@@ -1,0 +1,25 @@
+{
+  "id": "task-multivariable-composite-second",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求复合函数二阶及混合导数",
+  "summary": "从一阶导数继续求导，每一项都同时考虑外层偏导与内层系数的变化。交换混合次序前核对换序条件，常用充分条件是二阶偏导连续；指定点代入应放在相关求导完成之后。",
+  "article": "multivariable/problem-types/composite-second/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-second-order-chain",
+      "when": "内外函数满足二阶求导条件，所有一阶因子都继续求导。"
+    },
+    {
+      "methodId": "tool-multivariable-mixed-partials-interchange",
+      "when": "已有连续混合偏导等充分条件时才交换求导次序。"
+    }
+  ],
+  "questionIds": [
+    "2009-301-09",
+    "2011-301-16",
+    "2017-301-15",
+    "2024-301-12"
+  ],
+  "status": "reviewed"
+}

@@ -49,5 +49,8 @@
     "仅有两个偏导数不能宣称全微分存在。",
     "两条曲线切向量共线时，得到的方程组可能无法唯一确定两个偏导。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-point-differential"
+  ]
 }

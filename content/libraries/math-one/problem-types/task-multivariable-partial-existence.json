@@ -1,0 +1,20 @@
+{
+  "id": "task-multivariable-partial-existence",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "判断一点的偏导及混合偏导是否存在",
+  "summary": "在分段点沿坐标轴写双侧差商。求混合偏导时，先得到邻近轴上的一阶偏导函数，再用定义求导；非分段点的公式不允许直接越过分段边界。",
+  "article": "multivariable/problem-types/partial-existence/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-axis-difference-quotient",
+      "when": "分段点或补定义点，须沿坐标轴用实际点值计算差商。"
+    },
+    {
+      "methodId": "tool-multivariable-mixed-partials-definition",
+      "when": "特殊点的混合偏导须按给定次序逐次取差商。"
+    }
+  ],
+  "questionIds": [],
+  "status": "reviewed"
+}

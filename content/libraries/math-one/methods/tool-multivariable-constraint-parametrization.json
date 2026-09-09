@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-constraint-parametrization",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "参数化完整约束集",
+  "summary": "圆或椭圆约束可用正弦、余弦完整覆盖，把最值化成一元问题。参数区间和覆盖性要写清，不能只取上半支。",
+  "article": "multivariable/methods/constraint-parametrization.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

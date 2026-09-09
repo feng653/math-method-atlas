@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-second-order-chain",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "再次链式求导",
+  "summary": "二阶求导时，外层偏导仍是复合函数，内层导数也是随变量变化的系数。对一阶式逐项用乘积法则，可以避免漏项。",
+  "article": "multivariable/methods/second-order-chain.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

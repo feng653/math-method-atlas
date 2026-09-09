@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-symmetric-variables",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用对称变量换元降维",
+  "summary": "目标与约束关于 $x,y$ 对称时，尝试 $s=x+y,p=xy$。改写表达式后，还要用实根条件 $s^2-4p\\ge0$ 以及原约束确定可行范围。",
+  "article": "multivariable/methods/symmetric-variables.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

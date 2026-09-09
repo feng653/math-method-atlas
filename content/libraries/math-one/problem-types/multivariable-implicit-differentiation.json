@@ -48,5 +48,8 @@
     "分母为零说明该公式不适用，不等于隐函数一定不存在。",
     "当前选题覆盖单方程；未新增未经核验的隐方程组真题。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-implicit-derivatives"
+  ]
 }

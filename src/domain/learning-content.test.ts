@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { data } from '../data/load';
+import { articles, data } from '../data/load';
 
 describe('beginner reading coverage', () => {
   it('provides concepts for every chapter and a guided example for every method', () => {
@@ -15,6 +15,12 @@ describe('beginner reading coverage', () => {
       }
     }
     for (const method of data.methods) {
+      if (method.article !== undefined) {
+        expect(articles[method.article], method.id).toMatch(/例|自编|真题/);
+        expect(articles[method.article], method.id).toContain('$$');
+        // Mathematical prerequisites are reviewed in prose; keywords cannot certify them.
+        continue;
+      }
       expect(method.learning?.intuition, method.id).toBeTruthy();
       expect(method.learning?.symbols.length, method.id).toBeGreaterThan(0);
       expect(Array.isArray(method.example.solution), method.id).toBe(true);
@@ -24,6 +30,10 @@ describe('beginner reading coverage', () => {
   it('keeps a readable example available for every offered method in a type card', () => {
     for (const type of data.problemTypes) for (const choice of type.methods) {
       const method = data.methods.find(item => item.libraryId === type.libraryId && item.id === choice.methodId);
+      if (method?.article !== undefined) {
+        expect(articles[method.article], `${type.id}/${choice.methodId}`).toMatch(/例|自编|真题/);
+        continue;
+      }
       expect(method?.learning?.intuition, `${type.id}/${choice.methodId}`).toBeTruthy();
       expect(method?.example.prompt, `${type.id}/${choice.methodId}`).toBeTruthy();
     }

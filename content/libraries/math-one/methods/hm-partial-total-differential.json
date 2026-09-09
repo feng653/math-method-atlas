@@ -80,5 +80,15 @@
       "沿h=(t,0)和h=(0,t)代入可微定义，唯一的线性系数必是两个偏导；因此先求偏导只是确定候选模型，并未证明模型有效。",
       "若f(0)=0且n=(A,B,−1)，则n·(x,y,f)=Ax+By−f恰为余项的相反数。这是识别几何比例极限的关键。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-axis-difference-quotient",
+    "tool-multivariable-mixed-partials-definition",
+    "tool-multivariable-differentiability-remainder",
+    "tool-multivariable-continuous-partials",
+    "tool-multivariable-necessary-condition-rejection",
+    "tool-multivariable-counterexample-test",
+    "tool-multivariable-first-order-increments",
+    "tool-multivariable-fixed-variable-differentiation"
+  ]
 }

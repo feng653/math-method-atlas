@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-mixed-partials-definition",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "逐次定义求混合偏导",
+  "summary": "本文 $f_{xy}=(f_x)_y$。接点处求它时，先得到邻近纵轴上的 $f_x(0,y)$，再对 $y$ 求导；交换次序则先研究 $f_y(x,0)$。",
+  "article": "multivariable/methods/mixed-partials-definition.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

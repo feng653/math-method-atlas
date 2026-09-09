@@ -11,9 +11,9 @@ describe('formula reading rows', () => {
     expect(formulaRows(String.raw`x=1\qquad y=2`)).toEqual(['x=1', 'y=2']);
   });
   it('keeps every existing formula renderable after splitting', () => {
-    const values = data.methods.flatMap(method => [method.formula, ...(method.example.formulas ?? []),
+    const values = data.methods.flatMap(method => method.article !== undefined ? [] : [method.formula, ...(method.example.formulas ?? []),
       ...(typeof method.example.solution === 'string' ? [] : method.example.solution.flatMap(step => step.formulas))]);
-    values.push(...data.problemTypes.flatMap(type => type.formulas.map(item => item.latex)));
+    values.push(...data.problemTypes.flatMap(type => ('formulas' in type ? type.formulas.map(item => item.latex) : [])));
     values.push(...data.libraries.flatMap(library => library.chapters.flatMap(chapter =>
       (chapter.concepts ?? []).flatMap(concept => concept.formulas ?? []))));
     values.push(...data.questions.flatMap(question => [...(question.statement?.formulas ?? []),

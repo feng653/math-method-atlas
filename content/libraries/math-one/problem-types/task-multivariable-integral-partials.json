@@ -1,0 +1,19 @@
+{
+  "id": "task-multivariable-integral-partials",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求含参变限积分的偏导",
+  "summary": "先辨认变量影响的是积分限、被积函数，还是两者。若某变量只影响上限，优先对它求导可消去积分；题目指定次序时应遵守，换序需另证条件。",
+  "article": "multivariable/problem-types/integral-partials/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-variable-limit-differentiation",
+      "when": "所选变量只影响积分限，且连续被积函数与端点满足求导条件。"
+    }
+  ],
+  "questionIds": [
+    "2011-301-11",
+    "2020-301-12"
+  ],
+  "status": "reviewed"
+}

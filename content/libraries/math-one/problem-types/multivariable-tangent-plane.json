@@ -49,5 +49,9 @@
     "∇F=0时不能套标准切面公式；需独立分析曲面的局部几何。",
     "切平面通常并不包含曲面上的其他给定点，除非题目明确提出此约束。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-surface-tangent",
+    "task-multivariable-curve-tangent"
+  ]
 }

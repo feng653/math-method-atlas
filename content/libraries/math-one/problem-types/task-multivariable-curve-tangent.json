@@ -1,0 +1,20 @@
+{
+  "id": "task-multivariable-curve-tangent",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求空间曲线的切线与法平面",
+  "summary": "参数曲线对参数求导取切向量；两曲面交线取两个法向量的叉积。使用前确认切向量非零，随后写点向式切线和点法式法平面。",
+  "article": "multivariable/problem-types/curve-tangent/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-parametric-curve-tangent",
+      "when": "参数曲线在该点可导且速度向量非零。"
+    },
+    {
+      "methodId": "tool-multivariable-intersection-curve-tangent",
+      "when": "两个 C1 曲面的法向量在交点不平行，可用叉积作切向量。"
+    }
+  ],
+  "questionIds": [],
+  "status": "reviewed"
+}

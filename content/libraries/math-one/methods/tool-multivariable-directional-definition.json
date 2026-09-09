@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-directional-definition",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "沿射线差商求方向导数",
+  "summary": "不能确认可微时，先把非零方向向量单位化，再代入射线差商。本文取 $t\\downarrow0$；每单位距离的变化率要求方向向量长度为 $1$。",
+  "article": "multivariable/methods/directional-definition.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-direction-gradient"
+  ],
+  "status": "reviewed"
+}

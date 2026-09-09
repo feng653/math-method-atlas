@@ -88,5 +88,10 @@
       "对F(x,y,z(x,y))=0求x导数，得到F_x+F_z z_x=0，非零F_z允许解出z_x。此推导依赖合法链式，定理则提供局部可解性的充分条件。",
       "方程组对每个独立变量求导时系数矩阵相同，只改变右端，因此先组矩阵能避免重复消元与符号错误。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-implicit-first-order",
+    "tool-multivariable-implicit-second-order",
+    "tool-multivariable-implicit-linear-system"
+  ]
 }

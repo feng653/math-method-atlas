@@ -1,0 +1,23 @@
+{
+  "id": "task-multivariable-recover-outer-function",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "由偏微分关系反求外函数",
+  "summary": "先用链式法则把关系写成中间变量的一元方程，连同题给条件转换初值。完成这个降维后，再调用常微分方程章节的相应解法；本章不重新讲该章全部技术。",
+  "article": "multivariable/problem-types/recover-outer-function/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-first-order-chain",
+      "when": "内外函数在对应点可微，按所有依赖路径作链式求导。"
+    },
+    {
+      "methodId": "tool-multivariable-weighted-derivative-cancellation",
+      "when": "已得到合法偏导式，可用题设加权组合消去中间导数。"
+    }
+  ],
+  "questionIds": [
+    "2014-301-17",
+    "2025-301-18"
+  ],
+  "status": "reviewed"
+}

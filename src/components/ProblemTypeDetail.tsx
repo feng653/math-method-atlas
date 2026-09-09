@@ -1,5 +1,6 @@
 import { ArrowUpRight, X } from 'lucide-react';
 import type { Library, Method, Paper, ProblemType, Question } from '../domain/schema';
+import { ArticlePanel } from './ArticlePanel';
 import { getProblemQuestions } from '../domain/problem-types';
 import { MethodExample } from './MethodExample';
 import { ChapterConcepts } from './ChapterConcepts';
@@ -14,6 +15,7 @@ type Props = { type: ProblemType; methods: Method[]; questions: Question[]; pape
   samples?: ThinkingSample[];
   onSelect: (id: string) => void; onClose: () => void };
 export function ProblemTypeDetail({ type, methods, questions, papers, concepts, samples = [], onSelect, onClose }: Props) {
+  if (type.article !== undefined) return <ArticlePanel path={type.article} onClose={onClose} />;
   const examples = getProblemQuestions(type, questions);
   const trigger = type.kind === 'trigger';
   const label = trigger ? '触发条件' : '题型';
@@ -34,8 +36,8 @@ export function ProblemTypeDetail({ type, methods, questions, papers, concepts, 
           {methods.find((method) => method.id === choice.methodId)?.title ?? choice.methodId}<ArrowUpRight size={15} /></button>
         <p><strong>什么时候选：</strong>{choice.when}</p>
         {methods.filter(method => method.id === choice.methodId).map(method =>
-          <div key={method.id}><p><strong>为什么能这样做：</strong>{method.learning?.intuition ?? method.summary}</p>
-            {(!method.example.questionId || trigger || type.questionIds.includes(method.example.questionId))
+          <div key={method.id}><p><strong>为什么能这样做：</strong>{('learning' in method ? method.learning?.intuition : undefined) ?? method.summary}</p>
+            {(method.article === undefined && (!method.example.questionId || trigger || type.questionIds.includes(method.example.questionId)))
               && <MethodExample example={method.example} questions={questions} papers={papers} expanded={false} />}</div>)}</div>)}
       {type.formulas.length > 0 && <h2>{trigger ? '结构示例' : '常用二级公式'} · {type.formulas.length}</h2>}
       {type.formulas.map((formula) => <section className="derived-formula" key={formula.id}>

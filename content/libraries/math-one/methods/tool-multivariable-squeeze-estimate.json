@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-squeeze-estimate",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "夹逼估计",
+  "summary": "要证明二元极限为 $L$，把误差压到只依赖距离的趋零量：",
+  "article": "multivariable/methods/squeeze-estimate.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-limit"
+  ],
+  "status": "reviewed"
+}

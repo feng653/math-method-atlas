@@ -1,0 +1,32 @@
+{
+  "id": "task-multivariable-max-direction",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求最大方向导数或反求参数",
+  "summary": "固定点处，可微函数的最大方向导数等于梯度范数；若取点也变化，再对范数作约束最值。分清“点固定、方向变化”和“点与方向都变化”，第二层不能漏。",
+  "article": "multivariable/problem-types/max-direction/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-gradient-norm-optimization",
+      "when": "函数在该点可微，方向遍历全部单位向量时可用梯度范数。"
+    },
+    {
+      "methodId": "tool-multivariable-constraint-elimination",
+      "when": "约束能消去变量，并能保留完整可行域。"
+    },
+    {
+      "methodId": "tool-multivariable-symmetric-variables",
+      "when": "目标和约束对称，可转为和与积，并明确新变量完整可行范围。"
+    },
+    {
+      "methodId": "tool-multivariable-lagrange-candidates",
+      "when": "约束正则且函数 C1，用乘数方程找候选，并另查奇异点和边界。"
+    }
+  ],
+  "questionIds": [
+    "2015-301-17",
+    "2019-301-16",
+    "2022-301-11"
+  ],
+  "status": "reviewed"
+}

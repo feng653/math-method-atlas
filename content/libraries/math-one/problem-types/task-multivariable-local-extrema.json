@@ -1,0 +1,40 @@
+{
+  "id": "task-multivariable-local-extrema",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求无约束局部极值",
+  "summary": "先找驻点及偏导不存在的点。二阶连续且判别式非零时用 Hessian；退化点改看真实增量的符号。最终报告极值点及函数值，并将鞍点与极值分开。",
+  "article": "multivariable/problem-types/local-extrema/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-stationary-candidates",
+      "when": "内点偏导存在，极值必要条件给驻点；不可导点及边界另外检查。"
+    },
+    {
+      "methodId": "tool-multivariable-hessian-test",
+      "when": "内点为驻点且邻域二阶偏导连续，用二次型符号判别；退化时另查。"
+    },
+    {
+      "methodId": "tool-multivariable-degenerate-increment",
+      "when": "Hessian 判别失效时，直接分解实际增量判断附近符号。"
+    },
+    {
+      "methodId": "tool-multivariable-opposite-sign-paths",
+      "when": "要否定局部极值，可找任意近处增量分别为正、负的路径。"
+    },
+    {
+      "methodId": "tool-multivariable-second-order-taylor",
+      "when": "邻域二阶偏导连续，可用二阶展开并保留距离平方的小量余项。"
+    }
+  ],
+  "questionIds": [
+    "2009-301-15",
+    "2011-301-03",
+    "2012-301-16",
+    "2013-301-17",
+    "2020-301-15",
+    "2023-301-18",
+    "2026-301-17"
+  ],
+  "status": "reviewed"
+}

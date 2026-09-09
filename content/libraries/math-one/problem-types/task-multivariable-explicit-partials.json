@@ -1,0 +1,18 @@
+{
+  "id": "task-multivariable-explicit-partials",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "计算显式偏导与梯度",
+  "summary": "固定其他自变量，把求偏导化为一元求导。梯度是各偏导按变量顺序组成的向量；先求表达式，再在合法的基点取值。",
+  "article": "multivariable/problem-types/explicit-partials/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-fixed-variable-differentiation",
+      "when": "表达式在求值处适用求导规则，固定其余独立变量。"
+    }
+  ],
+  "questionIds": [
+    "2012-301-11"
+  ],
+  "status": "reviewed"
+}

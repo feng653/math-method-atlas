@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-implicit-first-order",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "对隐式恒等式求一阶导数",
+  "summary": "若 $F\\in C^1$、基点满足 $F=0$ 且 $F_z\\ne0$，先确认局部可微分支 $z=z(x,y)$，再对恒等式求导并解出目标偏导。",
+  "article": "multivariable/methods/implicit-first-order.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-implicit"
+  ],
+  "status": "reviewed"
+}

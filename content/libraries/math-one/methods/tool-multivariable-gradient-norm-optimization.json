@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-gradient-norm-optimization",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用梯度范数求最大方向导数",
+  "summary": "对可微函数，先在单位方向中优化：",
+  "article": "multivariable/methods/gradient-norm-optimization.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-direction-gradient"
+  ],
+  "status": "reviewed"
+}

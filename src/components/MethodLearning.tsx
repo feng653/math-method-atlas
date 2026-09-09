@@ -1,6 +1,6 @@
-import type { Method } from '../domain/schema';
+import type { StructuredMethod } from '../domain/schema';
 
-export function MethodLearning({ learning }: { learning: NonNullable<Method['learning']> }) {
+export function MethodLearning({ learning }: { learning: NonNullable<StructuredMethod['learning']> }) {
   return <section className="method-learning" aria-label="从直觉开始理解">
     <h2>先理解它在解决什么</h2><p>{learning.intuition}</p>
     <h2>先认识这些概念与符号</h2>

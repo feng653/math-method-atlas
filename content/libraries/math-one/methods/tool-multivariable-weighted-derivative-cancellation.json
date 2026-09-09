@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-weighted-derivative-cancellation",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "加权组合消去中间导数",
+  "summary": "题目只要求 $xz_x+yz_y$ 等组合时，先展开链式导数，再按权重合并。各项可能整体抵消，无须求出抽象外函数。",
+  "article": "multivariable/methods/weighted-derivative-cancellation.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

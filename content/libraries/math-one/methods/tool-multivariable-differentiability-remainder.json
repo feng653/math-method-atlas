@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-differentiability-remainder",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "余项判别可微",
+  "summary": "先求点上的偏导，再扣除线性部分。记 $P_0=(x_0,y_0)$、$h=x-x_0$、$k=y-y_0$，以及 $\\Delta f=f(P_0+(h,k))-f(P_0)$。两个偏导存在时，可微的充要条件为",
+  "article": "multivariable/methods/differentiability-remainder.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

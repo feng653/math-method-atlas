@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-polar-uniform-estimate",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "极坐标一致估计",
+  "summary": "分母含 $x^2+y^2$ 时，令 $x=r\\cos\\theta,y=r\\sin\\theta$，常能分离距离阶数与角度因子。证明极限存在的最后一步必须是对全部 $\\theta$ 成立的估计。",
+  "article": "multivariable/methods/polar-uniform-estimate.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-limit"
+  ],
+  "status": "reviewed"
+}

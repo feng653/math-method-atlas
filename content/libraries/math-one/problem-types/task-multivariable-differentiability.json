@@ -1,0 +1,30 @@
+{
+  "id": "task-multivariable-differentiability",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "辨析连续、偏导存在与可微",
+  "summary": "先用必要条件排除；剩余情形检查线性近似余项。偏导连续是方便的充分条件，条件失效时回到定义。遇到“必然成立”的选项，证明正确命题，并给错误命题找反例。",
+  "article": "multivariable/problem-types/differentiability/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-differentiability-remainder",
+      "when": "偏导已存在，需检验减去线性项后的余项除以距离是否趋零。"
+    },
+    {
+      "methodId": "tool-multivariable-continuous-partials",
+      "when": "各偏导在邻域存在并在研究点连续，可据此证明可微。"
+    },
+    {
+      "methodId": "tool-multivariable-necessary-condition-rejection",
+      "when": "已发现不连续或某个偏导不存在，可立即否定可微。"
+    },
+    {
+      "methodId": "tool-multivariable-counterexample-test",
+      "when": "要检验必要条件、充分条件的逆命题，需按定义核对反例。"
+    }
+  ],
+  "questionIds": [
+    "2012-301-03"
+  ],
+  "status": "reviewed"
+}

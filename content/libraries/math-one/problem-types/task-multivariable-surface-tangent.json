@@ -1,0 +1,31 @@
+{
+  "id": "task-multivariable-surface-tangent",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求切平面、法线及切点条件",
+  "summary": "先从曲面的一阶信息得到法向量。切点未知时，把切点作为未知数写平面，再代入过点、平行或垂直条件；得到切点后必须回查它确实在原曲面上。",
+  "article": "multivariable/problem-types/surface-tangent/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-graph-tangent",
+      "when": "显式曲面函数在该点可微，用一阶线性主部写切平面。"
+    },
+    {
+      "methodId": "tool-multivariable-implicit-surface-tangent",
+      "when": "隐式曲面为 C1 且研究点梯度非零，可取梯度为法向量。"
+    },
+    {
+      "methodId": "tool-multivariable-unknown-contact-point",
+      "when": "切点未知，先设点并写切平面，再联立给定几何条件。"
+    }
+  ],
+  "questionIds": [
+    "2010-301-19",
+    "2013-301-02",
+    "2014-301-09",
+    "2018-301-02",
+    "2023-301-12",
+    "2024-301-18"
+  ],
+  "status": "reviewed"
+}

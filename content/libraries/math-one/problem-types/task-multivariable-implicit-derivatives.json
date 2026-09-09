@@ -1,0 +1,29 @@
+{
+  "id": "task-multivariable-implicit-derivatives",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求隐函数或隐函数组的导数",
+  "summary": "先确定谁是自变量、谁是隐变量。单方程求导后解出目标偏导；方程组则把未知偏导作为未知数联立。二阶求导时，第一次得到的隐导数也要继续求导。",
+  "article": "multivariable/problem-types/implicit-derivatives/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-implicit-first-order",
+      "when": "隐函数存在且相应偏导分母非零，沿隐式恒等式求导。"
+    },
+    {
+      "methodId": "tool-multivariable-implicit-second-order",
+      "when": "满足二阶求导条件，继续对隐式一阶关系求导，保留全部依赖。"
+    },
+    {
+      "methodId": "tool-multivariable-implicit-linear-system",
+      "when": "关于隐变量的雅可比非零，求导后联立线性方程。"
+    }
+  ],
+  "questionIds": [
+    "2010-301-02",
+    "2015-301-11",
+    "2016-301-11",
+    "2026-301-01"
+  ],
+  "status": "reviewed"
+}

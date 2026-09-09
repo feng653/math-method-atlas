@@ -26,7 +26,7 @@ describe('graph integrity', () => {
     for (const chapter of library.chapters) {
       const graph = buildGraph(library, methods, chapter.id);
       const actual = graph.nodes.filter((node) => node.data.kind === 'method').map((node) => node.data.methodId).sort();
-      expect(actual).toEqual(methods.filter((method) => method.chapterId === chapter.id).map((method) => method.id).sort());
+      expect(actual).toEqual(methods.filter((method) => method.chapterId === chapter.id && !method.supersededBy).map((method) => method.id).sort());
     }
   });
 

@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-continuity-substitution",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "连续性代入",
+  "summary": "在表达式的正常定义点求极限，先检查分母、根式和对数的定义域，再代入。复合与四则运算的连续性已经足够，不必重新估计二元差值。",
+  "article": "multivariable/methods/continuity-substitution.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-limit"
+  ],
+  "status": "reviewed"
+}

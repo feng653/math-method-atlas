@@ -32,7 +32,7 @@ for (const dir of await readdir('content/libraries')) {
     thinkingCoverage: thinkingCoverage(library, samples, papers, groups, questions),
     triggerConditions: groups.filter((item) => item.kind === 'trigger').length,
     problemTypes: { count: types.length, reviewed: types.filter((type) => type.status === 'reviewed').length,
-      formulas: types.reduce((count, type) => count + type.formulas.length, 0),
+      formulas: types.reduce((count, type) => count + ('formulas' in type ? type.formulas.length : 0), 0),
       chaptersWithoutTypes: library.chapters.filter((chapter) => !chapter.supplementary && !types.some((type) => type.chapterId === chapter.id)).map((chapter) => chapter.id),
       methodsWithoutTypes: methods.filter((method) => !library.chapters.find((chapter) => chapter.id === method.chapterId)?.supplementary && !classified.has(method.id)).map((method) => method.id),
       note: '已有方法进入题型不代表候选方法穷尽；草案真题归属不计为题型考试频次。' },

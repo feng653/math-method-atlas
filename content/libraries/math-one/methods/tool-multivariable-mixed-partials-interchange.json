@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-mixed-partials-interchange",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "核对条件后交换混合次序",
+  "summary": "当 $f$ 在研究点邻域为 $C^2$ 时，$f_{xy}=f_{yx}$。先观察哪个变量能消去积分或简化表达式，再选择更短的求导顺序。",
+  "article": "multivariable/methods/mixed-partials-interchange.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

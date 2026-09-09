@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-counterexample-test",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "构造反例检验逆命题",
+  "summary": "反例必须同时做到：满足命题全部前提，并使结论失败。针对量级条件，先试绝对值、一次函数等容易直接计算的对象。",
+  "article": "multivariable/methods/counterexample-test.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

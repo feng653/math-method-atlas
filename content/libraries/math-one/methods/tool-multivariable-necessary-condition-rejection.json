@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-necessary-condition-rejection",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用必要条件否定可微",
+  "summary": "内点可微必然连续，且各偏导存在。只要否定其中一项，就已足够否定可微；不必再计算完整余项。",
+  "article": "multivariable/methods/necessary-condition-rejection.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

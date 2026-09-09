@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import type { AtlasData } from '../src/domain/schema';
+import type { AtlasData, StructuredMethod } from '../src/domain/schema';
 import { validateAtlas } from '../src/domain/validate';
 import { getMethodStats } from '../src/domain/statistics';
 import { getPaperStats } from '../src/domain/archive-statistics';
 
-function fixture(): AtlasData {
+function fixture(): Omit<AtlasData, 'methods'> & { methods: StructuredMethod[] } {
   return {
     problemTypes: [], thinkingSamples: [],
     libraries: [{ schemaVersion: 1, id: 'test', title: '测试', description: '测试体系',

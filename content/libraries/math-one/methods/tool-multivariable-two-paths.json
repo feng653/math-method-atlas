@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-two-paths",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "不同路径反证",
+  "summary": "要否定二元极限，找两条定义域内的路径趋向同一点，使函数极限不同即可。分母中有不同次数时，优先让两项同阶。",
+  "article": "multivariable/methods/two-paths.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-limit"
+  ],
+  "status": "reviewed"
+}

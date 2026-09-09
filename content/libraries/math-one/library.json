@@ -562,7 +562,8 @@
             "\\nabla f=\\lambda\\nabla g,\\quad g=0;\\qquad \\nabla f=\\sum_{j=1}^m\\lambda_j\\nabla g_j"
           ]
         }
-      ]
+      ],
+      "article": "multivariable/concepts.md"
     },
     {
       "id": "multiple-integrals",

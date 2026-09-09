@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-hessian-test",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用 Hessian 判别驻点",
+  "summary": "在 $C^2$ 函数的驻点处，计算",
+  "article": "multivariable/methods/hessian-test.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-hessian-extrema"
+  ],
+  "status": "reviewed"
+}

@@ -16,8 +16,10 @@ it('relaxes the complete graph deterministically without losing semantic parents
   const moved = graph.nodes.map((node) => ({ ...node, position: { x: -node.position.x, y: node.position.y * 2 } }));
   expect(primaryEdgeIds(moved, graph.edges)).toEqual(primary);
   expect(graph.nodes.every(n => Number.isFinite(n.position.x + n.position.y))).toBe(true);
-  expect(graph.nodes.filter((node) => node.data.methodId)).toHaveLength(
-    data.methods.filter((method) => method.libraryId === library.id).length);
+  const visible = new Set(graph.nodes.flatMap(node => node.data.methodId ? [node.data.methodId] : []));
+  for (const method of data.methods.filter(method => method.libraryId === library.id && !method.supersededBy)) {
+    expect(visible.has(method.id), method.id).toBe(true);
+  }
 }, 15000);
 
 it('pulls a longer connection harder during initial relaxation', () => {

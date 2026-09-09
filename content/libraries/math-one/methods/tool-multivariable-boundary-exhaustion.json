@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-boundary-exhaustion",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "遍历内部和各段边界求最值",
+  "summary": "连续函数在闭有界区域上取得最值。定位时覆盖内部驻点、不可微点、每段边界临界点以及端点，再统一比较。",
+  "article": "multivariable/methods/boundary-exhaustion.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

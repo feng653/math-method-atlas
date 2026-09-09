@@ -46,5 +46,13 @@
     "2012年第3题是连续性前提下的可微充分条件辨析；2020年第3题已知可微，用余量求极限，不是证明可微。",
     "所有直线路径极限相同仍不够；偏导存在不推出连续。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-limit-value",
+    "task-multivariable-limit-nonexistence",
+    "task-multivariable-continuity",
+    "task-multivariable-partial-existence",
+    "task-multivariable-differentiability",
+    "task-multivariable-differential-limit"
+  ]
 }

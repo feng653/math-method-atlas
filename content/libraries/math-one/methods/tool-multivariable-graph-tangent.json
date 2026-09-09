@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-graph-tangent",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用全微分写显式曲面的切平面",
+  "summary": "对可微图形 $z=f(x,y)$，两偏导直接给出切平面的斜率；用大写 $(X,Y,Z)$ 表示平面上的动点，避免与切点坐标混淆。",
+  "article": "multivariable/methods/graph-tangent.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-tangent-plane"
+  ],
+  "status": "reviewed"
+}

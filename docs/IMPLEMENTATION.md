@@ -1,5 +1,11 @@
 # 已有实现速查
 
+2026-09-09 连接视图补齐：多元微分 21 个 `task-multivariable-*` 题型、41 个 `tool-multivariable-*` 方法全部引用同一 Markdown 正文。旧 9 方法/9 题型通过 `supersededBy` 保留 ID 与历史证据。`graph.ts` 过滤替代记录，同时保留其他有效题型仍引用的旧方法；未迁移 verified 频次。
+
+唯一入口更新：`schema.ts` 用严格联合区分文稿/结构化节点；`article-bindings.ts` 对文稿与节点、题型工具链接与图谱边校验；`article.ts` 统一 query 文稿和 hash 选择，清除不相容旧地址；`App.tsx` 同时监听 popstate/hashchange；`ArticlePanel`、`ChapterReader` 共用阅读与导航。读文章也选择对应图节点，不再维护第二套独立文章状态。
+
+全库升级按 `CONTENT-UPGRADE.md` 分批；首批三章新稿在 docs 待审，未切换正式章节入口。以下较早记录为历史状态。
+
 2026-09-09 文章重写：`docs/textbook/multivariable/README.md` 为新稿入口，概念主文、21 类题型、39 道题目页、41 种工具均为供人阅读的 Markdown。三位作者按阶段串行且不接触代码/JSON。新工具文件名不等同正式方法 ID；本轮没有将新稿写回网站内容，也没有改变 loader、schema、图谱或频次。历史卡片实现仍如下，不能把下文的旧卡片状态当作新稿已上线。
 
 

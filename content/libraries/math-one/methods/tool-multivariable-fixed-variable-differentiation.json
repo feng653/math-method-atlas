@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-fixed-variable-differentiation",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "固定其他变量求偏导",
+  "summary": "显式表达式在正常定义点求偏导时，把其余自变量视为常数，再用一元求导规则。每换一次求导变量，都重新确认谁保持不变。",
+  "article": "multivariable/methods/fixed-variable-differentiation.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

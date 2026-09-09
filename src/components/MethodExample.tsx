@@ -1,9 +1,9 @@
-import type { Method, Paper, Question } from '../domain/schema';
+import type { StructuredMethod, Paper, Question } from '../domain/schema';
 import { sourceHref } from '../domain/source';
 import { Formula } from './Formula';
 
 export function MethodExample({ example, questions = [], papers = [], expanded = true }: {
-  example: Method['example']; questions?: Question[]; papers?: Paper[]; expanded?: boolean;
+  example: StructuredMethod['example']; questions?: Question[]; papers?: Paper[]; expanded?: boolean;
 }) {
   const question = questions.find(item => item.id === example.questionId);
   const paper = papers.find(item => item.id === question?.paperId);

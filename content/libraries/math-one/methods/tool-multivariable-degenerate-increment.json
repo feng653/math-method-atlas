@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-degenerate-increment",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用因式分解或配方判定增量同号",
+  "summary": "二阶判别退化时，直接将 $f(P)-f(P_0)$ 写成平方和或同号因子。要证明极值，符号结论须覆盖整个邻域；严格性则看等号在哪里成立。",
+  "article": "multivariable/methods/degenerate-increment.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-hessian-extrema"
+  ],
+  "status": "reviewed"
+}

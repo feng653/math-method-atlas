@@ -82,5 +82,11 @@
       "由二阶泰勒式，驻点附近增量为二次型的一半加o(r²)。正定二次型有统一正下界cr²，故能压过余项。",
       "D<0的二次型沿两个方向符号不同，沿足够短的对应直线仍一正一负。D=0恰好失去严格二阶控制，必须换工具。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-stationary-candidates",
+    "tool-multivariable-hessian-test",
+    "tool-multivariable-degenerate-increment",
+    "tool-multivariable-opposite-sign-paths"
+  ]
 }

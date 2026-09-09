@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-variable-limit-differentiation",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "对只影响积分限的变量先求导",
+  "summary": "含参变限积分中，某变量若只影响积分限，固定其他参数对它求导即可先消去积分。若该变量也进入被积函数，则不能漏掉被积函数的参数导数。",
+  "article": "multivariable/methods/variable-limit-differentiation.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-multivariable-chain"
+  ],
+  "status": "reviewed"
+}

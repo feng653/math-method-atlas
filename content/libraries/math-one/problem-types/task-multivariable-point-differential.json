@@ -1,0 +1,28 @@
+{
+  "id": "task-multivariable-point-differential",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "由点上条件求全微分",
+  "summary": "目标是确定线性主部的系数。已知可微时，可对经过同一基点的复合恒等式求导，联立求两个偏导；隐式关系则先确认局部函数及可微依据，再提取一阶项。",
+  "article": "multivariable/problem-types/point-differential/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-curve-identities",
+      "when": "已知沿不同曲线的恒等关系，可求导并联立点上的偏导信息。"
+    },
+    {
+      "methodId": "tool-multivariable-implicit-first-order",
+      "when": "隐函数存在且相应偏导分母非零，沿隐式恒等式求导。"
+    },
+    {
+      "methodId": "tool-multivariable-first-order-increments",
+      "when": "已知可微或给出一阶增量关系，可提取线性主部。"
+    }
+  ],
+  "questionIds": [
+    "2015-301-11",
+    "2016-301-11",
+    "2021-301-02"
+  ],
+  "status": "reviewed"
+}

@@ -80,5 +80,13 @@
       "由df=f_u du+f_v dv和du=u′dx、dv=v′dx得到一阶链式。再次求导产生外函数曲率与路径曲率两组贡献。",
       "向量写法z″=w′ᵀH_fw′+∇f·w″，其中w=(u,v)。非直线路径一般不能丢第二组项。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-first-order-chain",
+    "tool-multivariable-second-order-chain",
+    "tool-multivariable-mixed-partials-interchange",
+    "tool-multivariable-weighted-derivative-cancellation",
+    "tool-multivariable-curve-identities",
+    "tool-multivariable-variable-limit-differentiation"
+  ]
 }

@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-implicit-surface-tangent",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用梯度写隐式曲面的切平面",
+  "summary": "定义函数 $F$ 在切点邻域为 $C^1$，且切点处 $\\nabla F\\ne0$ 时，梯度就是曲面 $F=0$ 的法向量。先验证点在曲面上，再写点法式。",
+  "article": "multivariable/methods/implicit-surface-tangent.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-tangent-plane"
+  ],
+  "status": "reviewed"
+}

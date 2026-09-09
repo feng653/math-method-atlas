@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-parametric-curve-tangent",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "对参数曲线求切向量",
+  "summary": "参数曲线在 $t_0$ 可导且速度向量非零时，速度给出切线方向，也给出法平面的法向量。",
+  "article": "multivariable/methods/parametric-curve-tangent.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-tangent-plane"
+  ],
+  "status": "reviewed"
+}

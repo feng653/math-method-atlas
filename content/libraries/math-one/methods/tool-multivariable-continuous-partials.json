@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-continuous-partials",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用偏导连续证明可微",
+  "summary": "函数由光滑表达式组成时，先算偏导，再检查它们在基点邻域存在且在基点连续。这是证明可微的充分条件，通常比直接估计余项短。",
+  "article": "multivariable/methods/continuous-partials.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-partial-total-differential"
+  ],
+  "status": "reviewed"
+}

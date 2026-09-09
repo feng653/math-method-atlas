@@ -62,5 +62,8 @@
     "本题型判别局部极值；若求整个可行域上的最大最小值，还必须检查边界、约束与最值存在性。",
     "局部极值不等于全局最值；D=0仅说明二阶判别不能定论。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-local-extrema"
+  ]
 }

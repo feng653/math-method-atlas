@@ -1,0 +1,22 @@
+{
+  "id": "task-multivariable-differential-limit",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用可微展开求极限",
+  "summary": "题目已经给出可微性时，先写出“线性主部＋高阶余项”。把待求式中的线性项消去，观察剩下的余项是否恰好除以点到基点的距离。",
+  "article": "multivariable/problem-types/differential-limit/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-first-order-increments",
+      "when": "已知可微或给出一阶增量关系，可提取线性主部。"
+    },
+    {
+      "methodId": "tool-multivariable-differentiability-remainder",
+      "when": "偏导已存在，需检验减去线性项后的余项除以距离是否趋零。"
+    }
+  ],
+  "questionIds": [
+    "2020-301-03"
+  ],
+  "status": "reviewed"
+}

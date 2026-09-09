@@ -1,0 +1,24 @@
+{
+  "id": "task-multivariable-continuity",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "判断分段点的连续性",
+  "summary": "先找趋近值，再与补定义的函数值比较。可以求出极限后反求补定义参数；证明极限存在和核对该点函数值是两件事。",
+  "article": "multivariable/problem-types/continuity/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-squeeze-estimate",
+      "when": "可将误差压在只依赖距离、对所有方向有效的趋零上界下。"
+    },
+    {
+      "methodId": "tool-multivariable-polar-uniform-estimate",
+      "when": "适合以距离和角度重写，且能对所有角度给同一个趋零界。"
+    },
+    {
+      "methodId": "tool-multivariable-two-paths",
+      "when": "要否定极限，找定义域内趋近同一点而极限不同的两条路径。"
+    }
+  ],
+  "questionIds": [],
+  "status": "reviewed"
+}

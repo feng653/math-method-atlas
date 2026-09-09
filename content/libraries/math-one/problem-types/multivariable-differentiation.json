@@ -53,5 +53,10 @@
     "显式给出复合关系时按依赖路径求导；未知函数只由方程约束时，应转入隐函数求导。",
     "二阶链式需要相应二阶可微条件；不要在求导前把x代成常数。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-composite-first",
+    "task-multivariable-composite-second",
+    "task-multivariable-recover-outer-function"
+  ]
 }

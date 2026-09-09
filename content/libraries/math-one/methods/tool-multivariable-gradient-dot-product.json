@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-gradient-dot-product",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "梯度与单位方向点积",
+  "summary": "函数在研究点可微时，方向导数等于梯度与单位方向向量的点积。普通光滑函数可先由偏导连续确认此前提。",
+  "article": "multivariable/methods/gradient-dot-product.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-direction-gradient"
+  ],
+  "status": "reviewed"
+}

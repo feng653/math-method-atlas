@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-global-inequality",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用加权柯西不等式求全局最值",
+  "summary": "正权重 $w_i>0$ 时，加权柯西不等式给出",
+  "article": "multivariable/methods/global-inequality.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-lagrange-multipliers"
+  ],
+  "status": "reviewed"
+}

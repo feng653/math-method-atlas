@@ -82,5 +82,8 @@
       "把多元函数限制到线段φ(t)=f(a+th,b+tk)，一元泰勒公式给出梯度线性项与Hessian二次项；二阶偏导连续保证余项统一为o(r²)。",
       "判极小不能只说“二次项正”。要得到至少cr²的正下界，才能确保高阶余项不会翻转符号。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-second-order-taylor"
+  ]
 }

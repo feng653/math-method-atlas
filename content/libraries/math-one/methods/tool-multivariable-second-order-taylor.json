@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-second-order-taylor",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "沿增量作二阶泰勒展开",
+  "summary": "邻域内 $C^2$ 时，可在目标点展开到二次项。极值问题中，先看二次型，再确认高阶余项不会改变其符号；退化二次型不能独自完成判定。",
+  "article": "multivariable/methods/second-order-taylor.md",
+  "relatedIds": [],
+  "topicIds": [
+    "audit-second-taylor"
+  ],
+  "status": "reviewed"
+}

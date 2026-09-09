@@ -1,0 +1,26 @@
+{
+  "id": "task-multivariable-closed-domain-extrema",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求闭区域上的最大值和最小值",
+  "summary": "确认连续性与区域边界后，覆盖内部驻点、不可微点、各段边界和交点。每条边界可转成一元问题，最后比较全部候选值；只解梯度为零通常不完整。",
+  "article": "multivariable/problem-types/closed-domain-extrema/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-boundary-exhaustion",
+      "when": "连续函数在闭有界区域求最值，需遍历内部、每段边界及端点。"
+    },
+    {
+      "methodId": "tool-multivariable-constraint-parametrization",
+      "when": "约束可由参数完整表示，需核对参数范围及遗漏点。"
+    },
+    {
+      "methodId": "tool-multivariable-global-inequality",
+      "when": "目标和约束可匹配不等式，且需检查等号在可行域可达。"
+    }
+  ],
+  "questionIds": [
+    "2024-301-18"
+  ],
+  "status": "reviewed"
+}

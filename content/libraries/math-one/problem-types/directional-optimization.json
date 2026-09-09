@@ -52,5 +52,9 @@
     "不能把未单位化向量直接代方向导数；零梯度没有唯一最优方向。",
     "2012年第11题仅直接求梯度；分类包含其作为方向导数的基础任务，不将其改写为方向优化题。"
   ],
-  "status": "reviewed"
+  "status": "reviewed",
+  "supersededBy": [
+    "task-multivariable-directional-derivative",
+    "task-multivariable-max-direction"
+  ]
 }

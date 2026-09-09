@@ -82,5 +82,10 @@
       "把增量h=te代入可微展开，除以t并令t趋零得到点积公式；可微保证余项除t趋零。",
       "柯西不等式给∇f·e≤‖∇f‖；非零梯度时，同方向且单位长度正好取等号。"
     ]
-  }
+  },
+  "supersededBy": [
+    "tool-multivariable-directional-definition",
+    "tool-multivariable-gradient-dot-product",
+    "tool-multivariable-gradient-norm-optimization"
+  ]
 }

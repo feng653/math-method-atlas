@@ -1,0 +1,22 @@
+{
+  "id": "task-multivariable-quadratic-objective",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求参数化平方误差的最小值",
+  "summary": "把待定系数作为变量，先将目标整理为二次函数。解一阶条件后，通过配方或正定二次增量证明全局最小，不能只凭驻点条件结束。",
+  "article": "multivariable/problem-types/quadratic-objective/index.md",
+  "methods": [
+    {
+      "methodId": "tool-multivariable-quadratic-completion",
+      "when": "目标可配成平方和，需核对等号点符合变量限制。"
+    },
+    {
+      "methodId": "tool-multivariable-stationary-candidates",
+      "when": "内点偏导存在，极值必要条件给驻点；不可导点及边界另外检查。"
+    }
+  ],
+  "questionIds": [
+    "2014-301-04"
+  ],
+  "status": "reviewed"
+}

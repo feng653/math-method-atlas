@@ -1,0 +1,13 @@
+{
+  "id": "tool-multivariable-opposite-sign-paths",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "用异号路径否定极值",
+  "summary": "找到两条趋向候选点的路径，使实际增量分别为正、负，就能排除局部极大和极小。二阶判别退化时，应留意让平方项恰好消失的曲线。",
+  "article": "multivariable/methods/opposite-sign-paths.md",
+  "relatedIds": [],
+  "topicIds": [
+    "multivariable-hessian-extrema"
+  ],
+  "status": "reviewed"
+}
