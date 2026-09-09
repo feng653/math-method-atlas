@@ -43,3 +43,15 @@ it('preserves a translated arrangement without artificial center attraction', ()
   expect(center).toBeCloseTo(1300, 6);
   expect(bodies[2].position.x - bodies[0].position.x).toBeGreaterThan(550);
 });
+
+it('does not push a connected neighbor outward when dragging shortens its link', () => {
+  const pair = nodes.slice(0, 2).map((node, i) => ({ ...node, position: { x: i * 1000, y: 0 } }));
+  const linked = createElasticLayout(pair, [edges[0]]);
+  const isolated = createElasticLayout(pair, []);
+  for (const layout of [linked, isolated]) {
+    layout.bodies.get('a')!.position.x = 600;
+    stepElasticLayout(layout, 'a', 0);
+  }
+  expect(linked.bodies.get('b')!.vx).toBeCloseTo(isolated.bodies.get('b')!.vx, 10);
+  expect(linked.bodies.get('b')!.vx).toBeLessThan(0.001);
+});

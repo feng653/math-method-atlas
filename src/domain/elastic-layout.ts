@@ -32,7 +32,7 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
   for (const { a, b, length, strength } of layout.links) {
     const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
     const d = Math.max(1, Math.hypot(dx, dy)), stretch = d - length;
-    const tension = Math.sign(stretch) * Math.max(0, Math.abs(stretch) - 24);
+    const tension = Math.max(0, stretch - 24);
     const force = tension * strength * (layout.initializing ? 0.09 : 0.018) / Math.sqrt(Math.max(a.degree, b.degree, 1));
     a.vx += dx / d * force; a.vy += dy / d * force;
     b.vx -= dx / d * force; b.vy -= dy / d * force;

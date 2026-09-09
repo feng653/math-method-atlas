@@ -1,8 +1,8 @@
 type Clock = { now: () => number; request: (callback: (time: number) => void) => number;
   cancel: (id: number) => void };
 
-/** Short interaction bursts; no queued frames after the settling window. */
-export function createMotionScheduler(clock: Clock, step: (time: number) => void,
+/** Active physics extends the window until settled; idle work leaves no queued frames. */
+export function createMotionScheduler(clock: Clock, step: (time: number) => boolean | void,
   onRunning: (running: boolean) => void, interval = 40) {
   let frame: number | null = null, deadline = 0, previous = -Infinity;
   function stop() {
@@ -13,7 +13,8 @@ export function createMotionScheduler(clock: Clock, step: (time: number) => void
   function tick(time: number) {
     frame = null;
     if (time >= deadline) { stop(); return; }
-    if (time - previous >= interval) { previous = time; step(time); }
+    if (time - previous >= interval) { previous = time;
+      if (step(time) === true) deadline = time + 1800; }
     frame = clock.request(tick);
   }
   return { stop, wake() {

@@ -6,7 +6,7 @@ function harness(interval = 50) {
   const pending = new Map<number, (time: number) => void>();
   const scheduler = createMotionScheduler({ now: () => time,
     request(callback) { pending.set(++sequence, callback); return sequence; },
-    cancel(id) { pending.delete(id); } }, () => steps++, (value) => { running = value; }, interval);
+    cancel(id) { pending.delete(id); } }, () => { steps++; }, (value) => { running = value; }, interval);
   return { scheduler, pending, get steps() { return steps; }, get running() { return running; },
     advance(duration: number) {
       for (let elapsed = 0; elapsed < duration; elapsed += 10) {
@@ -31,4 +31,19 @@ it('extends dragging without duplicate loops and cancels immediately when hidden
   h.advance(1000); expect(h.running).toBe(true);
   h.scheduler.stop(); expect(h.pending.size).toBe(0);
   const count = h.steps; h.advance(1000); expect(h.steps).toBe(count);
+});
+
+it('continues while physics is active beyond the old time limit, then sleeps', () => {
+  let time = 0, active = true, steps = 0;
+  let callback: ((time: number) => void) | undefined;
+  const scheduler = createMotionScheduler({ now: () => time,
+    request(next) { callback = next; return 1; }, cancel() { callback = undefined; } },
+  () => { steps++; return active; }, () => {});
+  scheduler.wake();
+  for (time = 40; time <= 10000; time += 40) { const next = callback; callback = undefined; next?.(time); }
+  expect(steps).toBe(250);
+  expect(callback).toBeDefined();
+  active = false;
+  for (; time <= 13000; time += 40) { const next = callback; callback = undefined; next?.(time); }
+  expect(callback).toBeUndefined();
 });
