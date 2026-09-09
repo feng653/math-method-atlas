@@ -22,7 +22,33 @@
   ],
   "example": {
     "prompt": "自编例题：求f=x²+xy+y²的极值。 再判断g=x⁴+y⁴、h=x⁴−y⁴在原点的性质，两者Hessian都是零矩阵。",
-    "solution": "梯度方程2x+y=0、x+2y=0仅原点。A=C=2、B=1，D=3>0且A>0，原点严格极小，值0。 对g，任意非零(x,y)都有x⁴+y⁴≥(x²+y²)²/2>0，故原点严格极小。对h，沿y=0增量x⁴>0，沿x=0增量−y⁴<0，任意邻域出现异号，故原点为鞍点。两个函数零Hessian相同而结论不同。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "梯度方程2x+y=0、x+2y=0仅原点。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "A=C=2、B=1，D=3>0且A>0，原点严格极小，值0。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "对g，任意非零(x,y)都有x⁴+y⁴≥(x²+y²)²/2>0，故原点严格极小。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "对h，沿y=0增量x⁴>0，沿x=0增量−y⁴<0，任意邻域出现异号，故原点为鞍点。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "两个函数零Hessian相同而结论不同。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-lagrange-multipliers",
@@ -31,5 +57,17 @@
   "topicIds": [
     "multivariable-hessian-extrema"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "先找所有方向的一阶变化都为零的位置，再用二阶变化判断附近是上升、下降，还是有升有降。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      }
+    ],
+    "explanation": [
+      "二阶判别式为零时没有结论，要回到函数增量本身；不能把无结论当作没有极值。"
+    ]
+  }
 }

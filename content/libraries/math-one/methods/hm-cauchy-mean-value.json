@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：对0<a<b，证明2a/3<(b²-a²)/(b³-a³)·ab<2b/3。",
-    "solution": "取f(t)=t²、g(t)=t³，商为2/(3ξ)，a<ξ<b，乘ab得2a/3<2ab/(3ξ)<2b/3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "分子是平方函数的增量，分母是立方函数的增量。两函数在正区间光滑，立方函数导数不为零，可以对这两个函数使用柯西中值定理。",
+        "formulas": [
+          "\\frac{b^2-a^2}{b^3-a^3}=\\frac{2\\xi}{3\\xi^2}=\\frac2{3\\xi},\\quad a<\\xi<b"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "取f(t)=t²、g(t)=t³，商为2/(3ξ)，a<ξ<b，乘ab得2a/3<2ab/(3ξ)<2b/3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-mean-value-proof",
@@ -27,5 +40,25 @@
   "topicIds": [
     "derivatives-cauchy-mean-value"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "想比较两个函数的总变化量之比，可以把它转成某个中间点的导数之比。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "ξ",
+        "meaning": "位于所讨论区间内部的某个中间点，定理保证它存在，通常不必求出数值。"
+      }
+    ],
+    "explanation": [
+      "先确定中间点所在区间，再用该区间给导数比作上下界；中间点通常不需要具体求出。"
+    ]
+  }
 }

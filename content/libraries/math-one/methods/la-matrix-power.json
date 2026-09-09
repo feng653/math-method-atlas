@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：求 [[1,2],[0,1]] 的 m 次幂。",
-    "solution": "N=[[0,2],[0,0]] 满足 N²=0，因此 A^m=I+mN=[[1,2m],[0,1]]。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "把矩阵减去单位阵得到 N，N 只有右上元素非零，乘两次即为零。二项展开里从 N² 开始的项全部消失。",
+        "formulas": [
+          "A=I+N,\\quad N=\\begin{pmatrix}0&2\\\\0&0\\end{pmatrix},\\quad N^2=0"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "N=[[0,2],[0,0]] 满足 N²=0，因此 A^m=I+mN=[[1,2m],[0,1]]。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-matrix-product",
@@ -28,5 +41,25 @@
   "topicIds": [
     "la-matrix-operations"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "若矩阵能拆成单位阵加一个很快乘成零的矩阵，二项展开会在有限项后结束。",
+    "symbols": [
+      {
+        "symbol": "矩阵与乘法",
+        "meaning": "矩阵表示线性关系。乘积 AB 要求 A 的列数等于 B 的行数；通常 AB 与 BA 不相等，甚至后者可能无定义。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      },
+      {
+        "symbol": "λ",
+        "meaning": "公式中的参数或辅助未知数，按题目给定范围或联立条件确定。"
+      }
+    ],
+    "explanation": [
+      "先实际计算幂零部分的平方或更高幂，确认哪些项确实为零再截断。"
+    ]
+  }
 }

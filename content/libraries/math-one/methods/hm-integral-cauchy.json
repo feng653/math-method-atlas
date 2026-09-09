@@ -21,7 +21,25 @@
   ],
   "example": {
     "prompt": "自编：正连续函数h满足∫₀¹h=2，证明∫₀¹1/h≥1/2，并说明取等。",
-    "solution": "取f=√h、g=1/√h，交叉积分为1，故1≤2∫₀¹1/h。取等要求√h=λ/√h，即h为常数，由积分条件得h恒为2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "选择平方后分别出现 h 与 1/h 的两个函数，它们相乘恒为一。这样柯西不等式的一侧变成已知积分二，另一侧正是要估计的量。",
+        "formulas": [
+          "\\left(\\int_0^1\\sqrt h\\,\\frac1{\\sqrt h}\\,\\mathrm dx\\right)^2\\le\\left(\\int_0^1h\\,\\mathrm dx\\right)\\left(\\int_0^1\\frac1h\\,\\mathrm dx\\right)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "取f=√h、g=1/√h，交叉积分为1，故1≤2∫₀¹1/h。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "取等要求√h=λ/√h，即h为常数，由积分条件得h恒为2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-integral-inequality",
@@ -30,5 +48,21 @@
   "topicIds": [
     "integrals-integral-inequality"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把目标写成两个函数的乘积积分，再用柯西不等式把它与各自平方积分联系起来。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "除了得到界，还要检查取等条件是否与题目给定积分相容。"
+    ]
+  }
 }

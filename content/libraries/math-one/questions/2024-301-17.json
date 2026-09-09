@@ -21,5 +21,17 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "当前来源第17题，PDF物理第4页；完整核对题干，未见显式作答子问编号；选项不计。"
+  },
+  "statement": {
+    "intro": "在下述区域 D 上计算给定二重积分。",
+    "formulas": [
+      "D=\\{(x,y)\\mid \\sqrt{1-y^2}\\le x\\le1,\\;-1\\le y\\le1\\}",
+      "\\iint_D\\frac{x}{\\sqrt{x^2+y^2}}\\,\\mathrm d\\sigma"
+    ],
+    "tasks": [
+      "求积分的值。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "按来源核对数学条件并重新表述题面，未转载解析。"
   }
 }

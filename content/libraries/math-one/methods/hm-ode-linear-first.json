@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：解y'+y=1，y(0)=0。",
-    "solution": "积分因子e^x，(e^xy)'=e^x，y=1+Ce^{-x}；初值得C=-1，故y=1-e^{-x}。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "乘以 eˣ后，左边两项正好是 eˣy 的导数。两边积分得到 eˣy=eˣ+C，再用初值确定 C。",
+        "formulas": [
+          "(e^xy)'=e^xy'+e^xy=e^x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "积分因子e^x，(e^xy)'=e^x，y=1+Ce^{-x}；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "初值得C=-1，故y=1-e^{-x}。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-bernoulli",
@@ -27,5 +45,21 @@
   "topicIds": [
     "ode-ode-linear-first"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "找一个积分因子，让左边两项恰好合成一个乘积的导数，方程就能直接积分。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "积分因子来自 y 前系数的积分，求通解后再代初值确定常数。"
+    ]
+  }
 }

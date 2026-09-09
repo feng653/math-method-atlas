@@ -20,7 +20,28 @@
   ],
   "example": {
     "prompt": "自编：单位圆上求 ∮x²ds，并说明反向绕行及拆成两个半圆的结果。",
-    "solution": "取 x=cos t、y=sin t，0≤t≤2π，ds=dt，积分为 π；反向仍为 π。两个半圆各得 π/2，和为 π。由 0≤x²≤1、圆长 2π，估界为 [0,2π]。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "取 x=cos t、y=sin t，0≤t≤2π，ds=dt，积分为 π；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "反向仍为 π。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "两个半圆各得 π/2，和为 π。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "由 0≤x²≤1、圆长 2π，估界为 [0,2π]。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-line-second-kind",
@@ -29,5 +50,21 @@
   "topicIds": [
     "multiple-integrals-line-first-kind"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "沿曲线累加长度上的分布量，使用的微元是实际弧长，因此反向走同一曲线不会改变结果。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "参数微分不等于弧长微分；弧长需要乘速度向量的长度。"
+    ]
+  }
 }

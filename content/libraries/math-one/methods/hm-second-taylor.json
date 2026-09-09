@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：将 f(x,y)=e^(x+y) 在 (0,0) 展开到二阶。",
-    "solution": "函数值和各一二阶偏导在原点均为 1，因此 f=1+x+y+x²/2+xy+y²/2+o(x²+y²)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "把 x+y 整体看成一元指数展开中的变量，保留到平方项，再把平方展开得到交叉项。",
+        "formulas": [
+          "e^{x+y}=1+(x+y)+\\frac12(x+y)^2+o(x^2+y^2)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "函数值和各一二阶偏导在原点均为 1，因此 f=1+x+y+x²/2+xy+y²/2+o(x²+y²)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-hessian-extrema",
@@ -28,5 +41,17 @@
   "topicIds": [
     "audit-second-taylor"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "在一点附近，用常数项、线性项和二次项逐层描述函数的变化，二次项揭示局部弯曲。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      }
+    ],
+    "explanation": [
+      "混合项来自两种求导顺序，展开二次型时要核对交叉项系数。"
+    ]
+  }
 }

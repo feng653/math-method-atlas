@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：单位圆盘上计算∬(x²+y²)dA。",
-    "solution": "θ从0到2π、r从0到1，积分∫₀^{2π}∫₀¹r³drdθ=π/2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "圆盘允许角度转满一圈，半径从零到一。被积函数 x²+y² 化为 r²，再乘面积微元里的 r，所以内层真正积分的是 r³。",
+        "formulas": [
+          "\\iint_D(x^2+y^2)\\,\\mathrm dA=\\int_0^{2\\pi}\\mathrm d\\theta\\int_0^1r^3\\,\\mathrm dr"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "θ从0到2π、r从0到1，积分∫₀^{2π}∫₀¹r³drdθ=π/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-double-cartesian",
@@ -27,5 +40,17 @@
   "topicIds": [
     "multiple-integrals-double-polar"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "圆和圆环用离原点的距离、转过的角度描述更简单，因此把横纵坐标换成半径和角度。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      }
+    ],
+    "explanation": [
+      "面积小块是 r 乘径向宽度再乘角度宽度；少了这个 r，积分就变了。"
+    ]
+  }
 }

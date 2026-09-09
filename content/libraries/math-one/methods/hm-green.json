@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：逆时针单位圆求∮(-y dx+x dy)。",
-    "solution": "Q_x-P_y=1-(-1)=2，单位圆面积π，积分2π。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "读出 P=−y、Q=x，分别对对应变量求偏导。曲线逆时针正好是格林公式的正向，内部是单位圆盘。",
+        "formulas": [
+          "Q_x-P_y=1-(-1)=2;\\quad I=\\iint_D2\\,\\mathrm dx\\mathrm dy"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "Q_x-P_y=1-(-1)=2，单位圆面积π，积分2π。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-line-first-kind",
@@ -28,5 +41,33 @@
   "topicIds": [
     "multiple-integrals-green"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "沿平面闭曲线的积分，可以改成曲线内部区域上的二重积分，边界绕行与内部变化由此联系起来。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "∬",
+        "meaning": "二重积分：在整个平面区域内累积被积函数乘小面积的贡献。"
+      },
+      {
+        "symbol": "∮",
+        "meaning": "沿闭合曲线积分；走完路径后回到起点，方向依题意确定。"
+      },
+      {
+        "symbol": "∂",
+        "meaning": "偏导符号：对指定变量求导时，把其他独立变量当作常数。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      }
+    ],
+    "explanation": [
+      "先检查方向是否为逆时针，再按 Q 对 x 减 P 对 y 的顺序求偏导。"
+    ]
+  }
 }

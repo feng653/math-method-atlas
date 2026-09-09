@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：将 x=z²、y=0 的母线绕 z 轴旋转；将 xy 平面单位圆沿 z 方向平移，分别求方程。",
-    "solution": "第一问径向距离 r=z²，故 x²+y²=z⁴，z 可任意。第二问平移不改变 x、y，得到柱面 x²+y²=1，z 任意。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "第一问旋转保留 z 和到 z 轴的距离，原母线上这个距离为 z²；第二问沿 z 平移完全不改变 x、y。",
+        "formulas": [
+          "\\sqrt{x^2+y^2}=z^2\\quad\\Longrightarrow\\quad x^2+y^2=z^4"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "第一问径向距离 r=z²，故 x²+y²=z⁴，z 可任意。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第二问平移不改变 x、y，得到柱面 x²+y²=1，z 任意。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-quadric-surfaces",
@@ -28,5 +46,17 @@
   "topicIds": [
     "audit-revolution-cylinder"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "绕轴旋转时，到轴的距离与轴向坐标保持不变；沿固定方向平移时，垂直于该方向的形状不变。",
+    "symbols": [
+      {
+        "symbol": "向量",
+        "meaning": "向量同时表达大小与方向。数量积可以判断夹角和垂直；向量积给出与两个向量垂直的方向，其模等于所张平行四边形的面积。"
+      }
+    ],
+    "explanation": [
+      "把原母线的径向坐标换成到旋转轴的距离，并保留原来的非负与取值范围，避免平方后多出点。"
+    ]
+  }
 }

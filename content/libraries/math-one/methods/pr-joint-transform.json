@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：X,Y 独立在 (0,1) 均匀，U=X+Y,V=Y，求联合密度。",
-    "solution": "逆变换 x=u−v,y=v，雅可比 1。密度为 1，支持域 0<v<1 且 v<u<v+1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "由 V=Y 得 y=v，再由 U=X+Y 得 x=u−v。原来的两个单位区间要求 v 在零与一之间，u−v 也在零与一之间。",
+        "formulas": [
+          "0<v<1,\\quad0<u-v<1;\\quad\\left|\\frac{\\partial(x,y)}{\\partial(u,v)}\\right|=1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "逆变换 x=u−v,y=v，雅可比 1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "密度为 1，支持域 0<v<1 且 v<u<v+1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-joint-convolution",
@@ -28,5 +46,25 @@
   "topicIds": [
     "pr-joint-function-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把联合密度换到新坐标，需要把旧点与新点对应起来，并补上面积变化比例。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∂",
+        "meaning": "偏导符号：对指定变量求导时，把其他独立变量当作常数。"
+      }
+    ],
+    "explanation": [
+      "逆变换、雅可比绝对值和新支持域缺一不可。"
+    ]
+  }
 }

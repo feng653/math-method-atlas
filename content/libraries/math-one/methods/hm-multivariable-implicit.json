@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：x²+y²+z²=9在(1,2,2)处求z_x、z_y。",
-    "solution": "F_z=4≠0，z_x=-x/z=-1/2，z_y=-y/z=-1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "求 z 对 x 的偏导时 y 固定，z 仍随 x 变化；对 y 同理。指定点处 z 非零，所以可以除以 2z。",
+        "formulas": [
+          "2x+2zz_x=0,\\quad2y+2zz_y=0;\\quad F_z(1,2,2)=4\\ne0"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "F_z=4≠0，z_x=-x/z=-1/2，z_y=-y/z=-1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-multivariable-chain",
@@ -28,5 +41,17 @@
   "topicIds": [
     "multivariable-multivariable-implicit"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把约束等式看作始终成立，对指定自变量求偏导，其他独立变量保持不变，隐含的因变量继续用链式法则。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      }
+    ],
+    "explanation": [
+      "先检查用于解出因变量的偏导不为零，再移项得到所求偏导。"
+    ]
+  }
 }

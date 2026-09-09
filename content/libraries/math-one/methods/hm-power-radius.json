@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：求Σ(n≥1)x^n/n的收敛区间。",
-    "solution": "R=1；x=1为调和级数发散，x=-1为交错调和级数收敛，区间[-1,1)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "相邻项绝对值之比趋于 |x|，所以 |x|<1 时收敛，|x|>1 时发散。剩下只需把两个端点代回原级数。",
+        "formulas": [
+          "\\left|\\frac{x^{n+1}/(n+1)}{x^n/n}\\right|=|x|\\frac n{n+1}\\longrightarrow|x|"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "R=1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "x=1为调和级数发散，x=-1为交错调和级数收敛，区间[-1,1)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-alternating-series",
@@ -27,5 +45,29 @@
   "topicIds": [
     "series-power-radius"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "幂级数通常在中心附近收敛，远处发散；先确定临界距离，再独立检查两个端点。",
+    "symbols": [
+      {
+        "symbol": "级数看部分和",
+        "meaning": "无穷级数的和是部分和序列的极限。通项趋于零只是收敛的必要条件，例如调和级数通项趋零但级数发散。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      },
+      {
+        "symbol": "逆运算",
+        "meaning": "矩阵 A⁻¹ 表示逆矩阵；普通数的 −1 次幂表示倒数。反函数需结合函数记号区分。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      }
+    ],
+    "explanation": [
+      "收敛半径只决定开区间，不能自动决定端点是否包含。"
+    ]
+  }
 }

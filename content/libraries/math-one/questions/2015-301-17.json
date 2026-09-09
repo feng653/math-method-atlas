@@ -29,5 +29,20 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "新东方文章第3张题面图第17题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  },
+  "statement": {
+    "intro": "函数及允许取点的曲线如下。",
+    "formulas": [
+      "f(x,y)=x+y+xy",
+      "C:\\ x^2+y^2+xy=3"
+    ],
+    "tasks": [
+      "在曲线 C 上的所有点及所有单位方向中，求 f 的方向导数的最大值。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "按来源核对数学条件并重新表述题面，未转载解析。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2015/#17"
+    }
   }
 }

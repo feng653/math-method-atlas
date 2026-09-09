@@ -29,7 +29,23 @@
   ],
   "example": {
     "prompt": "自编：根据基本图形描述 y=ln(x−1)+2 的定义域、值域、单调与渐近线，并求零点。",
-    "solution": "把 ln x 右移 1、上移 2，得到域 (1,∞)、值域 R，严格递增，竖直渐近线 x=1。零点由 ln(x−1)=−2 得 x=1+e⁻²。图形不经过 y 轴，不能由平移后表达式机械宣称关于原点对称。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "把 ln x 右移 1、上移 2，得到域 (1,∞)、值域 R，严格递增，竖直渐近线 x=1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "零点由 ln(x−1)=−2 得 x=1+e⁻²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "图形不经过 y 轴，不能由平移后表达式机械宣称关于原点对称。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-function-domain",
@@ -38,5 +54,17 @@
   "topicIds": [
     "audit-function-properties"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "从熟悉的基本图像出发，平移或伸缩后，定义域、零点和渐近线会一起改变。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      }
+    ],
+    "explanation": [
+      "用变换后的表达式重新核对零点和定义域，不要保留原图像已被改变的对称性。"
+    ]
+  }
 }

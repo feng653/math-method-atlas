@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：求 f(x)=ln(x-1) 的反函数及其定义域。",
-    "solution": "原函数定义域为(1,∞)，值域为R。由y=ln(x-1)得x=1+e^y，故反函数为1+e^x，定义域R。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "对数要求 x−1>0，所以原输入只能大于一。两边取指数把对数消掉，得到 x 与 y 的反向对应，再交换变量名称。",
+        "formulas": [
+          "y=\\ln(x-1)\\ \\Longleftrightarrow\\ e^y=x-1\\ \\Longleftrightarrow\\ x=1+e^y"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "原函数定义域为(1,∞)，值域为R。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "由y=ln(x-1)得x=1+e^y，故反函数为1+e^x，定义域R。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-chain-log-differentiation",
@@ -27,5 +45,21 @@
   "topicIds": [
     "limits-function-domain"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "先找表达式允许输入哪些数，再问输出哪些数；反函数是把输入和输出的对应关系倒过来。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      },
+      {
+        "symbol": "逆运算",
+        "meaning": "矩阵 A⁻¹ 表示逆矩阵；普通数的 −1 次幂表示倒数。反函数需结合函数记号区分。"
+      }
+    ],
+    "explanation": [
+      "对数真数必须大于零；求出反解后，还要把原函数值域写成反函数定义域。"
+    ]
+  }
 }

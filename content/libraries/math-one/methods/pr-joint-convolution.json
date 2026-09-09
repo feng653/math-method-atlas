@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：两个独立 (0,1) 均匀变量之和的密度。",
-    "solution": "积分区间为 max(0,z−1)<x<min(1,z)，故 0<z<1 为 z，1≤z<2 为 2−z，其他为 0。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "若和为 z，另一个变量就是 z−x。要求 x 与 z−x 都在零与一之间，交集确定积分区间；密度乘积为一，积分就是区间长度。",
+        "formulas": [
+          "0<x<1,\\quad0<z-x<1\\quad\\Longrightarrow\\quad\\max(0,z-1)<x<\\min(1,z)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "积分区间为 max(0,z−1)<x<min(1,z)，故 0<z<1 为 z，1≤z<2 为 2−z，其他为 0。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-joint-max-min",
@@ -27,5 +40,25 @@
   "topicIds": [
     "pr-joint-function-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "独立两变量的和取某个值时，一个变量取 x，另一个就必须取总和减 x，再把所有可能 x 累积。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      }
+    ],
+    "explanation": [
+      "积分上下限由两个变量各自的范围共同约束，通常需要按总和值分段。"
+    ]
+  }
 }

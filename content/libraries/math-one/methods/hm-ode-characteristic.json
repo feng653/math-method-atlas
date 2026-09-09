@@ -18,7 +18,23 @@
   ],
   "example": {
     "prompt": "自编：求 y‴−3y″+3y′−y=0 的通解，并比较二阶 y″−2y′+y=0。",
-    "solution": "三阶特征多项式 (r−1)³，故 y=(C₁+C₂x+C₃x²)eˣ，有三个独立常数。二阶对应 (r−1)²，通解 (C₁+C₂x)eˣ；漏掉重根所需的 x 幂会丢解。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "三阶特征多项式 (r−1)³，故 y=(C₁+C₂x+C₃x²)eˣ，有三个独立常数。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "二阶对应 (r−1)²，通解 (C₁+C₂x)eˣ；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "漏掉重根所需的 x 幂会丢解。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-undetermined"
@@ -26,5 +42,17 @@
   "topicIds": [
     "ode-ode-characteristic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "指数函数求导后仍是自身的倍数，因此常系数方程可以先用指数试解，把微分变成多项式运算。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      }
+    ],
+    "explanation": [
+      "重根需要额外乘 x 的不同幂，才能提供方程阶数要求的独立解。"
+    ]
+  }
 }

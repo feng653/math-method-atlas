@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：求y=(2/3)x^{3/2}在[0,3]的弧长。",
-    "solution": "y'=√x，L=∫₀³√(1+x)dx=(2/3)[(1+x)^{3/2}]₀³=14/3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先按幂函数法则求导，系数 2/3 与指数 3/2 抵消。曲线小段的水平长度为 dx，竖直变化约为 y′dx，因此由勾股定理写出弧长微元。",
+        "formulas": [
+          "y'=\\frac23\\cdot\\frac32x^{1/2}=\\sqrt x;\\quad \\mathrm ds=\\sqrt{1+(y')^2}\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "y'=√x，L=∫₀³√(1+x)dx=(2/3)[(1+x)^{3/2}]₀³=14/3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-integral-area-volume",
@@ -28,5 +41,21 @@
   "topicIds": [
     "integrals-arc-work-integral"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把曲线切成很短的小段，每段近似直线，用勾股定理求长度，再累加起来；弧长积分中的根号就来自这一步。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "先求曲线斜率，再代入弧长微元，不能把横坐标区间长度直接当作曲线长度。"
+    ]
+  }
 }

@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：用微分近似√4.04。",
-    "solution": "取a=4、Δx=0.04，f(4)=2、f'(4)=1/4，近似值2+0.01=2.01。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "选择附近容易开方的四作基点，自变量增量是 0.04。根号函数在四的导数为四分之一，因此函数增量近似为 0.01。",
+        "formulas": [
+          "f'(x)=\\frac1{2\\sqrt x},\\quad \\Delta y\\approx f'(4)\\cdot0.04=0.01"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "取a=4、Δx=0.04，f(4)=2、f'(4)=1/4，近似值2+0.01=2.01。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-derivative-definition",
@@ -27,5 +40,17 @@
   "topicIds": [
     "derivatives-differential-approximation"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "在已知点附近，用切线代替弯曲的函数图像，就能把较难的函数值近似为一次运算。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      }
+    ],
+    "explanation": [
+      "增量必须相对较小，最后写近似号；线性近似值不等于精确值。"
+    ]
+  }
 }

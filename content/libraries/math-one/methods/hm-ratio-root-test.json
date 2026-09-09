@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：判断Σ(n=1到∞)n/2^n。",
-    "solution": "比值为(n+1)/(2n)→1/2<1，级数收敛。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "把第 n+1 项除以第 n 项，二的幂次相消后留下二分之一，再乘一个趋于一的因子。",
+        "formulas": [
+          "\\frac{a_{n+1}}{a_n}=\\frac{(n+1)/2^{n+1}}{n/2^n}=\\frac{n+1}{2n}\\longrightarrow\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "比值为(n+1)/(2n)→1/2<1，级数收敛。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-series-basic",
@@ -28,5 +41,21 @@
   "topicIds": [
     "series-ratio-root-test"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "正项级数中若后项长期像前项乘一个小于一的比例，就可以和收敛的几何级数类比。",
+    "symbols": [
+      {
+        "symbol": "级数看部分和",
+        "meaning": "无穷级数的和是部分和序列的极限。通项趋于零只是收敛的必要条件，例如调和级数通项趋零但级数发散。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      }
+    ],
+    "explanation": [
+      "极限等于一时判别失效，需要换方法，而不是直接宣布收敛或发散。"
+    ]
+  }
 }

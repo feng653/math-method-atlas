@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求 lim(x→0) ln(1+2x)/sin(3x)。",
-    "solution": "ln(1+2x)与2x等价，sin(3x)与3x等价，商的极限为2/3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "把对数与正弦各自配成标准极限，剩余常数是 2/3。这样能明确说明两个替换为何可以同时使用。",
+        "formulas": [
+          "\\frac{\\ln(1+2x)}{\\sin(3x)}=\\frac{\\ln(1+2x)}{2x}\\cdot\\frac{3x}{\\sin(3x)}\\cdot\\frac23"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "ln(1+2x)与2x等价，sin(3x)与3x等价，商的极限为2/3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-taylor-limit",
@@ -27,5 +40,17 @@
   "topicIds": [
     "limits-equivalent-infinitesimal"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "两个量都趋于零时，若它们的比趋于一，就能在乘除结构中用较简单的量替代复杂的量。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      }
+    ],
+    "explanation": [
+      "先看趋近点，再检查替换发生在乘除还是相减中；相减时主项可能消失，不能机械替换。"
+    ]
+  }
 }

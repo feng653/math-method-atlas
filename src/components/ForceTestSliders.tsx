@@ -7,7 +7,7 @@ export const testForces = { ...defaultPhysics, frequency: 30, dampingRatio: 3,
 
 export function ForceTestSliders() {
   const [value, setValue] = useState(testForces.frequency);
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const percent = Math.round(value / 30 * 100);
   return <div className="connection-control">
     <button className="tension-toggle" aria-label={collapsed ? '展开连接松紧' : '收起连接松紧'}

@@ -24,7 +24,28 @@
   ],
   "example": {
     "prompt": "自编：求 H(x)=x²sin x/(1+x)、K(x)=arcsin(2x) 及 x>0 时 xˣ 的导数。",
-    "solution": "x≠−1 时 H′=[(2xsin x+x²cos x)(1+x)−x²sin x]/(1+x)²；在 x=0 直接公式给 H′=0，无需取对数。|x|<1/2 时 K′=2/√(1−4x²)，链式因子 2 不能漏。ln(xˣ)=x ln x，故 (xˣ)′=xˣ(ln x+1)。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "x≠−1 时 H′=[(2xsin x+x²cos x)(1+x)−x²sin x]/(1+x)²；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "在 x=0 直接公式给 H′=0，无需取对数。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "|x|<1/2 时 K′=2/√(1−4x²)，链式因子 2 不能漏。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "ln(xˣ)=x ln x，故 (xˣ)′=xˣ(ln x+1)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-parametric-derivative",
@@ -35,5 +56,21 @@
   "topicIds": [
     "derivatives-chain-log-differentiation"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "复杂求导可以按表达式结构拆开：和、积、商分别用对应规则，复合函数从外到内求导。变量同时在底数和指数时，取对数能把指数移下来。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "对数要求真数为正；普通乘商求导能直接做的地方，不必强行取对数。"
+    ]
+  }
 }

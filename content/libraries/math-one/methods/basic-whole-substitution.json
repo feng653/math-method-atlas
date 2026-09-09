@@ -23,7 +23,23 @@
   ],
   "example": {
     "prompt": "推演示例：z=(x²+y²)f(x²+y²)，为什么可以考虑整体代换？",
-    "solution": "先记t=x²+y²，得到z=tf(t)。直接求导会反复出现f+tf′和2f′+tf″，恰为(tf)′和(tf)″；因此令g=tf是对已出现结构命名，不是猜答案。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "先记t=x²+y²，得到z=tf(t)。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "直接求导会反复出现f+tf′和2f′+tf″，恰为(tf)′和(tf)″；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "因此令g=tf是对已出现结构命名，不是猜答案。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-multivariable-chain",
@@ -32,5 +48,17 @@
   "topicIds": [
     "basic-thinking-whole"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "同一组合反复出现时，把它当成一个新变量或函数，能减少符号并暴露导数关系。",
+    "symbols": [
+      {
+        "symbol": "先分清目标和条件",
+        "meaning": "目标是需要求出或证明的结论，条件是已经知道的信息。先分别列出两者，再寻找能连接它们的定义、等式或定理。"
+      }
+    ],
+    "explanation": [
+      "换元后仍需把原目标翻译成新变量的范围与初值，最后再换回。"
+    ]
+  }
 }

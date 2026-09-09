@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：X,Y 独立，方差为 2、3，求 Var(2X−Y)。",
-    "solution": "独立使协方差为 0，结果 4×2+3=11。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "系数二进入方差时变四，系数负一进入后变一；因为 X、Y 独立，协方差项为零。",
+        "formulas": [
+          "\\operatorname{Var}(2X-Y)=4\\operatorname{Var}(X)+\\operatorname{Var}(Y)-4\\operatorname{Cov}(X,Y)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "独立使协方差为 0，结果 4×2+3=11。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-moment-correlation",
@@ -27,5 +40,25 @@
   "topicIds": [
     "pr-variance-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "方差衡量绕均值的波动，计算时常用二阶矩减均值平方。",
+    "symbols": [
+      {
+        "symbol": "期望与方差",
+        "meaning": "期望描述平均水平，方差描述围绕均值的平方偏离。计算方差可用二阶矩减去均值平方，但要先确认这些量存在。"
+      },
+      {
+        "symbol": "Cov(X,Y)",
+        "meaning": "协方差：E(XY)−E(X)E(Y)，衡量两个变量的线性共同变化。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      }
+    ],
+    "explanation": [
+      "线性组合的系数进入方差时要平方；不独立时还需保留协方差交叉项。"
+    ]
+  }
 }

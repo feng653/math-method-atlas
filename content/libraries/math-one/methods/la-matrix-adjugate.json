@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：求 [[1,2],[3,4]] 的伴随矩阵。",
-    "solution": "伴随矩阵为 [[4,−2],[−3,1]]；与原矩阵相乘得 −2I。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "四个代数余子式依次为 4、−3、−2、1；排成矩阵后还要转置，得到伴随矩阵，不能忘记这最后一步。",
+        "formulas": [
+          "A^*=\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "伴随矩阵为 [[4,−2],[−3,1]]；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "与原矩阵相乘得 −2I。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-matrix-elementary",
@@ -27,5 +45,25 @@
   "topicIds": [
     "la-inverse-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "伴随矩阵由代数余子式转置组成，它与原矩阵相乘会得到行列式倍数的单位矩阵。",
+    "symbols": [
+      {
+        "symbol": "矩阵与乘法",
+        "meaning": "矩阵表示线性关系。乘积 AB 要求 A 的列数等于 B 的行数；通常 AB 与 BA 不相等，甚至后者可能无定义。"
+      },
+      {
+        "symbol": "det A",
+        "meaning": "方阵 A 的行列式，是一个数；行列式不为零等价于方阵可逆。"
+      },
+      {
+        "symbol": "逆运算",
+        "meaning": "矩阵 A⁻¹ 表示逆矩阵；普通数的 −1 次幂表示倒数。反函数需结合函数记号区分。"
+      }
+    ],
+    "explanation": [
+      "二阶时可用交换对角元素、非对角元素变号来算，再乘回核对。"
+    ]
+  }
 }

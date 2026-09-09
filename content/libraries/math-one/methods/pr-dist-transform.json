@@ -20,7 +20,30 @@
   ],
   "example": {
     "prompt": "自编例题：X 在 (−1,1) 均匀，Y=X²，求 FY。",
-    "solution": "y<0 时为 0；0≤y≤1 时 P(−√y≤X≤√y)=√y；y>1 时为 1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "平方后取值在零与一之间。当 y 在这个范围内，X²≤y 等价于 X 落在两根之间；区间长度为 2√y，总长度为二。",
+        "formulas": [
+          "P(X^2\\le y)=P(-\\sqrt y\\le X\\le\\sqrt y)=\\frac{2\\sqrt y}2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "y<0 时为 0；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "0≤y≤1 时 P(−√y≤X≤√y)=√y；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "y>1 时为 1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-dist-cdf",
@@ -29,5 +52,17 @@
   "topicIds": [
     "pr-function-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "想知道变换后的变量不超过 y 的概率，先把这个事件翻译回原变量的取值范围。",
+    "symbols": [
+      {
+        "symbol": "随机变量与分布函数",
+        "meaning": "随机变量把试验结果映射成数。分布函数 F(x) 表示取值不超过 x 的概率，必须单调不减、右连续，并满足两端极限。"
+      }
+    ],
+    "explanation": [
+      "平方会把正负两段合并，不能只保留正根；还要先分清新变量的取值范围。"
+    ]
+  }
 }

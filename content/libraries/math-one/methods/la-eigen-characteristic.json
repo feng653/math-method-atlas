@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：A=[[2,1],[0,3]] 的特征值及向量。",
-    "solution": "特征值 2、3；对应向量分别为 (1,0)、(1,1) 的非零倍数。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "三角矩阵的特征多项式直接来自对角项。特征值二对应方程 y=0；特征值三对应 −x+y=0，分别得到两条非零方向。",
+        "formulas": [
+          "\\det(\\lambda I-A)=(\\lambda-2)(\\lambda-3);\\quad\\lambda=2:\\ y=0;\\quad\\lambda=3:\\ y=x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "特征值 2、3；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "对应向量分别为 (1,0)、(1,1) 的非零倍数。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-eigen-diagonalization",
@@ -28,5 +46,25 @@
   "topicIds": [
     "la-eigen-compute"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "寻找被矩阵作用后只缩放、不转向的非零向量，这些方向就是特征向量。",
+    "symbols": [
+      {
+        "symbol": "特征值与特征向量",
+        "meaning": "矩阵作用后，某个非零向量的方向不变或反向，只改变倍数，这个倍数就是特征值。零向量不算特征向量。"
+      },
+      {
+        "symbol": "det A",
+        "meaning": "方阵 A 的行列式，是一个数；行列式不为零等价于方阵可逆。"
+      },
+      {
+        "symbol": "λ",
+        "meaning": "特征值：矩阵作用后，特征向量被放大的倍数。"
+      }
+    ],
+    "explanation": [
+      "先解特征方程得到缩放倍数，再对每个倍数解齐次方程，零向量不能算特征向量。"
+    ]
+  }
 }

@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：x=t²，y=t³，t>0，求二阶导。",
-    "solution": "一阶导为3t/2，再对t求导得3/2，除以2t，二阶导为3/(4t)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先用 y 对参数的导数除以 x 对参数的导数得到斜率。对斜率再按参数求导后，仍要除以 dx/dt 才是对 x 的导数。",
+        "formulas": [
+          "\\frac{\\mathrm dy}{\\mathrm dx}=\\frac{3t^2}{2t}=\\frac{3t}2;\\quad\\frac{\\mathrm d^2y}{\\mathrm dx^2}=\\frac{3/2}{2t}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "一阶导为3t/2，再对t求导得3/2，除以2t，二阶导为3/(4t)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-chain-log-differentiation",
@@ -27,5 +40,21 @@
   "topicIds": [
     "derivatives-parametric-derivative"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "x 和 y 都由参数决定时，曲线斜率是它们对参数的变化率之比。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "二阶导数还要把对参数的导数除以 x 的参数导数，不能直接连续对参数求两次导。"
+    ]
+  }
 }

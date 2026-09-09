@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：在基 (1,1)、(1,−1) 下求 (3,1) 的坐标。",
-    "solution": "c1+c2=3，c1−c2=1，得坐标 (2,1)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "用未知系数 c₁、c₂ 组合两基向量，逐坐标比较得到和为三、差为一。两式相加得 c₁=2，再求 c₂。",
+        "formulas": [
+          "c_1(1,1)+c_2(1,-1)=(3,1);\\quad2c_1=4"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "c1+c2=3，c1−c2=1，得坐标 (2,1)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-vector-basis",
@@ -28,5 +41,17 @@
   "topicIds": [
     "la-vector-basis-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "坐标是在指定基下表示向量的系数，换了基，同一个向量的坐标也会变。",
+    "symbols": [
+      {
+        "symbol": "线性组合与相关",
+        "meaning": "线性组合是若干向量乘数后相加。若存在不全为零的系数使组合为零，这组向量线性相关。"
+      }
+    ],
+    "explanation": [
+      "把基向量按列排成矩阵，解系数方程，最后乘回原向量核对。"
+    ]
+  }
 }

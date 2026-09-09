@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求∫dx/√(4-x²)，|x|<2。",
-    "solution": "令x=2sin t，t∈(-π/2,π/2)，dx=2cos t dt，积分为t+C=arcsin(x/2)+C。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "设 x=2sin t，并限制 t 在正负 π/2 之间，此时 cos t 为正，根号可写成 2cos t，与 dx 中的同一因子抵消。",
+        "formulas": [
+          "\\sqrt{4-x^2}=2\\cos t,\\quad\\mathrm dx=2\\cos t\\,\\mathrm dt"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令x=2sin t，t∈(-π/2,π/2)，dx=2cos t dt，积分为t+C=arcsin(x/2)+C。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-substitution-integral",
@@ -27,5 +40,17 @@
   "topicIds": [
     "integrals-trig-substitution"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "根号中出现常数平方减变量平方时，正弦代换能用三角恒等式消去根号。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      }
+    ],
+    "explanation": [
+      "先限定角度区间，保证根号中的绝对值可正确去掉，最后反代回 x。"
+    ]
+  }
 }

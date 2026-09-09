@@ -20,5 +20,22 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "所选来源第3题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  },
+  "statement": {
+    "intro": "f(x,y) 连续。选择与下列累次积分相等的表达式。",
+    "formulas": [
+      "\\int_0^1\\mathrm dy\\int_{-\\sqrt{1-y^2}}^{1-y}f(x,y)\\,\\mathrm dx"
+    ],
+    "tasks": [
+      "从四个选项中选出正确变换。"
+    ],
+    "options": [
+      "\\int_0^1\\mathrm dx\\int_1^{x-1}f(x,y)\\,\\mathrm dy+\\int_{-1}^0\\mathrm dx\\int_0^{\\sqrt{1-x^2}}f(x,y)\\,\\mathrm dy",
+      "\\int_0^1\\mathrm dx\\int_0^{1-x}f(x,y)\\,\\mathrm dy+\\int_{-1}^0\\mathrm dx\\int_{-\\sqrt{1-x^2}}^0f(x,y)\\,\\mathrm dy",
+      "\\int_0^{\\pi/2}\\mathrm d\\theta\\int_0^{1/(\\cos\\theta+\\sin\\theta)}f(r\\cos\\theta,r\\sin\\theta)\\,\\mathrm dr+\\int_{\\pi/2}^{\\pi}\\mathrm d\\theta\\int_0^1f(r\\cos\\theta,r\\sin\\theta)\\,\\mathrm dr",
+      "\\int_0^{\\pi/2}\\mathrm d\\theta\\int_0^{1/(\\cos\\theta+\\sin\\theta)}f(r\\cos\\theta,r\\sin\\theta)r\\,\\mathrm dr+\\int_{\\pi/2}^{\\pi}\\mathrm d\\theta\\int_0^1f(r\\cos\\theta,r\\sin\\theta)r\\,\\mathrm dr"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "按来源核对条件及选项，重新表述题面，未转载解析。"
   }
 }

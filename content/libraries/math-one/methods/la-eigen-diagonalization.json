@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：A=[[2,1],[0,3]] 对角化。",
-    "solution": "取 P=[[1,1],[0,1]]，则 P⁻¹AP=diag(2,3)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先取特征值二的向量 (1,0)，再取特征值三的向量 (1,1)。两向量不共线，作为列组成的矩阵可逆，且 A 对两列分别放大二倍和三倍。",
+        "formulas": [
+          "P=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix},\\quad AP=P\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "取 P=[[1,1],[0,1]]，则 P⁻¹AP=diag(2,3)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-eigen-similarity",
@@ -27,5 +40,21 @@
   "topicIds": [
     "la-diagonalization-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "若能找到足够多独立的特征方向，换到这些方向组成的坐标系后，矩阵就只做各方向独立缩放。",
+    "symbols": [
+      {
+        "symbol": "特征值与特征向量",
+        "meaning": "矩阵作用后，某个非零向量的方向不变或反向，只改变倍数，这个倍数就是特征值。零向量不算特征向量。"
+      },
+      {
+        "symbol": "逆运算",
+        "meaning": "矩阵 A⁻¹ 表示逆矩阵；普通数的 −1 次幂表示倒数。反函数需结合函数记号区分。"
+      }
+    ],
+    "explanation": [
+      "特征向量作为列组成 P，列的顺序必须与对角特征值的顺序一致。"
+    ]
+  }
 }

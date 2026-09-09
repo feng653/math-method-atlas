@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：解y'=xy，y(0)=2。",
-    "solution": "分离得ln|y|=x²/2+C，结合初值y=2e^{x²/2}。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "初值为正，可先在初值附近除以 y。左边只含 y、右边只含 x，两边积分，再取指数并代入初值。",
+        "formulas": [
+          "\\frac{\\mathrm dy}y=x\\,\\mathrm dx\\quad\\Longrightarrow\\quad\\ln|y|=\\frac{x^2}2+C"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "分离得ln|y|=x²/2+C，结合初值y=2e^{x²/2}。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-homogeneous",
@@ -27,5 +40,25 @@
   "topicIds": [
     "ode-ode-separable"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "能把所有 y 放到一边、所有 x 放到另一边时，两边分别积分即可。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "分离过程中若除以含 y 的因子，要检查它为零时是否也是原方程的解。"
+    ]
+  }
 }

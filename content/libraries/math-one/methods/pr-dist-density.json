@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：X~U(2,6)，写CDF并求P(3<X≤5)、均值方差。",
-    "solution": "CDF为0（x<2）、(x−2)/4（2≤x<6）、1（x≥6）；概率1/2，均值4，方差4/3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "均匀分布密度是区间长度四的倒数。三到五长度为二，所以概率为二除以四；CDF 则按累积长度随 x 分段计算。",
+        "formulas": [
+          "f(x)=\\frac14\\quad(2<x<6);\\quad P(3<X\\le5)=\\int_3^5\\frac14\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "CDF为0（x<2）、(x−2)/4（2≤x<6）、1（x≥6）；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "概率1/2，均值4，方差4/3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-dist-exponential",
@@ -28,5 +46,33 @@
   "topicIds": [
     "pr-continuous-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "连续变量单点概率为零，区间概率由密度下的面积给出；分布函数是从左端累积的面积。",
+    "symbols": [
+      {
+        "symbol": "随机变量与分布函数",
+        "meaning": "随机变量把试验结果映射成数。分布函数 F(x) 表示取值不超过 x 的概率，必须单调不减、右连续，并满足两端极限。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      },
+      {
+        "symbol": "E(X)",
+        "meaning": "随机变量 X 的期望，是按概率加权的平均值；并非某一次观测值。"
+      }
+    ],
+    "explanation": [
+      "先写清密度非零区间，积分时不要把区间外也按同一个式子计算。"
+    ]
+  }
 }

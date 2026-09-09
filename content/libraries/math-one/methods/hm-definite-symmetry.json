@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求∫₀^π x sin x dx。",
-    "solution": "设I为原积分，代换x=π-t得I=∫₀^π(π-t)sin t dt，故2I=π∫₀^πsin t dt=2π，I=π。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "令 x=π−t，正弦值不变，区间反向产生的负号由交换上下限消掉。把换元后的式子与原积分相加，x 与 π−x 合起来正好为 π。",
+        "formulas": [
+          "2I=\\int_0^\\pi[x+(\\pi-x)]\\sin x\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "设I为原积分，代换x=π-t得I=∫₀^π(π-t)sin t dt，故2I=π∫₀^πsin t dt=2π，I=π。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-integration-by-parts",
@@ -27,5 +40,21 @@
   "topicIds": [
     "integrals-definite-symmetry"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "同一个积分换一个方向描述，往往可以与原式相加，把不对称的部分抵消掉。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "换元后上下限与微分的负号必须一起处理；最后得到的是两个原积分的和，要再除以二。"
+    ]
+  }
 }

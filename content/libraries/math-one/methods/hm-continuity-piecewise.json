@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：f(x)=sin x/x(x≠0)，f(0)=a，何时连续？",
-    "solution": "两侧极限均为1，故a=1时连续；a≠1时0为可去间断点。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "零点附近但不等于零时，函数由 sin x/x 决定，它的左右极限都是一。单独指定的 f(0) 不会改变这个极限，只决定图像是否接上。",
+        "formulas": [
+          "\\lim_{x\\to0^-}f(x)=\\lim_{x\\to0^+}f(x)=1=f(0)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "两侧极限均为1，故a=1时连续；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "a≠1时0为可去间断点。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-intermediate-value",
@@ -27,5 +45,21 @@
   "topicIds": [
     "limits-continuity-piecewise"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "分段点左右使用不同表达式，要让图像接上，左边趋近的数、右边趋近的数和该点函数值必须相同。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      }
+    ],
+    "explanation": [
+      "求极限时使用分段点两侧的表达式，最后才用等于分段点的那一段确定函数值。"
+    ]
+  }
 }

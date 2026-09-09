@@ -20,7 +20,33 @@
   ],
   "example": {
     "prompt": "自编：分别解 y‴=6、y″=y′/x（x>0），并在非零斜率区间解 y″=2y(y′)²。",
-    "solution": "第一式连续积分得 y=x³+C₁x²+C₂x+C₃。第二式令 p=y′，p′=p/x，得 p=Cx，y=Cx²/2+D。第三式令 p=p(y)，p dp/dy=2yp²；非零 p 给 dp/p=2y dy，p=Ce^{y²}，故 ∫₀ʸe^{−s²}ds=Cx+D（C≠0）。第三式另有任意常值解。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "第一式连续积分得 y=x³+C₁x²+C₂x+C₃。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第二式令 p=y′，p′=p/x，得 p=Cx，y=Cx²/2+D。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第三式令 p=p(y)，p dp/dy=2yp²；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "非零 p 给 dp/p=2y dy，p=Ce^{y²}，故 ∫₀ʸe^{−s²}ds=Cx+D（C≠0）。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第三式另有任意常值解。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-separable",
@@ -29,5 +55,21 @@
   "topicIds": [
     "ode-ode-reduction"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "若方程缺少某个变量，可以把导数作为新未知量，减少需要处理的阶数。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "缺 y 与缺 x 对应不同换法；除以新未知量时仍须补查被排除的常值解。"
+    ]
+  }
 }

@@ -20,7 +20,35 @@
   ],
   "example": {
     "prompt": "自编例题：(X,Y)在三角域0<y<x<2均匀分布，求联合密度、fX及P(Y<X/2)。",
-    "solution": "面积2，联合密度在域内1/2；固定0<x<2时截线长x，fX=x/2，其他为0。事件面积是原面积一半，概率1/2；X并非均匀分布。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "三角形底和高都是二，面积为二，所以均匀联合密度是二分之一。固定 x 后切片长 x，边缘密度因此为 x/2。",
+        "formulas": [
+          "f_X(x)=\\int_0^x\\frac12\\,\\mathrm dy=\\frac x2\\quad(0<x<2)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "面积2，联合密度在域内1/2；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "固定0<x<2时截线长x，fX=x/2，其他为0。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "事件面积是原面积一半，概率1/2；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "X并非均匀分布。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-joint-conditional",
@@ -29,5 +57,33 @@
   "topicIds": [
     "pr-joint-marginal-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "想只看一个变量，就把另一个变量所有可能取值的联合概率累加掉。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      }
+    ],
+    "explanation": [
+      "固定 x 后先找 y 的允许范围，这个范围往往随 x 变化。"
+    ]
+  }
 }

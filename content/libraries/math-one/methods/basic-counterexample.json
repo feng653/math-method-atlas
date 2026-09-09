@@ -17,12 +17,37 @@
     "必要条件满足不代表充分；反例必须同时满足原假设。"
   ],
   "example": {
-    "prompt": "自编推演：两个实对称矩阵能否通过正交变换互相表示？",
-    "solution": "先比较迹等必要不变量；迹不同即可否定，迹相同仍需继续判断。"
+    "prompt": "自编例题：A=diag(1,2) 与 B=diag(1,3) 能否通过正交换基相互表示？",
+    "solution": [
+      {
+        "title": "先比较必要不变量",
+        "text": "正交换基也是相似变换，会保留迹。A 的对角元素和为三，B 的为四，已经不相等。",
+        "formulas": [
+          "\\operatorname{tr}A=3\\ne4=\\operatorname{tr}B"
+        ]
+      },
+      {
+        "title": "回到问题作结论",
+        "text": "不存在满足 B=QᵀAQ 的正交矩阵 Q。若迹相同也只能说明这一项没排除，不能反过来当作充分条件。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [],
   "topicIds": [
     "basic-counterexample-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "要否定普遍命题，只需找到一个满足前提却不满足结论的例子；必要条件不满足也能快速排除。",
+    "symbols": [
+      {
+        "symbol": "先分清目标和条件",
+        "meaning": "目标是需要求出或证明的结论，条件是已经知道的信息。先分别列出两者，再寻找能连接它们的定义、等式或定理。"
+      }
+    ],
+    "explanation": [
+      "必要条件通过不等于结论成立，反例必须同时核对前提与被否定的结论。"
+    ]
+  }
 }

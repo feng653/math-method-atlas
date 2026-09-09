@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求 lim(x→0)(e^x-1-x)/x²。",
-    "solution": "e^x=1+x+x²/2+o(x²)，分子为x²/2+o(x²)，故极限1/2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "指数展开的常数项与一次项被题目减掉，因此不能只展开到一次项。保留二次项后，除以 x² 就直接出现常数二分之一。",
+        "formulas": [
+          "e^x-1-x=\\frac{x^2}2+o(x^2)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "e^x=1+x+x²/2+o(x²)，分子为x²/2+o(x²)，故极限1/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-equivalent-infinitesimal",
@@ -27,5 +40,25 @@
   "topicIds": [
     "limits-taylor-limit"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "相减常使低阶项抵消，展开到第一个没有抵消的项，才能看清商的主导部分。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "分母是几阶，就至少检查分子到对应阶，并保留余项来说明忽略部分确实更小。"
+    ]
+  }
 }

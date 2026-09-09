@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求n≥1时(xe^x)的n阶导。",
-    "solution": "x的0阶和1阶导非零，故结果为xe^x+ne^x=(x+n)e^x。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "n 次求导中，若有两次或更多次落在 x 上就得到零。只剩一次也不落在 x 上，以及恰好一次落在 x 上的 n 种分配。",
+        "formulas": [
+          "(xe^x)^{(n)}=xe^x+\\binom n1\\cdot1\\cdot e^x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "x的0阶和1阶导非零，故结果为xe^x+ne^x=(x+n)e^x。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-chain-log-differentiation",
@@ -27,5 +40,21 @@
   "topicIds": [
     "derivatives-leibniz-high-derivative"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "乘积求高阶导时，每次求导会落在不同因子上，组合数记录这些分配方式。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "多项式求到足够高阶会变为零，因此真正需要保留的项往往很少。"
+    ]
+  }
 }

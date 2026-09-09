@@ -22,7 +22,28 @@
   ],
   "example": {
     "prompt": "自编例题：独立同分布样本n=3，总体均值μ、有限方差σ²，用T=X̄估计μ；观测1,2,3。区分估计量与估计值并求偏差、MSE。",
-    "solution": "估计量T=(X₁+X₂+X₃)/3，估计值t=2。ET=μ，故偏差0；独立性给Var(T)=σ²/3，MSE也是σ²/3。t=2不意味着μ必为2。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "估计量T=(X₁+X₂+X₃)/3，估计值t=2。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "ET=μ，故偏差0；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "独立性给Var(T)=σ²/3，MSE也是σ²/3。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "t=2不意味着μ必为2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-estimate-consistency",
@@ -31,5 +52,21 @@
   "topicIds": [
     "pr-estimator-properties-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "估计量是抽样前的计算规则，估计值是拿到一次数据后算出的数；无偏讨论前者的期望。",
+    "symbols": [
+      {
+        "symbol": "点估计",
+        "meaning": "点估计用样本计算一个数估计未知参数。无偏性讨论重复抽样平均是否等于参数；相合性讨论样本量增大时是否接近参数。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      }
+    ],
+    "explanation": [
+      "一次估计值恰好等于某个数，不表示未知参数一定等于它。"
+    ]
+  }
 }

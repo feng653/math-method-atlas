@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：判断∫₁^∞1/x² dx并求值。",
-    "solution": "截断为∫₁^R x^{-2}dx=1-1/R，R→∞得1，故收敛。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先把无穷上限换成有限的 R。x 的负二次幂的原函数是 −1/x，代入上下限后再让 R 增大。",
+        "formulas": [
+          "\\int_1^R x^{-2}\\,\\mathrm dx=\\left[-\\frac1x\\right]_1^R=1-\\frac1R"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "截断为∫₁^R x^{-2}dx=1-1/R，R→∞得1，故收敛。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-series-comparison"
@@ -26,5 +39,25 @@
   "topicIds": [
     "integrals-improper-integral"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "积分区间无穷或函数在边界无界时，先把危险位置截断，算普通积分，再取极限。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      }
+    ],
+    "explanation": [
+      "只有截断积分趋于有限数时才收敛，不能把无穷直接当普通端点代入原函数。"
+    ]
+  }
 }

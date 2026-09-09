@@ -1,3 +1,5 @@
+import { ChapterDetail } from './components/ChapterDetail';
+import { DetailResize } from './components/DetailResize';
 import { ForceTestSliders } from './components/ForceTestSliders';
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { BookOpen, ChevronDown, Compass, ListTree, Search, X } from 'lucide-react';
@@ -18,6 +20,7 @@ export default function App() {
   const [chapter, setChapter] = useState(() => readRoute().chapterId);
   const [problemTypeId, setProblemTypeId] = useState(() => readRoute().problemTypeId ?? '');
   const [routeNotice, setRouteNotice] = useState(() => readRoute().notice);
+  const [detailWidth, setDetailWidth] = useState(520);
   const [query, setQuery] = useState('');
   const [panel, setPanel] = useState<'none' | 'directory' | 'papers'>('none');
   const library = data.libraries.find((item) => item.id === libraryId) ?? data.libraries[0];
@@ -28,6 +31,8 @@ export default function App() {
   const papers = data.papers.filter((paper) => paper.libraryId === library.id);
   const results = useMemo(() => query.trim() ? searchMethods(methods, query) : [], [methods, query]);
   const typeResults = useMemo(() => query.trim() ? searchProblemTypes(problemTypes, query) : [], [problemTypes, query]);
+  const chapterDetail = !selected && !problemType && panel !== 'papers'
+    ? library.chapters.find(item => item.id === chapter) : undefined;
   const method = methods.find((item) => item.id === selected);
   useEffect(() => {
     history.replaceState(null, '', atlasRouteHash(library.id, method?.id, chapter, problemType?.id));
@@ -37,7 +42,8 @@ export default function App() {
       setSelected(route.methodId); setChapter(route.chapterId); setRouteNotice(route.notice);
       setProblemTypeId(route.problemTypeId ?? '');
       setQuery(''); setPanel('none'); };
-    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape') { setSelected(''); setProblemTypeId(''); setPanel('none'); setQuery(''); } };
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape' && !document.querySelector('dialog[open]')) {
+      setSelected(''); setProblemTypeId(''); setPanel('none'); setQuery(''); } };
     window.addEventListener('hashchange', change); window.addEventListener('keydown', escape);
     return () => { window.removeEventListener('hashchange', change); window.removeEventListener('keydown', escape); };
   }, []);
@@ -54,7 +60,7 @@ export default function App() {
     setPanel((current) => current === 'directory' ? current : 'none'); setQuery(''); setRouteNotice('');
   }
   function clearType() { setProblemTypeId(''); }
-  return <main className={method || problemType || panel === 'papers' ? 'atlas-app has-detail' : 'atlas-app'}>
+  return <main style={{ '--detail-width': `${detailWidth}px` } as React.CSSProperties} className={method || problemType || chapterDetail || panel === 'papers' ? 'atlas-app has-detail' : 'atlas-app'}>
     <AtlasGraph key={library.id} library={library} methods={methods} selected={selected} chapter={chapter}
       problemTypes={problemTypes} problemType={problemTypeId} onProblemType={selectType}
       onSelect={(id) => select(id, true)} onChapter={(id) => { clearType(); setChapter(id); setSelected(''); }} />
@@ -94,8 +100,12 @@ export default function App() {
     </nav>
     {chapter && <button className="back-overview" onClick={() => { clearType(); setChapter(''); setSelected(''); }}>← 全部章节</button>}
     {chapter === 'basic-thinking' && !method && !problemType && panel === 'none' && <ThinkingCoverage library={library} data={data} />}
+    {(method || problemType || chapterDetail || panel === 'papers') && <DetailResize width={detailWidth} onChange={setDetailWidth} />}
     <Suspense fallback={<aside className="detail-panel glass-panel" role="status">正在加载内容…</aside>}>
-      {problemType && <ProblemTypeDetail type={problemType} methods={methods} questions={questions} papers={papers}
+      {chapterDetail && <ChapterDetail chapter={chapterDetail} types={problemTypes} methods={methods} onMethod={select}
+        onSelect={selectType} onClose={() => setChapter('')} />}
+      {problemType && !method && <ProblemTypeDetail type={problemType} methods={methods} questions={questions} papers={papers}
+        concepts={library.chapters.find(item => item.id === problemType.chapterId)?.concepts}
         samples={data.thinkingSamples}
         onSelect={select} onClose={clearType} />}
       {method && <MethodDetail method={method} methods={methods} questions={questions} papers={papers}

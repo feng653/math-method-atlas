@@ -19,7 +19,23 @@
   ],
   "example": {
     "prompt": "自编：求 y″−y=2 的通解，并用 y(0)=y′(0)=0 求特解。为何 eˣ、2eˣ 不够？",
-    "solution": "齐次解 eˣ、e⁻ˣ 的 W=−2≠0，非齐次可取 yp=−2，故 y=C₁eˣ+C₂e⁻ˣ−2。初值给 C₁+C₂=2、C₁−C₂=0，得 y=eˣ+e⁻ˣ−2。eˣ 与 2eˣ 线性相关，其任意组合只有一个独立系数，不能给出二阶齐次通解。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "齐次解 eˣ、e⁻ˣ 的 W=−2≠0，非齐次可取 yp=−2，故 y=C₁eˣ+C₂e⁻ˣ−2。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "初值给 C₁+C₂=2、C₁−C₂=0，得 y=eˣ+e⁻ˣ−2。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "eˣ 与 2eˣ 线性相关，其任意组合只有一个独立系数，不能给出二阶齐次通解。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-characteristic",
@@ -28,5 +44,21 @@
   "topicIds": [
     "ode-linear-ode-structure"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "非齐次线性方程的解，可以拆成一个负责右端的特解，加上齐次方程的全部解。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "齐次通解需要足够多的线性无关解；同一个解的倍数不能算新的独立方向。"
+    ]
+  }
 }

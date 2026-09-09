@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求 x+y=2 的通解。",
-    "solution": "特解取 (2,0)，齐次基础解取 (−1,1)，通解为 (2−t,t)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "给 y 任意值 t，x 就必须是 2−t。也可以先取一个解 (2,0)，再加上不会改变坐标和的方向 (−1,1)。",
+        "formulas": [
+          "(x,y)=(2-t,t)=(2,0)+t(-1,1)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "特解取 (2,0)，齐次基础解取 (−1,1)，通解为 (2−t,t)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-system-homogeneous",
@@ -27,5 +40,21 @@
   "topicIds": [
     "la-system-structure"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "任意两个非齐次解的差满足齐次方程，所以全部解等于一个特解加上所有齐次解。",
+    "symbols": [
+      {
+        "symbol": "解是同时满足所有方程的向量",
+        "meaning": "线性方程组可写成 Ax=b。先判断是否有解，再区分唯一解或无穷多解。行变换不会改变方程组的解集。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "先找一个满足右端的点，再加入不会改变右端的自由方向。"
+    ]
+  }
 }

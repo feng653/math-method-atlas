@@ -27,5 +27,22 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "所选来源第19题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  },
+  "statement": {
+    "intro": "f 具有二阶连续偏导数，并满足以下边界条件和积分条件。",
+    "formulas": [
+      "f(1,y)=0,\\qquad f(x,1)=0",
+      "D=\\{(x,y)\\mid0\\le x\\le1,\\;0\\le y\\le1\\}",
+      "\\iint_D f(x,y)\\,\\mathrm dx\\mathrm dy=a",
+      "I=\\iint_D xy\\frac{\\partial^2 f}{\\partial x\\partial y}(x,y)\\,\\mathrm dx\\mathrm dy"
+    ],
+    "tasks": [
+      "用 a 表示积分 I。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "按来源核对数学条件并重新表述题面，未转载解析。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2011/#19"
+    }
   }
 }

@@ -20,7 +20,25 @@
   ],
   "example": {
     "prompt": "自编例题：独立伯努利样本中 n 次有 k 次 1，求 p 的最大似然估计（p∈[0,1]）。",
-    "solution": "似然 p^k(1−p)^(n−k)，内部导数给 p̂=k/n；k=0 或 n 时最大值在边界，也满足此式。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "k 次成功贡献 p 的 k 次幂，其余失败贡献 (1−p) 的相应次幂。内部取对数求导，令导数为零即可解出 p。",
+        "formulas": [
+          "\\ell'(p)=\\frac{k}{p}-\\frac{n-k}{1-p}=0\\quad\\Longrightarrow\\quad k=np"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "似然 p^k(1−p)^(n−k)，内部导数给 p̂=k/n；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "k=0 或 n 时最大值在边界，也满足此式。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-estimate-moments",
@@ -29,5 +47,17 @@
   "topicIds": [
     "pr-point-estimation-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "在允许的参数中，选择让已观察到这组样本最可能出现的值，得到最大似然估计。",
+    "symbols": [
+      {
+        "symbol": "点估计",
+        "meaning": "点估计用样本计算一个数估计未知参数。无偏性讨论重复抽样平均是否等于参数；相合性讨论样本量增大时是否接近参数。"
+      }
+    ],
+    "explanation": [
+      "导数为零只找内部候选，参数边界与随参数变化的支持域也必须检查。"
+    ]
+  }
 }

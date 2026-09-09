@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：求y''-y=e^x的通解。",
-    "solution": "齐次根±1，e^x共振，设y_p=Axe^x，代入得2Ae^x=e^x，A=1/2；通解C₁e^x+C₂e^{-x}+xe^x/2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "齐次方程已有 eˣ 这个解，直接试 Aeˣ 会被左边消掉，所以改试 Axeˣ。求两次导并相减后只剩 2Aeˣ。",
+        "formulas": [
+          "y_p=Axe^x,\\quad y_p''-y_p=2Ae^x=e^x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "齐次根±1，e^x共振，设y_p=Axe^x，代入得2Ae^x=e^x，A=1/2；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "通解C₁e^x+C₂e^{-x}+xe^x/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-characteristic"
@@ -27,5 +45,21 @@
   "topicIds": [
     "ode-ode-undetermined"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "右端由指数、三角或多项式组成时，先猜同类形式的特解，再由代入确定系数。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "λ",
+        "meaning": "公式中的参数或辅助未知数，按题目给定范围或联立条件确定。"
+      }
+    ],
+    "explanation": [
+      "若猜出的形式已属于齐次解，代入会抵消，需要乘足够次数的 x 来避开共振。"
+    ]
+  }
 }

@@ -19,7 +19,23 @@
   ],
   "example": {
     "prompt": "自编：用基本表与换元求 ∫2x cos(x²)dx、∫dx/(4+x²)，并说明 ∫dx/x 的区间限制。",
-    "solution": "令 u=x²，第一式为 sin(x²)+C。第二式令 u=x/2，得 (1/2)∫du/(1+u²)=(1/2)arctan(x/2)+C。1/x 的原函数为 ln|x|+C，但只在不跨零的区间讨论，正负两段的常数可各自不同。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "令 u=x²，第一式为 sin(x²)+C。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第二式令 u=x/2，得 (1/2)∫du/(1+u²)=(1/2)arctan(x/2)+C。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "1/x 的原函数为 ln|x|+C，但只在不跨零的区间讨论，正负两段的常数可各自不同。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-trig-substitution",
@@ -28,5 +44,25 @@
   "topicIds": [
     "integrals-substitution-integral"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把反复出现的表达式当成整体变量，同时把它的导数与微分配好，积分就可能变成基本形式。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "变量和微分必须同时替换；结果要换回原变量并加积分常数。"
+    ]
+  }
 }

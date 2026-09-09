@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：16 个独立 N(5,4) 样本，求样本均值分布。",
-    "solution": "均值分布为 N(5,4/16)=N(5,1/4)，这里第二参数是方差。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "独立正态变量的线性组合仍为正态。均值相加再除十六保持五，方差相加再除十六的平方得到四分之一。",
+        "formulas": [
+          "E\\overline X=5,\\quad\\operatorname{Var}(\\overline X)=\\frac{16\\cdot4}{16^2}=\\frac14"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "均值分布为 N(5,4/16)=N(5,1/4)，这里第二参数是方差。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-sample-chi-square",
@@ -28,5 +41,21 @@
   "topicIds": [
     "pr-normal-sampling-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "独立正态样本的均值仍是正态变量，平均以后均值不变，方差缩小到原来的样本数分之一。",
+    "symbols": [
+      {
+        "symbol": "总体、样本与统计量",
+        "meaning": "总体是待研究的分布；简单随机样本通常指独立同分布的一组观测。统计量只能依赖样本，不能含未知总体参数。"
+      },
+      {
+        "symbol": "σ",
+        "meaning": "标准差，衡量围绕均值的波动大小；σ² 表示方差。"
+      }
+    ],
+    "explanation": [
+      "记号中的第二参数写方差，不要误写成标准差。"
+    ]
+  }
 }

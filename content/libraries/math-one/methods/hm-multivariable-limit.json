@@ -22,7 +22,23 @@
   ],
   "example": {
     "prompt": "自编：说明 z=√(4−x²−y²) 的定义域、曲面及 z=1 的等高线；再判断 F=x²y/(x²+y²) 原点补 0 是否连续。",
-    "solution": "根式给域 x²+y²≤4，图形是半径 2 的上半球，值域 [0,2]。z=1 对应等高线 x²+y²=3。对 F 有 |F|≤|y|≤√(x²+y²)，故趋原点时极限 0，与补值相等，连续。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "根式给域 x²+y²≤4，图形是半径 2 的上半球，值域 [0,2]。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "z=1 对应等高线 x²+y²=3。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "对 F 有 |F|≤|y|≤√(x²+y²)，故趋原点时极限 0，与补值相等，连续。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-partial-total-differential",
@@ -31,5 +47,17 @@
   "topicIds": [
     "multivariable-multivariable-limit"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "二维点可以从无数条路径靠近目标点。证明极限存在需要覆盖所有路径，否定则找两条路径给不同结果即可。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      }
+    ],
+    "explanation": [
+      "沿坐标轴得到相同极限并不足以证明存在，统一的距离估计才覆盖所有方向。"
+    ]
+  }
 }

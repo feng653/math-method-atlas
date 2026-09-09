@@ -20,7 +20,25 @@
   ],
   "example": {
     "prompt": "自编例题：0≤x≤1 的垂直截面为边长 x 的正方形，求体积；再求 x² 在 [0,2] 上的平均值。",
-    "solution": "A(x)=x²，所以 V=1/3。另一问平均值为 (1/2)∫₀²x²dx=(1/2)·8/3=4/3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "边长 x 的正方形截面积为 x²，切片体积近似为 x²dx。第二问是函数平均值，需要把积分除以区间长度二。",
+        "formulas": [
+          "V=\\int_0^1x^2\\,\\mathrm dx;\\quad \\overline f=\\frac1{2-0}\\int_0^2x^2\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "A(x)=x²，所以 V=1/3。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "另一问平均值为 (1/2)∫₀²x²dx=(1/2)·8/3=4/3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-integral-area-volume",
@@ -29,5 +47,25 @@
   "topicIds": [
     "audit-cross-section-average"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "体积可以看成薄片体积的总和；平均值则是总累积量除以区间长度。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "切片面积和函数平均值是两种目标，分别写出所累加的量与需要除去的长度。"
+    ]
+  }
 }

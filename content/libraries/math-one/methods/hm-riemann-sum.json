@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求lim(n→∞)Σ(k=1到n)n/(n²+k²)。",
-    "solution": "每项为(1/n)/(1+(k/n)²)，转为∫₀¹1/(1+x²)dx=π/4。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "分母提取 n²，把每项写成区间宽度 1/n 乘函数在采样点 k/n 的值，就对应零到一上的定积分。",
+        "formulas": [
+          "\\frac{n}{n^2+k^2}=\\frac1n\\frac1{1+(k/n)^2};\\quad I=\\int_0^1\\frac{\\mathrm dx}{1+x^2}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "每项为(1/n)/(1+(k/n)²)，转为∫₀¹1/(1+x²)dx=π/4。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-newton-leibniz"
@@ -26,5 +39,37 @@
   "topicIds": [
     "integrals-riemann-sum"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把求和看成很多小矩形面积：找出区间、采样点和每个小段宽度，就能识别定积分。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      }
+    ],
+    "explanation": [
+      "求和项里必须配出区间宽度因子，不能只看函数形状就忽略 n 的幂。"
+    ]
+  }
 }

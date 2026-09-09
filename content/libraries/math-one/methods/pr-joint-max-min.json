@@ -18,7 +18,30 @@
   ],
   "example": {
     "prompt": "自编例题：两个独立 (0,1) 均匀变量，最大值的分布函数。",
-    "solution": "z<0 为 0；0≤z≤1 为 z²；z>1 为 1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "最大值不超过 z 要求两个变量同时不超过 z。在零到一区间内，每个变量满足的概率是 z，独立性使交集概率为乘积。",
+        "formulas": [
+          "P(\\max(X,Y)\\le z)=P(X\\le z)P(Y\\le z)=z^2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "z<0 为 0；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "0≤z≤1 为 z²；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "z>1 为 1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-joint-convolution",
@@ -27,5 +50,17 @@
   "topicIds": [
     "pr-joint-function-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "最大值不超过 z，等价于每个变量都不超过 z；独立时这些概率可以相乘。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      }
+    ],
+    "explanation": [
+      "最小值通常用所有变量都大于 z 的补事件处理，别套错最大值公式。"
+    ]
+  }
 }

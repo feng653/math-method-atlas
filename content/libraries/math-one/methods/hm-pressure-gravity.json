@@ -20,7 +20,25 @@
   ],
   "example": {
     "prompt": "自编例题：宽 1、深 2 的竖直矩形闸板顶边在水面，求一侧静水压力；质量 m 位于 x=0，均匀细杆在 [1,2]、线密度 λ，求杆对它的引力。",
-    "solution": "闸板 F=ρg∫₀²h·1 dh=2ρg。细杆的引力均沿 +x，F=Gmλ∫₁²x⁻²dx=Gmλ/2，方向 +x。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "闸板深度 h 处压力为 ρgh，小条面积为宽一乘 dh。细杆小段质量为 λdx，到质点距离为 x，每段引力都沿正 x 方向。",
+        "formulas": [
+          "\\mathrm dF_{\\rm water}=\\rho gh\\,\\mathrm dh;\\quad\\mathrm dF_{\\rm rod}=\\frac{Gm\\lambda}{x^2}\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "闸板 F=ρg∫₀²h·1 dh=2ρg。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "细杆的引力均沿 +x，F=Gmλ∫₁²x⁻²dx=Gmλ/2，方向 +x。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-arc-work-integral",
@@ -29,5 +47,29 @@
   "topicIds": [
     "audit-pressure-gravity"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把受力物体切成小块，每块的力由局部深度或距离决定，再按方向累加。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "ρ",
+        "meaning": "密度，表示单位长度、面积或体积所对应的质量，具体维度按模型确定。"
+      }
+    ],
+    "explanation": [
+      "压力随深度变，万有引力随距离平方的倒数变，先写每块的量与单位。"
+    ]
+  }
 }

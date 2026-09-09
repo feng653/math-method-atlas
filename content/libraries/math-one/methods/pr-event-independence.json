@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：两次独立抛公平硬币，A 为首枚正面，B 为两枚相同，判断独立。",
-    "solution": "P(A)=P(B)=1/2，交集仅 HH，概率 1/4，等于乘积，所以独立。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "四种等可能结果为 HH、HT、TH、TT。A 包含前两种，B 包含 HH 与 TT，交集只有 HH。",
+        "formulas": [
+          "P(A\\cap B)=\\frac14=P(A)P(B)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "P(A)=P(B)=1/2，交集仅 HH，概率 1/4，等于乘积，所以独立。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-event-bayes",
@@ -27,5 +40,17 @@
   "topicIds": [
     "pr-conditional-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "独立表示知道一个事件发生并不改变另一个事件的概率，用交集概率是否等于乘积来检验。",
+    "symbols": [
+      {
+        "symbol": "事件与概率",
+        "meaning": "事件是随机试验结果的集合。并集表示至少一个发生，交集表示同时发生，对立事件表示不发生。"
+      }
+    ],
+    "explanation": [
+      "独立与互斥不同，两个正概率互斥事件不可能独立。"
+    ]
+  }
 }

@@ -20,7 +20,28 @@
   ],
   "example": {
     "prompt": "自编：说明偏导存在未必连续、可微也未必偏导连续，并写光滑函数 x²y 在 (1,2) 的全微分。",
-    "solution": "F=xy/(x²+y²)，原点补 0，沿坐标轴偏导均为 0，但沿 y=x 极限为 1/2，故不连续也不可微。另令 G(x,y)=x²sin(1/x)（x≠0），x=0 时为 0；|G|/√(x²+y²)≤|x|→0，所以原点可微且全微分 0，但 Gx=2xsin(1/x)−cos(1/x) 在原点不连续。对 x²y，fx=2xy、fy=x² 连续，(1,2) 的全微分是 4dx+dy。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "F=xy/(x²+y²)，原点补 0，沿坐标轴偏导均为 0，但沿 y=x 极限为 1/2，故不连续也不可微。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "另令 G(x,y)=x²sin(1/x)（x≠0），x=0 时为 0；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "|G|/√(x²+y²)≤|x|→0，所以原点可微且全微分 0，但 Gx=2xsin(1/x)−cos(1/x) 在原点不连续。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "对 x²y，fx=2xy、fy=x² 连续，(1,2) 的全微分是 4dx+dy。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-multivariable-limit",
@@ -29,5 +50,17 @@
   "topicIds": [
     "multivariable-partial-total-differential"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "沿坐标轴存在变化率只是偏导存在；可微要求所有小方向都能被同一个线性表达式近似。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      }
+    ],
+    "explanation": [
+      "用反例区分偏导存在、连续、可微等概念，不能把某个充分条件误当必要条件。"
+    ]
+  }
 }

@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：A=[[t,1],[1,t]] 何时可逆？",
-    "solution": "det A=t²−1，因此实数 t≠±1 时可逆。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "二阶行列式等于主对角元素乘积减另一对角乘积。因式分解后可看出何时为零，这两个参数值会使矩阵不可逆。",
+        "formulas": [
+          "\\det A=t\\cdot t-1\\cdot1=(t-1)(t+1)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "det A=t²−1，因此实数 t≠±1 时可逆。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-det-block",
@@ -28,5 +41,21 @@
   "topicIds": [
     "la-det-parameter-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "方阵是否可逆由行列式是否为零决定，含参数时就把这个问题变成参数方程。",
+    "symbols": [
+      {
+        "symbol": "行列式是一个数",
+        "meaning": "行列式只对方阵定义。它不为零等价于矩阵可逆；交换两行改变符号，一行加另一行的倍数不改变值。"
+      },
+      {
+        "symbol": "det A",
+        "meaning": "方阵 A 的行列式，是一个数；行列式不为零等价于方阵可逆。"
+      }
+    ],
+    "explanation": [
+      "先找使行列式为零的参数，再从允许参数范围中排除这些值。"
+    ]
+  }
 }

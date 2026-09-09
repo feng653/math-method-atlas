@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：x+y=1，2x+2y=3 是否有解？",
-    "solution": "第二式减第一式 2 倍得到 0=1，系数秩 1，增广秩 2，因此无解。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "如果第一式成立，将它乘二必得到 2x+2y=2，和第二式右端三冲突。消元把这个冲突写成零等于一。",
+        "formulas": [
+          "(2x+2y)-2(x+y)=3-2\\quad\\Longrightarrow\\quad0=1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "第二式减第一式 2 倍得到 0=1，系数秩 1，增广秩 2，因此无解。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-system-cramer",
@@ -28,5 +41,21 @@
   "topicIds": [
     "la-system-solvability"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "行消元若出现零等于非零数，方程组就自相矛盾；秩比较把这种情况统一表达出来。",
+    "symbols": [
+      {
+        "symbol": "解是同时满足所有方程的向量",
+        "meaning": "线性方程组可写成 Ax=b。先判断是否有解，再区分唯一解或无穷多解。行变换不会改变方程组的解集。"
+      },
+      {
+        "symbol": "r(A)",
+        "meaning": "矩阵 A 的秩：相互独立的行或列的最大个数。"
+      }
+    ],
+    "explanation": [
+      "必须同时看系数矩阵与包含常数列的增广矩阵，不能只看左半部分。"
+    ]
+  }
 }

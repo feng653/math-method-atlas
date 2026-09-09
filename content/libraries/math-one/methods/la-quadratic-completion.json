@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：化简 x²+4xy+5y²。",
-    "solution": "令 u=x+2y,v=y，变换可逆，二次型为 u²+v²，正惯性指数 2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "交叉项 4xy 可由 (x+2y)² 产生，但该平方同时给出 4y²，原式还有 5y²，因此剩下一个 y²。",
+        "formulas": [
+          "x^2+4xy+5y^2=(x+2y)^2+y^2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令 u=x+2y,v=y，变换可逆，二次型为 u²+v²，正惯性指数 2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-quadratic-matrix",
@@ -28,5 +41,17 @@
   "topicIds": [
     "la-quadratic-reduction"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "通过配平方把交叉项吸收到新的变量中，可把二次型写成几个平方项的和差。",
+    "symbols": [
+      {
+        "symbol": "二次型",
+        "meaning": "二次型是各变量二次项和交叉项组成的齐次多项式，可写成 xᵀAx，通常选 A 为对称矩阵；交叉项系数要平均分给两个对称位置。"
+      }
+    ],
+    "explanation": [
+      "给出的换元必须可逆，才能保证新旧变量描述同一个问题。"
+    ]
+  }
 }

@@ -21,7 +21,23 @@
   ],
   "example": {
     "prompt": "自编：求H(x)=∫₀ˣ(x−t)eᵗdt的导数。",
-    "solution": "上端点项为(x−x)eˣ=0，下端点项为0；参数偏导为eᵗ，故H′(x)=∫₀ˣeᵗdt=eˣ−1。也可展开x∫eᵗ−∫teᵗ按乘积法则复核。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "上端点项为(x−x)eˣ=0，下端点项为0；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "参数偏导为eᵗ，故H′(x)=∫₀ˣeᵗdt=eˣ−1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "也可展开x∫eᵗ−∫teᵗ按乘积法则复核。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-newton-leibniz",
@@ -30,5 +46,29 @@
   "topicIds": [
     "integrals-newton-leibniz"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "参数变化既可能移动积分边界，也可能改变被积函数，两种影响都要计入导数。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "∂",
+        "meaning": "偏导符号：对指定变量求导时，把其他独立变量当作常数。"
+      }
+    ],
+    "explanation": [
+      "先写上端点项减下端点项，再加区间内的参数偏导积分，避免漏边界项。"
+    ]
+  }
 }

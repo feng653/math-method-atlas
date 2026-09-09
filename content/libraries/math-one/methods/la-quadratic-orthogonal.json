@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：对 2x²+2xy+2y² 作正交替换。",
-    "solution": "令 x=(u+v)/√2,y=(u−v)/√2，得到 3u²+v²。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "二次型矩阵是 [[2,1],[1,2]]，两个互相垂直的特征方向为 (1,1) 与 (1,−1)，单位化后用作新坐标轴。",
+        "formulas": [
+          "\\binom xy=\\frac1{\\sqrt2}\\begin{pmatrix}1&1\\\\1&-1\\end{pmatrix}\\binom uv"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令 x=(u+v)/√2,y=(u−v)/√2，得到 3u²+v²。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-quadratic-completion",
@@ -27,5 +40,25 @@
   "topicIds": [
     "la-quadratic-reduction"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "用正交特征方向作新坐标，可以消掉交叉项，同时保持长度和角度。",
+    "symbols": [
+      {
+        "symbol": "二次型",
+        "meaning": "二次型是各变量二次项和交叉项组成的齐次多项式，可写成 xᵀAx，通常选 A 为对称矩阵；交叉项系数要平均分给两个对称位置。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      },
+      {
+        "symbol": "λ",
+        "meaning": "公式中的参数或辅助未知数，按题目给定范围或联立条件确定。"
+      }
+    ],
+    "explanation": [
+      "新坐标轴必须单位化并互相垂直；普通配方换元未必是正交换元。"
+    ]
+  }
 }

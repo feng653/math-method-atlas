@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求∫x e^x dx。",
-    "solution": "取u=x、dv=e^x dx，得到xe^x-∫e^x dx=(x-1)e^x+C。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "选 x 作 u 是因为求导后变成一，选 eˣdx 作 dv 是因为积分仍是 eˣ。这样剩余积分比原来少一个 x 因子。",
+        "formulas": [
+          "u=x,\\quad \\mathrm du=\\mathrm dx,\\quad v=e^x;\\quad \\int u\\,\\mathrm dv=uv-\\int v\\,\\mathrm du"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "取u=x、dv=e^x dx，得到xe^x-∫e^x dx=(x-1)e^x+C。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-newton-leibniz",
@@ -27,5 +40,21 @@
   "topicIds": [
     "integrals-integration-by-parts"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "积分中一个因子求导会变简单、另一个容易积分时，把微分转移到更合适的一边。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "选 u 和 dv 后先算 du 与 v；最后还要完成剩下的积分并保留积分常数。"
+    ]
+  }
 }

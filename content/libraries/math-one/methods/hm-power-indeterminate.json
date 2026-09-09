@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求lim(x→0)(1+2x)^{1/x}。",
-    "solution": "在0附近底数为正，ln y=ln(1+2x)/x→2，故原极限e²。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "零点附近底数为正，可以先设原式为 y 并取对数。对数极限是二，指数函数连续，所以再取指数还原。",
+        "formulas": [
+          "\\ln y=\\frac{\\ln(1+2x)}x=2\\frac{\\ln(1+2x)}{2x}\\longrightarrow2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "在0附近底数为正，ln y=ln(1+2x)/x→2，故原极限e²。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-equivalent-infinitesimal",
@@ -27,5 +40,17 @@
   "topicIds": [
     "limits-power-indeterminate"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "未知量同时出现在底数和指数时，取对数把幂变成乘积，先研究对数的极限。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      }
+    ],
+    "explanation": [
+      "取对数前检查底数为正，最后记得通过指数函数还原原极限。"
+    ]
+  }
 }

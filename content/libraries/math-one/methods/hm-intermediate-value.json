@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：证明x³+x-1=0在(0,1)恰有一根。",
-    "solution": "F连续，F(0)=-1、F(1)=1，故存在根；F'=3x²+1>0，严格递增，根唯一。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "多项式处处连续，零与一处函数值异号，所以至少有一根。接着检查导数，它在所有点都大于零，因此不会第二次穿过横轴。",
+        "formulas": [
+          "F(0)=-1,\\quad F(1)=1;\\quad F'(x)=3x^2+1>0"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "F连续，F(0)=-1、F(1)=1，故存在根；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "F'=3x²+1>0，严格递增，根唯一。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-continuity-piecewise",
@@ -27,5 +45,17 @@
   "topicIds": [
     "limits-intermediate-value"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "连续曲线从负值走到正值，中间必然穿过零；若始终递增，就只能穿过一次。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      }
+    ],
+    "explanation": [
+      "端点异号证明存在，严格单调证明唯一，这两部分理由不能互相替代。"
+    ]
+  }
 }

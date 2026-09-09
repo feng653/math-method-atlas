@@ -21,5 +21,22 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "当前来源第4题，PDF物理第3页；完整核对题干，未见显式作答子问编号；选项不计。"
+  },
+  "statement": {
+    "intro": "f(x,y) 连续。改变积分次序后，下列哪个选项与给定积分相等？",
+    "formulas": [
+      "\\int_{-2}^2\\mathrm dx\\int_{4-x^2}^4 f(x,y)\\,\\mathrm dy"
+    ],
+    "tasks": [
+      "选择一个正确选项。"
+    ],
+    "options": [
+      "\\int_0^4\\left[\\int_{-2}^{-\\sqrt{4-y}}f(x,y)\\,\\mathrm dx+\\int_{\\sqrt{4-y}}^2f(x,y)\\,\\mathrm dx\\right]\\mathrm dy",
+      "\\int_0^4\\left[\\int_{-2}^{\\sqrt{4-y}}f(x,y)\\,\\mathrm dx+\\int_{\\sqrt{4-y}}^2f(x,y)\\,\\mathrm dx\\right]\\mathrm dy",
+      "\\int_0^4\\left[\\int_{-2}^{\\sqrt{4-y}}f(x,y)\\,\\mathrm dx+\\int_2^{\\sqrt{4-y}}f(x,y)\\,\\mathrm dx\\right]\\mathrm dy",
+      "2\\int_0^4\\mathrm dy\\int_{\\sqrt{4-y}}^2 f(x,y)\\,\\mathrm dx"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "按原卷物理第 3—4 页核对条件及选项，重新表述题面，未转载解析。"
   }
 }

@@ -20,7 +20,25 @@
   ],
   "example": {
     "prompt": "自编例题：独立成功率1/4，X为首次成功编号。求P(X=3)、EX、VarX。",
-    "solution": "概率9/64；EX=4，VarX=(3/4)/(1/16)=12。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "首次成功在第三次要求前两次都失败、第三次成功，独立性允许三个概率相乘。",
+        "formulas": [
+          "P(X=3)=\\left(\\frac34\\right)^2\\frac14=\\frac9{64}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "概率9/64；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "EX=4，VarX=(3/4)/(1/16)=12。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-dist-classic",
@@ -29,5 +47,29 @@
   "topicIds": [
     "pr-discrete-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "独立重复试验中第一次成功出现在第 k 次，意味着前 k−1 次失败、最后一次成功。",
+    "symbols": [
+      {
+        "symbol": "随机变量与分布函数",
+        "meaning": "随机变量把试验结果映射成数。分布函数 F(x) 表示取值不超过 x 的概率，必须单调不减、右连续，并满足两端极限。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      },
+      {
+        "symbol": "E(X)",
+        "meaning": "随机变量 X 的期望，是按概率加权的平均值；并非某一次观测值。"
+      }
+    ],
+    "explanation": [
+      "先确认计数从第一次试验开始，还是从失败次数零开始，两种约定的均值不同。"
+    ]
+  }
 }

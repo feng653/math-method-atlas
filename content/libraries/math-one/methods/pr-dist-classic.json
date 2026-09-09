@@ -20,7 +20,30 @@
   ],
   "example": {
     "prompt": "自编例题：B~Bin(4,1/2)，N~Pois(3)。求P(B=2)及两者均值方差。",
-    "solution": "P(B=2)=6/16=3/8；EB=2、VarB=1；EN=VarN=3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "四次试验恰好成功两次有六种位置选择，每种排列概率都是 (1/2)⁴。二项均值为 np、方差为 np(1−p)，泊松均值方差都等于参数。",
+        "formulas": [
+          "P(B=2)=\\binom42(1/2)^2(1/2)^2;\\quad EB=4\\cdot\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "P(B=2)=6/16=3/8；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "EB=2、VarB=1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "EN=VarN=3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-dist-discrete",
@@ -29,5 +52,25 @@
   "topicIds": [
     "pr-discrete-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "固定次数独立成败试验的成功数用二项模型；单位范围内事件计数在相应假设下可用泊松模型。",
+    "symbols": [
+      {
+        "symbol": "随机变量与分布函数",
+        "meaning": "随机变量把试验结果映射成数。分布函数 F(x) 表示取值不超过 x 的概率，必须单调不减、右连续，并满足两端极限。"
+      },
+      {
+        "symbol": "λ",
+        "meaning": "公式中的参数或辅助未知数，按题目给定范围或联立条件确定。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      }
+    ],
+    "explanation": [
+      "先写明次数与成功率，或泊松参数，再套概率、期望和方差公式，避免混用参数。"
+    ]
+  }
 }

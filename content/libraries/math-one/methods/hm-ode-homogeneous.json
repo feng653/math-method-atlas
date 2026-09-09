@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：解y'=1+y/x，x>0。",
-    "solution": "设y=ux，有u+xu'=1+u，因此u'=1/x，u=ln x+C，y=x(ln x+C)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "设 u=y/x，因此 y=ux。乘积求导代入后两边的 u 抵消，留下可直接积分的 u′。",
+        "formulas": [
+          "u+xu'=1+u\\quad\\Longrightarrow\\quad u'=\\frac1x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "设y=ux，有u+xu'=1+u，因此u'=1/x，u=ln x+C，y=x(ln x+C)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-separable",
@@ -27,5 +40,21 @@
   "topicIds": [
     "ode-ode-homogeneous"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "若一阶方程的右端只依赖 y/x，把这个比值整体记成新变量，原方程常能分离变量。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "y=ux 的导数是 u+xu′，不能漏掉乘积求导的第一项。"
+    ]
+  }
 }

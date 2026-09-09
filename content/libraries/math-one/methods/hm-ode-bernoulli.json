@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：解y'+y=y²的非零解。",
-    "solution": "令z=1/y，得z'-z=-1，z=1+Ce^x，y=1/(1+Ce^x)，分母不能为0；另有y=0。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "非零解可除以 y²，令 z=1/y 后有 z′=−y′/y²，把非线性方程变成 z 的线性方程。",
+        "formulas": [
+          "\\frac{y'}{y^2}+\\frac1y=1\\quad\\Longrightarrow\\quad-z'+z=1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令z=1/y，得z'-z=-1，z=1+Ce^x，y=1/(1+Ce^x)，分母不能为0；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "另有y=0。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-linear-first",
@@ -27,5 +45,17 @@
   "topicIds": [
     "ode-ode-bernoulli"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "非线性方程中若只有一个幂次造成困难，换成 y 的适当幂可以把它变成一阶线性方程。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      }
+    ],
+    "explanation": [
+      "换元中除以 y 可能排除零解，要回到原方程单独补查。"
+    ]
+  }
 }

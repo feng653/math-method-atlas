@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：识别x²+y²-z²=1并求z=0截面。",
-    "solution": "两个正平方一个负平方且右端1，是绕z轴单叶双曲面；z=0截面为单位圆。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "移项得到 x²+y²=1+z²。固定任意 z 的截面都是半径至少为一的圆，随高度绝对值增大而变大，中间不会断开。",
+        "formulas": [
+          "x^2+y^2=1+z^2\\ge1;\\quad z=0\\Longrightarrow x^2+y^2=1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "两个正平方一个负平方且右端1，是绕z轴单叶双曲面；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "z=0截面为单位圆。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-space-intersections",
@@ -27,5 +45,21 @@
   "topicIds": [
     "geometry-quadric-surfaces"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "固定一个坐标得到平面截线，看截线怎样变化，就能理解三维曲面的形状。",
+    "symbols": [
+      {
+        "symbol": "向量",
+        "meaning": "向量同时表达大小与方向。数量积可以判断夹角和垂直；向量积给出与两个向量垂直的方向，其模等于所张平行四边形的面积。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "平方项符号与等式右端共同决定曲面类型，不能只数变量个数。"
+    ]
+  }
 }

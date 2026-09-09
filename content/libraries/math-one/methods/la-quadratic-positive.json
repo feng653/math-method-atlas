@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：[[a,1],[1,2]] 何时正定？",
-    "solution": "需 a>0 且 2a−1>0，合并为 a>1/2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "第一阶顺序主子式就是左上角 a，第二阶是整个行列式 2a−1。两者都严格为正时，矩阵才正定。",
+        "formulas": [
+          "a>0,\\quad 2a-1>0\\quad\\Longrightarrow\\quad a>\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "需 a>0 且 2a−1>0，合并为 a>1/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-quadratic-completion",
@@ -28,5 +41,17 @@
   "topicIds": [
     "la-positive-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "正定意味着除原点外二次型始终为正，实对称矩阵可用顺序主子式逐个为正来检验。",
+    "symbols": [
+      {
+        "symbol": "二次型",
+        "meaning": "二次型是各变量二次项和交叉项组成的齐次多项式，可写成 xᵀAx，通常选 A 为对称矩阵；交叉项系数要平均分给两个对称位置。"
+      }
+    ],
+    "explanation": [
+      "所有需要的主子式条件要同时成立，只检查行列式为正并不够。"
+    ]
+  }
 }

@@ -21,9 +21,56 @@
   ],
   "example": {
     "prompt": "自编例题：U~U(0,1)，X=Y=U。写联合CDF并求P(0<X≤1/2,1/4<Y≤3/4)。",
-    "solution": "F(x,y)=max(0,min(1,x,y))。四项容斥为1/2−0−1/4+0=1/4；也等于U落在(1/4,1/2]的概率。概率集中在对角线上，不存在普通二维密度。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "F(x,y)=max(0,min(1,x,y))。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "四项容斥为1/2−0−1/4+0=1/4；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "也等于U落在(1/4,1/2]的概率。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "概率集中在对角线上，不存在普通二维密度。",
+        "formulas": []
+      }
+    ]
   },
-  "relatedIds": ["pr-dist-cdf", "pr-joint-marginal", "pr-joint-independence"],
-  "topicIds": ["pr-joint-cdf-topic"],
-  "status": "reviewed"
+  "relatedIds": [
+    "pr-dist-cdf",
+    "pr-joint-marginal",
+    "pr-joint-independence"
+  ],
+  "topicIds": [
+    "pr-joint-cdf-topic"
+  ],
+  "status": "draft",
+  "learning": {
+    "intuition": "二维分布函数累计左下方矩形的概率，想取其中一块矩形，可以用四项加减消去多余区域。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      }
+    ],
+    "explanation": [
+      "存在二维分布函数不代表一定存在普通二维密度，例如概率可能集中在一条线上。"
+    ]
+  }
 }

@@ -6,6 +6,7 @@ import './styles/base.css';
 import './styles/graph.css';
 import './styles/panels.css';
 import './styles/thinking.css';
+import './styles/reading.css';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><App /></React.StrictMode>);

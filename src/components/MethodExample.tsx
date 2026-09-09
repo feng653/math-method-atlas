@@ -1,12 +1,12 @@
 import type { Method } from '../domain/schema';
 import { Formula } from './Formula';
 
-export function MethodExample({ example }: { example: Method['example'] }) {
+export function MethodExample({ example, expanded = true }: { example: Method['example']; expanded?: boolean }) {
   return <section className="example" aria-label="例题与分步解答">
     <span className="eyebrow">例题</span>
     <p>{example.prompt}</p>
     {example.formulas?.map((value, index) => <Formula key={index} value={value} />)}
-    <details><summary>展开解答</summary>
+    <details open={expanded}><summary>分步解答</summary>
       {typeof example.solution === 'string'
         ? <div className="example-prose">{example.solution.split(/(?<=[。；])\s*/).filter(Boolean)
           .map((text, index) => <p key={index}>{text}</p>)}</div>

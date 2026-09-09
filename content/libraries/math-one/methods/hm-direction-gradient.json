@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：f=x²+y²在(1,2)沿(3,4)的方向导数。",
-    "solution": "梯度(2,4)，单位方向(3/5,4/5)，点积为22/5。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "平方和对两个变量的偏导分别是 2x 与 2y，在指定点变为 (2,4)。方向 (3,4) 长度是五，先单位化，再把对应坐标相乘相加。",
+        "formulas": [
+          "\\nabla f(1,2)=(2,4),\\quad e=(3/5,4/5);\\quad D_ef=2\\cdot\\frac35+4\\cdot\\frac45"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "梯度(2,4)，单位方向(3/5,4/5)，点积为22/5。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-partial-total-differential",
@@ -27,5 +40,25 @@
   "topicIds": [
     "multivariable-direction-gradient"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "先知道函数在各坐标方向变化多快，再把这些变化投影到题目指定的单位方向上。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      },
+      {
+        "symbol": "∇",
+        "meaning": "梯度符号：把标量函数对各坐标的偏导组成向量；与点乘、叉乘组合时表示不同运算。"
+      },
+      {
+        "symbol": "·",
+        "meaning": "这里用作乘法或向量点积符号，需按两侧对象是数还是向量区分。"
+      }
+    ],
+    "explanation": [
+      "指定方向若不是单位向量，先除以长度；否则算出的数会被方向向量的长度放大。"
+    ]
+  }
 }

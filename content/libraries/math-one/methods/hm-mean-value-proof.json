@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：证明0<x时ln(1+x)<x。",
-    "solution": "对ln t在[1,1+x]用拉格朗日定理，ln(1+x)=x/ξ，其中1<ξ<1+x，故小于x。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "对 ln t 使用中值定理，端点函数差就是 ln(1+x)−ln1，而区间长度是 x。中间点大于一，它的倒数严格小于一。",
+        "formulas": [
+          "\\ln(1+x)-\\ln1=\\frac1\\xi\\big((1+x)-1\\big),\\quad1<\\xi<1+x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "对ln t在[1,1+x]用拉格朗日定理，ln(1+x)=x/ξ，其中1<ξ<1+x，故小于x。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-monotonic-extrema",
@@ -27,5 +40,21 @@
   "topicIds": [
     "derivatives-mean-value-proof"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "用中值定理把一段区间的函数增量写成中间点导数乘区间长度，再估计中间点导数。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "ξ",
+        "meaning": "位于所讨论区间内部的某个中间点，定理保证它存在，通常不必求出数值。"
+      }
+    ],
+    "explanation": [
+      "先明确使用定理的闭区间，再由中间点范围判断严格大小关系。"
+    ]
+  }
 }

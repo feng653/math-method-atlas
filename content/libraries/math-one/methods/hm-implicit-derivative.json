@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：x²+y²=5在(1,2)处求切线。",
-    "solution": "2x+2yy'=0，点处y'=-1/2，故切线y-2=-(x-1)/2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "原等式对 x 求导时，y² 要用复合求导得到 2yy′。代入指定点求出斜率，再用直线的点斜式。",
+        "formulas": [
+          "2x+2yy'=0,\\quad y'\\big|_{(1,2)}=-\\frac{2\\cdot1}{2\\cdot2}=-\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "2x+2yy'=0，点处y'=-1/2，故切线y-2=-(x-1)/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-chain-log-differentiation",
@@ -28,5 +41,21 @@
   "topicIds": [
     "derivatives-implicit-derivative"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "即使不能把 y 单独解出来，也能把它当作 x 的函数，对原等式两边一起求导。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "遇到含 y 的项要继续乘 y 的导数，这是链式法则，不是把 y 当常数。"
+    ]
+  }
 }

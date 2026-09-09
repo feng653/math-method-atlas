@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：求y=x³的拐点及x=1处曲率。",
-    "solution": "y''=6x在0两侧变号，拐点(0,0)；x=1时y'=3，y''=6，κ=6/(10√10)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先连续求两次导数。零点左侧二阶导为负、右侧为正，故凹凸确实改变；曲率再使用 x=1 时的一、二阶导值。",
+        "formulas": [
+          "y'=3x^2,\\quad y''=6x;\\quad \\kappa=\\frac{|y''|}{[1+(y')^2]^{3/2}}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "y''=6x在0两侧变号，拐点(0,0)；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "x=1时y'=3，y''=6，κ=6/(10√10)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-monotonic-extrema",
@@ -28,5 +46,21 @@
   "topicIds": [
     "derivatives-concavity-asymptote"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "一阶导数告诉你升降，二阶导数告诉你斜率在增加还是减小；拐点需要凹凸发生改变。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "二阶导数等于零只给候选位置，必须比较两侧符号；曲率还需要该点的一阶导数。"
+    ]
+  }
 }

@@ -22,7 +22,35 @@
   ],
   "example": {
     "prompt": "自编例题：A=[[1,2],[3,5]]，求det(A)、det(2A)、det(Aᵀ)，并以A与I说明行列式不对矩阵加法线性。",
-    "solution": "消元第二行减第一行3倍得对角1、−1，det(A)=−1；det(2A)=4×(−1)=−4；转置不变为−1。det(A+I)=det([[2,2],[3,6]])=6，而det(A)+det(I)=0。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "用第二行减三倍第一行，第一列下方归零，第二个主元为 5−6=−1。这种行相加不改变行列式。",
+        "formulas": [
+          "\\begin{pmatrix}1&2\\\\3&5\\end{pmatrix}\\longrightarrow\\begin{pmatrix}1&2\\\\0&-1\\end{pmatrix}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "消元第二行减第一行3倍得对角1、−1，det(A)=−1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "det(2A)=4×(−1)=−4；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "转置不变为−1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "det(A+I)=det([[2,2],[3,6]])=6，而det(A)+det(I)=0。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-det-block",
@@ -31,5 +59,25 @@
   "topicIds": [
     "la-det-compute"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "通过行变换把行列式变成三角形易算结构，同时记录交换、倍乘对行列式的影响。",
+    "symbols": [
+      {
+        "symbol": "行列式是一个数",
+        "meaning": "行列式只对方阵定义。它不为零等价于矩阵可逆；交换两行改变符号，一行加另一行的倍数不改变值。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      },
+      {
+        "symbol": "det A",
+        "meaning": "方阵 A 的行列式，是一个数；行列式不为零等价于方阵可逆。"
+      }
+    ],
+    "explanation": [
+      "一行加另一行的倍数不改变值；整矩阵乘常数则每一行都被乘，要计入矩阵阶数。"
+    ]
+  }
 }

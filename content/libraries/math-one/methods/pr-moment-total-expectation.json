@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：Y 取 0、1，各概率 1/2；E(X|Y=0)=2，E(X|Y=1)=6，求 EX。",
-    "solution": "EX=2×1/2+6×1/2=4。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "按 Y 的两个取值分层，条件平均值为二与六，各以二分之一为权重，再求一次平均。",
+        "formulas": [
+          "EX=E[E(X\\mid Y)]=2\\cdot\\frac12+6\\cdot\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "EX=2×1/2+6×1/2=4。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-moment-expectation",
@@ -28,5 +41,21 @@
   "topicIds": [
     "pr-expectation-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "先在每一种条件下求平均值，再按条件发生概率平均一次，就得到总体期望。",
+    "symbols": [
+      {
+        "symbol": "期望与方差",
+        "meaning": "期望描述平均水平，方差描述围绕均值的平方偏离。计算方差可用二阶矩减去均值平方，但要先确认这些量存在。"
+      },
+      {
+        "symbol": "E(X)",
+        "meaning": "随机变量 X 的期望，是按概率加权的平均值；并非某一次观测值。"
+      }
+    ],
+    "explanation": [
+      "外层需要使用条件的概率权重，不能把不同条件下的均值直接等权平均。"
+    ]
+  }
 }

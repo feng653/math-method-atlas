@@ -18,7 +18,23 @@
   ],
   "example": {
     "prompt": "自编例题：用1+x近似e^x，0≤x≤0.1时误差如何界定？",
-    "solution": "当 0<x≤0.1，e^x=1+x+e^ξx²/2，其中 0<ξ<x；误差非负且不超过 e^{0.1}/200。x=0 时误差恰为 0，也满足同一界。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "当 0<x≤0.1，e^x=1+x+e^ξx²/2，其中 0<ξ<x；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "误差非负且不超过 e^{0.1}/200。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "x=0 时误差恰为 0，也满足同一界。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-taylor-limit",
@@ -27,5 +43,21 @@
   "topicIds": [
     "derivatives-taylor-remainder"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "多项式近似不只是给近似值，余项还能说明误差最多有多大。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "给导数在区间内作统一上界，别把未知中间点当成固定端点。"
+    ]
+  }
 }

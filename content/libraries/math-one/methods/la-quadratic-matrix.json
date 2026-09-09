@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：写出 2x²+6xy+5y² 的矩阵。",
-    "solution": "对称矩阵为 [[2,3],[3,5]]，其 xᵀAx 展开为所给二次型。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "若对称矩阵非对角项为 b，则展开会产生两个 bxy；要得到 6xy，必须令 b=3。",
+        "formulas": [
+          "\\begin{pmatrix}x&y\\end{pmatrix}\\begin{pmatrix}2&3\\\\3&5\\end{pmatrix}\\binom xy=2x^2+6xy+5y^2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "对称矩阵为 [[2,3],[3,5]]，其 xᵀAx 展开为所给二次型。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-quadratic-completion",
@@ -27,5 +40,17 @@
   "topicIds": [
     "la-quadratic-reduction"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把二次式写成矩阵形式后，可以用矩阵方法研究正负性与换元。",
+    "symbols": [
+      {
+        "symbol": "二次型",
+        "meaning": "二次型是各变量二次项和交叉项组成的齐次多项式，可写成 xᵀAx，通常选 A 为对称矩阵；交叉项系数要平均分给两个对称位置。"
+      }
+    ],
+    "explanation": [
+      "交叉项在矩阵展开中出现两次，所以对应的非对角元素是交叉项系数的一半。"
+    ]
+  }
 }

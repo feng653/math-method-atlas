@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：判断f(x)=x²sin(1/x)(x≠0)，f(0)=0在0处可导性。",
-    "solution": "差商为h sin(1/h)，由绝对值≤|h|知趋0，故f'(0)=0。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "不能把旁边表达式求导后直接代零，因为那里含 1/x。应按定义把 f(h)−f(0) 除以 h，利用正弦绝对值不超过一来控制差商。",
+        "formulas": [
+          "\\frac{f(h)-f(0)}h=h\\sin(1/h),\\quad\\left|h\\sin(1/h)\\right|\\le|h|"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "差商为h sin(1/h)，由绝对值≤|h|知趋0，故f'(0)=0。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-continuity-piecewise",
@@ -27,5 +40,25 @@
   "topicIds": [
     "derivatives-derivative-definition"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "在分段点不能随便套用旁边的求导公式；应直接看函数增量除以自变量增量是否有统一极限。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "先写差商并约去可约的因子，再用有界的正弦因子估计极限。"
+    ]
+  }
 }

@@ -18,7 +18,23 @@
   ],
   "example": {
     "prompt": "自编：求 z=x²+y² 在 (1,1,2) 处的切平面与法线。",
-    "solution": "取 F=x²+y²−z，梯度为 (2,2,−1) 且非零。切平面 2(x−1)+2(y−1)−(z−2)=0，即 z=2x+2y−2；法线 (x,y,z)=(1,1,2)+t(2,2,−1)。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "取 F=x²+y²−z，梯度为 (2,2,−1) 且非零。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "切平面 2(x−1)+2(y−1)−(z−2)=0，即 z=2x+2y−2；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "法线 (x,y,z)=(1,1,2)+t(2,2,−1)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-multivariable-chain",
@@ -27,5 +43,25 @@
   "topicIds": [
     "multivariable-tangent-plane"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "光滑曲面在一点附近可用平面近似；隐式方程的梯度垂直这个平面。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      },
+      {
+        "symbol": "∇",
+        "meaning": "梯度符号：把标量函数对各坐标的偏导组成向量；与点乘、叉乘组合时表示不同运算。"
+      },
+      {
+        "symbol": "·",
+        "meaning": "这里用作乘法或向量点积符号，需按两侧对象是数还是向量区分。"
+      }
+    ],
+    "explanation": [
+      "先在指定点计算梯度，再写点法式，法线则沿同一梯度方向。"
+    ]
+  }
 }

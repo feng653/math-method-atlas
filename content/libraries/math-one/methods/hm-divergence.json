@@ -20,7 +20,20 @@
   ],
   "example": {
     "prompt": "自编例题：F=(x²y,yz,z³)，求 (1,2,1) 处散度。",
-    "solution": "P_x=2xy，Q_y=z，R_z=3z²，散度 2xy+z+3z²，在 (1,2,1) 为 4+1+3=8。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "对 x²y 按 x 求导时 y 不变；对 yz 按 y 求导时 z 不变；第三项按 z 使用幂函数法则。最后才代入点坐标。",
+        "formulas": [
+          "\\operatorname{div}F=\\frac{\\partial(x^2y)}{\\partial x}+\\frac{\\partial(yz)}{\\partial y}+\\frac{\\partial z^3}{\\partial z}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "P_x=2xy，Q_y=z，R_z=3z²，散度 2xy+z+3z²，在 (1,2,1) 为 4+1+3=8。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-gauss",
@@ -29,5 +42,33 @@
   "topicIds": [
     "topic-hm-divergence"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "散度把每个分量沿自身坐标方向的变化率相加，描述局部向外流出与向内流入的差别。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∂",
+        "meaning": "偏导符号：对指定变量求导时，把其他独立变量当作常数。"
+      },
+      {
+        "symbol": "∇",
+        "meaning": "梯度符号：把标量函数对各坐标的偏导组成向量；与点乘、叉乘组合时表示不同运算。"
+      },
+      {
+        "symbol": "·",
+        "meaning": "这里用作乘法或向量点积符号，需按两侧对象是数还是向量区分。"
+      }
+    ],
+    "explanation": [
+      "先分别算 P 对 x、Q 对 y、R 对 z 的偏导，再相加并代入指定点。"
+    ]
+  }
 }

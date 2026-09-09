@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：D由0≤x+y≤1、0≤x-y≤1定义，求面积。",
-    "solution": "令u=x+y、v=x-y，x=(u+v)/2、y=(u-v)/2，绝对雅可比1/2，新域单位正方形，面积1/2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "新变量正好采用两组边界中反复出现的组合。将两式相加、相减解回旧坐标，然后由四个偏导计算面积缩放。",
+        "formulas": [
+          "\\left|\\frac{\\partial(x,y)}{\\partial(u,v)}\\right|=\\left|\\frac12\\left(-\\frac12\\right)-\\frac12\\cdot\\frac12\\right|=\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令u=x+y、v=x-y，x=(u+v)/2、y=(u-v)/2，绝对雅可比1/2，新域单位正方形，面积1/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-double-cartesian",
@@ -27,5 +40,25 @@
   "topicIds": [
     "multiple-integrals-general-jacobian"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "若边界总出现相同的线性组合，把这些组合当成新坐标，歪斜区域就可能变成矩形。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∂",
+        "meaning": "偏导符号：对指定变量求导时，把其他独立变量当作常数。"
+      }
+    ],
+    "explanation": [
+      "换坐标会改变面积比例，要乘逆变换雅可比行列式的绝对值。"
+    ]
+  }
 }

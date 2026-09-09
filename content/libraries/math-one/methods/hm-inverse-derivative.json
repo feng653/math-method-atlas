@@ -20,7 +20,28 @@
   ],
   "example": {
     "prompt": "自编：f(x)=x³+x 的反函数为 g，求 g′(2)。另令 y=u²、u=t²，核对一阶形式不变性及二阶微分。",
-    "solution": "f′=3x²+1>0 且 f(1)=2，故 g′(2)=1/4。复合关系中 dy=2u du=2t²·2t dt=4t³dt，与 y=t⁴ 直接求导一致。二阶微分为 2(du)²+2u d²u=8t²(dt)²+4t²(dt)²=12t²(dt)²；只保留第一项会错。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "f′=3x²+1>0 且 f(1)=2，故 g′(2)=1/4。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "复合关系中 dy=2u du=2t²·2t dt=4t³dt，与 y=t⁴ 直接求导一致。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "二阶微分为 2(du)²+2u d²u=8t²(dt)²+4t²(dt)²=12t²(dt)²；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "只保留第一项会错。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-function-domain",
@@ -29,5 +50,25 @@
   "topicIds": [
     "audit-inverse-derivative"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "正向函数的小变化比例反过来，就是反函数的小变化比例，所以对应点的导数互为倒数。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "逆运算",
+        "meaning": "矩阵 A⁻¹ 表示逆矩阵；普通数的 −1 次幂表示倒数。反函数需结合函数记号区分。"
+      }
+    ],
+    "explanation": [
+      "先找到输出对应的原输入，再在原输入处求导；不能把输出直接代入原函数导数。"
+    ]
+  }
 }

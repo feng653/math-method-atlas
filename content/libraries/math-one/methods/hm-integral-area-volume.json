@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：y=x与y=x²围成区域绕x轴旋转的体积。",
-    "solution": "交点0和1，在[0,1]外半径x、内半径x²，V=π∫₀¹(x²-x⁴)dx=2π/15。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "解 x=x² 得到交点零和一。该区间内 x≥x²，所以外圆半径是 x，内圆半径是 x²，截面积为两圆面积之差。",
+        "formulas": [
+          "A(x)=\\pi x^2-\\pi(x^2)^2;\\quad V=\\pi\\left[\\frac{x^3}3-\\frac{x^5}5\\right]_0^1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "交点0和1，在[0,1]外半径x、内半径x²，V=π∫₀¹(x²-x⁴)dx=2π/15。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-arc-work-integral",
@@ -27,5 +40,21 @@
   "topicIds": [
     "integrals-integral-area-volume"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "旋转体的一片截面通常是圆盘或圆环，先写外半径平方减内半径平方，再沿旋转轴累加。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "先解交点确定范围，并确认哪个半径在外；半径差的平方不是两个平方的差。"
+    ]
+  }
 }

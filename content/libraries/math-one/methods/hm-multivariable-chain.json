@@ -18,7 +18,23 @@
   ],
   "example": {
     "prompt": "自编：z=u²+v²，u=x²+y、v=xy，求 zx 与 zxx。",
-    "solution": "fu=2u、fv=2v，ux=2x、vx=y，故 zx=4x(x²+y)+2xy²。再求导得 zxx=12x²+4y+2y²。用二阶链式复算：fuu ux²=8x²，fvv vx²=2y²，fu uxx=4(x²+y)，混合项和 vxx 项为零，合计一致。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "fu=2u、fv=2v，ux=2x、vx=y，故 zx=4x(x²+y)+2xy²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "再求导得 zxx=12x²+4y+2y²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "用二阶链式复算：fuu ux²=8x²，fvv vx²=2y²，fu uxx=4(x²+y)，混合项和 vxx 项为零，合计一致。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-multivariable-implicit",
@@ -27,5 +43,17 @@
   "topicIds": [
     "multivariable-multivariable-chain"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "一个量通过多条中间路径依赖 x 时，每条路径的变化贡献都要相加。",
+    "symbols": [
+      {
+        "symbol": "偏导数",
+        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+      }
+    ],
+    "explanation": [
+      "画出 z 到中间变量再到 x 的依赖关系；二阶求导时中间变量的导数也可能继续变化。"
+    ]
+  }
 }

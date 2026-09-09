@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：求 y=x² 在原点的曲率圆。",
-    "solution": "原点 p=0、q=2，R=1/2，圆心 C=(0,1/2)。曲率圆为 x²+(y-1/2)²=1/4。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "在原点斜率为零，曲线向上弯，所以圆心位于竖直向上的法线上。二阶导为二给曲率二，半径是曲率的倒数。",
+        "formulas": [
+          "y'(0)=0,\\quad y''(0)=2,\\quad R=\\frac{[1+0^2]^{3/2}}2=\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "原点 p=0、q=2，R=1/2，圆心 C=(0,1/2)。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "曲率圆为 x²+(y-1/2)²=1/4。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-concavity-asymptote",
@@ -28,5 +46,21 @@
   "topicIds": [
     "audit-curvature-circle"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "用一个圆在给定点附近贴合曲线，弯得越急，这个圆的半径越小。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "先由一阶、二阶导数确定弯曲程度和圆心方向，再写圆心半径式。"
+    ]
+  }
 }

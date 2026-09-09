@@ -61,5 +61,17 @@
   "topicIds": [
     "basic-thinking-structure"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "先做必要的常规求导，观察反复出现的组合，再给组合命名并利用它的结构。",
+    "symbols": [
+      {
+        "symbol": "先分清目标和条件",
+        "meaning": "目标是需要求出或证明的结论，条件是已经知道的信息。先分别列出两者，再寻找能连接它们的定义、等式或定理。"
+      }
+    ],
+    "explanation": [
+      "辅助函数应能从已出现的表达式解释来源，帮助把偏导关系化成更容易的一元关系。"
+    ]
+  }
 }

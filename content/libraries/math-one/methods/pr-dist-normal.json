@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：X~N(2,9)，求P(X≤5)、均值和标准差。",
-    "solution": "概率Φ(1)≈0.8413；均值2，标准差3。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "记号 N(2,9) 表示均值二、方差九，所以标准差为三。把阈值五减均值二再除以三，标准化后阈值为一。",
+        "formulas": [
+          "Z=\\frac{X-2}3\\sim N(0,1);\\quad P(X\\le5)=P(Z\\le1)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "概率Φ(1)≈0.8413；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "均值2，标准差3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-dist-density",
@@ -28,5 +46,33 @@
   "topicIds": [
     "pr-continuous-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把正态变量减去均值、除以标准差，就能使用同一张标准正态分布表。",
+    "symbols": [
+      {
+        "symbol": "随机变量与分布函数",
+        "meaning": "随机变量把试验结果映射成数。分布函数 F(x) 表示取值不超过 x 的概率，必须单调不减、右连续，并满足两端极限。"
+      },
+      {
+        "symbol": "Φ",
+        "meaning": "标准正态分布函数：Φ(z) 表示标准正态变量不超过 z 的概率。"
+      },
+      {
+        "symbol": "σ",
+        "meaning": "标准差，衡量围绕均值的波动大小；σ² 表示方差。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      },
+      {
+        "symbol": "E(X)",
+        "meaning": "随机变量 X 的期望，是按概率加权的平均值；并非某一次观测值。"
+      }
+    ],
+    "explanation": [
+      "正态记号中的第二参数通常是方差，标准化除的是它的平方根。"
+    ]
+  }
 }

@@ -18,7 +18,33 @@
   ],
   "example": {
     "prompt": "自编：解 x²y″−xy′+y=x²，x>0。",
-    "solution": "换元后 Y″−2Y′+Y=e²ᵗ。齐次为 (C₁+C₂t)eᵗ；令 Yp=Ae²ᵗ，代入得到 A=1。回代 y=x(C₁+C₂ln x)+x²；直接代回 x² 项给 2x²−2x²+x²=x²。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "换元后 Y″−2Y′+Y=e²ᵗ。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "齐次为 (C₁+C₂t)eᵗ；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "令 Yp=Ae²ᵗ，代入得到 A=1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "回代 y=x(C₁+C₂ln x)+x²；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "直接代回 x² 项给 2x²−2x²+x²=x²。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-characteristic"
@@ -26,5 +52,21 @@
   "topicIds": [
     "ode-ode-euler"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "各阶导数前恰好配着相应的 x 次幂时，用 x 的对数作新变量可以消去这种变化系数。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "ε",
+        "meaning": "表示任意给定的小正数，常用于描述允许的误差。"
+      }
+    ],
+    "explanation": [
+      "只在选定的正或负半轴讨论对数换元，最后把新变量还原。"
+    ]
+  }
 }

@@ -14,9 +14,28 @@
       "title": "基本证明工具",
       "subject": "数学证明",
       "syllabusTopics": [
-        { "id": "contradiction", "title": "反证法及量词否定" },
-        { "id": "induction", "title": "数学归纳法" },
-        { "id": "counterexample", "title": "用反例否定全称命题" }
+        {
+          "id": "contradiction",
+          "title": "反证法及量词否定"
+        },
+        {
+          "id": "induction",
+          "title": "数学归纳法"
+        },
+        {
+          "id": "counterexample",
+          "title": "用反例否定全称命题"
+        }
+      ],
+      "concepts": [
+        {
+          "title": "直接证明",
+          "explanation": "从已知条件出发，逐步使用定义和已证明结论推出目标。每一步都要能说明依据，不能把待证结论当作已知。"
+        },
+        {
+          "title": "反证与归纳",
+          "explanation": "反证法暂设结论不成立并导出矛盾；数学归纳法需要先证明起始情形，再证明由任意一项成立能推出下一项。"
+        }
       ]
     }
   ]

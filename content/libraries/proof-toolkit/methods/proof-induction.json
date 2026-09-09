@@ -1,14 +1,66 @@
 {
-  "id": "proof-induction", "libraryId": "proof-toolkit", "chapterId": "proof-basics",
-  "title": "数学归纳法", "summary": "验证起点并建立从 n 到 n+1 的递推证明。",
-  "conditions": ["命题以整数 n 为参数，定义域为从某个整数起连续的整数", "递推步骤要覆盖每个合法 n"],
-  "steps": ["明确起始整数并验证基例", "假设任意合法 k 时命题成立", "仅利用归纳假设和已知条件证明 k+1 时成立", "由归纳原理给出适用的整数范围"],
+  "id": "proof-induction",
+  "libraryId": "proof-toolkit",
+  "chapterId": "proof-basics",
+  "title": "数学归纳法",
+  "summary": "验证起点并建立从 n 到 n+1 的递推证明。",
+  "conditions": [
+    "命题以整数 n 为参数，定义域为从某个整数起连续的整数",
+    "递推步骤要覆盖每个合法 n"
+  ],
+  "steps": [
+    "明确起始整数并验证基例",
+    "假设任意合法 k 时命题成立",
+    "仅利用归纳假设和已知条件证明 k+1 时成立",
+    "由归纳原理给出适用的整数范围"
+  ],
   "formula": "\\sum_{k=1}^{n}(2k-1)=n^2\\quad(n\\ge1)",
-  "pitfalls": ["只验证几个数值不等于归纳证明", "不能在递推步骤直接假设 k+1 的结论", "步长为 2 时需要覆盖每种奇偶起点"],
+  "pitfalls": [
+    "只验证几个数值不等于归纳证明",
+    "不能在递推步骤直接假设 k+1 的结论",
+    "步长为 2 时需要覆盖每种奇偶起点"
+  ],
   "example": {
     "prompt": "自编：证明前 n 个正奇数之和等于 n²。",
-    "solution": "n=1 时 1=1²。假设前 k 项和为 k²，则前 k+1 项和为 k²+2(k+1)-1=(k+1)²。因此对所有正整数 n 成立。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "n=1 时 1=1²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "假设前 k 项和为 k²，则前 k+1 项和为 k²+2(k+1)-1=(k+1)²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "因此对所有正整数 n 成立。",
+        "formulas": []
+      }
+    ]
   },
-  "relatedIds": ["proof-contradiction"], "topicIds": ["induction"], "status": "reviewed"
+  "relatedIds": [
+    "proof-contradiction"
+  ],
+  "topicIds": [
+    "induction"
+  ],
+  "status": "draft",
+  "learning": {
+    "intuition": "把命题看成一排多米诺骨牌：先确认第一张成立，再证明任意一张成立都会带动下一张。",
+    "symbols": [
+      {
+        "symbol": "直接证明",
+        "meaning": "从已知条件出发，逐步使用定义和已证明结论推出目标。每一步都要能说明依据，不能把待证结论当作已知。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "归纳假设只用于从 k 推到 k+1，不能一开始就假定所有整数都满足结论。"
+    ]
+  }
 }
-

@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：在 0<y<x<1 上联合密度为 2，求 Y|X=x。",
-    "solution": "fX(x)=2x，因此条件密度为 1/x，0<y<x，即 (0,x) 上均匀分布。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "固定 x 后，y 只能从零到 x，因此边缘密度是常数二在这条切片上的积分。联合密度除以这个值就是条件密度。",
+        "formulas": [
+          "f_X(x)=\\int_0^x2\\,\\mathrm dy=2x;\\quad f_{Y\\mid X}(y\\mid x)=\\frac2{2x}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "fX(x)=2x，因此条件密度为 1/x，0<y<x，即 (0,x) 上均匀分布。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-joint-independence",
@@ -28,5 +41,21 @@
   "topicIds": [
     "pr-joint-conditional-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "固定一个变量后，把对应切片上的联合密度重新归一化，就得到另一个变量的条件密度。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "切片上的允许范围会随条件值变化，分母边缘密度必须为正。"
+    ]
+  }
 }

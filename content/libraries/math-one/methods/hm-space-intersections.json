@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：球x²+y²+z²=4与平面z=1交线在xy面的投影。",
-    "solution": "代入z=1得x²+y²=3，投影是半径√3的圆；交线本身为z=1上的该圆。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先把平面条件 z=1 代入球面，得到交线的 x、y 必须满足的方程。投影到 xy 平面就是保留这两个坐标。",
+        "formulas": [
+          "x^2+y^2+1=4\\quad\\Longrightarrow\\quad x^2+y^2=3"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "代入z=1得x²+y²=3，投影是半径√3的圆；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "交线本身为z=1上的该圆。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-quadric-surfaces",
@@ -27,5 +45,17 @@
   "topicIds": [
     "geometry-space-intersections"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "交线同时满足两个曲面方程，投影则是消去看不见的坐标并保留能够取到的限制。",
+    "symbols": [
+      {
+        "symbol": "向量",
+        "meaning": "向量同时表达大小与方向。数量积可以判断夹角和垂直；向量积给出与两个向量垂直的方向，其模等于所张平行四边形的面积。"
+      }
+    ],
+    "explanation": [
+      "消元后检查是否引入额外点，特别是平方运算和根号分支。"
+    ]
+  }
 }

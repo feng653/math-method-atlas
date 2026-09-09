@@ -18,7 +18,23 @@
   ],
   "example": {
     "prompt": "自编：沿 (0,0) 到 (1,1) 的直线计算 ∫x dy，并用第一类关系及反向路径核对。",
-    "solution": "取 r(t)=(t,t)，0≤t≤1，得 ∫₀¹t dt=1/2。单位切向量 (1,1)/√2，ds=√2dt，F=(0,x)，故 F·τ ds=(t/√2)√2dt=t dt，与直接法一致。反向积分为 −1/2。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "取 r(t)=(t,t)，0≤t≤1，得 ∫₀¹t dt=1/2。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "单位切向量 (1,1)/√2，ds=√2dt，F=(0,x)，故 F·τ ds=(t/√2)√2dt=t dt，与直接法一致。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "反向积分为 −1/2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-line-first-kind",
@@ -29,5 +45,25 @@
   "topicIds": [
     "multiple-integrals-line-second-kind"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "力沿路径做功，只累加力在运动方向上的分量，因此路径反向通常使结果变号。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      },
+      {
+        "symbol": "·",
+        "meaning": "这里用作乘法或向量点积符号，需按两侧对象是数还是向量区分。"
+      }
+    ],
+    "explanation": [
+      "把坐标和它们的微分都改写成参数形式，不能只替换坐标而保留原微分。"
+    ]
+  }
 }

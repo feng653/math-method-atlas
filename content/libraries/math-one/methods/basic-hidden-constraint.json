@@ -79,5 +79,17 @@
   ],
   "libraryId": "math-one",
   "chapterId": "basic-thinking",
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "题目中的一个概念往往自带等式或范围，把这些隐含限制翻译出来，才知道变量能怎样取。",
+    "symbols": [
+      {
+        "symbol": "先分清目标和条件",
+        "meaning": "目标是需要求出或证明的结论，条件是已经知道的信息。先分别列出两者，再寻找能连接它们的定义、等式或定理。"
+      }
+    ],
+    "explanation": [
+      "先确认所用定义，再把概念条件代回具体表达式，不应漏掉为零或不可定义的情况。"
+    ]
+  }
 }

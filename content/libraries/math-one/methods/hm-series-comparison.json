@@ -18,7 +18,18 @@
   ],
   "example": {
     "prompt": "自编：判断 Σ1/(n²+n) 与 Σ1/√(n²+n) 的敛散。",
-    "solution": "第一项与 1/n² 的比趋 1，p=2>1，收敛。第二项与 1/n 的比 n/√(n²+n) 趋 1，p=1 的调和级数发散，故第二级数发散。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "第一项与 1/n² 的比趋 1，p=2>1，收敛。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第二项与 1/n 的比 n/√(n²+n) 趋 1，p=1 的调和级数发散，故第二级数发散。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-improper-integral",
@@ -28,5 +39,29 @@
   "topicIds": [
     "series-series-comparison"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "复杂正项与熟悉的正项相比较，大者收敛则小者收敛，小者发散则大者发散。",
+    "symbols": [
+      {
+        "symbol": "级数看部分和",
+        "meaning": "无穷级数的和是部分和序列的极限。通项趋于零只是收敛的必要条件，例如调和级数通项趋零但级数发散。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      },
+      {
+        "symbol": "∞",
+        "meaning": "无穷：表示无界增长或无限过程，不是可以直接代入的普通实数。"
+      }
+    ],
+    "explanation": [
+      "先选出主导增长部分，再核对比较方向与正项条件。"
+    ]
+  }
 }

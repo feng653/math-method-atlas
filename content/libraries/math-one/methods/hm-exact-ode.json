@@ -20,7 +20,28 @@
   ],
   "example": {
     "prompt": "自编例题：解 (2xy+1)dx+(x²+2y)dy=0，并满足 y(0)=1。",
-    "solution": "M_y=N_x=2x。对 M 积分得 U=x²y+x+g(y)，由 U_y=x²+g′(y)=x²+2y，得 g=y²。初值给 C=1，所以 x²y+x+y²=1；初值点 N=2，存在局部 y(x)。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "M_y=N_x=2x。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "对 M 积分得 U=x²y+x+g(y)，由 U_y=x²+g′(y)=x²+2y，得 g=y²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "初值给 C=1，所以 x²y+x+y²=1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "初值点 N=2，存在局部 y(x)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-path-independence",
@@ -29,5 +50,17 @@
   "topicIds": [
     "audit-exact-ode"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把方程看成某个未知函数 U 的全微分等于零，那么解曲线就是 U 取常数的等值线。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      }
+    ],
+    "explanation": [
+      "对一个变量积分后，积分常数可以是另一个变量的函数，必须用第二个偏导条件把它确定下来。"
+    ]
+  }
 }

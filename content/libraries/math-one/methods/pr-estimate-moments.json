@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：X 在 (0,θ) 均匀，θ>0，求矩估计。",
-    "solution": "EX=θ/2，以样本均值替换得 θ̂=2X̄。该估计不要求等于最大观测值。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "均匀分布区间端点平均值为 θ/2；也可用密度 1/θ 积分算出。用观察得到的样本平均值代替这个理论平均值。",
+        "formulas": [
+          "EX=\\int_0^\\theta x\\frac1\\theta\\,\\mathrm dx=\\frac\\theta2;\\quad\\overline X=\\frac{\\widehat\\theta}2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "EX=θ/2，以样本均值替换得 θ̂=2X̄。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "该估计不要求等于最大观测值。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-estimate-mle",
@@ -27,5 +45,25 @@
   "topicIds": [
     "pr-point-estimation-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "理论平均值含未知参数，样本平均值可以实际算出，把两者匹配就能反解参数。",
+    "symbols": [
+      {
+        "symbol": "点估计",
+        "meaning": "点估计用样本计算一个数估计未知参数。无偏性讨论重复抽样平均是否等于参数；相合性讨论样本量增大时是否接近参数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "先算总体矩与参数的关系，再用样本矩代替总体矩，不是把参数直接等同于样本均值。"
+    ]
+  }
 }

@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：对二阶矩阵将第二行加第一行的 3 倍，写初等矩阵。",
-    "solution": "E=[[1,0],[3,1]]；EA 的第二行正是 A 第二行加其第一行的 3 倍。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "在单位矩阵上做同样行变换，原第二行 (0,1) 加三倍第一行 (1,0)，变成 (3,1)。",
+        "formulas": [
+          "E=\\begin{pmatrix}1&0\\\\3&1\\end{pmatrix}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "E=[[1,0],[3,1]]；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "EA 的第二行正是 A 第二行加其第一行的 3 倍。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-matrix-adjugate",
@@ -27,5 +45,17 @@
   "topicIds": [
     "la-inverse-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "对单位矩阵做一次行变换得到初等矩阵，左乘它就能对任意匹配矩阵做同样行变换。",
+    "symbols": [
+      {
+        "symbol": "矩阵与乘法",
+        "meaning": "矩阵表示线性关系。乘积 AB 要求 A 的列数等于 B 的行数；通常 AB 与 BA 不相等，甚至后者可能无定义。"
+      }
+    ],
+    "explanation": [
+      "左乘对应行变换，右乘对应列变换，位置不同不能混用。"
+    ]
+  }
 }

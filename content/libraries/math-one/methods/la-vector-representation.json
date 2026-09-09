@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：将 (3,2) 用 (1,0)、(1,1) 表示。",
-    "solution": "方程 c1+c2=3，c2=2，得 (3,2)=(1,0)+2(1,1)，且系数唯一。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "第二坐标只有第二个向量能贡献，所以它的系数必须为二。再比较第一坐标，另一个系数必须为一。",
+        "formulas": [
+          "c_1+c_2=3,\\quad c_2=2\\quad\\Longrightarrow\\quad c_1=1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "方程 c1+c2=3，c2=2，得 (3,2)=(1,0)+2(1,1)，且系数唯一。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-vector-dependence",
@@ -28,5 +41,21 @@
   "topicIds": [
     "la-vector-linear-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "问一个向量能否由其他向量组合出来，就是把组合系数当未知量解线性方程。",
+    "symbols": [
+      {
+        "symbol": "线性组合与相关",
+        "meaning": "线性组合是若干向量乘数后相加。若存在不全为零的系数使组合为零，这组向量线性相关。"
+      },
+      {
+        "symbol": "r(A)",
+        "meaning": "矩阵 A 的秩：相互独立的行或列的最大个数。"
+      }
+    ],
+    "explanation": [
+      "有解表示能生成；系数唯一还需对应生成向量独立。"
+    ]
+  }
 }

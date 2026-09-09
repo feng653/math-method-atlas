@@ -18,7 +18,27 @@
   ],
   "example": {
     "prompt": "自编例题：将f(x)=1在(0,π)展开为正弦级数。",
-    "solution": "bₙ=(2/π)∫₀^πsin(nx)dx=2(1-(-1)^n)/(nπ)，所以1=(4/π)Σ(k≥0)sin((2k+1)x)/(2k+1)，内部成立，端点级数值0。"
+    "solution": [
+      {
+        "title": "先计算正弦系数",
+        "text": "取区间长度 l=π，被积函数 f 为一。sin(nx) 的原函数是 −cos(nx)/n，代入两端得到系数。",
+        "formulas": [
+          "b_n=\\frac2\\pi\\left[-\\frac{\\cos nx}n\\right]_0^\\pi=\\frac{2(1-(-1)^n)}{n\\pi}"
+        ]
+      },
+      {
+        "title": "分奇偶项",
+        "text": "n 为偶数时分子为零，为奇数时分子为四，所以只剩奇数频率。令 n=2k+1 即可写出求和式。",
+        "formulas": [
+          "1=\\frac4\\pi\\sum_{k=0}^{\\infty}\\frac{\\sin((2k+1)x)}{2k+1},\\quad0<x<\\pi"
+        ]
+      },
+      {
+        "title": "单独检查端点",
+        "text": "两个端点的每个正弦项都为零，级数和为零。它等于奇周期延拓在跳跃点的左右平均值，不等于区间内部常值一。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-fourier"
@@ -26,5 +46,25 @@
   "topicIds": [
     "series-fourier-half-range"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "只给出半个区间的函数时，可以选奇延拓得到正弦展开，或选偶延拓得到余弦展开。",
+    "symbols": [
+      {
+        "symbol": "级数看部分和",
+        "meaning": "无穷级数的和是部分和序列的极限。通项趋于零只是收敛的必要条件，例如调和级数通项趋零但级数发散。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "展开在区间内部与端点的取值规则可能不同，端点要看延拓后的左右极限。"
+    ]
+  }
 }

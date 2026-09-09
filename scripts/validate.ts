@@ -54,6 +54,12 @@ if (parsed.success) {
     try { katex.renderToString(formula.latex, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 }); }
     catch (error) { errors.push(`${type.libraryId}/${type.id}/${formula.id}: ${String(error)}`); }
   }
+  for (const question of parsed.data.questions) {
+    for (const value of [...(question.statement?.formulas ?? []), ...(question.statement?.options ?? [])]) {
+      try { katex.renderToString(value, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 }); }
+      catch (error) { errors.push(`${question.id} statement: ${String(error)}`); }
+    }
+  }
 }
 if (errors.length) {
   console.error(errors.join('\n'));

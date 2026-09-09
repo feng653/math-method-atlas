@@ -21,7 +21,28 @@
   ],
   "example": {
     "prompt": "自编：S 为 z=x+y、0≤x,y≤1，求面积及常场 F=(1,2,4) 的向上通量；换为向下会怎样？",
-    "solution": "gx=gy=1，面积元为 √3dxdy，故面积 √3。向上 n dS=(−1,−1,1)dxdy，F 点乘为 −1−2+4=1，通量为 1。向下法向取反，通量为 −1；几何面积仍为 √3。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "gx=gy=1，面积元为 √3dxdy，故面积 √3。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "向上 n dS=(−1,−1,1)dxdy，F 点乘为 −1−2+4=1，通量为 1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "向下法向取反，通量为 −1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "几何面积仍为 √3。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-gauss",
@@ -30,5 +51,25 @@
   "topicIds": [
     "multiple-integrals-surface-integrals"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "曲面上的面积累积不依赖朝向，向量场穿过曲面的通量则依赖法向方向。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "∬",
+        "meaning": "二重积分：在整个平面区域内累积被积函数乘小面积的贡献。"
+      },
+      {
+        "symbol": "·",
+        "meaning": "这里用作乘法或向量点积符号，需按两侧对象是数还是向量区分。"
+      }
+    ],
+    "explanation": [
+      "先判断题目求面积量还是通量，再选择面积微元或带方向的面积向量。"
+    ]
+  }
 }

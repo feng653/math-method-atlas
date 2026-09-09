@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：比较1-cos x与x²的阶。",
-    "solution": "1-cos x=x²/2+o(x²)，比值趋1/2，因此与x²同阶但不等价，与x²/2等价。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "余弦在零点的常数项为一，减去后最先留下二次项。除以 x² 后，剩下的高阶小量趋零。",
+        "formulas": [
+          "\\frac{1-\\cos x}{x^2}=\\frac12+\\frac{o(x^2)}{x^2}\\longrightarrow\\frac12"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "1-cos x=x²/2+o(x²)，比值趋1/2，因此与x²同阶但不等价，与x²/2等价。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-equivalent-infinitesimal",
@@ -27,5 +40,17 @@
   "topicIds": [
     "limits-infinitesimal-order"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "都趋于零的量也有快慢之分，比较它们的比值可以判断谁更小，以及主导项是什么。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      }
+    ],
+    "explanation": [
+      "比值趋于非零常数表示同阶，只有常数恰为一才叫等价。"
+    ]
+  }
 }

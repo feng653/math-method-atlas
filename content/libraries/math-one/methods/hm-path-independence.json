@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：F=(2xy,x²)，求从(0,0)到(1,2)的线积分。",
-    "solution": "势u=x²y，梯度正是F，全平面光滑，积分u(1,2)-u(0,0)=2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "对 2xy 按 x 积分得到 x²y 加一个 y 的函数，再对 y 求导与第二分量 x² 对照，确定附加函数为常数。",
+        "formulas": [
+          "U_x=2xy,\\quad U_y=x^2,\\quad U=x^2y+C;\\quad I=U(1,2)-U(0,0)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "势u=x²y，梯度正是F，全平面光滑，积分u(1,2)-u(0,0)=2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-line-second-kind",
@@ -27,5 +40,21 @@
   "topicIds": [
     "multiple-integrals-path-independence"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "若向量场是某个势函数的梯度，沿路径的积分只取决于终点与起点的势之差。",
+    "symbols": [
+      {
+        "symbol": "重积分的累积对象",
+        "meaning": "二重积分在平面区域上累积，面积微元通常写作 dxdy；三重积分在空间区域上累积。先确定区域，再选择积分顺序。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "先找势函数并检查适用区域，再代入端点；仅偏导相等在有洞区域未必足够。"
+    ]
+  }
 }

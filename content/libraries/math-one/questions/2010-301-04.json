@@ -27,5 +27,25 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "所选来源第4题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  },
+  "statement": {
+    "intro": "选择与下列极限相等的累次积分。",
+    "formulas": [
+      "\\lim_{n\\to\\infty}\\sum_{i=1}^n\\sum_{j=1}^n\\frac{n}{(n+i)(n^2+j^2)}"
+    ],
+    "tasks": [
+      "从下列四个选项中选择一项。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "按来源核对数学条件并重新表述题面，未转载解析。",
+    "options": [
+      "\\int_0^1\\mathrm dx\\int_0^x\\frac{1}{(1+x)(1+y^2)}\\,\\mathrm dy",
+      "\\int_0^1\\mathrm dx\\int_0^x\\frac{1}{(1+x)(1+y)}\\,\\mathrm dy",
+      "\\int_0^1\\mathrm dx\\int_0^1\\frac{1}{(1+x)(1+y)}\\,\\mathrm dy",
+      "\\int_0^1\\mathrm dx\\int_0^1\\frac{1}{(1+x)(1+y^2)}\\,\\mathrm dy"
+    ],
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2010/#4"
+    }
   }
 }

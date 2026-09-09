@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：解 x+2y=5，3x+4y=11。",
-    "solution": "D=−2，Dx=20−22=−2，Dy=11−15=−4，所以 x=1,y=2。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "系数行列式为 1×4−2×3=−2，非零可用克拉默法则。求 x 时替换第一列，求 y 时替换第二列。",
+        "formulas": [
+          "D_x=\\begin{vmatrix}5&2\\\\11&4\\end{vmatrix},\\quad D_y=\\begin{vmatrix}1&5\\\\3&11\\end{vmatrix}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "D=−2，Dx=20−22=−2，Dy=11−15=−4，所以 x=1,y=2。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-system-consistency",
@@ -27,5 +40,25 @@
   "topicIds": [
     "la-system-solvability"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "方阵系数系统的行列式非零时，可以把每个未知量表示成替换一列后的行列式与原行列式之比。",
+    "symbols": [
+      {
+        "symbol": "解是同时满足所有方程的向量",
+        "meaning": "线性方程组可写成 Ax=b。先判断是否有解，再区分唯一解或无穷多解。行变换不会改变方程组的解集。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "det A",
+        "meaning": "方阵 A 的行列式，是一个数；行列式不为零等价于方阵可逆。"
+      }
+    ],
+    "explanation": [
+      "分子替换的是该未知量对应的列，分母始终是原系数行列式。"
+    ]
+  }
 }

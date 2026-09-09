@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：A、B 均为三阶矩阵，AB=0 且 r(A)=2，B 的秩最大多少？",
-    "solution": "由 r(A)+r(B)≤3 得 r(B)≤1；A=diag(1,1,0)、B=diag(0,0,1) 达到 1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "A 的秩为二而维数为三，所以零空间只有一个独立方向。AB=0 要求 B 的每一列都在这个零空间中，因此最多提供一个独立列。",
+        "formulas": [
+          "r(B)\\le3-r(A)=1"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "由 r(A)+r(B)≤3 得 r(B)≤1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "A=diag(1,1,0)、B=diag(0,0,1) 达到 1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-matrix-rank",
@@ -27,5 +45,21 @@
   "topicIds": [
     "la-rank-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "乘积为零意味着后一个矩阵的输出全部落入前一个矩阵的零空间，因此独立输出方向数受到限制。",
+    "symbols": [
+      {
+        "symbol": "矩阵与乘法",
+        "meaning": "矩阵表示线性关系。乘积 AB 要求 A 的列数等于 B 的行数；通常 AB 与 BA 不相等，甚至后者可能无定义。"
+      },
+      {
+        "symbol": "r(A)",
+        "meaning": "矩阵 A 的秩：相互独立的行或列的最大个数。"
+      }
+    ],
+    "explanation": [
+      "先得到秩上界，再给达到上界的具体矩阵，才能确认所问最大值。"
+    ]
+  }
 }

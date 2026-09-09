@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求 lim(x→0) x²sin(1/x)。",
-    "solution": "绝对值不超过x²，而x²→0，因此极限为0。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "正弦无论怎样振荡都在负一和一之间，乘以非负的 x² 后，就被两个同时趋零的函数夹住。",
+        "formulas": [
+          "-x^2\\le x^2\\sin(1/x)\\le x^2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "绝对值不超过x²，而x²→0，因此极限为0。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-recursive-limit"
@@ -26,5 +39,17 @@
   "topicIds": [
     "limits-squeeze"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "直接算不动的振荡量，可以用容易控制的上界压住，只要上界趋零，它也趋零。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      }
+    ],
+    "explanation": [
+      "先取绝对值，把振荡因子界为一，再观察剩下因子的极限。"
+    ]
+  }
 }

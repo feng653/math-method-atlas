@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：把 Q=2x²-8y² 化为规范形，并判断它是否与 x²-y² 合同。",
-    "solution": "令 u=√2 x、v=2√2 y，替换可逆，得到 Q=u²-v²。两者正负惯性指数都为 (1,1)，故对应实对称矩阵合同。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "把系数二与八写进新变量的平方中：u 的平方等于 2x²，v 的平方等于 8y²。缩放系数都不为零，换元可逆。",
+        "formulas": [
+          "u=\\sqrt2x,\\quad v=2\\sqrt2y;\\quad Q=u^2-v^2"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令 u=√2 x、v=2√2 y，替换可逆，得到 Q=u²-v²。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "两者正负惯性指数都为 (1,1)，故对应实对称矩阵合同。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-quadratic-completion",
@@ -27,5 +45,21 @@
   "topicIds": [
     "audit-inertia-canonical"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "可逆线性换元可把二次型整理成正平方、负平方和零项，正负平方的个数不会因可逆换元改变。",
+    "symbols": [
+      {
+        "symbol": "二次型",
+        "meaning": "二次型是各变量二次项和交叉项组成的齐次多项式，可写成 xᵀAx，通常选 A 为对称矩阵；交叉项系数要平均分给两个对称位置。"
+      },
+      {
+        "symbol": "·",
+        "meaning": "这里用作乘法或向量点积符号，需按两侧对象是数还是向量区分。"
+      }
+    ],
+    "explanation": [
+      "规范形还要把非零系数缩放到一或负一，但这个缩放一般不保持长度。"
+    ]
+  }
 }

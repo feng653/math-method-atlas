@@ -18,7 +18,30 @@
   ],
   "example": {
     "prompt": "自编：求 x 的原函数族和 ∫₁⁰x dx，再求 G(x)=∫ₓ^{x²}eᵗdt 的导数。",
-    "solution": "原函数族 x²/2+C；交换上下限使定积分为 −1/2，与无向面积不同。G′=2xe^{x²}−eˣ，上下限两项均保留。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先由幂函数积分求原函数。对 G 求导时，上限 x² 的变化贡献是 e 的 x² 次幂乘 2x，下限 x 的变化贡献要减去。",
+        "formulas": [
+          "G'(x)=e^{x^2}(x^2)'-e^x(x)'=2xe^{x^2}-e^x"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "原函数族 x²/2+C；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "交换上下限使定积分为 −1/2，与无向面积不同。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "G′=2xe^{x²}−eˣ，上下限两项均保留。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-integration-by-parts",
@@ -27,5 +50,25 @@
   "topicIds": [
     "integrals-newton-leibniz"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "定积分可以由原函数在两端的差算出；变上限积分的导数则把积分还原成被积函数。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "若上下限本身是 x 的函数，两端都要乘各自导数，下端还带负号。"
+    ]
+  }
 }

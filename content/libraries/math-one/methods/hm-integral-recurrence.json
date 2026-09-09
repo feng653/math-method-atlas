@@ -21,7 +21,29 @@
   ],
   "example": {
     "prompt": "自编：用递推求 ∫₀^{π/2}sin⁴x dx。",
-    "solution": "分部取u=sin^{n−1}x，dv=sin x dx，边界项为0，得Iₙ=(n−1)(Iₙ₋₂−Iₙ)，故I₄=(3/4)(1/2)(π/2)=3π/16。"
+    "solution": [
+      {
+        "title": "分部积分",
+        "text": "令 u=sinⁿ⁻¹x、dv=sin x dx，v=−cos x，端点乘积均为零。导数带来 n−1，再用 cos²x=1−sin²x。",
+        "formulas": [
+          "I_n=(n-1)\\int_0^{\\pi/2}\\sin^{n-2}x\\cos^2x\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "移项得到递推",
+        "text": "把余弦平方改写后，两个积分就是 Iₙ₋₂ 与 Iₙ。将含 Iₙ 的项移到一起并除以 n。",
+        "formulas": [
+          "I_n=(n-1)(I_{n-2}-I_n)\\Longrightarrow I_n=\\frac{n-1}nI_{n-2}"
+        ]
+      },
+      {
+        "title": "从已知起点算到四次",
+        "text": "I₀ 是区间长度 π/2。依次取 n=2 与 n=4，得到所求值。",
+        "formulas": [
+          "I_2=\\frac12I_0=\\frac\\pi4,\\quad I_4=\\frac34I_2=\\frac{3\\pi}{16}"
+        ]
+      }
+    ]
   },
   "relatedIds": [
     "hm-integration-by-parts",
@@ -30,5 +52,25 @@
   "topicIds": [
     "integrals-integration-by-parts"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "同类积分只差一个整数次数时，可以把高次数的积分与低次数的积分联系起来，逐次降到已知起点。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "分部积分后原积分可能又出现，要先移项解出它，再代入递推初值。"
+    ]
+  }
 }

@@ -18,7 +18,30 @@
   ],
   "example": {
     "prompt": "自编例题：x+y=1，x+ty=2，讨论参数 t。",
-    "solution": "相减得 (t−1)y=1。t≠1 时 y=1/(t−1)，x=(t−2)/(t−1)；t=1 时无解。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "第二式减第一式，x 消掉，留下 (t−1)y=1。若 t=1 左边恒零无解，否则可相除得到 y，再由第一式求 x。",
+        "formulas": [
+          "(t-1)y=1;\\quad t\\ne1\\Longrightarrow y=\\frac1{t-1},\\quad x=1-y"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "相减得 (t−1)y=1。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "t≠1 时 y=1/(t−1)，x=(t−2)/(t−1)；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "t=1 时无解。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-system-consistency",
@@ -27,5 +50,17 @@
   "topicIds": [
     "la-system-solvability"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "参数可能让某个主元突然变零，导致方程组性质变化，所以消元中的除法要分情况。",
+    "symbols": [
+      {
+        "symbol": "解是同时满足所有方程的向量",
+        "meaning": "线性方程组可写成 Ax=b。先判断是否有解，再区分唯一解或无穷多解。行变换不会改变方程组的解集。"
+      }
+    ],
+    "explanation": [
+      "先单独检查使除数为零的参数，再处理可以安全相除的一般情况。"
+    ]
+  }
 }

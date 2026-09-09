@@ -1,0 +1,43 @@
+.detail-panel { width: min(var(--detail-width, 520px), calc(100vw - 48px)); }
+.has-detail .graph-stage { right: calc(min(var(--detail-width, 520px), calc(100vw - 48px)) + 44px); }
+.detail-resize { position: absolute; top: 110px; bottom: 42px; z-index: 24;
+  right: calc(min(var(--detail-width, 520px), calc(100vw - 48px)) + 15px);
+  width: 14px; cursor: ew-resize; touch-action: none; display: grid; place-items: center; }
+.detail-resize span { height: 60px; width: 4px; background: #91a899; border-radius: 4px; }
+.detail-resize:hover span, .detail-resize:focus-visible span { background: #0f766e; }
+.detail-scroll p, .detail-scroll li { font-size: 16px; line-height: 1.9; }
+.detail-scroll { overflow-wrap: anywhere; min-width: 0; }
+.detail-scroll h3 { font-size: 17px; line-height: 1.6; }
+.symbol-list { margin: 0; }
+.symbol-list > div { padding: 14px 0; border-bottom: 1px solid #e0e6dc; }
+.symbol-list dt { font-size: 18px; font-weight: 600; color: #0f766e; }
+.symbol-list dd { margin: 5px 0 0; font-size: 16px; line-height: 1.85; }
+.chapter-types { display: grid; gap: 12px; }
+.chapter-types button { text-align: left; padding: 14px; background: #f5f7f1; border-radius: 10px; }
+.chapter-types strong { display: flex; justify-content: space-between; gap: 12px; }
+.chapter-types span { display: block; font-size: 14px; margin-top: 8px; line-height: 1.8; }
+.formula { position: relative; overflow: visible; padding: 38px 12px 14px; font-size: 16px; }
+.formula-expand { position: absolute; right: 8px; top: 0; min-height: 36px; color: #0f766e; font-size: 12px; }
+.formula-table { border-collapse: collapse; table-layout: fixed; width: 100%; }
+.formula-table th { width: 22px; color: #698072; font: inherit; font-size: 12px; }
+.formula-table td { padding: 10px 0; }
+.formula-table tr + tr { border-top: 1px solid #dde5d9; }
+.formula-row { overflow-x: auto; padding: 6px 2px; scrollbar-width: thin; }
+.formula-row .katex { white-space: normal; }
+.formula-row .katex .base { margin-top: 4px; margin-bottom: 4px; }
+.formula-dialog { width: min(1100px, 92vw); max-width: 92vw; max-height: 85vh;
+  border: 1px solid #d8e1d3; border-radius: 14px; padding: 24px; color: #304b42; }
+.formula-dialog::backdrop { background: #203d3866; }
+.formula-dialog > button { display: block; margin-left: auto; color: #0f766e; }
+.question-card { margin: 18px 0; padding: 16px; border: 1px solid #e0e6dc; border-radius: 10px; }
+.question-sources { margin: 24px 0; padding: 12px 0; border-top: 1px solid #e0e6dc; }
+.question-sources > summary { cursor: pointer; min-height: 44px; line-height: 44px; color: #0f766e; }
+.example-steps > section { padding: 10px 0; border-bottom: 1px solid #dde5d9; }
+.example-steps h3 span { margin-right: 8px; color: #0f766e; }
+@media (max-width: 700px) {
+  .detail-resize { display: none; }
+  .detail-panel { left: 10px; right: 10px; width: auto; }
+  .has-detail .graph-stage { right: 0; }
+  .detail-scroll { padding: 20px; }
+  .example { padding: 14px; }
+}

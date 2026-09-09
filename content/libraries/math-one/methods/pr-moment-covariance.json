@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：X 在 (−1,1) 均匀，Y=X²，求 Cov(X,Y)。",
-    "solution": "EX=EX³=0，因此协方差为 0，但 Y 完全由 X 决定，并不独立。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "X 的密度是二分之一，关于零对称。EX 与 E(XY)=EX³ 都是奇函数在对称区间上的积分，因此为零；EY=EX² 为三分之一。",
+        "formulas": [
+          "EX=\\frac12\\int_{-1}^1x\\,\\mathrm dx=0;\\quad E(XY)=\\frac12\\int_{-1}^1x^3\\,\\mathrm dx=0;\\quad EY=\\frac13"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "EX=EX³=0，因此协方差为 0，但 Y 完全由 X 决定，并不独立。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-moment-correlation",
@@ -27,5 +40,25 @@
   "topicIds": [
     "pr-variance-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "分别减去均值后看两个变量的乘积平均值，可衡量它们是否倾向于一起偏高或一起偏低。",
+    "symbols": [
+      {
+        "symbol": "期望与方差",
+        "meaning": "期望描述平均水平，方差描述围绕均值的平方偏离。计算方差可用二阶矩减去均值平方，但要先确认这些量存在。"
+      },
+      {
+        "symbol": "Cov(X,Y)",
+        "meaning": "协方差：E(XY)−E(X)E(Y)，衡量两个变量的线性共同变化。"
+      },
+      {
+        "symbol": "E(X)",
+        "meaning": "随机变量 X 的期望，是按概率加权的平均值；并非某一次观测值。"
+      }
+    ],
+    "explanation": [
+      "协方差为零只排除线性共同变化，非线性依赖仍可能很强。"
+    ]
+  }
 }

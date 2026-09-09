@@ -17,12 +17,39 @@
     "相似与合同保留的性质不同；绝对值、平方会丢失符号。"
   ],
   "example": {
-    "prompt": "自编推演：求矩阵高次幂，已知可分解为大矩阵与小矩阵的乘积。",
-    "solution": "先核对乘法维数，再将中间反复出现的小方阵作为运算核心；零次幂单独处理。"
+    "prompt": "自编例题：A=[[1,2],[2,4]]，利用低维乘积计算 A³。",
+    "solution": [
+      {
+        "title": "把重复结构提出来",
+        "text": "两列成比例，写成列向量 B 与行向量 C 的乘积。反过来 CB 只是一个数，比矩阵乘法简单。",
+        "formulas": [
+          "A=BC,\\quad B=\\binom12,\\quad C=\\begin{pmatrix}1&2\\end{pmatrix},\\quad CB=5"
+        ]
+      },
+      {
+        "title": "只在小对象上重复计算",
+        "text": "连续三个 BC 中间两处均可合并成 CB=5，所以结果是 25A。",
+        "formulas": [
+          "A^3=B(CB)^2C=25BC=25A"
+        ]
+      }
+    ]
   },
   "relatedIds": [],
   "topicIds": [
     "basic-equivalent-representation-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "同一个对象换成更适合计算的表示，往往能减少运算量，但要保留题目真正关心的性质。",
+    "symbols": [
+      {
+        "symbol": "先分清目标和条件",
+        "meaning": "目标是需要求出或证明的结论，条件是已经知道的信息。先分别列出两者，再寻找能连接它们的定义、等式或定理。"
+      }
+    ],
+    "explanation": [
+      "换表示前后先检查维数和等价关系，再使用简化后的公式。"
+    ]
+  }
 }

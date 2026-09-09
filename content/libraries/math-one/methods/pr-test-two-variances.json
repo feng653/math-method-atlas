@@ -20,7 +20,25 @@
   ],
   "example": {
     "prompt": "自编例题：n1=6,n2=9，S1²=4,S2²=2，检验 σ1²>σ2²，写判断式。",
-    "solution": "F=2；当 2>F5,8;1−α 时拒绝方差相等的原假设。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "方差相等的原假设下，两样本方差比服从 F 分布，自由度分别是样本数减一。备择是第一总体方差更大，所以只看右尾。",
+        "formulas": [
+          "F=\\frac{S_1^2}{S_2^2}=\\frac42=2,\\quad(\\nu_1,\\nu_2)=(5,8)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "F=2；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "当 2>F5,8;1−α 时拒绝方差相等的原假设。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-test-normal-variance",
@@ -29,5 +47,21 @@
   "topicIds": [
     "pr-variance-testing-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "比较两总体方差时，样本方差之比经缩放服从 F 分布，可据此判断比值是否异常。",
+    "symbols": [
+      {
+        "symbol": "原假设与备择假设",
+        "meaning": "检验先规定要检验的原假设和相对的备择假设，再选择统计量和拒绝域。备择假设方向决定单侧或双侧检验。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "分子与分母对应的自由度顺序必须与样本方差顺序一致。"
+    ]
+  }
 }

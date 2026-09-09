@@ -19,7 +19,30 @@
   ],
   "example": {
     "prompt": "自编例题：求抛物线 y=x² 在 x=1 处的切线和法线。",
-    "solution": "切点 (1,1)，斜率 k=2。切线 y-1=2(x-1)；法线 (x-1)+2(y-1)=0，即 x+2y-3=0。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "x=1 时 y=1，切线斜率是 y′=2x 在一处的值二。法线与方向 (1,2) 垂直，因此可用它作为法线方程的法向量。",
+        "formulas": [
+          "y-1=2(x-1);\\quad (1,2)\\cdot(x-1,y-1)=0"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "切点 (1,1)，斜率 k=2。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "切线 y-1=2(x-1)；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "法线 (x-1)+2(y-1)=0，即 x+2y-3=0。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-derivative-definition",
@@ -28,5 +51,17 @@
   "topicIds": [
     "audit-plane-tangent-normal"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "切线沿着曲线在该点的瞬时方向，法线与切线垂直。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      }
+    ],
+    "explanation": [
+      "先算切点与斜率；法线写成点积形式能同时处理斜率为零的情况。"
+    ]
+  }
 }

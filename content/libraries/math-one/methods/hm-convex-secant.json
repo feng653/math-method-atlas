@@ -21,7 +21,18 @@
   ],
   "example": {
     "prompt": "自编例题：不使用二阶导证明 f(x)=|x| 满足凸不等式。",
-    "solution": "对任意 x,z 与 0≤t≤1，由三角不等式 |(1-t)x+tz|≤|(1-t)x|+|tz|=(1-t)|x|+t|z|。所以 f 满足凸不等式，尽管它在 0 不可导。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "对任意 x,z 与 0≤t≤1，由三角不等式 |(1-t)x+tz|≤|(1-t)x|+|tz|=(1-t)|x|+t|z|。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "所以 f 满足凸不等式，尽管它在 0 不可导。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-concavity-asymptote",
@@ -30,5 +41,21 @@
   "topicIds": [
     "topic-hm-convex-secant"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "凸函数图像在任意两点连线的下方；这个几何定义不要求图像处处光滑。",
+    "symbols": [
+      {
+        "symbol": "导数是瞬时变化率",
+        "meaning": "导数是函数增量与自变量增量之比的极限。几何上，它给出曲线在该点的切线斜率。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "绝对值函数在零点有尖角，不能用处处二阶可导的判别，但可以直接用三角不等式证明凸性。"
+    ]
+  }
 }

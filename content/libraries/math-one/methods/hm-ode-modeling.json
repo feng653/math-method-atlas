@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：某量衰减速率为当前量的2倍，初值3，求t≥0时的量。",
-    "solution": "设M'= -2M、M(0)=3，解为M(t)=3e^{-2t}，始终正且趋0，符合衰减描述。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "衰减表示导数为负，速率为当前量两倍表示绝对值等于 2M。分离变量积分后，以零时刻的量确定常数。",
+        "formulas": [
+          "M'=-2M,\\quad M(0)=3;\\quad\\frac{\\mathrm dM}M=-2\\,\\mathrm dt"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "设M'= -2M、M(0)=3，解为M(t)=3e^{-2t}，始终正且趋0，符合衰减描述。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-ode-linear-first",
@@ -27,5 +40,21 @@
   "topicIds": [
     "ode-ode-modeling"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "先把题目中的变化速率翻译成导数关系，再把已知起始状态写成初值。",
+    "symbols": [
+      {
+        "symbol": "微分方程",
+        "meaning": "微分方程把未知函数和它的导数联系起来。方程的阶是出现的最高导数阶数。求解后应代回方程检查。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "解完后检查正负、单位和长期趋势是否与原来的增长或衰减描述一致。"
+    ]
+  }
 }

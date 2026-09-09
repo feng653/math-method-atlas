@@ -19,7 +19,20 @@
   ],
   "example": {
     "prompt": "自编例题：求 x+y+z=0 的基础解系。",
-    "solution": "令 y=s,z=t，x=−s−t，基础解系为 (−1,1,0)、(−1,0,1)。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "只用一个方程限制三个未知量，选 y、z 为自由变量，x 由它们决定。分别让自由变量为 (1,0) 与 (0,1) 得到两个基解。",
+        "formulas": [
+          "x=-y-z,\\quad(y,z)=(1,0)\\ \\text{或}\\ (0,1)"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "令 y=s,z=t，x=−s−t，基础解系为 (−1,1,0)、(−1,0,1)。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-system-general",
@@ -28,5 +41,21 @@
   "topicIds": [
     "la-system-structure"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "主变量由自由变量决定，每次把一个自由变量取一、其他取零，就得到一个独立解方向。",
+    "symbols": [
+      {
+        "symbol": "解是同时满足所有方程的向量",
+        "meaning": "线性方程组可写成 Ax=b。先判断是否有解，再区分唯一解或无穷多解。行变换不会改变方程组的解集。"
+      },
+      {
+        "symbol": "r(A)",
+        "meaning": "矩阵 A 的秩：相互独立的行或列的最大个数。"
+      }
+    ],
+    "explanation": [
+      "基础解系向量数应等于未知量个数减秩，可以用来检查是否漏自由变量。"
+    ]
+  }
 }

@@ -23,6 +23,7 @@ export const librarySchema = z.object({
   examScope: examScopeSchema.optional(),
   chapters: z.array(z.object({
     id, title: text, subject: text, supplementary: z.boolean().optional(),
+    concepts: z.array(z.object({ title: text, explanation: text }).strict()).optional(),
     syllabusTopics: z.array(z.object({ id, title: text }).strict()).min(1),
   }).strict()).min(1),
 }).strict();
@@ -30,6 +31,8 @@ export const librarySchema = z.object({
 export const methodSchema = z.object({
   id, libraryId: id, chapterId: id, title: text, summary: text,
   conditions: z.array(text).min(1), steps: z.array(text).min(1), formula,
+  learning: z.object({ intuition: text, symbols: z.array(z.object({ symbol: text, meaning: text }).strict()),
+    explanation: z.array(text).min(1) }).strict().optional(),
   pitfalls: z.array(text).min(1),
   example: z.object({ prompt: text, formulas: z.array(formula).optional(),
     solution: z.union([text, z.array(z.object({ title: text, text,
@@ -60,6 +63,9 @@ export const paperSchema = z.object({
 
 export const questionSchema = z.object({
   id, libraryId: id, paperId: id, number: z.string().regex(/^[1-9]\d?$/, 'Use the main question number without leading zeros'), summary: text, source,
+  statement: z.object({ intro: text, formulas: z.array(formula), tasks: z.array(text),
+    options: z.array(formula).optional(), checkedOn: z.iso.date(), note: text,
+    source: source.optional() }).strict().optional(),
   sourceNote: text.optional(),
   subquestions: z.array(z.object({
     id, label: text, summary: text, methodIds: ids, evidenceNote: text,

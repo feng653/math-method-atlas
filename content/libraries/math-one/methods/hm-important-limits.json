@@ -20,7 +20,18 @@
   ],
   "example": {
     "prompt": "自编例题：求 x→0 时 sin(3x)/(2x) 与 (1+2x)^(3/x) 的极限。",
-    "solution": "第一式=(3/2)·sin(3x)/(3x)，极限 3/2。第二式底数在零点邻域为正，写成 [(1+2x)^(1/(2x))]^6，极限 e⁶。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "第一式=(3/2)·sin(3x)/(3x)，极限 3/2。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "第二式底数在零点邻域为正，写成 [(1+2x)^(1/(2x))]^6，极限 e⁶。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-equivalent-infinitesimal",
@@ -29,5 +40,25 @@
   "topicIds": [
     "audit-important-limits"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把表达式整理成已经知道极限的标准形，再单独处理前面的常数或外面的幂。",
+    "symbols": [
+      {
+        "symbol": "函数与定义域",
+        "meaning": "函数为定义域内的每个输入指定唯一输出。做代换、求导或取对数前，要检查输入是否仍在定义域内。"
+      },
+      {
+        "symbol": "lim",
+        "meaning": "极限：研究变量越来越接近某个位置时，表达式趋近哪个数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "标准形里分子与分母的自变量必须一致，例如 sin(3x) 要配 3x。"
+    ]
+  }
 }

@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：在 0<x<1，0<y<1 上联合密度为 4xy，是否独立？",
-    "solution": "边缘为 2x 和 2y，乘积等于联合密度，域也是乘积域，因此独立。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "先分别沿另一个变量从零到一积分得到两个边缘密度。相乘恢复 4xy，且非零区域确实是两个区间的乘积。",
+        "formulas": [
+          "f_X(x)=\\int_0^14xy\\,\\mathrm dy=2x,\\quad f_Y(y)=2y"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "边缘为 2x 和 2y，乘积等于联合密度，域也是乘积域，因此独立。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-joint-conditional",
@@ -27,5 +40,17 @@
   "topicIds": [
     "pr-joint-conditional-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "独立时联合规律能拆成两个边缘规律的乘积；密度拆得开只是检查的一部分。",
+    "symbols": [
+      {
+        "symbol": "联合与边缘",
+        "meaning": "联合分布同时描述多个随机变量。对其他变量求和或积分可以得到某个变量的边缘分布。"
+      }
+    ],
+    "explanation": [
+      "支持域也要能对应乘积结构，三角形区域不能因为式子简单就当作独立。"
+    ]
+  }
 }

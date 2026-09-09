@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：0<Var(X)<∞，Y=3−2X，求相关系数。",
-    "solution": "Cov(X,Y)=−2Var(X)，Var(Y)=4Var(X)，所以 ρ=−1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "常数不影响协方差，乘以 −2 使协方差乘 −2；方差则乘四。将这两部分代入相关系数公式后，原方差约去。",
+        "formulas": [
+          "\\rho=\\frac{-2\\operatorname{Var}(X)}{\\sqrt{\\operatorname{Var}(X)\\cdot4\\operatorname{Var}(X)}}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "Cov(X,Y)=−2Var(X)，Var(Y)=4Var(X)，所以 ρ=−1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-moment-covariance",
@@ -27,5 +40,33 @@
   "topicIds": [
     "pr-variance-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "协方差还带着单位，除以两个标准差后，就得到无量纲的线性相关程度。",
+    "symbols": [
+      {
+        "symbol": "期望与方差",
+        "meaning": "期望描述平均水平，方差描述围绕均值的平方偏离。计算方差可用二阶矩减去均值平方，但要先确认这些量存在。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      },
+      {
+        "symbol": "Cov(X,Y)",
+        "meaning": "协方差：E(XY)−E(X)E(Y)，衡量两个变量的线性共同变化。"
+      },
+      {
+        "symbol": "Var(X)",
+        "meaning": "方差：E[(X−EX)²]，衡量变量围绕均值的波动。"
+      },
+      {
+        "symbol": "ρ",
+        "meaning": "相关系数，衡量标准化后的线性相关程度，取值在 −1 到 1 之间。"
+      }
+    ],
+    "explanation": [
+      "相关系数为负表示反向线性变化；计算前检查两个方差非零且有限。"
+    ]
+  }
 }

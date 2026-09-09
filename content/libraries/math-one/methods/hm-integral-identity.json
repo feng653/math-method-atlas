@@ -21,7 +21,18 @@
   ],
   "example": {
     "prompt": "自编：f连续，证明 ∫₀ˣ(x−t)f(t)dt=∫₀ˣ[∫₀ᵘf(t)dt]du。",
-    "solution": "记F(x)=∫₀ˣf(t)dt，左边=xF(x)−∫₀ˣtf(t)dt，其导数为F(x)，右边导数同为F(x)；两边在x=0均为0，故同一区间恒等。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "记F(x)=∫₀ˣf(t)dt，左边=xF(x)−∫₀ˣtf(t)dt，其导数为F(x)，右边导数同为F(x)；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "两边在x=0均为0，故同一区间恒等。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-newton-leibniz",
@@ -31,5 +42,17 @@
   "topicIds": [
     "integrals-newton-leibniz"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "证明两个随 x 变化的表达式相等，可以先证明它们导数相同，再用一个点的值确定相差的常数为零。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      }
+    ],
+    "explanation": [
+      "只有导数相同还不够，它们可能相差常数；必须补一个共同初值。"
+    ]
+  }
 }

@@ -1,14 +1,62 @@
 {
-  "id": "proof-counterexample", "libraryId": "proof-toolkit", "chapterId": "proof-basics",
-  "title": "构造反例", "summary": "找到符合全部前提却违反结论的对象，否定全称命题。",
-  "conditions": ["目标是断言所有对象都满足某性质的命题", "反例必须位于规定定义域并满足全部前提"],
-  "steps": ["拆出定义域、前提与结论", "优先检查零点、边界、常值、分段或绝对值对象", "逐条验证对象满足前提", "计算并证明该对象不满足结论"],
+  "id": "proof-counterexample",
+  "libraryId": "proof-toolkit",
+  "chapterId": "proof-basics",
+  "title": "构造反例",
+  "summary": "找到符合全部前提却违反结论的对象，否定全称命题。",
+  "conditions": [
+    "目标是断言所有对象都满足某性质的命题",
+    "反例必须位于规定定义域并满足全部前提"
+  ],
+  "steps": [
+    "拆出定义域、前提与结论",
+    "优先检查零点、边界、常值、分段或绝对值对象",
+    "逐条验证对象满足前提",
+    "计算并证明该对象不满足结论"
+  ],
   "formula": "\\neg(\\forall x\\in D,\\ P(x))\\iff\\exists x\\in D,\\neg P(x)",
-  "pitfalls": ["违背前提的对象不是有效反例", "有限多个正例不能证明全称命题", "反例否定原命题，不自动证明相反的全称命题"],
+  "pitfalls": [
+    "违背前提的对象不是有效反例",
+    "有限多个正例不能证明全称命题",
+    "反例否定原命题，不自动证明相反的全称命题"
+  ],
   "example": {
     "prompt": "自编：判断“每个连续函数在每一点都可导”是否成立。",
-    "solution": "取 f(x)=|x|。它在实数轴上连续，但在 0 的左导数为 -1，右导数为 1，故在 0 不可导。这是满足连续前提而违反处处可导结论的反例。"
+    "solution": [
+      {
+        "title": "计算与推理",
+        "text": "取 f(x)=|x|。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "它在实数轴上连续，但在 0 的左导数为 -1，右导数为 1，故在 0 不可导。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "这是满足连续前提而违反处处可导结论的反例。",
+        "formulas": []
+      }
+    ]
   },
-  "relatedIds": ["proof-contradiction"], "topicIds": ["counterexample"], "status": "reviewed"
+  "relatedIds": [
+    "proof-contradiction"
+  ],
+  "topicIds": [
+    "counterexample"
+  ],
+  "status": "draft",
+  "learning": {
+    "intuition": "一句对所有对象成立的断言，只要找到一个满足前提但违背结论的对象，就被否定。",
+    "symbols": [
+      {
+        "symbol": "直接证明",
+        "meaning": "从已知条件出发，逐步使用定义和已证明结论推出目标。每一步都要能说明依据，不能把待证结论当作已知。"
+      }
+    ],
+    "explanation": [
+      "例子既要符合原命题的前提，也要明确展示结论在哪里失败。"
+    ]
+  }
 }
-

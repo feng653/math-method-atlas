@@ -18,7 +18,25 @@
   ],
   "example": {
     "prompt": "自编例题：将 [[2,1],[1,2]] 正交对角化。",
-    "solution": "单位特征向量为 (1,1)/√2、(1,−1)/√2，对应 3、1；按此组成 Q 即可。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "分别用相同坐标与相反坐标试方向，乘回可得到三倍与一倍。两方向点积为零，长度都为根号二，除以长度后作为列。",
+        "formulas": [
+          "A\\binom11=3\\binom11,\\quad A\\binom1{-1}=\\binom1{-1}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "单位特征向量为 (1,1)/√2、(1,−1)/√2，对应 3、1；",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "按此组成 Q 即可。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-eigen-characteristic",
@@ -27,5 +45,17 @@
   "topicIds": [
     "la-symmetric-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "实对称矩阵有一组互相垂直的单位特征向量，用它们换坐标既能对角化又保持长度角度。",
+    "symbols": [
+      {
+        "symbol": "特征值与特征向量",
+        "meaning": "矩阵作用后，某个非零向量的方向不变或反向，只改变倍数，这个倍数就是特征值。零向量不算特征向量。"
+      }
+    ],
+    "explanation": [
+      "先求特征向量，再正交化并单位化，不能直接把任意倍数的向量当作正交矩阵列。"
+    ]
+  }
 }

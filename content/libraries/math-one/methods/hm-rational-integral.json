@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：求∫1/(x²-1) dx。",
-    "solution": "拆成1/[2(x-1)]-1/[2(x+1)]，得(1/2)ln|(x-1)/(x+1)|+C，区间不能跨±1。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "分母拆成 (x−1)(x+1)，设两项的分子为常数 A、B。通分比较系数可得 A+B=0、A−B=1。",
+        "formulas": [
+          "\\frac1{x^2-1}=\\frac{1/2}{x-1}-\\frac{1/2}{x+1}"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "拆成1/[2(x-1)]-1/[2(x+1)]，得(1/2)ln|(x-1)/(x+1)|+C，区间不能跨±1。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-substitution-integral",
@@ -27,5 +40,21 @@
   "topicIds": [
     "integrals-rational-integral"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把复杂有理式拆成几个分母简单的分式后，每一项都更容易积分。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "分数线",
+        "meaning": "分子除以分母；使用分式时需检查分母不为零。"
+      }
+    ],
+    "explanation": [
+      "先检查是否为真分式，再分解分母；对数原函数使用绝对值并注明不能跨越奇点。"
+    ]
+  }
 }

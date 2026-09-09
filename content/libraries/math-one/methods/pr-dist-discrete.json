@@ -18,7 +18,20 @@
   ],
   "example": {
     "prompt": "自编例题：X 取 1、2、3，概率为 c、2c、3c，求 P(X≥2)。",
-    "solution": "6c=1，所以 c=1/6，目标概率为 5c=5/6。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "三个概率相加为 6c，必须等于一。事件 X≥2 包含后二个取值，因此把 2c 与 3c 相加即可。",
+        "formulas": [
+          "c+2c+3c=1;\\quad P(X\\ge2)=2c+3c"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "6c=1，所以 c=1/6，目标概率为 5c=5/6。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "pr-dist-classic",
@@ -27,5 +40,21 @@
   "topicIds": [
     "pr-discrete-topic"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "所有可能取值的概率相加必须为一，所以先用总和确定未知常数，再累加目标事件的概率。",
+    "symbols": [
+      {
+        "symbol": "随机变量与分布函数",
+        "meaning": "随机变量把试验结果映射成数。分布函数 F(x) 表示取值不超过 x 的概率，必须单调不减、右连续，并满足两端极限。"
+      },
+      {
+        "symbol": "Σ",
+        "meaning": "求和号：把指定下标范围内的各项相加。无穷和还需要讨论收敛。"
+      }
+    ],
+    "explanation": [
+      "每个概率还应非负，归一化不是唯一合法性条件。"
+    ]
+  }
 }

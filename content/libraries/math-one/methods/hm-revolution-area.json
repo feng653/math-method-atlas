@@ -19,7 +19,25 @@
   ],
   "example": {
     "prompt": "自编例题：线段 y=x，0≤x≤1 绕 x 轴旋转的侧面积。",
-    "solution": "半径 r=x，ds=√2 dx。S=2π√2∫₀¹x dx=π√2，与底半径 1、母线长 √2 的圆锥侧面积相符。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "线段斜率为一，弧长微元是根号二乘 dx。到 x 轴的距离为 y=x，所以旋转小段的周长为 2πx。",
+        "formulas": [
+          "\\mathrm dS=2\\pi x\\sqrt{1+1^2}\\,\\mathrm dx"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "半径 r=x，ds=√2 dx。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "S=2π√2∫₀¹x dx=π√2，与底半径 1、母线长 √2 的圆锥侧面积相符。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "hm-arc-work-integral",
@@ -28,5 +46,21 @@
   "topicIds": [
     "audit-revolution-area"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "曲线旋转时，小段弧长扫出一条窄带，窄带面积近似周长乘弧长。",
+    "symbols": [
+      {
+        "symbol": "原函数与不定积分",
+        "meaning": "若 F 的导数等于 f，则 F 是 f 的原函数。一个区间上所有原函数只相差常数，因此不定积分应带积分常数。"
+      },
+      {
+        "symbol": "∫",
+        "meaning": "积分号：没有上下限时寻找原函数，有上下限时表示区间上的累积量。"
+      }
+    ],
+    "explanation": [
+      "半径是到旋转轴的距离，微元是弧长而非单纯横坐标宽度。"
+    ]
+  }
 }

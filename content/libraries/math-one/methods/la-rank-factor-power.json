@@ -21,7 +21,30 @@
   ],
   "example": {
     "prompt": "自编例题：A=[[1,2],[2,4]]，求 A^k（k≥1）。",
-    "solution": "取 B=(1,2)ᵀ、C=(1,2)，BC=A 而 CB=5。因此 A^k=B·5^(k-1)·C=5^(k-1)A。k=1 得 A，k=2 得 5A，可直接乘法核对。"
+    "solution": [
+      {
+        "title": "把题目代入方法",
+        "text": "两行两列成倍数，矩阵可写成一个列向量与一个行向量相乘。反过来的行乘列只是数五，反复相乘就只剩五的幂。",
+        "formulas": [
+          "A=\\binom12\\begin{pmatrix}1&2\\end{pmatrix},\\quad\\begin{pmatrix}1&2\\end{pmatrix}\\binom12=5"
+        ]
+      },
+      {
+        "title": "计算与推理",
+        "text": "取 B=(1,2)ᵀ、C=(1,2)，BC=A 而 CB=5。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "因此 A^k=B·5^(k-1)·C=5^(k-1)A。",
+        "formulas": []
+      },
+      {
+        "title": "继续推导与核对",
+        "text": "k=1 得 A，k=2 得 5A，可直接乘法核对。",
+        "formulas": []
+      }
+    ]
   },
   "relatedIds": [
     "la-vector-basis",
@@ -31,5 +54,17 @@
   "topicIds": [
     "topic-la-rank-factor-power"
   ],
-  "status": "reviewed"
+  "status": "draft",
+  "learning": {
+    "intuition": "把大矩阵拆成窄矩阵乘宽矩阵后，反过来的乘积更小，高次幂中的重复部分就可在小空间里计算。",
+    "symbols": [
+      {
+        "symbol": "矩阵与乘法",
+        "meaning": "矩阵表示线性关系。乘积 AB 要求 A 的列数等于 B 的行数；通常 AB 与 BA 不相等，甚至后者可能无定义。"
+      }
+    ],
+    "explanation": [
+      "先核对 A=BC，再用 A 的正整数幂公式；零次幂不由同一个表达式自动覆盖。"
+    ]
+  }
 }
