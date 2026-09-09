@@ -3,22 +3,23 @@ import type { AtlasNode } from './graph';
 
 type Body = { id: string; position: XYPosition; vx: number; vy: number; degree: number; compact: boolean };
 type Spring = { a: Body; b: Body; length: number; strength: number };
-export type ElasticLayout = { bodies: Map<string, Body>; links: Spring[]; center: XYPosition; initializing: boolean };
+export type ElasticLayout = { bodies: Map<string, Body>; links: Spring[]; center: XYPosition; initializing: boolean; preserveScale: boolean };
 const distance = (a: Body, b: Body) => Math.hypot(a.position.x - b.position.x, a.position.y - b.position.y);
 
-export function createElasticLayout(nodes: AtlasNode[], edges: Edge[], initializing = false): ElasticLayout {
+export function createElasticLayout(nodes: AtlasNode[], edges: Edge[], initializing = false, preserveScale = false): ElasticLayout {
   const bodies = new Map(nodes.map((node) => [node.id, { id: node.id,
     position: { ...node.position }, vx: 0, vy: 0, degree: 0, compact: !!node.data.compact }]));
   const links: Spring[] = [];
   for (const edge of edges) {
     const a = bodies.get(edge.source), b = bodies.get(edge.target);
-    if (a && b) { links.push({ a, b, length: initializing ? (a.compact ? 110 : 180) : Math.max(1, distance(a, b)),
+    if (a && b) { links.push({ a, b, length: preserveScale ? Math.max(280, distance(a, b) * 0.7)
+      : initializing ? (a.compact ? 110 : 180) : Math.max(1, distance(a, b)),
       strength: edge.data?.layoutPrimary === false ? 0.15 : 1 });
       a.degree++; b.degree++; }
   }
   const center = nodes.reduce((sum, node) => ({ x: sum.x + node.position.x / nodes.length,
     y: sum.y + node.position.y / nodes.length }), { x: 0, y: 0 });
-  return { bodies, links, center, initializing };
+  return { bodies, links, center, initializing, preserveScale };
 }
 
 /** Adopt the user's arrangement; there are no per-node home positions. */
@@ -65,7 +66,7 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
   const correction = drift > 240 ? Math.min(0.8, (drift - 240) * 0.001) / drift : 0;
   for (const body of bodies) {
     if (body.id === pinned) { body.vx = 0; body.vy = 0; continue; }
-    if (layout.initializing) {
+    if (layout.initializing && !layout.preserveScale) {
       body.vx -= (body.position.x - layout.center.x) * 0.0013;
       body.vy -= (body.position.y - layout.center.y) * 0.008;
     }

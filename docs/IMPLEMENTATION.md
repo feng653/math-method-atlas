@@ -47,3 +47,4 @@
 图谱范围按钮：graph.css 以 max-content + nowrap 保持两个切换按钮单行；category-back 独立定位在上方，不参与胶囊宽度。禁止在 thinking.css 恢复 flex-wrap；抽样说明在上方区域，避免遮住底部控制。
 
 2026-09-09：初始力导向排布唯一入口仍为hierarchy-layout，由graph调用；createElasticLayout的initializing参数选择目标连接距离与中心力，stepElasticLayout为初始和拖动共用引擎，settleCollisions只做连续位置的残余重叠消解。完整图谱保持圆点，章节保留卡片；不采用分栏/同心环，不含小地图。AtlasGraph自动适配、阅读大小及画布避让控制区；App目录点选保持挂载与位置。验证见VERIFICATION。
+2026-09-09 宽松初始态：hierarchy-layout内radialSeed复用4433c88的大尺寸层级环，作为唯一模拟种子；createElasticLayout的preserveScale保留70%种子连接距离（至少280），不启用中心压紧。返回relaxation元数据：settled/ticks/maxSpeed；连续30步最大位移<0.12为稳定，4000步保护上限。全图与所有章节收敛测试通过。

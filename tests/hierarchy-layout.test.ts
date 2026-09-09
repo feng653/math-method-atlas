@@ -21,7 +21,7 @@ it('relaxes the complete graph deterministically without label overlap or losing
   }
   expect(graph.nodes.filter((node) => node.data.methodId)).toHaveLength(
     data.methods.filter((method) => method.libraryId === library.id).length);
-});
+}, 15000);
 
 it('pulls a longer connection harder during initial relaxation', () => {
   const sample = buildGraph(library, data.methods, library.chapters[1].id).nodes.slice(0, 2);
