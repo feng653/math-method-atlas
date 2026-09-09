@@ -4,7 +4,15 @@ import { data } from '../data/load';
 describe('beginner reading coverage', () => {
   it('provides concepts for every chapter and a guided example for every method', () => {
     for (const library of data.libraries) for (const chapter of library.chapters) {
-      expect(chapter.concepts?.length, chapter.id).toBeGreaterThan(0);
+      expect(chapter.concepts?.length, chapter.id).toBeGreaterThanOrEqual(5);
+      const titles = chapter.concepts?.map(concept => concept.title) ?? [];
+      expect(new Set(titles).size, chapter.id).toBe(titles.length);
+      for (const concept of chapter.concepts ?? []) {
+        const label = `${library.id}/${chapter.id}/${concept.title}`;
+        expect(concept.explanation, label).toContain('数学定义：');
+        expect(concept.explanation, label).toContain('常用性质：');
+        expect(concept.explanation, label).toMatch(/易错点：|使用边界：/);
+      }
     }
     for (const method of data.methods) {
       expect(method.learning?.intuition, method.id).toBeTruthy();
