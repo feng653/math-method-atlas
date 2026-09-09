@@ -35,11 +35,11 @@ it('pulls a longer connection harder during initial relaxation', () => {
   expect(movement(250)).toBeGreaterThan(0);
 });
 
-it('repels unconnected nodes even beyond the old 520-unit cutoff', () => {
+it('repels nearby unconnected nodes', () => {
   const sample = buildGraph(library, data.methods, library.chapters[1].id).nodes.slice(0, 2)
-    .map((node, i) => ({ ...node, position: { x: i * 1000, y: 0 } }));
+    .map((node, i) => ({ ...node, position: { x: i * 600, y: 0 } }));
   const layout = createElasticLayout(sample, []);
   stepElasticLayout(layout, null, 0);
   expect(layout.bodies.get(sample[0].id)!.position.x).toBeLessThan(0);
-  expect(layout.bodies.get(sample[1].id)!.position.x).toBeGreaterThan(1000);
+  expect(layout.bodies.get(sample[1].id)!.position.x).toBeGreaterThan(600);
 });

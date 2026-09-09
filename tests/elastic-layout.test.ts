@@ -33,13 +33,13 @@ it('separates coincident cards without NaN or forcing an old position', () => {
   expect(Math.abs(a.position.y - b.position.y)).toBeGreaterThan(100);
 });
 
-it('limits whole-graph drift while preserving spacing', () => {
+it('preserves a translated arrangement without artificial center attraction', () => {
   const layout = createElasticLayout(nodes, edges);
   for (const body of layout.bodies.values()) body.position.x += 1000;
   retainElasticArrangement(layout);
   for (let i = 0; i < 3000; i++) stepElasticLayout(layout, null, 0);
   const bodies = [...layout.bodies.values()];
   const center = bodies.reduce((sum, body) => sum + body.position.x / bodies.length, 0);
-  expect(Math.abs(center - layout.center.x)).toBeLessThan(300);
+  expect(center).toBeCloseTo(1300, 6);
   expect(bodies[2].position.x - bodies[0].position.x).toBeGreaterThan(550);
 });

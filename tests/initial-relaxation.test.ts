@@ -9,8 +9,8 @@ it('settles the spacious seed before presenting it', () => {
   expect(result.relaxation.ticks).toBeGreaterThanOrEqual(30);
   const seed = radialSeed(result);
   const width = (nodes: { position: { x: number } }[]) => Math.max(...nodes.map(n => n.position.x)) - Math.min(...nodes.map(n => n.position.x));
-  expect(width(result.nodes)).toBeGreaterThan(width(seed.nodes) * 0.5);
-  expect(width(result.nodes)).toBeLessThan(width(seed.nodes));
+  expect(width(result.nodes)).toBeGreaterThan(0);
+  expect(width(result.nodes)).toBeLessThan(width(seed.nodes) * 0.5);
 });
 
 it('also settles every chapter and the second library', () => {

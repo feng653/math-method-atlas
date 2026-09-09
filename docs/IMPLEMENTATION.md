@@ -48,3 +48,5 @@
 
 2026-09-09：初始力导向排布唯一入口仍为hierarchy-layout，由graph调用；createElasticLayout的initializing参数选择目标连接距离与中心力，stepElasticLayout为初始和拖动共用引擎，settleCollisions只做连续位置的残余重叠消解。完整图谱保持圆点，章节保留卡片；不采用分栏/同心环，不含小地图。AtlasGraph自动适配、阅读大小及画布避让控制区；App目录点选保持挂载与位置。验证见VERIFICATION。
 2026-09-09 宽松初始态：hierarchy-layout内radialSeed复用4433c88的大尺寸层级环，作为唯一模拟种子；createElasticLayout的preserveScale保留70%种子连接距离（至少280），不启用中心压紧。返回relaxation元数据：settled/ticks/maxSpeed；连续30步最大位移<0.12为稳定，4000步保护上限。全图与所有章节收敛测试通过。
+
+2026-09-09 紧凑邻域力布局：保留radialSeed大分层起点，稳定连线目标改为种子距离22%并限制160—420，替代上一版70%保宽。spatial-neighbors.ts为唯一空间网格邻域枚举入口；800内全部节点互斥、远处跳过，仅语义连接吸引，取消中心吸引与整体回拉。残余碰撞也复用邻域网格。
