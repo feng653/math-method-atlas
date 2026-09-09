@@ -37,7 +37,7 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
             pinned.current = null; dragTarget.current = null; body.vx = 0; body.vy = 0;
           }
         }
-        stepElasticLayout(simulation.current, pinned.current, time, import.meta.env.DEV ? testForces : undefined);
+        stepElasticLayout(simulation.current, pinned.current, time, testForces);
     }, setRunning, matchMedia('(pointer: coarse)').matches ? 50 : 33, () => {
         setNodes((current) => {
           let changed = false;

@@ -73,7 +73,7 @@ export default function App() {
         {data.libraries.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select><ChevronDown size={13} /></div>
     </header>
     <div className="search-area">
-      {import.meta.env.DEV && <ForceTestSliders />}
+      <ForceTestSliders />
       <form className="search-box" onSubmit={(event) => { event.preventDefault();
         if (typeResults[0]) selectType(typeResults[0].id); else if (results[0]) select(results[0].id); }}>
         <Search size={17} /><input aria-label="搜索方法" placeholder="寻找题型或方法…" value={query}
