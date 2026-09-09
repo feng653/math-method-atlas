@@ -44,12 +44,13 @@ export default function App() {
     setProblemTypeId('');
     const target = methods.find((item) => item.id === id);
     if (target?.chapterId !== chapter) setChapter(target?.chapterId ?? '');
-    setSelected(id); setQuery(''); setPanel('none'); setRouteNotice('');
+    setSelected(id); setQuery(''); setPanel((current) => current === 'directory' ? current : 'none'); setRouteNotice('');
   }
   function selectType(id: string) {
     const target = problemTypes.find((type) => type.id === id);
     if (!target) return;
-    setProblemTypeId(id); setChapter(target.chapterId); setSelected(''); setPanel('none'); setQuery(''); setRouteNotice('');
+    setProblemTypeId(id); setChapter(target.chapterId); setSelected('');
+    setPanel((current) => current === 'directory' ? current : 'none'); setQuery(''); setRouteNotice('');
   }
   function clearType() { setProblemTypeId(''); }
   return <main className={method || problemType || panel === 'papers' ? 'atlas-app has-detail' : 'atlas-app'}>
@@ -85,7 +86,8 @@ export default function App() {
     <nav className="utility-nav" aria-label="辅助导航">
       {library.chapters.some((item) => item.id === 'basic-thinking') && <button aria-label="打开做题思路图谱" title="做题思路图谱"
         onClick={() => { clearType(); setChapter('basic-thinking'); setSelected(''); setPanel('none'); setQuery(''); }}><Compass size={19} /></button>}
-      <button aria-label="打开章节目录" title="章节目录" onClick={() => { clearType(); setPanel(panel === 'directory' ? 'none' : 'directory'); setSelected(''); }}><ListTree size={19} /></button>
+      <button aria-label="打开章节目录" title="章节目录" aria-expanded={panel === 'directory'}
+        onClick={() => setPanel(panel === 'directory' ? 'none' : 'directory')}><ListTree size={19} /></button>
       <button aria-label="打开历年真题" title="历年真题" onClick={() => { clearType(); setPanel(panel === 'papers' ? 'none' : 'papers'); setSelected(''); }}><BookOpen size={18} /></button>
     </nav>
     {chapter && <button className="back-overview" onClick={() => { clearType(); setChapter(''); setSelected(''); }}>← 全部章节</button>}
@@ -102,7 +104,7 @@ export default function App() {
     {panel === 'directory' && <LibraryNavigation library={library} libraries={data.libraries}
       problemTypes={problemTypes} onProblemType={selectType}
       onLibrary={(id) => { clearType(); setLibraryId(id); setSelected(''); setChapter(''); setQuery(''); setRouteNotice(''); }} methods={methods} onClose={() => setPanel('none')}
-      onSelect={select} onChapter={(id) => { clearType(); setChapter(id); setPanel('none'); setSelected(''); }} />}
+      onSelect={select} onChapter={(id) => { clearType(); setChapter(id); setSelected(''); }} />}
     <div className="library-note">{methods.length} 个方法<span />{library.syllabus.reviewStatus === 'draft' ? '课纲映射草案' : library.syllabus.version}</div>
   </main>;
 }

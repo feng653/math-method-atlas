@@ -88,5 +88,5 @@ export function buildGraph(library: Library, methods: Method[], chapterId = '', 
   });
   const graph = { nodes: allMethods && !chapterId ? separateNodes(nodes) : nodes, edges };
   const groups = problemTypes.filter((type) => type.libraryId === library.id && (!chapterId || type.chapterId === chapterId));
-  return hierarchyLayout(addTriggerCategories(addProblemTypes(graph, groups, chapterId, library.id), groups));
+  return hierarchyLayout(addTriggerCategories(addProblemTypes(graph, groups, chapterId, library.id), groups), allMethods && !chapterId);
 }

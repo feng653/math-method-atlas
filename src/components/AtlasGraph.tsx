@@ -36,13 +36,17 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   const [flow, setFlow] = useState<ReactFlowInstance<NodeType> | null>(null);
   const [zoom, setZoom] = useState(1);
   const duration = () => matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 650;
+  function readGraph(instance = flow) {
+    if (!instance) return;
+    void instance.fitView({ padding: 0.06, maxZoom: 1.1, duration: duration() });
+  }
   useEffect(() => { setNodes(graph.nodes); }, [graph, setNodes]);
   useEffect(() => {
     if (!flow) return;
     const timer = setTimeout(() => {
       const node = selected ? flow.getNode(graphNodeId('method', selected)) : undefined;
       if (node) void flow.setCenter(node.position.x + 105, node.position.y + 25, { zoom: 1.05, duration: duration() });
-      else void flow.fitView({ padding: 0.22, duration: duration() });
+      else readGraph(flow);
     }, 80);
     return () => clearTimeout(timer);
   }, [flow, graph, selected]);
@@ -61,7 +65,8 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     return { ...edge, ...(a && b ? edgeHandles(a, b) : {}),
       ...(a?.data.compact ? { sourceHandle: 'dot-source', targetHandle: 'dot-target', type: 'straight' } : {}),
       animated: motionAllowed && related,
-      style: { ...edge.style, opacity: active ? (related ? 0.85 : 0.07) : edge.style?.opacity } };
+      style: { ...edge.style, opacity: active ? (related ? 0.85 : 0.07)
+        : a?.data.kind === 'root' && a.data.compact ? 0.09 : edge.style?.opacity } };
   });
   if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
     const relatedNodeId = graphNodeId('method', relatedId);
@@ -83,7 +88,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
   function restoreLayout() {
     elastic.reset();
     setNodes(graph.nodes.map((node) => ({ ...node, selected: node.data.methodId === selected })));
-    requestAnimationFrame(() => { void flow?.fitView({ duration: duration() }); });
+    requestAnimationFrame(() => readGraph());
   }
   return <section className={`graph-stage ${elastic.active ? 'is-flowing' : ''}`} aria-label="可拖拽缩放的方法思维导图" onKeyDownCapture={(event) => {
     if (event.key !== 'Enter' && event.key !== ' ') return;
@@ -92,23 +97,23 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     event.preventDefault(); event.stopPropagation(); activateNode(wrapper.dataset.id);
   }} onFocusCapture={(event) => setHovered((event.target as HTMLElement).closest<HTMLElement>('.react-flow__node')?.dataset.id ?? '')}
     onBlurCapture={() => setHovered('')}>
-    <ReactFlow<NodeType> nodes={nodes} edges={edges} nodeTypes={nodeTypes}
+    <div className="graph-canvas"><ReactFlow<NodeType> nodes={nodes} edges={edges} nodeTypes={nodeTypes}
       onNodesChange={(changes) => { elastic.sync(changes); onNodesChange(changes); }}
       onInit={setFlow} onMoveEnd={(_, viewport) => setZoom(viewport.zoom)}
       onNodeMouseEnter={(_, node) => setHovered(node.id)} onNodeMouseLeave={() => setHovered('')}
       onNodeDragStart={(_, node) => elastic.drag(node)} onNodeDrag={(_, node) => elastic.drag(node)}
       onNodeDragStop={(_, node) => elastic.release(node)} nodeDragThreshold={5}
       onNodeClick={(_, node) => activateNode(node.id)}
-      fitView minZoom={0.03} maxZoom={2.2} nodesConnectable={false} edgesReconnectable={false}
+      minZoom={0.03} maxZoom={2.2} nodesConnectable={false} edgesReconnectable={false}
       deleteKeyCode={null} selectionOnDrag={false} zoomOnDoubleClick={false}
       ariaLabelConfig={{ 'node.a11yDescription.default': '按 Enter 选择方法，方向键移动节点。',
         'node.a11yDescription.keyboardDisabled': '选择节点查看内容。' }}>
       <Background color="#ccd6cf" gap={30} size={0.9} />
-    </ReactFlow>
+    </ReactFlow></div>
     <div className="graph-views" aria-label="图谱范围">
       {category && <button className="category-back" onClick={() => setCategoryView(null)} title="返回全部思路分类">← {thinkingCategories.find((item) => item.id === category)?.title}</button>}
       <button aria-pressed={allMethods && !chapter} onClick={() => { setAllMethods(true); onChapter('');
-        if (allMethods && !chapter) void flow?.fitView({ duration: duration(), padding: 0.22 }); }}>
+        if (allMethods && !chapter) readGraph(); }}>
         完整图谱 <small>{methods.length}</small></button>
       <button aria-pressed={!allMethods && !chapter} onClick={() => { setAllMethods(false); onChapter(''); }}>章节概览</button>
     </div>
@@ -117,13 +122,14 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
       <span className="zoom-label">{Math.round(zoom * 100)}%</span>
       <button aria-label="放大" title="放大" onClick={() => void flow?.zoomIn({ duration: duration() })}><Plus size={17} /></button>
       <i />
-      <button aria-label="适配当前图" title="适配当前图" onClick={() => void flow?.fitView({ duration: duration(), padding: 0.18 })}><Focus size={17} /></button>
+      <button className="reading-size" onClick={() => void flow?.zoomTo(1, { duration: duration() })}>阅读大小</button>
+      <button aria-label="适配全图" title="适配全图" onClick={() => readGraph()}><Focus size={17} /></button>
       <button aria-label={motion ? '暂停图谱流动' : '开启图谱流动'} title={motion ? '暂停图谱流动' : '开启图谱流动'}
         aria-pressed={motion} onClick={() => setMotion(!motion)}><Waves size={17} /></button>
       <button aria-label="恢复节点布局" title="恢复节点布局" onClick={restoreLayout}><RotateCcw size={16} /></button>
       <button aria-label={allLinks ? '仅显示主干连线' : '显示全部关联连线'} title={allLinks ? '仅显示主干连线' : '显示全部关联连线'}
         aria-pressed={allLinks} onClick={() => setAllLinks(!allLinks)}><Network size={17} /></button>
     </div>
-    <div className="canvas-hint">{allLinks ? '全部关联' : '主干连线 · 悬停展开关联'} · 拖动自由排布 · 点击深入</div>
+    <div className="canvas-hint">{zoom < 0.85 ? '整体预览 · 点击「阅读大小」放大文字' : '拖动空白浏览 · 滚轮缩放 · 点击节点深入'}</div>
   </section>;
 }

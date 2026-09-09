@@ -7,6 +7,7 @@
 .detail-panel, .navigation-panel { position: absolute; top: 91px; bottom: 22px; z-index: 20; display: flex; flex-direction: column; overflow: hidden; animation: panel-enter 230ms ease-out; }
 .detail-panel { right: 22px; width: 405px; }
 .navigation-panel { left: 22px; width: 325px; }
+.has-detail .detail-panel { z-index: 21; }
 .panel-header { display: flex; align-items: center; justify-content: space-between; padding: 5px 12px 5px 25px; border-bottom: 1px solid #edf0e9; flex-shrink: 0; }
 .panel-header button { width: 44px; border-radius: 8px; }
 .detail-scroll { overflow-y: auto; overscroll-behavior: contain; padding: 26px; scrollbar-width: thin; scrollbar-color: #d8e1d3 transparent; }

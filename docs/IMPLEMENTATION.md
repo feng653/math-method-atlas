@@ -19,7 +19,7 @@
 | 进度报告 | `scripts/report.ts` | pnpm content:report输出实际数量/待审关联/缺口/历史编号候选数 |
 | 布局与画布 | `src/domain/graph.ts`、`src/components/AtlasGraph.tsx` | graphNodeId区分root/chapter/method内部ID，data.methodId保留内容ID；空方法体系/保留名/跨库隔离回归；拖动仅会话 |
 | 弹性联动 | `src/domain/elastic-layout.ts`、`src/components/useElasticGraph.ts` | 径向弹簧/阻尼/碰撞排斥；松手采纳新间距，无原位吸引；质心软约束；可暂停及减少动态 |
-| 默认层级布局 | `src/domain/hierarchy-layout.ts`（graph.ts调用） | 主干树按子树大小分配连续扇区，章节/题型/方法分层；固定主干归属，节点避碰；不干预后续自由拖动 |
+| 默认层级布局 | `src/domain/hierarchy-layout.ts`（graph.ts调用） | 复用elastic-layout预计算力导向位置；所有节点互斥、连接弹簧吸引、中心力与矩形避碰；固定主干归属 |
 | 完整图谱圆点模式 | `AtlasGraph.tsx`、`AtlasNode.tsx`、`styles/graph.css` | 仅完整图谱compact节点：圆点+单行标题、2端口直线；章节概览及局部保留卡片 |
 | 动画休眠 | `domain/motion-scheduler.ts`、`components/useElasticGraph.ts` | 交互后1.8秒休眠并取消帧；拖动唤醒；隐藏/暂停立即取消；粗指针最多20次模拟/秒 |
 | 连线可读性 | `src/domain/edge-layout.ts` | 共享方法主干父边选择与动态朝向端口；悬停/焦点展开直接关联、一键全部连线；语义关系不删减 |
@@ -45,3 +45,5 @@
 例题排版唯一入口 `MethodExample.tsx`：example.formulas 为题面公式，solution 兼容旧字符串或 [{title,text,formulas}]；新步骤共用 Formula，CLI 校验所有公式。第27—29题是用户讨论示例，不认定真题。第29题已纠正中点横坐标，详情见 reviews/thinking-map.md。
 
 图谱范围按钮：graph.css 以 max-content + nowrap 保持两个切换按钮单行；category-back 独立定位在上方，不参与胶囊宽度。禁止在 thinking.css 恢复 flex-wrap；抽样说明在上方区域，避免遮住底部控制。
+
+2026-09-09：初始力导向排布唯一入口仍为hierarchy-layout，由graph调用；createElasticLayout的initializing参数选择目标连接距离与中心力，stepElasticLayout为初始和拖动共用引擎，settleCollisions只做连续位置的残余重叠消解。完整图谱保持圆点，章节保留卡片；不采用分栏/同心环，不含小地图。AtlasGraph自动适配、阅读大小及画布避让控制区；App目录点选保持挂载与位置。验证见VERIFICATION。
