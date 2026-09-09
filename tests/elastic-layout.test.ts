@@ -55,3 +55,15 @@ it('does not push a connected neighbor outward when dragging shortens its link',
   expect(linked.bodies.get('b')!.vx).toBeCloseTo(isolated.bodies.get('b')!.vx, 10);
   expect(linked.bodies.get('b')!.vx).toBeLessThan(0.01);
 });
+
+it('allows velocity above the old cap while retaining damping', () => {
+  const pair = nodes.slice(0, 2);
+  const layout = createElasticLayout(pair, [edges[0]]);
+  layout.bodies.get('b')!.position.x = 10000;
+  stepElasticLayout(layout, null, 0, { attraction: 1000, repulsion: 0 });
+  const body = layout.bodies.get('a')!;
+  expect(body.vx).toBeGreaterThan(20);
+  expect(Number.isFinite(body.position.x)).toBe(true);
+  expect(body.vx).toBeCloseTo((10000 - 300 - 24) * 0.03 * 1000 * 0.7, 6);
+});
+

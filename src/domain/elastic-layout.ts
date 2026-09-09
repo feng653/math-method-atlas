@@ -49,8 +49,8 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
   }
   for (const body of bodies) {
     if (body.id === pinned) { body.vx = 0; body.vy = 0; continue; }
-    body.vx = Math.max(-20, Math.min(20, body.vx * 0.7));
-    body.vy = Math.max(-20, Math.min(20, body.vy * 0.7));
+    body.vx = body.vx * 0.7;
+    body.vy = body.vy * 0.7;
     body.position.x += body.vx; body.position.y += body.vy;
   }
 }
