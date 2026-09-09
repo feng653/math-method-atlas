@@ -102,3 +102,9 @@
   border-radius: 9px; color: #607665; }
 .tension-toggle:hover { color: #0f766e; background: #edf4e9; }
 
+
+.search-area .connection-control { position: absolute; right: calc(100% + 8px); top: 1px; }
+.search-area .tension-toggle { width: 44px; height: 44px; border: 1px solid #dfe5dd;
+  border-radius: 12px; background: #ffffffdb; color: #61766a; }
+.search-area .connection-tension { left: 0; right: auto; }
+@media (max-width: 700px) { .search-area:has(.connection-control) { left: 68px; } }

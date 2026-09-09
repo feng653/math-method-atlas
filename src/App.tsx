@@ -67,6 +67,7 @@ export default function App() {
         {data.libraries.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select><ChevronDown size={13} /></div>
     </header>
     <div className="search-area">
+      {import.meta.env.DEV && <ForceTestSliders />}
       <form className="search-box" onSubmit={(event) => { event.preventDefault();
         if (typeResults[0]) selectType(typeResults[0].id); else if (results[0]) select(results[0].id); }}>
         <Search size={17} /><input aria-label="搜索方法" placeholder="寻找题型或方法…" value={query}
@@ -90,7 +91,6 @@ export default function App() {
       <button aria-label="打开章节目录" title="章节目录" aria-expanded={panel === 'directory'}
         onClick={() => setPanel(panel === 'directory' ? 'none' : 'directory')}><ListTree size={19} /></button>
       <button aria-label="打开历年真题" title="历年真题" onClick={() => { clearType(); setPanel(panel === 'papers' ? 'none' : 'papers'); setSelected(''); }}><BookOpen size={18} /></button>
-      {import.meta.env.DEV && <ForceTestSliders />}
     </nav>
     {chapter && <button className="back-overview" onClick={() => { clearType(); setChapter(''); setSelected(''); }}>← 全部章节</button>}
     {chapter === 'basic-thinking' && !method && !problemType && panel === 'none' && <ThinkingCoverage library={library} data={data} />}
