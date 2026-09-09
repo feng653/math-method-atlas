@@ -1,4 +1,4 @@
-import { atlasSchema, type AtlasData } from '../domain/schema';
+import { articleSchema, atlasSchema, type AtlasData } from '../domain/schema';
 
 const modules = {
   libraries: import.meta.glob('../../content/libraries/*/library.json', { eager: true, import: 'default' }),
@@ -12,3 +12,8 @@ const modules = {
 export const data: AtlasData = atlasSchema.parse(Object.fromEntries(
   Object.entries(modules).map(([key, records]) => [key, Object.values(records)]),
 ));
+
+// Manuscripts remain the single source for the chapter reader.
+export const articles = articleSchema.parse(Object.fromEntries(Object.entries(import.meta.glob<string>(
+  '../../docs/textbook/**/*.md', { eager: true, query: '?raw', import: 'default' },
+)).map(([path, body]) => [path.replace('../../docs/textbook/', ''), body])));

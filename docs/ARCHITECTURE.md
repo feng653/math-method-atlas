@@ -87,3 +87,16 @@ useElasticGraph复用同一引擎处理拖动钉住、阻尼、暂停和减少�
 thinking-samples 是独立证据实体，一题一文件，id=questionId。chapterIds 必须由样本所引用的已核验技术方法支撑；triggerIds 只能引用同库触发条件。signal → reasoning → boundary 记录原创推理，evidenceBasis 说明本轮是否重查原题。与 question.methodLinks 分离，不能把抽样标签变成考试频次。thinking.ts 是校验及抽样覆盖的唯一计算入口；页面/CLI 共用。未来补样本先找已有题号，合并新推理而非复制实体；待审关联不能成为已核验样本的方法依据。
 
 2026-09-09 force-lab软约束测试版（替代本分支此前显式吸引公式）：physics-settings.ts唯一参数定义，默认连接2Hz、阻尼比1、排斥1倍、空气阻力3/s、6迭代。elastic-layout以隐式速度级软绳约束求解，频率换算刚度和有效质量、相对连线速度换算阻尼，累计冲量限制为只拉不推；每子步排斥只计算一次，连接迭代不重复全对排斥。无距离或速度截断。motion-scheduler固定1/120秒累计步长，UI约30Hz发布，后台停止；单帧最多追赶100ms，超长卡顿时间丢弃以防追帧雪崩。空气衰减exp(-airDrag*h)，速度单位改为坐标/秒；初始化与运行时同一参数，收敛元数据记录每步位移。drag-target.ts以35ms时间常数跟随目标并传递端点速度，释放后完成跟随再解钉。开发面板改为频率0—30Hz、阻尼比0—3、排斥0—1000倍对数、空气阻力0—20/s、迭代1—20。默认空气3/s；不再使用固定0.7速度保留或旧吸引倍率。参数不持久化，恢复默认按钮可重置。
+
+### 文稿阅读职责补充
+
+| 入口 | 职责 |
+| --- | --- |
+| `src/data/load.ts` / `src/domain/schema.ts` | 统一加载 JSON 与文稿，校验文稿路径和正文 |
+| `src/components/ChapterReader.tsx` | 章节文稿入口、阅读历史、标题检索 |
+| `src/components/ArticleMarkdown.tsx` | Markdown/GFM/数学展示；显示公式复用 Formula |
+| `src/domain/article.ts` | 纯函数解析相对文章链接与分享地址 |
+| `src/domain/search.ts` | 共用规范化与文章标题检索，阅读器不复制搜索逻辑 |
+| `scripts/validate-articles.ts` | 由既有 CLI 调用，文稿公式与引用检查 |
+
+新稿先作为多元微分章节阅读内容上线；正式图谱节点及统计关联未迁移。文稿修订只改 docs，避免将自然文章拆成重复 JSON 教学字段。

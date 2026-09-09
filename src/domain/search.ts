@@ -1,7 +1,15 @@
 import type { Method, ProblemType } from './schema';
+import { articleTitle } from './article';
 
 function normalize(value: string): string {
   return value.normalize('NFKC').toLocaleLowerCase().trim();
+}
+
+export function searchArticles(articles: Record<string, string>, root: string, query: string) {
+  const terms = normalize(query).split(/\s+/).filter(Boolean);
+  if (!terms.length) return [];
+  return Object.entries(articles).filter(([path, body]) => path.startsWith(root)
+    && !path.includes('/sources/') && terms.every(term => normalize(articleTitle(body)).includes(term)));
 }
 
 export function searchProblemTypes(types: ProblemType[], query: string): ProblemType[] {

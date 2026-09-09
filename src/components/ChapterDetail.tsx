@@ -1,6 +1,8 @@
 import { ArrowUpRight, X } from 'lucide-react';
 import type { Library, Method, ProblemType } from '../domain/schema';
 import { ChapterConcepts } from './ChapterConcepts';
+import { lazy, Suspense } from 'react';
+const ChapterReader = lazy(() => import('./ChapterReader').then(module => ({ default: module.ChapterReader })));
 
 type Props = { chapter: Library['chapters'][number]; types: ProblemType[];
   methods: Method[]; onMethod: (id: string) => void;
@@ -10,7 +12,8 @@ export function ChapterDetail({ chapter, types, methods, onMethod, onSelect, onC
   return <aside className="detail-panel glass-panel" aria-label="章节基础">
     <header className="panel-header"><span className="eyebrow">CHAPTER / 章节</span>
       <button aria-label="关闭章节基础" onClick={onClose}><X size={19} /></button></header>
-    <div className="detail-scroll"><h1>{chapter.title}</h1>
+    <div className="detail-scroll">{chapter.id === 'multivariable' ?
+      <Suspense fallback={<p role="status">正在加载本章文章…</p>}><ChapterReader /></Suspense> : <><h1>{chapter.title}</h1>
       <p className="method-summary">先理解基本概念，再选择题型，跟着方法中的例题练习。</p>
       <h2>基础概念</h2><p className="muted">展开概念查看定义、性质与适用条件。</p>
       <ChapterConcepts key={chapter.id} concepts={chapter.concepts} />
@@ -23,7 +26,7 @@ export function ChapterDetail({ chapter, types, methods, onMethod, onSelect, onC
           <button key={method.id} onClick={() => onMethod(method.id)}>
             <strong>{method.title}<ArrowUpRight size={16} /></strong><span>{method.learning?.intuition ?? method.summary}</span>
           </button>)}
-      </div>
+      </div></>}
     </div>
   </aside>;
 }

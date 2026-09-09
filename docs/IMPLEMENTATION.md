@@ -90,3 +90,11 @@
 - 本轮教学改写全部标 draft，未宣称完成独立数学复核。课纲与真题整体覆盖边界不变。
 
 2026-09-09 公开发布：App 与 useElasticGraph 移除 DEV 分支，公开构建保留默认折叠的连接松紧控件，并使用与本地测试一致的运行时参数。初始化仍沿用既有基准参数。
+
+## 2026-09-09 多元微分文稿阅读页
+
+- 多元微分章节入口改为直接阅读 `docs/textbook/multivariable` 新稿，提供概念、21 类题型、41 篇工具和 39 道真题摘要入口；文章相互链接、来源链接及独立公式排版保留。
+- `src/data/load.ts` 为唯一内容加载入口，附加 Markdown 原文；`schema.ts` 的 articleSchema 校验文稿记录；`scripts/validate.ts` 调用 validate-articles.ts 检查全部文稿的链接目标与 KaTeX 公式。
+- `ChapterReader.tsx` 管理章节内阅读导航与标题搜索，`ArticleMarkdown.tsx` 统一渲染 Markdown/GFM/数学；显示公式复用 Formula。`article.ts` 处理相对链接和可分享 URL，文章位置存于 query，图谱选择继续使用原 hash。
+- 本次接入是章节文章阅读页；图谱仍保留原有正式方法、题型 ID 与核验频次，未把新细分工具自动迁入正式方法库或继承旧关联。
+- 本地验证：内容检查、250 行门禁、90 项测试通过；桌面与 375px 手机宽度检查概念公式、工具跳转、真题链接、返回及刷新，页面无横向溢出。发布以 GitHub Pages 工作流结果为准。

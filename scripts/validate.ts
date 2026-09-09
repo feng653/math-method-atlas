@@ -5,6 +5,7 @@ import katex from 'katex';
 import { atlasSchema } from '../src/domain/schema';
 import { validateAtlas } from '../src/domain/validate';
 import { validateRequirements } from '../src/domain/requirements';
+import { validateArticles } from './validate-articles';
 
 const root = fileURLToPath(new URL('../content/libraries/', import.meta.url));
 const records: Record<string, unknown[]> = { libraries: [], methods: [], papers: [], questions: [], problemTypes: [], thinkingSamples: [] };
@@ -67,6 +68,7 @@ if (parsed.success) {
     }
   }
 }
+errors.push(...await validateArticles(fileURLToPath(new URL('../docs/textbook/', import.meta.url))));
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;

@@ -4,6 +4,7 @@ import { thinkingCategorySchema, thinkingSampleSchema } from './thinking-schema'
 
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const text = z.string().trim().min(1);
+export const articleSchema = z.record(z.string().regex(/^[a-zA-Z0-9/-]+\.md$/), text);
 const httpsUrl = z.url().refine((value) => value.startsWith('https://'), 'Source must use HTTPS');
 const status = z.enum(['draft', 'reviewed']);
 export const methodRoleSchema = z.enum(['primary', 'supporting', 'unclassified']);
