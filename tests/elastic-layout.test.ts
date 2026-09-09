@@ -53,5 +53,5 @@ it('does not push a connected neighbor outward when dragging shortens its link',
     stepElasticLayout(layout, 'a', 0);
   }
   expect(linked.bodies.get('b')!.vx).toBeCloseTo(isolated.bodies.get('b')!.vx, 10);
-  expect(linked.bodies.get('b')!.vx).toBeLessThan(0.001);
+  expect(linked.bodies.get('b')!.vx).toBeLessThan(0.01);
 });

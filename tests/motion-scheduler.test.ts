@@ -17,12 +17,11 @@ function harness(interval = 50) {
     } };
 }
 
-it('stops scheduling frames after interaction and leaves idle time free of simulation', () => {
+it('keeps simulating while idle without creating duplicate frames', () => {
   const h = harness(); h.scheduler.wake(); h.advance(2000);
-  expect(h.running).toBe(false); expect(h.pending.size).toBe(0);
-  expect(h.steps).toBeLessThanOrEqual(36);
-  const count = h.steps; h.advance(60000); expect(h.steps).toBe(count);
-  h.scheduler.wake(); h.advance(100); expect(h.steps).toBeGreaterThan(count);
+  expect(h.running).toBe(true); expect(h.pending.size).toBe(1);
+  const count = h.steps; h.advance(60000); expect(h.steps - count).toBe(1200);
+  h.scheduler.stop(); expect(h.pending.size).toBe(0);
 });
 
 it('extends dragging without duplicate loops and cancels immediately when hidden or disabled', () => {
@@ -33,7 +32,7 @@ it('extends dragging without duplicate loops and cancels immediately when hidden
   const count = h.steps; h.advance(1000); expect(h.steps).toBe(count);
 });
 
-it('continues while physics is active beyond the old time limit, then sleeps', () => {
+it('continues even when the physics callback reports no motion', () => {
   let time = 0, active = true, steps = 0;
   let callback: ((time: number) => void) | undefined;
   const scheduler = createMotionScheduler({ now: () => time,
@@ -45,5 +44,8 @@ it('continues while physics is active beyond the old time limit, then sleeps', (
   expect(callback).toBeDefined();
   active = false;
   for (; time <= 13000; time += 40) { const next = callback; callback = undefined; next?.(time); }
+  expect(callback).toBeDefined();
+  expect(steps).toBe(325);
+  scheduler.stop();
   expect(callback).toBeUndefined();
 });

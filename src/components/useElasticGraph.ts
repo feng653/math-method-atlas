@@ -23,12 +23,9 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
   }, [nodes, edges]);
   useEffect(() => {
     if (!enabled || reduced) { wake.current = () => {}; return; }
-    let quietSteps = 0;
     const scheduler = createMotionScheduler({ now: () => performance.now(),
       request: (callback) => requestAnimationFrame(callback), cancel: (id) => cancelAnimationFrame(id) }, (time) => {
         stepElasticLayout(simulation.current, pinned.current, time);
-        const moving = [...simulation.current.bodies.values()].some(body => Math.hypot(body.vx, body.vy) >= 0.12);
-        quietSteps = moving || pinned.current ? 0 : quietSteps + 1;
         setNodes((current) => {
           let changed = false;
           const next = current.map((node) => {
@@ -40,7 +37,6 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
           });
           return changed ? next : current;
         });
-        return quietSteps < 30;
     }, setRunning, matchMedia('(pointer: coarse)').matches ? 50 : 40);
     wake.current = () => { if (!document.hidden) scheduler.wake(); };
     const visibility = () => { if (document.hidden) scheduler.stop(); else wake.current(); };

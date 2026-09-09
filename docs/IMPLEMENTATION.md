@@ -21,7 +21,7 @@
 | 弹性联动 | `src/domain/elastic-layout.ts`、`src/components/useElasticGraph.ts` | 连线只拉不推/阻尼/邻域碰撞排斥；松手不改静长，无中心力；可暂停及减少动态 |
 | 默认层级布局 | `src/domain/hierarchy-layout.ts`（graph.ts调用） | 复用elastic-layout预计算力导向位置；所有节点互斥、连接弹簧吸引、中心力与矩形避碰；固定主干归属 |
 | 完整图谱圆点模式 | `AtlasGraph.tsx`、`AtlasNode.tsx`、`styles/graph.css` | 仅完整图谱compact节点：圆点+单行标题、2端口直线；章节概览及局部保留卡片 |
-| 动画休眠 | `domain/motion-scheduler.ts`、`components/useElasticGraph.ts` | 持续运动延长模拟，连续30步低速后保留1.8秒稳定窗口再休眠；拖动唤醒；隐藏/暂停立即取消；粗指针最多20次模拟/秒 |
+| 持续模拟 | `domain/motion-scheduler.ts`、`components/useElasticGraph.ts` | 可见且启用时持续模拟，稳定后不停；拖动不创建重复循环；隐藏/暂停立即取消；粗指针最多20次模拟/秒 |
 | 连线可读性 | `src/domain/edge-layout.ts` | 共享方法主干父边选择与动态朝向端口；悬停/焦点展开直接关联、一键全部连线；语义关系不删减 |
 | 题型内容 | `schema.ts`的problemTypeSchema、`domain/problem-types.ts` | 每体系problem-types目录；方法选择/条件公式/显式真题归属；唯一CLI校验引用与KaTeX，报告未归类方法 |
 | 题型检索与图层 | `graph.ts`调用`problem-graph.ts`、`ProblemTypeDetail.tsx` | 章节→题型→共享方法节点，点击题型聚焦其方法及卡片；目录/搜索共用选择，hash type深链 |

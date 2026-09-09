@@ -33,7 +33,7 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
     const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
     const d = Math.max(1, Math.hypot(dx, dy)), stretch = d - length;
     const tension = Math.max(0, stretch - 24);
-    const force = tension * strength * (layout.initializing ? 0.09 : 0.018) / Math.sqrt(Math.max(a.degree, b.degree, 1));
+    const force = tension * strength * (layout.initializing ? 0.18 : 0.036) / Math.sqrt(Math.max(a.degree, b.degree, 1));
     a.vx += dx / d * force; a.vy += dy / d * force;
     b.vx -= dx / d * force; b.vy -= dy / d * force;
   }
@@ -54,14 +54,14 @@ export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, 
     }
     const d = Math.max(1, Math.hypot(dx, dy));
     // Nearby pairs repel regardless of connectivity; soften the cutoff and singularity.
-    const force = (layout.initializing ? 1800 : 140) * (1 - d * d / (800 * 800)) / Math.max(900, d * d);
+    const force = (layout.initializing ? 3600 : 280) * (1 - d * d / (800 * 800)) / Math.max(900, d * d);
     a.vx -= dx / d * force; a.vy -= dy / d * force;
     b.vx += dx / d * force; b.vy += dy / d * force;
   }
   for (const body of bodies) {
     if (body.id === pinned) { body.vx = 0; body.vy = 0; continue; }
-    body.vx = Math.max(-20, Math.min(20, body.vx * 0.8));
-    body.vy = Math.max(-20, Math.min(20, body.vy * 0.8));
+    body.vx = Math.max(-20, Math.min(20, body.vx * 0.7));
+    body.vy = Math.max(-20, Math.min(20, body.vy * 0.7));
     body.position.x += body.vx; body.position.y += body.vy;
   }
 }
