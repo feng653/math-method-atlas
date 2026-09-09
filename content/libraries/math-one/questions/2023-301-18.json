@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2023",
   "number": "18",
-  "summary": "二元极值",
+  "summary": "二阶判别退化的二元多项式极值",
   "source": {
     "url": "https://www.ztbu.edu.cn/uploadfile/files/2023/05/07/20230507174051089.pdf",
     "page": 4

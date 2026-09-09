@@ -3,36 +3,52 @@
   "libraryId": "math-one",
   "chapterId": "multivariable",
   "title": "多元复合函数求导",
-  "summary": "按依赖路径累加每一条链式贡献。",
+  "summary": "按变量依赖累加一阶贡献；高阶求导同时追踪外函数、内函数与已有导数系数的变化。",
   "conditions": [
-    "一阶公式要求各内外层可微；所列二阶公式可在外函数 f 及内函数 u、v 均为 C² 的邻域内使用。"
+    "一阶链式要求内层映射在自变量点可微，外层函数在对应内变量点可微。",
+    "所列二阶对称公式可在内外函数均为C²的邻域使用；没有正则性不能擅自交换混合偏导。",
+    "抽象外函数不需显式表达式，但必须保留偏导的参数位置及最后取值点。"
   ],
   "steps": [
-    "列变量依赖关系。",
-    "每条路径乘导数，再求和。",
-    "二阶求导继续对所有依赖项使用链式法则。"
+    "另命名内变量u、v，画出自变量到u、v再到输出的全部路径。",
+    "对每条路径乘导数，再把贡献相加；有直接出现的自变量时也算一条路径。",
+    "第二次求导对每个乘积使用乘积法则，对f_u、f_v继续使用链式法则。",
+    "通式推导完成后，再代入自变量点，同时换算外函数的取值点；用显式可算特例复核。"
   ],
-  "formula": "z_x=f_u u_x+f_v v_x,\\quad z_{xx}=f_{uu}u_x^2+2f_{uv}u_xv_x+f_{vv}v_x^2+f_u u_{xx}+f_v v_{xx}\\quad(f\\in C^2)",
+  "formula": "z_x=f_u u_x+f_v v_x,\\quad z_{xx}=f_{uu}u_x^2+2f_{uv}u_xv_x+f_{vv}v_x^2+f_u u_{xx}+f_v v_{xx}",
   "pitfalls": [
-    "外函数偏导与复合后的偏导含义不同；二阶漏交叉项最常见。"
+    "f_u是外函数对第一参数求导，不是复合函数对x求导。",
+    "太早把u′或v′在点处的值代成常数，会漏掉u″、v″贡献。",
+    "二阶式既有交叉项，也有路径自身二阶变化项。",
+    "求混合偏导时固定的是独立变量，不能误把中间变量固定。"
   ],
   "example": {
-    "prompt": "自编：z=u²+v²，u=x²+y、v=xy，求 zx 与 zxx。",
+    "questionId": "2017-301-15",
+    "prompt": "外函数f具有二阶连续偏导，令y=f(eˣ,cos x)，计算x=0处的一阶、二阶导数。",
+    "formulas": [
+      "u=e^x,\\quad v=\\cos x,\\quad (u(0),v(0))=(1,1)"
+    ],
     "solution": [
       {
-        "title": "计算与推理",
-        "text": "fu=2u、fv=2v，ux=2x、vx=y，故 zx=4x(x²+y)+2xy²。",
-        "formulas": []
+        "title": "先求一阶通式",
+        "text": "先保留x，所有外函数偏导在(eˣ,cos x)处。",
+        "formulas": [
+          "y\\prime=e^x f_u-\\sin x f_v"
+        ]
       },
       {
-        "title": "继续推导与核对",
-        "text": "再求导得 zxx=12x²+4y+2y²。",
-        "formulas": []
+        "title": "对全部因子再次求导",
+        "text": "第一项要对eˣ和f_u分别求导；第二项要对−sin x和f_v分别求导。用f_uv=f_vu合并交叉项。",
+        "formulas": [
+          "y\\prime\\prime=e^{2x}f_{uu}-2e^x\\sin x f_{uv}+\\sin^2x f_{vv}+e^x f_u-\\cos x f_v"
+        ]
       },
       {
-        "title": "继续推导与核对",
-        "text": "用二阶链式复算：fuu ux²=8x²，fvv vx²=2y²，fu uxx=4(x²+y)，混合项和 vxx 项为零，合计一致。",
-        "formulas": []
+        "title": "同时代入自变量与内变量点",
+        "text": "x=0时eˣ=1、sin x=0、cos x=1。注意虽然v′(0)=0，v″(0)=−1仍贡献−f_v。",
+        "formulas": [
+          "y\\prime(0)=f_u(1,1),\\qquad y\\prime\\prime(0)=f_{uu}(1,1)+f_u(1,1)-f_v(1,1)"
+        ]
       }
     ]
   },
@@ -43,17 +59,26 @@
   "topicIds": [
     "multivariable-multivariable-chain"
   ],
-  "status": "draft",
+  "status": "reviewed",
   "learning": {
-    "intuition": "一个量通过多条中间路径依赖 x 时，每条路径的变化贡献都要相加。",
+    "intuition": "总变化来自每条依赖路径；第二次求导时，传递变化的系数本身也会变化。",
     "symbols": [
       {
-        "symbol": "偏导数",
-        "meaning": "多元函数依赖多个变量。对其中一个变量求导时，暂时固定其他变量；例如 xy 对 x 的偏导数是 y，对 y 的偏导数是 x。"
+        "symbol": "f_u、f_v",
+        "meaning": "外函数对两个参数的偏导，均在(u(x),v(x))处取值。"
+      },
+      {
+        "symbol": "u′、u″",
+        "meaning": "内变量沿自变量变化的一阶、二阶导数。"
+      },
+      {
+        "symbol": "H_f",
+        "meaning": "外函数二阶偏导组成的Hessian矩阵。"
       }
     ],
     "explanation": [
-      "画出 z 到中间变量再到 x 的依赖关系；二阶求导时中间变量的导数也可能继续变化。"
+      "由df=f_u du+f_v dv和du=u′dx、dv=v′dx得到一阶链式。再次求导产生外函数曲率与路径曲率两组贡献。",
+      "向量写法z″=w′ᵀH_fw′+∇f·w″，其中w=(u,v)。非直线路径一般不能丢第二组项。"
     ]
   }
 }

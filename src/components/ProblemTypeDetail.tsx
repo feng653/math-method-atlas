@@ -2,6 +2,7 @@ import { ArrowUpRight, X } from 'lucide-react';
 import type { Library, Method, Paper, ProblemType, Question } from '../domain/schema';
 import { getProblemQuestions } from '../domain/problem-types';
 import { MethodExample } from './MethodExample';
+import { ChapterConcepts } from './ChapterConcepts';
 import { Formula } from './Formula';
 import { QuestionCards } from './QuestionCards';
 import { ThinkingSamples } from './ThinkingSamples';
@@ -23,8 +24,8 @@ export function ProblemTypeDetail({ type, methods, questions, papers, concepts, 
       <h1>{type.title}</h1><p className="method-summary">{type.summary}</p>
       {trigger && <p className="eyebrow">{thinkingCategories.find((item) => item.id === type.category)?.title}</p>}
       <span className="status-tag">{type.status === 'reviewed' ? `已审校${label}` : `${label}内容草案`}</span>
-      {concepts && <section><h2>先补齐基础概念</h2>{concepts.map(concept => <div key={concept.title}>
-        <h3>{concept.title}</h3><p>{concept.explanation}</p></div>)}</section>}
+      {concepts && <details key={type.id} className="concept-prerequisites"><summary>按需复习本章基础概念</summary>
+        <ChapterConcepts concepts={concepts} /></details>}
       <h2>{trigger ? '看到什么时想到' : '识别题目要求'}</h2><ul>{type.recognition.map((text) => <li key={text}>{text}</li>)}</ul>
       <h2>{trigger ? '下一步尝试' : '解题检查顺序'}</h2><ol className="steps">{type.strategy.map((text) => <li key={text}>{text}</li>)}</ol>
       <h2>可选方法 · {type.methods.length}</h2>
@@ -34,7 +35,8 @@ export function ProblemTypeDetail({ type, methods, questions, papers, concepts, 
         <p><strong>什么时候选：</strong>{choice.when}</p>
         {methods.filter(method => method.id === choice.methodId).map(method =>
           <div key={method.id}><p><strong>为什么能这样做：</strong>{method.learning?.intuition ?? method.summary}</p>
-            <MethodExample example={method.example} /></div>)}</div>)}
+            {(!method.example.questionId || trigger || type.questionIds.includes(method.example.questionId))
+              && <MethodExample example={method.example} questions={questions} papers={papers} expanded={false} />}</div>)}</div>)}
       {type.formulas.length > 0 && <h2>{trigger ? '结构示例' : '常用二级公式'} · {type.formulas.length}</h2>}
       {type.formulas.map((formula) => <section className="derived-formula" key={formula.id}>
         <h3>{formula.title}</h3><Formula value={formula.latex} />

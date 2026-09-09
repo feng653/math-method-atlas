@@ -1,0 +1,53 @@
+{
+  "id": "multivariable-point-differential",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求一点处的偏导数与全微分",
+  "summary": "先分清需要轴向导数还是存在全方向线性近似，再在目标点求系数。",
+  "recognition": [
+    "题目只求某一点的偏导或全微分；函数可能由沿曲线的已知关系给出。"
+  ],
+  "strategy": [
+    "分段点的偏导使用增量商，不直接套邻域表达式。",
+    "若只给沿曲线的函数值，可微前提下对曲线参数求导，组成关于点上偏导的线性方程组。",
+    "确认可微后写全微分；隐式关系可先在目标点确定函数值再微分。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-partial-total-differential",
+      "when": "用偏导定义或可微线性主部确定点上微分。"
+    },
+    {
+      "methodId": "hm-multivariable-chain",
+      "when": "沿两条已知曲线求导，若切向量独立可解出两个偏导。"
+    },
+    {
+      "methodId": "hm-multivariable-implicit",
+      "when": "点上函数值隐式给定时，检查非零Jacobian后微分。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "point-total",
+      "title": "点上全微分",
+      "latex": "df|_{(a,b)}=f_x(a,b)\\,dx+f_y(a,b)\\,dy",
+      "conditions": [
+        "f在(a,b)可微；dx和dy为独立增量。"
+      ],
+      "derivation": "可微函数的一阶线性主部定义为全微分，其系数由两个轴向增量商唯一确定。",
+      "methodIds": [
+        "hm-partial-total-differential"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2021-301-02",
+    "2015-301-11",
+    "2016-301-11"
+  ],
+  "boundaries": [
+    "仅有两个偏导数不能宣称全微分存在。",
+    "两条曲线切向量共线时，得到的方程组可能无法唯一确定两个偏导。"
+  ],
+  "status": "reviewed"
+}

@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2017",
   "number": "3",
-  "summary": "定向求导",
+  "summary": "沿非单位向量指定方向计算方向导数",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540317.html",
     "page": 1,
@@ -22,5 +22,25 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "新东方文章第1张题面图第3题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  },
+  "statement": {
+    "intro": "给定光滑三元函数、考察点及一个非单位方向向量。",
+    "formulas": [
+      "f(x,y,z)=x^2y+z^2,\\quad P=(1,2,0),\\quad n=(1,2,2)"
+    ],
+    "tasks": [
+      "求P处沿n方向的方向导数。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "本轮阅读所列第三方题面页核对条件与题号，独立重新表述；不转载该站解析。题面核对不构成官方来源或再分发许可认证。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2017/#3"
+    },
+    "options": [
+      "12",
+      "6",
+      "4",
+      "2"
+    ]
   }
 }

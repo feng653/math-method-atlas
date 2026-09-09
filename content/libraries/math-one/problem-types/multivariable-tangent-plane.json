@@ -1,0 +1,53 @@
+{
+  "id": "multivariable-tangent-plane",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求曲面切平面、法线与切点约束",
+  "summary": "把曲面的局部线性近似转为平面方程，再使用过点或垂直关系求未知切点。",
+  "recognition": [
+    "已知曲面与切点，或切平面过给定点、与指定平面垂直，要求切面、法线或切点轨迹。"
+  ],
+  "strategy": [
+    "隐式曲面取非零梯度作法向量；显式z=f(x,y)可取(fx,fy,−1)。",
+    "写过切点的点法式；法线用参数式，避免零分量引起除零。",
+    "未知切点必须同时满足原曲面方程和附加几何条件。",
+    "综合题由切平面确定投影域后，再交给闭域最值或积分方法。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-tangent-plane",
+      "when": "正则曲面点求切面法线，或通过几何条件反求切点。"
+    },
+    {
+      "methodId": "hm-multivariable-implicit",
+      "when": "隐式曲面局部可表示为函数时，用隐式偏导核对法向量。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "tangent-equation",
+      "title": "正则隐式曲面的切平面与法线",
+      "latex": "\\nabla F(P)\\cdot(X-P)=0,\\qquad X=P+t\\nabla F(P)",
+      "conditions": [
+        "F在P邻域C¹，F(P)=0且∇F(P)≠0。"
+      ],
+      "derivation": "曲面内任一可微曲线满足F恒为零；链式法则使切向量与∇F正交。第一式为切平面，第二式为法线。",
+      "methodIds": [
+        "hm-tangent-plane"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-19",
+    "2013-301-02",
+    "2014-301-09",
+    "2018-301-02",
+    "2023-301-12",
+    "2024-301-18"
+  ],
+  "boundaries": [
+    "∇F=0时不能套标准切面公式；需独立分析曲面的局部几何。",
+    "切平面通常并不包含曲面上的其他给定点，除非题目明确提出此约束。"
+  ],
+  "status": "reviewed"
+}

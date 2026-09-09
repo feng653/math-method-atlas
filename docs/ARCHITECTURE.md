@@ -19,6 +19,8 @@
 
 ## 内容契约
 
+教学扩展：概念可选 `formulas:string[]` 使用同一安全公式 schema、CLI 和 Formula 渲染；`example.questionId` 可选引用同体系题目，必须存在该方法的 verified 关联。引用只说明例解对应的题，不产生新题目或新增频次；例题正文/分步解答仍在既有 example 中。无 questionId 的自编例题继续明确标注自编。章节与题型共用 ChapterConcepts 分层展示概念，避免长文挡住题型选择。
+
 ID 使用稳定的 ASCII slug，所有引用使用 ID，禁止用标题关联。体系 ID 与内容 ID 构成命名空间；同一体系内不重复。所有文件含 `schemaVersion: 1` 或由体系清单声明版本。
 
 | 实体 | 必需语义 |

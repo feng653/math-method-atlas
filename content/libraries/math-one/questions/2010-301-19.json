@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2010",
   "number": "19",
-  "summary": "切面轨迹与面积分",
+  "summary": "切平面垂直条件确定椭球切点轨迹并计算曲面积分",
   "source": {
     "url": "https://wuli.wiki/files/fc96a92b2b2c6495.pdf",
     "page": 39,

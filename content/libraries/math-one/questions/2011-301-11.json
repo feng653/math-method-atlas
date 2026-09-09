@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2011",
   "number": "11",
-  "summary": "积分函数偏导",
+  "summary": "变上限积分表达式在指定点的二阶偏导",
   "source": {
     "url": "https://doc.kmf.com/ky_material/9d/6b/9d6bef7c75bbc53cd3467885eacaa600.pdf",
     "page": 4,

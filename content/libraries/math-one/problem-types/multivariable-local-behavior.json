@@ -2,38 +2,36 @@
   "id": "multivariable-local-behavior",
   "libraryId": "math-one",
   "chapterId": "multivariable",
-  "title": "判断多元极限、连续与可微",
-  "summary": "区分路径极限和统一线性近似，避免逐轴推全局。",
+  "title": "判别二重极限、连续、偏导与可微",
+  "summary": "按定义域、点值、轴向增量和全方向余量逐层判断性质。",
   "recognition": [
-    "分段定义或趋近二元原点；要求连续、偏导、可微或近似余项阶。"
+    "分段定义、原点附近的分式，或由极限条件推断连续与可微。",
+    "题中“偏导存在”和“可微”是不同条件，不能互相替代。"
   ],
   "strategy": [
-    "先限定定义域内合法路径。",
-    "否定用两路径；肯定用关于距离的统一估计；可微再检查扣除线性项的余量。"
+    "先检查点是否属于定义域，明确趋近路径必须留在定义域内。",
+    "否定极限用两条合法路径；证明存在须给关于距离的统一估计。",
+    "分别代入函数值核对连续，固定另一变量求偏导，再检查线性余量除以距离的极限。"
   ],
   "methods": [
     {
       "methodId": "hm-multivariable-limit",
-      "when": "沿不同路径疑似得到不同值，或可用半径统一估计时。"
+      "when": "处理二重极限、连续性；用统一估计证明，用路径差异否定。"
     },
     {
       "methodId": "hm-partial-total-differential",
-      "when": "已有偏导但需判可微，必须检查线性余量与距离之比。"
-    },
-    {
-      "methodId": "hm-second-taylor",
-      "when": "邻域C²已成立时，可用二阶展开控制误差；不能用它证明未知的C²。"
+      "when": "在偏导已算出后，用可微定义检查线性余量。"
     }
   ],
   "formulas": [
     {
       "id": "differentiability-residual",
-      "title": "可微余量的判据",
-      "latex": "\\frac{f(a+h,b+k)-f(a,b)-Ah-Bk}{\\sqrt{h^2+k^2}}\\longrightarrow0",
+      "title": "可微的统一余量条件",
+      "latex": "\\lim_{(h,k)\\to(0,0)}\\frac{f(a+h,b+k)-f(a,b)-f_x(a,b)h-f_y(a,b)k}{\\sqrt{h^2+k^2}}=0",
       "conditions": [
-        "(a,b)为定义域内点；A、B为固定实数；(h,k)≠(0,0)。"
+        "目标点是内点，两偏导存在。"
       ],
-      "derivation": "可微定义为线性主部加o(距离)；除以距离即该极限。沿两坐标轴可推出A=fx、B=fy。",
+      "derivation": "将可微定义中的线性主部移到分子；分母是增量长度，要求整个邻域统一趋零。",
       "methodIds": [
         "hm-partial-total-differential",
         "hm-multivariable-limit"
@@ -41,10 +39,12 @@
     }
   ],
   "questionIds": [
+    "2012-301-03",
     "2020-301-03"
   ],
   "boundaries": [
-    "该真题已给可微，使用线性余量求极限；不是从零判断可微的例子。"
+    "2012年第3题是连续性前提下的可微充分条件辨析；2020年第3题已知可微，用余量求极限，不是证明可微。",
+    "所有直线路径极限相同仍不够；偏导存在不推出连续。"
   ],
-  "status": "draft"
+  "status": "reviewed"
 }

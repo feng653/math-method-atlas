@@ -1,4 +1,4 @@
-.detail-panel { width: min(var(--detail-width, 520px), calc(100vw - 48px)); }
+.detail-panel { width: min(var(--detail-width, 520px), calc(100vw - 48px)); background: #fff; }
 .has-detail .graph-stage { right: calc(min(var(--detail-width, 520px), calc(100vw - 48px)) + 44px); }
 .detail-resize { position: absolute; top: 110px; bottom: 42px; z-index: 24;
   right: calc(min(var(--detail-width, 520px), calc(100vw - 48px)) + 15px);
@@ -13,6 +13,10 @@
 .symbol-list dt { font-size: 18px; font-weight: 600; color: #0f766e; }
 .symbol-list dd { margin: 5px 0 0; font-size: 16px; line-height: 1.85; }
 .chapter-types { display: grid; gap: 12px; }
+.chapter-concepts > details { padding: 10px 0; border-bottom: 1px solid #e0e6dc; }
+.chapter-concepts summary, .concept-prerequisites > summary {
+  cursor: pointer; min-height: 44px; padding: 10px 0; font-size: 16px; line-height: 1.6; color: #0f766e; }
+.chapter-concepts summary { font-weight: 600; }
 .chapter-types button { text-align: left; padding: 14px; background: #f5f7f1; border-radius: 10px; }
 .chapter-types strong { display: flex; justify-content: space-between; gap: 12px; }
 .chapter-types span { display: block; font-size: 14px; margin-top: 8px; line-height: 1.8; }

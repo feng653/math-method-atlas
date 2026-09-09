@@ -5,6 +5,16 @@ import { MethodExample } from '../src/components/MethodExample';
 import { methodSchema } from '../src/domain/schema';
 import { data } from '../src/data/load';
 
+it('links an exam example to the existing question source without claiming it is self-authored', () => {
+  const question = data.questions[0];
+  const html = renderToStaticMarkup(createElement(MethodExample, {
+    example: { questionId: question.id, prompt: '题意摘要', solution: '原创推导。' }, questions: [question],
+  }));
+  expect(html).toContain('真题 · 原创讲解');
+  expect(html).toContain(question.source.url.replaceAll('&', '&amp;'));
+  expect(html).toContain(`第 ${question.number} 题`);
+});
+
 it('renders structured steps with math and preserves readable legacy text', () => {
   const method = data.methods.find((item) => item.id === 'basic-hidden-constraint')!;
   const html = renderToStaticMarkup(createElement(MethodExample, { example: method.example }));

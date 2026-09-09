@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2015",
   "number": "11",
-  "summary": "隐式全微分",
+  "summary": "隐式函数在指定点的全微分",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
     "page": 2,

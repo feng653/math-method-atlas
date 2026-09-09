@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2020",
   "number": "3",
-  "summary": "可微极限",
+  "summary": "利用可微余量判别曲面位置向量的比例极限",
   "source": {
     "url": "https://images.eduego.com/Uploads/file/20231226/88d4a0f740e5fb7a74fee2609d3a459c.pdf",
     "page": 1
@@ -21,5 +21,26 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "来源PDF物理第1页第3题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  },
+  "statement": {
+    "intro": "二元函数在原点可微且函数值为零。取曲面在原点的法向量n及与n正交的非零向量d，判断以下哪个极限恒为零。",
+    "formulas": [
+      "f(0,0)=0,\\quad n=(f_x(0,0),f_y(0,0),-1),\\quad d\\ne0,\\ d\\cdot n=0",
+      "v=(x,y,f(x,y)),\\qquad r=\\sqrt{x^2+y^2}"
+    ],
+    "tasks": [
+      "各极限均令(x,y)趋于(0,0)；标量积取绝对值，向量积取长度。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "本轮阅读所列第三方题面页核对条件与题号，独立重新表述；不转载该站解析。题面核对不构成官方来源或再分发许可认证。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2020/#3"
+    },
+    "options": [
+      "\\lim\\frac{|n\\cdot v|}{r}=0",
+      "\\lim\\frac{\\|n\\times v\\|}{r}=0",
+      "\\lim\\frac{|d\\cdot v|}{r}=0",
+      "\\lim\\frac{\\|d\\times v\\|}{r}=0"
+    ]
   }
 }

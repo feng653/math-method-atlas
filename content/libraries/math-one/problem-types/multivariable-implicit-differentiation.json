@@ -1,0 +1,52 @@
+{
+  "id": "multivariable-implicit-differentiation",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求隐函数及隐方程组的偏导与微分",
+  "summary": "先验证局部可解条件，再将求导结果视为待求导数的线性方程。",
+  "recognition": [
+    "未知函数只通过F(x,y,z)=0或方程组出现。"
+  ],
+  "strategy": [
+    "先代入目标自变量确定对应的未知函数值。",
+    "单方程检查Fz非零；方程组检查对未知量的Jacobian行列式非零。",
+    "固定另一自变量求导，或整体微分；解出偏导或微分。",
+    "高阶导数继续对原恒等式求导，不能把上一阶中的z当作常数。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-multivariable-implicit",
+      "when": "隐函数存在条件成立后，求一阶、高阶偏导或方程组微分。"
+    },
+    {
+      "methodId": "hm-partial-total-differential",
+      "when": "将得到的偏导组合成全微分。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "implicit-differential",
+      "title": "隐式全微分",
+      "latex": "dz=-\\frac{F_x}{F_z}\\,dx-\\frac{F_y}{F_z}\\,dy",
+      "conditions": [
+        "F在点的邻域C¹，点满足F=0且Fz非零。"
+      ],
+      "derivation": "隐函数定理保证局部可微；对恒等式微分后解Fz dz=−Fx dx−Fy dy。",
+      "methodIds": [
+        "hm-multivariable-implicit",
+        "hm-partial-total-differential"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2010-301-02",
+    "2015-301-11",
+    "2016-301-11",
+    "2026-301-01"
+  ],
+  "boundaries": [
+    "分母为零说明该公式不适用，不等于隐函数一定不存在。",
+    "当前选题覆盖单方程；未新增未经核验的隐方程组真题。"
+  ],
+  "status": "reviewed"
+}

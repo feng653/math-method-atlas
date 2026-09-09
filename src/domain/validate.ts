@@ -41,6 +41,14 @@ export function validateAtlas(input: unknown): string[] {
         errors.push(`${label}: invalid related method ${relatedId}`);
       }
     }
+    if (method.example.questionId) {
+      const question = data.questions.find(item => item.libraryId === method.libraryId
+        && item.id === method.example.questionId);
+      if (!question) errors.push(`${label}: unknown example question ${method.example.questionId}`);
+      else if (!question.methodLinks.some(link => link.methodId === method.id && link.verification === 'verified')) {
+        errors.push(`${label}: example question needs verified method link`);
+      }
+    }
   }
   unique(data.papers.map((paper) => `${paper.libraryId}/${paper.year}/${paper.exam}`), 'paper year/exam');
   for (const paper of data.papers) {

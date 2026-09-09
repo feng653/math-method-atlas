@@ -1,0 +1,53 @@
+{
+  "id": "multivariable-explicit-differentiation",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求具体表达式的偏导数与全微分",
+  "summary": "固定其余自变量逐次求导，遇到变上限积分先处理对上限的依赖。",
+  "recognition": [
+    "函数由初等表达式或含参变上限积分明确给出；求一阶、混合偏导或全微分。"
+  ],
+  "strategy": [
+    "标明每次求导时保持不变的自变量。",
+    "整理表达式；变上限积分可先选择只影响上限的变量求导，减少含参积分求导的复杂度。",
+    "二阶导数保留系数与内层变量的全部变化，最后代点。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-partial-total-differential",
+      "when": "对明确表达式逐变量求偏导，并在可微区域组合全微分。"
+    },
+    {
+      "methodId": "hm-multivariable-chain",
+      "when": "表达式含复合结构时，逐层乘内函数偏导。"
+    },
+    {
+      "methodId": "hm-newton-leibniz",
+      "when": "积分上限依赖变量且被积函数满足连续性条件，先将上限求导。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "explicit-mixed",
+      "title": "含参变上限积分的求导顺序",
+      "latex": "F(x,y)=\\int_0^{xy}e^{xt^2}\\,dt,\\qquad F_y=x e^{x^3y^2}",
+      "conditions": [
+        "该表达式为2020年第12题；被积函数光滑，固定x对y求导。"
+      ],
+      "derivation": "y只通过上限xy进入积分，因此先用上限导数乘上限处的被积函数，再对x求导。",
+      "methodIds": [
+        "hm-newton-leibniz",
+        "hm-multivariable-chain"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2011-301-11",
+    "2020-301-12"
+  ],
+  "boundaries": [
+    "本组既有真题主要是含积分的具体表达式，不表示简单初等偏导从未考查。",
+    "换序求混合偏导需满足连续混合偏导等充分条件；含参积分不能漏掉被积函数对参数的变化。"
+  ],
+  "status": "reviewed"
+}

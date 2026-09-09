@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2016",
   "number": "11",
-  "summary": "隐式全微分",
+  "summary": "含抽象函数的隐式关系在指定点的全微分",
   "source": {
     "url": "https://file.xdf.cn/uploads/151228/124_151228165345iuBbx7Mn8g2DSO7R.pdf",
     "page": 5
@@ -21,5 +21,19 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "来源PDF物理第5页第11题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  },
+  "statement": {
+    "intro": "可微的二元函数f与隐函数z满足下列恒等式。",
+    "formulas": [
+      "(x+1)z-y^2=x^2f(x-z,y)"
+    ],
+    "tasks": [
+      "求z在(x,y)=(0,1)处的全微分。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "本轮阅读所列第三方题面页核对条件与题号，独立重新表述；不转载该站解析。题面核对不构成官方来源或再分发许可认证。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2016/#11"
+    }
   }
 }

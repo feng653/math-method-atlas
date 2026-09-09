@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2015",
   "number": "17",
-  "summary": "约束最大梯度",
+  "summary": "在椭圆上同时选择点与方向使方向导数最大",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540418.html",
     "page": 3,

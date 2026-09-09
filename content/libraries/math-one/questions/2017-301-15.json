@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2017",
   "number": "15",
-  "summary": "复合函数二阶导",
+  "summary": "抽象二元函数沿参数曲线的一阶与二阶导数",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540317.html",
     "page": 3,
@@ -22,5 +22,19 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "新东方文章第3张题面图第15题已核对完整题面；无独立编号子问；选择选项、并列求值动作或解析编号不另建子问。"
+  },
+  "statement": {
+    "intro": "外函数有二阶连续偏导数，沿给定参数曲线复合成一元函数。",
+    "formulas": [
+      "y=f(e^x,\\cos x)"
+    ],
+    "tasks": [
+      "用f在(1,1)处的偏导数表示y在x=0处的一阶、二阶导数。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "本轮阅读所列第三方题面页核对条件与题号，独立重新表述；不转载该站解析。题面核对不构成官方来源或再分发许可认证。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2017/#15"
+    }
   }
 }

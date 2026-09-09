@@ -1,5 +1,7 @@
 # 已有实现速查
 
+多元微分教学试做：`chapters[].concepts[].formulas` 复用 Formula 呈现严格公式，`ChapterConcepts.tsx` 为章节/题型共用的折叠概念入口；解释按定义、性质和边界分段。`method.example.questionId` 引用同体系已核验方法关联的真题，`validate.ts` 检查引用，`MethodExample.tsx` 显示原题来源与原创讲解标识，链接复用 `sourceHref` 定位页码。题型页仅内嵌本题型已归属的真题例解；其他共享方法仍可进入方法卡阅读。教材工作文档位于 `docs/textbook/multivariable/`，卡片仍只从既有 JSON loader 读取；文档不参与考试频次。
+
 2026-09-09 章节概念扩充：两个体系 `library.json` 的既有 `chapters[].concepts` 全部扩充，24 章由 49 条增至 140 条；逐条写定义、性质及适用边界。ChapterDetail 与 ProblemTypeDetail 继续共享数据，未新增内容读取或显示入口。learning-content.test.ts 检查每章至少五项及各项必要讲解段；章节清单、抽查来源和数学复审边界见 `reviews/chapter-concepts.md`。
 
 最后更新：2026-09-09。本表仅记录已落盘实现；“规划”不能被当作已实现。

@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2013",
   "number": "2",
-  "summary": "曲面切平面",
+  "summary": "隐式曲面在指定点的切平面",
   "source": {
     "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#2"
   },
@@ -20,5 +20,25 @@
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "所选来源第2题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  },
+  "statement": {
+    "intro": "求下列隐式曲面在指定点的切平面。",
+    "formulas": [
+      "x^2+\\cos(xy)+yz+x=0,\\qquad P=(0,1,-1)"
+    ],
+    "tasks": [
+      "写出切平面方程，并与选项对应。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "本轮阅读所列第三方题面页核对条件与题号，独立重新表述；不转载该站解析。题面核对不构成官方来源或再分发许可认证。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2013/#2"
+    },
+    "options": [
+      "x-y+z=-2",
+      "x+y+z=0",
+      "x-2y+z=-3",
+      "x-y-z=0"
+    ]
   }
 }

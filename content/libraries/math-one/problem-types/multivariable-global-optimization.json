@@ -1,0 +1,52 @@
+{
+  "id": "multivariable-global-optimization",
+  "libraryId": "math-one",
+  "chapterId": "multivariable",
+  "title": "求最大最小值与约束优化",
+  "summary": "先判断最值是否存在，再穷尽内部、边界和奇异候选并比较。",
+  "recognition": [
+    "目标含“最大值、最小值”，或有闭域、曲线、几何资源约束。"
+  ],
+  "strategy": [
+    "把题目转成明确目标函数及可行域；距离要考虑绝对值，长度要保留正性。",
+    "连续函数在非空紧集上有最大最小值；非紧集或开集另查无穷远和边界极限。",
+    "内部求驻点；正则等式约束用乘子法；各段边界降维，并加入角点、非正则点。",
+    "逐一比较候选值，回到原变量验证可行性及是否能取到。"
+  ],
+  "methods": [
+    {
+      "methodId": "hm-lagrange-multipliers",
+      "when": "约束梯度独立时列乘子方程；闭域同时处理各边界。"
+    },
+    {
+      "methodId": "hm-hessian-extrema",
+      "when": "求闭域内部驻点或判断二次目标的严格凸性。"
+    }
+  ],
+  "formulas": [
+    {
+      "id": "lagrange-system",
+      "title": "等式约束驻点方程",
+      "latex": "\\nabla f=\\lambda\\nabla g,\\qquad g=0",
+      "conditions": [
+        "f和g在局部C¹；可行极值点满足∇g≠0。"
+      ],
+      "derivation": "正则约束的切向增量与∇g正交；极值点沿任一切向的一阶变化为零，故∇f与∇g平行。",
+      "methodIds": [
+        "hm-lagrange-multipliers"
+      ]
+    }
+  ],
+  "questionIds": [
+    "2014-301-04",
+    "2015-301-17",
+    "2018-301-16",
+    "2021-301-19",
+    "2024-301-18"
+  ],
+  "boundaries": [
+    "乘子方程仅给必要候选，不能替代存在性与全局比较。",
+    "2015年第17题还需方向导数转梯度模，2024年第18题还需先求切平面，保留跨题型链接。"
+  ],
+  "status": "reviewed"
+}

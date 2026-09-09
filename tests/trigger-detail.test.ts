@@ -5,6 +5,18 @@ import { ProblemTypeDetail } from '../src/components/ProblemTypeDetail';
 import { data } from '../src/data/load';
 import { validateProblemTypes } from '../src/domain/problem-types';
 
+it('keeps another problem type exam example out of the current teaching context', () => {
+  const type = data.problemTypes.find(item => item.id === 'multivariable-implicit-differentiation')!;
+  const method = { ...data.methods.find(item => item.id === type.methods[0].methodId)!,
+    example: { questionId: '2020-301-15', prompt: '其他题型的极值例题', solution: '说明' } };
+  const render = (questionIds: string[]) => renderToStaticMarkup(createElement(ProblemTypeDetail, {
+    type: { ...type, questionIds }, methods: [method], questions: data.questions, papers: data.papers,
+    onSelect: () => {}, onClose: () => {},
+  }));
+  expect(render(type.questionIds)).not.toContain('其他题型的极值例题');
+  expect(render([...type.questionIds, '2020-301-15'])).toContain('其他题型的极值例题');
+});
+
 it('renders trigger guidance without exam classification and retains normal problem details', () => {
   const trigger = data.problemTypes.find((type) => type.id === 'basic-repeated-expression')!;
   const render = (type: typeof trigger) => renderToStaticMarkup(createElement(ProblemTypeDetail,

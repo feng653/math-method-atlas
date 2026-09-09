@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2021",
   "number": "19",
-  "summary": "空间约束最值",
+  "summary": "空间交线到坐标面的最大距离",
   "source": {
     "url": "https://edu.xaiu.edu.cn/__local/A/82/2F/B6321C9DAB14C18B56BADCD4A3F_F5BD7903_60505.pdf",
     "page": 3

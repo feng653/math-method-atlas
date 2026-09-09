@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2019",
   "number": "16",
-  "summary": "梯度条件",
+  "summary": "最大方向导数反求参数并求曲面面积",
   "source": {
     "url": "https://kaoyan.xdf.cn/202310/13540306.html",
     "page": 3,

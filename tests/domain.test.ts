@@ -29,6 +29,18 @@ function fixture(): AtlasData {
 describe('content integrity', () => {
   it('accepts a structurally complete collection', () => expect(validateAtlas(fixture())).toEqual([]));
 
+  it('requires a same-library verified association for an exam teaching example', () => {
+    const data = fixture();
+    data.methods[0].example.questionId = 'question-1';
+    expect(validateAtlas(data)).toEqual([]);
+    data.questions[0].methodLinks[0].verification = 'pending';
+    expect(validateAtlas(data).join(' ')).toContain('example question needs verified method link');
+    data.questions[0].libraryId = 'other';
+    expect(validateAtlas(data).join(' ')).toContain('unknown example question');
+    data.methods[0].example.questionId = 'missing';
+    expect(validateAtlas(data).join(' ')).toContain('unknown example question');
+  });
+
   it('rejects duplicate entity ids', () => {
     const data = fixture();
     data.methods.push(structuredClone(data.methods[0]));

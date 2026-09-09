@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2012",
   "number": "3",
-  "summary": "二元连续",
+  "summary": "连续性前提下辨析可微与二重极限的逻辑关系",
   "source": {
     "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#3"
   },
@@ -13,12 +13,26 @@
       "note": "独立复核：来源第 3 题。以距离平方为阶的有界比值给出小于距离的一阶余项；方向路径用于反证其他选项。",
       "methodId": "hm-multivariable-limit",
       "role": "primary",
-      "roleNote": "统一距离估计及反例路径直接判断给定连续性命题。"
+      "roleNote": "用距离的统一估计和反例，辨析连续前提下可微与二重极限之间的充分必要关系。"
     }
   ],
   "subquestionAudit": {
     "expectedCount": 0,
     "checkedOn": "2026-09-08",
     "note": "所选来源第3题题面已阅读完整作答要求，没有单独编号子问；选项及未编号的并列求值不拆分。"
+  },
+  "statement": {
+    "intro": "已知二元函数在原点连续。以下四个推断中，哪一个由给定条件必然成立？",
+    "formulas": [
+      "r=\\sqrt{x^2+y^2},\\qquad L_1=\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{|x|+|y|},\\quad L_2=\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{x^2+y^2}"
+    ],
+    "tasks": [
+      "A：L₁为有限实数推出原点可微；B：L₂为有限实数推出原点可微；C：原点可微推出L₁存在；D：原点可微推出L₂存在。"
+    ],
+    "checkedOn": "2026-09-09",
+    "note": "本轮阅读所列第三方题面页核对条件与题号，独立重新表述；不转载该站解析。题面核对不构成官方来源或再分发许可认证。",
+    "source": {
+      "url": "https://www.csgraduates.com/study_methods/math/math1/2012/#3"
+    }
   }
 }

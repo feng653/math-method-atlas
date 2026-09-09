@@ -43,6 +43,12 @@ if (parsed.success) {
     catch (error) { errors.push(`${file}: ${String(error)}`); }
   }
   for (const document of documents) errors.push(...validateRequirements(document, parsed.data, documents));
+  for (const library of parsed.data.libraries) for (const chapter of library.chapters) {
+    for (const concept of chapter.concepts ?? []) for (const value of concept.formulas ?? []) {
+      try { katex.renderToString(value, { throwOnError: true, trust: false, strict: 'error', maxExpand: 1000 }); }
+      catch (error) { errors.push(`${library.id}/${chapter.id}/${concept.title}: ${String(error)}`); }
+    }
+  }
   for (const method of parsed.data.methods) {
     const formulas = [method.formula, ...(method.example.formulas ?? []),
       ...(typeof method.example.solution === 'string' ? [] : method.example.solution.flatMap((step) => step.formulas))];

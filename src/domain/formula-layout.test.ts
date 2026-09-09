@@ -14,6 +14,8 @@ describe('formula reading rows', () => {
     const values = data.methods.flatMap(method => [method.formula, ...(method.example.formulas ?? []),
       ...(typeof method.example.solution === 'string' ? [] : method.example.solution.flatMap(step => step.formulas))]);
     values.push(...data.problemTypes.flatMap(type => type.formulas.map(item => item.latex)));
+    values.push(...data.libraries.flatMap(library => library.chapters.flatMap(chapter =>
+      (chapter.concepts ?? []).flatMap(concept => concept.formulas ?? []))));
     values.push(...data.questions.flatMap(question => [...(question.statement?.formulas ?? []),
       ...(question.statement?.options ?? [])]));
     for (const value of values) for (const row of formulaRows(value)) {

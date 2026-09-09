@@ -3,7 +3,7 @@
   "libraryId": "math-one",
   "paperId": "math-one-2022",
   "number": "11",
-  "summary": "方向导数",
+  "summary": "二元函数在指定点的最大方向导数",
   "source": {
     "url": "https://www.csgraduates.com/study_methods/math/math1/2022/"
   },

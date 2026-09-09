@@ -23,7 +23,8 @@ export const librarySchema = z.object({
   examScope: examScopeSchema.optional(),
   chapters: z.array(z.object({
     id, title: text, subject: text, supplementary: z.boolean().optional(),
-    concepts: z.array(z.object({ title: text, explanation: text }).strict()).optional(),
+    concepts: z.array(z.object({ title: text, explanation: text,
+      formulas: z.array(formula).optional() }).strict()).optional(),
     syllabusTopics: z.array(z.object({ id, title: text }).strict()).min(1),
   }).strict()).min(1),
 }).strict();
@@ -34,7 +35,7 @@ export const methodSchema = z.object({
   learning: z.object({ intuition: text, symbols: z.array(z.object({ symbol: text, meaning: text }).strict()),
     explanation: z.array(text).min(1) }).strict().optional(),
   pitfalls: z.array(text).min(1),
-  example: z.object({ prompt: text, formulas: z.array(formula).optional(),
+  example: z.object({ prompt: text, questionId: id.optional(), formulas: z.array(formula).optional(),
     solution: z.union([text, z.array(z.object({ title: text, text,
       formulas: z.array(formula) }).strict()).min(1)]) }).strict(),
   relatedIds: ids, topicIds: ids.refine((values) => values.length > 0, 'Method needs a syllabus topic'),

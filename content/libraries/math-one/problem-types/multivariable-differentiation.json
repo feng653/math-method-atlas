@@ -2,50 +2,56 @@
   "id": "multivariable-differentiation",
   "libraryId": "math-one",
   "chapterId": "multivariable",
-  "title": "求复合或隐式函数偏导与微分",
-  "summary": "按变量依赖选择直接链式或解微分线性系统。",
+  "title": "求抽象复合函数的一阶与高阶导数",
+  "summary": "画出变量依赖路径，外函数偏导保留符号，逐次求导。",
   "recognition": [
-    "外函数未知但偏导可保留符号，或未知函数由一组方程定义。"
+    "f没有具体表达式，但给出f的光滑性及内函数。",
+    "可给沿曲线的复合关系，也可给偏微分关系反求单变量函数。"
   ],
   "strategy": [
-    "画变量依赖关系，确认实际独立变量。",
-    "直接复合逐路径累加；隐式关系先微分后解待求导数，高阶项保留全部乘积项。"
+    "列出外变量、内变量与独立变量，并标明求值点在内变量空间的像。",
+    "一阶导数按每条依赖路径相乘再相加。",
+    "二阶求导时外函数偏导仍是复合函数，连同前面的系数一起求导。",
+    "全部求导后代点；若利用内函数极值，先由可导内点极值推出其导数为零。"
   ],
   "methods": [
     {
       "methodId": "hm-multivariable-chain",
-      "when": "显式给u(x,y)、v(x,y)及f(u,v)，从内到外链式求导。"
-    },
-    {
-      "methodId": "hm-multivariable-implicit",
-      "when": "未知变量只由方程定义，且对未知量Jacobian可逆时。"
+      "when": "抽象外函数及内函数满足相应阶数可微条件。"
     },
     {
       "methodId": "hm-partial-total-differential",
-      "when": "要求全微分时，将所得偏导乘各独立增量汇总。"
+      "when": "已知曲线关系求点上全微分，先解出偏导系数。"
     }
   ],
   "formulas": [
     {
-      "id": "implicit-differential",
-      "title": "隐式全微分",
-      "latex": "dz=-\\frac{F_x}{F_z}\\,dx-\\frac{F_y}{F_z}\\,dy",
+      "id": "composite-second",
+      "title": "一条参数曲线上的二阶导数",
+      "latex": "\\frac{d^2f(u(x),v(x))}{dx^2}=f_{uu}(u')^2+2f_{uv}u'v'+f_{vv}(v')^2+f_u u''+f_v v''",
       "conditions": [
-        "F在目标点邻域C¹，F(x0,y0,z0)=0，Fz在该点非零。"
+        "f与内函数在所考察邻域C²；各偏导在(u(x),v(x))处取值。"
       ],
-      "derivation": "隐函数定理先保证局部z(x,y)可微；对F=0微分，移项并除以Fz。",
+      "derivation": "对f_u u′+f_v v′再求一次导数，分别用链式与乘积法则；混合偏导连续时可合并为2倍。",
       "methodIds": [
-        "hm-multivariable-implicit",
-        "hm-partial-total-differential"
+        "hm-multivariable-chain"
       ]
     }
   ],
   "questionIds": [
+    "2009-301-09",
+    "2011-301-16",
+    "2014-301-17",
     "2017-301-15",
-    "2016-301-11"
+    "2019-301-09",
+    "2021-301-02",
+    "2022-301-02",
+    "2024-301-12",
+    "2025-301-18"
   ],
   "boundaries": [
-    "隐式偏导分母为零时需要单独分析；一阶可微不足以直接使用二阶链式。"
+    "显式给出复合关系时按依赖路径求导；未知函数只由方程约束时，应转入隐函数求导。",
+    "二阶链式需要相应二阶可微条件；不要在求导前把x代成常数。"
   ],
-  "status": "draft"
+  "status": "reviewed"
 }

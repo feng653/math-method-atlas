@@ -24,7 +24,8 @@ export function MethodDetail({ method, methods, questions, papers, examScope, on
       <Formula value={method.formula} />
       <h2>怎么做</h2>
       <ol className="steps">{method.steps.map((text) => <li key={text}>{text}</li>)}</ol>
-      <MethodExample key={method.id} example={method.example} expanded={Boolean(method.learning)} />
+      <MethodExample key={method.id} example={method.example} questions={questions} papers={papers}
+        expanded={Boolean(method.learning)} />
       <h2>什么时候适用</h2>
       <ul>{method.conditions.map((text) => <li key={text}>{text}</li>)}</ul>
       <h2>留意这些条件</h2>
