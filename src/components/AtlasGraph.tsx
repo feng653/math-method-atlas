@@ -78,9 +78,9 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     const levelMatch = b?.data.kind === highlightLevel;
     return { ...edge, sourceHandle: 'dot-source', targetHandle: 'dot-target', type: 'straight',
       animated: motionAllowed && related,
-      style: { ...edge.style, strokeWidth: highlightLevel && levelMatch ? 3 : edge.style?.strokeWidth,
-        opacity: highlightLevel ? (levelMatch ? 1 : 0.05) : active ? (related ? 0.85 : 0.07)
-        : a?.data.kind === 'root' && a.data.compact ? 0.09 : edge.style?.opacity } };
+      style: { ...edge.style, strokeWidth: highlightLevel && levelMatch ? 3 : Math.max(1.3, Number(edge.style?.strokeWidth) || 1.3),
+        opacity: highlightLevel ? (levelMatch ? 1 : 0.18) : active ? (related ? 1 : 0.22)
+        : 0.65 } };
   });
   if (selectedMethod) for (const relatedId of selectedMethod.relatedIds) {
     const relatedNodeId = graphNodeId('method', relatedId);

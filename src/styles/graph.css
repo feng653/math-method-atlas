@@ -77,3 +77,20 @@
 @media (max-width: 420px) { .canvas-controls .reading-size { padding-inline: 4px; font-size: 12px; }
   .zoom-label { width: 30px; flex-shrink: 0; }
 }
+
+.connection-tension { position: absolute; top: 90px; left: 16px; z-index: 20; width: 270px;
+  max-width: calc(100% - 32px); padding: 16px 18px; border: 1px solid #dfe6dc;
+  border-radius: 16px; background: #ffffffed; box-shadow: 0 5px 22px #344b3608; color: #294634; }
+.tension-heading, .tension-ends { display: flex; justify-content: space-between; align-items: center; }
+.tension-heading strong { font-size: 15px; font-weight: 600; }
+.tension-heading output { font-size: 12px; color: #0f766e; font-variant-numeric: tabular-nums;
+  background: #edf4e9; padding: 3px 8px; border-radius: 8px; }
+.connection-tension p { font-size: 12px; margin: 8px 0 18px; color: #63796c; }
+.connection-tension input { appearance: none; display: block; width: 100%; height: 6px;
+  border-radius: 8px; cursor: pointer; margin: 0; }
+.connection-tension input::-webkit-slider-thumb { appearance: none; width: 20px; height: 20px;
+  border-radius: 50%; background: #0f766e; border: 3px solid white; box-shadow: 0 1px 5px #29463440; }
+.connection-tension input::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%;
+  background: #0f766e; border: 3px solid white; }
+.connection-tension input:focus-visible { outline: 2px solid #0f766e; outline-offset: 8px; }
+.tension-ends { margin-top: 14px; font-size: 12px; color: #63796c; }
