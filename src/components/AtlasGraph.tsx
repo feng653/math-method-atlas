@@ -1,4 +1,3 @@
-import { ForceTestSliders } from './ForceTestSliders';
 import { LevelHighlight } from './LevelHighlight';
 import { useEffect, useMemo, useState } from 'react';
 import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
@@ -107,7 +106,6 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
     event.preventDefault(); event.stopPropagation(); activateNode(wrapper.dataset.id);
   }} onFocusCapture={(event) => setHovered((event.target as HTMLElement).closest<HTMLElement>('.react-flow__node')?.dataset.id ?? '')}
     onBlurCapture={() => setHovered('')}>
-    {import.meta.env.DEV && <ForceTestSliders />}
     <div className="graph-canvas"><ReactFlow<NodeType> nodes={nodes} edges={edges} nodeTypes={nodeTypes}
       onNodesChange={(changes) => { elastic.sync(changes); onNodesChange(changes); }}
       onInit={setFlow} onMoveEnd={(_, viewport) => setZoom(viewport.zoom)}
