@@ -1,3 +1,4 @@
+import { LevelHighlight } from './LevelHighlight';
 import { useEffect, useMemo, useState } from 'react';
 import { Background, ReactFlow, useNodesState, type ReactFlowInstance } from '@xyflow/react';
 import { Focus, Minus, Plus, RotateCcw, Waves, Network } from 'lucide-react';
@@ -122,11 +123,6 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
         'node.a11yDescription.keyboardDisabled': '选择节点查看内容。' }}>
       <Background color="#ccd6cf" gap={30} size={0.9} />
     </ReactFlow></div>
-    <div className="level-controls" aria-label="层级连线高亮">
-      <span>高亮连线</span><button aria-pressed={!highlightLevel} onClick={() => setHighlightLevel('')}>无</button>
-      {levels.map(([kind, label]) => <button key={kind} aria-pressed={highlightLevel === kind}
-        onClick={() => setHighlightLevel(highlightLevel === kind ? '' : kind)}>{label}</button>)}
-    </div>
     <div className="graph-views" aria-label="图谱范围">
       {category && <button className="category-back" onClick={() => setCategoryView(null)} title="返回全部思路分类">← {thinkingCategories.find((item) => item.id === category)?.title}</button>}
       <button aria-pressed={allMethods && !chapter} onClick={() => { setAllMethods(true); onChapter('');
@@ -146,6 +142,7 @@ export function AtlasGraph({ library, methods, selected, chapter, problemTypes, 
       <button aria-label="恢复节点布局" title="恢复节点布局" onClick={restoreLayout}><RotateCcw size={16} /></button>
       <button aria-label={allLinks ? '仅显示主干连线' : '显示全部关联连线'} title={allLinks ? '仅显示主干连线' : '显示全部关联连线'}
         aria-pressed={allLinks} onClick={() => setAllLinks(!allLinks)}><Network size={17} /></button>
+      <LevelHighlight value={highlightLevel} levels={levels} onChange={setHighlightLevel} />
     </div>
     <div className="canvas-hint">{zoom < 0.85 ? '整体预览 · 点击「阅读大小」放大文字' : '拖动空白浏览 · 滚轮缩放 · 点击节点深入'}</div>
   </section>;
