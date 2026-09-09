@@ -1,3 +1,4 @@
+import { defaultPhysics, PHYSICS_STEP, type PhysicsSettings } from './physics-settings';
 import type { Edge, XYPosition } from '@xyflow/react';
 import type { AtlasNode } from './graph';
 
@@ -26,33 +27,46 @@ export function retainElasticArrangement(layout: ElasticLayout) {
   for (const body of layout.bodies.values()) { body.vx = 0; body.vy = 0; }
 }
 
-export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, _time: number, multipliers = { attraction: 1, repulsion: 1 }) {
+/** Implicit velocity-level soft rope constraints; velocities are world units/second. */
+export function stepElasticLayout(layout: ElasticLayout, pinned: string | null, _time: number,
+  settings: PhysicsSettings = defaultPhysics, h = PHYSICS_STEP) {
   const bodies = [...layout.bodies.values()];
-  for (const { a, b, length, strength } of layout.links) {
-    const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
-    const d = Math.max(1, Math.sqrt(dx * dx + dy * dy)), stretch = d - length;
-    const tension = Math.max(0, stretch - 24);
-    const force = multipliers.attraction * tension * strength * (layout.initializing ? 0.15 : 0.03) / Math.sqrt(Math.max(a.degree, b.degree, 1));
-    a.vx += dx / d * force; a.vy += dy / d * force;
-    b.vx -= dx / d * force; b.vy -= dy / d * force;
-  }
+  const drag = Math.exp(-settings.airDrag * h);
+  for (const body of bodies) if (body.id !== pinned) { body.vx *= drag; body.vy *= drag; }
   for (let i = 0; i < bodies.length; i++) for (let j = i + 1; j < bodies.length; j++) {
     const a = bodies[i], b = bodies[j];
-    const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
-    // Only the point has physical size; labels never contribute forces.
-    if (dx === 0 && dy === 0) { a.vx -= multipliers.repulsion; b.vx += multipliers.repulsion; }
-    const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
-    // Every pair repels at any distance; only soften the near-zero singularity.
-    const force = multipliers.repulsion * (layout.initializing ? 9000 : 700) / Math.max(900, d * d);
-    a.vx -= dx / d * force; a.vy -= dy / d * force;
-    b.vx += dx / d * force; b.vy += dy / d * force;
+    let dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
+    if (dx === 0 && dy === 0) dx = 1;
+    const d = Math.sqrt(dx * dx + dy * dy);
+    const impulse = settings.repulsion * 700 * 625 * h / Math.max(900, d * d);
+    if (a.id !== pinned) { a.vx -= dx / d * impulse; a.vy -= dy / d * impulse; }
+    if (b.id !== pinned) { b.vx += dx / d * impulse; b.vy += dy / d * impulse; }
   }
-  for (const body of bodies) {
-    if (body.id === pinned) { body.vx = 0; body.vy = 0; continue; }
-    body.vx = body.vx * 0.7;
-    body.vy = body.vy * 0.7;
-    body.position.x += body.vx; body.position.y += body.vy;
+  const constraints = settings.frequency > 0 ? layout.links.flatMap(({ a, b, length, strength }) => {
+    const dx = b.position.x - a.position.x, dy = b.position.y - a.position.y;
+    const d = Math.max(1e-6, Math.sqrt(dx * dx + dy * dy));
+    const error = d - length - 24;
+    if (error <= 0) return [];
+    const wa = a.id === pinned ? 0 : 1, wb = b.id === pinned ? 0 : 1;
+    const inverseMass = wa + wb;
+    if (!inverseMass) return [];
+    const omega = 2 * Math.PI * settings.frequency * Math.sqrt(strength);
+    const stiffness = omega * omega / inverseMass;
+    const damping = 2 * settings.dampingRatio * omega / inverseMass;
+    const gamma = 1 / (h * (damping + h * stiffness));
+    const bias = error * h * stiffness * gamma;
+    return [{ a, b, wa, wb, nx: dx / d, ny: dy / d, gamma, bias,
+      mass: 1 / (inverseMass + gamma), impulse: 0 }];
+  }) : [];
+  for (let iteration = 0; iteration < settings.iterations; iteration++) for (const c of constraints) {
+    const speed = (c.b.vx - c.a.vx) * c.nx + (c.b.vy - c.a.vy) * c.ny;
+    const next = Math.min(0, c.impulse - c.mass * (speed + c.bias + c.gamma * c.impulse));
+    const delta = next - c.impulse;
+    c.impulse = next;
+    c.a.vx -= c.wa * delta * c.nx; c.a.vy -= c.wa * delta * c.ny;
+    c.b.vx += c.wb * delta * c.nx; c.b.vy += c.wb * delta * c.ny;
+  }
+  for (const body of bodies) if (body.id !== pinned) {
+    body.position.x += body.vx * h; body.position.y += body.vy * h;
   }
 }
-
-

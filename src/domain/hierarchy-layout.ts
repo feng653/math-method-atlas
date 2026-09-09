@@ -1,3 +1,4 @@
+import { PHYSICS_STEP } from './physics-settings';
 import type { Edge } from '@xyflow/react';
 import type { AtlasNode } from './graph';
 import { primaryEdgeIds } from './edge-layout';
@@ -72,7 +73,7 @@ export function hierarchyLayout(graph: { nodes: AtlasNode[]; edges: Edge[] }, co
   for (let tick = 0; tick < 8000; tick++) {
     stepElasticLayout(layout, null, tick);
     ticks = tick + 1;
-    maxSpeed = Math.max(0, ...[...layout.bodies.values()].map(body => Math.hypot(body.vx, body.vy)));
+    maxSpeed = Math.max(0, ...[...layout.bodies.values()].map(body => Math.hypot(body.vx, body.vy) * PHYSICS_STEP));
     quietTicks = maxSpeed < 0.12 ? quietTicks + 1 : 0;
     if (quietTicks >= 30) break;
   }

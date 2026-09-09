@@ -20,7 +20,7 @@ function harness(interval = 50) {
 it('keeps simulating while idle without creating duplicate frames', () => {
   const h = harness(); h.scheduler.wake(); h.advance(2000);
   expect(h.running).toBe(true); expect(h.pending.size).toBe(1);
-  const count = h.steps; h.advance(60000); expect(h.steps - count).toBe(1200);
+  const count = h.steps; h.advance(60000); expect(h.steps - count).toBe(7200);
   h.scheduler.stop(); expect(h.pending.size).toBe(0);
 });
 
@@ -40,12 +40,12 @@ it('continues even when the physics callback reports no motion', () => {
   () => { steps++; return active; }, () => {});
   scheduler.wake();
   for (time = 40; time <= 10000; time += 40) { const next = callback; callback = undefined; next?.(time); }
-  expect(steps).toBe(250);
+  expect(steps).toBe(1200);
   expect(callback).toBeDefined();
   active = false;
   for (; time <= 13000; time += 40) { const next = callback; callback = undefined; next?.(time); }
   expect(callback).toBeDefined();
-  expect(steps).toBe(325);
+  expect(steps).toBe(1560);
   scheduler.stop();
   expect(callback).toBeUndefined();
 });

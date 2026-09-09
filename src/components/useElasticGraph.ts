@@ -1,3 +1,5 @@
+import { advanceDrag } from '../domain/drag-target';
+import { PHYSICS_STEP } from '../domain/physics-settings';
 import { testForces } from './ForceTestSliders';
 import { useEffect, useRef, useState, type Dispatch, type SetStateAction } from 'react';
 import type { Edge, NodeChange } from '@xyflow/react';
@@ -10,6 +12,7 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
   const simulation = useRef<ElasticLayout>(null!);
   if (!simulation.current) simulation.current = createElasticLayout(nodes, edges);
   const pinned = useRef<string | null>(null);
+  const dragTarget = useRef<{ x: number; y: number; released: boolean } | null>(null);
   const wake = useRef(() => {});
   const [running, setRunning] = useState(false);
   const [reduced, setReduced] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -20,13 +23,22 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
     return () => media.removeEventListener('change', change);
   }, []);
   useEffect(() => {
-    simulation.current = createElasticLayout(nodes, edges); pinned.current = null;
+    simulation.current = createElasticLayout(nodes, edges); pinned.current = null; dragTarget.current = null;
   }, [nodes, edges]);
   useEffect(() => {
     if (!enabled || reduced) { wake.current = () => {}; return; }
     const scheduler = createMotionScheduler({ now: () => performance.now(),
       request: (callback) => requestAnimationFrame(callback), cancel: (id) => cancelAnimationFrame(id) }, (time) => {
+        const target = dragTarget.current;
+        const body = pinned.current ? simulation.current.bodies.get(pinned.current) : undefined;
+        if (target && body) {
+          const reached = advanceDrag(body, target, PHYSICS_STEP);
+          if (target.released && reached) {
+            pinned.current = null; dragTarget.current = null; body.vx = 0; body.vy = 0;
+          }
+        }
         stepElasticLayout(simulation.current, pinned.current, time, import.meta.env.DEV ? testForces : undefined);
+    }, setRunning, matchMedia('(pointer: coarse)').matches ? 50 : 33, () => {
         setNodes((current) => {
           let changed = false;
           const next = current.map((node) => {
@@ -38,7 +50,7 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
           });
           return changed ? next : current;
         });
-    }, setRunning, matchMedia('(pointer: coarse)').matches ? 50 : 40);
+    });
     wake.current = () => { if (!document.hidden) scheduler.wake(); };
     const visibility = () => { if (document.hidden) scheduler.stop(); else wake.current(); };
     document.addEventListener('visibilitychange', visibility);
@@ -48,13 +60,12 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
   }, [nodes, edges, enabled, reduced, setNodes]);
   function drag(node: AtlasNode) {
     pinned.current = node.id;
-    const body = simulation.current.bodies.get(node.id);
-    if (body) { body.position = { ...node.position }; body.vx = 0; body.vy = 0; }
+    dragTarget.current = { ...node.position, released: false };
     wake.current();
   }
   return { active: enabled && !reduced && running, drag,
     sync: (changes: NodeChange<AtlasNode>[]) => {
-      for (const change of changes) if (change.type === 'position' && change.position) {
+      for (const change of changes) if (change.type === 'position' && change.position && !change.dragging && change.id !== pinned.current) {
         const body = simulation.current.bodies.get(change.id);
         if (body) { body.position = { ...change.position }; body.vx = 0; body.vy = 0; }
       }
@@ -62,6 +73,6 @@ export function useElasticGraph(nodes: AtlasNode[], edges: Edge[], enabled: bool
         wake.current();
       }
     },
-    release: (node: AtlasNode) => { drag(node); pinned.current = null; wake.current(); },
-    reset: () => { simulation.current = createElasticLayout(nodes, edges); pinned.current = null; wake.current(); } };
+    release: (node: AtlasNode) => { drag(node); dragTarget.current!.released = true; wake.current(); },
+    reset: () => { simulation.current = createElasticLayout(nodes, edges); pinned.current = null; dragTarget.current = null; wake.current(); } };
 }
