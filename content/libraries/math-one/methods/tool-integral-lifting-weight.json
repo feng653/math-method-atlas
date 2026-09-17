@@ -1,0 +1,11 @@
+{
+  "id": "tool-integral-lifting-weight",
+  "libraryId": "math-one",
+  "chapterId": "integral-lifting",
+  "title": "把积分权重写成区间长度",
+  "summary": "积分升维：将一次权重转为三角区域的切片长度，换序证明积分恒等式。",
+  "article": "integral-lifting/methods/weight-as-length.md",
+  "relatedIds": ["hm-double-cartesian", "hm-integral-identity", "hm-integration-by-parts"],
+  "topicIds": ["integral-lifting-weight"],
+  "status": "reviewed"
+}

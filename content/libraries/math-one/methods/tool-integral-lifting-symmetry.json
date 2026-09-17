@@ -1,0 +1,11 @@
+{
+  "id": "tool-integral-lifting-symmetry",
+  "libraryId": "math-one",
+  "chapterId": "integral-lifting",
+  "title": "把对称三角域补成正方形",
+  "summary": "积分升维：利用乘积核的交换对称，将三角区域积分化为一元积分平方的一半。",
+  "article": "integral-lifting/methods/symmetric-product.md",
+  "relatedIds": ["hm-double-cartesian", "hm-definite-symmetry", "hm-newton-leibniz"],
+  "topicIds": ["integral-lifting-symmetry"],
+  "status": "reviewed"
+}

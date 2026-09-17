@@ -1,5 +1,7 @@
 # 已有实现速查
 
+2026-09-17 积分升维复习专题：`docs/textbook/integral-lifting/` 为唯一正文，`math-one/library.json` 新增 supplementary 章节，4 个 `tool-integral-lifting-*` 方法和 `pt-integral-lifting` 题型通过既有 article 契约接入图谱、目录、搜索及分享路由。内容限于权重转区间长度、变限积分换序、三角域对称与面积/格林转化；相关方法引用既有二重积分、极坐标、格林和一元积分工具。没有新 loader、schema、统计模块或真题记录，验证见 `VERIFICATION.md`。
+
 2026-09-09 连接视图补齐：多元微分 21 个 `task-multivariable-*` 题型、41 个 `tool-multivariable-*` 方法全部引用同一 Markdown 正文。旧 9 方法/9 题型通过 `supersededBy` 保留 ID 与历史证据。`graph.ts` 过滤替代记录，同时保留其他有效题型仍引用的旧方法；未迁移 verified 频次。
 
 唯一入口更新：`schema.ts` 用严格联合区分文稿/结构化节点；`article-bindings.ts` 对文稿与节点、题型工具链接与图谱边校验；`article.ts` 统一 query 文稿和 hash 选择，清除不相容旧地址；`App.tsx` 同时监听 popstate/hashchange；`ArticlePanel`、`ChapterReader` 共用阅读与导航。读文章也选择对应图节点，不再维护第二套独立文章状态。

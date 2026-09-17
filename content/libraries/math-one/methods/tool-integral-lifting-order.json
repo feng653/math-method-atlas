@@ -1,0 +1,11 @@
+{
+  "id": "tool-integral-lifting-order",
+  "libraryId": "math-one",
+  "chapterId": "integral-lifting",
+  "title": "对变限积分换序以避开难求原函数",
+  "summary": "积分升维：画出变限积分的区域，换序后先积容易的变量，必要时分段。",
+  "article": "integral-lifting/methods/change-order.md",
+  "relatedIds": ["hm-double-cartesian", "hm-newton-leibniz", "hm-integration-by-parts"],
+  "topicIds": ["integral-lifting-order"],
+  "status": "reviewed"
+}

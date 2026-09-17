@@ -1,0 +1,16 @@
+{
+  "id": "pt-integral-lifting",
+  "libraryId": "math-one",
+  "chapterId": "integral-lifting",
+  "title": "一元积分何时转成二重积分",
+  "summary": "考研常用积分升维思路：从一次权重、变限积分、对称乘积和面积结构选择转化路径。",
+  "article": "integral-lifting/problem-types/choose-lift/index.md",
+  "methods": [
+    {"methodId": "tool-integral-lifting-weight", "when": "一次权重可解释为区间长度，用换序建立积分恒等式"},
+    {"methodId": "tool-integral-lifting-order", "when": "内层原函数难求，换序后能先积简单变量"},
+    {"methodId": "tool-integral-lifting-symmetry", "when": "同一函数形成对称乘积核，三角区域可补为正方形"},
+    {"methodId": "tool-integral-lifting-geometry", "when": "可解释为面积，且极坐标或满足条件的闭合边界更易处理"}
+  ],
+  "questionIds": [],
+  "status": "reviewed"
+}

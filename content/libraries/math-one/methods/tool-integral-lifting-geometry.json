@@ -1,0 +1,11 @@
+{
+  "id": "tool-integral-lifting-geometry",
+  "libraryId": "math-one",
+  "chapterId": "integral-lifting",
+  "title": "把一元积分转为面积或边界积分",
+  "summary": "积分升维：图下面积配合极坐标；边界参数化简单且满足条件时使用格林公式。",
+  "article": "integral-lifting/methods/geometry.md",
+  "relatedIds": ["hm-integral-area-volume", "hm-double-polar", "hm-green"],
+  "topicIds": ["integral-lifting-geometry"],
+  "status": "reviewed"
+}
